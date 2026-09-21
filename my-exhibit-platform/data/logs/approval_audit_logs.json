@@ -1,0 +1,1063 @@
+[
+  {
+    "event_id": "aud-7bfcc96fec8b",
+    "run_id": "run-pipe-20260917212137-17c384",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-17T12:21:37.820Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-5b9f58875309",
+    "run_id": "run-pipe-20260917212136-971238",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_qa_lead",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "120cd/m2 조도 기준 인포그래픽 시인성 개선 및 헤드라인 강조 필요",
+    "timestamp": "2026-09-17T12:21:37.065Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-9f6d41abb4ce",
+    "run_id": "run-pipe-20260917212131-b6222d",
+    "content_id": "cnt-step11-test-03",
+    "content_version": 3,
+    "actor_id": "test_admin_qa",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "포트폴리오 심층 가이드라인 보완 및 원문 출처 보강 필요",
+    "timestamp": "2026-09-17T12:21:34.905Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 03] 인터랙션 디자인 졸업작품 심층 분석",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 0
+    }
+  },
+  {
+    "event_id": "aud-b65b44fe5711",
+    "run_id": "run-pipe-20260917212131-b6222d",
+    "content_id": "cnt-step11-test-01",
+    "content_version": 1,
+    "actor_id": "test_admin_individual",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-17T12:21:34.545Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 01] 2026 AI 기반 미래 모빌리티 콕핏 디자인",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 1
+    }
+  },
+  {
+    "event_id": "aud-fccf4c70c479",
+    "run_id": "run-pipe-20260917212131-b6222d",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-17T12:21:33.619Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-cc8e0351b54b",
+    "run_id": "run-pipe-20260917172908-2f5f0d",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-17T08:29:09.384Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-dc588df6a6ef",
+    "run_id": "run-pipe-20260917172907-68b625",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_qa_lead",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "120cd/m2 조도 기준 인포그래픽 시인성 개선 및 헤드라인 강조 필요",
+    "timestamp": "2026-09-17T08:29:08.599Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-099151a1d102",
+    "run_id": "run-pipe-20260917172902-cc5e2d",
+    "content_id": "cnt-step11-test-03",
+    "content_version": 3,
+    "actor_id": "test_admin_qa",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "포트폴리오 심층 가이드라인 보완 및 원문 출처 보강 필요",
+    "timestamp": "2026-09-17T08:29:06.525Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 03] 인터랙션 디자인 졸업작품 심층 분석",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 0
+    }
+  },
+  {
+    "event_id": "aud-fd21baa298ce",
+    "run_id": "run-pipe-20260917172902-cc5e2d",
+    "content_id": "cnt-step11-test-01",
+    "content_version": 1,
+    "actor_id": "test_admin_individual",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-17T08:29:06.190Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 01] 2026 AI 기반 미래 모빌리티 콕핏 디자인",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 1
+    }
+  },
+  {
+    "event_id": "aud-a806442144cb",
+    "run_id": "run-pipe-20260917172902-cc5e2d",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-17T08:29:05.378Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-a95b7c10491e",
+    "run_id": "run-pipe-20260917165628-b8a27e",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-17T07:56:29.558Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-476c8ee1fc70",
+    "run_id": "run-pipe-20260917165628-e24e14",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_qa_lead",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "120cd/m2 조도 기준 인포그래픽 시인성 개선 및 헤드라인 강조 필요",
+    "timestamp": "2026-09-17T07:56:28.803Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-2db0ce7701f4",
+    "run_id": "run-pipe-20260917165622-a957c8",
+    "content_id": "cnt-step11-test-03",
+    "content_version": 3,
+    "actor_id": "test_admin_qa",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "포트폴리오 심층 가이드라인 보완 및 원문 출처 보강 필요",
+    "timestamp": "2026-09-17T07:56:26.598Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 03] 인터랙션 디자인 졸업작품 심층 분석",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 0
+    }
+  },
+  {
+    "event_id": "aud-52ae52cf5e8c",
+    "run_id": "run-pipe-20260917165622-a957c8",
+    "content_id": "cnt-step11-test-01",
+    "content_version": 1,
+    "actor_id": "test_admin_individual",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-17T07:56:26.110Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 01] 2026 AI 기반 미래 모빌리티 콕핏 디자인",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 1
+    }
+  },
+  {
+    "event_id": "aud-969d89df6290",
+    "run_id": "run-pipe-20260917165622-a957c8",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-17T07:56:24.955Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-42582f43c9d4",
+    "run_id": "run-pipe-20260917111522-570d29",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-17T02:15:23.093Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-1b6fe7a8f615",
+    "run_id": "run-pipe-20260917111521-446a85",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_qa_lead",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "120cd/m2 조도 기준 인포그래픽 시인성 개선 및 헤드라인 강조 필요",
+    "timestamp": "2026-09-17T02:15:22.153Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-90004137c000",
+    "run_id": "run-pipe-20260917111516-3561e5",
+    "content_id": "cnt-step11-test-03",
+    "content_version": 3,
+    "actor_id": "test_admin_qa",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "포트폴리오 심층 가이드라인 보완 및 원문 출처 보강 필요",
+    "timestamp": "2026-09-17T02:15:20.072Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 03] 인터랙션 디자인 졸업작품 심층 분석",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 0
+    }
+  },
+  {
+    "event_id": "aud-5488b7535fde",
+    "run_id": "run-pipe-20260917111516-3561e5",
+    "content_id": "cnt-step11-test-01",
+    "content_version": 1,
+    "actor_id": "test_admin_individual",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-17T02:15:19.743Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 01] 2026 AI 기반 미래 모빌리티 콕핏 디자인",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 1
+    }
+  },
+  {
+    "event_id": "aud-4b1869bc1eec",
+    "run_id": "run-pipe-20260917111516-3561e5",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-17T02:15:18.536Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-73179eaac88f",
+    "run_id": "run-pipe-20260916232150-185064",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T14:21:53.047Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-135e5559ded1",
+    "run_id": "run-pipe-20260916231101-c502e6",
+    "content_id": "cnt-step11-test-03",
+    "content_version": 3,
+    "actor_id": "test_admin_qa",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "포트폴리오 심층 가이드라인 보완 및 원문 출처 보강 필요",
+    "timestamp": "2026-09-16T14:21:30.271Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 03] 인터랙션 디자인 졸업작품 심층 분석",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 0
+    }
+  },
+  {
+    "event_id": "aud-f1e7a9c03dc5",
+    "run_id": "run-pipe-20260916231101-c502e6",
+    "content_id": "cnt-step11-test-01",
+    "content_version": 1,
+    "actor_id": "test_admin_individual",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T14:21:30.011Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 01] 2026 AI 기반 미래 모빌리티 콕핏 디자인",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 1
+    }
+  },
+  {
+    "event_id": "aud-e8974f8a1293",
+    "run_id": "run-pipe-20260916231101-c502e6",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T14:11:03.419Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-4d047c7778c7",
+    "run_id": "run-pipe-20260916231024-6d427d",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T14:10:25.375Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-5ed25d69b937",
+    "run_id": "run-pipe-20260916231024-ae4370",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_qa_lead",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "120cd/m2 조도 기준 인포그래픽 시인성 개선 및 헤드라인 강조 필요",
+    "timestamp": "2026-09-16T14:10:24.664Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-6098a4002115",
+    "run_id": "run-pipe-20260916230920-ca1964",
+    "content_id": "cnt-step11-test-03",
+    "content_version": 3,
+    "actor_id": "test_admin_qa",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "포트폴리오 심층 가이드라인 보완 및 원문 출처 보강 필요",
+    "timestamp": "2026-09-16T14:10:13.942Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 03] 인터랙션 디자인 졸업작품 심층 분석",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 0
+    }
+  },
+  {
+    "event_id": "aud-cd6dac363c53",
+    "run_id": "run-pipe-20260916230920-ca1964",
+    "content_id": "cnt-step11-test-01",
+    "content_version": 1,
+    "actor_id": "test_admin_individual",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T14:10:13.888Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 01] 2026 AI 기반 미래 모빌리티 콕핏 디자인",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 1
+    }
+  },
+  {
+    "event_id": "aud-e4a19c612e16",
+    "run_id": "run-pipe-20260916230920-ca1964",
+    "content_id": "cnt-step11-test-03",
+    "content_version": 3,
+    "actor_id": "test_admin_qa",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "포트폴리오 심층 가이드라인 보완 및 원문 출처 보강 필요",
+    "timestamp": "2026-09-16T14:09:53.137Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 03] 인터랙션 디자인 졸업작품 심층 분석",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 0
+    }
+  },
+  {
+    "event_id": "aud-6ececa3b17d3",
+    "run_id": "run-pipe-20260916230920-ca1964",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T14:09:22.617Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-da47adcb588e",
+    "run_id": "run-pipe-20260916230858-69e5a0",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T14:08:59.099Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-3da22ee2a264",
+    "run_id": "run-pipe-20260916230857-40a9c8",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_qa_lead",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "120cd/m2 조도 기준 인포그래픽 시인성 개선 및 헤드라인 강조 필요",
+    "timestamp": "2026-09-16T14:08:58.420Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-dcc0d17e738d",
+    "run_id": "run-pipe-20260916230744-06caa2",
+    "content_id": "cnt-step11-test-03",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T14:07:45.397Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 03] 인터랙션 디자인 졸업작품 심층 분석",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 0
+    }
+  },
+  {
+    "event_id": "aud-53ecd339c411",
+    "run_id": "run-pipe-20260916230744-e4422f",
+    "content_id": "cnt-step11-test-03",
+    "content_version": 1,
+    "actor_id": "admin_qa_lead",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "120cd/m2 조도 기준 인포그래픽 시인성 개선 및 헤드라인 강조 필요",
+    "timestamp": "2026-09-16T14:07:44.713Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 03] 인터랙션 디자인 졸업작품 심층 분석",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 0
+    }
+  },
+  {
+    "event_id": "aud-4fbc6f715bcb",
+    "run_id": "run-pipe-20260916224648-1a19cd",
+    "content_id": "cnt-step11-test-03",
+    "content_version": 3,
+    "actor_id": "test_admin_qa",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "포트폴리오 심층 가이드라인 보완 및 원문 출처 보강 필요",
+    "timestamp": "2026-09-16T14:06:42.618Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 03] 인터랙션 디자인 졸업작품 심층 분석",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 0
+    }
+  },
+  {
+    "event_id": "aud-3bd1abeabaae",
+    "run_id": "run-pipe-20260916224648-1a19cd",
+    "content_id": "cnt-step11-test-01",
+    "content_version": 1,
+    "actor_id": "test_admin_individual",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T14:06:42.524Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 01] 2026 AI 기반 미래 모빌리티 콕핏 디자인",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 1
+    }
+  },
+  {
+    "event_id": "aud-1d01d4ed42cf",
+    "run_id": "run-pipe-20260916224648-1a19cd",
+    "content_id": "cnt-step11-test-03",
+    "content_version": 3,
+    "actor_id": "test_admin_qa",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "포트폴리오 심층 가이드라인 보완 및 원문 출처 보강 필요",
+    "timestamp": "2026-09-16T14:06:21.345Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 03] 인터랙션 디자인 졸업작품 심층 분석",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 0
+    }
+  },
+  {
+    "event_id": "aud-c76c0b76a50b",
+    "run_id": "run-pipe-20260916224648-1a19cd",
+    "content_id": "cnt-step11-test-01",
+    "content_version": 1,
+    "actor_id": "test_admin_individual",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T14:06:21.273Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 01] 2026 AI 기반 미래 모빌리티 콕핏 디자인",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 1
+    }
+  },
+  {
+    "event_id": "aud-fd216a13a205",
+    "run_id": "run-pipe-20260916224648-1a19cd",
+    "content_id": "cnt-step11-test-03",
+    "content_version": 3,
+    "actor_id": "test_admin_qa",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "포트폴리오 심층 가이드라인 보완 및 원문 출처 보강 필요",
+    "timestamp": "2026-09-16T14:05:23.314Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 03] 인터랙션 디자인 졸업작품 심층 분석",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 0
+    }
+  },
+  {
+    "event_id": "aud-7d7a2a00f120",
+    "run_id": "run-pipe-20260916224648-1a19cd",
+    "content_id": "cnt-step11-test-01",
+    "content_version": 1,
+    "actor_id": "test_admin_individual",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T14:05:23.220Z",
+    "metadata": {
+      "content_title": "[STEP 11 Test 01] 2026 AI 기반 미래 모빌리티 콕핏 디자인",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 1
+    }
+  },
+  {
+    "event_id": "aud-b041a585f41f",
+    "run_id": "run-pipe-20260916224648-1a19cd",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T13:46:48.949Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-a2c7397b6d0e",
+    "run_id": "run-pipe-20260916224647-d93c23",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_qa_lead",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "120cd/m2 조도 기준 인포그래픽 시인성 개선 및 헤드라인 강조 필요",
+    "timestamp": "2026-09-16T13:46:48.278Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-64888749e226",
+    "run_id": "run-pipe-20260916224559-1f7be5",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T13:46:01.453Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-b99f232435be",
+    "run_id": "run-pipe-20260916224417-df9fea",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T13:44:17.967Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-fceaefd2caa9",
+    "run_id": "run-pipe-20260916224416-b7da2d",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_qa_lead",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "120cd/m2 조도 기준 인포그래픽 시인성 개선 및 헤드라인 강조 필요",
+    "timestamp": "2026-09-16T13:44:17.309Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-74d1246d43a6",
+    "run_id": "run-pipe-20260916224358-40d632",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T13:44:01.370Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-7ea9bc31b627",
+    "run_id": "run-pipe-20260916223604-f7de7e",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T13:36:04.906Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-05ceb32cdd75",
+    "run_id": "run-pipe-20260916223603-093d47",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_qa_lead",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "120cd/m2 조도 기준 인포그래픽 시인성 개선 및 헤드라인 강조 필요",
+    "timestamp": "2026-09-16T13:36:04.262Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-755615c00b01",
+    "run_id": "run-pipe-20260916221730-33fae8",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_master",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T13:20:52.949Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-07eb23b5b9a9",
+    "run_id": "run-pipe-20260916221632-3e3640",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T13:16:34.712Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-faefa5f56c81",
+    "run_id": "run-pipe-20260916221632-d66d48",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_qa_lead",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "120cd/m2 조도 기준 인포그래픽 시인성 개선 및 헤드라인 강조 필요",
+    "timestamp": "2026-09-16T13:16:32.821Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-7afed9b42c6e",
+    "run_id": "run-pipe-20260916221521-f70e8d",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_director",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_APPROVED",
+    "rejection_reason": null,
+    "timestamp": "2026-09-16T13:15:21.704Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "event_id": "aud-552cd0cf7ba8",
+    "run_id": "run-pipe-20260916221520-293252",
+    "content_id": "cnt-9c33482d2b",
+    "content_version": 1,
+    "actor_id": "admin_qa_lead",
+    "actor_role": "ADMIN",
+    "action": "CONTENT_REJECTED",
+    "rejection_reason": "120cd/m2 조도 기준 인포그래픽 시인성 개선 및 헤드라인 강조 필요",
+    "timestamp": "2026-09-16T13:15:20.956Z",
+    "metadata": {
+      "content_title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "source_count": 3
+    }
+  },
+  {
+    "log_id": "aud-4d5a95ca755d",
+    "event": "CONTENT_APPROVED",
+    "action": "APPROVE",
+    "content_id": "cnt-step11-test-02",
+    "version": 2,
+    "actor": "test_bulk_admin",
+    "run_id": "run-pipe-20260916224648-1a19cd",
+    "timestamp": "2026-09-16T14:03:35.837Z",
+    "details": {
+      "title": "[STEP 11 Test 02] 2026 카드뉴스 디자인 트렌드 가이드",
+      "platform": "instagram",
+      "content_type": "cardnews",
+      "bulk_action": true
+    }
+  },
+  {
+    "log_id": "aud-2146ce5a8e0e",
+    "event": "CONTENT_APPROVED",
+    "action": "APPROVE",
+    "content_id": "cnt-step11-test-02",
+    "version": 2,
+    "actor": "test_bulk_admin",
+    "run_id": "run-pipe-20260916224648-1a19cd",
+    "timestamp": "2026-09-16T14:06:21.414Z",
+    "details": {
+      "title": "[STEP 11 Test 02] 2026 카드뉴스 디자인 트렌드 가이드",
+      "platform": "instagram",
+      "content_type": "cardnews",
+      "bulk_action": true
+    }
+  },
+  {
+    "log_id": "aud-0c1c6791b5b0",
+    "event": "CONTENT_APPROVED",
+    "action": "APPROVE",
+    "content_id": "cnt-step11-test-02",
+    "version": 2,
+    "actor": "test_bulk_admin",
+    "run_id": "run-pipe-20260916224648-1a19cd",
+    "timestamp": "2026-09-16T14:06:42.666Z",
+    "details": {
+      "title": "[STEP 11 Test 02] 2026 카드뉴스 디자인 트렌드 가이드",
+      "platform": "instagram",
+      "content_type": "cardnews",
+      "bulk_action": true
+    }
+  },
+  {
+    "log_id": "aud-4e2f8da17925",
+    "event": "CONTENT_APPROVED",
+    "action": "APPROVE",
+    "content_id": "cnt-step11-test-02",
+    "version": 2,
+    "actor": "test_bulk_admin",
+    "run_id": "run-pipe-20260916230920-ca1964",
+    "timestamp": "2026-09-16T14:09:53.279Z",
+    "details": {
+      "title": "[STEP 11 Test 02] 2026 카드뉴스 디자인 트렌드 가이드",
+      "platform": "instagram",
+      "content_type": "cardnews",
+      "bulk_action": true
+    }
+  },
+  {
+    "log_id": "aud-7e64f3faa0b6",
+    "event": "CONTENT_APPROVED",
+    "action": "APPROVE",
+    "content_id": "cnt-step11-test-02",
+    "version": 2,
+    "actor": "test_bulk_admin",
+    "run_id": "run-pipe-20260916230920-ca1964",
+    "timestamp": "2026-09-16T14:10:13.991Z",
+    "details": {
+      "title": "[STEP 11 Test 02] 2026 카드뉴스 디자인 트렌드 가이드",
+      "platform": "instagram",
+      "content_type": "cardnews",
+      "bulk_action": true
+    }
+  },
+  {
+    "log_id": "aud-edf20cfa179a",
+    "event": "CONTENT_APPROVED",
+    "action": "APPROVE",
+    "content_id": "cnt-step11-test-02",
+    "version": 2,
+    "actor": "test_bulk_admin",
+    "run_id": "run-pipe-20260916231101-c502e6",
+    "timestamp": "2026-09-16T14:21:30.500Z",
+    "details": {
+      "title": "[STEP 11 Test 02] 2026 카드뉴스 디자인 트렌드 가이드",
+      "platform": "instagram",
+      "content_type": "cardnews",
+      "bulk_action": true
+    }
+  },
+  {
+    "log_id": "aud-ea6b2421eef3",
+    "event": "CONTENT_APPROVED",
+    "action": "APPROVE",
+    "content_id": "cnt-step11-test-02",
+    "version": 2,
+    "actor": "test_bulk_admin",
+    "run_id": "run-pipe-20260917111516-3561e5",
+    "timestamp": "2026-09-17T02:15:20.393Z",
+    "details": {
+      "title": "[STEP 11 Test 02] 2026 카드뉴스 디자인 트렌드 가이드",
+      "platform": "instagram",
+      "content_type": "cardnews",
+      "bulk_action": true
+    }
+  },
+  {
+    "log_id": "aud-34c85426b887",
+    "event": "CONTENT_APPROVED",
+    "action": "APPROVE",
+    "content_id": "cnt-step11-test-02",
+    "version": 2,
+    "actor": "test_bulk_admin",
+    "run_id": "run-pipe-20260917165622-a957c8",
+    "timestamp": "2026-09-17T07:56:26.992Z",
+    "details": {
+      "title": "[STEP 11 Test 02] 2026 카드뉴스 디자인 트렌드 가이드",
+      "platform": "instagram",
+      "content_type": "cardnews",
+      "bulk_action": true
+    }
+  },
+  {
+    "log_id": "aud-7c6290b35e1f",
+    "event": "CONTENT_APPROVED",
+    "action": "APPROVE",
+    "content_id": "cnt-step11-test-02",
+    "version": 2,
+    "actor": "test_bulk_admin",
+    "run_id": "run-pipe-20260917172902-cc5e2d",
+    "timestamp": "2026-09-17T08:29:06.788Z",
+    "details": {
+      "title": "[STEP 11 Test 02] 2026 카드뉴스 디자인 트렌드 가이드",
+      "platform": "instagram",
+      "content_type": "cardnews",
+      "bulk_action": true
+    }
+  },
+  {
+    "log_id": "aud-7cb210c9ddd9",
+    "event": "CONTENT_APPROVED",
+    "action": "APPROVE",
+    "content_id": "cnt-step11-test-02",
+    "version": 2,
+    "actor": "test_bulk_admin",
+    "run_id": "run-pipe-20260917212131-b6222d",
+    "timestamp": "2026-09-17T12:21:35.240Z",
+    "details": {
+      "title": "[STEP 11 Test 02] 2026 카드뉴스 디자인 트렌드 가이드",
+      "platform": "instagram",
+      "content_type": "cardnews",
+      "bulk_action": true
+    }
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "run_id": "national-run-20260916163644-e92b6d",
+    "workflow_name": "National Professor Automation",
+    "trigger_type": "manual",
+    "started_at": "2026-09-16T16:36:44.380334",
+    "completed_at": "2026-09-16T16:36:46.080487",
+    "status": "COMPLETED",
+    "total_universities": 3,
+    "total_departments": 11,
+    "total_professors": 11,
+    "success_count": 11,
+    "failed_count": 0,
+    "retry_count": 3,
+    "dry_run": false,
+    "batch_size": 3,
+    "concurrency_limit": 2
+  }
+]

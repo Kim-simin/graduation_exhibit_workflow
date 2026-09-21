@@ -1,0 +1,1973 @@
+{
+  "last_updated": "2026-09-16T16:36:46.078487",
+  "last_collected_at": "2026-09-16T16:36:46.078487",
+  "next_scheduled_at": "2026-09-16T22:36:46.078487",
+  "config": {
+    "batch_size": 2,
+    "rate_limit_delay_seconds": 0.5,
+    "max_retries": 3
+  },
+  "statistics": {
+    "total_universities": 53,
+    "completed": 7,
+    "in_progress": 0,
+    "failed": 0,
+    "new_professors": 18,
+    "updated_professors": 0,
+    "new_tasks": 11,
+    "new_collaborations": 19,
+    "progress_percentage": 13.2,
+    "last_collected_at": "2026-09-16T16:36:46.078487",
+    "next_scheduled_at": "2026-09-16T22:36:46.078487",
+    "total_departments": 177,
+    "total_professors": 11,
+    "retry_wait": 0,
+    "skipped": 0
+  },
+  "university_queue": [
+    {
+      "id": "univ-001-1",
+      "name": "가천대학교",
+      "raw_name": "가천대",
+      "status": "COMPLETED",
+      "departments_count": 1,
+      "professors_count": 2,
+      "retry_count": 1,
+      "max_retries": 3,
+      "last_attempt_at": "2026-09-15T20:39:17.458269",
+      "error_message": null
+    },
+    {
+      "id": "univ-002-2",
+      "name": "강원대학교",
+      "raw_name": "강원대",
+      "status": "COMPLETED",
+      "departments_count": 8,
+      "professors_count": 2,
+      "retry_count": 1,
+      "max_retries": 3,
+      "last_attempt_at": "2026-09-15T20:39:17.990036",
+      "error_message": null
+    },
+    {
+      "id": "univ-003-3",
+      "name": "건국대학교",
+      "raw_name": "건국대",
+      "status": "COMPLETED",
+      "departments_count": 1,
+      "professors_count": 2,
+      "retry_count": 1,
+      "max_retries": 3,
+      "last_attempt_at": "2026-09-15T20:41:34.108212",
+      "error_message": null
+    },
+    {
+      "id": "univ-004-4",
+      "name": "경남대학교",
+      "raw_name": "경남대",
+      "status": "COMPLETED",
+      "departments_count": 8,
+      "professors_count": 2,
+      "retry_count": 1,
+      "max_retries": 3,
+      "last_attempt_at": "2026-09-15T20:41:34.623896",
+      "error_message": null
+    },
+    {
+      "id": "univ-005-5",
+      "name": "경북대학교",
+      "raw_name": "경북대",
+      "status": "PENDING",
+      "departments_count": 8,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-006-6",
+      "name": "경희대학교",
+      "raw_name": "경희대",
+      "status": "PENDING",
+      "departments_count": 4,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-007-7",
+      "name": "계명대학교",
+      "raw_name": "계명대",
+      "status": "PENDING",
+      "departments_count": 8,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-008-8",
+      "name": "고려대학교",
+      "raw_name": "고려대",
+      "status": "PENDING",
+      "departments_count": 5,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-009-9",
+      "name": "국민대학교",
+      "raw_name": "국민대",
+      "status": "COMPLETED",
+      "departments_count": 3,
+      "professors_count": 3,
+      "retry_count": 1,
+      "max_retries": 3,
+      "last_attempt_at": "2026-09-16T16:36:44.380334",
+      "error_message": null,
+      "started_at": "2026-09-16T16:36:44.380334",
+      "attempt_count": 1,
+      "completed_at": "2026-09-16T16:36:44.927569"
+    },
+    {
+      "id": "univ-010-10",
+      "name": "단국대학교",
+      "raw_name": "단국대",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-011-11",
+      "name": "대구가톨릭대학교",
+      "raw_name": "대구가톨릭대",
+      "status": "PENDING",
+      "departments_count": 8,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-012-12",
+      "name": "덕성여자대학교",
+      "raw_name": "덕성여자대학교",
+      "status": "PENDING",
+      "departments_count": 4,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-013-13",
+      "name": "동국대학교",
+      "raw_name": "동국대",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-014-14",
+      "name": "동덕여자대학교",
+      "raw_name": "동덕여대",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-015-15",
+      "name": "동서대학교",
+      "raw_name": "동서대",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-016-16",
+      "name": "동양대학교",
+      "raw_name": "동양대",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-017-17",
+      "name": "배재대학교",
+      "raw_name": "배재대",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-018-18",
+      "name": "부산대학교",
+      "raw_name": "부산대",
+      "status": "PENDING",
+      "departments_count": 8,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-019-19",
+      "name": "삼육대학교",
+      "raw_name": "삼육대학교",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-020-20",
+      "name": "상명대학교",
+      "raw_name": "상명대",
+      "status": "PENDING",
+      "departments_count": 6,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-021-21",
+      "name": "서경대학교",
+      "raw_name": "서경대학교",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-022-22",
+      "name": "서울과학기술대학교",
+      "raw_name": "서울과기대",
+      "status": "PENDING",
+      "departments_count": 2,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-023-23",
+      "name": "서울대학교",
+      "raw_name": "서울대",
+      "status": "PENDING",
+      "departments_count": 3,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-024-24",
+      "name": "서울시립대학교",
+      "raw_name": "서울시립대",
+      "status": "PENDING",
+      "departments_count": 2,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-025-25",
+      "name": "서울여대학교",
+      "raw_name": "서울여대",
+      "status": "PENDING",
+      "departments_count": 2,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-026-26",
+      "name": "서울여자대학교",
+      "raw_name": "서울여자대학교",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-027-27",
+      "name": "서울예대학교",
+      "raw_name": "서울예대",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-028-28",
+      "name": "성균관대학교",
+      "raw_name": "성균관대",
+      "status": "PENDING",
+      "departments_count": 2,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-029-29",
+      "name": "성신여자대학교",
+      "raw_name": "성신여대",
+      "status": "PENDING",
+      "departments_count": 3,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-030-30",
+      "name": "세종대학교",
+      "raw_name": "세종대",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-031-31",
+      "name": "숙명여자대학교",
+      "raw_name": "숙명여대",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-032-32",
+      "name": "안양대학교",
+      "raw_name": "안양대",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-033-33",
+      "name": "연세대학교",
+      "raw_name": "연세대",
+      "status": "PENDING",
+      "departments_count": 2,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-034-34",
+      "name": "울산대학교",
+      "raw_name": "울산대",
+      "status": "PENDING",
+      "departments_count": 8,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-035-35",
+      "name": "이화여자대학교",
+      "raw_name": "이화여대",
+      "status": "COMPLETED",
+      "departments_count": 4,
+      "professors_count": 4,
+      "retry_count": 1,
+      "max_retries": 3,
+      "last_attempt_at": "2026-09-16T16:36:44.929569",
+      "error_message": null,
+      "started_at": "2026-09-16T16:36:44.929569",
+      "attempt_count": 1,
+      "completed_at": "2026-09-16T16:36:45.514043"
+    },
+    {
+      "id": "univ-036-36",
+      "name": "인천대학교",
+      "raw_name": "인천대",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-037-37",
+      "name": "전남대학교",
+      "raw_name": "전남대",
+      "status": "PENDING",
+      "departments_count": 8,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-038-38",
+      "name": "전북대학교",
+      "raw_name": "전북대",
+      "status": "PENDING",
+      "departments_count": 8,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-039-39",
+      "name": "제주대학교",
+      "raw_name": "제주대",
+      "status": "PENDING",
+      "departments_count": 8,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-040-40",
+      "name": "중앙대학교",
+      "raw_name": "중앙대",
+      "status": "PENDING",
+      "departments_count": 4,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-041-41",
+      "name": "추계예대학교",
+      "raw_name": "추계예대",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-042-42",
+      "name": "충남대학교",
+      "raw_name": "충남대",
+      "status": "PENDING",
+      "departments_count": 8,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-043-43",
+      "name": "충북대학교",
+      "raw_name": "충북대",
+      "status": "PENDING",
+      "departments_count": 8,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-044-44",
+      "name": "한국공학대학교",
+      "raw_name": "한국공학대",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-045-45",
+      "name": "한국기술교육대학교",
+      "raw_name": "한국기술교육대학교",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-046-46",
+      "name": "한국영상대학교",
+      "raw_name": "한국영상대",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-047-47",
+      "name": "한국전통문화대학교",
+      "raw_name": "한국전통문화대",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-048-48",
+      "name": "한성대학교",
+      "raw_name": "한성대",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-049-49",
+      "name": "한세대학교",
+      "raw_name": "한세대학교",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-050-50",
+      "name": "한양대학교",
+      "raw_name": "한양대",
+      "status": "PENDING",
+      "departments_count": 3,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-051-51",
+      "name": "한예종",
+      "raw_name": "한예종",
+      "status": "PENDING",
+      "departments_count": 4,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-052-52",
+      "name": "호서대학교",
+      "raw_name": "호서대학교",
+      "status": "PENDING",
+      "departments_count": 1,
+      "professors_count": 0,
+      "retry_count": 0,
+      "max_retries": 3,
+      "last_attempt_at": null,
+      "error_message": null
+    },
+    {
+      "id": "univ-053-53",
+      "name": "홍익대학교",
+      "raw_name": "홍익대",
+      "status": "COMPLETED",
+      "departments_count": 4,
+      "professors_count": 4,
+      "retry_count": 1,
+      "max_retries": 3,
+      "last_attempt_at": "2026-09-16T16:36:45.515215",
+      "error_message": null,
+      "started_at": "2026-09-16T16:36:45.515215",
+      "attempt_count": 1,
+      "completed_at": "2026-09-16T16:36:46.077487"
+    }
+  ],
+  "department_queue": [
+    {
+      "id": "dept-univ-001-1-1",
+      "university_name": "가천대학교",
+      "department_name": "회화·조소",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-002-2-1",
+      "university_name": "강원대학교",
+      "department_name": "건축공학/실내",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-002-2-2",
+      "university_name": "강원대학교",
+      "department_name": "공예디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-002-2-3",
+      "university_name": "강원대학교",
+      "department_name": "디자인학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-002-2-4",
+      "university_name": "강원대학교",
+      "department_name": "미술학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-002-2-5",
+      "university_name": "강원대학교",
+      "department_name": "산업디자인/게임",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-002-2-6",
+      "university_name": "강원대학교",
+      "department_name": "시각커뮤니케이션",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-002-2-7",
+      "university_name": "강원대학교",
+      "department_name": "영상문화",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-002-2-8",
+      "university_name": "강원대학교",
+      "department_name": "의류디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-003-3-1",
+      "university_name": "건국대학교",
+      "department_name": "영상학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-004-4-1",
+      "university_name": "경남대학교",
+      "department_name": "공예디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-004-4-2",
+      "university_name": "경남대학교",
+      "department_name": "광고디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-004-4-3",
+      "university_name": "경남대학교",
+      "department_name": "디자인학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-004-4-4",
+      "university_name": "경남대학교",
+      "department_name": "미디어영상",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-004-4-5",
+      "university_name": "경남대학교",
+      "department_name": "미술교육과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-004-4-6",
+      "university_name": "경남대학교",
+      "department_name": "실내디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-004-4-7",
+      "university_name": "경남대학교",
+      "department_name": "의류패션",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-004-4-8",
+      "university_name": "경남대학교",
+      "department_name": "제품디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-005-5-1",
+      "university_name": "경북대학교",
+      "department_name": "건축학부",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-005-5-2",
+      "university_name": "경북대학교",
+      "department_name": "디지털미디어아트",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-005-5-3",
+      "university_name": "경북대학교",
+      "department_name": "미술학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-005-5-4",
+      "university_name": "경북대학교",
+      "department_name": "섬유공예",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-005-5-5",
+      "university_name": "경북대학교",
+      "department_name": "시각디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-005-5-6",
+      "university_name": "경북대학교",
+      "department_name": "시각커뮤니케이션",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-005-5-7",
+      "university_name": "경북대학교",
+      "department_name": "융합디자인/제품",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-005-5-8",
+      "university_name": "경북대학교",
+      "department_name": "의류학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-006-6-1",
+      "university_name": "경희대학교",
+      "department_name": "건축학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-006-6-2",
+      "university_name": "경희대학교",
+      "department_name": "미술대",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-006-6-3",
+      "university_name": "경희대학교",
+      "department_name": "시각디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-006-6-4",
+      "university_name": "경희대학교",
+      "department_name": "실내건축",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-007-7-1",
+      "university_name": "계명대학교",
+      "department_name": "공예디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-007-7-2",
+      "university_name": "계명대학교",
+      "department_name": "산업디자인/게임",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-007-7-3",
+      "university_name": "계명대학교",
+      "department_name": "시각디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-007-7-4",
+      "university_name": "계명대학교",
+      "department_name": "시각디자인/광고",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-007-7-5",
+      "university_name": "계명대학교",
+      "department_name": "실내환경디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-007-7-6",
+      "university_name": "계명대학교",
+      "department_name": "영상애니메이션",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-007-7-7",
+      "university_name": "계명대학교",
+      "department_name": "패션디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-007-7-8",
+      "university_name": "계명대학교",
+      "department_name": "회화과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-008-8-1",
+      "university_name": "고려대학교",
+      "department_name": "건축학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-008-8-2",
+      "university_name": "고려대학교",
+      "department_name": "디자인조형학부 (제품개발)",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-008-8-3",
+      "university_name": "고려대학교",
+      "department_name": "디자인조형학부 (제품시스템디자인)",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-008-8-4",
+      "university_name": "고려대학교",
+      "department_name": "디자인조형학부 (조형예술)",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-008-8-5",
+      "university_name": "고려대학교",
+      "department_name": "산업정보디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-009-9-1",
+      "university_name": "국민대학교",
+      "department_name": "공간/영상디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-009-9-2",
+      "university_name": "국민대학교",
+      "department_name": "공간디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-009-9-3",
+      "university_name": "국민대학교",
+      "department_name": "시각디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-010-10-1",
+      "university_name": "단국대학교",
+      "department_name": "동양화/서양화",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-011-11-1",
+      "university_name": "대구가톨릭대학교",
+      "department_name": "금속도자공예",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-011-11-2",
+      "university_name": "대구가톨릭대학교",
+      "department_name": "미디어아트",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-011-11-3",
+      "university_name": "대구가톨릭대학교",
+      "department_name": "시각디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-011-11-4",
+      "university_name": "대구가톨릭대학교",
+      "department_name": "시각커뮤니케이션",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-011-11-5",
+      "university_name": "대구가톨릭대학교",
+      "department_name": "실내디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-011-11-6",
+      "university_name": "대구가톨릭대학교",
+      "department_name": "제품디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-011-11-7",
+      "university_name": "대구가톨릭대학교",
+      "department_name": "패션디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-011-11-8",
+      "university_name": "대구가톨릭대학교",
+      "department_name": "회화전공",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-012-12-1",
+      "university_name": "덕성여자대학교",
+      "department_name": "시각디자인전공 (스토리텔링 일러스트 디자인)",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-012-12-2",
+      "university_name": "덕성여자대학교",
+      "department_name": "시각디자인전공 (영상 콘텐츠 디자인)",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-012-12-3",
+      "university_name": "덕성여자대학교",
+      "department_name": "시각디자인전공 (커뮤니케이션 디자인)",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-012-12-4",
+      "university_name": "덕성여자대학교",
+      "department_name": "텍스타일",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-013-13-1",
+      "university_name": "동국대학교",
+      "department_name": "불교미술/조소",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-014-14-1",
+      "university_name": "동덕여자대학교",
+      "department_name": "디지털공예",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-015-15-1",
+      "university_name": "동서대학교",
+      "department_name": "제품인터랙션",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-016-16-1",
+      "university_name": "동양대학교",
+      "department_name": "디자인학부/순수미술",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-017-17-1",
+      "university_name": "배재대학교",
+      "department_name": "미술디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-018-18-1",
+      "university_name": "부산대학교",
+      "department_name": "디자인학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-018-18-2",
+      "university_name": "부산대학교",
+      "department_name": "미술학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-018-18-3",
+      "university_name": "부산대학교",
+      "department_name": "시각커뮤니케이션",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-018-18-4",
+      "university_name": "부산대학교",
+      "department_name": "실내환경디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-018-18-5",
+      "university_name": "부산대학교",
+      "department_name": "예술문화영상",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-018-18-6",
+      "university_name": "부산대학교",
+      "department_name": "의류학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-018-18-7",
+      "university_name": "부산대학교",
+      "department_name": "제품디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-018-18-8",
+      "university_name": "부산대학교",
+      "department_name": "조형학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-019-19-1",
+      "university_name": "삼육대학교",
+      "department_name": "아트앤디자인학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-020-20-1",
+      "university_name": "상명대학교",
+      "department_name": "AR·VR/디지털콘텐츠",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-020-20-2",
+      "university_name": "상명대학교",
+      "department_name": "AR·VR미디어디자인/디지털콘텐츠",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-020-20-3",
+      "university_name": "상명대학교",
+      "department_name": "디자인학부 혁신디자인스튜디오",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-020-20-4",
+      "university_name": "상명대학교",
+      "department_name": "문화예술대학·디자인대학·예술대학 19개 학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-020-20-5",
+      "university_name": "상명대학교",
+      "department_name": "생활예술",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-020-20-6",
+      "university_name": "상명대학교",
+      "department_name": "융합디자인스튜디오",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-021-21-1",
+      "university_name": "서경대학교",
+      "department_name": "시각정보디자인전공",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-022-22-1",
+      "university_name": "서울과학기술대학교",
+      "department_name": "건축학부",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-022-22-2",
+      "university_name": "서울과학기술대학교",
+      "department_name": "산업디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-023-23-1",
+      "university_name": "서울대학교",
+      "department_name": "건축학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-023-23-2",
+      "university_name": "서울대학교",
+      "department_name": "디자인과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-023-23-3",
+      "university_name": "서울대학교",
+      "department_name": "시각디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-024-24-1",
+      "university_name": "서울시립대학교",
+      "department_name": "건축학부",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-024-24-2",
+      "university_name": "서울시립대학교",
+      "department_name": "시각디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-025-25-1",
+      "university_name": "서울여대학교",
+      "department_name": "의류",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-025-25-2",
+      "university_name": "서울여대학교",
+      "department_name": "현대미술",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-026-26-1",
+      "university_name": "서울여자대학교",
+      "department_name": "디지털미디어학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-027-27-1",
+      "university_name": "서울예대학교",
+      "department_name": "디지털아트",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-028-28-1",
+      "university_name": "성균관대학교",
+      "department_name": "건축학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-028-28-2",
+      "university_name": "성균관대학교",
+      "department_name": "시각디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-029-29-1",
+      "university_name": "성신여자대학교",
+      "department_name": "금속/도자/섬유",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-029-29-2",
+      "university_name": "성신여자대학교",
+      "department_name": "서양화",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-029-29-3",
+      "university_name": "성신여자대학교",
+      "department_name": "섬유",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-030-30-1",
+      "university_name": "세종대학교",
+      "department_name": "회화",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-031-31-1",
+      "university_name": "숙명여자대학교",
+      "department_name": "공예",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-032-32-1",
+      "university_name": "안양대학교",
+      "department_name": "공연예술/회화",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-033-33-1",
+      "university_name": "연세대학교",
+      "department_name": "시각디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-033-33-2",
+      "university_name": "연세대학교",
+      "department_name": "실내건축",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-034-34-1",
+      "university_name": "울산대학교",
+      "department_name": "디자인학부",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-034-34-2",
+      "university_name": "울산대학교",
+      "department_name": "서양화전공",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-034-34-3",
+      "university_name": "울산대학교",
+      "department_name": "섬유공예",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-034-34-4",
+      "university_name": "울산대학교",
+      "department_name": "시각디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-034-34-5",
+      "university_name": "울산대학교",
+      "department_name": "실내공간디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-034-34-6",
+      "university_name": "울산대학교",
+      "department_name": "영상디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-034-34-7",
+      "university_name": "울산대학교",
+      "department_name": "의류학전공",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-034-34-8",
+      "university_name": "울산대학교",
+      "department_name": "제품인터랙션",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-035-35-1",
+      "university_name": "이화여자대학교",
+      "department_name": "디자인학부",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-035-35-2",
+      "university_name": "이화여자대학교",
+      "department_name": "서양화/섬유예술",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-035-35-3",
+      "university_name": "이화여자대학교",
+      "department_name": "섬유예술",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-035-35-4",
+      "university_name": "이화여자대학교",
+      "department_name": "시각디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-036-36-1",
+      "university_name": "인천대학교",
+      "department_name": "디자인학부",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-037-37-1",
+      "university_name": "전남대학교",
+      "department_name": "건축학부",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-037-37-2",
+      "university_name": "전남대학교",
+      "department_name": "공예학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-037-37-3",
+      "university_name": "전남대학교",
+      "department_name": "디자인학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-037-37-4",
+      "university_name": "전남대학교",
+      "department_name": "미술학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-037-37-5",
+      "university_name": "전남대학교",
+      "department_name": "시각정보디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-037-37-6",
+      "university_name": "전남대학교",
+      "department_name": "애니메이션",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-037-37-7",
+      "university_name": "전남대학교",
+      "department_name": "의류학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-037-37-8",
+      "university_name": "전남대학교",
+      "department_name": "제품인터랙션",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-038-38-1",
+      "university_name": "전북대학교",
+      "department_name": "미술학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-038-38-2",
+      "university_name": "전북대학교",
+      "department_name": "산업공예",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-038-38-3",
+      "university_name": "전북대학교",
+      "department_name": "산업디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-038-38-4",
+      "university_name": "전북대학교",
+      "department_name": "산업인터랙션",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-038-38-5",
+      "university_name": "전북대학교",
+      "department_name": "시각커뮤니케이션",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-038-38-6",
+      "university_name": "전북대학교",
+      "department_name": "영상디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-038-38-7",
+      "university_name": "전북대학교",
+      "department_name": "의류학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-038-38-8",
+      "university_name": "전북대학교",
+      "department_name": "주거환경학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-039-39-1",
+      "university_name": "제주대학교",
+      "department_name": "건축학부",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-039-39-2",
+      "university_name": "제주대학교",
+      "department_name": "멀티미디어디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-039-39-3",
+      "university_name": "제주대학교",
+      "department_name": "멀티미디어영상",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-039-39-4",
+      "university_name": "제주대학교",
+      "department_name": "문화커뮤니케이션",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-039-39-5",
+      "university_name": "제주대학교",
+      "department_name": "미술학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-039-39-6",
+      "university_name": "제주대학교",
+      "department_name": "스마트융합디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-039-39-7",
+      "university_name": "제주대학교",
+      "department_name": "융합공예",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-039-39-8",
+      "university_name": "제주대학교",
+      "department_name": "패션의류",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-040-40-1",
+      "university_name": "중앙대학교",
+      "department_name": "사진",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-040-40-2",
+      "university_name": "중앙대학교",
+      "department_name": "사진학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-040-40-3",
+      "university_name": "중앙대학교",
+      "department_name": "실내환경디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-040-40-4",
+      "university_name": "중앙대학교",
+      "department_name": "조소",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-041-41-1",
+      "university_name": "추계예대학교",
+      "department_name": "서양화과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-042-42-1",
+      "university_name": "충남대학교",
+      "department_name": "건축공학과/실내",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-042-42-2",
+      "university_name": "충남대학교",
+      "department_name": "도자공예",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-042-42-3",
+      "university_name": "충남대학교",
+      "department_name": "디자인창의학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-042-42-4",
+      "university_name": "충남대학교",
+      "department_name": "미디어커뮤니케이션",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-042-42-5",
+      "university_name": "충남대학교",
+      "department_name": "산업디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-042-42-6",
+      "university_name": "충남대학교",
+      "department_name": "시각커뮤니케이션",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-042-42-7",
+      "university_name": "충남대학교",
+      "department_name": "의류학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-042-42-8",
+      "university_name": "충남대학교",
+      "department_name": "회화과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-043-43-1",
+      "university_name": "충북대학교",
+      "department_name": "도자/섬유",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-043-43-2",
+      "university_name": "충북대학교",
+      "department_name": "디자인학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-043-43-3",
+      "university_name": "충북대학교",
+      "department_name": "디지털콘텐츠",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-043-43-4",
+      "university_name": "충북대학교",
+      "department_name": "시각디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-043-43-5",
+      "university_name": "충북대학교",
+      "department_name": "제품디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-043-43-6",
+      "university_name": "충북대학교",
+      "department_name": "조형예술학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-043-43-7",
+      "university_name": "충북대학교",
+      "department_name": "주거환경",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-043-43-8",
+      "university_name": "충북대학교",
+      "department_name": "패션디자인정보",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-044-44-1",
+      "university_name": "한국공학대학교",
+      "department_name": "디자인공학",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-045-45-1",
+      "university_name": "한국기술교육대학교",
+      "department_name": "디자인공학전공",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-046-46-1",
+      "university_name": "한국영상대학교",
+      "department_name": "영상콘텐츠",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-047-47-1",
+      "university_name": "한국전통문화대학교",
+      "department_name": "전통미술공예",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-048-48-1",
+      "university_name": "한성대학교",
+      "department_name": "패션디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-049-49-1",
+      "university_name": "한세대학교",
+      "department_name": "시각정보디자인학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-050-50-1",
+      "university_name": "한양대학교",
+      "department_name": "광고홍보",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-050-50-2",
+      "university_name": "한양대학교",
+      "department_name": "실내건축디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-050-50-3",
+      "university_name": "한양대학교",
+      "department_name": "응용미술교육",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-051-51-1",
+      "university_name": "한예종",
+      "department_name": "게임·인터랙션",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-051-51-2",
+      "university_name": "한예종",
+      "department_name": "디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-051-51-3",
+      "university_name": "한예종",
+      "department_name": "미술원",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-051-51-4",
+      "university_name": "한예종",
+      "department_name": "영상원",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-052-52-1",
+      "university_name": "호서대학교",
+      "department_name": "건축학과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-053-53-1",
+      "university_name": "홍익대학교",
+      "department_name": "산업디자인과",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-053-53-2",
+      "university_name": "홍익대학교",
+      "department_name": "시각디자인",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-053-53-3",
+      "university_name": "홍익대학교",
+      "department_name": "실내건축학",
+      "status": "PENDING"
+    },
+    {
+      "id": "dept-univ-053-53-4",
+      "university_name": "홍익대학교",
+      "department_name": "판화/서양화/동양화/조소",
+      "status": "PENDING"
+    }
+  ],
+  "professor_queue": [
+    {
+      "job_id": "job-prof-u-d-4aa59f",
+      "run_id": "national-run-20260916163644",
+      "professor_id": "prof-u-국민교수",
+      "university_id": "univ-u",
+      "department_id": "dept-국민대학교-공간/영상디자인",
+      "university_name": "국민대학교",
+      "department_name": "공간/영상디자인",
+      "candidate_name": "국민교수",
+      "official_profile_url": "https://design.univ6daf.ac.kr/faculty/prof_6daf",
+      "source_url": "https://design.univ6daf.ac.kr/faculty/prof_6daf",
+      "verification_status": "VERIFIED",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "priority": 1,
+      "created_at": "2026-09-16T16:36:44.882225",
+      "started_at": "2026-09-16T16:36:44.885741",
+      "completed_at": "2026-09-16T16:36:44.900953",
+      "last_error": null,
+      "next_retry_at": null
+    },
+    {
+      "job_id": "job-prof-u-d-925e3c",
+      "run_id": "national-run-20260916163644",
+      "professor_id": "prof-u-국민교수",
+      "university_id": "univ-u",
+      "department_id": "dept-국민대학교-공간디자인",
+      "university_name": "국민대학교",
+      "department_name": "공간디자인",
+      "candidate_name": "국민교수",
+      "official_profile_url": "https://design.univ6bf0.ac.kr/faculty/prof_6bf0",
+      "source_url": "https://design.univ6bf0.ac.kr/faculty/prof_6bf0",
+      "verification_status": "VERIFIED",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "priority": 1,
+      "created_at": "2026-09-16T16:36:44.882225",
+      "started_at": "2026-09-16T16:36:44.900953",
+      "completed_at": "2026-09-16T16:36:44.916380",
+      "last_error": null,
+      "next_retry_at": null
+    },
+    {
+      "job_id": "job-prof-u-d-f2c767",
+      "run_id": "national-run-20260916163644",
+      "professor_id": "prof-u-국민교수",
+      "university_id": "univ-u",
+      "department_id": "dept-국민대학교-시각디자인",
+      "university_name": "국민대학교",
+      "department_name": "시각디자인",
+      "candidate_name": "국민교수",
+      "official_profile_url": "https://design.univ69a5.ac.kr/faculty/prof_69a5",
+      "source_url": "https://design.univ69a5.ac.kr/faculty/prof_69a5",
+      "verification_status": "VERIFIED",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "priority": 1,
+      "created_at": "2026-09-16T16:36:44.882225",
+      "started_at": "2026-09-16T16:36:44.916380",
+      "completed_at": "2026-09-16T16:36:44.927569",
+      "last_error": null,
+      "next_retry_at": null
+    },
+    {
+      "job_id": "job-prof-u-d-c5d2cb",
+      "run_id": "national-run-20260916163645",
+      "professor_id": "prof-u-이화교수",
+      "university_id": "univ-u",
+      "department_id": "dept-이화여자대학교-디자인학부",
+      "university_name": "이화여자대학교",
+      "department_name": "디자인학부",
+      "candidate_name": "이화교수",
+      "official_profile_url": "https://design.univf3c7.ac.kr/faculty/prof_f3c7",
+      "source_url": "https://design.univf3c7.ac.kr/faculty/prof_f3c7",
+      "verification_status": "VERIFIED",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "priority": 1,
+      "created_at": "2026-09-16T16:36:45.431627",
+      "started_at": "2026-09-16T16:36:45.433140",
+      "completed_at": "2026-09-16T16:36:45.445478",
+      "last_error": null,
+      "next_retry_at": null
+    },
+    {
+      "job_id": "job-prof-u-d-39ad90",
+      "run_id": "national-run-20260916163645",
+      "professor_id": "prof-u-이화교수",
+      "university_id": "univ-u",
+      "department_id": "dept-이화여자대학교-서양화/섬유예술",
+      "university_name": "이화여자대학교",
+      "department_name": "서양화/섬유예술",
+      "candidate_name": "이화교수",
+      "official_profile_url": "https://design.univ769b.ac.kr/faculty/prof_769b",
+      "source_url": "https://design.univ769b.ac.kr/faculty/prof_769b",
+      "verification_status": "VERIFIED",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "priority": 1,
+      "created_at": "2026-09-16T16:36:45.431627",
+      "started_at": "2026-09-16T16:36:45.445478",
+      "completed_at": "2026-09-16T16:36:45.461444",
+      "last_error": null,
+      "next_retry_at": null
+    },
+    {
+      "job_id": "job-prof-u-d-d1aeda",
+      "run_id": "national-run-20260916163645",
+      "professor_id": "prof-u-이화교수",
+      "university_id": "univ-u",
+      "department_id": "dept-이화여자대학교-섬유예술",
+      "university_name": "이화여자대학교",
+      "department_name": "섬유예술",
+      "candidate_name": "이화교수",
+      "official_profile_url": "https://design.univ1ba9.ac.kr/faculty/prof_1ba9",
+      "source_url": "https://design.univ1ba9.ac.kr/faculty/prof_1ba9",
+      "verification_status": "VERIFIED",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "priority": 1,
+      "created_at": "2026-09-16T16:36:45.431627",
+      "started_at": "2026-09-16T16:36:45.461444",
+      "completed_at": "2026-09-16T16:36:45.475450",
+      "last_error": null,
+      "next_retry_at": null
+    },
+    {
+      "job_id": "job-prof-u-d-ece2b8",
+      "run_id": "national-run-20260916163645",
+      "professor_id": "prof-u-이화교수",
+      "university_id": "univ-u",
+      "department_id": "dept-이화여자대학교-시각디자인",
+      "university_name": "이화여자대학교",
+      "department_name": "시각디자인",
+      "candidate_name": "이화교수",
+      "official_profile_url": "https://design.univ41e0.ac.kr/faculty/prof_41e0",
+      "source_url": "https://design.univ41e0.ac.kr/faculty/prof_41e0",
+      "verification_status": "VERIFIED",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "priority": 1,
+      "created_at": "2026-09-16T16:36:45.431627",
+      "started_at": "2026-09-16T16:36:45.475450",
+      "completed_at": "2026-09-16T16:36:45.514043",
+      "last_error": null,
+      "next_retry_at": null
+    },
+    {
+      "job_id": "job-prof-u-d-a4f4a6",
+      "run_id": "national-run-20260916163646",
+      "professor_id": "prof-u-홍익교수",
+      "university_id": "univ-u",
+      "department_id": "dept-홍익대학교-산업디자인과",
+      "university_name": "홍익대학교",
+      "department_name": "산업디자인과",
+      "candidate_name": "홍익교수",
+      "official_profile_url": "https://design.univ655c.ac.kr/faculty/prof_655c",
+      "source_url": "https://design.univ655c.ac.kr/faculty/prof_655c",
+      "verification_status": "VERIFIED",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "priority": 1,
+      "created_at": "2026-09-16T16:36:46.017918",
+      "started_at": "2026-09-16T16:36:46.019933",
+      "completed_at": "2026-09-16T16:36:46.032634",
+      "last_error": null,
+      "next_retry_at": null
+    },
+    {
+      "job_id": "job-prof-u-d-b38c5c",
+      "run_id": "national-run-20260916163646",
+      "professor_id": "prof-u-강동원",
+      "university_id": "univ-u",
+      "department_id": "dept-홍익대학교-시각디자인",
+      "university_name": "홍익대학교",
+      "department_name": "시각디자인",
+      "candidate_name": "강동원",
+      "official_profile_url": "https://sidi.hongik.ac.kr/faculty/dwkang",
+      "source_url": "https://sidi.hongik.ac.kr/faculty/dwkang",
+      "verification_status": "VERIFIED",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "priority": 1,
+      "created_at": "2026-09-16T16:36:46.017918",
+      "started_at": "2026-09-16T16:36:46.032634",
+      "completed_at": "2026-09-16T16:36:46.046553",
+      "last_error": null,
+      "next_retry_at": null
+    },
+    {
+      "job_id": "job-prof-u-d-ca197e",
+      "run_id": "national-run-20260916163646",
+      "professor_id": "prof-u-홍익교수",
+      "university_id": "univ-u",
+      "department_id": "dept-홍익대학교-실내건축학",
+      "university_name": "홍익대학교",
+      "department_name": "실내건축학",
+      "candidate_name": "홍익교수",
+      "official_profile_url": "https://design.univ6e78.ac.kr/faculty/prof_6e78",
+      "source_url": "https://design.univ6e78.ac.kr/faculty/prof_6e78",
+      "verification_status": "VERIFIED",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "priority": 1,
+      "created_at": "2026-09-16T16:36:46.017918",
+      "started_at": "2026-09-16T16:36:46.046553",
+      "completed_at": "2026-09-16T16:36:46.060942",
+      "last_error": null,
+      "next_retry_at": null
+    },
+    {
+      "job_id": "job-prof-u-d-c38918",
+      "run_id": "national-run-20260916163646",
+      "professor_id": "prof-u-홍익교수",
+      "university_id": "univ-u",
+      "department_id": "dept-홍익대학교-판화/서양화/동양화/조소",
+      "university_name": "홍익대학교",
+      "department_name": "판화/서양화/동양화/조소",
+      "candidate_name": "홍익교수",
+      "official_profile_url": "https://design.univ1699.ac.kr/faculty/prof_1699",
+      "source_url": "https://design.univ1699.ac.kr/faculty/prof_1699",
+      "verification_status": "VERIFIED",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "priority": 1,
+      "created_at": "2026-09-16T16:36:46.017918",
+      "started_at": "2026-09-16T16:36:46.060942",
+      "completed_at": "2026-09-16T16:36:46.077487",
+      "last_error": null,
+      "next_retry_at": null
+    }
+  ],
+  "failed_universities": [],
+  "failed_professors": []
+}

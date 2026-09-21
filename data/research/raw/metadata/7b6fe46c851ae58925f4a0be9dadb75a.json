@@ -1,0 +1,16 @@
+{
+  "content_hash": "7b6fe46c851ae58925f4a0be9dadb75a",
+  "url": "https://snowcorp.com/ko/about",
+  "final_url": "https://snowcorp.com/ko/about",
+  "canonical_url": "https://snowcorp.com/ko/about",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "title": "네이버 공식 계열/자회사 공시",
+  "accessed_at": "2026-09-17T21:21:48.161928",
+  "crawler_version": "1.0.0",
+  "html_path": "data/research/raw/html/7b6fe46c851ae58925f4a0be9dadb75a.html",
+  "text_path": "data/research/raw/text/7b6fe46c851ae58925f4a0be9dadb75a.txt",
+  "screenshot_path": null,
+  "metadata_path": "data/research/raw/metadata/7b6fe46c851ae58925f4a0be9dadb75a.json",
+  "extra": {}
+}

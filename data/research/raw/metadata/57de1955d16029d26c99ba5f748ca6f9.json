@@ -1,0 +1,19 @@
+{
+  "content_hash": "57de1955d16029d26c99ba5f748ca6f9",
+  "url": "https://sidi.hongik.ac.kr",
+  "final_url": "https://sidi.hongik.ac.kr/",
+  "canonical_url": "",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "title": "홍익대학교 미술대학 시각디자인과 Hongik University Visual Communication Department",
+  "accessed_at": "2026-09-17T16:56:12.472547",
+  "crawler_version": "1.0.0",
+  "html_path": "data/research/raw/html/57de1955d16029d26c99ba5f748ca6f9.html",
+  "text_path": "data/research/raw/text/57de1955d16029d26c99ba5f748ca6f9.txt",
+  "screenshot_path": "data/research/raw/screenshot/57de1955d16029d26c99ba5f748ca6f9.png",
+  "metadata_path": "data/research/raw/metadata/57de1955d16029d26c99ba5f748ca6f9.json",
+  "extra": {
+    "links_count": 35,
+    "images_count": 9
+  }
+}

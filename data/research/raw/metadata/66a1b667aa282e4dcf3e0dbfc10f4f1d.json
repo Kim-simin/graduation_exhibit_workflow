@@ -1,0 +1,16 @@
+{
+  "content_hash": "66a1b667aa282e4dcf3e0dbfc10f4f1d",
+  "url": "https://www.bostondynamics.com/about",
+  "final_url": "https://www.bostondynamics.com/about",
+  "canonical_url": "https://www.bostondynamics.com/about",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "title": "현대자동차 공식 계열/자회사 공시",
+  "accessed_at": "2026-09-17T21:21:48.157616",
+  "crawler_version": "1.0.0",
+  "html_path": "data/research/raw/html/66a1b667aa282e4dcf3e0dbfc10f4f1d.html",
+  "text_path": "data/research/raw/text/66a1b667aa282e4dcf3e0dbfc10f4f1d.txt",
+  "screenshot_path": null,
+  "metadata_path": "data/research/raw/metadata/66a1b667aa282e4dcf3e0dbfc10f4f1d.json",
+  "extra": {}
+}

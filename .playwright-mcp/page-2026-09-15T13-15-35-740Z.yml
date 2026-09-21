@@ -1,0 +1,11 @@
+- generic [ref=e1]:
+  - heading "Playwright MCP Automated Verification Page" [level=1] [ref=e2]
+  - paragraph [ref=e3]: 이 페이지는 Playwright MCP의 탐색, 클릭, 스크롤, 스크린샷 기능을 검증하기 위한 로컬 테스트 페이지입니다.
+  - button "클릭됨" [active] [ref=e12] [cursor=pointer]
+  - generic [ref=e5]: 버튼 클릭 성공 (Clicked!)
+  - generic [ref=e6]:
+    - heading "스크롤 영역 1" [level=3] [ref=e7]
+    - paragraph [ref=e8]: 중간 콘텐츠입니다. 스크롤 동작을 테스트합니다.
+  - generic [ref=e9]:
+    - heading "하단 타깃 영역" [level=3] [ref=e10]
+    - paragraph [ref=e11]: 하단 도달 완료!

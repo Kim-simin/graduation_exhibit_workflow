@@ -1,0 +1,68 @@
+[
+  {
+    "scheduleId": "sched-daily-morning",
+    "name": "일일 정기 대학 전시 리서치 및 콘텐츠 생성 (KST 09:00)",
+    "workflowId": "wf-intelligence-pipeline",
+    "enabled": true,
+    "cronExpression": "0 9 * * *",
+    "timezone": "Asia/Seoul",
+    "scope": {
+      "target": "verified_universities",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS",
+      "category": "디자인·UX/UI"
+    },
+    "createdAt": "2026-09-16T09:00:00+09:00",
+    "updatedAt": "2026-09-16T09:00:00+09:00",
+    "lastRunAt": "2026-09-17T21:21:31.077456+09:00",
+    "nextRunAt": "2026-09-18T09:00:00+09:00",
+    "lastRunStatus": "WAITING_FOR_APPROVAL",
+    "maxAttempts": 3,
+    "retryCount": 0,
+    "nextRetryAt": "2026-09-16T22:46:22.748250+09:00"
+  },
+  {
+    "scheduleId": "sched-weekly-curation",
+    "name": "주간 모빌리티 & UX 심층 리서치 파이프라인 (월요일 09:00)",
+    "workflowId": "wf-intelligence-pipeline",
+    "enabled": false,
+    "cronExpression": "0 9 * * 1",
+    "timezone": "Asia/Seoul",
+    "scope": {
+      "target": "mobility_ux",
+      "platform": "INSTAGRAM",
+      "content_type": "CAROUSEL",
+      "category": "디자인·UX/UI"
+    },
+    "createdAt": "2026-09-16T09:00:00+09:00",
+    "updatedAt": "2026-09-16T09:00:00+09:00",
+    "lastRunAt": null,
+    "nextRunAt": "2026-09-21T09:00:00+09:00",
+    "lastRunStatus": "NONE",
+    "maxAttempts": 3,
+    "retryCount": 0,
+    "nextRetryAt": null
+  },
+  {
+    "scheduleId": "sched-test-create-01",
+    "name": "수정된 테스트 자동화 스케줄 (11:00 KST)",
+    "workflowId": "wf-intelligence-pipeline",
+    "enabled": true,
+    "cronExpression": "0 11 * * *",
+    "timezone": "Asia/Seoul",
+    "scope": {
+      "target": "verified_universities",
+      "category": "디자인·UX/UI",
+      "platform": "INSTAGRAM",
+      "content_type": "REELS"
+    },
+    "createdAt": "2026-09-17T12:21:30.640Z",
+    "updatedAt": "2026-09-17T12:21:30.844Z",
+    "lastRunAt": null,
+    "nextRunAt": "2026-09-18T11:00:00+09:00",
+    "lastRunStatus": "NONE",
+    "maxAttempts": 3,
+    "retryCount": 0,
+    "nextRetryAt": null
+  }
+]

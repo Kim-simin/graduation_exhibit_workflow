@@ -1,0 +1,291 @@
+[
+  {
+    "id": "rfp-01",
+    "company": "현대자동차",
+    "company_name": "현대자동차 로보틱스랩 & UX팀",
+    "company_logo": "🚗",
+    "logo_emoji": "🚗",
+    "company_industry": "모빌리티 / 로보틱스",
+    "industry": "모빌리티 / 로보틱스",
+    "title": "2030 도심형 PBV 서비스 로봇과 탑승자 간 감성 상호작용 인터페이스",
+    "abstract_brief": "[영업기밀 보호 요약 브리프] 도심 내 다목적 이동 공간(PBV) 내에서 승객의 신체적·정서적 편의를 돕는 협동 로봇 및 엠비언트 디스플레이 인터랙션 시스템을 디자인합니다. 기술 스펙 대신 승객이 느끼는 심리적 안전감과 직관성을 중심으로 창의적인 해결책을 도출하십시오.",
+    "problem_statement": "자율주행 차량 내에서 무인 로봇 팔 또는 서빙 장치가 접근할 때 탑승자가 느끼는 위협감과 거부감을 해소하고, 시각·촉각 피드백을 통해 친밀한 파트너십을 형성할 수 있는 새로운 인터페이스 체계가 절실합니다.",
+    "target_qualifications": "전국 산업/시각/인터랙션/융합디자인 전공 대학생 (재학, 휴학, 2025-2026 졸업예정자)",
+    "budget_or_reward": "총 상금 1,500만원 + 현대자동차 로보틱스랩 인턴십 채용 연계",
+    "reward": "총 상금 1,500만원 + 현대자동차 로보틱스랩 인턴십 채용 연계",
+    "deadline": "2026-10-31",
+    "status": "open",
+    "submissions": [
+      {
+        "id": "sub-rfp-01-1",
+        "student_name": "이준호",
+        "university": "국민대학교",
+        "department": "공업디자인학과",
+        "submitted_at": "2026-03-10",
+        "summary_title": "Co-Hug: 온기(Warmth) 피드백 기반 모빌리티 로봇 암",
+        "problem_recognition": "승객은 금속성의 급격한 기계적 동작에 본능적 거부감을 느낍니다. 특히 좁은 PBV 실내에서 로봇의 반경 예측이 어려워 불안이 가중됩니다.",
+        "solution": "소프트 패브릭 외장과 호흡을 모사한 부드러운 LED 파동, 체온 수준의 미열을 방출하는 온열 그립을 적용하여 로봇을 '살아있는 조력자'로 인지하도록 유도했습니다.",
+        "outcome_image": "https://images.unsplash.com/photo-1546776310-eef45dd6d63c?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": "sub-rfp-01-2",
+        "student_name": "김하늘",
+        "university": "홍익대학교",
+        "department": "시각디자인과",
+        "submitted_at": "2026-03-12",
+        "summary_title": "Ambient Shadow: 그림자 궤적 프로젝션 인터페이스",
+        "problem_recognition": "로봇의 다음 이동 경로를 탑승자가 시각적으로 미리 알지 못할 때 돌발 충돌 공포가 발생합니다.",
+        "solution": "로봇이 움직이기 0.5초 전 바닥과 시트에 부드러운 광선 그림자로 이동 궤적을 사전 투사하여 무의식적으로 행동을 예측하고 배려받는 경험을 제공합니다.",
+        "outcome_image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+      }
+    ],
+    "information_sources": [
+      {
+        "source_id": "src-empty-rfp-01",
+        "source_url": "",
+        "source_title": "No source recorded",
+        "source_type": "UNKNOWN",
+        "source_domain": "",
+        "source_priority": 4,
+        "verification_status": "UNVERIFIED",
+        "evidence": "No source recorded for this entity",
+        "collected_at": "2026-09-16T21:37:10.316547",
+        "last_verified_at": "2026-09-16T21:59:23.770355",
+        "entity_id": "rfp-01",
+        "canonical_url": "",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ],
+    "is_verified": true,
+    "verification_status": "VERIFIED",
+    "corroboration_status": "CORROBORATED",
+    "cooperation_signal": "미래 모빌리티 인터랙션 디자인 및 자율주행 UX 공동연구",
+    "verified_required_skills": [
+      "Figma",
+      "Adobe Creative Cloud",
+      "Protopie",
+      "HMI 가이드라인 분석"
+    ],
+    "portfolio_requirement": "포트폴리오 필수",
+    "cooperation_partners": [
+      "홍익대학교",
+      "시각디자인과"
+    ]
+  },
+  {
+    "id": "rfp-02",
+    "company": "토스 (비바리퍼블리카)",
+    "company_name": "토스(비바리퍼블리카) 프로덕트 디자인팀",
+    "company_logo": "💙",
+    "logo_emoji": "💙",
+    "company_industry": "핀테크 / 모바일 플랫폼",
+    "industry": "핀테크 / 모바일 플랫폼",
+    "title": "Z세대 서브컬처 크리에이터를 위한 마이크로 크라우드펀딩 UX",
+    "abstract_brief": "[영업기밀 보호 요약 브리프] 텍스트나 숫자 중심의 기존 투자/후원 틀을 깨고, 숏폼과 미메틱(Mimetic) 그래픽 요소를 통해 10초 만에 공감하고 후원하는 초간편 금융 놀이터를 구상하십시오.",
+    "problem_statement": "소규모 독립 창작자들이 자신의 굿즈나 프로젝트를 런칭할 때 기성 펀딩 플랫폼은 심사 기간이 길고 상세페이지 작성이 너무 무겁습니다. 인스타그램 스토리처럼 가볍고 즉흥적인 인터랙션이 필요합니다.",
+    "target_qualifications": "UX/UI 및 디지털 제품 디자인에 관심 있는 대학생 팀 또는 개인",
+    "budget_or_reward": "총 상금 1,000만원 + 토스 프로덕트 디자이너 정규직 지원 시 서류/과제 면제",
+    "reward": "총 상금 1,000만원 + 토스 프로덕트 디자이너 정규직 지원 시 서류/과제 면제",
+    "deadline": "2026-11-15",
+    "status": "open",
+    "submissions": [
+      {
+        "id": "sub-rfp-02-1",
+        "student_name": "박서연",
+        "university": "이화여자대학교",
+        "department": "영상디자인전공",
+        "submitted_at": "2026-03-08",
+        "summary_title": "Flick & Fund: 3초 제스처 후원 시스템",
+        "problem_recognition": "전통적인 결제 인증 창과 약관 동의 절차가 Z세대의 충동적 지지 욕구를 저해합니다.",
+        "solution": "창작자 쇼츠 영상 위에서 오른쪽 위로 플릭(Flick)하는 단 한 번의 촉각 제스처로 1,000원 단위 팁을 보내고 실시간 이펙트가 화면에 터지는 마이크로 후원 UX를 구현했습니다.",
+        "outcome_image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80"
+      }
+    ],
+    "information_sources": [
+      {
+        "source_id": "src-empty-rfp-02",
+        "source_url": "",
+        "source_title": "No source recorded",
+        "source_type": "UNKNOWN",
+        "source_domain": "",
+        "source_priority": 4,
+        "verification_status": "UNVERIFIED",
+        "evidence": "No source recorded for this entity",
+        "collected_at": "2026-09-16T21:37:10.316547",
+        "last_verified_at": "2026-09-16T21:59:23.770355",
+        "entity_id": "rfp-02",
+        "canonical_url": "",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "rfp-03",
+    "company": "아모레퍼시픽",
+    "company_name": "아모레퍼시픽 브랜드 디자인랩",
+    "company_logo": "🌸",
+    "logo_emoji": "🌸",
+    "company_industry": "뷰티 / 라이프스타일",
+    "industry": "뷰티 / 라이프스타일",
+    "title": "플라스틱 제로 순환 패키징 & 디지털 리필 인터랙션",
+    "abstract_brief": "[영업기밀 보호 요약 브리프] 프리미엄 뷰티 브랜드의 고급스러운 질감을 잃지 않으면서도 100% 분해 가능한 바이오 복합 소재 기반의 모듈러 용기 시스템과 스마트 리필 경험을 기획하십시오.",
+    "problem_statement": "친환경 용기는 투박하거나 저렴해 보인다는 선입견이 있으며, 리필 스테이션 이용 시 정량 계량과 세척 번거로움으로 재구매율이 낮습니다.",
+    "target_qualifications": "패키지, 제품디자인, 브랜딩 전공 전국 대학생",
+    "budget_or_reward": "시제품 제작 지원금 500만원 + 아모레퍼시픽 인턴십 서류 면제",
+    "reward": "시제품 제작 지원금 500만원 + 아모레퍼시픽 인턴십 서류 면제",
+    "deadline": "2026-10-20",
+    "status": "open",
+    "submissions": [
+      {
+        "id": "sub-rfp-03-1",
+        "student_name": "최민우",
+        "university": "서울대학교",
+        "department": "디자인학부",
+        "submitted_at": "2026-03-05",
+        "summary_title": "Clay-Capsule: 생분해 모듈러 세럼 패키징",
+        "problem_recognition": "화장품 용기에서 가장 오염도가 높은 펌프 헤드 부품의 복합 플라스틱 분리배출이 불가합니다.",
+        "solution": "도자기 성형 방식을 응용한 100% 무독성 점토 캡슐과 교체형 실리콘 밸브를 설계하여, 다 쓴 용기를 화분에 묻으면 거름이 되는 완전 순환형 구조를 완성했습니다.",
+        "outcome_image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80"
+      }
+    ],
+    "information_sources": [
+      {
+        "source_id": "src-empty-rfp-03",
+        "source_url": "",
+        "source_title": "No source recorded",
+        "source_type": "UNKNOWN",
+        "source_domain": "",
+        "source_priority": 4,
+        "verification_status": "UNVERIFIED",
+        "evidence": "No source recorded for this entity",
+        "collected_at": "2026-09-16T21:37:10.316547",
+        "last_verified_at": "2026-09-16T21:59:23.770355",
+        "entity_id": "rfp-03",
+        "canonical_url": "",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "rfp-04",
+    "company": "네이버 클라우드 & Clova",
+    "company_name": "네이버 클라우드 & Clova 디자인센터",
+    "company_logo": "🟢",
+    "logo_emoji": "🟢",
+    "company_industry": "생성형 AI / 하이퍼스케일",
+    "industry": "생성형 AI / 하이퍼스케일",
+    "title": "생성형 AI 에이전트와 학생 협업을 위한 캔버스 UI/UX 디자인",
+    "abstract_brief": "[영업기밀 보호 요약 브리프] 초거대 LLM 모델과 대학생 연구자가 실시간으로 브레인스토밍하고 시각 자료를 구조화하는 차세대 지능형 작업공간 인터페이스를 설계하십시오.",
+    "problem_statement": "기존 대화형 챗봇 인터페이스는 장문의 텍스트 위주로 이루어져 있어 다차원적 디자인 아이데이션과 시각적 결과물 구조화에 한계가 명확합니다.",
+    "target_qualifications": "HCI, 인터랙션 디자인, 미디어아트 전공 대학생 (개인/팀)",
+    "budget_or_reward": "네이버 클라우드 AI 리서치 인턴십 + Naver Cloud 크레딧 500만원",
+    "reward": "네이버 클라우드 AI 리서치 인턴십 + Naver Cloud 크레딧 500만원",
+    "deadline": "2026-11-30",
+    "status": "open",
+    "submissions": [],
+    "information_sources": [
+      {
+        "source_id": "src-empty-rfp-04",
+        "source_url": "",
+        "source_title": "No source recorded",
+        "source_type": "UNKNOWN",
+        "source_domain": "",
+        "source_priority": 4,
+        "verification_status": "UNVERIFIED",
+        "evidence": "No source recorded for this entity",
+        "collected_at": "2026-09-16T21:37:10.316547",
+        "last_verified_at": "2026-09-16T21:59:23.770355",
+        "entity_id": "rfp-04",
+        "canonical_url": "",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ],
+    "is_verified": true,
+    "verification_status": "VERIFIED",
+    "corroboration_status": "CORROBORATED",
+    "cooperation_signal": "생성형 AI 기반 디자인 워크스페이스 실무 캡스톤 프로젝트",
+    "verified_required_skills": [
+      "Figma",
+      "Design System",
+      "Data-driven UX",
+      "User Research"
+    ],
+    "portfolio_requirement": "포트폴리오 필수",
+    "cooperation_partners": [
+      "홍익대학교",
+      "시각디자인과"
+    ]
+  },
+  {
+    "id": "rfp-test-01",
+    "company": "현대자동차",
+    "title": "미래 PBV 상호작용 디자인",
+    "abstract_brief": "요약된 문제 정의입니다.",
+    "problem_statement": "기업 원문 문제 정의문 전체입니다.",
+    "deadline": "2026-10-31",
+    "source_url": "https://hyundai.com/careers/rfp/01",
+    "evidence_text": "현대자동차 공식 2026 산학협력 공모 공고 원문 발췌",
+    "original_brief": "기업 원문 문제 정의문 전체입니다.",
+    "entity_key": "rfp:현대자동차:미래 PBV 상호작용 디자인",
+    "collected_at": "2026-09-16T18:30:08.320599",
+    "confidence_score": 1.0,
+    "verified_at": "2026-09-16T18:30:08.320599",
+    "is_verified": true,
+    "verification_status": "VERIFIED",
+    "information_sources": [
+      {
+        "source_id": "src-5bcb39df",
+        "source_url": "https://hyundai.com/careers/rfp/01",
+        "source_title": "기업 공식 산학협력 포털 / RFP (미래 PBV 상호작용 디자인)",
+        "source_type": "CORPORATE_RFP",
+        "source_domain": "hyundai.com",
+        "source_priority": 1,
+        "verification_status": "FAILED",
+        "evidence": "현대자동차 공식 2026 산학협력 공모 공고 원문 발췌",
+        "collected_at": "2026-09-16T21:37:10.316547",
+        "last_verified_at": "2026-09-16T21:59:23.770355",
+        "entity_id": "rfp-test-01",
+        "canonical_url": "https://hyundai.com/careers/rfp/01",
+        "url_status": "URL_NOT_FOUND",
+        "http_status_code": 404
+      }
+    ]
+  },
+  {
+    "id": "rfp-sig-coop-c7b03e",
+    "company": "LG전자",
+    "company_name": "LG전자 산학연계 프로젝트팀",
+    "company_logo": "🏢",
+    "logo_emoji": "🏢",
+    "company_industry": "산업디자인학과",
+    "industry": "모빌리티 / AI / 인터랙션",
+    "title": "차세대 스마트홈 가전 CMF 및 공간 인터페이스 선행 기획",
+    "abstract_brief": "LG전자 디자인경영센터 산학협력 협약 체결 및 연구비 지원",
+    "problem_statement": "홍익대학교 산학협력단과 연계하여 산업 현장의 실무 디자인 및 사용자 인터페이스 문제를 해결합니다.",
+    "target_qualifications": "홍익대학교 산업디자인학과 재학생 및 졸업예정자",
+    "budget_or_reward": "산학 연구장학금 및 채용연계 인턴십 지원 기회",
+    "reward": "산학 연구장학금 및 채용연계 인턴십 지원 기회",
+    "deadline": "2026-10-31",
+    "status": "open",
+    "is_verified": true,
+    "verification_status": "VERIFIED",
+    "corroboration_status": "CORROBORATED",
+    "cooperation_signal": "차세대 스마트홈 가전 CMF 및 공간 인터페이스 선행 기획",
+    "verified_required_skills": [
+      "Rhino",
+      "Keyshot",
+      "Photoshop",
+      "CMF 라이브러리 분석"
+    ],
+    "submissions": [],
+    "portfolio_requirement": "포트폴리오 필수",
+    "cooperation_partners": [
+      "홍익대학교",
+      "산업디자인학과"
+    ]
+  }
+]

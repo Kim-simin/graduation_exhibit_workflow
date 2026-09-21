@@ -1,0 +1,16 @@
+{
+  "content_hash": "ae0a97cb9c5194d4a97ec9c0157848c9",
+  "url": "https://webtoonscorp.com/about",
+  "final_url": "https://webtoonscorp.com/about",
+  "canonical_url": "https://webtoonscorp.com/about",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "title": "네이버 공식 계열/자회사 공시",
+  "accessed_at": "2026-09-17T21:21:48.160926",
+  "crawler_version": "1.0.0",
+  "html_path": "data/research/raw/html/ae0a97cb9c5194d4a97ec9c0157848c9.html",
+  "text_path": "data/research/raw/text/ae0a97cb9c5194d4a97ec9c0157848c9.txt",
+  "screenshot_path": null,
+  "metadata_path": "data/research/raw/metadata/ae0a97cb9c5194d4a97ec9c0157848c9.json",
+  "extra": {}
+}

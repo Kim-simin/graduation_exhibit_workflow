@@ -1,0 +1,162 @@
+{
+  "rfp_list": [
+    {
+      "id": "rfp-01",
+      "company": "현대자동차",
+      "logo_emoji": "🚗",
+      "industry": "미래 모빌리티 / 로보틱스",
+      "title": "미래 모빌리티 비대면 상호작용 UX/UI 기획",
+      "abstract_brief": "자율주행 환경에서 탑승자와 차량 간의 비언어적 소통 문제를 해결할 창의적 인터랙션 프로토타입을 제안하세요.",
+      "deadline": "2026-10-31",
+      "reward": "현대차 로보틱스랩 인턴십 채용 연계 + 총 상금 1,500만원",
+      "status": "접수중",
+      "target": "전국 디자인·공학 전공 대학생 (개인/팀)"
+    },
+    {
+      "id": "rfp-02",
+      "company": "토스 (비바리퍼블리카)",
+      "logo_emoji": "💙",
+      "industry": "핀테크 / 모바일 플랫폼",
+      "title": "Z세대 서브컬처 크리에이터를 위한 마이크로 크라우드펀딩 UX",
+      "abstract_brief": "텍스트나 숫자 중심의 기존 투자/후원 틀을 깨고, 숏폼과 미메틱(Mimetic) 그래픽 요소를 통해 10초 만에 공감하고 후원하는 초간편 금융 놀이터를 구상하십시오.",
+      "deadline": "2026-11-15",
+      "reward": "토스 프로덕트 디자이너 정규직 지원 시 서류/과제 면제 + 상금 1,000만원",
+      "status": "접수중",
+      "target": "UX/UI 및 디지털 제품 디자인에 관심 있는 대학생"
+    },
+    {
+      "id": "rfp-03",
+      "company": "아모레퍼시픽",
+      "logo_emoji": "🌸",
+      "industry": "뷰티 / 라이프스타일",
+      "title": "플라스틱 제로 순환 패키징 & 디지털 리필 인터랙션",
+      "abstract_brief": "프리미엄 뷰티 브랜드의 고급스러운 질감을 잃지 않으면서도 100% 분해 가능한 바이오 복합 소재 기반의 모듈러 용기 시스템과 스마트 리필 경험을 기획하십시오.",
+      "deadline": "2026-10-20",
+      "reward": "시제품 제작 지원금 500만원 + 아모레퍼시픽 인턴십 서류 면제",
+      "status": "접수중",
+      "target": "패키지, 제품디자인, 브랜딩 전공 대학생"
+    },
+    {
+      "id": "rfp-04",
+      "company": "네이버 클라우드 & Clova",
+      "logo_emoji": "🟢",
+      "industry": "생성형 AI / 하이퍼스케일",
+      "title": "생성형 AI 에이전트와 학생 협업을 위한 캔버스 UI/UX 디자인",
+      "abstract_brief": "초거대 LLM 모델과 대학생 연구자가 실시간으로 브레인스토밍하고 시각 자료를 구조화하는 차세대 지능형 작업공간 인터페이스를 설계하십시오.",
+      "deadline": "2026-11-30",
+      "reward": "네이버 클라우드 AI 리서치 인턴십 + Naver Cloud 크레딧 500만원",
+      "status": "접수중",
+      "target": "HCI, 인터랙션 디자인, 미디어아트 전공 대학생"
+    }
+  ],
+  "ip_freepass_list": [
+    {
+      "id": "ip-01",
+      "company": "무신사 (MUSINSA)",
+      "logo_emoji": "🖤",
+      "category": "패션 / 버추얼 커머스",
+      "logo_url": "/brands/musinsa.png",
+      "license": "졸업작품/캡스톤 비영리 자유 이용",
+      "description": "국내 최대 패션 플랫폼 무신사의 공식 BI 및 버추얼 3D 의류 에셋 팩",
+      "badge": "공식 파트너십 인증",
+      "package_size": "148 MB",
+      "download_count": 1420,
+      "assets": [
+        "SVG/AI 로고 키트",
+        "브랜드 가이드라인 (컬러/규정)",
+        "3D 에셋 / 캐릭터 원본",
+        "공식 전용 폰트(서체)"
+      ]
+    },
+    {
+      "id": "ip-02",
+      "company": "배달의민족 (우아한형제들)",
+      "logo_emoji": "🛵",
+      "category": "F&B / 배달 라이프스타일",
+      "logo_url": "/brands/baemin.png",
+      "license": "졸업작품/캡스톤 비영리 자유 이용",
+      "description": "배민 배달이 캐릭터 3D 리그 및 배민 한나·주아·을지로 공식 서체 패키지",
+      "badge": "공식 파트너십 인증",
+      "package_size": "215 MB",
+      "download_count": 2340,
+      "assets": [
+        "SVG/AI 로고 키트",
+        "브랜드 가이드라인 (컬러/규정)",
+        "3D 에셋 / 캐릭터 원본",
+        "공식 전용 폰트(서체)"
+      ]
+    },
+    {
+      "id": "ip-03",
+      "company": "카카오 (카카오프렌즈 IPX)",
+      "logo_emoji": "🦁",
+      "category": "캐릭터 / 엔터테인먼트",
+      "logo_url": "/brands/kakao.png",
+      "license": "졸업작품/캡스톤 비영리 자유 이용",
+      "description": "라이언·춘식이 3D 모델링 원본 및 카카오 브랜드 컬러 에셋 팔레트",
+      "badge": "공식 파트너십 인증",
+      "package_size": "480 MB",
+      "download_count": 3890,
+      "assets": [
+        "SVG/AI 로고 키트",
+        "브랜드 가이드라인 (컬러/규정)",
+        "3D 에셋 / 캐릭터 원본",
+        "공식 전용 폰트(서체)"
+      ]
+    },
+    {
+      "id": "ip-04",
+      "company": "현대카드 (Hyundai Card)",
+      "logo_emoji": "💳",
+      "category": "금융 / 타이포그래피",
+      "logo_url": "/brands/hyundaicard.png",
+      "license": "졸업작품/캡스톤 비영리 자유 이용",
+      "description": "현대카드 Youandi 전용 서체 및 플레이트 비례 규격 그리드 가이드",
+      "badge": "공식 파트너십 인증",
+      "package_size": "85 MB",
+      "download_count": 1780,
+      "assets": [
+        "SVG/AI 로고 키트",
+        "브랜드 가이드라인 (컬러/규정)",
+        "3D 에셋 / 캐릭터 원본",
+        "공식 전용 폰트(서체)"
+      ]
+    },
+    {
+      "id": "ip-05",
+      "company": "당근 (Karrot)",
+      "logo_emoji": "🥕",
+      "category": "하이퍼로컬 / 커뮤니티",
+      "logo_url": "/brands/karrot.png",
+      "license": "졸업작품/캡스톤 비영리 자유 이용",
+      "description": "당근이 캐릭터 인터랙션 일러스트 및 로컬 커뮤니티 아이콘 세트",
+      "badge": "공식 파트너십 인증",
+      "package_size": "112 MB",
+      "download_count": 1650,
+      "assets": [
+        "SVG/AI 로고 키트",
+        "브랜드 가이드라인 (컬러/규정)",
+        "3D 에셋 / 캐릭터 원본",
+        "공식 전용 폰트(서체)"
+      ]
+    },
+    {
+      "id": "ip-06",
+      "company": "SM 엔터테인먼트 (SMCU)",
+      "logo_emoji": "🪐",
+      "category": "K-POP / 메타버스",
+      "logo_url": "/brands/sm.png",
+      "license": "졸업작품/캡스톤 비영리 자유 이용",
+      "description": "에스파(aespa) 광야(KWANGYA) 컨셉 세계관 비주얼 에셋 및 엠블럼 키트",
+      "badge": "공식 파트너십 인증",
+      "package_size": "360 MB",
+      "download_count": 2980,
+      "assets": [
+        "SVG/AI 로고 키트",
+        "브랜드 가이드라인 (컬러/규정)",
+        "3D 에셋 / 캐릭터 원본",
+        "공식 전용 폰트(서체)"
+      ]
+    }
+  ]
+}

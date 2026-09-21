@@ -1,0 +1,26 @@
+{
+  "files.encoding": "utf8",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "args": [
+        "-NoLogo",
+        "-NoExit",
+        "-Command",
+        "[Console]::OutputEncoding = [System.Text.Encoding]::UTF8; $OutputEncoding = [System.Text.Encoding]::UTF8; chcp 65001 >$null"
+      ]
+    },
+    "Command Prompt": {
+      "source": "Cmd",
+      "args": [
+        "/k",
+        "chcp 65001 >nul"
+      ]
+    }
+  },
+  "terminal.integrated.env.windows": {
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONUTF8": "1"
+  }
+}

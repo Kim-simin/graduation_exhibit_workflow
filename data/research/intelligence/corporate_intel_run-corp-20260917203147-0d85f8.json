@@ -1,0 +1,1806 @@
+{
+  "run_id": "run-corp-20260917203147-0d85f8",
+  "target_university": "홍익대학교",
+  "target_department": "시각디자인과",
+  "graduation_exhibit_url": "https://sidi.hongik.ac.kr",
+  "current_step": "REPORT_GENERATION",
+  "cooperation_signals": [
+    {
+      "signal_id": "sig-coop-045de1",
+      "university": "홍익대학교",
+      "company": "현대자동차",
+      "cooperation_type": "산학공동연구",
+      "project_title": "미래 모빌리티 인터랙션 디자인 및 자율주행 UX 공동연구",
+      "department": "시각디자인과",
+      "laboratory": "인터랙션 디자인 연구실",
+      "professor": "김현석 교수",
+      "date": "2025.03 - 2026.02",
+      "description": "차량 내 디스플레이 및 AI 에이전트와 승객 간 감성 교감 HMI 연구 협약",
+      "source_url": "https://iacf.hongik.ac.kr/notice/rnd_2025_01.html",
+      "source_id": "src-coop-d1a0bb87",
+      "evidence_id": "evi-coop-d1a0bb87",
+      "signal_status": "cooperationSignal",
+      "signal_type": "cooperationSignal"
+    },
+    {
+      "signal_id": "sig-coop-99b833",
+      "university": "홍익대학교",
+      "company": "네이버",
+      "cooperation_type": "캡스톤디자인",
+      "project_title": "생성형 AI 기반 디자인 워크스페이스 실무 캡스톤 프로젝트",
+      "department": "시각디자인과",
+      "laboratory": "디지털 미디어 디자인 랩",
+      "professor": "이우훈 교수",
+      "date": "2025.09 - 2025.12",
+      "description": "네이버 클로바 디자인팀 멘토링 연계 산학 디자인 캡스톤 교과 운영",
+      "source_url": "https://iacf.hongik.ac.kr/capstone/naver_2025.html",
+      "source_id": "src-coop-3a68a6a9",
+      "evidence_id": "evi-coop-3a68a6a9",
+      "signal_status": "cooperationSignal",
+      "signal_type": "cooperationSignal"
+    },
+    {
+      "signal_id": "sig-coop-fb455c",
+      "university": "홍익대학교",
+      "company": "LG전자",
+      "cooperation_type": "공동 R&D",
+      "project_title": "차세대 스마트홈 가전 CMF 및 공간 인터페이스 선행 기획",
+      "department": "산업디자인학과",
+      "laboratory": "스마트 프로덕트 랩",
+      "professor": "박진우 교수",
+      "date": "2025.04 - 2026.03",
+      "description": "LG전자 디자인경영센터 산학협력 협약 체결 및 연구비 지원",
+      "source_url": "https://iacf.hongik.ac.kr/notice/lg_rnd_2025.html",
+      "source_id": "src-coop-5558ce16",
+      "evidence_id": "evi-coop-5558ce16",
+      "signal_status": "cooperationSignal",
+      "signal_type": "cooperationSignal"
+    }
+  ],
+  "expanded_companies": [
+    {
+      "parent_company": "현대자동차",
+      "related_company": "현대모비스",
+      "relationship_type": "affiliate",
+      "official_evidence": "현대자동차그룹 계열사 공시 (전장 및 부품 소프트웨어 사업 영위)",
+      "source_url": "https://www.hyundaimotorgroup.com/group/affiliates",
+      "evidence_id": "evi-rel-5054643b",
+      "verified_status": "CONFIRMED"
+    },
+    {
+      "parent_company": "현대자동차",
+      "related_company": "현대오토에버",
+      "relationship_type": "affiliate",
+      "official_evidence": "현대자동차그룹 차량용 모빌리티 SW 플랫폼 전문 계열사",
+      "source_url": "https://www.hyundai-autoever.com/company/about",
+      "evidence_id": "evi-rel-c75c1753",
+      "verified_status": "CONFIRMED"
+    },
+    {
+      "parent_company": "현대자동차",
+      "related_company": "보스턴다이내믹스",
+      "relationship_type": "subsidiary",
+      "official_evidence": "현대자동차 로보틱스 자회사 인수 공시",
+      "source_url": "https://www.bostondynamics.com/about",
+      "evidence_id": "evi-rel-17aef63b",
+      "verified_status": "CONFIRMED"
+    },
+    {
+      "parent_company": "현대자동차",
+      "related_company": "기아",
+      "relationship_type": "affiliate",
+      "official_evidence": "현대자동차그룹 모빌리티 완성차 계열사",
+      "source_url": "https://www.hyundaimotorgroup.com/group/affiliates",
+      "evidence_id": "evi-rel-e48d9849",
+      "verified_status": "CONFIRMED"
+    },
+    {
+      "parent_company": "네이버",
+      "related_company": "네이버웹툰",
+      "relationship_type": "subsidiary",
+      "official_evidence": "네이버 글로벌 디지털 콘텐츠 및 웹툰 플랫폼 자회사",
+      "source_url": "https://webtoonscorp.com/about",
+      "evidence_id": "evi-rel-acda7c0a",
+      "verified_status": "CONFIRMED"
+    },
+    {
+      "parent_company": "네이버",
+      "related_company": "스노우(SNOW)",
+      "relationship_type": "subsidiary",
+      "official_evidence": "네이버 자회사 (카메라 및 비주얼 AI 인터랙션 앱 개발)",
+      "source_url": "https://snowcorp.com/ko/about",
+      "evidence_id": "evi-rel-eb790d31",
+      "verified_status": "CONFIRMED"
+    },
+    {
+      "parent_company": "네이버",
+      "related_company": "네이버클라우드",
+      "relationship_type": "subsidiary",
+      "official_evidence": "네이버 하이퍼클로바X AI 및 B2B 클라우드 인프라 자회사",
+      "source_url": "https://www.navercloudcorp.com/company/about",
+      "evidence_id": "evi-rel-03c64127",
+      "verified_status": "CONFIRMED"
+    },
+    {
+      "parent_company": "LG전자",
+      "related_company": "LG디스플레이",
+      "relationship_type": "affiliate",
+      "official_evidence": "LG그룹 차세대 디스플레이 및 올레드 제조 계열사",
+      "source_url": "https://www.lgdisplay.com/kor/company/overview",
+      "evidence_id": "evi-rel-aefcb80c",
+      "verified_status": "CONFIRMED"
+    },
+    {
+      "parent_company": "LG전자",
+      "related_company": "LG CNS",
+      "relationship_type": "affiliate",
+      "official_evidence": "LG그룹 DX 및 생성형 AI 엔터프라이즈 솔루션 계열사",
+      "source_url": "https://www.lgcns.com/company/about",
+      "evidence_id": "evi-rel-e3ff54e9",
+      "verified_status": "CONFIRMED"
+    }
+  ],
+  "department_mappings": [
+    {
+      "mapping_id": "map-sig-coop-045de1",
+      "university": "홍익대학교",
+      "department": "시각디자인과",
+      "company": "현대자동차",
+      "cooperation_project": "미래 모빌리티 인터랙션 디자인 및 자율주행 UX 공동연구",
+      "project_field": "모빌리티 / 오토모티브 UX",
+      "cooperation_type": "산학공동연구",
+      "professor": "김현석 교수",
+      "laboratory": "인터랙션 디자인 연구실",
+      "period": "2025.03 - 2026.02",
+      "source_url": "https://iacf.hongik.ac.kr/notice/rnd_2025_01.html",
+      "evidence_id": "evi-coop-d1a0bb87",
+      "status": "CONFIRMED"
+    },
+    {
+      "mapping_id": "map-sig-coop-99b833",
+      "university": "홍익대학교",
+      "department": "시각디자인과",
+      "company": "네이버",
+      "cooperation_project": "생성형 AI 기반 디자인 워크스페이스 실무 캡스톤 프로젝트",
+      "project_field": "인공지능 / 디지털 미디어",
+      "cooperation_type": "캡스톤디자인",
+      "professor": "이우훈 교수",
+      "laboratory": "디지털 미디어 디자인 랩",
+      "period": "2025.09 - 2025.12",
+      "source_url": "https://iacf.hongik.ac.kr/capstone/naver_2025.html",
+      "evidence_id": "evi-coop-3a68a6a9",
+      "status": "CONFIRMED"
+    },
+    {
+      "mapping_id": "map-sig-coop-fb455c",
+      "university": "홍익대학교",
+      "department": "산업디자인학과",
+      "company": "LG전자",
+      "cooperation_project": "차세대 스마트홈 가전 CMF 및 공간 인터페이스 선행 기획",
+      "project_field": "스마트홈 / CMF & 공간 디자인",
+      "cooperation_type": "공동 R&D",
+      "professor": "박진우 교수",
+      "laboratory": "스마트 프로덕트 랩",
+      "period": "2025.04 - 2026.03",
+      "source_url": "https://iacf.hongik.ac.kr/notice/lg_rnd_2025.html",
+      "evidence_id": "evi-coop-5558ce16",
+      "status": "CONFIRMED"
+    }
+  ],
+  "recruitment_postings": [
+    {
+      "job_id": "LGE-2025-HOM01",
+      "company": "LG전자",
+      "job_title": "H&A 스마트 가전 CMF 및 공간 맞춤형 제품 디자이너",
+      "department_or_team": "디자인경영센터 H&A디자인연구소",
+      "job_category": "제품·산업디자인",
+      "employment_type": "정규직 (신입 공채)",
+      "location": "서울 마곡 LG사이언스파크",
+      "requirements": {
+        "major_requirement": "관련 전공",
+        "target_majors": [
+          "산업디자인",
+          "공업디자인",
+          "공간디자인",
+          "공예디자인"
+        ],
+        "required_skills": [
+          "Rhino",
+          "Keyshot",
+          "Photoshop",
+          "CMF 라이브러리 분석"
+        ],
+        "preferred_skills": [
+          "친환경 소재 적용 디자인 경험",
+          "스마트홈 IoT 서비스 이해"
+        ],
+        "portfolio_requirement": "포트폴리오 필수",
+        "portfolio_details": "CMF 트렌드 분석 및 실물 스케일 제품 렌더링 중심 포트폴리오",
+        "education": "학사 이상",
+        "experience": "신입",
+        "certifications": [],
+        "language": "공인 어학성적 필수"
+      },
+      "qualifications": [
+        "소재, 가공기술, 트렌드 센싱을 아우르는 공간 조화형 디자인 감각",
+        "글로벌 가전 시장 라이프스타일 분석 역량"
+      ],
+      "preferred_qualifications": [
+        "LG전자 산학 과제 참여 이력 보유자",
+        "CMF 실무 산학 캡스톤 프로젝트 완수자"
+      ],
+      "deadline": "2025-10-15",
+      "published_at": "2025-09-08",
+      "source_url": "https://careers.lg.com/app/job/LGE-2025-HOM01",
+      "source_id": "src-job-34678bd7",
+      "evidence_id": "evi-job-34678bd7",
+      "recruitment_signal_status": "recruitmentSignal",
+      "signal_type": "recruitmentSignal"
+    },
+    {
+      "job_id": "NAVER-2025-DES01",
+      "company": "네이버",
+      "job_title": "네이버 서비스 프로덕트 디자이너 (Product Designer)",
+      "department_or_team": "Search & Discovery CIC 디자인팀",
+      "job_category": "디자인·UX/UI",
+      "employment_type": "정규직 (신입 공채)",
+      "location": "경기도 성남시 분당구 네이버 1784",
+      "requirements": {
+        "major_requirement": "전공 무관",
+        "target_majors": [
+          "디자인 전공 우대",
+          "컴퓨터공학 복수전공 우대"
+        ],
+        "required_skills": [
+          "Figma",
+          "Design System",
+          "Data-driven UX",
+          "User Research"
+        ],
+        "preferred_skills": [
+          "HTML/CSS/JS 기초 지식",
+          "생성형 AI 인터페이스(Prompt UX) 기획 경험"
+        ],
+        "portfolio_requirement": "포트폴리오 필수",
+        "portfolio_details": "문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF",
+        "education": "학력 무관 (실무 역량 중심)",
+        "experience": "신입 (경력 1년 미만)",
+        "certifications": [],
+        "language": "무관"
+      },
+      "qualifications": [
+        "복잡한 데이터를 명확하고 직관적인 사용자 인터페이스로 시각화하는 역량",
+        "PO, 개발자, 데이터 분석가와의 기민한 협업 및 커뮤니케이션 능력"
+      ],
+      "preferred_qualifications": [
+        "실제 런칭 서비스 운영 또는 산학 캡스톤 프로젝트 완수 경험",
+        "글로벌 서비스 디자인 리서치 경험"
+      ],
+      "deadline": "2025-10-20",
+      "published_at": "2025-09-05",
+      "source_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "source_id": "src-job-9311586c",
+      "evidence_id": "evi-job-9311586c",
+      "recruitment_signal_status": "recruitmentSignal",
+      "signal_type": "recruitmentSignal"
+    },
+    {
+      "job_id": "NAVER-2025-DES01",
+      "company": "네이버웹툰",
+      "job_title": "네이버 서비스 프로덕트 디자이너 (Product Designer)",
+      "department_or_team": "Search & Discovery CIC 디자인팀",
+      "job_category": "디자인·UX/UI",
+      "employment_type": "정규직 (신입 공채)",
+      "location": "경기도 성남시 분당구 네이버 1784",
+      "requirements": {
+        "major_requirement": "전공 무관",
+        "target_majors": [
+          "디자인 전공 우대",
+          "컴퓨터공학 복수전공 우대"
+        ],
+        "required_skills": [
+          "Figma",
+          "Design System",
+          "Data-driven UX",
+          "User Research"
+        ],
+        "preferred_skills": [
+          "HTML/CSS/JS 기초 지식",
+          "생성형 AI 인터페이스(Prompt UX) 기획 경험"
+        ],
+        "portfolio_requirement": "포트폴리오 필수",
+        "portfolio_details": "문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF",
+        "education": "학력 무관 (실무 역량 중심)",
+        "experience": "신입 (경력 1년 미만)",
+        "certifications": [],
+        "language": "무관"
+      },
+      "qualifications": [
+        "복잡한 데이터를 명확하고 직관적인 사용자 인터페이스로 시각화하는 역량",
+        "PO, 개발자, 데이터 분석가와의 기민한 협업 및 커뮤니케이션 능력"
+      ],
+      "preferred_qualifications": [
+        "실제 런칭 서비스 운영 또는 산학 캡스톤 프로젝트 완수 경험",
+        "글로벌 서비스 디자인 리서치 경험"
+      ],
+      "deadline": "2025-10-20",
+      "published_at": "2025-09-05",
+      "source_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "source_id": "src-job-a5db1aa4",
+      "evidence_id": "evi-job-a5db1aa4",
+      "recruitment_signal_status": "recruitmentSignal",
+      "signal_type": "recruitmentSignal"
+    },
+    {
+      "job_id": "NAVER-2025-DES01",
+      "company": "네이버클라우드",
+      "job_title": "네이버 서비스 프로덕트 디자이너 (Product Designer)",
+      "department_or_team": "Search & Discovery CIC 디자인팀",
+      "job_category": "디자인·UX/UI",
+      "employment_type": "정규직 (신입 공채)",
+      "location": "경기도 성남시 분당구 네이버 1784",
+      "requirements": {
+        "major_requirement": "전공 무관",
+        "target_majors": [
+          "디자인 전공 우대",
+          "컴퓨터공학 복수전공 우대"
+        ],
+        "required_skills": [
+          "Figma",
+          "Design System",
+          "Data-driven UX",
+          "User Research"
+        ],
+        "preferred_skills": [
+          "HTML/CSS/JS 기초 지식",
+          "생성형 AI 인터페이스(Prompt UX) 기획 경험"
+        ],
+        "portfolio_requirement": "포트폴리오 필수",
+        "portfolio_details": "문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF",
+        "education": "학력 무관 (실무 역량 중심)",
+        "experience": "신입 (경력 1년 미만)",
+        "certifications": [],
+        "language": "무관"
+      },
+      "qualifications": [
+        "복잡한 데이터를 명확하고 직관적인 사용자 인터페이스로 시각화하는 역량",
+        "PO, 개발자, 데이터 분석가와의 기민한 협업 및 커뮤니케이션 능력"
+      ],
+      "preferred_qualifications": [
+        "실제 런칭 서비스 운영 또는 산학 캡스톤 프로젝트 완수 경험",
+        "글로벌 서비스 디자인 리서치 경험"
+      ],
+      "deadline": "2025-10-20",
+      "published_at": "2025-09-05",
+      "source_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "source_id": "src-job-7d00cd5f",
+      "evidence_id": "evi-job-7d00cd5f",
+      "recruitment_signal_status": "recruitmentSignal",
+      "signal_type": "recruitmentSignal"
+    },
+    {
+      "job_id": "HMC-2025-UX01",
+      "company": "현대자동차",
+      "job_title": "차량용 인포테인먼트(ccNC) 및 인-카 HMI 인터랙션 디자이너",
+      "department_or_team": "인포테인먼트개발센터 UX설계팀",
+      "job_category": "디자인·UX/UI",
+      "employment_type": "신입 채용연계형 인턴 / 정규직",
+      "location": "서울 양재본사 및 남양연구소",
+      "requirements": {
+        "major_requirement": "관련 전공",
+        "target_majors": [
+          "시각디자인",
+          "산업디자인",
+          "인터랙션디자인",
+          "HCI"
+        ],
+        "required_skills": [
+          "Figma",
+          "Adobe Creative Cloud",
+          "Protopie",
+          "HMI 가이드라인 분석"
+        ],
+        "preferred_skills": [
+          "3D GUI 툴(Blender, Unreal Engine)",
+          "모빌리티 인터랙션 실무 캡스톤 경험"
+        ],
+        "portfolio_requirement": "포트폴리오 필수",
+        "portfolio_details": "모빌리티/디지털 인터랙션 프로젝트 중심 PDF 또는 웹 링크 (10작품 이내)",
+        "education": "학사 이상 (2025-2026년 졸업예정자 포함)",
+        "experience": "신입",
+        "certifications": [],
+        "language": "공인어학성적(TOEIC Speaking 또는 OPIc) 보유자"
+      },
+      "qualifications": [
+        "사용자 중심 디자인 프로세스 이해 및 정보 구조(IA) 설계 역량",
+        "디자인 시스템 구축 및 다기능 스크린 인터랙션 프로토타이핑 능력"
+      ],
+      "preferred_qualifications": [
+        "대학 산학협력 프로젝트 또는 공모전 수상 경력 보유자",
+        "자동차 조작계/자율주행 콘셉트 인터페이스 연구 경험자"
+      ],
+      "deadline": "2025-10-31",
+      "published_at": "2025-09-01",
+      "source_url": "https://talent.hyundai.com/apply/posting/HMC-2025-UX01",
+      "source_id": "src-job-689b08d6",
+      "evidence_id": "evi-job-689b08d6",
+      "recruitment_signal_status": "recruitmentSignal",
+      "signal_type": "recruitmentSignal"
+    },
+    {
+      "job_id": "HMC-2025-ROB02",
+      "company": "현대자동차",
+      "job_title": "로보틱스 서비스 로봇 및 PBV 공간 제품 디자이너",
+      "department_or_team": "로보틱스랩 제품디자인파트",
+      "job_category": "제품·산업디자인",
+      "employment_type": "정규직",
+      "location": "의왕연구소",
+      "requirements": {
+        "major_requirement": "특정 학과",
+        "target_majors": [
+          "공업디자인학과",
+          "산업디자인학과",
+          "기계/시스템 융합"
+        ],
+        "required_skills": [
+          "Rhino",
+          "Keyshot",
+          "Alias",
+          "CMF 설계"
+        ],
+        "preferred_skills": [
+          "하드웨어 목업 제작",
+          "로봇 폼팩터 디자인 경험"
+        ],
+        "portfolio_requirement": "포트폴리오 필수",
+        "portfolio_details": "하드웨어 렌더링, CMF 사양서 및 기구 연계 프로젝트 포함 필수",
+        "education": "학사 이상",
+        "experience": "신입 및 주니어 경력 (2년 이하)",
+        "certifications": [],
+        "language": "영어 회화 우수자 우대"
+      },
+      "qualifications": [
+        "3D 모델링 및 감각적 렌더링 역량",
+        "기구 파트와의 협업을 위한 제작 공정 이해도"
+      ],
+      "preferred_qualifications": [
+        "현대차 및 모빌리티 산학 프로젝트 이수자",
+        "산업통상자원부 주관 디자인 어워드 수상자"
+      ],
+      "deadline": "2025-11-15",
+      "published_at": "2025-09-10",
+      "source_url": "https://talent.hyundai.com/apply/posting/HMC-2025-ROB02",
+      "source_id": "src-job-29a744f9",
+      "evidence_id": "evi-job-29a744f9",
+      "recruitment_signal_status": "recruitmentSignal",
+      "signal_type": "recruitmentSignal"
+    }
+  ],
+  "talent_profiles": [
+    {
+      "company": "LG전자",
+      "values": [
+        "고객을 위한 가치창조",
+        "인간존중의 경영",
+        "정도경영"
+      ],
+      "talent_profile": "꿈과 열정을 가지고 세계 최고에 도전하는 프로페셔널 LG인",
+      "culture": "F.U.N (First, Unique, New) 고객경험을 창출하는 따뜻한 혁신 문화",
+      "working_style": "고객의 페인 포인트(Pain Point)를 집요하게 파고들어 진정성 있는 해결책 도출",
+      "collaboration_style": "소통과 공감을 기반으로 심리적 안전감이 보장된 애자일 팀플레이",
+      "growth_policy": "디자인 익스퍼트 인증 및 해외 유학/파견 지원",
+      "preferred_behavior": [
+        "고객의 관점에서 한 번 더 생각하고 디테일을 챙기는 섬세함",
+        "팀원과 열린 마음으로 지식을 공유하고 동반 성장하는 태도",
+        "원칙을 지키며 정직하고 당당하게 실력을 겨루는 자세"
+      ],
+      "official_description": "LG전자는 고객의 더 나은 삶을 위한 F.U.N 경험을 선사하는 스마트 라이프 솔루션 기업입니다.",
+      "source_url": "https://www.lg.com/kr/about-lg/philosophy",
+      "evidence_id": "evi-tal-bd3ee968",
+      "verified_status": "CONFIRMED"
+    },
+    {
+      "company": "네이버",
+      "values": [
+        "기술로 연결하는 더 넓은 세상",
+        "사용자 중심 혁신",
+        "독립성과 다양성 존중"
+      ],
+      "talent_profile": "프로젝트의 오너가 되어 스스로 문제를 찾고 끝까지 해결하는 자기주도적 인재",
+      "culture": "자율 근무제 및 사내 독립 기업(CIC, Company-in-Company) 기반의 기민한 실행 조직",
+      "working_style": "가설 설정 - 빠른 출시 - 사용자 피드백 분석 - 지속적인 고도화(Iteration)",
+      "collaboration_style": "직급 없는 님 문화, 투명한 코드 리뷰 및 열린 피드백 세션",
+      "growth_policy": "글로벌 핵데이(Hackday) 지원 및 사내 오픈소스 컨트리뷰션 장려",
+      "preferred_behavior": [
+        "주어진 지시를 기다리지 않고 문제를 스스로 정의하는 주도성",
+        "동료의 전문성을 존중하며 객관적 데이터로 설득하는 자세",
+        "복잡한 문제를 본질 위주로 단순화하여 명쾌하게 전달하는 능력"
+      ],
+      "official_description": "네이버는 일상의 기술을 통해 개인과 비즈니스가 더 큰 가능성을 발견할 수 있도록 지원합니다.",
+      "source_url": "https://www.navercorp.com/culture/talent",
+      "evidence_id": "evi-tal-7d94d28e",
+      "verified_status": "CONFIRMED"
+    },
+    {
+      "company": "네이버웹툰",
+      "values": [
+        "기술로 연결하는 더 넓은 세상",
+        "사용자 중심 혁신",
+        "독립성과 다양성 존중"
+      ],
+      "talent_profile": "프로젝트의 오너가 되어 스스로 문제를 찾고 끝까지 해결하는 자기주도적 인재",
+      "culture": "자율 근무제 및 사내 독립 기업(CIC, Company-in-Company) 기반의 기민한 실행 조직",
+      "working_style": "가설 설정 - 빠른 출시 - 사용자 피드백 분석 - 지속적인 고도화(Iteration)",
+      "collaboration_style": "직급 없는 님 문화, 투명한 코드 리뷰 및 열린 피드백 세션",
+      "growth_policy": "글로벌 핵데이(Hackday) 지원 및 사내 오픈소스 컨트리뷰션 장려",
+      "preferred_behavior": [
+        "주어진 지시를 기다리지 않고 문제를 스스로 정의하는 주도성",
+        "동료의 전문성을 존중하며 객관적 데이터로 설득하는 자세",
+        "복잡한 문제를 본질 위주로 단순화하여 명쾌하게 전달하는 능력"
+      ],
+      "official_description": "네이버는 일상의 기술을 통해 개인과 비즈니스가 더 큰 가능성을 발견할 수 있도록 지원합니다.",
+      "source_url": "https://www.navercorp.com/culture/talent",
+      "evidence_id": "evi-tal-d6d490f7",
+      "verified_status": "CONFIRMED"
+    },
+    {
+      "company": "네이버클라우드",
+      "values": [
+        "기술로 연결하는 더 넓은 세상",
+        "사용자 중심 혁신",
+        "독립성과 다양성 존중"
+      ],
+      "talent_profile": "프로젝트의 오너가 되어 스스로 문제를 찾고 끝까지 해결하는 자기주도적 인재",
+      "culture": "자율 근무제 및 사내 독립 기업(CIC, Company-in-Company) 기반의 기민한 실행 조직",
+      "working_style": "가설 설정 - 빠른 출시 - 사용자 피드백 분석 - 지속적인 고도화(Iteration)",
+      "collaboration_style": "직급 없는 님 문화, 투명한 코드 리뷰 및 열린 피드백 세션",
+      "growth_policy": "글로벌 핵데이(Hackday) 지원 및 사내 오픈소스 컨트리뷰션 장려",
+      "preferred_behavior": [
+        "주어진 지시를 기다리지 않고 문제를 스스로 정의하는 주도성",
+        "동료의 전문성을 존중하며 객관적 데이터로 설득하는 자세",
+        "복잡한 문제를 본질 위주로 단순화하여 명쾌하게 전달하는 능력"
+      ],
+      "official_description": "네이버는 일상의 기술을 통해 개인과 비즈니스가 더 큰 가능성을 발견할 수 있도록 지원합니다.",
+      "source_url": "https://www.navercorp.com/culture/talent",
+      "evidence_id": "evi-tal-9f67e45d",
+      "verified_status": "CONFIRMED"
+    },
+    {
+      "company": "현대자동차",
+      "values": [
+        "고객 최우선",
+        "도전적 실행",
+        "소통과 협력",
+        "인재 존중",
+        "글로벌 지향"
+      ],
+      "talent_profile": "New Thinking, New Possibilities - 창의적 사고로 인류의 이동을 혁신하는 개척자",
+      "culture": "스마트 모빌리티 디바이스 및 솔루션 프로바이더로서의 자율과 책임 문화",
+      "working_style": "데이터 기반의 치밀한 분석과 실패를 두려워하지 않는 대담한 프로토타이핑 실행",
+      "collaboration_style": "연구개발-디자인-기구-생산 간의 긴밀한 원팀(One-Team) 크로스펑셔널 협업",
+      "growth_policy": "사내 스타트업 육성(제로원 ZER01NE) 및 미래 테크 전문성 연수 지원",
+      "preferred_behavior": [
+        "기존 관행에 의문을 품고 새로운 이동 경험을 제안하는 태도",
+        "동료의 의견을 경청하며 합의된 목표를 끝까지 완수하는 책임감",
+        "다양한 기술 영역을 빠르게 흡수하는 융합적 호기심"
+      ],
+      "official_description": "현대자동차는 이동의 영역을 우주와 가상공간까지 확장하며 인간 중심의 모빌리티 생태계를 창조합니다.",
+      "source_url": "https://www.hyundai.com/kr/ko/digital-catalogue/brand/value",
+      "evidence_id": "evi-tal-613c70f8",
+      "verified_status": "CONFIRMED"
+    }
+  ],
+  "cross_validation_results": [
+    {
+      "department": "산업디자인학과",
+      "company": "LG전자",
+      "cooperation_signals": [
+        {
+          "signal_id": "sig-coop-fb455c",
+          "university": "홍익대학교",
+          "company": "LG전자",
+          "cooperation_type": "공동 R&D",
+          "project_title": "차세대 스마트홈 가전 CMF 및 공간 인터페이스 선행 기획",
+          "department": "산업디자인학과",
+          "laboratory": "스마트 프로덕트 랩",
+          "professor": "박진우 교수",
+          "date": "2025.04 - 2026.03",
+          "description": "LG전자 디자인경영센터 산학협력 협약 체결 및 연구비 지원",
+          "source_url": "https://iacf.hongik.ac.kr/notice/lg_rnd_2025.html",
+          "source_id": "src-coop-5558ce16",
+          "evidence_id": "evi-coop-5558ce16",
+          "signal_status": "cooperationSignal",
+          "signal_type": "cooperationSignal"
+        }
+      ],
+      "recruitment_signals": [
+        {
+          "job_id": "LGE-2025-HOM01",
+          "company": "LG전자",
+          "job_title": "H&A 스마트 가전 CMF 및 공간 맞춤형 제품 디자이너",
+          "department_or_team": "디자인경영센터 H&A디자인연구소",
+          "job_category": "제품·산업디자인",
+          "employment_type": "정규직 (신입 공채)",
+          "location": "서울 마곡 LG사이언스파크",
+          "requirements": {
+            "major_requirement": "관련 전공",
+            "target_majors": [
+              "산업디자인",
+              "공업디자인",
+              "공간디자인",
+              "공예디자인"
+            ],
+            "required_skills": [
+              "Rhino",
+              "Keyshot",
+              "Photoshop",
+              "CMF 라이브러리 분석"
+            ],
+            "preferred_skills": [
+              "친환경 소재 적용 디자인 경험",
+              "스마트홈 IoT 서비스 이해"
+            ],
+            "portfolio_requirement": "포트폴리오 필수",
+            "portfolio_details": "CMF 트렌드 분석 및 실물 스케일 제품 렌더링 중심 포트폴리오",
+            "education": "학사 이상",
+            "experience": "신입",
+            "certifications": [],
+            "language": "공인 어학성적 필수"
+          },
+          "qualifications": [
+            "소재, 가공기술, 트렌드 센싱을 아우르는 공간 조화형 디자인 감각",
+            "글로벌 가전 시장 라이프스타일 분석 역량"
+          ],
+          "preferred_qualifications": [
+            "LG전자 산학 과제 참여 이력 보유자",
+            "CMF 실무 산학 캡스톤 프로젝트 완수자"
+          ],
+          "deadline": "2025-10-15",
+          "published_at": "2025-09-08",
+          "source_url": "https://careers.lg.com/app/job/LGE-2025-HOM01",
+          "source_id": "src-job-34678bd7",
+          "evidence_id": "evi-job-34678bd7",
+          "recruitment_signal_status": "recruitmentSignal",
+          "signal_type": "recruitmentSignal"
+        }
+      ],
+      "talent_profile": {
+        "company": "LG전자",
+        "values": [
+          "고객을 위한 가치창조",
+          "인간존중의 경영",
+          "정도경영"
+        ],
+        "talent_profile": "꿈과 열정을 가지고 세계 최고에 도전하는 프로페셔널 LG인",
+        "culture": "F.U.N (First, Unique, New) 고객경험을 창출하는 따뜻한 혁신 문화",
+        "working_style": "고객의 페인 포인트(Pain Point)를 집요하게 파고들어 진정성 있는 해결책 도출",
+        "collaboration_style": "소통과 공감을 기반으로 심리적 안전감이 보장된 애자일 팀플레이",
+        "growth_policy": "디자인 익스퍼트 인증 및 해외 유학/파견 지원",
+        "preferred_behavior": [
+          "고객의 관점에서 한 번 더 생각하고 디테일을 챙기는 섬세함",
+          "팀원과 열린 마음으로 지식을 공유하고 동반 성장하는 태도",
+          "원칙을 지키며 정직하고 당당하게 실력을 겨루는 자세"
+        ],
+        "official_description": "LG전자는 고객의 더 나은 삶을 위한 F.U.N 경험을 선사하는 스마트 라이프 솔루션 기업입니다.",
+        "source_url": "https://www.lg.com/kr/about-lg/philosophy",
+        "evidence_id": "evi-tal-bd3ee968",
+        "verified_status": "CONFIRMED"
+      },
+      "cooperation_evidence": "공식 산학협력 프로젝트 [차세대 스마트홈 가전 CMF 및 공간 인터페이스 선행 기획] 확인 (유형: 공동 R&D, 기간: 2025.04 - 2026.03)",
+      "department_evidence": "산업디자인학과 주관 (박진우 교수 교수 연구실: 스마트 프로덕트 랩)",
+      "recruitment_evidence": "공식 채용공고 [H&A 스마트 가전 CMF 및 공간 맞춤형 제품 디자이너] 확인 (고용형태: 정규직 (신입 공채), 전공요건: 관련 전공)",
+      "skill_evidence": [
+        "Rhino",
+        "Keyshot",
+        "Photoshop",
+        "CMF 라이브러리 분석"
+      ],
+      "portfolio_evidence": "포트폴리오 필수 (CMF 트렌드 분석 및 실물 스케일 제품 렌더링 중심 포트폴리오)",
+      "talent_evidence": "공식 인재상: 꿈과 열정을 가지고 세계 최고에 도전하는 프로페셔널 LG인 | 핵심가치: 고객을 위한 가치창조, 인간존중의 경영, 정도경영",
+      "corroboration_status": "CORROBORATED",
+      "confidence_rationale": "LG전자와 산업디자인학과 간 공식 산학협력 프로젝트 실적과, 실제 채용공고의 전공(관련 전공) 및 역량 요구사항이 일치하여 상호 입증됨. (단, 산학협력은 관심 신호이며 공식 채용 절차는 별도 공고 기준임)",
+      "evidence_ids": [
+        "evi-coop-5558ce16",
+        "evi-tal-bd3ee968",
+        "evi-job-34678bd7"
+      ]
+    },
+    {
+      "department": "시각디자인과",
+      "company": "네이버",
+      "cooperation_signals": [
+        {
+          "signal_id": "sig-coop-99b833",
+          "university": "홍익대학교",
+          "company": "네이버",
+          "cooperation_type": "캡스톤디자인",
+          "project_title": "생성형 AI 기반 디자인 워크스페이스 실무 캡스톤 프로젝트",
+          "department": "시각디자인과",
+          "laboratory": "디지털 미디어 디자인 랩",
+          "professor": "이우훈 교수",
+          "date": "2025.09 - 2025.12",
+          "description": "네이버 클로바 디자인팀 멘토링 연계 산학 디자인 캡스톤 교과 운영",
+          "source_url": "https://iacf.hongik.ac.kr/capstone/naver_2025.html",
+          "source_id": "src-coop-3a68a6a9",
+          "evidence_id": "evi-coop-3a68a6a9",
+          "signal_status": "cooperationSignal",
+          "signal_type": "cooperationSignal"
+        }
+      ],
+      "recruitment_signals": [
+        {
+          "job_id": "NAVER-2025-DES01",
+          "company": "네이버",
+          "job_title": "네이버 서비스 프로덕트 디자이너 (Product Designer)",
+          "department_or_team": "Search & Discovery CIC 디자인팀",
+          "job_category": "디자인·UX/UI",
+          "employment_type": "정규직 (신입 공채)",
+          "location": "경기도 성남시 분당구 네이버 1784",
+          "requirements": {
+            "major_requirement": "전공 무관",
+            "target_majors": [
+              "디자인 전공 우대",
+              "컴퓨터공학 복수전공 우대"
+            ],
+            "required_skills": [
+              "Figma",
+              "Design System",
+              "Data-driven UX",
+              "User Research"
+            ],
+            "preferred_skills": [
+              "HTML/CSS/JS 기초 지식",
+              "생성형 AI 인터페이스(Prompt UX) 기획 경험"
+            ],
+            "portfolio_requirement": "포트폴리오 필수",
+            "portfolio_details": "문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF",
+            "education": "학력 무관 (실무 역량 중심)",
+            "experience": "신입 (경력 1년 미만)",
+            "certifications": [],
+            "language": "무관"
+          },
+          "qualifications": [
+            "복잡한 데이터를 명확하고 직관적인 사용자 인터페이스로 시각화하는 역량",
+            "PO, 개발자, 데이터 분석가와의 기민한 협업 및 커뮤니케이션 능력"
+          ],
+          "preferred_qualifications": [
+            "실제 런칭 서비스 운영 또는 산학 캡스톤 프로젝트 완수 경험",
+            "글로벌 서비스 디자인 리서치 경험"
+          ],
+          "deadline": "2025-10-20",
+          "published_at": "2025-09-05",
+          "source_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+          "source_id": "src-job-9311586c",
+          "evidence_id": "evi-job-9311586c",
+          "recruitment_signal_status": "recruitmentSignal",
+          "signal_type": "recruitmentSignal"
+        },
+        {
+          "job_id": "NAVER-2025-DES01",
+          "company": "네이버웹툰",
+          "job_title": "네이버 서비스 프로덕트 디자이너 (Product Designer)",
+          "department_or_team": "Search & Discovery CIC 디자인팀",
+          "job_category": "디자인·UX/UI",
+          "employment_type": "정규직 (신입 공채)",
+          "location": "경기도 성남시 분당구 네이버 1784",
+          "requirements": {
+            "major_requirement": "전공 무관",
+            "target_majors": [
+              "디자인 전공 우대",
+              "컴퓨터공학 복수전공 우대"
+            ],
+            "required_skills": [
+              "Figma",
+              "Design System",
+              "Data-driven UX",
+              "User Research"
+            ],
+            "preferred_skills": [
+              "HTML/CSS/JS 기초 지식",
+              "생성형 AI 인터페이스(Prompt UX) 기획 경험"
+            ],
+            "portfolio_requirement": "포트폴리오 필수",
+            "portfolio_details": "문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF",
+            "education": "학력 무관 (실무 역량 중심)",
+            "experience": "신입 (경력 1년 미만)",
+            "certifications": [],
+            "language": "무관"
+          },
+          "qualifications": [
+            "복잡한 데이터를 명확하고 직관적인 사용자 인터페이스로 시각화하는 역량",
+            "PO, 개발자, 데이터 분석가와의 기민한 협업 및 커뮤니케이션 능력"
+          ],
+          "preferred_qualifications": [
+            "실제 런칭 서비스 운영 또는 산학 캡스톤 프로젝트 완수 경험",
+            "글로벌 서비스 디자인 리서치 경험"
+          ],
+          "deadline": "2025-10-20",
+          "published_at": "2025-09-05",
+          "source_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+          "source_id": "src-job-a5db1aa4",
+          "evidence_id": "evi-job-a5db1aa4",
+          "recruitment_signal_status": "recruitmentSignal",
+          "signal_type": "recruitmentSignal"
+        },
+        {
+          "job_id": "NAVER-2025-DES01",
+          "company": "네이버클라우드",
+          "job_title": "네이버 서비스 프로덕트 디자이너 (Product Designer)",
+          "department_or_team": "Search & Discovery CIC 디자인팀",
+          "job_category": "디자인·UX/UI",
+          "employment_type": "정규직 (신입 공채)",
+          "location": "경기도 성남시 분당구 네이버 1784",
+          "requirements": {
+            "major_requirement": "전공 무관",
+            "target_majors": [
+              "디자인 전공 우대",
+              "컴퓨터공학 복수전공 우대"
+            ],
+            "required_skills": [
+              "Figma",
+              "Design System",
+              "Data-driven UX",
+              "User Research"
+            ],
+            "preferred_skills": [
+              "HTML/CSS/JS 기초 지식",
+              "생성형 AI 인터페이스(Prompt UX) 기획 경험"
+            ],
+            "portfolio_requirement": "포트폴리오 필수",
+            "portfolio_details": "문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF",
+            "education": "학력 무관 (실무 역량 중심)",
+            "experience": "신입 (경력 1년 미만)",
+            "certifications": [],
+            "language": "무관"
+          },
+          "qualifications": [
+            "복잡한 데이터를 명확하고 직관적인 사용자 인터페이스로 시각화하는 역량",
+            "PO, 개발자, 데이터 분석가와의 기민한 협업 및 커뮤니케이션 능력"
+          ],
+          "preferred_qualifications": [
+            "실제 런칭 서비스 운영 또는 산학 캡스톤 프로젝트 완수 경험",
+            "글로벌 서비스 디자인 리서치 경험"
+          ],
+          "deadline": "2025-10-20",
+          "published_at": "2025-09-05",
+          "source_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+          "source_id": "src-job-7d00cd5f",
+          "evidence_id": "evi-job-7d00cd5f",
+          "recruitment_signal_status": "recruitmentSignal",
+          "signal_type": "recruitmentSignal"
+        }
+      ],
+      "talent_profile": {
+        "company": "네이버",
+        "values": [
+          "기술로 연결하는 더 넓은 세상",
+          "사용자 중심 혁신",
+          "독립성과 다양성 존중"
+        ],
+        "talent_profile": "프로젝트의 오너가 되어 스스로 문제를 찾고 끝까지 해결하는 자기주도적 인재",
+        "culture": "자율 근무제 및 사내 독립 기업(CIC, Company-in-Company) 기반의 기민한 실행 조직",
+        "working_style": "가설 설정 - 빠른 출시 - 사용자 피드백 분석 - 지속적인 고도화(Iteration)",
+        "collaboration_style": "직급 없는 님 문화, 투명한 코드 리뷰 및 열린 피드백 세션",
+        "growth_policy": "글로벌 핵데이(Hackday) 지원 및 사내 오픈소스 컨트리뷰션 장려",
+        "preferred_behavior": [
+          "주어진 지시를 기다리지 않고 문제를 스스로 정의하는 주도성",
+          "동료의 전문성을 존중하며 객관적 데이터로 설득하는 자세",
+          "복잡한 문제를 본질 위주로 단순화하여 명쾌하게 전달하는 능력"
+        ],
+        "official_description": "네이버는 일상의 기술을 통해 개인과 비즈니스가 더 큰 가능성을 발견할 수 있도록 지원합니다.",
+        "source_url": "https://www.navercorp.com/culture/talent",
+        "evidence_id": "evi-tal-7d94d28e",
+        "verified_status": "CONFIRMED"
+      },
+      "cooperation_evidence": "공식 산학협력 프로젝트 [생성형 AI 기반 디자인 워크스페이스 실무 캡스톤 프로젝트] 확인 (유형: 캡스톤디자인, 기간: 2025.09 - 2025.12)",
+      "department_evidence": "시각디자인과 주관 (이우훈 교수 교수 연구실: 디지털 미디어 디자인 랩)",
+      "recruitment_evidence": "공식 채용공고 [네이버 서비스 프로덕트 디자이너 (Product Designer)] 확인 (고용형태: 정규직 (신입 공채), 전공요건: 전공 무관)",
+      "skill_evidence": [
+        "Figma",
+        "Design System",
+        "Data-driven UX",
+        "User Research"
+      ],
+      "portfolio_evidence": "포트폴리오 필수 (문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF)",
+      "talent_evidence": "공식 인재상: 프로젝트의 오너가 되어 스스로 문제를 찾고 끝까지 해결하는 자기주도적 인재 | 핵심가치: 기술로 연결하는 더 넓은 세상, 사용자 중심 혁신, 독립성과 다양성 존중",
+      "corroboration_status": "CORROBORATED",
+      "confidence_rationale": "네이버와 시각디자인과 간 공식 산학협력 프로젝트 실적과, 실제 채용공고의 전공(전공 무관) 및 역량 요구사항이 일치하여 상호 입증됨. (단, 산학협력은 관심 신호이며 공식 채용 절차는 별도 공고 기준임)",
+      "evidence_ids": [
+        "evi-coop-3a68a6a9",
+        "evi-job-9311586c",
+        "evi-tal-7d94d28e",
+        "evi-job-a5db1aa4",
+        "evi-job-7d00cd5f"
+      ]
+    },
+    {
+      "department": "시각디자인과",
+      "company": "네이버웹툰",
+      "cooperation_signals": [],
+      "recruitment_signals": [
+        {
+          "job_id": "NAVER-2025-DES01",
+          "company": "네이버웹툰",
+          "job_title": "네이버 서비스 프로덕트 디자이너 (Product Designer)",
+          "department_or_team": "Search & Discovery CIC 디자인팀",
+          "job_category": "디자인·UX/UI",
+          "employment_type": "정규직 (신입 공채)",
+          "location": "경기도 성남시 분당구 네이버 1784",
+          "requirements": {
+            "major_requirement": "전공 무관",
+            "target_majors": [
+              "디자인 전공 우대",
+              "컴퓨터공학 복수전공 우대"
+            ],
+            "required_skills": [
+              "Figma",
+              "Design System",
+              "Data-driven UX",
+              "User Research"
+            ],
+            "preferred_skills": [
+              "HTML/CSS/JS 기초 지식",
+              "생성형 AI 인터페이스(Prompt UX) 기획 경험"
+            ],
+            "portfolio_requirement": "포트폴리오 필수",
+            "portfolio_details": "문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF",
+            "education": "학력 무관 (실무 역량 중심)",
+            "experience": "신입 (경력 1년 미만)",
+            "certifications": [],
+            "language": "무관"
+          },
+          "qualifications": [
+            "복잡한 데이터를 명확하고 직관적인 사용자 인터페이스로 시각화하는 역량",
+            "PO, 개발자, 데이터 분석가와의 기민한 협업 및 커뮤니케이션 능력"
+          ],
+          "preferred_qualifications": [
+            "실제 런칭 서비스 운영 또는 산학 캡스톤 프로젝트 완수 경험",
+            "글로벌 서비스 디자인 리서치 경험"
+          ],
+          "deadline": "2025-10-20",
+          "published_at": "2025-09-05",
+          "source_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+          "source_id": "src-job-a5db1aa4",
+          "evidence_id": "evi-job-a5db1aa4",
+          "recruitment_signal_status": "recruitmentSignal",
+          "signal_type": "recruitmentSignal"
+        }
+      ],
+      "talent_profile": {
+        "company": "네이버웹툰",
+        "values": [
+          "기술로 연결하는 더 넓은 세상",
+          "사용자 중심 혁신",
+          "독립성과 다양성 존중"
+        ],
+        "talent_profile": "프로젝트의 오너가 되어 스스로 문제를 찾고 끝까지 해결하는 자기주도적 인재",
+        "culture": "자율 근무제 및 사내 독립 기업(CIC, Company-in-Company) 기반의 기민한 실행 조직",
+        "working_style": "가설 설정 - 빠른 출시 - 사용자 피드백 분석 - 지속적인 고도화(Iteration)",
+        "collaboration_style": "직급 없는 님 문화, 투명한 코드 리뷰 및 열린 피드백 세션",
+        "growth_policy": "글로벌 핵데이(Hackday) 지원 및 사내 오픈소스 컨트리뷰션 장려",
+        "preferred_behavior": [
+          "주어진 지시를 기다리지 않고 문제를 스스로 정의하는 주도성",
+          "동료의 전문성을 존중하며 객관적 데이터로 설득하는 자세",
+          "복잡한 문제를 본질 위주로 단순화하여 명쾌하게 전달하는 능력"
+        ],
+        "official_description": "네이버는 일상의 기술을 통해 개인과 비즈니스가 더 큰 가능성을 발견할 수 있도록 지원합니다.",
+        "source_url": "https://www.navercorp.com/culture/talent",
+        "evidence_id": "evi-tal-d6d490f7",
+        "verified_status": "CONFIRMED"
+      },
+      "cooperation_evidence": "해당 대학과의 공식 산학협력 프로젝트 미확인 (수요 신호 없음)",
+      "department_evidence": "시각디자인과과의 직접적인 공식 산학 연계 근거 미확인",
+      "recruitment_evidence": "공식 채용공고 [네이버 서비스 프로덕트 디자이너 (Product Designer)] 확인 (고용형태: 정규직 (신입 공채), 전공요건: 전공 무관)",
+      "skill_evidence": [
+        "Figma",
+        "Design System",
+        "Data-driven UX",
+        "User Research"
+      ],
+      "portfolio_evidence": "포트폴리오 필수 (문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF)",
+      "talent_evidence": "공식 인재상: 프로젝트의 오너가 되어 스스로 문제를 찾고 끝까지 해결하는 자기주도적 인재 | 핵심가치: 기술로 연결하는 더 넓은 세상, 사용자 중심 혁신, 독립성과 다양성 존중",
+      "corroboration_status": "RECRUITMENT_CONFIRMED",
+      "confidence_rationale": "네이버웹툰의 실제 공식 채용공고(네이버 서비스 프로덕트 디자이너 (Product Designer))는 확인되었으나, 시각디자인과과의 공식 산학협력 프로젝트 이력은 없음. 실제 채용조건을 1차 근거로 사용함.",
+      "evidence_ids": [
+        "evi-tal-d6d490f7",
+        "evi-job-a5db1aa4"
+      ]
+    },
+    {
+      "department": "시각디자인과",
+      "company": "네이버클라우드",
+      "cooperation_signals": [],
+      "recruitment_signals": [
+        {
+          "job_id": "NAVER-2025-DES01",
+          "company": "네이버클라우드",
+          "job_title": "네이버 서비스 프로덕트 디자이너 (Product Designer)",
+          "department_or_team": "Search & Discovery CIC 디자인팀",
+          "job_category": "디자인·UX/UI",
+          "employment_type": "정규직 (신입 공채)",
+          "location": "경기도 성남시 분당구 네이버 1784",
+          "requirements": {
+            "major_requirement": "전공 무관",
+            "target_majors": [
+              "디자인 전공 우대",
+              "컴퓨터공학 복수전공 우대"
+            ],
+            "required_skills": [
+              "Figma",
+              "Design System",
+              "Data-driven UX",
+              "User Research"
+            ],
+            "preferred_skills": [
+              "HTML/CSS/JS 기초 지식",
+              "생성형 AI 인터페이스(Prompt UX) 기획 경험"
+            ],
+            "portfolio_requirement": "포트폴리오 필수",
+            "portfolio_details": "문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF",
+            "education": "학력 무관 (실무 역량 중심)",
+            "experience": "신입 (경력 1년 미만)",
+            "certifications": [],
+            "language": "무관"
+          },
+          "qualifications": [
+            "복잡한 데이터를 명확하고 직관적인 사용자 인터페이스로 시각화하는 역량",
+            "PO, 개발자, 데이터 분석가와의 기민한 협업 및 커뮤니케이션 능력"
+          ],
+          "preferred_qualifications": [
+            "실제 런칭 서비스 운영 또는 산학 캡스톤 프로젝트 완수 경험",
+            "글로벌 서비스 디자인 리서치 경험"
+          ],
+          "deadline": "2025-10-20",
+          "published_at": "2025-09-05",
+          "source_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+          "source_id": "src-job-7d00cd5f",
+          "evidence_id": "evi-job-7d00cd5f",
+          "recruitment_signal_status": "recruitmentSignal",
+          "signal_type": "recruitmentSignal"
+        }
+      ],
+      "talent_profile": {
+        "company": "네이버클라우드",
+        "values": [
+          "기술로 연결하는 더 넓은 세상",
+          "사용자 중심 혁신",
+          "독립성과 다양성 존중"
+        ],
+        "talent_profile": "프로젝트의 오너가 되어 스스로 문제를 찾고 끝까지 해결하는 자기주도적 인재",
+        "culture": "자율 근무제 및 사내 독립 기업(CIC, Company-in-Company) 기반의 기민한 실행 조직",
+        "working_style": "가설 설정 - 빠른 출시 - 사용자 피드백 분석 - 지속적인 고도화(Iteration)",
+        "collaboration_style": "직급 없는 님 문화, 투명한 코드 리뷰 및 열린 피드백 세션",
+        "growth_policy": "글로벌 핵데이(Hackday) 지원 및 사내 오픈소스 컨트리뷰션 장려",
+        "preferred_behavior": [
+          "주어진 지시를 기다리지 않고 문제를 스스로 정의하는 주도성",
+          "동료의 전문성을 존중하며 객관적 데이터로 설득하는 자세",
+          "복잡한 문제를 본질 위주로 단순화하여 명쾌하게 전달하는 능력"
+        ],
+        "official_description": "네이버는 일상의 기술을 통해 개인과 비즈니스가 더 큰 가능성을 발견할 수 있도록 지원합니다.",
+        "source_url": "https://www.navercorp.com/culture/talent",
+        "evidence_id": "evi-tal-9f67e45d",
+        "verified_status": "CONFIRMED"
+      },
+      "cooperation_evidence": "해당 대학과의 공식 산학협력 프로젝트 미확인 (수요 신호 없음)",
+      "department_evidence": "시각디자인과과의 직접적인 공식 산학 연계 근거 미확인",
+      "recruitment_evidence": "공식 채용공고 [네이버 서비스 프로덕트 디자이너 (Product Designer)] 확인 (고용형태: 정규직 (신입 공채), 전공요건: 전공 무관)",
+      "skill_evidence": [
+        "Figma",
+        "Design System",
+        "Data-driven UX",
+        "User Research"
+      ],
+      "portfolio_evidence": "포트폴리오 필수 (문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF)",
+      "talent_evidence": "공식 인재상: 프로젝트의 오너가 되어 스스로 문제를 찾고 끝까지 해결하는 자기주도적 인재 | 핵심가치: 기술로 연결하는 더 넓은 세상, 사용자 중심 혁신, 독립성과 다양성 존중",
+      "corroboration_status": "RECRUITMENT_CONFIRMED",
+      "confidence_rationale": "네이버클라우드의 실제 공식 채용공고(네이버 서비스 프로덕트 디자이너 (Product Designer))는 확인되었으나, 시각디자인과과의 공식 산학협력 프로젝트 이력은 없음. 실제 채용조건을 1차 근거로 사용함.",
+      "evidence_ids": [
+        "evi-job-7d00cd5f",
+        "evi-tal-9f67e45d"
+      ]
+    },
+    {
+      "department": "시각디자인과",
+      "company": "현대자동차",
+      "cooperation_signals": [
+        {
+          "signal_id": "sig-coop-045de1",
+          "university": "홍익대학교",
+          "company": "현대자동차",
+          "cooperation_type": "산학공동연구",
+          "project_title": "미래 모빌리티 인터랙션 디자인 및 자율주행 UX 공동연구",
+          "department": "시각디자인과",
+          "laboratory": "인터랙션 디자인 연구실",
+          "professor": "김현석 교수",
+          "date": "2025.03 - 2026.02",
+          "description": "차량 내 디스플레이 및 AI 에이전트와 승객 간 감성 교감 HMI 연구 협약",
+          "source_url": "https://iacf.hongik.ac.kr/notice/rnd_2025_01.html",
+          "source_id": "src-coop-d1a0bb87",
+          "evidence_id": "evi-coop-d1a0bb87",
+          "signal_status": "cooperationSignal",
+          "signal_type": "cooperationSignal"
+        }
+      ],
+      "recruitment_signals": [
+        {
+          "job_id": "HMC-2025-UX01",
+          "company": "현대자동차",
+          "job_title": "차량용 인포테인먼트(ccNC) 및 인-카 HMI 인터랙션 디자이너",
+          "department_or_team": "인포테인먼트개발센터 UX설계팀",
+          "job_category": "디자인·UX/UI",
+          "employment_type": "신입 채용연계형 인턴 / 정규직",
+          "location": "서울 양재본사 및 남양연구소",
+          "requirements": {
+            "major_requirement": "관련 전공",
+            "target_majors": [
+              "시각디자인",
+              "산업디자인",
+              "인터랙션디자인",
+              "HCI"
+            ],
+            "required_skills": [
+              "Figma",
+              "Adobe Creative Cloud",
+              "Protopie",
+              "HMI 가이드라인 분석"
+            ],
+            "preferred_skills": [
+              "3D GUI 툴(Blender, Unreal Engine)",
+              "모빌리티 인터랙션 실무 캡스톤 경험"
+            ],
+            "portfolio_requirement": "포트폴리오 필수",
+            "portfolio_details": "모빌리티/디지털 인터랙션 프로젝트 중심 PDF 또는 웹 링크 (10작품 이내)",
+            "education": "학사 이상 (2025-2026년 졸업예정자 포함)",
+            "experience": "신입",
+            "certifications": [],
+            "language": "공인어학성적(TOEIC Speaking 또는 OPIc) 보유자"
+          },
+          "qualifications": [
+            "사용자 중심 디자인 프로세스 이해 및 정보 구조(IA) 설계 역량",
+            "디자인 시스템 구축 및 다기능 스크린 인터랙션 프로토타이핑 능력"
+          ],
+          "preferred_qualifications": [
+            "대학 산학협력 프로젝트 또는 공모전 수상 경력 보유자",
+            "자동차 조작계/자율주행 콘셉트 인터페이스 연구 경험자"
+          ],
+          "deadline": "2025-10-31",
+          "published_at": "2025-09-01",
+          "source_url": "https://talent.hyundai.com/apply/posting/HMC-2025-UX01",
+          "source_id": "src-job-689b08d6",
+          "evidence_id": "evi-job-689b08d6",
+          "recruitment_signal_status": "recruitmentSignal",
+          "signal_type": "recruitmentSignal"
+        },
+        {
+          "job_id": "HMC-2025-ROB02",
+          "company": "현대자동차",
+          "job_title": "로보틱스 서비스 로봇 및 PBV 공간 제품 디자이너",
+          "department_or_team": "로보틱스랩 제품디자인파트",
+          "job_category": "제품·산업디자인",
+          "employment_type": "정규직",
+          "location": "의왕연구소",
+          "requirements": {
+            "major_requirement": "특정 학과",
+            "target_majors": [
+              "공업디자인학과",
+              "산업디자인학과",
+              "기계/시스템 융합"
+            ],
+            "required_skills": [
+              "Rhino",
+              "Keyshot",
+              "Alias",
+              "CMF 설계"
+            ],
+            "preferred_skills": [
+              "하드웨어 목업 제작",
+              "로봇 폼팩터 디자인 경험"
+            ],
+            "portfolio_requirement": "포트폴리오 필수",
+            "portfolio_details": "하드웨어 렌더링, CMF 사양서 및 기구 연계 프로젝트 포함 필수",
+            "education": "학사 이상",
+            "experience": "신입 및 주니어 경력 (2년 이하)",
+            "certifications": [],
+            "language": "영어 회화 우수자 우대"
+          },
+          "qualifications": [
+            "3D 모델링 및 감각적 렌더링 역량",
+            "기구 파트와의 협업을 위한 제작 공정 이해도"
+          ],
+          "preferred_qualifications": [
+            "현대차 및 모빌리티 산학 프로젝트 이수자",
+            "산업통상자원부 주관 디자인 어워드 수상자"
+          ],
+          "deadline": "2025-11-15",
+          "published_at": "2025-09-10",
+          "source_url": "https://talent.hyundai.com/apply/posting/HMC-2025-ROB02",
+          "source_id": "src-job-29a744f9",
+          "evidence_id": "evi-job-29a744f9",
+          "recruitment_signal_status": "recruitmentSignal",
+          "signal_type": "recruitmentSignal"
+        }
+      ],
+      "talent_profile": {
+        "company": "현대자동차",
+        "values": [
+          "고객 최우선",
+          "도전적 실행",
+          "소통과 협력",
+          "인재 존중",
+          "글로벌 지향"
+        ],
+        "talent_profile": "New Thinking, New Possibilities - 창의적 사고로 인류의 이동을 혁신하는 개척자",
+        "culture": "스마트 모빌리티 디바이스 및 솔루션 프로바이더로서의 자율과 책임 문화",
+        "working_style": "데이터 기반의 치밀한 분석과 실패를 두려워하지 않는 대담한 프로토타이핑 실행",
+        "collaboration_style": "연구개발-디자인-기구-생산 간의 긴밀한 원팀(One-Team) 크로스펑셔널 협업",
+        "growth_policy": "사내 스타트업 육성(제로원 ZER01NE) 및 미래 테크 전문성 연수 지원",
+        "preferred_behavior": [
+          "기존 관행에 의문을 품고 새로운 이동 경험을 제안하는 태도",
+          "동료의 의견을 경청하며 합의된 목표를 끝까지 완수하는 책임감",
+          "다양한 기술 영역을 빠르게 흡수하는 융합적 호기심"
+        ],
+        "official_description": "현대자동차는 이동의 영역을 우주와 가상공간까지 확장하며 인간 중심의 모빌리티 생태계를 창조합니다.",
+        "source_url": "https://www.hyundai.com/kr/ko/digital-catalogue/brand/value",
+        "evidence_id": "evi-tal-613c70f8",
+        "verified_status": "CONFIRMED"
+      },
+      "cooperation_evidence": "공식 산학협력 프로젝트 [미래 모빌리티 인터랙션 디자인 및 자율주행 UX 공동연구] 확인 (유형: 산학공동연구, 기간: 2025.03 - 2026.02)",
+      "department_evidence": "시각디자인과 주관 (김현석 교수 교수 연구실: 인터랙션 디자인 연구실)",
+      "recruitment_evidence": "공식 채용공고 [차량용 인포테인먼트(ccNC) 및 인-카 HMI 인터랙션 디자이너] 확인 (고용형태: 신입 채용연계형 인턴 / 정규직, 전공요건: 관련 전공)",
+      "skill_evidence": [
+        "Figma",
+        "Adobe Creative Cloud",
+        "Protopie",
+        "HMI 가이드라인 분석"
+      ],
+      "portfolio_evidence": "포트폴리오 필수 (모빌리티/디지털 인터랙션 프로젝트 중심 PDF 또는 웹 링크 (10작품 이내))",
+      "talent_evidence": "공식 인재상: New Thinking, New Possibilities - 창의적 사고로 인류의 이동을 혁신하는 개척자 | 핵심가치: 고객 최우선, 도전적 실행, 소통과 협력, 인재 존중, 글로벌 지향",
+      "corroboration_status": "CORROBORATED",
+      "confidence_rationale": "현대자동차와 시각디자인과 간 공식 산학협력 프로젝트 실적과, 실제 채용공고의 전공(관련 전공) 및 역량 요구사항이 일치하여 상호 입증됨. (단, 산학협력은 관심 신호이며 공식 채용 절차는 별도 공고 기준임)",
+      "evidence_ids": [
+        "evi-job-689b08d6",
+        "evi-coop-d1a0bb87",
+        "evi-job-29a744f9",
+        "evi-tal-613c70f8"
+      ]
+    }
+  ],
+  "markdown_report": "# 홍익대학교\n\n## 1. 주요 산학협력기업\n\n| 기업 | 협력 유형 | 관련 학과 | 프로젝트 | 근거 |\n|---|---|---|---|---|\n| 현대자동차 | 산학공동연구 | 시각디자인과 | 미래 모빌리티 인터랙션 디자인 및 자율주행 UX 공동연구 | [evi-coop-d1a0bb87](https://iacf.hongik.ac.kr/notice/rnd_2025_01.html) |\n| 네이버 | 캡스톤디자인 | 시각디자인과 | 생성형 AI 기반 디자인 워크스페이스 실무 캡스톤 프로젝트 | [evi-coop-3a68a6a9](https://iacf.hongik.ac.kr/capstone/naver_2025.html) |\n| LG전자 | 공동 R&D | 산업디자인학과 | 차세대 스마트홈 가전 CMF 및 공간 인터페이스 선행 기획 | [evi-coop-5558ce16](https://iacf.hongik.ac.kr/notice/lg_rnd_2025.html) |\n\n\n## 2. 연계기업\n\n| 기업 | 관계 | 근거 | 상태 |\n|---|---|---|---|\n| 현대자동차 ➔ 현대모비스 | affiliate | [evi-rel-5054643b](https://www.hyundaimotorgroup.com/group/affiliates) 현대자동차그룹 계열사 공시 (전장 및 부품 소프트웨어 사업 영위) | CONFIRMED |\n| 현대자동차 ➔ 현대오토에버 | affiliate | [evi-rel-c75c1753](https://www.hyundai-autoever.com/company/about) 현대자동차그룹 차량용 모빌리티 SW 플랫폼 전문 계열사 | CONFIRMED |\n| 현대자동차 ➔ 보스턴다이내믹스 | subsidiary | [evi-rel-17aef63b](https://www.bostondynamics.com/about) 현대자동차 로보틱스 자회사 인수 공시 | CONFIRMED |\n| 현대자동차 ➔ 기아 | affiliate | [evi-rel-e48d9849](https://www.hyundaimotorgroup.com/group/affiliates) 현대자동차그룹 모빌리티 완성차 계열사 | CONFIRMED |\n| 네이버 ➔ 네이버웹툰 | subsidiary | [evi-rel-acda7c0a](https://webtoonscorp.com/about) 네이버 글로벌 디지털 콘텐츠 및 웹툰 플랫폼 자회사 | CONFIRMED |\n| 네이버 ➔ 스노우(SNOW) | subsidiary | [evi-rel-eb790d31](https://snowcorp.com/ko/about) 네이버 자회사 (카메라 및 비주얼 AI 인터랙션 앱 개발) | CONFIRMED |\n| 네이버 ➔ 네이버클라우드 | subsidiary | [evi-rel-03c64127](https://www.navercloudcorp.com/company/about) 네이버 하이퍼클로바X AI 및 B2B 클라우드 인프라 자회사 | CONFIRMED |\n| LG전자 ➔ LG디스플레이 | affiliate | [evi-rel-aefcb80c](https://www.lgdisplay.com/kor/company/overview) LG그룹 차세대 디스플레이 및 올레드 제조 계열사 | CONFIRMED |\n| LG전자 ➔ LG CNS | affiliate | [evi-rel-e3ff54e9](https://www.lgcns.com/company/about) LG그룹 DX 및 생성형 AI 엔터프라이즈 솔루션 계열사 | CONFIRMED |\n\n\n## 3. 학과-기업 매핑\n\n| 학과 | 기업 | 협력 프로젝트 | 관련 분야 | 근거 |\n|---|---|---|---|---|\n| 시각디자인과 | 현대자동차 | 미래 모빌리티 인터랙션 디자인 및 자율주행 UX 공동연구 | 모빌리티 / 오토모티브 UX | [evi-coop-d1a0bb87](https://iacf.hongik.ac.kr/notice/rnd_2025_01.html) |\n| 시각디자인과 | 네이버 | 생성형 AI 기반 디자인 워크스페이스 실무 캡스톤 프로젝트 | 인공지능 / 디지털 미디어 | [evi-coop-3a68a6a9](https://iacf.hongik.ac.kr/capstone/naver_2025.html) |\n| 산업디자인학과 | LG전자 | 차세대 스마트홈 가전 CMF 및 공간 인터페이스 선행 기획 | 스마트홈 / CMF & 공간 디자인 | [evi-coop-5558ce16](https://iacf.hongik.ac.kr/notice/lg_rnd_2025.html) |\n\n\n## 4. 실제 채용조건\n\n| 기업 | 직무 | 전공 | 필수조건 | 우대조건 | 포트폴리오 | 근거 |\n|---|---|---|---|---|---|---|\n| LG전자 | H&A 스마트 가전 CMF 및 공간 맞춤형 제품 디자이너 | 관련 전공 | Rhino, Keyshot, Photoshop | LG전자 산학 과제 참여 이력 보유자, CMF 실무 산학 캡스톤 프로젝트 완수자 | 포트폴리오 필수 | [evi-job-34678bd7](https://careers.lg.com/app/job/LGE-2025-HOM01) |\n| 네이버 | 네이버 서비스 프로덕트 디자이너 (Product Designer) | 전공 무관 | Figma, Design System, Data-driven UX | 실제 런칭 서비스 운영 또는 산학 캡스톤 프로젝트 완수 경험, 글로벌 서비스 디자인 리서치 경험 | 포트폴리오 필수 | [evi-job-9311586c](https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01) |\n| 네이버웹툰 | 네이버 서비스 프로덕트 디자이너 (Product Designer) | 전공 무관 | Figma, Design System, Data-driven UX | 실제 런칭 서비스 운영 또는 산학 캡스톤 프로젝트 완수 경험, 글로벌 서비스 디자인 리서치 경험 | 포트폴리오 필수 | [evi-job-a5db1aa4](https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01) |\n| 네이버클라우드 | 네이버 서비스 프로덕트 디자이너 (Product Designer) | 전공 무관 | Figma, Design System, Data-driven UX | 실제 런칭 서비스 운영 또는 산학 캡스톤 프로젝트 완수 경험, 글로벌 서비스 디자인 리서치 경험 | 포트폴리오 필수 | [evi-job-7d00cd5f](https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01) |\n| 현대자동차 | 차량용 인포테인먼트(ccNC) 및 인-카 HMI 인터랙션 디자이너 | 관련 전공 | Figma, Adobe Creative Cloud, Protopie | 대학 산학협력 프로젝트 또는 공모전 수상 경력 보유자, 자동차 조작계/자율주행 콘셉트 인터페이스 연구 경험자 | 포트폴리오 필수 | [evi-job-689b08d6](https://talent.hyundai.com/apply/posting/HMC-2025-UX01) |\n| 현대자동차 | 로보틱스 서비스 로봇 및 PBV 공간 제품 디자이너 | 특정 학과 | Rhino, Keyshot, Alias | 현대차 및 모빌리티 산학 프로젝트 이수자, 산업통상자원부 주관 디자인 어워드 수상자 | 포트폴리오 필수 | [evi-job-29a744f9](https://talent.hyundai.com/apply/posting/HMC-2025-ROB02) |\n\n\n## 5. 기업 인재상 / 문화\n\n| 기업 | 인재상 | 기업문화 | 공식 근거 |\n|---|---|---|---|\n| LG전자 | 꿈과 열정을 가지고 세계 최고에 도전하는 프로페셔널 LG인 | F.U.N (First, Unique, New) 고객경험을 창출하는 따뜻한 혁신 문화 | [evi-tal-bd3ee968](https://www.lg.com/kr/about-lg/philosophy) |\n| 네이버 | 프로젝트의 오너가 되어 스스로 문제를 찾고 끝까지 해결하는 자기주도적 인재 | 자율 근무제 및 사내 독립 기업(CIC, Company-in-Company) 기반의 기민한 실행 조직 | [evi-tal-7d94d28e](https://www.navercorp.com/culture/talent) |\n| 네이버웹툰 | 프로젝트의 오너가 되어 스스로 문제를 찾고 끝까지 해결하는 자기주도적 인재 | 자율 근무제 및 사내 독립 기업(CIC, Company-in-Company) 기반의 기민한 실행 조직 | [evi-tal-d6d490f7](https://www.navercorp.com/culture/talent) |\n| 네이버클라우드 | 프로젝트의 오너가 되어 스스로 문제를 찾고 끝까지 해결하는 자기주도적 인재 | 자율 근무제 및 사내 독립 기업(CIC, Company-in-Company) 기반의 기민한 실행 조직 | [evi-tal-9f67e45d](https://www.navercorp.com/culture/talent) |\n| 현대자동차 | New Thinking, New Possibilities - 창의적 사고로 인류의 이동을 혁신하는 개척자 | 스마트 모빌리티 디바이스 및 솔루션 프로바이더로서의 자율과 책임 문화 | [evi-tal-613c70f8](https://www.hyundai.com/kr/ko/digital-catalogue/brand/value) |\n\n\n## 6. 교차검증 결과\n\n| 학과 | 기업 | 산학협력 근거 | 채용 근거 | 결과 |\n|---|---|---|---|---|\n| 산업디자인학과 | LG전자 | 공식 산학협력 프로젝트 [차세대 스마트홈 가전 CMF 및 공간 인터페이스 선행 기획] 확인 (유형: 공동 R&D, 기간: 2025.04 - 2026.03) | 공식 채용공고 [H&A 스마트 가전 CMF 및 공간 맞춤형 제품 디자이너] 확인 (고용형태: 정규직 (신입 공채), 전공요건: 관련 전공) | **CORROBORATED** |\n| 시각디자인과 | 네이버 | 공식 산학협력 프로젝트 [생성형 AI 기반 디자인 워크스페이스 실무 캡스톤 프로젝트] 확인 (유형: 캡스톤디자인, 기간: 2025.09 - 2025.12) | 공식 채용공고 [네이버 서비스 프로덕트 디자이너 (Product Designer)] 확인 (고용형태: 정규직 (신입 공채), 전공요건: 전공 무관) | **CORROBORATED** |\n| 시각디자인과 | 네이버웹툰 | 해당 대학과의 공식 산학협력 프로젝트 미확인 (수요 신호 없음) | 공식 채용공고 [네이버 서비스 프로덕트 디자이너 (Product Designer)] 확인 (고용형태: 정규직 (신입 공채), 전공요건: 전공 무관) | **RECRUITMENT_CONFIRMED** |\n| 시각디자인과 | 네이버클라우드 | 해당 대학과의 공식 산학협력 프로젝트 미확인 (수요 신호 없음) | 공식 채용공고 [네이버 서비스 프로덕트 디자이너 (Product Designer)] 확인 (고용형태: 정규직 (신입 공채), 전공요건: 전공 무관) | **RECRUITMENT_CONFIRMED** |\n| 시각디자인과 | 현대자동차 | 공식 산학협력 프로젝트 [미래 모빌리티 인터랙션 디자인 및 자율주행 UX 공동연구] 확인 (유형: 산학공동연구, 기간: 2025.03 - 2026.02) | 공식 채용공고 [차량용 인포테인먼트(ccNC) 및 인-카 HMI 인터랙션 디자이너] 확인 (고용형태: 신입 채용연계형 인턴 / 정규직, 전공요건: 관련 전공) | **CORROBORATED** |\n\n\n## 7. 학생 준비 방향\n\n실제 채용공고에서 반복적으로 확인된 객관적 요구조건 요약:\n\n- **요구 전공**: HCI, 공간디자인, 공업디자인, 공업디자인학과, 공예디자인, 기계/시스템 융합, 디자인 전공 우대, 산업디자인, 산업디자인학과, 시각디자인, 인터랙션디자인, 컴퓨터공학 복수전공 우대\n- **요구 기술/역량**: Adobe Creative Cloud, Alias, CMF 라이브러리 분석, CMF 설계, Data-driven UX, Design System, Figma, HMI 가이드라인 분석, Keyshot, Photoshop, Protopie, Rhino, User Research\n- **포트폴리오 요건**: 현대자동차: 포트폴리오 필수 (하드웨어 렌더링, CMF 사양서 및 기구 연계 프로젝트 포함 필수); 네이버클라우드: 포트폴리오 필수 (문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF); 현대자동차: 포트폴리오 필수 (모빌리티/디지털 인터랙션 프로젝트 중심 PDF 또는 웹 링크 (10작품 이내)); LG전자: 포트폴리오 필수 (CMF 트렌드 분석 및 실물 스케일 제품 렌더링 중심 포트폴리오); 네이버: 포트폴리오 필수 (문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF); 네이버웹툰: 포트폴리오 필수 (문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF)\n- **요구 경력 수준**: 신입, 신입 (경력 1년 미만), 신입 및 주니어 경력 (2년 이하)\n- **공통 우대사항**:\n  * LG전자 산학 과제 참여 이력 보유자\n  * 글로벌 서비스 디자인 리서치 경험\n  * 산업통상자원부 주관 디자인 어워드 수상자\n  * CMF 실무 산학 캡스톤 프로젝트 완수자\n\n*(주의: 본 분석은 공식 수집된 공고의 Fact에 기반하며, 기업의 비공개 채용 의도를 추측하지 않습니다.)*\n",
+  "evidences": [
+    {
+      "evidence_id": "evi-coop-d1a0bb87",
+      "source_id": "src-coop-d1a0bb87",
+      "source_url": "https://iacf.hongik.ac.kr/notice/rnd_2025_01.html",
+      "evidence_text": "[홍익대학교 산학협력단] 미래 모빌리티 인터랙션 디자인 및 자율주행 UX 공동연구 | 기업: 현대자동차 | 유형: 산학공동연구 | 학과: 시각디자인과 | 교수: 김현석 교수 | 내용: 차량 내 디스플레이 및 AI 에이전트와 승객 간 감성 교감 HMI 연구 협약",
+      "selector_or_location": ".notice-detail",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.901939",
+      "confidence": 0.98,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-coop-3a68a6a9",
+      "source_id": "src-coop-3a68a6a9",
+      "source_url": "https://iacf.hongik.ac.kr/capstone/naver_2025.html",
+      "evidence_text": "[홍익대학교 산학협력단] 생성형 AI 기반 디자인 워크스페이스 실무 캡스톤 프로젝트 | 기업: 네이버 | 유형: 캡스톤디자인 | 학과: 시각디자인과 | 교수: 이우훈 교수 | 내용: 네이버 클로바 디자인팀 멘토링 연계 산학 디자인 캡스톤 교과 운영",
+      "selector_or_location": ".notice-detail",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.901939",
+      "confidence": 0.98,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-coop-5558ce16",
+      "source_id": "src-coop-5558ce16",
+      "source_url": "https://iacf.hongik.ac.kr/notice/lg_rnd_2025.html",
+      "evidence_text": "[홍익대학교 산학협력단] 차세대 스마트홈 가전 CMF 및 공간 인터페이스 선행 기획 | 기업: LG전자 | 유형: 공동 R&D | 학과: 산업디자인학과 | 교수: 박진우 교수 | 내용: LG전자 디자인경영센터 산학협력 협약 체결 및 연구비 지원",
+      "selector_or_location": ".notice-detail",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.901939",
+      "confidence": 0.98,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-rel-5054643b",
+      "source_id": "src-rel-5054643b",
+      "source_url": "https://www.hyundaimotorgroup.com/group/affiliates",
+      "evidence_text": "[현대자동차 공식 공시] 현대모비스 (affiliate) - 현대자동차그룹 계열사 공시 (전장 및 부품 소프트웨어 사업 영위)",
+      "selector_or_location": "corporate_disclosure",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.905867",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-rel-c75c1753",
+      "source_id": "src-rel-c75c1753",
+      "source_url": "https://www.hyundai-autoever.com/company/about",
+      "evidence_text": "[현대자동차 공식 공시] 현대오토에버 (affiliate) - 현대자동차그룹 차량용 모빌리티 SW 플랫폼 전문 계열사",
+      "selector_or_location": "corporate_disclosure",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.905867",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-rel-17aef63b",
+      "source_id": "src-rel-17aef63b",
+      "source_url": "https://www.bostondynamics.com/about",
+      "evidence_text": "[현대자동차 공식 공시] 보스턴다이내믹스 (subsidiary) - 현대자동차 로보틱스 자회사 인수 공시",
+      "selector_or_location": "corporate_disclosure",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.905867",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-rel-e48d9849",
+      "source_id": "src-rel-e48d9849",
+      "source_url": "https://www.hyundaimotorgroup.com/group/affiliates",
+      "evidence_text": "[현대자동차 공식 공시] 기아 (affiliate) - 현대자동차그룹 모빌리티 완성차 계열사",
+      "selector_or_location": "corporate_disclosure",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.905867",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-rel-acda7c0a",
+      "source_id": "src-rel-acda7c0a",
+      "source_url": "https://webtoonscorp.com/about",
+      "evidence_text": "[네이버 공식 공시] 네이버웹툰 (subsidiary) - 네이버 글로벌 디지털 콘텐츠 및 웹툰 플랫폼 자회사",
+      "selector_or_location": "corporate_disclosure",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.905867",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-rel-eb790d31",
+      "source_id": "src-rel-eb790d31",
+      "source_url": "https://snowcorp.com/ko/about",
+      "evidence_text": "[네이버 공식 공시] 스노우(SNOW) (subsidiary) - 네이버 자회사 (카메라 및 비주얼 AI 인터랙션 앱 개발)",
+      "selector_or_location": "corporate_disclosure",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.905867",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-rel-03c64127",
+      "source_id": "src-rel-03c64127",
+      "source_url": "https://www.navercloudcorp.com/company/about",
+      "evidence_text": "[네이버 공식 공시] 네이버클라우드 (subsidiary) - 네이버 하이퍼클로바X AI 및 B2B 클라우드 인프라 자회사",
+      "selector_or_location": "corporate_disclosure",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.905867",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-rel-aefcb80c",
+      "source_id": "src-rel-aefcb80c",
+      "source_url": "https://www.lgdisplay.com/kor/company/overview",
+      "evidence_text": "[LG전자 공식 공시] LG디스플레이 (affiliate) - LG그룹 차세대 디스플레이 및 올레드 제조 계열사",
+      "selector_or_location": "corporate_disclosure",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.905867",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-rel-e3ff54e9",
+      "source_id": "src-rel-e3ff54e9",
+      "source_url": "https://www.lgcns.com/company/about",
+      "evidence_text": "[LG전자 공식 공시] LG CNS (affiliate) - LG그룹 DX 및 생성형 AI 엔터프라이즈 솔루션 계열사",
+      "selector_or_location": "corporate_disclosure",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.905867",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-job-34678bd7",
+      "source_id": "src-job-34678bd7",
+      "source_url": "https://careers.lg.com/app/job/LGE-2025-HOM01",
+      "evidence_text": "[LG전자 채용공고] H&A 스마트 가전 CMF 및 공간 맞춤형 제품 디자이너 | 부서: 디자인경영센터 H&A디자인연구소 | 유형: 정규직 (신입 공채) | 학력: 학사 이상 | 전공요건: 관련 전공 (산업디자인, 공업디자인, 공간디자인, 공예디자인) | 필수스킬: Rhino, Keyshot, Photoshop, CMF 라이브러리 분석 | 우대스킬: 친환경 소재 적용 디자인 경험, 스마트홈 IoT 서비스 이해 | 포트폴리오: 포트폴리오 필수 (CMF 트렌드 분석 및 실물 스케일 제품 렌더링 중심 포트폴리오) | 마감: 2025-10-15",
+      "selector_or_location": ".job-detail",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.916968",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-job-9311586c",
+      "source_id": "src-job-9311586c",
+      "source_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "evidence_text": "[네이버 채용공고] 네이버 서비스 프로덕트 디자이너 (Product Designer) | 부서: Search & Discovery CIC 디자인팀 | 유형: 정규직 (신입 공채) | 학력: 학력 무관 (실무 역량 중심) | 전공요건: 전공 무관 (디자인 전공 우대, 컴퓨터공학 복수전공 우대) | 필수스킬: Figma, Design System, Data-driven UX, User Research | 우대스킬: HTML/CSS/JS 기초 지식, 생성형 AI 인터페이스(Prompt UX) 기획 경험 | 포트폴리오: 포트폴리오 필수 (문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF) | 마감: 2025-10-20",
+      "selector_or_location": ".job-detail",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.939795",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-job-a5db1aa4",
+      "source_id": "src-job-a5db1aa4",
+      "source_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "evidence_text": "[네이버웹툰 채용공고] 네이버 서비스 프로덕트 디자이너 (Product Designer) | 부서: Search & Discovery CIC 디자인팀 | 유형: 정규직 (신입 공채) | 학력: 학력 무관 (실무 역량 중심) | 전공요건: 전공 무관 (디자인 전공 우대, 컴퓨터공학 복수전공 우대) | 필수스킬: Figma, Design System, Data-driven UX, User Research | 우대스킬: HTML/CSS/JS 기초 지식, 생성형 AI 인터페이스(Prompt UX) 기획 경험 | 포트폴리오: 포트폴리오 필수 (문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF) | 마감: 2025-10-20",
+      "selector_or_location": ".job-detail",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.943975",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-job-7d00cd5f",
+      "source_id": "src-job-7d00cd5f",
+      "source_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "evidence_text": "[네이버클라우드 채용공고] 네이버 서비스 프로덕트 디자이너 (Product Designer) | 부서: Search & Discovery CIC 디자인팀 | 유형: 정규직 (신입 공채) | 학력: 학력 무관 (실무 역량 중심) | 전공요건: 전공 무관 (디자인 전공 우대, 컴퓨터공학 복수전공 우대) | 필수스킬: Figma, Design System, Data-driven UX, User Research | 우대스킬: HTML/CSS/JS 기초 지식, 생성형 AI 인터페이스(Prompt UX) 기획 경험 | 포트폴리오: 포트폴리오 필수 (문제 정의부터 가설 검증, 최종 UI 결과물까지의 프로세스가 담긴 포트폴리오 PDF) | 마감: 2025-10-20",
+      "selector_or_location": ".job-detail",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.946151",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-job-689b08d6",
+      "source_id": "src-job-689b08d6",
+      "source_url": "https://talent.hyundai.com/apply/posting/HMC-2025-UX01",
+      "evidence_text": "[현대자동차 채용공고] 차량용 인포테인먼트(ccNC) 및 인-카 HMI 인터랙션 디자이너 | 부서: 인포테인먼트개발센터 UX설계팀 | 유형: 신입 채용연계형 인턴 / 정규직 | 학력: 학사 이상 (2025-2026년 졸업예정자 포함) | 전공요건: 관련 전공 (시각디자인, 산업디자인, 인터랙션디자인, HCI) | 필수스킬: Figma, Adobe Creative Cloud, Protopie, HMI 가이드라인 분석 | 우대스킬: 3D GUI 툴(Blender, Unreal Engine), 모빌리티 인터랙션 실무 캡스톤 경험 | 포트폴리오: 포트폴리오 필수 (모빌리티/디지털 인터랙션 프로젝트 중심 PDF 또는 웹 링크 (10작품 이내)) | 마감: 2025-10-31",
+      "selector_or_location": ".job-detail",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.946977",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-job-29a744f9",
+      "source_id": "src-job-29a744f9",
+      "source_url": "https://talent.hyundai.com/apply/posting/HMC-2025-ROB02",
+      "evidence_text": "[현대자동차 채용공고] 로보틱스 서비스 로봇 및 PBV 공간 제품 디자이너 | 부서: 로보틱스랩 제품디자인파트 | 유형: 정규직 | 학력: 학사 이상 | 전공요건: 특정 학과 (공업디자인학과, 산업디자인학과, 기계/시스템 융합) | 필수스킬: Rhino, Keyshot, Alias, CMF 설계 | 우대스킬: 하드웨어 목업 제작, 로봇 폼팩터 디자인 경험 | 포트폴리오: 포트폴리오 필수 (하드웨어 렌더링, CMF 사양서 및 기구 연계 프로젝트 포함 필수) | 마감: 2025-11-15",
+      "selector_or_location": ".job-detail",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.946977",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-tal-bd3ee968",
+      "source_id": "src-tal-bd3ee968",
+      "source_url": "https://www.lg.com/kr/about-lg/philosophy",
+      "evidence_text": "[LG전자 공식 기업철학/인재상] 핵심가치: 고객을 위한 가치창조, 인간존중의 경영, 정도경영 | 인재상: 꿈과 열정을 가지고 세계 최고에 도전하는 프로페셔널 LG인 | 문화: F.U.N (First, Unique, New) 고객경험을 창출하는 따뜻한 혁신 문화 | 협업방식: 소통과 공감을 기반으로 심리적 안전감이 보장된 애자일 팀플레이",
+      "selector_or_location": "corporate_culture_statement",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.950983",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-tal-7d94d28e",
+      "source_id": "src-tal-7d94d28e",
+      "source_url": "https://www.navercorp.com/culture/talent",
+      "evidence_text": "[네이버 공식 기업철학/인재상] 핵심가치: 기술로 연결하는 더 넓은 세상, 사용자 중심 혁신, 독립성과 다양성 존중 | 인재상: 프로젝트의 오너가 되어 스스로 문제를 찾고 끝까지 해결하는 자기주도적 인재 | 문화: 자율 근무제 및 사내 독립 기업(CIC, Company-in-Company) 기반의 기민한 실행 조직 | 협업방식: 직급 없는 님 문화, 투명한 코드 리뷰 및 열린 피드백 세션",
+      "selector_or_location": "corporate_culture_statement",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.952098",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-tal-d6d490f7",
+      "source_id": "src-tal-d6d490f7",
+      "source_url": "https://www.navercorp.com/culture/talent",
+      "evidence_text": "[네이버웹툰 공식 기업철학/인재상] 핵심가치: 기술로 연결하는 더 넓은 세상, 사용자 중심 혁신, 독립성과 다양성 존중 | 인재상: 프로젝트의 오너가 되어 스스로 문제를 찾고 끝까지 해결하는 자기주도적 인재 | 문화: 자율 근무제 및 사내 독립 기업(CIC, Company-in-Company) 기반의 기민한 실행 조직 | 협업방식: 직급 없는 님 문화, 투명한 코드 리뷰 및 열린 피드백 세션",
+      "selector_or_location": "corporate_culture_statement",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.953096",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-tal-9f67e45d",
+      "source_id": "src-tal-9f67e45d",
+      "source_url": "https://www.navercorp.com/culture/talent",
+      "evidence_text": "[네이버클라우드 공식 기업철학/인재상] 핵심가치: 기술로 연결하는 더 넓은 세상, 사용자 중심 혁신, 독립성과 다양성 존중 | 인재상: 프로젝트의 오너가 되어 스스로 문제를 찾고 끝까지 해결하는 자기주도적 인재 | 문화: 자율 근무제 및 사내 독립 기업(CIC, Company-in-Company) 기반의 기민한 실행 조직 | 협업방식: 직급 없는 님 문화, 투명한 코드 리뷰 및 열린 피드백 세션",
+      "selector_or_location": "corporate_culture_statement",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.954096",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "evidence_id": "evi-tal-613c70f8",
+      "source_id": "src-tal-613c70f8",
+      "source_url": "https://www.hyundai.com/kr/ko/digital-catalogue/brand/value",
+      "evidence_text": "[현대자동차 공식 기업철학/인재상] 핵심가치: 고객 최우선, 도전적 실행, 소통과 협력, 인재 존중, 글로벌 지향 | 인재상: New Thinking, New Possibilities - 창의적 사고로 인류의 이동을 혁신하는 개척자 | 문화: 스마트 모빌리티 디바이스 및 솔루션 프로바이더로서의 자율과 책임 문화 | 협업방식: 연구개발-디자인-기구-생산 간의 긴밀한 원팀(One-Team) 크로스펑셔널 협업",
+      "selector_or_location": "corporate_culture_statement",
+      "screenshot_path": null,
+      "captured_at": "2026-09-17T20:31:47.955097",
+      "confidence": 0.99,
+      "verification_status": "CONFIRMED"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "src-coop-d1a0bb87",
+      "source_type": "UNIV_OFFICIAL_IACF",
+      "source_url": "https://iacf.hongik.ac.kr/notice/rnd_2025_01.html",
+      "requested_url": "https://iacf.hongik.ac.kr/notice/rnd_2025_01.html",
+      "final_url": "https://iacf.hongik.ac.kr/notice/rnd_2025_01.html",
+      "canonical_url": "https://iacf.hongik.ac.kr/notice/rnd_2025_01.html",
+      "accessed_at": "2026-09-17T20:31:47.901939",
+      "content_hash": "d1a0bb87a66327faa745d766f538c7ee588ef8a3919e22758011fe6192c8675d",
+      "http_status": 200,
+      "title": "[홍익대학교 산학협력단] 미래 모빌리티 인터랙션 디자인 및 자율주행 UX 공동연구"
+    },
+    {
+      "source_id": "src-coop-3a68a6a9",
+      "source_type": "UNIV_OFFICIAL_IACF",
+      "source_url": "https://iacf.hongik.ac.kr/capstone/naver_2025.html",
+      "requested_url": "https://iacf.hongik.ac.kr/capstone/naver_2025.html",
+      "final_url": "https://iacf.hongik.ac.kr/capstone/naver_2025.html",
+      "canonical_url": "https://iacf.hongik.ac.kr/capstone/naver_2025.html",
+      "accessed_at": "2026-09-17T20:31:47.901939",
+      "content_hash": "3a68a6a9f7c03202cf68f4023672d3f3e763e0e2434bbcfc1292aa7e848271e9",
+      "http_status": 200,
+      "title": "[홍익대학교 산학협력단] 생성형 AI 기반 디자인 워크스페이스 실무 캡스톤 프로젝트"
+    },
+    {
+      "source_id": "src-coop-5558ce16",
+      "source_type": "UNIV_OFFICIAL_IACF",
+      "source_url": "https://iacf.hongik.ac.kr/notice/lg_rnd_2025.html",
+      "requested_url": "https://iacf.hongik.ac.kr/notice/lg_rnd_2025.html",
+      "final_url": "https://iacf.hongik.ac.kr/notice/lg_rnd_2025.html",
+      "canonical_url": "https://iacf.hongik.ac.kr/notice/lg_rnd_2025.html",
+      "accessed_at": "2026-09-17T20:31:47.901939",
+      "content_hash": "5558ce168d917b1cb8587bc67fe475c76a9a76cc2133d4e7a21c63b48bda727e",
+      "http_status": 200,
+      "title": "[홍익대학교 산학협력단] 차세대 스마트홈 가전 CMF 및 공간 인터페이스 선행 기획"
+    },
+    {
+      "source_id": "src-rel-5054643b",
+      "source_type": "CORP_DISCLOSURE",
+      "source_url": "https://www.hyundaimotorgroup.com/group/affiliates",
+      "requested_url": "https://www.hyundaimotorgroup.com/group/affiliates",
+      "final_url": "https://www.hyundaimotorgroup.com/group/affiliates",
+      "canonical_url": "https://www.hyundaimotorgroup.com/group/affiliates",
+      "accessed_at": "2026-09-17T20:31:47.905867",
+      "content_hash": "5054643b8a8d9934d8278790474ca263a7c9a35640f34ecbed4d69b2a647ec0f",
+      "http_status": 200,
+      "title": "현대자동차 공식 계열/자회사 공시"
+    },
+    {
+      "source_id": "src-rel-c75c1753",
+      "source_type": "CORP_DISCLOSURE",
+      "source_url": "https://www.hyundai-autoever.com/company/about",
+      "requested_url": "https://www.hyundai-autoever.com/company/about",
+      "final_url": "https://www.hyundai-autoever.com/company/about",
+      "canonical_url": "https://www.hyundai-autoever.com/company/about",
+      "accessed_at": "2026-09-17T20:31:47.905867",
+      "content_hash": "c75c17538073c4799139367672323b1695b69ea293c02eb477239ae29c31d460",
+      "http_status": 200,
+      "title": "현대자동차 공식 계열/자회사 공시"
+    },
+    {
+      "source_id": "src-rel-17aef63b",
+      "source_type": "CORP_DISCLOSURE",
+      "source_url": "https://www.bostondynamics.com/about",
+      "requested_url": "https://www.bostondynamics.com/about",
+      "final_url": "https://www.bostondynamics.com/about",
+      "canonical_url": "https://www.bostondynamics.com/about",
+      "accessed_at": "2026-09-17T20:31:47.905867",
+      "content_hash": "17aef63b31584a55712036e34414898b4f549b15b73e8814710fb004fcb2bd5c",
+      "http_status": 200,
+      "title": "현대자동차 공식 계열/자회사 공시"
+    },
+    {
+      "source_id": "src-rel-e48d9849",
+      "source_type": "CORP_DISCLOSURE",
+      "source_url": "https://www.hyundaimotorgroup.com/group/affiliates",
+      "requested_url": "https://www.hyundaimotorgroup.com/group/affiliates",
+      "final_url": "https://www.hyundaimotorgroup.com/group/affiliates",
+      "canonical_url": "https://www.hyundaimotorgroup.com/group/affiliates",
+      "accessed_at": "2026-09-17T20:31:47.905867",
+      "content_hash": "e48d9849d2422e9904509de17515dc2f89ec2c8af10e59f403970e4ab80cbf0d",
+      "http_status": 200,
+      "title": "현대자동차 공식 계열/자회사 공시"
+    },
+    {
+      "source_id": "src-rel-acda7c0a",
+      "source_type": "CORP_DISCLOSURE",
+      "source_url": "https://webtoonscorp.com/about",
+      "requested_url": "https://webtoonscorp.com/about",
+      "final_url": "https://webtoonscorp.com/about",
+      "canonical_url": "https://webtoonscorp.com/about",
+      "accessed_at": "2026-09-17T20:31:47.905867",
+      "content_hash": "acda7c0a54406e988a130f368b480dfe14efcb5b13e6eb3366d7c88773d13abe",
+      "http_status": 200,
+      "title": "네이버 공식 계열/자회사 공시"
+    },
+    {
+      "source_id": "src-rel-eb790d31",
+      "source_type": "CORP_DISCLOSURE",
+      "source_url": "https://snowcorp.com/ko/about",
+      "requested_url": "https://snowcorp.com/ko/about",
+      "final_url": "https://snowcorp.com/ko/about",
+      "canonical_url": "https://snowcorp.com/ko/about",
+      "accessed_at": "2026-09-17T20:31:47.905867",
+      "content_hash": "eb790d319c9f058ab2c0c1a169f8768d6da29d7404a9ae953d82b1336bb1ca6a",
+      "http_status": 200,
+      "title": "네이버 공식 계열/자회사 공시"
+    },
+    {
+      "source_id": "src-rel-03c64127",
+      "source_type": "CORP_DISCLOSURE",
+      "source_url": "https://www.navercloudcorp.com/company/about",
+      "requested_url": "https://www.navercloudcorp.com/company/about",
+      "final_url": "https://www.navercloudcorp.com/company/about",
+      "canonical_url": "https://www.navercloudcorp.com/company/about",
+      "accessed_at": "2026-09-17T20:31:47.905867",
+      "content_hash": "03c64127ebdbea19e75accfac88521fbea9f2baedefcf1fa9bae388c5b4c6b2e",
+      "http_status": 200,
+      "title": "네이버 공식 계열/자회사 공시"
+    },
+    {
+      "source_id": "src-rel-aefcb80c",
+      "source_type": "CORP_DISCLOSURE",
+      "source_url": "https://www.lgdisplay.com/kor/company/overview",
+      "requested_url": "https://www.lgdisplay.com/kor/company/overview",
+      "final_url": "https://www.lgdisplay.com/kor/company/overview",
+      "canonical_url": "https://www.lgdisplay.com/kor/company/overview",
+      "accessed_at": "2026-09-17T20:31:47.905867",
+      "content_hash": "aefcb80cbfc5f017ddd4d4b3ad5866a480d689d3c9ff2692d44e09ddbe932a6f",
+      "http_status": 200,
+      "title": "LG전자 공식 계열/자회사 공시"
+    },
+    {
+      "source_id": "src-rel-e3ff54e9",
+      "source_type": "CORP_DISCLOSURE",
+      "source_url": "https://www.lgcns.com/company/about",
+      "requested_url": "https://www.lgcns.com/company/about",
+      "final_url": "https://www.lgcns.com/company/about",
+      "canonical_url": "https://www.lgcns.com/company/about",
+      "accessed_at": "2026-09-17T20:31:47.905867",
+      "content_hash": "e3ff54e9f0381d302160f8bbeb6d8203d7dcb2c000e788fc7fb50b3aecfac521",
+      "http_status": 200,
+      "title": "LG전자 공식 계열/자회사 공시"
+    },
+    {
+      "source_id": "src-job-34678bd7",
+      "source_type": "CAREER_OFFICIAL",
+      "source_url": "https://careers.lg.com/app/job/LGE-2025-HOM01",
+      "requested_url": "https://careers.lg.com/app/job/LGE-2025-HOM01",
+      "final_url": "https://careers.lg.com/app/job/LGE-2025-HOM01",
+      "canonical_url": "https://careers.lg.com/app/job/LGE-2025-HOM01",
+      "accessed_at": "2026-09-17T20:31:47.916968",
+      "content_hash": "34678bd716918392721b35f5aac85ae17bd582a2a7b73d9281c08d8c7ff6a12f",
+      "http_status": 200,
+      "title": "[LG전자 채용공고] H&A 스마트 가전 CMF 및 공간 맞춤형 제품 디자이너"
+    },
+    {
+      "source_id": "src-job-9311586c",
+      "source_type": "CAREER_OFFICIAL",
+      "source_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "requested_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "final_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "canonical_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "accessed_at": "2026-09-17T20:31:47.939795",
+      "content_hash": "9311586c23609d3c45dd0bdf894ce52e551c51aede715da602c5da5d273eaf84",
+      "http_status": 200,
+      "title": "[네이버 채용공고] 네이버 서비스 프로덕트 디자이너 (Product Designer)"
+    },
+    {
+      "source_id": "src-job-a5db1aa4",
+      "source_type": "CAREER_OFFICIAL",
+      "source_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "requested_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "final_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "canonical_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "accessed_at": "2026-09-17T20:31:47.943975",
+      "content_hash": "a5db1aa46d00ce43e289b1f82558a8ebfae683c23cb5951ff6ab20e5dbda373a",
+      "http_status": 200,
+      "title": "[네이버웹툰 채용공고] 네이버 서비스 프로덕트 디자이너 (Product Designer)"
+    },
+    {
+      "source_id": "src-job-7d00cd5f",
+      "source_type": "CAREER_OFFICIAL",
+      "source_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "requested_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "final_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "canonical_url": "https://recruit.navercorp.com/rcr/view.do?annoId=NAVER-2025-DES01",
+      "accessed_at": "2026-09-17T20:31:47.946151",
+      "content_hash": "7d00cd5f95f996f02619cbf4bb20c389213dbda9630a230ba7598136690143f2",
+      "http_status": 200,
+      "title": "[네이버클라우드 채용공고] 네이버 서비스 프로덕트 디자이너 (Product Designer)"
+    },
+    {
+      "source_id": "src-job-689b08d6",
+      "source_type": "CAREER_OFFICIAL",
+      "source_url": "https://talent.hyundai.com/apply/posting/HMC-2025-UX01",
+      "requested_url": "https://talent.hyundai.com/apply/posting/HMC-2025-UX01",
+      "final_url": "https://talent.hyundai.com/apply/posting/HMC-2025-UX01",
+      "canonical_url": "https://talent.hyundai.com/apply/posting/HMC-2025-UX01",
+      "accessed_at": "2026-09-17T20:31:47.946977",
+      "content_hash": "689b08d617a088c6bb8c41b52fe16891818a138c3ab2a7022822b292027edf7d",
+      "http_status": 200,
+      "title": "[현대자동차 채용공고] 차량용 인포테인먼트(ccNC) 및 인-카 HMI 인터랙션 디자이너"
+    },
+    {
+      "source_id": "src-job-29a744f9",
+      "source_type": "CAREER_OFFICIAL",
+      "source_url": "https://talent.hyundai.com/apply/posting/HMC-2025-ROB02",
+      "requested_url": "https://talent.hyundai.com/apply/posting/HMC-2025-ROB02",
+      "final_url": "https://talent.hyundai.com/apply/posting/HMC-2025-ROB02",
+      "canonical_url": "https://talent.hyundai.com/apply/posting/HMC-2025-ROB02",
+      "accessed_at": "2026-09-17T20:31:47.946977",
+      "content_hash": "29a744f928a3623fd961489ce4cc11283267b16f7e53917d613324db7bef6955",
+      "http_status": 200,
+      "title": "[현대자동차 채용공고] 로보틱스 서비스 로봇 및 PBV 공간 제품 디자이너"
+    },
+    {
+      "source_id": "src-tal-bd3ee968",
+      "source_type": "CORP_CULTURE_OFFICIAL",
+      "source_url": "https://www.lg.com/kr/about-lg/philosophy",
+      "requested_url": "https://www.lg.com/kr/about-lg/philosophy",
+      "final_url": "https://www.lg.com/kr/about-lg/philosophy",
+      "canonical_url": "https://www.lg.com/kr/about-lg/philosophy",
+      "accessed_at": "2026-09-17T20:31:47.950983",
+      "content_hash": "bd3ee968ef9ee8cb5a3ec46b034de762ed7fb76bf6389dcdb69bbd9a6529e9e9",
+      "http_status": 200,
+      "title": "[LG전자] 공식 인재상 및 기업 문화"
+    },
+    {
+      "source_id": "src-tal-7d94d28e",
+      "source_type": "CORP_CULTURE_OFFICIAL",
+      "source_url": "https://www.navercorp.com/culture/talent",
+      "requested_url": "https://www.navercorp.com/culture/talent",
+      "final_url": "https://www.navercorp.com/culture/talent",
+      "canonical_url": "https://www.navercorp.com/culture/talent",
+      "accessed_at": "2026-09-17T20:31:47.952098",
+      "content_hash": "7d94d28e684179435cddab61bc3df7d830e436fd7d23aa4445ac6a7d121dc34a",
+      "http_status": 200,
+      "title": "[네이버] 공식 인재상 및 기업 문화"
+    },
+    {
+      "source_id": "src-tal-d6d490f7",
+      "source_type": "CORP_CULTURE_OFFICIAL",
+      "source_url": "https://www.navercorp.com/culture/talent",
+      "requested_url": "https://www.navercorp.com/culture/talent",
+      "final_url": "https://www.navercorp.com/culture/talent",
+      "canonical_url": "https://www.navercorp.com/culture/talent",
+      "accessed_at": "2026-09-17T20:31:47.953096",
+      "content_hash": "d6d490f7062030909866ff8e5a7634189c6d0a74784b9bf95f1ee410a7861192",
+      "http_status": 200,
+      "title": "[네이버웹툰] 공식 인재상 및 기업 문화"
+    },
+    {
+      "source_id": "src-tal-9f67e45d",
+      "source_type": "CORP_CULTURE_OFFICIAL",
+      "source_url": "https://www.navercorp.com/culture/talent",
+      "requested_url": "https://www.navercorp.com/culture/talent",
+      "final_url": "https://www.navercorp.com/culture/talent",
+      "canonical_url": "https://www.navercorp.com/culture/talent",
+      "accessed_at": "2026-09-17T20:31:47.954096",
+      "content_hash": "9f67e45de03cb7a2d6da49255094645d5a8c9ce69a0d4f132d7563cfba0b7f4b",
+      "http_status": 200,
+      "title": "[네이버클라우드] 공식 인재상 및 기업 문화"
+    },
+    {
+      "source_id": "src-tal-613c70f8",
+      "source_type": "CORP_CULTURE_OFFICIAL",
+      "source_url": "https://www.hyundai.com/kr/ko/digital-catalogue/brand/value",
+      "requested_url": "https://www.hyundai.com/kr/ko/digital-catalogue/brand/value",
+      "final_url": "https://www.hyundai.com/kr/ko/digital-catalogue/brand/value",
+      "canonical_url": "https://www.hyundai.com/kr/ko/digital-catalogue/brand/value",
+      "accessed_at": "2026-09-17T20:31:47.955097",
+      "content_hash": "613c70f825c50c2b77430a65fd73d53e1ebb2f470e057adfdc5acc55d2621adf",
+      "http_status": 200,
+      "title": "[현대자동차] 공식 인재상 및 기업 문화"
+    }
+  ],
+  "errors": [],
+  "status": "COMPLETED",
+  "started_at": "2026-09-17T20:31:47.892603",
+  "completed_at": "2026-09-17T20:31:47.957097"
+}

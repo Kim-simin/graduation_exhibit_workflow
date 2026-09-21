@@ -1,0 +1,352 @@
+[
+  {
+    "id": "stu-01",
+    "name": "김하늘",
+    "university": "홍익대학교",
+    "department": "시각디자인학과",
+    "year": 4,
+    "bio": "데이터와 그래픽의 경계를 탐구하는 인터랙티브 UX/UI 디자이너입니다. 복잡한 시스템을 감각적이고 유려한 인터랙션으로 풀어내는 것에 집중합니다.",
+    "role": "UX/UI 디자이너",
+    "avatar_url": "",
+    "skills": ["Figma", "Design System", "Protopie", "Three.js", "React"],
+    "portfolio_items": [
+      {
+        "id": "port-01-1",
+        "title": "Aura: 차세대 금융 자산 시각화 대시보드",
+        "category": "UX/UI Design",
+        "description": "다차원 포트폴리오 데이터를 3D 입체 파티클로 표현하여 직관적인 투자 인사이트를 제공하는 모바일 금융 앱.",
+        "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+        "year": "2025",
+        "tags": ["Fintech", "Mobile App", "Data Visualization"]
+      }
+    ],
+    "contact_email": "sky.kim@student.hongik.ac.kr",
+    "sns_links": {
+      "behance": "https://behance.net/skykim_design",
+      "linkedin": "https://linkedin.com/in/skykim-ux"
+    },
+    "status": "active",
+    "views": 1420,
+    "likes": 284
+  },
+  {
+    "id": "stu-02",
+    "name": "이준호",
+    "university": "국민대학교",
+    "department": "산업디자인학과",
+    "year": 4,
+    "bio": "형태의 순수함과 사용자 경험의 조화를 추구하는 하드웨어 & 모빌리티 인터랙션 디자이너입니다. CMF 연구와 C4D 기반 감각적 렌더링에 강점이 있습니다.",
+    "role": "제품 인터랙션 디자이너",
+    "avatar_url": "",
+    "skills": ["Rhino", "Cinema 4D", "Keyshot", "CMF", "Hardware Prototyping"],
+    "portfolio_items": [
+      {
+        "id": "port-02-1",
+        "title": "Orbit: 개인 맞춤형 모빌리티 햅틱 컨트롤러",
+        "category": "Product Design",
+        "description": "자율주행 환경에서 직관적인 조작감을 제공하는 미니멀 아날로그-디지털 하이브리드 제어 장치.",
+        "thumbnail": "https://images.unsplash.com/photo-1546776310-eef45dd6d63c?auto=format&fit=crop&w=800&q=80",
+        "year": "2025",
+        "tags": ["Mobility", "Hardware", "Haptics"]
+      }
+    ],
+    "contact_email": "junho.lee@kookmin.ac.kr",
+    "sns_links": {
+      "behance": "https://behance.net/junho_product"
+    },
+    "status": "active",
+    "views": 980,
+    "likes": 195
+  },
+  {
+    "id": "stu-03",
+    "name": "박소현",
+    "university": "이화여자대학교",
+    "department": "산업정보디자인전공",
+    "year": 4,
+    "bio": "기술과 인간의 접점을 매끄럽게 잇는 융합 서비스 및 헬스케어 인터페이스 기획자입니다.",
+    "role": "융합 서비스 디자이너",
+    "avatar_url": "",
+    "skills": ["Service Blueprint", "Figma", "User Journey", "Design Thinking", "Flutter"],
+    "portfolio_items": [
+      {
+        "id": "port-03-1",
+        "title": "CareLoop: 시니어 맞춤형 디지털 케어 에이전트",
+        "category": "Service Design",
+        "description": "음성 인식과 촉각 피드백을 결합하여 고령층의 복약 및 건강 관리를 돕는 스마트 홈 서비스.",
+        "thumbnail": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
+        "year": "2025",
+        "tags": ["Healthcare", "Voice UX", "Service Design"]
+      }
+    ],
+    "contact_email": "sohyun.park@ewha.ac.kr",
+    "sns_links": {
+      "linkedin": "https://linkedin.com/in/sohyun-park-design"
+    },
+    "status": "active",
+    "views": 1120,
+    "likes": 240
+  },
+  {
+    "id": "stu-04",
+    "name": "최민성",
+    "university": "서울대학교",
+    "department": "컴퓨터공학과",
+    "year": 4,
+    "bio": "인터랙티브 웹 그래픽과 고성능 클라이언트 아키텍처를 연구하는 프론트엔드 엔지니어입니다.",
+    "role": "프론트엔드 엔지니어",
+    "avatar_url": "",
+    "skills": ["TypeScript", "Next.js", "WebGL", "Three.js", "Tailwind CSS"],
+    "portfolio_items": [
+      {
+        "id": "port-04-1",
+        "title": "Prism: 웹 브라우저 기반 실시간 3D 조명 시뮬레이터",
+        "category": "Web Engineering",
+        "description": "Shader 프로그래밍을 통해 건축 실내 조명의 배광 곡선을 실시간으로 렌더링하는 WebGL 엔진.",
+        "thumbnail": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+        "year": "2025",
+        "tags": ["WebGL", "TypeScript", "Computer Graphics"]
+      }
+    ],
+    "contact_email": "minseong.choi@snu.ac.kr",
+    "sns_links": {
+      "github": "https://github.com/minseong-dev",
+      "linkedin": "https://linkedin.com/in/minseong-choi"
+    },
+    "status": "active",
+    "views": 2150,
+    "likes": 430
+  },
+  {
+    "id": "stu-05",
+    "name": "정서연",
+    "university": "연세대학교",
+    "department": "인공지능학과",
+    "year": 4,
+    "bio": "멀티모달 파운데이션 모델과 자율 에이전트 오케스트레이션을 연구하는 AI 엔지니어입니다.",
+    "role": "AI & 데이터 엔지니어",
+    "avatar_url": "",
+    "skills": ["Python", "PyTorch", "LangGraph", "Vector DB", "FastAPI"],
+    "portfolio_items": [
+      {
+        "id": "port-05-1",
+        "title": "NexusAgent: 학술 논문 자동 리서치 멀티에이전트 시스템",
+        "category": "Artificial Intelligence",
+        "description": "arXiv 신규 논문을 실시간으로 요약 및 지식 그래프화하여 연구자에게 추천하는 자율 에이전트.",
+        "thumbnail": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80",
+        "year": "2025",
+        "tags": ["LLM", "Agent", "Knowledge Graph"]
+      }
+    ],
+    "contact_email": "seoyeon.jung@yonsei.ac.kr",
+    "sns_links": {
+      "github": "https://github.com/seoyeon-ai"
+    },
+    "status": "active",
+    "views": 1890,
+    "likes": 370
+  },
+  {
+    "id": "stu-06",
+    "name": "강도윤",
+    "university": "중앙대학교",
+    "department": "디지털미디어학과",
+    "year": 4,
+    "bio": "공간 센서와 실시간 생성 그래픽을 결합한 몰입형 인터랙티브 미디어 아트를 제작합니다.",
+    "role": "인터랙션 미디어 디자이너",
+    "avatar_url": "",
+    "skills": ["Unity", "TouchDesigner", "C#", "AR/VR", "Kinect"],
+    "portfolio_items": [
+      {
+        "id": "port-06-1",
+        "title": "Echoes of Void: 관객 반응형 오디오-비주얼 인스톨레이션",
+        "category": "Media Art",
+        "description": "라이다(LiDAR) 센서로 관객의 위치와 제스처를 감지하여 유기적으로 변형되는 360도 인터랙티브 공간.",
+        "thumbnail": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80",
+        "year": "2025",
+        "tags": ["TouchDesigner", "Interactive Art", "LiDAR"]
+      }
+    ],
+    "contact_email": "doyoon.kang@cau.ac.kr",
+    "sns_links": {
+      "behance": "https://behance.net/doyoon_media"
+    },
+    "status": "active",
+    "views": 1340,
+    "likes": 290
+  },
+  {
+    "id": "stu-07",
+    "name": "윤채원",
+    "university": "경희대학교",
+    "department": "미디어커뮤니케이션학과",
+    "year": 4,
+    "bio": "브랜드의 서사를 3D 모션 그래픽과 타이포그래피 애니메이션으로 구현하는 비주얼 디렉터입니다.",
+    "role": "영상 & 모션 디렉터",
+    "avatar_url": "",
+    "skills": ["After Effects", "Cinema 4D", "Premiere Pro", "Octane Render", "Sound Editing"],
+    "portfolio_items": [
+      {
+        "id": "port-07-1",
+        "title": "Chronos: 시간의 왜곡을 다룬 SF 콘셉트 단편 필름",
+        "category": "Motion Graphics",
+        "description": "3D 포토리얼리스틱 렌더링과 사운드 디자인이 결합된 3분 분량의 시네마틱 모션 그래픽스.",
+        "thumbnail": "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=800&q=80",
+        "year": "2025",
+        "tags": ["Cinematic", "Motion Graphics", "3D Animation"]
+      }
+    ],
+    "contact_email": "chaewon.yoon@khu.ac.kr",
+    "sns_links": {
+      "behance": "https://behance.net/chaewon_motion"
+    },
+    "status": "active",
+    "views": 1650,
+    "likes": 310
+  },
+  {
+    "id": "stu-08",
+    "name": "송민호",
+    "university": "건국대학교",
+    "department": "건축학과",
+    "year": 5,
+    "bio": "도시 재생과 친환경 자재를 활용한 복합 문화 공간 및 지속가능한 파빌리온을 설계합니다.",
+    "role": "공간 & 건축 디자이너",
+    "avatar_url": "",
+    "skills": ["AutoCAD", "Revit", "Rhino", "Enscape", "Grasshopper"],
+    "portfolio_items": [
+      {
+        "id": "port-08-1",
+        "title": "Timber Haven: 모듈형 목구조 도심 생태 도서관",
+        "category": "Architecture",
+        "description": "탄소 배출을 최소화하는 구조용 집성재(CLT) 기반의 친환경 개방형 복합 문화 센터 제안.",
+        "thumbnail": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+        "year": "2025",
+        "tags": ["Sustainable", "Timber Architecture", "Public Space"]
+      }
+    ],
+    "contact_email": "minho.song@konkuk.ac.kr",
+    "sns_links": {
+      "linkedin": "https://linkedin.com/in/minho-song-arch"
+    },
+    "status": "active",
+    "views": 1280,
+    "likes": 275
+  },
+  {
+    "id": "stu-09",
+    "name": "한지민",
+    "university": "고려대학교",
+    "department": "경영학과",
+    "year": 4,
+    "bio": "데이터 기반 소비자 행동 분석과 청년 타깃 D2C 브랜드 런칭 전략을 수립하는 브랜드 기획자입니다.",
+    "role": "브랜드 전략 & 비즈니스 기획자",
+    "avatar_url": "",
+    "skills": ["Brand Strategy", "Market Analysis", "SQL", "Tableau", "Financial Modeling"],
+    "portfolio_items": [
+      {
+        "id": "port-09-1",
+        "title": "Re:Brand: 폐섬유 순환 패션 스타트업 사업 모델",
+        "category": "Business Strategy",
+        "description": "MZ세대 소비 심리 분석 및 단위 경제학(Unit Economics)에 기반한 순환경제 패션 D2C 사업 계획서.",
+        "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "year": "2025",
+        "tags": ["Business Model", "ESG", "D2C"]
+      }
+    ],
+    "contact_email": "jimin.han@korea.ac.kr",
+    "sns_links": {
+      "linkedin": "https://linkedin.com/in/jimin-han-biz"
+    },
+    "status": "active",
+    "views": 950,
+    "likes": 180
+  },
+  {
+    "id": "stu-10",
+    "name": "오승현",
+    "university": "한양대학교",
+    "department": "전자공학과",
+    "year": 4,
+    "bio": "스마트 IoT 센서 네트워크와 초저전력 햅틱 액추에이터 제어 회로를 개발하는 하드웨어 엔지니어입니다.",
+    "role": "임베디드 하드웨어 엔지니어",
+    "avatar_url": "",
+    "skills": ["Embedded C", "Altium Designer", "PCB Layout", "STM32", "BLE"],
+    "portfolio_items": [
+      {
+        "id": "port-10-1",
+        "title": "SenseRing: 초소형 생체 신호 모니터링 스마트 링",
+        "category": "Hardware Engineering",
+        "description": "PPG 심박 센서와 초소형 배터리 관리 회로(PMIC)를 내장한 웨어러블 헬스케어 디바이스 프로토타입.",
+        "thumbnail": "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?auto=format&fit=crop&w=800&q=80",
+        "year": "2025",
+        "tags": ["IoT", "Hardware", "Wearable"]
+      }
+    ],
+    "contact_email": "seunghyun.oh@hanyang.ac.kr",
+    "sns_links": {
+      "github": "https://github.com/seunghyun-hw"
+    },
+    "status": "active",
+    "views": 1410,
+    "likes": 295
+  },
+  {
+    "id": "stu-11",
+    "name": "배수진",
+    "university": "성균관대학교",
+    "department": "디자인조형학부",
+    "year": 4,
+    "bio": "물성과 공간의 관계성을 탐구하며 관객 참여형 현대 조형 설치작업을 전개하는 청년 조형 작가입니다.",
+    "role": "조형예술 & 설치미술 작가",
+    "avatar_url": "",
+    "skills": ["Sculpture", "Spatial Installation", "Metal Craft", "Ceramics", "Curating"],
+    "portfolio_items": [
+      {
+        "id": "port-11-1",
+        "title": "Tension & Release: 스테인리스 스틸과 라텍스의 역학 조형",
+        "category": "Fine Art & Sculpture",
+        "description": "이질적인 두 물질의 물리적 장력을 통해 인간 감정의 억압과 분출을 형상화한 대형 키네틱 조각.",
+        "thumbnail": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80",
+        "year": "2025",
+        "tags": ["Sculpture", "Installation", "Contemporary Art"]
+      }
+    ],
+    "contact_email": "sujin.bae@skku.edu",
+    "sns_links": {
+      "instagram": "https://instagram.com/sujin_art_space"
+    },
+    "status": "active",
+    "views": 1050,
+    "likes": 220
+  },
+  {
+    "id": "stu-12",
+    "name": "장우진",
+    "university": "상명대학교",
+    "department": "지식재산전공",
+    "year": 4,
+    "bio": "청년 창작자의 디자인권 보호와 생성형 AI 시대의 디지털 IP 라이선싱 분쟁 예방 모델을 설계합니다.",
+    "role": "IP 전략 & 기술경영 전문가",
+    "avatar_url": "",
+    "skills": ["Patent Landscaping", "IP Valuation", "Copyright Law", "Contract Analysis"],
+    "portfolio_items": [
+      {
+        "id": "port-12-1",
+        "title": "SafeIP: 3D 창작물을 위한 블록체인 타임스탬프 저작권 증명",
+        "category": "IP & Legal Tech",
+        "description": "독립 창작자가 렌더링 결과물의 원본성을 손쉽게 증명하고 불법 도용을 모니터링하는 법률 기술 플랫폼 제안.",
+        "thumbnail": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80",
+        "year": "2025",
+        "tags": ["Intellectual Property", "LegalTech", "Copyright"]
+      }
+    ],
+    "contact_email": "woojin.jang@smu.ac.kr",
+    "sns_links": {
+      "linkedin": "https://linkedin.com/in/woojin-jang-ip"
+    },
+    "status": "active",
+    "views": 880,
+    "likes": 175
+  }
+]
