@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx.cmd",
+      "args": [
+        "@playwright/mcp@latest",
+        "--headless"
+      ],
+      "env": {}
+    },
+    "docs-langchain": {
+      "serverUrl": "https://docs.langchain.com/mcp",
+      "url": "https://docs.langchain.com/mcp"
+    }
+  }
+}

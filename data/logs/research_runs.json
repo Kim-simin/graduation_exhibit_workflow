@@ -1,0 +1,128 @@
+[
+  {
+    "research_run_id": "run-res-20260917212126-54f656",
+    "target_university": "홍익대학교",
+    "target_department": "시각디자인과",
+    "target_year": "2025",
+    "target_url": "https://sidi.hongik.ac.kr",
+    "status": "COMPLETED",
+    "sources_count": 1,
+    "evidence_count": 0,
+    "facts_count": 0,
+    "conflicts_count": 0,
+    "artworks_count": 0,
+    "started_at": "2026-09-17T21:21:26.888027",
+    "completed_at": "2026-09-17T21:21:29.921880",
+    "crawl_result": {
+      "status": "SUCCESS",
+      "final_url": "https://sidi.hongik.ac.kr/",
+      "content_hash": "0c6625c74cbef545d0939618ce6eeed7",
+      "status_code": 200
+    }
+  },
+  {
+    "research_run_id": "run-res-20260917172858-1c7f67",
+    "target_university": "홍익대학교",
+    "target_department": "시각디자인과",
+    "target_year": "2025",
+    "target_url": "https://sidi.hongik.ac.kr",
+    "status": "COMPLETED",
+    "sources_count": 1,
+    "evidence_count": 0,
+    "facts_count": 0,
+    "conflicts_count": 0,
+    "artworks_count": 0,
+    "started_at": "2026-09-17T17:28:58.824305",
+    "completed_at": "2026-09-17T17:29:01.855530",
+    "crawl_result": {
+      "status": "SUCCESS",
+      "final_url": "https://sidi.hongik.ac.kr/",
+      "content_hash": "0c6625c74cbef545d0939618ce6eeed7",
+      "status_code": 200
+    }
+  },
+  {
+    "research_run_id": "run-res-20260917165618-6ad5e3",
+    "target_university": "홍익대학교",
+    "target_department": "시각디자인과",
+    "target_year": "2025",
+    "target_url": "https://sidi.hongik.ac.kr",
+    "status": "COMPLETED",
+    "sources_count": 1,
+    "evidence_count": 0,
+    "facts_count": 0,
+    "conflicts_count": 0,
+    "artworks_count": 0,
+    "started_at": "2026-09-17T16:56:18.535141",
+    "completed_at": "2026-09-17T16:56:21.573618",
+    "crawl_result": {
+      "status": "SUCCESS",
+      "final_url": "https://sidi.hongik.ac.kr/",
+      "content_hash": "0c6625c74cbef545d0939618ce6eeed7",
+      "status_code": 200
+    }
+  },
+  {
+    "research_run_id": "run-res-20260917164853-c91738",
+    "target_university": "홍익대학교",
+    "target_department": "시각디자인과",
+    "target_year": "2025",
+    "target_url": "https://sidi.hongik.ac.kr",
+    "status": "COMPLETED",
+    "sources_count": 1,
+    "evidence_count": 0,
+    "facts_count": 0,
+    "conflicts_count": 0,
+    "artworks_count": 0,
+    "started_at": "2026-09-17T16:48:53.471581",
+    "completed_at": "2026-09-17T16:48:56.495761",
+    "crawl_result": {
+      "status": "SUCCESS",
+      "final_url": "https://sidi.hongik.ac.kr/",
+      "content_hash": "0c6625c74cbef545d0939618ce6eeed7",
+      "status_code": 200
+    }
+  },
+  {
+    "research_run_id": "run-res-20260917111511-861163",
+    "target_university": "홍익대학교",
+    "target_department": "시각디자인과",
+    "target_year": "2025",
+    "target_url": "https://sidi.hongik.ac.kr",
+    "status": "COMPLETED",
+    "sources_count": 1,
+    "evidence_count": 0,
+    "facts_count": 0,
+    "conflicts_count": 0,
+    "artworks_count": 0,
+    "started_at": "2026-09-17T11:15:11.738941",
+    "completed_at": "2026-09-17T11:15:14.771282",
+    "crawl_result": {
+      "status": "SUCCESS",
+      "final_url": "https://sidi.hongik.ac.kr/",
+      "content_hash": "0c6625c74cbef545d0939618ce6eeed7",
+      "status_code": 200
+    }
+  },
+  {
+    "research_run_id": "run-res-20260917111417-f2c1ba",
+    "target_university": "홍익대학교",
+    "target_department": "시각디자인과",
+    "target_year": "2025",
+    "target_url": "https://sidi.hongik.ac.kr",
+    "status": "COMPLETED",
+    "sources_count": 1,
+    "evidence_count": 0,
+    "facts_count": 0,
+    "conflicts_count": 0,
+    "artworks_count": 0,
+    "started_at": "2026-09-17T11:14:17.071894",
+    "completed_at": "2026-09-17T11:14:20.115665",
+    "crawl_result": {
+      "status": "SUCCESS",
+      "final_url": "https://sidi.hongik.ac.kr/",
+      "content_hash": "f53e65b56c33b30695099330ecfa0f06",
+      "status_code": 200
+    }
+  }
+]

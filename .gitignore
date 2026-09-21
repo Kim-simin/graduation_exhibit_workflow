@@ -1,0 +1,41 @@
+# Large binaries and ML models
+*.gguf
+*.bin
+*.exe
+*.dll
+*.pdb
+llama-*
+
+# Next.js & Node.js
+**/node_modules/
+**/.next/
+out/
+build/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+env/
+
+# Environment variables
+.env
+.env*.local
+
+# Temporary files & browser profiles
+temp/
+*.log
+*.mp4
+data/chrome_insta_profile/
+data/downloads/
+data/captures/
+public/captures/
+.system_generated/

@@ -1,0 +1,10 @@
+{
+  "name": "graduation-exhibit-workflow-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix my-exhibit-platform",
+    "build": "npm run build --prefix my-exhibit-platform",
+    "start": "npm run start --prefix my-exhibit-platform"
+  }
+}

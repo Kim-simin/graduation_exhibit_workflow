@@ -1,0 +1,1336 @@
+[
+  {
+    "event_id": "sch-evt-a8febdf3",
+    "event_type": "DRY_RUN_EXECUTED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789647693",
+    "timestamp": "2026-09-17T21:21:33.466510+09:00",
+    "details": {
+      "scheduleId": "sched-daily-morning",
+      "name": "일일 정기 대학 전시 리서치 및 콘텐츠 생성 (KST 09:00)",
+      "planned_run_id": "run-sched-sched-daily-morning-1789647693",
+      "scope": {
+        "target": "verified_universities",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS",
+        "category": "디자인·UX/UI"
+      },
+      "target_nodes": [
+        "Research",
+        "Validate",
+        "Normalize",
+        "Update DB",
+        "Content Generation",
+        "Human Approval"
+      ],
+      "expected_terminal_state": "WAITING_FOR_APPROVAL",
+      "dry_run": true,
+      "simulated_at": "2026-09-17T21:21:33.466510+09:00"
+    }
+  },
+  {
+    "event_id": "sch-evt-36de6fc2",
+    "event_type": "WORKFLOW_RUN_CREATED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789647691",
+    "timestamp": "2026-09-17T21:21:31.083117+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-0d769dc6",
+    "event_type": "SCHEDULE_TRIGGERED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789647691",
+    "timestamp": "2026-09-17T21:21:31.079462+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-a3fa7023",
+    "event_type": "SCHEDULE_ENABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-17T12:21:30.844Z",
+    "details": {
+      "enabled": true,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-33ab66a2",
+    "event_type": "SCHEDULE_DISABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-17T12:21:30.801Z",
+    "details": {
+      "enabled": false,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-44e33055",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-17T12:21:30.640Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "수정된 테스트 자동화 스케줄 (11:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 11 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-17T12:21:30.640Z",
+      "updatedAt": "2026-09-17T12:21:30.640Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-cd47454e",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-17T12:21:30.598Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "테스트 자동화 스케줄 (일일 10:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 10 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-17T12:21:30.597Z",
+      "updatedAt": "2026-09-17T12:21:30.597Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-d8d1ac2a",
+    "event_type": "DRY_RUN_EXECUTED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789633745",
+    "timestamp": "2026-09-17T17:29:05.215505+09:00",
+    "details": {
+      "scheduleId": "sched-daily-morning",
+      "name": "일일 정기 대학 전시 리서치 및 콘텐츠 생성 (KST 09:00)",
+      "planned_run_id": "run-sched-sched-daily-morning-1789633745",
+      "scope": {
+        "target": "verified_universities",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS",
+        "category": "디자인·UX/UI"
+      },
+      "target_nodes": [
+        "Research",
+        "Validate",
+        "Normalize",
+        "Update DB",
+        "Content Generation",
+        "Human Approval"
+      ],
+      "expected_terminal_state": "WAITING_FOR_APPROVAL",
+      "dry_run": true,
+      "simulated_at": "2026-09-17T17:29:05.215505+09:00"
+    }
+  },
+  {
+    "event_id": "sch-evt-60e526e4",
+    "event_type": "WORKFLOW_RUN_CREATED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789633742",
+    "timestamp": "2026-09-17T17:29:02.867982+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-c5b16868",
+    "event_type": "SCHEDULE_TRIGGERED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789633742",
+    "timestamp": "2026-09-17T17:29:02.863473+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-85c3e251",
+    "event_type": "SCHEDULE_ENABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-17T08:29:02.607Z",
+    "details": {
+      "enabled": true,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-bf1c3a9c",
+    "event_type": "SCHEDULE_DISABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-17T08:29:02.573Z",
+    "details": {
+      "enabled": false,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-b225d710",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-17T08:29:02.416Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "수정된 테스트 자동화 스케줄 (11:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 11 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-17T08:29:02.415Z",
+      "updatedAt": "2026-09-17T08:29:02.415Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-ffd76e52",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-17T08:29:02.388Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "테스트 자동화 스케줄 (일일 10:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 10 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-17T08:29:02.388Z",
+      "updatedAt": "2026-09-17T08:29:02.388Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-038229d0",
+    "event_type": "DRY_RUN_EXECUTED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789631784",
+    "timestamp": "2026-09-17T16:56:24.799040+09:00",
+    "details": {
+      "scheduleId": "sched-daily-morning",
+      "name": "일일 정기 대학 전시 리서치 및 콘텐츠 생성 (KST 09:00)",
+      "planned_run_id": "run-sched-sched-daily-morning-1789631784",
+      "scope": {
+        "target": "verified_universities",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS",
+        "category": "디자인·UX/UI"
+      },
+      "target_nodes": [
+        "Research",
+        "Validate",
+        "Normalize",
+        "Update DB",
+        "Content Generation",
+        "Human Approval"
+      ],
+      "expected_terminal_state": "WAITING_FOR_APPROVAL",
+      "dry_run": true,
+      "simulated_at": "2026-09-17T16:56:24.799040+09:00"
+    }
+  },
+  {
+    "event_id": "sch-evt-4e7273aa",
+    "event_type": "WORKFLOW_RUN_CREATED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789631782",
+    "timestamp": "2026-09-17T16:56:22.421666+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-d8087a88",
+    "event_type": "SCHEDULE_TRIGGERED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789631782",
+    "timestamp": "2026-09-17T16:56:22.417642+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-d693e14f",
+    "event_type": "SCHEDULE_ENABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-17T07:56:22.130Z",
+    "details": {
+      "enabled": true,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-6a9978b7",
+    "event_type": "SCHEDULE_DISABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-17T07:56:22.087Z",
+    "details": {
+      "enabled": false,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-d837329c",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-17T07:56:21.850Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "수정된 테스트 자동화 스케줄 (11:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 11 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-17T07:56:21.849Z",
+      "updatedAt": "2026-09-17T07:56:21.849Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-0eb5d215",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-17T07:56:21.808Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "테스트 자동화 스케줄 (일일 10:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 10 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-17T07:56:21.808Z",
+      "updatedAt": "2026-09-17T07:56:21.808Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-ea93e3cc",
+    "event_type": "DRY_RUN_EXECUTED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789611318",
+    "timestamp": "2026-09-17T11:15:18.388215+09:00",
+    "details": {
+      "scheduleId": "sched-daily-morning",
+      "name": "일일 정기 대학 전시 리서치 및 콘텐츠 생성 (KST 09:00)",
+      "planned_run_id": "run-sched-sched-daily-morning-1789611318",
+      "scope": {
+        "target": "verified_universities",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS",
+        "category": "디자인·UX/UI"
+      },
+      "target_nodes": [
+        "Research",
+        "Validate",
+        "Normalize",
+        "Update DB",
+        "Content Generation",
+        "Human Approval"
+      ],
+      "expected_terminal_state": "WAITING_FOR_APPROVAL",
+      "dry_run": true,
+      "simulated_at": "2026-09-17T11:15:18.388215+09:00"
+    }
+  },
+  {
+    "event_id": "sch-evt-0d627a32",
+    "event_type": "WORKFLOW_RUN_CREATED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789611316",
+    "timestamp": "2026-09-17T11:15:16.079576+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-bdd0943a",
+    "event_type": "SCHEDULE_TRIGGERED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789611316",
+    "timestamp": "2026-09-17T11:15:16.075948+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-16cab556",
+    "event_type": "SCHEDULE_ENABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-17T02:15:15.660Z",
+    "details": {
+      "enabled": true,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-2fc8105a",
+    "event_type": "SCHEDULE_DISABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-17T02:15:15.616Z",
+    "details": {
+      "enabled": false,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-b66af469",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-17T02:15:15.261Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "수정된 테스트 자동화 스케줄 (11:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 11 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-17T02:15:15.259Z",
+      "updatedAt": "2026-09-17T02:15:15.259Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-13b2780f",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-17T02:15:15.230Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "테스트 자동화 스케줄 (일일 10:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 10 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-17T02:15:15.229Z",
+      "updatedAt": "2026-09-17T02:15:15.229Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-71762cd5",
+    "event_type": "DRY_RUN_EXECUTED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789568512",
+    "timestamp": "2026-09-16T23:21:52.980350+09:00",
+    "details": {
+      "scheduleId": "sched-daily-morning",
+      "name": "일일 정기 대학 전시 리서치 및 콘텐츠 생성 (KST 09:00)",
+      "planned_run_id": "run-sched-sched-daily-morning-1789568512",
+      "scope": {
+        "target": "verified_universities",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS",
+        "category": "디자인·UX/UI"
+      },
+      "target_nodes": [
+        "Research",
+        "Validate",
+        "Normalize",
+        "Update DB",
+        "Content Generation",
+        "Human Approval"
+      ],
+      "expected_terminal_state": "WAITING_FOR_APPROVAL",
+      "dry_run": true,
+      "simulated_at": "2026-09-16T23:21:52.980350+09:00"
+    }
+  },
+  {
+    "event_id": "sch-evt-9a4141dc",
+    "event_type": "WORKFLOW_RUN_CREATED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789568510",
+    "timestamp": "2026-09-16T23:21:50.629266+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-19b1f37c",
+    "event_type": "SCHEDULE_TRIGGERED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789568510",
+    "timestamp": "2026-09-16T23:21:50.626266+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-7807afb3",
+    "event_type": "SCHEDULE_ENABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T14:21:50.251Z",
+    "details": {
+      "enabled": true,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-5c0f5bea",
+    "event_type": "SCHEDULE_DISABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T14:21:50.226Z",
+    "details": {
+      "enabled": false,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-38af3b3d",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T14:21:49.915Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "수정된 테스트 자동화 스케줄 (11:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 11 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-16T14:21:49.914Z",
+      "updatedAt": "2026-09-16T14:21:49.914Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-885830c5",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T14:21:49.879Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "테스트 자동화 스케줄 (일일 10:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 10 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-16T14:21:49.878Z",
+      "updatedAt": "2026-09-16T14:21:49.878Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-2959147c",
+    "event_type": "DRY_RUN_EXECUTED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789567863",
+    "timestamp": "2026-09-16T23:11:03.354072+09:00",
+    "details": {
+      "scheduleId": "sched-daily-morning",
+      "name": "일일 정기 대학 전시 리서치 및 콘텐츠 생성 (KST 09:00)",
+      "planned_run_id": "run-sched-sched-daily-morning-1789567863",
+      "scope": {
+        "target": "verified_universities",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS",
+        "category": "디자인·UX/UI"
+      },
+      "target_nodes": [
+        "Research",
+        "Validate",
+        "Normalize",
+        "Update DB",
+        "Content Generation",
+        "Human Approval"
+      ],
+      "expected_terminal_state": "WAITING_FOR_APPROVAL",
+      "dry_run": true,
+      "simulated_at": "2026-09-16T23:11:03.354072+09:00"
+    }
+  },
+  {
+    "event_id": "sch-evt-72c44eb9",
+    "event_type": "WORKFLOW_RUN_CREATED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789567860",
+    "timestamp": "2026-09-16T23:11:00.994049+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-ca136278",
+    "event_type": "SCHEDULE_TRIGGERED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789567860",
+    "timestamp": "2026-09-16T23:11:00.991050+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-209c72dd",
+    "event_type": "SCHEDULE_ENABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T14:11:00.879Z",
+    "details": {
+      "enabled": true,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-d1e858c4",
+    "event_type": "SCHEDULE_DISABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T14:11:00.840Z",
+    "details": {
+      "enabled": false,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-979436c1",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T14:11:00.803Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "수정된 테스트 자동화 스케줄 (11:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 11 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-16T14:11:00.802Z",
+      "updatedAt": "2026-09-16T14:11:00.802Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-5d367347",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T14:11:00.770Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "테스트 자동화 스케줄 (일일 10:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 10 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-16T14:11:00.769Z",
+      "updatedAt": "2026-09-16T14:11:00.769Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-2199877b",
+    "event_type": "DRY_RUN_EXECUTED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789567762",
+    "timestamp": "2026-09-16T23:09:22.556631+09:00",
+    "details": {
+      "scheduleId": "sched-daily-morning",
+      "name": "일일 정기 대학 전시 리서치 및 콘텐츠 생성 (KST 09:00)",
+      "planned_run_id": "run-sched-sched-daily-morning-1789567762",
+      "scope": {
+        "target": "verified_universities",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS",
+        "category": "디자인·UX/UI"
+      },
+      "target_nodes": [
+        "Research",
+        "Validate",
+        "Normalize",
+        "Update DB",
+        "Content Generation",
+        "Human Approval"
+      ],
+      "expected_terminal_state": "WAITING_FOR_APPROVAL",
+      "dry_run": true,
+      "simulated_at": "2026-09-16T23:09:22.556631+09:00"
+    }
+  },
+  {
+    "event_id": "sch-evt-223429d6",
+    "event_type": "WORKFLOW_RUN_CREATED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789567760",
+    "timestamp": "2026-09-16T23:09:20.203291+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-aa664d05",
+    "event_type": "SCHEDULE_TRIGGERED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789567760",
+    "timestamp": "2026-09-16T23:09:20.197291+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-6ae66007",
+    "event_type": "SCHEDULE_ENABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T14:09:19.980Z",
+    "details": {
+      "enabled": true,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-e7ffa2b3",
+    "event_type": "SCHEDULE_DISABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T14:09:19.950Z",
+    "details": {
+      "enabled": false,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-2c3ea904",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T14:09:19.169Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "수정된 테스트 자동화 스케줄 (11:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 11 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-16T14:09:19.168Z",
+      "updatedAt": "2026-09-16T14:09:19.168Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-f19c9f32",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T14:09:19.151Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "테스트 자동화 스케줄 (일일 10:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 10 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-16T14:09:19.151Z",
+      "updatedAt": "2026-09-16T14:09:19.151Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-3ed7c8ef",
+    "event_type": "DRY_RUN_EXECUTED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789566361",
+    "timestamp": "2026-09-16T22:46:01.344931+09:00",
+    "details": {
+      "scheduleId": "sched-daily-morning",
+      "name": "일일 정기 대학 전시 리서치 및 콘텐츠 생성 (KST 09:00)",
+      "planned_run_id": "run-sched-sched-daily-morning-1789566361",
+      "scope": {
+        "target": "verified_universities",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS",
+        "category": "디자인·UX/UI"
+      },
+      "target_nodes": [
+        "Research",
+        "Validate",
+        "Normalize",
+        "Update DB",
+        "Content Generation",
+        "Human Approval"
+      ],
+      "expected_terminal_state": "WAITING_FOR_APPROVAL",
+      "dry_run": true,
+      "simulated_at": "2026-09-16T22:46:01.344931+09:00"
+    }
+  },
+  {
+    "event_id": "sch-evt-8e8c7597",
+    "event_type": "WORKFLOW_RUN_CREATED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789566358",
+    "timestamp": "2026-09-16T22:45:59.004869+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-13f22cd4",
+    "event_type": "SCHEDULE_TRIGGERED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789566358",
+    "timestamp": "2026-09-16T22:45:59.002180+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-44701ae0",
+    "event_type": "SCHEDULE_ENABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T13:45:58.649Z",
+    "details": {
+      "enabled": true,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-3f8f3efa",
+    "event_type": "SCHEDULE_DISABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T13:45:58.604Z",
+    "details": {
+      "enabled": false,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-6ceaf71b",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T13:45:58.334Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "수정된 테스트 자동화 스케줄 (11:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 11 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-16T13:45:58.333Z",
+      "updatedAt": "2026-09-16T13:45:58.333Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-f7460bf3",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T13:45:58.301Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "테스트 자동화 스케줄 (일일 10:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 10 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-16T13:45:58.301Z",
+      "updatedAt": "2026-09-16T13:45:58.301Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-5caa62dc",
+    "event_type": "DRY_RUN_EXECUTED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789566241",
+    "timestamp": "2026-09-16T22:44:01.189555+09:00",
+    "details": {
+      "scheduleId": "sched-daily-morning",
+      "name": "일일 정기 대학 전시 리서치 및 콘텐츠 생성 (KST 09:00)",
+      "planned_run_id": "run-sched-sched-daily-morning-1789566241",
+      "scope": {
+        "target": "verified_universities",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS",
+        "category": "디자인·UX/UI"
+      },
+      "target_nodes": [
+        "Research",
+        "Validate",
+        "Normalize",
+        "Update DB",
+        "Content Generation",
+        "Human Approval"
+      ],
+      "expected_terminal_state": "WAITING_FOR_APPROVAL",
+      "dry_run": true,
+      "simulated_at": "2026-09-16T22:44:01.189555+09:00"
+    }
+  },
+  {
+    "event_id": "sch-evt-9ed34f9e",
+    "event_type": "WORKFLOW_RUN_CREATED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789566238",
+    "timestamp": "2026-09-16T22:43:58.866785+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-1822b146",
+    "event_type": "SCHEDULE_TRIGGERED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789566238",
+    "timestamp": "2026-09-16T22:43:58.864782+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-3d09fac7",
+    "event_type": "SCHEDULE_ENABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T13:43:58.540Z",
+    "details": {
+      "enabled": true,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-8013c76f",
+    "event_type": "SCHEDULE_DISABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T13:43:58.499Z",
+    "details": {
+      "enabled": false,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-f622b65f",
+    "event_type": "SCHEDULE_UPDATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T13:43:58.233Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "수정된 테스트 자동화 스케줄 (11:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 11 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-16T13:43:58.233Z",
+      "updatedAt": "2026-09-16T13:43:58.233Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-7eb1ecd3",
+    "event_type": "SCHEDULE_CREATED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-16T13:43:58.192Z",
+    "details": {
+      "scheduleId": "sched-test-create-01",
+      "name": "테스트 자동화 스케줄 (일일 10:00 KST)",
+      "workflowId": "wf-intelligence-pipeline",
+      "enabled": true,
+      "cronExpression": "0 10 * * *",
+      "timezone": "Asia/Seoul",
+      "scope": {
+        "target": "verified_universities",
+        "category": "디자인·UX/UI",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS"
+      },
+      "createdAt": "2026-09-16T13:43:58.192Z",
+      "updatedAt": "2026-09-16T13:43:58.192Z",
+      "lastRunAt": null,
+      "nextRunAt": null,
+      "lastRunStatus": "NONE",
+      "maxAttempts": 3,
+      "retryCount": 0,
+      "nextRetryAt": null
+    }
+  },
+  {
+    "event_id": "sch-evt-2068326d",
+    "event_type": "WORKFLOW_RUN_CREATED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789566107",
+    "timestamp": "2026-09-16T22:41:47.390492+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-9cd206d3",
+    "event_type": "SCHEDULE_TRIGGERED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789566107",
+    "timestamp": "2026-09-16T22:41:47.388476+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-9d6741f0",
+    "event_type": "SCHEDULE_FAILED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789566082",
+    "timestamp": "2026-09-16T22:41:22.756769+09:00",
+    "details": {
+      "error": "No module named 'scripts.run_live_pipeline'"
+    }
+  },
+  {
+    "event_id": "sch-evt-0b8e0151",
+    "event_type": "WORKFLOW_RUN_CREATED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789566082",
+    "timestamp": "2026-09-16T22:41:22.753250+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-3927739c",
+    "event_type": "SCHEDULE_TRIGGERED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789566082",
+    "timestamp": "2026-09-16T22:41:22.751249+09:00",
+    "details": {}
+  },
+  {
+    "event_id": "sch-evt-335d7e44",
+    "event_type": "DRY_RUN_EXECUTED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin_cli",
+    "actor_role": "ADMIN",
+    "run_id": "run-sched-sched-daily-morning-1789566065",
+    "timestamp": "2026-09-16T22:41:05.551609+09:00",
+    "details": {
+      "scheduleId": "sched-daily-morning",
+      "name": "일일 정기 대학 전시 리서치 및 콘텐츠 생성 (KST 09:00)",
+      "planned_run_id": "run-sched-sched-daily-morning-1789566065",
+      "scope": {
+        "target": "verified_universities",
+        "platform": "INSTAGRAM",
+        "content_type": "REELS",
+        "category": "디자인·UX/UI"
+      },
+      "target_nodes": [
+        "Research",
+        "Validate",
+        "Normalize",
+        "Update DB",
+        "Content Generation",
+        "Human Approval"
+      ],
+      "expected_terminal_state": "WAITING_FOR_APPROVAL",
+      "dry_run": true,
+      "simulated_at": "2026-09-16T22:41:05.551609+09:00"
+    }
+  }
+]

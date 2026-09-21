@@ -1,0 +1,16 @@
+{
+  "content_hash": "a39cce16a4f2a79025ebde5d4c6e99cc",
+  "url": "https://www.navercloudcorp.com/company/about",
+  "final_url": "https://www.navercloudcorp.com/company/about",
+  "canonical_url": "https://www.navercloudcorp.com/company/about",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "title": "네이버 공식 계열/자회사 공시",
+  "accessed_at": "2026-09-17T21:21:48.163926",
+  "crawler_version": "1.0.0",
+  "html_path": "data/research/raw/html/a39cce16a4f2a79025ebde5d4c6e99cc.html",
+  "text_path": "data/research/raw/text/a39cce16a4f2a79025ebde5d4c6e99cc.txt",
+  "screenshot_path": null,
+  "metadata_path": "data/research/raw/metadata/a39cce16a4f2a79025ebde5d4c6e99cc.json",
+  "extra": {}
+}
