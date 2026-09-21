@@ -74,7 +74,7 @@ export default function Sidebar() {
   };
 
   return (
-    <aside className="w-52 md:w-56 shrink-0 bg-transparent min-h-screen sticky top-0 h-screen flex flex-col justify-between p-3.5 md:p-4 z-40 select-none overflow-y-auto no-scrollbar">
+    <aside className="hidden md:flex w-56 shrink-0 bg-transparent min-h-screen sticky top-0 h-screen flex-col justify-between p-4 z-40 select-none overflow-y-auto no-scrollbar">
       {/* 상단 브랜드 로고 및 세로 메뉴 그룹 */}
       <div className="flex flex-col">
         <Link
