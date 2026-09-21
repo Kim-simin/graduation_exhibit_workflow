@@ -263,7 +263,7 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-50 dark:bg-cyan-950/60 border border-cyan-200 dark:border-cyan-700/50 text-cyan-800 dark:text-cyan-400 text-xs font-semibold mb-3">
             <Sparkles className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" /> 전국 대학교 졸업전시 통합 공식 아카이브
           </div>
-          <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
             전국 대학교 학생 <span className="text-cyan-600 dark:text-cyan-400">졸업작품 전시회</span>
           </h1>
           <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base mt-2">
@@ -343,7 +343,7 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
       {/* 8대 산업군 인터랙티브 필터 바 */}
       <section className="py-6">
         <div className="flex flex-wrap justify-between items-center gap-3 mb-3">
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3 min-w-0">
             <h2 className="text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400 font-bold">
               산업군 / 전공 분야 필터
             </h2>
@@ -436,14 +436,14 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
             선택된 결과: {filteredExhibits.length}건
           </span>
         </div>
-        <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none w-full min-w-0">
+        <div className="flex items-center gap-2 overflow-x-auto whitespace-nowrap pb-2 w-full min-w-0">
           {INDUSTRIES.map((cat) => {
             const isSelected = selectedCategory === cat.name;
             return (
               <button
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.name)}
-                className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs md:text-sm font-semibold whitespace-nowrap transition border ${
+                className={`inline-flex shrink-0 items-center gap-2 px-4 py-2 rounded-xl text-xs md:text-sm font-semibold whitespace-nowrap transition border ${
                   isSelected
                     ? "bg-cyan-600 text-white border-cyan-600 shadow-sm ring-2 ring-cyan-600/20 dark:bg-cyan-500/20 dark:text-cyan-300 dark:border-cyan-400"
                     : "bg-white dark:bg-slate-900/60 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/50 shadow-sm"
@@ -459,7 +459,7 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
 
       {/* 전시 카드 그리드 */}
       {filteredExhibits.length > 0 ? (
-        <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 pt-2 w-full min-w-0">
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pt-2 w-full min-w-0">
           {/* 관리자 모드일 때 첫 번째 슬롯에 카드 추가 카드 배치 */}
           {isAdminEditMode && (
             <Link

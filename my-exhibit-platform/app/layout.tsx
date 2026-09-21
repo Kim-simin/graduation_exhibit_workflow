@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Sidebar from "@/components/navigation/Sidebar";
+import MobileHeader from "@/components/navigation/MobileHeader";
 
 export const metadata: Metadata = {
   title: "대한민국 대학 졸업전시 통합 아카이브 | Exhibit Platform",
@@ -31,12 +32,13 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-slate-50 dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 min-h-screen antialiased transition-colors duration-200">
-        <div className="flex min-h-screen bg-slate-50 dark:bg-[#0b0f19]">
+        <div className="flex flex-col md:flex-row min-h-screen w-full bg-slate-50 dark:bg-[#0b0f19]">
+          <MobileHeader />
           {/* 1. 좌측 콤팩트 투명 알약 버튼 레일 */}
           <Sidebar />
 
           {/* 2. 우측 메인 콘텐츠 (min-w-0으로 우측 밀림 원천 차단) */}
-          <div className="flex-1 min-w-0 w-full overflow-x-hidden">
+          <div className="flex-1 min-w-0 w-full md:w-auto">
             {children}
           </div>
         </div>
