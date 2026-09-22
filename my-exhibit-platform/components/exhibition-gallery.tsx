@@ -459,24 +459,24 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
 
       {/* 전시 카드 그리드 */}
       {filteredExhibits.length > 0 ? (
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pt-2 w-full min-w-0">
+        <section className="grid grid-cols-3 gap-2 sm:gap-4 w-full min-w-0 pt-2">
           {/* 관리자 모드일 때 첫 번째 슬롯에 카드 추가 카드 배치 */}
           {isAdminEditMode && (
             <Link
               href={`/admin?tab=cardnews&year=${encodeURIComponent(selectedYear !== "all" ? selectedYear : "2026")}`}
-              className="group relative border-2 border-dashed border-red-300 dark:border-red-800/80 hover:border-red-500 dark:hover:border-red-500 rounded-2xl p-6 bg-red-50/30 dark:bg-red-950/20 hover:bg-red-50/60 dark:hover:bg-red-950/40 transition cursor-pointer flex flex-col items-center justify-center text-center min-h-[360px]"
+              className="group relative min-w-0 border-2 border-dashed border-red-300 dark:border-red-800/80 hover:border-red-500 dark:hover:border-red-500 rounded-2xl p-2 sm:p-6 bg-red-50/30 dark:bg-red-950/20 hover:bg-red-50/60 dark:hover:bg-red-950/40 transition cursor-pointer flex flex-col items-center justify-center text-center min-h-[180px] sm:min-h-[360px]"
             >
-              <div className="w-14 h-14 rounded-2xl bg-red-100 dark:bg-red-900/50 text-red-600 dark:text-red-300 flex items-center justify-center mb-4 group-hover:scale-110 transition shadow-inner">
-                <Plus className="w-7 h-7" />
+              <div className="w-8 h-8 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-red-100 dark:bg-red-900/50 text-red-600 dark:text-red-300 flex items-center justify-center mb-2 sm:mb-4 group-hover:scale-110 transition shadow-inner">
+                <Plus className="w-4 h-4 sm:w-7 sm:h-7" />
               </div>
-              <h4 className="font-extrabold text-base text-slate-800 dark:text-slate-100 mb-1">
+              <h4 className="font-extrabold text-[10px] sm:text-base leading-tight text-slate-800 dark:text-slate-100 mb-1 line-clamp-2">
                 {selectedYear === "all" ? "새 대학교 카드 추가" : `${selectedYear}년 대학교 카드 추가`}
               </h4>
-              <p className="text-xs text-slate-500 dark:text-slate-400 max-w-[220px] mb-4">
+              <p className="text-[8px] sm:text-xs text-slate-500 dark:text-slate-400 max-w-[220px] mb-2 sm:mb-4 line-clamp-3">
                 기존 카드뉴스 검수 시스템으로 이동하여 AI 링크 분석 및 졸업작품을 자동 등록합니다.
               </p>
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs shadow-sm transition">
-                <PlusCircle className="w-3.5 h-3.5" />
+              <span className="inline-flex items-center gap-1 px-1.5 py-1 sm:px-3.5 sm:py-2 rounded-lg sm:rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-[8px] sm:text-xs shadow-sm transition">
+                <PlusCircle className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                 신규 전시 등록하기
               </span>
             </Link>
@@ -496,7 +496,7 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                   setSelectedExhibition(item);
                 }
               }}
-              className={`group relative bg-white dark:bg-[#111827] border rounded-2xl overflow-hidden shadow-sm transition flex flex-col ${
+              className={`group relative min-w-0 bg-white dark:bg-[#111827] border rounded-2xl overflow-hidden shadow-sm transition flex flex-col ${
                 isAdminEditMode
                   ? "border-red-400/70 dark:border-red-500/50 hover:shadow-lg"
                   : item.isResearched
@@ -542,7 +542,7 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
               )}
 
               {/* Poster Aspect Ratio Frame */}
-              <div className="relative aspect-[4/5] w-full overflow-hidden bg-slate-100 dark:bg-slate-900">
+              <div className="relative aspect-[4/5] w-full min-w-0 overflow-hidden bg-slate-100 dark:bg-slate-900">
                 {item.isResearched && item.posterPath ? (
                   <>
                     <img
@@ -557,17 +557,17 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                   </>
                 ) : (
                   /* 리서치 전 (수집 대기) 플레이스홀더 */
-                  <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-slate-50 dark:bg-gradient-to-b dark:from-slate-900 dark:to-slate-950 border-b border-slate-200 dark:border-gray-800/50">
-                    <div className="w-16 h-16 rounded-2xl bg-white dark:bg-slate-800/70 border border-slate-200 dark:border-gray-700/60 flex items-center justify-center mb-4 text-cyan-600 dark:text-cyan-400 shadow-sm">
-                      <Clock className="w-8 h-8 opacity-80 animate-pulse" />
+                  <div className="w-full h-full flex flex-col items-center justify-center p-2 sm:p-6 text-center bg-slate-50 dark:bg-gradient-to-b dark:from-slate-900 dark:to-slate-950 border-b border-slate-200 dark:border-gray-800/50">
+                    <div className="w-8 h-8 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-white dark:bg-slate-800/70 border border-slate-200 dark:border-gray-700/60 flex items-center justify-center mb-1 sm:mb-4 text-cyan-600 dark:text-cyan-400 shadow-sm">
+                      <Clock className="w-4 h-4 sm:w-8 sm:h-8 opacity-80 animate-pulse" />
                     </div>
-                    <span className="px-3 py-1 rounded-full bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-bold mb-2">
+                    <span className="px-1 py-0.5 sm:px-3 sm:py-1 rounded-sm sm:rounded-full bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/30 text-amber-700 dark:text-amber-300 text-[8px] sm:text-xs font-bold mb-1 sm:mb-2 whitespace-nowrap">
                       리서치 전 (수집 대기)
                     </span>
-                    <h4 className="text-base font-bold text-slate-800 dark:text-gray-200">
+                    <h4 className="text-[10px] sm:text-base font-bold leading-tight line-clamp-2 text-slate-800 dark:text-gray-200">
                       {item.university} {item.department}
                     </h4>
-                    <p className="text-xs text-slate-500 dark:text-gray-500 mt-2 max-w-[220px]">
+                    <p className="text-[8px] sm:text-xs text-slate-500 dark:text-gray-500 mt-1 sm:mt-2 max-w-[220px] line-clamp-2">
                       {isProduction
                         ? "공식 아카이브 에셋 검수 및 준비 중입니다."
                         : "아직 아카이브 에셋이 수집되지 않았습니다. 관리자에서 리서치를 가동하세요."}
@@ -610,39 +610,39 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                 {/* Overlays / Badges for Researched Cards */}
                 {item.isResearched && (
                   <>
-                    <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
-                      <span className="px-2.5 py-1 rounded-md bg-white/90 dark:bg-cyan-950/80 backdrop-blur-md border border-slate-200 dark:border-cyan-500/40 text-cyan-800 dark:text-cyan-300 text-xs font-semibold shadow-sm">
+                    <div className="absolute top-1 left-1 sm:top-3 sm:left-3 flex max-w-[46%] flex-wrap gap-1 sm:gap-1.5">
+                      <span className="max-w-full truncate px-1 py-0.5 sm:px-2.5 sm:py-1 rounded-sm sm:rounded-md bg-white/90 dark:bg-cyan-950/80 backdrop-blur-md border border-slate-200 dark:border-cyan-500/40 text-cyan-800 dark:text-cyan-300 text-[8px] sm:text-xs font-semibold shadow-sm">
                         {item.category}
                       </span>
-                      <span className="px-2 py-1 rounded-md bg-slate-900/80 backdrop-blur-md border border-slate-700 text-white text-xs font-mono">
+                      <span className="px-1 py-0.5 sm:px-2 sm:py-1 rounded-sm sm:rounded-md bg-slate-900/80 backdrop-blur-md border border-slate-700 text-white text-[8px] sm:text-xs font-mono">
                         {item.year}
                       </span>
                     </div>
 
-                    <div className="absolute top-3 right-3 flex flex-col items-end gap-1.5">
-                      <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/90 dark:bg-emerald-950/80 backdrop-blur-md dark:border dark:border-emerald-500/40 text-white dark:text-emerald-300 text-xs font-bold shadow-md">
-                        <CheckCircle2 className="w-3.5 h-3.5" />
-                        <span>검수 {item.criticScore}점</span>
+                    <div className="absolute top-1 right-1 sm:top-3 sm:right-3 flex max-w-[48%] flex-col items-end gap-1 sm:gap-1.5">
+                      <div className="flex max-w-full items-center gap-0.5 sm:gap-1.5 px-1 py-0.5 sm:px-2.5 sm:py-1 rounded-sm sm:rounded-full bg-emerald-500/90 dark:bg-emerald-950/80 backdrop-blur-md dark:border dark:border-emerald-500/40 text-white dark:text-emerald-300 text-[8px] sm:text-xs font-bold shadow-md whitespace-nowrap">
+                        <CheckCircle2 className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 shrink-0" />
+                        <span className="sm:hidden">{item.criticScore}점</span><span className="hidden sm:inline">검수 {item.criticScore}점</span>
                       </div>
                       {item.instagramPublished && (
-                        <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-rose-500 to-purple-600 text-white text-[11px] font-bold shadow-md">
-                          <Instagram className="w-3 h-3" />
-                          <span>인스타 발행 완료 ✅</span>
+                        <div className="flex max-w-full items-center gap-0.5 sm:gap-1 px-1 py-0.5 sm:px-2.5 rounded-sm sm:rounded-full bg-gradient-to-r from-rose-500 to-purple-600 text-white text-[8px] sm:text-[11px] font-bold shadow-md whitespace-nowrap">
+                          <Instagram className="w-2.5 h-2.5 sm:w-3 sm:h-3 shrink-0" />
+                          <span className="sm:hidden">발행</span><span className="hidden sm:inline">인스타 발행 완료 ✅</span>
                         </div>
                       )}
                       {item.hasCorporateCooperation && (
-                        <div className="flex items-center gap-1 px-2 py-0.5 rounded-full bg-blue-600/90 dark:bg-blue-950/80 backdrop-blur-md border border-blue-400/40 text-white text-[11px] font-bold shadow-md">
-                          <Building2 className="w-3 h-3 text-blue-300" />
+                        <div className="flex max-w-full items-center gap-0.5 sm:gap-1 px-1 py-0.5 sm:px-2 rounded-sm sm:rounded-full bg-blue-600/90 dark:bg-blue-950/80 backdrop-blur-md border border-blue-400/40 text-white text-[8px] sm:text-[11px] font-bold shadow-md whitespace-nowrap">
+                          <Building2 className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-blue-300 shrink-0" />
                           <span>산학 {item.cooperationCompanies?.length || 1}개사</span>
                         </div>
                       )}
                     </div>
 
-                    <div className="absolute bottom-3 left-3 right-3 text-white">
-                      <span className="text-xs text-cyan-300 dark:text-cyan-400 font-semibold tracking-wide uppercase block mb-0.5">
+                    <div className="absolute bottom-1 left-1 right-1 sm:bottom-3 sm:left-3 sm:right-3 text-white min-w-0">
+                      <span className="text-[8px] sm:text-xs text-cyan-300 dark:text-cyan-400 font-semibold tracking-wide uppercase block mb-0.5 truncate">
                         {item.university} · {item.department}
                       </span>
-                      <h3 className="text-lg font-bold line-clamp-1 drop-shadow-md">
+                      <h3 className="text-[10px] sm:text-sm font-bold leading-tight line-clamp-2 drop-shadow-md">
                         {item.title}
                       </h3>
                     </div>
@@ -651,17 +651,17 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
               </div>
 
               {/* Card Meta Content */}
-              <div className="p-4 flex-1 flex flex-col justify-between bg-white dark:bg-[#111827]">
+              <div className="p-2 sm:p-4 min-w-0 flex-1 flex flex-col justify-between bg-white dark:bg-[#111827]">
                 <div>
-                  <p className="text-slate-600 dark:text-gray-400 text-xs line-clamp-2 mb-3">
+                  <p className="text-slate-600 dark:text-gray-400 text-[8px] sm:text-xs leading-tight line-clamp-2 mb-2 sm:mb-3">
                     {item.headline || `${item.university} ${item.department} 공식 전시 아카이브`}
                   </p>
 
-                  <div className="flex flex-wrap gap-1.5 mb-3">
+                  <div className="flex flex-wrap gap-1 mb-2 sm:gap-1.5 sm:mb-3">
                     {(item.tags || []).slice(0, 3).map((tag, idx) => (
                       <span
                         key={idx}
-                        className="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-gray-700/60 text-slate-600 dark:text-gray-300 text-[11px]"
+                        className="max-w-full truncate px-1 py-0.5 sm:px-2 rounded-sm sm:rounded bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-gray-700/60 text-slate-600 dark:text-gray-300 text-[7px] sm:text-[10px]"
                       >
                         #{tag}
                       </span>
@@ -669,29 +669,29 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                   </div>
 
                   {item.hasCorporateCooperation && (item.cooperationCompanies || []).length > 0 && (
-                    <div className="mb-2 p-1.5 rounded-lg bg-blue-50/70 dark:bg-blue-950/40 border border-blue-200/60 dark:border-blue-800/50 flex items-center justify-between gap-1 text-[11px]">
-                      <span className="text-slate-600 dark:text-slate-300 truncate flex items-center gap-1">
-                        <Building2 className="w-3 h-3 text-blue-500 shrink-0" />
+                    <div className="mb-2 p-1 sm:p-1.5 rounded-md sm:rounded-lg bg-blue-50/70 dark:bg-blue-950/40 border border-blue-200/60 dark:border-blue-800/50 flex min-w-0 items-center justify-between gap-1 text-[8px] sm:text-[11px]">
+                      <span className="text-slate-600 dark:text-slate-300 truncate flex min-w-0 items-center gap-1">
+                        <Building2 className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-blue-500 shrink-0" />
                         <span className="font-medium truncate">
                           {item.cooperationCompanies?.slice(0, 2).join(", ")}
                           {(item.cooperationCompanies?.length || 0) > 2 ? ` 외 ${(item.cooperationCompanies?.length || 0) - 2}개사` : ""}
                         </span>
                       </span>
-                      <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-600 text-white shrink-0">
+                      <span className="px-1 py-0.5 sm:px-1.5 rounded-sm sm:rounded text-[7px] sm:text-[10px] font-bold bg-blue-600 text-white shrink-0">
                         {item.crossValidationStatus || "CORROBORATED"}
                       </span>
                     </div>
                   )}
                 </div>
 
-                <div className="pt-3 border-t border-slate-100 dark:border-gray-800/60 flex items-center justify-between text-xs">
+                <div className="pt-2 sm:pt-3 border-t border-slate-100 dark:border-gray-800/60 flex min-w-0 items-center justify-between gap-1 text-[8px] sm:text-xs">
                   {item.isResearched ? (
                     <>
-                      <span className="text-slate-500 dark:text-gray-400 flex items-center gap-1">
+                      <span className="text-slate-500 dark:text-gray-400 hidden sm:flex items-center gap-1">
                         <Layers className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" />
                         선별 작품 <strong className="text-slate-700 dark:text-gray-200">{item.artworks?.length || 0}점</strong>
                       </span>
-                      <div className="flex items-center gap-1.5">
+                      <div className="flex min-w-0 items-center gap-1 sm:gap-1.5">
                         {!isProduction && isAdminEditMode && (
                           <>
                             <button
@@ -746,9 +746,9 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                             setSelectedExhibition(item);
                             setIsDetailEditMode(false);
                           }}
-                          className="text-cyan-700 dark:text-cyan-400 font-semibold inline-flex items-center gap-0.5 group-hover:translate-x-0.5 transition cursor-pointer"
+                          className="min-w-0 text-[8px] sm:text-xs text-cyan-700 dark:text-cyan-400 font-semibold inline-flex items-center gap-0.5 group-hover:translate-x-0.5 transition cursor-pointer whitespace-nowrap"
                         >
-                          전시 관람하기 <ArrowUpRight className="w-3 h-3" />
+                          <span className="sm:hidden">관람</span><span className="hidden sm:inline">전시 관람하기</span> <ArrowUpRight className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
                         </span>
                       </div>
                     </>
