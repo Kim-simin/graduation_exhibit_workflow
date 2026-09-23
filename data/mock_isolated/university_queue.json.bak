@@ -1,0 +1,30 @@
+[
+  {
+    "id": "UNIV-2026-건국대학교-시각영상디자인학과",
+    "category": "영상·웹툰·애니",
+    "university": "건국대학교",
+    "department": "시각영상디자인학과",
+    "year": "2026",
+    "status": "대기 중",
+    "target_url": "https://kku2026mid.com/project",
+    "official_url": "https://kku2026mid.com/project",
+    "scraped_url": "https://kku2026mid.com/project",
+    "exhibition_title": "건국대학교 2026년 시각영상디자인학과 졸업전시회",
+    "exhibit_title": "[건국대학교] 2026 시각영상디자인학과 졸업전시회",
+    "title": "건국대학교 2026년 시각영상디자인학과 졸업전시회",
+    "critic_score": 95,
+    "critic_feedback": "Research Intelligence Agent 판정: CONFIRMED (신뢰도 95/100)",
+    "curation_summary": {
+      "headline": "건국대학교 시각영상디자인학과 2026 졸업작품전",
+      "curation_intro": "2026년도 건국대학교 시각영상디자인학과 졸업전시 아카이브입니다. 공식 아카이브 확인",
+      "inferred_industry_keywords": [
+        "영상·웹툰·애니",
+        "시각영상디자인학과",
+        "2026졸전"
+      ]
+    },
+    "artworks": [],
+    "isUploaded": false,
+    "isResearched": true
+  }
+]

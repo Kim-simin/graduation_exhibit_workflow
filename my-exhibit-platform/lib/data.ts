@@ -31,15 +31,17 @@ export function getStudentById(id: string): Student | undefined {
 }
 
 export function getProfessors(): Professor[] {
-  return [];
+  return (professorsData as unknown as Professor[]) || [];
 }
 
 export function getVerifiedProfessors(): Professor[] {
-  return [];
+  return ((professorsData as unknown as Professor[]) || []).filter(
+    (p) => p.is_verified || p.verification_status === "VERIFIED"
+  );
 }
 
 export function getProfessorById(id: string): Professor | undefined {
-  return undefined;
+  return ((professorsData as unknown as Professor[]) || []).find((p) => p.id === id);
 }
 
 export function getRfps(): RFP[] {

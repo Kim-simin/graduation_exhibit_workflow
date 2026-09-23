@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { getProfessors, getTaxonomy } from "@/lib/data";
 import {
@@ -12,22 +12,70 @@ import {
   ShieldCheck,
   ExternalLink,
   CheckCircle2,
-  AlertCircle
+  AlertCircle,
+  Search,
 } from "lucide-react";
 
 export default function ProfessorsPage() {
-  const professors = getProfessors();
+  const initialProfessors = getProfessors();
+  const [professors, setProfessors] = useState(initialProfessors);
   const taxonomy = getTaxonomy();
   const [selectedTaxonomy, setSelectedTaxonomy] = useState<string>("all");
+  const [searchQuery, setSearchQuery] = useState<string>("");
+
+  useEffect(() => {
+    // 1. Read URL query params for univ or dept
+    if (typeof window !== "undefined") {
+      const sp = new URLSearchParams(window.location.search);
+      const univParam = sp.get("univ") || "";
+      const deptParam = sp.get("dept") || "";
+      if (univParam || deptParam) {
+        setSearchQuery([univParam, deptParam].filter(Boolean).join(" "));
+      }
+    }
+
+    // 2. Dynamic fetch of latest professors
+    async function fetchDynamicProfessors() {
+      try {
+        const res = await fetch("/api/professors");
+        if (res.ok) {
+          const data = await res.json();
+          if (data.status === "SUCCESS" && Array.isArray(data.professors) && data.professors.length > 0) {
+            setProfessors(data.professors);
+          }
+        }
+      } catch (err) {
+        console.warn("Dynamic professors load fallback to static:", err);
+      }
+    }
+    fetchDynamicProfessors();
+  }, []);
 
   const filteredProfessors = professors.filter((prof) => {
-    if (selectedTaxonomy === "all") return true;
-    const tax = taxonomy.find((t) => t.id === selectedTaxonomy);
-    if (!tax) return true;
-    return (
-      prof.research_areas?.some((ra) => tax.keywords.some((kw) => ra.includes(kw))) ||
-      tax.related_majors.some((rm) => prof.department?.includes(rm))
-    );
+    // 1. Taxonomy filter
+    if (selectedTaxonomy !== "all") {
+      const tax = taxonomy.find((t) => t.id === selectedTaxonomy);
+      if (tax) {
+        const matchTax =
+          prof.research_areas?.some((ra) => tax.keywords.some((kw) => ra.includes(kw))) ||
+          tax.related_majors.some((rm) => prof.department?.includes(rm));
+        if (!matchTax) return false;
+      }
+    }
+
+    // 2. Search query filter
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase().trim();
+      const matchSearch =
+        prof.name?.toLowerCase().includes(q) ||
+        prof.university?.toLowerCase().includes(q) ||
+        prof.department?.toLowerCase().includes(q) ||
+        prof.major?.toLowerCase().includes(q) ||
+        prof.research_areas?.some((ra) => ra.toLowerCase().includes(q));
+      if (!matchSearch) return false;
+    }
+
+    return true;
   });
 
   return (
@@ -112,6 +160,42 @@ export default function ProfessorsPage() {
             </button>
           );
         })}
+      </div>
+
+      {/* 대학교/학과/교수 검색 바 */}
+      <div style={{ marginBottom: "2rem", display: "flex", alignItems: "center", gap: "0.75rem", flexWrap: "wrap" }}>
+        <div style={{ position: "relative", flex: 1, minWidth: "260px", maxWidth: "32rem" }}>
+          <Search
+            style={{
+              position: "absolute",
+              left: "0.85rem",
+              top: "50%",
+              transform: "translateY(-50%)",
+              width: "1rem",
+              height: "1rem",
+              color: "#64748b",
+            }}
+          />
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="대학교명, 학과, 교수명, 연구 키워드 검색..."
+            style={{
+              width: "100%",
+              padding: "0.6rem 1rem 0.6rem 2.4rem",
+              borderRadius: "0.75rem",
+              backgroundColor: "#0f172a",
+              border: "1px solid #334155",
+              color: "#ffffff",
+              fontSize: "0.875rem",
+              outline: "none",
+            }}
+          />
+        </div>
+        <span style={{ fontSize: "0.8125rem", color: "#94a3b8" }}>
+          조회 결과: <strong style={{ color: "#ffffff" }}>{filteredProfessors.length}명</strong>
+        </span>
       </div>
 
       {/* 교수 리스트 그리드 */}
@@ -323,20 +407,40 @@ export default function ProfessorsPage() {
                 style={{
                   marginTop: "auto",
                   display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
+                  flexDirection: "column",
+                  gap: "0.75rem",
                   paddingTop: "1rem",
                   borderTop: "1px solid #1e293b",
                 }}
               >
-                <span style={{ fontSize: "0.75rem", color: "#64748b" }}>
-                  등록된 학생 제출물: <strong style={{ color: "#ffffff" }}>{prof.student_submissions?.length || 0}건</strong>
-                </span>
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "0.5rem" }}>
+                  <span style={{ fontSize: "0.75rem", color: "#64748b" }}>
+                    등록된 학생 제출물: <strong style={{ color: "#ffffff" }}>{prof.student_submissions?.length || 0}건</strong>
+                  </span>
+                  {prof.student_submissions && prof.student_submissions.length > 0 && (
+                    <Link
+                      href={`/?search=${encodeURIComponent(prof.university)}`}
+                      style={{
+                        fontSize: "0.6875rem",
+                        color: "#38bdf8",
+                        backgroundColor: "rgba(56, 189, 248, 0.1)",
+                        border: "1px solid rgba(56, 189, 248, 0.25)",
+                        padding: "0.15rem 0.45rem",
+                        borderRadius: "0.25rem",
+                        textDecoration: "none",
+                        fontWeight: 600,
+                      }}
+                    >
+                      🎨 {prof.university} 졸전 출품작 보기 ↗
+                    </Link>
+                  )}
+                </div>
 
                 <Link
                   href={`/professors/${prof.id}`}
                   style={{
-                    padding: "0.45rem 0.9rem",
+                    width: "100%",
+                    padding: "0.5rem 0.9rem",
                     borderRadius: "0.375rem",
                     backgroundColor: "#6366f1",
                     color: "#ffffff",
@@ -345,6 +449,7 @@ export default function ProfessorsPage() {
                     textDecoration: "none",
                     display: "inline-flex",
                     alignItems: "center",
+                    justifyContent: "center",
                     gap: "0.35rem",
                   }}
                 >

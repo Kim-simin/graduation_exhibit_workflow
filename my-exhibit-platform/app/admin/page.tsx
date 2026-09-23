@@ -55,6 +55,7 @@ import {
   Cpu,
   Server,
 } from "lucide-react";
+import { STANDARD_CATEGORIES, getStandardCategory } from "@/src/utils/categoryMapper";
 
 const INDUSTRIES = [
   { value: "디자인·UX/UI", label: "디자인 · UX/UI · 서비스디자인" },
@@ -68,13 +69,7 @@ const INDUSTRIES = [
 ];
 
 function matchCategory(cat: string | null): string {
-  if (!cat) return "디자인·UX/UI";
-  for (const ind of INDUSTRIES) {
-    if (ind.value === cat || ind.label.includes(cat) || cat.includes(ind.value)) {
-      return ind.value;
-    }
-  }
-  return "디자인·UX/UI";
+  return getStandardCategory(cat || "");
 }
 
 function AdminDashboardContent() {
@@ -881,16 +876,21 @@ function AdminDashboardContent() {
       });
 
       if (res.ok) {
+        const approveData = await res.json();
+        const profCount = approveData.registered_professors?.length || 0;
         setApprovalSuccess(true);
         setLogs((prev) => [
           ...prev,
-          `[${timestamp}] ✅ [수집 최종 승인 완료] ${targetUniv} ${targetDept} 카드가 데이터베이스에 '리서치 완료' 상태로 등록되었습니다!`,
+          `[${timestamp}] ✅ [수집 최종 승인 완료] ${targetUniv} ${targetDept} 카드가 데이터베이스에 '리서치 완료' 상태로 등록되었습니다! (포스터 & 출품작 ${worksList.length}점)`,
+          profCount > 0
+            ? `[${timestamp}] 🎓 [학과 커리큘럼 연계] ${targetUniv} ${targetDept} 교수진 ${profCount}명이 '학과 커리큘럼(교수)' 페이지(/professors)에 성공적으로 추가 등록되었습니다.`
+            : `[${timestamp}] 🎓 [학과 커리큘럼 연계] ${targetUniv} ${targetDept} 교수진 정보가 학과 커리큘럼(교수) 데이터베이스와 동기화되었습니다.`,
           `[${timestamp}] 🚀 메인 공개 갤러리로 자동 이동합니다...`,
         ]);
         await loadQueue();
         setTimeout(() => {
           window.location.href = "/";
-        }, 400);
+        }, 1200);
       } else {
         alert("승인 처리 중 오류가 발생했습니다.");
       }
@@ -1696,6 +1696,12 @@ function AdminDashboardContent() {
             </span>
           </div>
 
+          {/* 📌 스크래핑 범위 및 교수 연계 원칙 안내 */}
+          <div className="flex items-center gap-2 text-[11px] text-slate-600 dark:text-slate-300 bg-cyan-50/80 dark:bg-cyan-950/40 border border-cyan-200 dark:border-cyan-800/60 px-3 py-1.5 rounded-lg">
+            <span className="text-cyan-700 dark:text-cyan-400 font-bold shrink-0">📌 스크래핑 원칙:</span>
+            <span>입력된 링크에서는 <strong>메인 포스터</strong>와 <strong>졸업작품(갤러리)</strong>만 정밀 스크래핑되며, 교수 정보는 <strong>학과 커리큘럼(교수) 페이지(/professors)</strong>에 자동 연계 추가됩니다.</span>
+          </div>
+
           <div className="flex flex-col md:flex-row items-center gap-2.5">
             <div className="relative flex-1 w-full">
               <input
@@ -2182,6 +2188,26 @@ function AdminDashboardContent() {
                   </button>
                 </div>
               </div>
+            </div>
+
+            {/* 🎓 학과 커리큘럼(교수) 연계 안내 바 */}
+            <div className="p-3.5 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800/70 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5">
+              <div className="flex items-center gap-2.5 text-xs text-indigo-900 dark:text-indigo-200">
+                <GraduationCap className="w-5 h-5 text-indigo-600 dark:text-indigo-400 shrink-0" />
+                <div>
+                  <span className="font-bold">🎓 학과 커리큘럼(교수) 페이지 자동 연계:</span>
+                  <span className="ml-1 text-slate-600 dark:text-slate-300">
+                    수집 승인 시 <strong>{targetUniv} {targetDept}</strong>의 교수진 정보가 학과 커리큘럼(교수) 데이터베이스에 자동 등록되며, 출품작과 연계됩니다.
+                  </span>
+                </div>
+              </div>
+              <Link
+                href="/professors"
+                target="_blank"
+                className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-[11px] font-bold shrink-0 transition shadow-sm"
+              >
+                교수 페이지 확인 ↗
+              </Link>
             </div>
 
             {/* Action Buttons Bar */}

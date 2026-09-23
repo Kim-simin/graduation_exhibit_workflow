@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { getStandardCategory } from "@/src/utils/categoryMapper";
 
 export interface Artwork {
   title: string;
@@ -45,16 +46,7 @@ export interface Exhibition {
 }
 
 export function mapCategory(rawCat: string): string {
-  if (!rawCat) return "디자인·UX/UI";
-  if (rawCat.includes("디자인") || rawCat.includes("UX/UI")) return "디자인·UX/UI";
-  if (rawCat.includes("회화") || rawCat.includes("미술")) return "미술·회화";
-  if (rawCat.includes("공예") || rawCat.includes("조형") || rawCat.includes("도자")) return "공예·조형";
-  if (rawCat.includes("영상") || rawCat.includes("미디어") || rawCat.includes("애니메이션")) return "영상·미디어";
-  if (rawCat.includes("사진") || rawCat.includes("브랜드")) return "사진·브랜드";
-  if (rawCat.includes("건축") || rawCat.includes("공간")) return "건축·공간";
-  if (rawCat.includes("패션") || rawCat.includes("의류")) return "패션·의류";
-  if (rawCat.includes("게임") || rawCat.includes("캐릭터")) return "게임·캐릭터";
-  return "디자인·UX/UI";
+  return getStandardCategory(rawCat);
 }
 
 export function getInitialExhibitions(): Exhibition[] {
@@ -115,7 +107,7 @@ export function getInitialExhibitions(): Exhibition[] {
         university: item.university,
         department: item.department,
         year: item.year || "2025",
-        category: mapCategory(item.category),
+        category: getStandardCategory(item.category || item.department),
         title: cleanTitle,
         isResearched,
         isUploaded,

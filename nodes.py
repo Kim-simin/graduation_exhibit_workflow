@@ -240,6 +240,25 @@ def research_node(state: GraphState) -> Dict[str, Any]:
             "recommended_tone": "트렌디하고 감각적인 소셜 카드뉴스 및 전시 도록 톤"
         }
 
+    # 3. 학과 커리큘럼별 교수 카드 연계 자동화 (Invariant 5 & Invariant 4 적용)
+    try:
+        from research.curriculum_professor_researcher import CurriculumProfessorResearcher
+        from research.storage_manager import upsert_professor_card
+        prof_researcher = CurriculumProfessorResearcher()
+        faculties = prof_researcher.research_faculty_for_department(
+            university=univ,
+            department=dept,
+            official_source_url=scraped_url or "",
+            student_works=scraped_artworks
+        )
+        prof_file = os.path.abspath(os.path.join(os.path.dirname(__file__), "data", "professors.json"))
+        platform_prof_file = os.path.abspath(os.path.join(os.path.dirname(__file__), "my-exhibit-platform", "data", "professors.json"))
+        sync_p = platform_prof_file if os.path.exists(os.path.dirname(platform_prof_file)) else None
+        for f_prof in faculties:
+            upsert_professor_card(prof_file, f_prof, sync_file=sync_p)
+    except Exception as pe:
+        print(f"[교수 카드 연계 예외]: {pe}", flush=True)
+
     return {
         "research_data": research_data,
         "poster_image": scraped_poster,

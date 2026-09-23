@@ -459,18 +459,28 @@ INDUSTRY_METADATA = [
 INDUSTRIES = [item["category"] for item in INDUSTRY_METADATA]
 
 def load_queue_data() -> List[Dict[str, Any]]:
-    if os.path.exists(QUEUE_FILE):
-        try:
-            with open(QUEUE_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception:
-            pass
+    try:
+        from research.storage_manager import atomic_read_json
+        return atomic_read_json(QUEUE_FILE)
+    except Exception:
+        if os.path.exists(QUEUE_FILE):
+            try:
+                with open(QUEUE_FILE, "r", encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception:
+                pass
     return []
 
 def save_queue_data(data: List[Dict[str, Any]]) -> None:
-    os.makedirs(os.path.dirname(QUEUE_FILE), exist_ok=True)
-    with open(QUEUE_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    try:
+        from research.storage_manager import atomic_write_json
+        platform_q = os.path.abspath(os.path.join(os.path.dirname(__file__), "my-exhibit-platform", "data", "university_queue.json"))
+        sync_paths = [platform_q] if os.path.exists(os.path.dirname(platform_q)) else None
+        atomic_write_json(QUEUE_FILE, data, sync_paths=sync_paths)
+    except Exception as e:
+        os.makedirs(os.path.dirname(QUEUE_FILE), exist_ok=True)
+        with open(QUEUE_FILE, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
 
 # ---------------------------------------------------------
 # 세션 상태 초기화

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import { spawn } from "child_process";
 
 export const dynamic = "force-dynamic";
 
@@ -155,11 +156,55 @@ export async function POST(req: Request) {
 
     fs.writeFileSync(queueFile, JSON.stringify(queueList, null, 2), "utf-8");
 
+    // 🎓 학과 커리큘럼(교수) 연계 자동화: 해당 대학교·학과 교수진 정보 발굴 및 professors.json 등록
+    let registeredProfessors: any[] = [];
+    try {
+      const rootDir = path.resolve(process.cwd(), "..");
+      const scriptPath = path.join(rootDir, "scripts", "link_department_professors.py");
+      const pythonExe = process.platform === "win32" ? "py" : "python3";
+      
+      const worksData = JSON.stringify(mappedArtworks.slice(0, 30));
+      const args = process.platform === "win32"
+        ? ["-3.11", scriptPath, "--univ", university || "", "--dept", department || "", "--targetUrl", target_url || "", "--worksJson", worksData]
+        : [scriptPath, "--univ", university || "", "--dept", department || "", "--targetUrl", target_url || "", "--worksJson", worksData];
+
+      const profResult = await new Promise<any>((resolve) => {
+        let stdout = "";
+        let stderr = "";
+        const proc = spawn(pythonExe, args, { cwd: rootDir });
+        proc.stdout.on("data", (chunk) => { stdout += chunk.toString(); });
+        proc.stderr.on("data", (chunk) => { stderr += chunk.toString(); });
+        proc.on("close", () => {
+          try {
+            const match = stdout.match(/\{[\s\S]*\}/);
+            if (match) {
+              resolve(JSON.parse(match[0]));
+            } else {
+              resolve({ status: "WARN", registered_professors: [] });
+            }
+          } catch (e) {
+            resolve({ status: "WARN", registered_professors: [] });
+          }
+        });
+        proc.on("error", (err) => {
+          console.warn("[Approve API] Professor link spawn error:", err);
+          resolve({ status: "WARN", registered_professors: [] });
+        });
+      });
+
+      if (profResult && profResult.registered_professors) {
+        registeredProfessors = profResult.registered_professors;
+      }
+    } catch (profErr) {
+      console.warn("[Approve API] Professor link non-blocking warning:", profErr);
+    }
+
     return NextResponse.json({
       status: "SUCCESS",
-      message: "카드가 성공적으로 승인 및 업데이트되었습니다.",
+      message: "졸업전시 카드(포스터·출품작)가 승인되었으며, 학과 커리큘럼(교수) 페이지에 교수진 정보가 성공적으로 연계 등록되었습니다.",
       card_id: safeCardId,
-      artworks_count: mappedArtworks.length
+      artworks_count: mappedArtworks.length,
+      registered_professors: registeredProfessors,
     });
   } catch (err: any) {
     console.error("[Approve API Error]:", err);

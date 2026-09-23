@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   Sparkles,
+  Search,
   ClipboardPaste,
   School,
   Layers,
@@ -35,30 +36,12 @@ import { InstagramUploadModal } from "./instagram-upload-modal";
 import { ExhibitionDetailModal } from "./exhibition-detail-modal";
 import AddExhibitionModal from "./add-exhibition-modal";
 import ThemeToggle from "./theme-toggle";
+import { STANDARD_CATEGORIES, EDIT_CATEGORIES, getStandardCategory } from "@/src/utils/categoryMapper";
 
-// 8대 표준 산업군 메타데이터
-const INDUSTRIES = [
-  { id: "all", name: "전체 분야", icon: "🌐" },
-  { id: "design", name: "디자인·UX/UI", icon: "🎨" },
-  { id: "fine_art", name: "미술·회화", icon: "🖼️" },
-  { id: "craft", name: "공예·조형", icon: "🏺" },
-  { id: "media", name: "영상·미디어", icon: "🎬" },
-  { id: "photo", name: "사진·브랜드", icon: "📸" },
-  { id: "arch", name: "건축·공간", icon: "🏛️" },
-  { id: "fashion", name: "패션·의류", icon: "👔" },
-  { id: "game", name: "게임·캐릭터", icon: "🎮" },
-];
+// 10대 통합 표준 카테고리 메타데이터
+const INDUSTRIES = STANDARD_CATEGORIES;
 
-const EDIT_CATEGORIES = [
-  "디자인·UX/UI",
-  "미술·회화",
-  "공예·조형",
-  "영상·미디어",
-  "사진·브랜드",
-  "건축·공간",
-  "패션·의류",
-  "게임·캐릭터",
-];
+// EDIT_CATEGORIES imported from categoryMapper
 
 interface Props {
   initialExhibitions: Exhibition[];
@@ -66,6 +49,7 @@ interface Props {
 
 export default function ExhibitionGallery({ initialExhibitions }: Props) {
   const [selectedCategory, setSelectedCategory] = useState("전체 분야");
+  const [searchQuery, setSearchQuery] = useState("");
   const [selectedYear, setSelectedYear] = useState<string>("all");
   const [statusFilter, setStatusFilter] = useState<"all" | "uploaded" | "pending">("all");
   const [selectedExhibition, setSelectedExhibition] = useState<Exhibition | null>(null);
@@ -243,14 +227,33 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
       String(item.schedule || "").includes(selectedYear) ||
       String(item.title || "").includes(selectedYear);
 
-    // 카테고리 조건 매칭
+    // 카테고리 조건 매칭 (10대 표준 카테고리 및 학과 자동 매핑 일치)
     const matchesCategory =
       selectedCategory === "전체" ||
       selectedCategory === "전체 분야" ||
       item.category === selectedCategory ||
+      getStandardCategory(item.category || item.department || "") === selectedCategory ||
       item.department?.includes(selectedCategory);
 
-    return matchesYear && matchesCategory;
+    // 통합 검색어 매칭 (대학명, 학과, 작품명, 슬로건, 태그, 학생명 등)
+    const q = searchQuery.trim().toLowerCase();
+    const matchesSearch =
+      !q ||
+      item.university?.toLowerCase().includes(q) ||
+      item.department?.toLowerCase().includes(q) ||
+      item.title?.toLowerCase().includes(q) ||
+      item.category?.toLowerCase().includes(q) ||
+      item.headline?.toLowerCase().includes(q) ||
+      item.slogan?.toLowerCase().includes(q) ||
+      item.tags?.some((t) => t.toLowerCase().includes(q)) ||
+      item.artworks?.some(
+        (a) =>
+          a.title?.toLowerCase().includes(q) ||
+          a.author?.toLowerCase().includes(q) ||
+          a.role?.toLowerCase().includes(q)
+      );
+
+    return matchesYear && matchesCategory && matchesSearch;
   });
 
   const filteredExhibits = filteredExhibitions;
@@ -436,17 +439,17 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
             선택된 결과: {filteredExhibits.length}건
           </span>
         </div>
-        <div className="flex items-center gap-2 overflow-x-auto whitespace-nowrap pb-2 w-full min-w-0">
+        <div className="flex flex-wrap items-center gap-2 md:gap-3 w-full">
           {INDUSTRIES.map((cat) => {
             const isSelected = selectedCategory === cat.name;
             return (
               <button
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.name)}
-                className={`inline-flex shrink-0 items-center gap-2 px-4 py-2 rounded-xl text-xs md:text-sm font-semibold whitespace-nowrap transition border ${
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-2xl text-xs font-semibold transition border shadow-xs ${
                   isSelected
                     ? "bg-cyan-600 text-white border-cyan-600 shadow-sm ring-2 ring-cyan-600/20 dark:bg-cyan-500/20 dark:text-cyan-300 dark:border-cyan-400"
-                    : "bg-white dark:bg-slate-900/60 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/50 shadow-sm"
+                    : "bg-white dark:bg-[#111422] text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/60"
                 }`}
               >
                 <span>{cat.icon}</span>
@@ -454,6 +457,28 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
               </button>
             );
           })}
+
+          {/* 직무/학과/작품 통합 검색 바 (공간 부족 시 자연스럽게 아래로 줄바꿈 됨) */}
+          <div className="relative flex-grow min-w-[200px] max-w-full sm:max-w-xs">
+            <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500 pointer-events-none" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="대학명, 학과, 작품 검색..."
+              className="w-full text-xs font-medium bg-slate-50 dark:bg-[#0f121e] border border-slate-200 dark:border-slate-700 rounded-2xl pl-8 pr-7 py-1.5 text-slate-800 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500 transition-colors shadow-xs"
+            />
+            {searchQuery && (
+              <button
+                type="button"
+                onClick={() => setSearchQuery("")}
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-0.5"
+                title="검색어 지우기"
+              >
+                <X className="w-3 h-3" />
+              </button>
+            )}
+          </div>
         </div>
       </section>
 
