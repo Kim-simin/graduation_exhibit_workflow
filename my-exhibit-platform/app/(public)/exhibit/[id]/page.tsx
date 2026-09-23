@@ -2,13 +2,16 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { ArrowLeft, Sparkles, School, Calendar, MapPin, CheckCircle2, Clock, ArrowUpRight } from "lucide-react";
+import { ArrowLeft, Sparkles, School, Calendar, MapPin, CheckCircle2, Clock, ArrowUpRight, Maximize2, GraduationCap } from "lucide-react";
 import { Exhibition } from "@/lib/get-exhibitions";
+import { ArtworkLightboxModal } from "@/components/artwork-lightbox-modal";
 
 export default function ExhibitDetailPage({ params }: { params: { id: string } }) {
   const exhibitId = params.id;
   const [exhibit, setExhibit] = useState<Exhibition | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [selectedArtworkIndex, setSelectedArtworkIndex] = useState<number | null>(null);
+  const [isPosterLightboxOpen, setIsPosterLightboxOpen] = useState(false);
 
   useEffect(() => {
     async function fetchExhibit() {
@@ -90,22 +93,40 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
 
   return (
     <main className="min-h-screen px-4 md:px-12 py-10 max-w-5xl mx-auto space-y-6">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-3">
         <Link
           href="/"
           className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition"
         >
           <ArrowLeft className="w-4 h-4" /> 전체 아카이브 목록으로 돌아가기
         </Link>
+        <Link
+          href={`/professors?univ=${encodeURIComponent(exhibit.university)}&dept=${encodeURIComponent(exhibit.department)}`}
+          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-500/30 text-indigo-300 text-xs font-bold transition shadow-sm"
+        >
+          <GraduationCap className="w-4 h-4 text-indigo-400" />
+          <span>{exhibit.university} {exhibit.department} 교수진 & 커리큘럼 보기</span>
+          <ArrowUpRight className="w-3.5 h-3.5 opacity-70" />
+        </Link>
       </div>
 
       <div className="bg-[#111827] border border-gray-800 rounded-2xl overflow-hidden shadow-2xl">
-        <div className="relative aspect-[16/8] w-full bg-slate-900 overflow-hidden">
+        <div
+          onClick={() => {
+            if (exhibit.posterPath) {
+              setIsPosterLightboxOpen(true);
+            }
+          }}
+          className={`relative aspect-[16/8] w-full bg-slate-900 overflow-hidden ${
+            exhibit.posterPath ? "cursor-pointer group" : ""
+          }`}
+          title={exhibit.posterPath ? "클릭하여 메인 공식 포스터 고화질 확인" : undefined}
+        >
           {exhibit.posterPath && (
             <img
               src={`/api/images/${exhibit.posterPath}`}
               alt={exhibit.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
               onError={(e) => {
                 (e.target as HTMLElement).style.display = "none";
               }}
@@ -113,13 +134,22 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-[#111827] via-black/40 to-transparent" />
 
-          <div className="absolute top-4 left-4">
+          {/* 포스터 고화질 확대 힌트 오버레이 */}
+          {exhibit.posterPath && (
+            <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center pointer-events-none z-10">
+              <span className="px-3.5 py-1.5 rounded-full bg-cyan-600/90 text-white text-xs font-bold flex items-center gap-1.5 shadow-lg backdrop-blur-sm">
+                <Maximize2 className="w-3.5 h-3.5" /> 포스터 고화질 확인
+              </span>
+            </div>
+          )}
+
+          <div className="absolute top-4 left-4 z-10">
             <span className="px-3 py-1 rounded-md bg-cyan-500 text-slate-950 font-extrabold text-xs">
               {exhibit.year}년도 공식 아카이브
             </span>
           </div>
 
-          <div className="absolute bottom-6 left-6 right-6">
+          <div className="absolute bottom-6 left-6 right-6 z-10">
             <div className="flex items-center gap-2 text-sm text-cyan-400 font-semibold mb-1">
               <School className="w-4 h-4" /> {exhibit.university} {exhibit.department}
             </div>
@@ -161,21 +191,37 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
           </div>
 
           <div>
-            <h2 className="text-lg font-bold text-white mb-4">
-              🎨 출품작 갤러리 (총 {exhibit.artworks.length}점)
-            </h2>
+            <div className="flex items-center justify-between mb-4 border-b border-gray-800 pb-2">
+              <h2 className="text-lg font-bold text-white">
+                🎨 출품작 갤러리 (총 {exhibit.artworks.length}점)
+              </h2>
+              <span className="text-xs text-slate-400">
+                * 카드를 클릭하면 고화질 이미지를 확인할 수 있습니다.
+              </span>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {exhibit.artworks.map((art, idx) => (
-                <div key={idx} className="rounded-xl overflow-hidden bg-slate-900 border border-slate-800 flex flex-col group">
-                  <div className="relative w-full h-48 bg-slate-950 overflow-hidden">
+                <div
+                  key={idx}
+                  onClick={() => setSelectedArtworkIndex(idx)}
+                  className="rounded-xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-cyan-500 hover:shadow-lg transition duration-200 flex flex-col group cursor-pointer"
+                >
+                  <div className="relative w-full h-48 bg-slate-950 overflow-hidden flex items-center justify-center select-none">
                     <img 
                       src={`/api/images/${art.imagePath}`} 
                       alt={art.title} 
-                      className="w-full h-48 object-cover group-hover:scale-105 transition duration-300"
+                      className="w-full h-48 object-cover group-hover:scale-105 transition duration-300 pointer-events-none"
                       onError={(e) => {
                         (e.target as HTMLElement).style.display = "none";
                       }}
                     />
+                    {/* 카드 호버 시 고화질 확대 힌트 */}
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center pointer-events-none z-10">
+                      <span className="px-3 py-1.5 rounded-full bg-cyan-600/90 text-white text-xs font-bold flex items-center gap-1.5 shadow-lg backdrop-blur-sm">
+                        <Maximize2 className="w-3.5 h-3.5" /> 고화질 확대
+                      </span>
+                    </div>
                   </div>
                   <div className="p-3">
                     <span className="text-xs text-cyan-400 font-mono font-bold">#{idx + 1}</span>
@@ -191,6 +237,36 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
           </div>
         </div>
       </div>
+
+      {/* 개별 출품작 고화질 라이트박스 뷰어 */}
+      <ArtworkLightboxModal
+        isOpen={selectedArtworkIndex !== null}
+        onClose={() => setSelectedArtworkIndex(null)}
+        artworks={exhibit.artworks}
+        initialIndex={selectedArtworkIndex ?? 0}
+        university={exhibit.university}
+        department={exhibit.department}
+      />
+
+      {/* 메인 포스터 고화질 라이트박스 뷰어 */}
+      {exhibit.posterPath && (
+        <ArtworkLightboxModal
+          isOpen={isPosterLightboxOpen}
+          onClose={() => setIsPosterLightboxOpen(false)}
+          artworks={[
+            {
+              title: `${exhibit.university} ${exhibit.department} 메인 공식 포스터`,
+              author: `${exhibit.university} ${exhibit.department}`,
+              role: "공식 전시 포스터",
+              imagePath: exhibit.posterPath,
+              description: exhibit.curationIntro || exhibit.headline || "",
+            },
+          ]}
+          initialIndex={0}
+          university={exhibit.university}
+          department={exhibit.department}
+        />
+      )}
     </main>
   );
 }

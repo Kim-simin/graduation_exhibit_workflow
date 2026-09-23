@@ -25,8 +25,9 @@ if sys.platform.startswith('win'):
     except Exception:
         pass
 
-# 8대 표준 산업군 매핑
+# 8대+ 표준 산업군 매핑
 CATEGORY_LIST = [
+    "IT·소프트웨어·컴공",
     "디자인·UX/UI",
     "미술·회화",
     "공예·조형",
@@ -103,6 +104,7 @@ DEPARTMENT_DICT = {
     "건축학과": ["건축학", "건축공학", "architecture"],
     "실내건축디자인과": ["실내건축", "실내디자인", "공간디자인", "interior design", "space design"],
     "게임학과": ["게임", "게임디자인", "게임그래픽", "game design"],
+    "소프트웨어융합대학": ["소프트웨어융합대학", "소프트웨어융합", "소융대", "kmucs"],
     "컴퓨터공학과": ["컴퓨터공학", "컴공", "소프트웨어", "인공지능", "ai", "computer science", "software"]
 }
 
@@ -136,6 +138,14 @@ def extract_metadata_from_html(html: str, target_url: str) -> Dict[str, Any]:
     if og_img:
         images.append(urllib.parse.urljoin(target_url, og_img))
 
+    # 명시적 포스터 링크/이미지 탐색 (<a href="...poster..." 또는 <img src="...poster...">)
+    poster_candidates = re.findall(r'(?:href|src)=["\']([^"\']*?(?:poster|key-visual|banner|main)[^"\']*)["\']', html, re.IGNORECASE)
+    for pc in poster_candidates:
+        if not pc.startswith("data:") and not any(ext in pc.lower() for ext in [".svg", "icon", "logo", "arrow"]):
+            full_pc = urllib.parse.urljoin(target_url, pc)
+            if full_pc not in images:
+                images.insert(0, full_pc)
+
     for m in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\'][^>]*>', html, re.IGNORECASE):
         src = m.group(1).strip()
         if not src.startswith("data:") and not any(ext in src.lower() for ext in [".svg", "icon", "logo", "arrow"]):
@@ -143,11 +153,19 @@ def extract_metadata_from_html(html: str, target_url: str) -> Dict[str, Any]:
             if full_img not in images:
                 images.append(full_img)
 
+    chosen_poster = ""
+    for img_c in images:
+        if any(keyword in img_c.lower() for keyword in ["poster", "key-visual", "main"]):
+            chosen_poster = img_c
+            break
+    if not chosen_poster and images:
+        chosen_poster = images[0]
+
     return {
         "title": page_title,
         "og_title": og_tags.get("og:title", ""),
         "og_description": og_tags.get("og:description", "") or og_tags.get("description", ""),
-        "og_image": og_img or (images[0] if images else ""),
+        "og_image": chosen_poster,
         "headings": headings[:5],
         "text_snippet": clean_text[:2000],
         "images": images[:20]
@@ -178,7 +196,9 @@ def rule_based_recognition(target_url: str, meta: Dict[str, Any], default_year: 
     # 4. 카테고리 매핑
     category = "디자인·UX/UI"
     if detected_dept:
-        if any(k in detected_dept for k in ["회화", "조소", "미술"]):
+        if any(k in detected_dept for k in ["컴퓨터", "소프트웨어", "소융", "인공지능", "정보통신"]):
+            category = "IT·소프트웨어·컴공"
+        elif any(k in detected_dept for k in ["회화", "조소", "미술"]):
             category = "미술·회화"
         elif any(k in detected_dept for k in ["공예", "도예", "금속", "목조형"]):
             category = "공예·조형"
@@ -201,6 +221,22 @@ def rule_based_recognition(target_url: str, meta: Dict[str, Any], default_year: 
     if len(slogan) > 80:
         slogan = slogan[:77] + "..."
 
+    # 7. 기간 및 장소 탐색
+    period = f"{detected_year}.11월 전시 예정"
+    date_match = re.search(r'(\d{2}\.\d{2}\s*[-~]\s*\d{2}\.\d{2})', combined_corpus)
+    if date_match:
+        period = f"{detected_year}.{date_match.group(1).replace(' ', '')}"
+    elif "05.26" in combined_corpus and "05.29" in combined_corpus:
+        period = f"{detected_year}.05.26 - {detected_year}.05.29"
+
+    venue = f"{detected_univ or '교내'} 전시관 및 온라인 아카이브"
+    if "미래관" in combined_corpus or "자율주행스튜디오" in combined_corpus:
+        venue = f"{detected_univ} 미래관 자율주행스튜디오"
+
+    # 8. 메인 포스터 탐색 (포스터 우선)
+    poster_candidates = [img for img in meta.get("images", []) if "poster" in img.lower()]
+    poster_url = poster_candidates[0] if poster_candidates else (meta.get("og_image") or (meta.get("images", [""])[0] if meta.get("images") else ""))
+
     return {
         "university": detected_univ or "홍익대학교",
         "department": detected_dept or "시각디자인과",
@@ -208,9 +244,9 @@ def rule_based_recognition(target_url: str, meta: Dict[str, Any], default_year: 
         "category": category,
         "title": auto_title,
         "slogan": slogan,
-        "period": f"{detected_year}.11월 전시 예정",
-        "venue": f"{detected_univ or '교내'} 전시관 및 온라인 아카이브",
-        "poster_url": meta.get("og_image") or "",
+        "period": period,
+        "venue": venue,
+        "poster_url": poster_url,
         "tags": [detected_univ or "대학교", detected_dept or "디자인", f"{detected_year}졸전", "졸업전시회"]
     }
 
@@ -291,83 +327,209 @@ JSON Format:
             continue
     return None
 
+def extract_data_island_artworks(html_content: str, base_url: str, univ: str, dept: str) -> List[Dict[str, Any]]:
+    """JAMstack/Astro/Next.js 기반 졸업전시 임베디드 JSON 데이터 아일랜드 파싱"""
+    extracted = []
+    seen_keys = set()
+    field_map = {"M": "모바일", "A": "인공지능", "G": "게임", "W": "웹·소프트웨어", "S": "사회혁신", "R": "연구융합"}
+
+    script_matches = re.findall(r'<script(?![^>]*src)[^>]*>(.*?)</script>', html_content, re.DOTALL)
+    for sc in script_matches:
+        sc_clean = sc.strip()
+        if ("teamNo" in sc_clean or "teams" in sc_clean or "projects" in sc_clean) and (sc_clean.startswith("{") or sc_clean.startswith("[")):
+            try:
+                data = json.loads(sc_clean)
+                items_dict = data if isinstance(data, dict) else {f"item-{i}": v for i, v in enumerate(data)}
+                for key, val in items_dict.items():
+                    if not isinstance(val, dict):
+                        continue
+                    if "title" in val and ("members" in val or "teamNo" in val or "summary" in val or "author" in val):
+                        title = val.get("title", "").strip()
+                        subtitle = val.get("subtitle", "").strip()
+                        full_title = f"{title} - {subtitle}" if subtitle else title
+                        if full_title in seen_keys:
+                            continue
+                        seen_keys.add(full_title)
+
+                        members = val.get("members", [])
+                        if isinstance(members, list):
+                            author = ", ".join(m.get("name", "").strip() for m in members if isinstance(m, dict) and m.get("name"))
+                            if not author and members and isinstance(members[0], str):
+                                author = ", ".join(members)
+                        else:
+                            author = str(val.get("author") or f"{univ} 학생")
+
+                        preview = val.get("preview") or val.get("image") or val.get("thumbnail") or val.get("screenshot_path") or ""
+                        full_img = urllib.parse.urljoin(base_url, preview) if preview else ""
+
+                        field_code = val.get("field", "")
+                        role_prefix = field_map.get(field_code, field_code)
+                        role_str = f"{role_prefix} 크리에이터" if role_prefix else f"{dept or '소프트웨어'} 크리에이터"
+
+                        team_no = val.get("teamNo", len(extracted) + 1)
+                        present_day = val.get("presentDay", "capstone")
+                        detail_url = f"{base_url.rstrip('/')}/{present_day}?team={str(team_no).zfill(2)}"
+                        summary = val.get("summary", "").strip()
+                        advisor = str(val.get("advisor") or "").strip()
+                        desc = summary or full_title
+                        if advisor:
+                            desc = f"{desc} (지도교수: {advisor})"
+
+                        extracted.append({
+                            "id": f"art-{len(extracted) + 1}",
+                            "title": full_title,
+                            "project_title": full_title,
+                            "author": author or f"{univ} 학생",
+                            "student_name": author or f"{univ} 학생",
+                            "role": role_str,
+                            "imagePath": full_img,
+                            "image": full_img,
+                            "thumbnail": full_img,
+                            "screenshot_path": full_img,
+                            "description": desc,
+                            "raw_text": f"{full_title} | {author} | {desc}",
+                            "detail_url": detail_url,
+                            "advisor": advisor
+                        })
+            except Exception:
+                pass
+    return extracted
+
 def extract_graduation_artworks(html: str, target_url: str, univ: str, dept: str, meta: Dict[str, Any] = None) -> List[Dict[str, Any]]:
-    """기존 졸업작품 탐색 엔진: DOM 패턴 매핑을 통해 학생 출품작 추출"""
+    """기존 졸업작품 탐색 엔진: 데이터 아일랜드, 서브페이지 및 DOM 패턴 매핑을 통해 학생 출품작 추출"""
     artworks = []
     if meta is None:
         meta = {}
-    
-    # 1. 학생 출품작 카드 영역 탐색 (class/id 패턴: item, work, project, card, art, thumb, gallery)
-    card_pattern = re.compile(
-        r'<(?:div|article|li|figure|section)[^>]*?(?:class|id)=["\'][^"\']*?(?:item|work|project|card|artwork|gallery|thumb|post)[^"\']*?["\'][^>]*?>([\s\S]*?)</(?:div|article|li|figure|section)>',
-        re.IGNORECASE
-    )
 
-    korean_name_regex = re.compile(r'^[가-힣]{2,4}$')
+    # 1. 현재 HTML 내 데이터 아일랜드(JSON Script) 탐색
+    island_works = extract_data_island_artworks(html, target_url, univ, dept)
+    if island_works:
+        artworks.extend(island_works)
 
-    for idx, match in enumerate(card_pattern.finditer(html)):
-        chunk = match.group(1)
-        # 이미지 태그 추출
-        img_m = re.search(r'<img[^>]+src=["\']([^"\']+)["\'][^>]*>', chunk, re.IGNORECASE)
-        if not img_m:
+    # 2. 메인 페이지가 허브/랜딩인 경우 관련 서브페이지(/capstone, /aws-day, /works, /gallery 등) 탐색
+    sublink_candidates = []
+    seen_sublinks = set()
+
+    for a_href in re.findall(r'href=["\']([^"\']+)["\']', html, re.IGNORECASE):
+        h_clean = a_href.strip()
+        if not h_clean or any(h_clean.startswith(prefix) for prefix in ["#", "javascript:", "tel:", "mailto:"]):
             continue
-        
-        raw_src = img_m.group(1).strip()
-        if raw_src.startswith('data:') or any(x in raw_src.lower() for x in ['.svg', 'logo', 'icon', 'arrow']):
-            continue
-        
-        img_url = urllib.parse.urljoin(target_url, raw_src)
-        alt_text = ""
-        alt_m = re.search(r'alt=["\']([^"\']*)["\']', img_m.group(0), re.IGNORECASE)
-        if alt_m:
-            alt_text = alt_m.group(1).strip()
+        h_path = urllib.parse.urlsplit(h_clean).path.lower()
+        if any(p in h_path for p in ["capstone", "aws-day", "gallery", "works", "projects", "artworks", "exhibit"]):
+            full_sub = urllib.parse.urljoin(target_url, h_clean)
+            clean_sub = urllib.parse.urldefrag(full_sub).url.rstrip('/')
+            if urllib.parse.urlsplit(clean_sub).netloc == urllib.parse.urlsplit(target_url).netloc and clean_sub != target_url.rstrip('/'):
+                if clean_sub not in seen_sublinks:
+                    seen_sublinks.add(clean_sub)
+                    sublink_candidates.append(clean_sub)
 
-        # 텍스트 라인 파싱
-        chunk_text = re.sub(r'<[^>]+>', ' ', chunk)
-        lines = [l.strip() for l in chunk_text.splitlines() if l.strip()]
-        if not lines:
-            lines = [w.strip() for w in chunk_text.split("  ") if w.strip()]
+    # 흔한 졸업작품 서브패스(/capstone, /aws-day, /works 등) 보조 탐색
+    for common_sub in ["/capstone", "/aws-day", "/works", "/gallery", "/projects"]:
+        cand = urllib.parse.urljoin(target_url, common_sub).rstrip('/')
+        if cand not in seen_sublinks and cand != target_url.rstrip('/'):
+            if common_sub.replace('/', '') in html.lower():
+                seen_sublinks.add(cand)
+                sublink_candidates.append(cand)
 
-        project_title = alt_text or (lines[0] if lines else f"출품작 #{len(artworks) + 1}")
-        author_name = ""
-        
-        # 한국어 이름 탐색
-        for l in lines[1:]:
-            clean_l = l.replace("작가", "").replace("디자이너", "").strip()
-            if korean_name_regex.match(clean_l):
-                author_name = clean_l
-                break
-        
-        if not author_name and len(lines) >= 2:
-            author_name = lines[1][:15]
+    if sublink_candidates:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+        }
+        for sub_url in sublink_candidates[:8]:
+            try:
+                sub_res = requests.get(sub_url, headers=headers, timeout=8, verify=False)
+                if sub_res.status_code == 200:
+                    sub_island_works = extract_data_island_artworks(sub_res.text, target_url, univ, dept)
+                    for sw in sub_island_works:
+                        if not any(existing["title"] == sw["title"] for existing in artworks):
+                            sw["id"] = f"art-{len(artworks) + 1}"
+                            artworks.append(sw)
+            except Exception:
+                pass
 
-        if not author_name:
-            author_name = f"{univ or '신진'} 작가"
+    # 3. 데이터 아일랜드가 없을 경우 기존 DOM 카드 패턴 매핑 가동
+    if not artworks:
+        card_pattern = re.compile(
+            r'<(?:div|article|li|figure|section)[^>]*?(?:class|id)=["\'][^"\']*?(?:item|work|project|card|artwork|gallery|thumb|post)[^"\']*?["\'][^>]*?>([\s\S]*?)</(?:div|article|li|figure|section)>',
+            re.IGNORECASE
+        )
+        korean_name_regex = re.compile(r'^[가-힣]{2,4}$')
 
-        artworks.append({
-            "id": f"art-{len(artworks) + 1}",
-            "title": project_title[:60],
-            "author": author_name,
-            "role": "크리에이터",
-            "imagePath": img_url,
-            "image": img_url,
-            "description": f"{univ} {dept} 졸업작품 - {project_title}"
-        })
+        for idx, match in enumerate(card_pattern.finditer(html)):
+            chunk = match.group(1)
+            img_m = re.search(r'<img[^>]+src=["\']([^"\']+)["\'][^>]*>', chunk, re.IGNORECASE)
+            if not img_m:
+                continue
 
-        if len(artworks) >= 12:
-            break
+            raw_src = img_m.group(1).strip()
+            # 제외 필터 (관리자/학장 프로필, 경품, 아이콘 제외)
+            if raw_src.startswith('data:') or any(x in raw_src.lower() for x in ['.svg', 'logo', 'icon', 'arrow', 'dean', 'leadership', 'prize']):
+                continue
 
-    # 2. 카드 패턴으로 안 잡힌 경우 모든 유의미한 큰 이미지 태그를 출품작으로 구조화
-    if len(artworks) < 3:
-        for idx, img_url in enumerate(meta.get("images", [])[1:7]):
+            img_url = urllib.parse.urljoin(target_url, raw_src)
+            alt_text = ""
+            alt_m = re.search(r'alt=["\']([^"\']*)["\']', img_m.group(0), re.IGNORECASE)
+            if alt_m:
+                alt_text = alt_m.group(1).strip()
+
+            chunk_text = re.sub(r'<[^>]+>', ' ', chunk)
+            lines = [l.strip() for l in chunk_text.splitlines() if l.strip()]
+            if not lines:
+                lines = [w.strip() for w in chunk_text.split("  ") if w.strip()]
+
+            project_title = alt_text or (lines[0] if lines else f"출품작 #{len(artworks) + 1}")
+            author_name = ""
+
+            for l in lines[1:]:
+                clean_l = l.replace("작가", "").replace("디자이너", "").strip()
+                if korean_name_regex.match(clean_l):
+                    author_name = clean_l
+                    break
+
+            if not author_name and len(lines) >= 2:
+                author_name = lines[1][:15]
+
+            if not author_name:
+                author_name = f"{univ or '신진'} 작가"
+
             artworks.append({
-                "id": f"art-fb-{idx + 1}",
-                "title": f"졸업전시 출품작 #{idx + 1}",
-                "author": f"{univ or '신진'} 작가",
+                "id": f"art-{len(artworks) + 1}",
+                "title": project_title[:60],
+                "project_title": project_title[:60],
+                "author": author_name,
+                "student_name": author_name,
                 "role": "크리에이터",
                 "imagePath": img_url,
                 "image": img_url,
-                "description": f"{univ} {dept} 공식 졸업전시 수록 작품"
+                "thumbnail": img_url,
+                "screenshot_path": img_url,
+                "description": f"{univ} {dept} 졸업작품 - {project_title}",
+                "detail_url": target_url
+            })
+
+            if len(artworks) >= 40:
+                break
+
+    # 4. 카드 패턴으로도 안 잡힌 경우 안전한 이미지 태그 폴백 (단, 학장/경품 사진 필터링)
+    if len(artworks) < 3:
+        clean_meta_images = [
+            img for img in meta.get("images", [])
+            if not any(x in img.lower() for x in ['dean', 'leadership', 'prize', 'icon', 'logo', 'nintendo'])
+        ]
+        for idx, img_url in enumerate(clean_meta_images[1:10]):
+            artworks.append({
+                "id": f"art-fb-{idx + 1}",
+                "title": f"졸업전시 출품작 #{idx + 1}",
+                "project_title": f"졸업전시 출품작 #{idx + 1}",
+                "author": f"{univ or '신진'} 작가",
+                "student_name": f"{univ or '신진'} 작가",
+                "role": "크리에이터",
+                "imagePath": img_url,
+                "image": img_url,
+                "thumbnail": img_url,
+                "screenshot_path": img_url,
+                "description": f"{univ} {dept} 공식 졸업전시 수록 작품",
+                "detail_url": target_url
             })
 
     return artworks

@@ -1,5 +1,83 @@
 [
   {
+    "id": "UNIV-2026-인천대학교-컴퓨터공학부-7899",
+    "category": "IT·소프트웨어·컴공",
+    "university": "인천대학교",
+    "department": "컴퓨터공학부",
+    "year": "2026",
+    "status": "리서치 완료",
+    "isUploaded": true,
+    "isResearched": true,
+    "poster_image": "uploads/UNIV-2026-_____-______-7899/main_poster_1790164250856.png",
+    "exhibition_title": "인천대학교 2026년 컴퓨터공학부 졸업전시회",
+    "exhibit_title": "[인천대학교] 2026 컴퓨터공학부 졸업전시회",
+    "title": "인천대학교 2026년 컴퓨터공학부 졸업전시회",
+    "target_url": "https://cse.inu.ac.kr/isis/13789/subview.do",
+    "official_url": "https://cse.inu.ac.kr/isis/13789/subview.do",
+    "scraped_url": "https://cse.inu.ac.kr/isis/13789/subview.do",
+    "critic_score": 100,
+    "critic_feedback": "관리자 검수 및 실시간 카드 편집 승인 완료",
+    "curation_summary": {
+      "headline": "인천대학교 2026년 컴퓨터공학부 졸업전시회",
+      "curation_intro": "2026년도 인천대학교 컴퓨터공학부 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+      "inferred_industry_keywords": [
+        "디자인",
+        "컴퓨터공학부",
+        "2026졸전"
+      ]
+    },
+    "artworks": [],
+    "exhibition_period": "2026.05.29",
+    "schedule": "2026.05.29",
+    "exhibition_venue": "인천대학교 소극장(11호관 208호)",
+    "slogan": "인천대학교 2026년 컴퓨터공학부 졸업전시회",
+    "card_news": {
+      "card_headline": "인천대학교 2026년 컴퓨터공학부 졸업전시회",
+      "card_intro": "2026년도 인천대학교 컴퓨터공학부 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다."
+    },
+    "raw_description": "2026년도 인천대학교 컴퓨터공학부 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다."
+  },
+  {
+    "id": "UNIV-2026-전남대학교-건축학과-8940",
+    "category": "건축·공간",
+    "university": "전남대학교",
+    "department": "건축학과",
+    "year": "2026",
+    "status": "리서치 완료",
+    "isUploaded": true,
+    "isResearched": true,
+    "poster_image": "uploads/UNIV-2026-_____-____-8940/main_poster_1790086711232.png",
+    "exhibition_title": "전남대학교 건축학부 졸업작품전 | SoA CNU Gallery",
+    "exhibit_title": "[전남대학교] 2026 건축학과 졸업전시회",
+    "title": "전남대학교 건축학부 졸업작품전 | SoA CNU Gallery",
+    "target_url": "http://soacnugallery.com/",
+    "official_url": "http://soacnugallery.com/",
+    "scraped_url": "http://soacnugallery.com/",
+    "critic_score": 100,
+    "critic_feedback": "관리자 검수 및 실시간 카드 편집 승인 완료",
+    "curation_summary": {
+      "headline": "전남대학교 건축학부 졸업작품전 | SoA CNU Gallery",
+      "curation_intro": "2026년도 전남대학교 건축학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+      "inferred_industry_keywords": [
+        "건축",
+        "건축학과",
+        "2026졸전"
+      ]
+    },
+    "artworks": [],
+    "exhibition_period": "일정 공지 대기",
+    "schedule": "일정 공지 대기",
+    "exhibition_venue": "교내 전시홀",
+    "slogan": "전남대학교 건축학부 졸업작품전 | SoA CNU Gallery",
+    "card_news": {
+      "card_headline": "전남대학교 건축학부 졸업작품전 | SoA CNU Gallery",
+      "card_intro": "2026년도 전남대학교 건축학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다."
+    },
+    "raw_description": "2026년도 전남대학교 건축학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+    "instagramPublished": true,
+    "publishedAt": "2026-09-22T23:23:58.983828"
+  },
+  {
     "id": "UNIV-2026-건국대학교-시각영상디자인학과-2085",
     "category": "디자인·UX/UI",
     "university": "건국대학교",
@@ -8,36 +86,36 @@
     "status": "리서치 완료",
     "isUploaded": true,
     "isResearched": true,
-    "poster_image": "uploads/UNIV-2026-_____-_________-2085/main_poster_1790001025581.png",
-    "exhibition_title": "건국대학교 시각영상디자인학과 졸업전시회",
+    "poster_image": "uploads/UNIV-2026-_____-_________-5736/main_poster_1790168033783.png",
+    "exhibition_title": "건국대학교 글로컬캠퍼스 시각영상디자인학과 영상/디지털 트랙 졸업전시회",
     "exhibit_title": "[건국대학교] 2026 시각영상디자인학과 졸업전시회",
-    "title": "건국대학교 시각영상디자인학과 졸업전시회",
-    "target_url": "https://2026kkuvd.com/main/",
-    "official_url": "https://2026kkuvd.com/main/",
-    "scraped_url": "https://2026kkuvd.com/main/",
+    "title": "건국대학교 글로컬캠퍼스 시각영상디자인학과 영상/디지털 트랙 졸업전시회",
+    "target_url": "https://kku2026mid.com/project",
+    "official_url": "https://kku2026mid.com/project",
+    "scraped_url": "https://kku2026mid.com/project",
     "critic_score": 100,
     "critic_feedback": "관리자 검수 및 실시간 카드 편집 승인 완료",
     "curation_summary": {
-      "headline": "건국대학교 시각영상디자인학과 졸업전시회",
+      "headline": "건국대학교 글로컬캠퍼스 시각영상디자인학과 영상/디지털 트랙 졸업전시회",
       "curation_intro": "2026년도 건국대학교 시각영상디자인학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
       "inferred_industry_keywords": [
-        "디자인",
+        "영상",
         "시각영상디자인학과",
         "2026졸전"
       ]
     },
     "artworks": [],
-    "exhibition_period": "온라인전시",
-    "schedule": "온라인전시",
-    "exhibition_venue": "온라인전",
-    "slogan": "건국대학교 시각영상디자인학과 졸업전시회",
+    "exhibition_period": "2025.11.28 ~ 12.1",
+    "schedule": "2025.11.28 ~ 12.1",
+    "exhibition_venue": "서울특별시 종로구 대학로 57 홍익대학교 대학로 아트센터 B2 제 3전시장",
+    "slogan": "건국대학교 글로컬캠퍼스 시각영상디자인학과 영상/디지털 트랙 졸업전시회",
     "card_news": {
-      "card_headline": "건국대학교 시각영상디자인학과 졸업전시회",
+      "card_headline": "건국대학교 글로컬캠퍼스 시각영상디자인학과 영상/디지털 트랙 졸업전시회",
       "card_intro": "2026년도 건국대학교 시각영상디자인학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다."
     },
     "raw_description": "2026년도 건국대학교 시각영상디자인학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
     "instagramPublished": true,
-    "publishedAt": "2026-09-21T23:35:24.144075"
+    "publishedAt": "2026-09-23T22:16:43.535575"
   },
   {
     "id": "UNIV-2026-울산대학교-실내공간디자인학과-75346",
@@ -656,54 +734,6 @@
     "raw_description": "2025년도 연세대 시각디자인 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
     "instagramPublished": true,
     "publishedAt": "2026-09-14T17:23:11.506077"
-  },
-  {
-    "id": "MED-01",
-    "category": "영상·미디어",
-    "university": "건국대",
-    "department": "영상학과",
-    "exhibit_title": "[건국대] 2025 영상학과 졸업전시회",
-    "raw_description": "2025년도 건국대 영상학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
-    "status": "리서치 완료",
-    "card_news": {
-      "card_headline": "건국대학교 시각영상디자인학과 졸업전시회 2025 웹사이트 프로젝트 - 아마도 스튜디오",
-      "card_intro": "2025년도 건국대 영상학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
-      "card_caption": "📍 [건국대 영상학과 2026 졸업전시회]\n전시명: [건국대] 공명의 숲: 관람객의 호흡으로 피어나는 디지털 자연\n일시: 2026.11.12(목) - 2026.11.18(수)\n장소: 건국대 예술디자인대학 1층 A&D 홀\n\n건국대 영상학과 2026 졸업전시는 시대의 변화 속에서 예술과 기술, 인간의 감성이 마주하는 지점을 다각도로 탐색합니다. 학생들은 각자의 조형 언어와 실험적 인터랙션을 통해 동시대 사회적 질문에 대한 독창적인 해답을 제시합니다. 젊은 크리에이터들의 치열한 고뇌와 새로운 가능성이 교차하는 특별한 아카이브를 직접 경험해보시길 바랍니다.\n\n[참여 학생 및 대표 출품작]\n• 윤시우 - 가상 자아의 유영: 생성형 미디어 파사드\n• 박도현 - 크로노스: 시간의 왜곡을 다룬 3D 시네마틱\n• 이지원 - 인간 이후의 풍경: VR 몰입형 공간\n\n#영상 #영상학과 #졸업전시 #신진작가 #포트폴리오 #졸업작품 #건국대 #영상학과",
-      "tags": [
-        "영상",
-        "영상학과",
-        "졸업전시",
-        "신진작가",
-        "포트폴리오"
-      ]
-    },
-    "poster_image": "uploads/MED-01/main_poster_1789036042679.png",
-    "exhibition_title": "건국대학교 시각영상디자인학과 졸업전시회 2025 웹사이트 프로젝트 - 아마도 스튜디오",
-    "exhibition_period": "2025",
-    "exhibition_venue": "건국대 예술디자인대학 1층 A&D 홀",
-    "artworks": [],
-    "curation_summary": {
-      "headline": "건국대학교 시각영상디자인학과 졸업전시회 2025 웹사이트 프로젝트 - 아마도 스튜디오",
-      "curation_intro": "2025년도 건국대 영상학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
-      "inferred_industry_keywords": [
-        "영상",
-        "영상학과",
-        "2025졸전"
-      ]
-    },
-    "full_caption": "📍 [건국대 영상학과 2026 졸업전시회]\n전시명: [건국대] 공명의 숲: 관람객의 호흡으로 피어나는 디지털 자연\n일시: 2026.11.12(목) - 2026.11.18(수)\n장소: 건국대 예술디자인대학 1층 A&D 홀\n\n건국대 영상학과 2026 졸업전시는 시대의 변화 속에서 예술과 기술, 인간의 감성이 마주하는 지점을 다각도로 탐색합니다. 학생들은 각자의 조형 언어와 실험적 인터랙션을 통해 동시대 사회적 질문에 대한 독창적인 해답을 제시합니다. 젊은 크리에이터들의 치열한 고뇌와 새로운 가능성이 교차하는 특별한 아카이브를 직접 경험해보시길 바랍니다.\n\n[참여 학생 및 대표 출품작]\n• 윤시우 - 가상 자아의 유영: 생성형 미디어 파사드\n• 박도현 - 크로노스: 시간의 왜곡을 다룬 3D 시네마틱\n• 이지원 - 인간 이후의 풍경: VR 몰입형 공간\n\n#영상 #영상학과 #졸업전시 #신진작가 #포트폴리오 #졸업작품 #건국대 #영상학과",
-    "critic_score": 100,
-    "critic_feedback": "관리자 검수 및 실시간 카드 편집 승인 완료",
-    "scraped_url": "https://studio.amado.kr/project/%EA%B1%B4%EA%B5%AD%EB%8C%80%ED%95%99%EA%B5%90-%EC%8B%9C%EA%B0%81%EC%98%81%EC%83%81%EB%94%94%EC%9E%90%EC%9D%B8%ED%95%99%EA%B3%BC-%EC%A1%B8%EC%97%85%EC%A0%84%EC%8B%9C%ED%9A%8C-2025/",
-    "scraped_text": "",
-    "download_dir": "",
-    "instagramPublished": true,
-    "publishedAt": "2026-09-14T17:36:21.120207",
-    "year": "2025",
-    "schedule": "2025",
-    "target_url": "https://studio.amado.kr/project/%EA%B1%B4%EA%B5%AD%EB%8C%80%ED%95%99%EA%B5%90-%EC%8B%9C%EA%B0%81%EC%98%81%EC%83%81%EB%94%94%EC%9E%90%EC%9D%B8%ED%95%99%EA%B3%BC-%EC%A1%B8%EC%97%85%EC%A0%84%EC%8B%9C%ED%9A%8C-2025/",
-    "official_url": "https://studio.amado.kr/project/%EA%B1%B4%EA%B5%AD%EB%8C%80%ED%95%99%EA%B5%90-%EC%8B%9C%EA%B0%81%EC%98%81%EC%83%81%EB%94%94%EC%9E%90%EC%9D%B8%ED%95%99%EA%B3%BC-%EC%A1%B8%EC%97%85%EC%A0%84%EC%8B%9C%ED%9A%8C-2025/",
-    "slogan": "건국대학교 시각영상디자인학과 졸업전시회 2025 웹사이트 프로젝트 - 아마도 스튜디오"
   },
   {
     "id": "ARC-23",

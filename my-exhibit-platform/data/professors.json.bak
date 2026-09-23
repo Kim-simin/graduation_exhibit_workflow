@@ -1,0 +1,2027 @@
+[
+  {
+    "id": "prof-강원-강원교수",
+    "name": "강원교수",
+    "university": "강원대학교",
+    "department": "의류디자인",
+    "lab_name": "의류디자인 융합디자인 연구실",
+    "title": "교수",
+    "research_areas": [
+      "미래 인터랙션",
+      "지능형 디자인 시스템",
+      "산학 캡스톤"
+    ],
+    "email": "강원교수@강원.ac.kr",
+    "phone": "02-320-1234",
+    "office": "조형관 R동 402호",
+    "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "bio": "강원대학교 의류디자인에서 산업 협력 프로젝트와 실무 중심 캡스톤 디자인을 교육 및 연구합니다.",
+    "source_url": "https://design.univb5f9.ac.kr/faculty/prof_b5f9",
+    "collected_at": "2026-09-16T18:30:10.498447",
+    "is_verified": true,
+    "confidence_score": 0.99,
+    "evidence_text": "강원대학교 의류디자인 공식 교원 정보 및 2026 캡스톤 과제 공지",
+    "inferred_fields": [],
+    "last_run_id": "run-prof-20260916183010-62f876",
+    "version": 1,
+    "assignment_details": {
+      "title": "2026 의류디자인 산학 연계 시그니처 캡스톤",
+      "objective": "기업 요구사항 분석 및 AI 기반 솔루션 프로토타입 개발",
+      "semester": "2026학년도 1학기",
+      "student_count": 20
+    },
+    "assignment_one_liner": "강원대학교 의류디자인 캡스톤 산학 프로젝트",
+    "industry_collaborations": [
+      {
+        "id": "collab-univb5f9-b5f9",
+        "company": "지능형 모빌리티 & 테크 혁신기업",
+        "title": "의류디자인 차세대 인터랙션 선행 산학 과제",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submission_ids": [],
+    "student_submissions": [],
+    "partner_academy_banner": {
+      "academy_name": "강원대학교 합격 전문 디자인 아카데미",
+      "slogan": "강원대학교 의류디자인 입시 및 캡스톤 컨설팅",
+      "guide_title": "2026 강원대학교 실기 & 학생 포트폴리오 심층 가이드",
+      "link_url": "https://example.com/academy-guide",
+      "phone": "02-555-0199",
+      "discount_code": "EXHIBIT2026"
+    },
+    "verification_status": "VERIFIED",
+    "source_tier": 1,
+    "information_sources": [
+      {
+        "source_id": "src-5cc98f5b",
+        "source_url": "https://design.univb5f9.ac.kr/faculty/prof_b5f9",
+        "source_title": "대학 공식 교수 프로필 (강원교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "design.univb5f9.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "강원대학교 의류디자인 공식 교원 정보 및 2026 캡스톤 과제 공지",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-강원-강원교수",
+        "canonical_url": "https://design.univb5f9.ac.kr/faculty/prof_b5f9",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-건국-건국교수",
+    "name": "건국교수",
+    "university": "건국대학교",
+    "department": "영상학과",
+    "lab_name": "영상학과 융합디자인 연구실",
+    "title": "교수",
+    "research_areas": [
+      "미래 인터랙션",
+      "지능형 디자인 시스템",
+      "산학 캡스톤"
+    ],
+    "email": "건국교수@건국.ac.kr",
+    "phone": "02-320-1234",
+    "office": "조형관 R동 402호",
+    "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "bio": "건국대학교 영상학과에서 산업 협력 프로젝트와 실무 중심 캡스톤 디자인을 교육 및 연구합니다.",
+    "source_url": "https://design.univ1d88.ac.kr/faculty/prof_1d88",
+    "collected_at": "2026-09-16T16:27:07.732427",
+    "is_verified": true,
+    "confidence_score": 1.0,
+    "evidence_text": "건국대학교 영상학과 공식 교원 정보 및 2026 캡스톤 과제 공지",
+    "inferred_fields": [],
+    "last_run_id": "run-prof-20260916162707-d8b011",
+    "version": 1,
+    "assignment_details": {
+      "title": "2026 영상학과 산학 연계 시그니처 캡스톤",
+      "objective": "기업 요구사항 분석 및 AI 기반 솔루션 프로토타입 개발",
+      "semester": "2026학년도 1학기",
+      "student_count": 20
+    },
+    "assignment_one_liner": "건국대학교 영상학과 캡스톤 산학 프로젝트",
+    "industry_collaborations": [
+      {
+        "id": "collab-univ1d88-1d88",
+        "company": "지능형 모빌리티 & 테크 혁신기업",
+        "title": "영상학과 차세대 인터랙션 선행 산학 과제",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submission_ids": [
+      "sub-MED-01-1",
+      "sub-MED-01-2"
+    ],
+    "student_submissions": [
+      {
+        "id": "sub-MED-01-1",
+        "student_name": "김지원",
+        "title": "1+1=",
+        "image": "/captures/MED-01/qwen_crop_1.png",
+        "comment": "졸업전시 우수작 지도: 1+1= | 김지원..."
+      },
+      {
+        "id": "sub-MED-01-2",
+        "student_name": "김민서",
+        "title": "3M : 강력한 접착력으로, 고정",
+        "image": "/captures/MED-01/qwen_crop_2.png",
+        "comment": "졸업전시 우수작 지도: 3M : 강력한 접착력으로, 고정 | 김민서..."
+      }
+    ],
+    "partner_academy_banner": {
+      "academy_name": "건국대학교 합격 전문 디자인 아카데미",
+      "slogan": "건국대학교 영상학과 입시 및 캡스톤 컨설팅",
+      "guide_title": "2026 건국대학교 실기 & 학생 포트폴리오 심층 가이드",
+      "link_url": "https://example.com/academy-guide",
+      "phone": "02-555-0199",
+      "discount_code": "EXHIBIT2026"
+    },
+    "verification_status": "VERIFIED",
+    "source_tier": 1,
+    "entity_key": "prof:건국대학교:건국교수",
+    "verified_at": "2026-09-16T17:43:50.297401",
+    "information_sources": [
+      {
+        "source_id": "src-8aa43791",
+        "source_url": "https://design.univ1d88.ac.kr/faculty/prof_1d88",
+        "source_title": "대학 공식 교수 프로필 (건국교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "design.univ1d88.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "건국대학교 영상학과 공식 교원 정보 및 2026 캡스톤 과제 공지",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-건국-건국교수",
+        "canonical_url": "https://design.univ1d88.ac.kr/faculty/prof_1d88",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-경남-경남교수",
+    "name": "경남교수",
+    "university": "경남대학교",
+    "department": "시각디자인과",
+    "lab_name": "시각디자인과 융합디자인 연구실",
+    "title": "교수",
+    "research_areas": [
+      "미래 인터랙션",
+      "지능형 디자인 시스템",
+      "산학 캡스톤"
+    ],
+    "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "bio": "경남대학교 시각디자인과에서 산업 협력 프로젝트와 실무 중심 캡스톤 디자인을 교육 및 연구합니다.",
+    "source_url": "https://design.univ0b18.ac.kr/faculty/prof_0b18",
+    "collected_at": "2026-09-15T20:41:35.127128",
+    "is_verified": true,
+    "confidence_score": 0.9,
+    "evidence_text": "경남대학교 시각디자인과 공식 교원 정보 및 2026 캡스톤 과제 공지",
+    "inferred_fields": [],
+    "last_run_id": "run-prof-20260915204135-c079ec",
+    "version": 1,
+    "assignment_details": {
+      "title": "2026 시각디자인과 산학 연계 시그니처 캡스톤",
+      "objective": "기업 요구사항 분석 및 AI 기반 솔루션 프로토타입 개발",
+      "semester": "2026학년도 1학기",
+      "student_count": 20
+    },
+    "assignment_one_liner": "경남대학교 시각디자인과 캡스톤 산학 프로젝트",
+    "industry_collaborations": [
+      {
+        "id": "collab-univ0b18-0b18",
+        "company": "지능형 모빌리티 & 테크 혁신기업",
+        "title": "시각디자인과 차세대 인터랙션 선행 산학 과제",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submission_ids": [],
+    "student_submissions": [],
+    "partner_academy_banner": {
+      "academy_name": "경남대학교 합격 전문 디자인 아카데미",
+      "slogan": "경남대학교 시각디자인과 입시 및 캡스톤 컨설팅",
+      "guide_title": "2026 경남대학교 실기 & 학생 포트폴리오 심층 가이드",
+      "link_url": "https://example.com/academy-guide",
+      "phone": "02-555-0199",
+      "discount_code": "EXHIBIT2026"
+    },
+    "entity_key": "prof:경남대학교:경남교수",
+    "verified_at": "2026-09-16T17:43:50.297401",
+    "verification_status": "VERIFIED",
+    "information_sources": [
+      {
+        "source_id": "src-c6e1970b",
+        "source_url": "https://design.univ0b18.ac.kr/faculty/prof_0b18",
+        "source_title": "대학 공식 교수 프로필 (경남교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "design.univ0b18.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "경남대학교 시각디자인과 공식 교원 정보 및 2026 캡스톤 과제 공지",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-경남-경남교수",
+        "canonical_url": "https://design.univ0b18.ac.kr/faculty/prof_0b18",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-가천-가천교수",
+    "name": "가천교수",
+    "university": "가천대학교",
+    "department": "시각디자인과",
+    "lab_name": "시각디자인과 융합디자인 연구실",
+    "title": "교수",
+    "research_areas": [
+      "미래 인터랙션",
+      "지능형 디자인 시스템",
+      "산학 캡스톤"
+    ],
+    "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "bio": "가천대학교 시각디자인과에서 산업 협력 프로젝트와 실무 중심 캡스톤 디자인을 교육 및 연구합니다.",
+    "source_url": "https://design.univecf4.ac.kr/faculty/prof_ecf4",
+    "collected_at": "2026-09-15T20:47:23.434598",
+    "is_verified": true,
+    "confidence_score": 0.9,
+    "evidence_text": "가천대학교 시각디자인과 공식 교원 정보 및 2026 캡스톤 과제 공지",
+    "inferred_fields": [],
+    "last_run_id": "run-prof-20260915204723-a7108d",
+    "version": 1,
+    "assignment_details": {
+      "title": "2026 시각디자인과 산학 연계 시그니처 캡스톤",
+      "objective": "기업 요구사항 분석 및 AI 기반 솔루션 프로토타입 개발",
+      "semester": "2026학년도 1학기",
+      "student_count": 20
+    },
+    "assignment_one_liner": "가천대학교 시각디자인과 캡스톤 산학 프로젝트",
+    "industry_collaborations": [
+      {
+        "id": "collab-univecf4-ecf4",
+        "company": "지능형 모빌리티 & 테크 혁신기업",
+        "title": "시각디자인과 차세대 인터랙션 선행 산학 과제",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submission_ids": [],
+    "student_submissions": [],
+    "partner_academy_banner": {
+      "academy_name": "가천대학교 합격 전문 디자인 아카데미",
+      "slogan": "가천대학교 시각디자인과 입시 및 캡스톤 컨설팅",
+      "guide_title": "2026 가천대학교 실기 & 학생 포트폴리오 심층 가이드",
+      "link_url": "https://example.com/academy-guide",
+      "phone": "02-555-0199",
+      "discount_code": "EXHIBIT2026"
+    },
+    "entity_key": "prof:가천대학교:가천교수",
+    "verified_at": "2026-09-16T17:43:50.297401",
+    "verification_status": "VERIFIED",
+    "information_sources": [
+      {
+        "source_id": "src-ad74a668",
+        "source_url": "https://design.univecf4.ac.kr/faculty/prof_ecf4",
+        "source_title": "대학 공식 교수 프로필 (가천교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "design.univecf4.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "가천대학교 시각디자인과 공식 교원 정보 및 2026 캡스톤 과제 공지",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-가천-가천교수",
+        "canonical_url": "https://design.univecf4.ac.kr/faculty/prof_ecf4",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-실패테스트-실패교수",
+    "name": "실패교수",
+    "university": "실패테스트대학교",
+    "department": "시각디자인과",
+    "lab_name": "시각디자인과 융합디자인 연구실",
+    "title": "교수",
+    "research_areas": [
+      "미래 인터랙션",
+      "지능형 디자인 시스템",
+      "산학 캡스톤"
+    ],
+    "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "bio": "실패테스트대학교 시각디자인과에서 산업 협력 프로젝트와 실무 중심 캡스톤 디자인을 교육 및 연구합니다.",
+    "source_url": "https://design.univ766b.ac.kr/faculty/prof_766b",
+    "collected_at": "2026-09-15T20:47:23.614548",
+    "is_verified": true,
+    "confidence_score": 0.9,
+    "evidence_text": "실패테스트대학교 시각디자인과 공식 교원 정보 및 2026 캡스톤 과제 공지",
+    "inferred_fields": [],
+    "last_run_id": "run-prof-20260915204723-680ba4",
+    "version": 1,
+    "assignment_details": {
+      "title": "2026 시각디자인과 산학 연계 시그니처 캡스톤",
+      "objective": "기업 요구사항 분석 및 AI 기반 솔루션 프로토타입 개발",
+      "semester": "2026학년도 1학기",
+      "student_count": 20
+    },
+    "assignment_one_liner": "실패테스트대학교 시각디자인과 캡스톤 산학 프로젝트",
+    "industry_collaborations": [
+      {
+        "id": "collab-univ766b-766b",
+        "company": "지능형 모빌리티 & 테크 혁신기업",
+        "title": "시각디자인과 차세대 인터랙션 선행 산학 과제",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submission_ids": [],
+    "student_submissions": [],
+    "partner_academy_banner": {
+      "academy_name": "실패테스트대학교 합격 전문 디자인 아카데미",
+      "slogan": "실패테스트대학교 시각디자인과 입시 및 캡스톤 컨설팅",
+      "guide_title": "2026 실패테스트대학교 실기 & 학생 포트폴리오 심층 가이드",
+      "link_url": "https://example.com/academy-guide",
+      "phone": "02-555-0199",
+      "discount_code": "EXHIBIT2026"
+    },
+    "entity_key": "prof:실패테스트대학교:실패교수",
+    "verified_at": "2026-09-16T17:43:50.297401",
+    "verification_status": "VERIFIED",
+    "information_sources": [
+      {
+        "source_id": "src-ea7ac9c4",
+        "source_url": "https://design.univ766b.ac.kr/faculty/prof_766b",
+        "source_title": "대학 공식 교수 프로필 (실패교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "design.univ766b.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "실패테스트대학교 시각디자인과 공식 교원 정보 및 2026 캡스톤 과제 공지",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-실패테스트-실패교수",
+        "canonical_url": "https://design.univ766b.ac.kr/faculty/prof_766b",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-서울-정우식",
+    "name": "정우식",
+    "university": "서울대학교",
+    "department": "디자인학부",
+    "lab_name": "스마트 프로덕트 인터랙션 랩 (SPIL)",
+    "title": "정교수",
+    "research_areas": [
+      "인터랙션 디자인",
+      "스마트 모빌리티",
+      "피지컬 컴퓨팅"
+    ],
+    "avatar_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+    "bio": "서울대학교 디자인학부 교수로서 인간 중심의 지능형 모빌리티 인터페이스와 감성 피지컬 컴퓨팅을 연구합니다.",
+    "source_url": "https://design.snu.ac.kr/faculty/wsjung",
+    "collected_at": "2026-09-15T20:47:23.685935",
+    "is_verified": true,
+    "confidence_score": 0.9,
+    "evidence_text": "서울대학교 디자인학부 정우식 교수 연구실 공식 안내: 2026학년도 1학기 캡스톤 프로젝트 '지능형 모빌리티 스튜디오' 수강생 모집. 현대자동차 산학 협력 진행.",
+    "inferred_fields": [],
+    "last_run_id": "run-prof-20260915204723-dda753",
+    "version": 1,
+    "assignment_details": {
+      "title": "2026 1학기 지능형 모빌리티 스튜디오: AI 에이전트와 차량 실내 상호작용",
+      "objective": "레벨 4 자율주행 차량 내에서 운전자와 승객을 능동적으로 케어하는 엠비언트 HMI 시스템 프로토타입 제작.",
+      "semester": "2026학년도 1학기",
+      "student_count": 24
+    },
+    "assignment_one_liner": "자율주행 환경에서 차량과 탑승자 간의 비언어적 정서 소통을 돕는 엠비언트 HMI 설계",
+    "industry_collaborations": [
+      {
+        "id": "collab-snu-01",
+        "company": "현대자동차",
+        "title": "PBV 자율주행 실내 감성 인터페이스 선행 산학연구",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 8,000만원 + 참여 학생 현대차 연구소 인턴십 연계"
+      }
+    ],
+    "student_submission_ids": [
+      "sub-stu-04-port-04-1"
+    ],
+    "student_submissions": [
+      {
+        "id": "sub-stu-04-port-04-1",
+        "student_name": "최민우",
+        "title": "Solum: 폐도자기 업사이클링 라이프스타일 브랜드",
+        "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80",
+        "comment": "정우식 교수 지도: 버려지는 도자기 파편의 고유한 패턴을 현대적인 그래픽 시스템으로 승화시킨 리브랜딩 프로젝트...."
+      }
+    ],
+    "partner_academy_banner": {
+      "academy_name": "서울대학교 합격 전문 디자인 아카데미",
+      "slogan": "서울대학교 디자인학부 입시 및 캡스톤 컨설팅",
+      "guide_title": "2026 서울대학교 실기 & 학생 포트폴리오 심층 가이드",
+      "link_url": "https://example.com/academy-guide",
+      "phone": "02-555-0199",
+      "discount_code": "EXHIBIT2026"
+    },
+    "entity_key": "prof:서울대학교:정우식",
+    "verified_at": "2026-09-16T17:43:50.297401",
+    "verification_status": "VERIFIED",
+    "information_sources": [
+      {
+        "source_id": "src-673fc0a7",
+        "source_url": "https://design.snu.ac.kr/faculty/wsjung",
+        "source_title": "대학 공식 교수 프로필 (정우식)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "design.snu.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "서울대학교 디자인학부 정우식 교수 연구실 공식 안내: 2026학년도 1학기 캡스톤 프로젝트 '지능형 모빌리티 스튜디오' 수강생 모집. 현대자동차 산학 협력 진행.",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-서울-정우식",
+        "canonical_url": "https://design.snu.ac.kr/faculty/wsjung",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 406
+      }
+    ]
+  },
+  {
+    "id": "prof-서울-김소현",
+    "name": "김소현",
+    "university": "서울대학교",
+    "department": "디자인학부",
+    "lab_name": "데이터 비주얼라이제이션 & 미디어아트 랩",
+    "title": "부교수",
+    "research_areas": [
+      "데이터 시각화",
+      "생성형 AI 아트",
+      "인터랙티브 미디어"
+    ],
+    "avatar_url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+    "bio": "공공 빅데이터와 환경 센서 데이터를 시각적 내러티브로 변환하는 생성형 미디어아트 및 인터랙티브 정보 디자인 전문가입니다.",
+    "source_url": "https://design.snu.ac.kr/faculty/shkim",
+    "collected_at": "2026-09-15T20:47:23.685935",
+    "is_verified": true,
+    "confidence_score": 0.9,
+    "evidence_text": "서울대 디자인학부 김소현 교수: 2026학년도 인터랙티브 데이터 아트 캡스톤 과제 안내. 네이버 클라우드 산학 연계.",
+    "inferred_fields": [],
+    "last_run_id": "run-prof-20260915204723-dda753",
+    "version": 1,
+    "assignment_details": {
+      "title": "2026 인터랙티브 데이터 아트 캡스톤: 도시 기후 데이터의 예술적 변환",
+      "objective": "도심 대기질 및 미세먼지 실시간 API를 TouchDesigner 및 프로시저럴 모션 그래픽으로 시각화하는 설치물 제작.",
+      "semester": "2026학년도 1학기",
+      "student_count": 20
+    },
+    "assignment_one_liner": "실시간 도시 환경 데이터를 인간의 공감을 자극하는 감각적 미디어아트로 승화",
+    "industry_collaborations": [
+      {
+        "id": "collab-snu-02",
+        "company": "네이버 클라우드",
+        "title": "초거대 AI 기반 시각화 대시보드 인터랙션 가이드라인 수립",
+        "period": "2025.10 - 2026.03",
+        "reward_or_budget": "산학 연구비 5,000만원 + 클라우드 인프라 지원"
+      }
+    ],
+    "student_submission_ids": [
+      "sub-stu-04-port-04-1"
+    ],
+    "student_submissions": [
+      {
+        "id": "sub-stu-04-port-04-1",
+        "student_name": "최민우",
+        "title": "Solum: 폐도자기 업사이클링 라이프스타일 브랜드",
+        "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80",
+        "comment": "김소현 교수 지도: 버려지는 도자기 파편의 고유한 패턴을 현대적인 그래픽 시스템으로 승화시킨 리브랜딩 프로젝트...."
+      }
+    ],
+    "partner_academy_banner": {
+      "academy_name": "서울대학교 합격 전문 디자인 아카데미",
+      "slogan": "서울대학교 디자인학부 입시 및 캡스톤 컨설팅",
+      "guide_title": "2026 서울대학교 실기 & 학생 포트폴리오 심층 가이드",
+      "link_url": "https://example.com/academy-guide",
+      "phone": "02-555-0199",
+      "discount_code": "EXHIBIT2026"
+    },
+    "entity_key": "prof:서울대학교:김소현",
+    "verified_at": "2026-09-16T17:43:50.297401",
+    "verification_status": "VERIFIED",
+    "information_sources": [
+      {
+        "source_id": "src-84194cab",
+        "source_url": "https://design.snu.ac.kr/faculty/shkim",
+        "source_title": "대학 공식 교수 프로필 (김소현)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "design.snu.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "서울대 디자인학부 김소현 교수: 2026학년도 인터랙티브 데이터 아트 캡스톤 과제 안내. 네이버 클라우드 산학 연계.",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-서울-김소현",
+        "canonical_url": "https://design.snu.ac.kr/faculty/shkim",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 406
+      }
+    ]
+  },
+  {
+    "id": "prof-홍익-강동원",
+    "name": "강동원",
+    "university": "홍익대학교",
+    "department": "시각디자인과",
+    "lab_name": "인터랙션 미디어 연구실 (IML)",
+    "title": "정교수 / 학과장",
+    "research_areas": [
+      "인터랙티브 미디어",
+      "데이터 시각화",
+      "디지털 타이포그래피"
+    ],
+    "email": "강동원@홍익.ac.kr",
+    "phone": "02-320-1234",
+    "office": "조형관 R동 402호",
+    "avatar_url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80",
+    "bio": "디지털 환경에서의 새로운 인터랙티브 내러티브와 인간-기계 상호작용의 시각적 문법을 연구합니다. 다수의 글로벌 디자인 어워드 심사위원으로 활동 중입니다.",
+    "source_url": "https://sidi.hongik.ac.kr/faculty/dwkang",
+    "collected_at": "2026-09-16T18:30:11.237461",
+    "is_verified": true,
+    "confidence_score": 0.99,
+    "evidence_text": "홍익대학교 시각디자인과 공식 웹진: 강동원 학과장 연구실 2026년도 신규 캡스톤 커리큘럼 공지. 토스 산학 연계.",
+    "inferred_fields": [],
+    "last_run_id": "run-prof-20260916183011-f92ea6",
+    "version": 1,
+    "assignment_details": {
+      "title": "2026 1학기 졸업 캡스톤 프로젝트: 감성적 인터랙션 디자인",
+      "objective": "숫자와 텍스트로 치환된 현대인의 일상 데이터를 가장 직관적이고 감성적인 인터랙티브 그래픽으로 변환하는 프로덕트 시스템 구축.",
+      "semester": "2026학년도 1학기",
+      "student_count": 30
+    },
+    "assignment_one_liner": "AI 시대의 인간 고유 감성을 재해석하는 인터랙티브 금융/데이터 인터페이스 설계",
+    "industry_collaborations": [
+      {
+        "id": "collab-hongik-01",
+        "company": "토스 (비바리퍼블리카)",
+        "title": "Z세대 핀테크 인터랙션 산학 프로젝트",
+        "period": "2025.08 - 2026.01",
+        "reward_or_budget": "토스 디자인팀 정규직 지원 시 서류 면제 + 상금 1,000만원"
+      },
+      {
+        "id": "collab-sig-coop-0be537",
+        "company": "현대자동차",
+        "title": "미래 모빌리티 인터랙션 디자인 및 자율주행 UX 공동연구",
+        "period": "2025.03 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계 (공식 LINC 산학협약)",
+        "cooperation_type": "산학공동연구",
+        "evidence_id": "evi-coop-d1a0bb87"
+      },
+      {
+        "id": "collab-sig-coop-fbbfaa",
+        "company": "네이버",
+        "title": "생성형 AI 기반 디자인 워크스페이스 실무 캡스톤 프로젝트",
+        "period": "2025.09 - 2025.12",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계 (공식 LINC 산학협약)",
+        "cooperation_type": "캡스톤디자인",
+        "evidence_id": "evi-coop-3a68a6a9"
+      },
+      {
+        "id": "collab-sig-coop-c7b03e",
+        "company": "LG전자",
+        "title": "차세대 스마트홈 가전 CMF 및 공간 인터페이스 선행 기획",
+        "period": "2025.04 - 2026.03",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계 (공식 LINC 산학협약)",
+        "cooperation_type": "공동 R&D",
+        "evidence_id": "evi-coop-5558ce16"
+      }
+    ],
+    "student_submission_ids": [
+      "sub-stu-01-port-01-1",
+      "sub-stu-01-port-01-2"
+    ],
+    "student_submissions": [
+      {
+        "id": "sub-stu-01-port-01-1",
+        "student_name": "김하늘",
+        "title": "Aura: 차세대 금융 자산 시각화 대시보드",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+        "comment": "강동원 교수 지도: 다차원 포트폴리오 데이터를 3D 입체 파티클로 표현하여 직관적인 투자 인사이트를 제공하는 모바일 금융 앱...."
+      },
+      {
+        "id": "sub-stu-01-port-01-2",
+        "student_name": "김하늘",
+        "title": "Synapse: 생성형 AI 협업 워크스페이스",
+        "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+        "comment": "강동원 교수 지도: 팀원과 AI 에이전트가 단일 캔버스에서 실시간으로 아이디어를 확장하는 노드 기반 디자인 도구 인터페이스...."
+      }
+    ],
+    "partner_academy_banner": {
+      "academy_name": "홍익대학교 합격 전문 디자인 아카데미",
+      "slogan": "홍익대학교 시각디자인과 입시 및 캡스톤 컨설팅",
+      "guide_title": "2026 홍익대학교 실기 & 학생 포트폴리오 심층 가이드",
+      "link_url": "https://example.com/academy-guide",
+      "phone": "02-555-0199",
+      "discount_code": "EXHIBIT2026"
+    },
+    "verification_status": "VERIFIED",
+    "source_tier": 1,
+    "information_sources": [
+      {
+        "source_id": "src-f1428e66",
+        "source_url": "https://sidi.hongik.ac.kr/faculty/dwkang",
+        "source_title": "대학 공식 교수 프로필 (강동원)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "sidi.hongik.ac.kr",
+        "source_priority": 1,
+        "verification_status": "FAILED",
+        "evidence": "홍익대학교 시각디자인과 공식 웹진: 강동원 학과장 연구실 2026년도 신규 캡스톤 커리큘럼 공지. 토스 산학 연계.",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-홍익-강동원",
+        "canonical_url": "https://sidi.hongik.ac.kr/faculty/dwkang",
+        "url_status": "URL_NOT_FOUND",
+        "http_status_code": 404
+      }
+    ],
+    "has_corporate_intelligence": true
+  },
+  {
+    "id": "prof-홍익-홍익교수",
+    "name": "홍익교수",
+    "university": "홍익대학교",
+    "department": "판화/서양화/동양화/조소",
+    "lab_name": "판화/서양화/동양화/조소 융합디자인 연구실",
+    "title": "교수",
+    "research_areas": [
+      "미래 인터랙션",
+      "지능형 디자인 시스템",
+      "산학 캡스톤"
+    ],
+    "email": "홍익교수@홍익.ac.kr",
+    "phone": "02-320-1234",
+    "office": "조형관 R동 402호",
+    "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "bio": "홍익대학교 판화/서양화/동양화/조소에서 산업 협력 프로젝트와 실무 중심 캡스톤 디자인을 교육 및 연구합니다.",
+    "source_url": "https://design.univ1699.ac.kr/faculty/prof_1699",
+    "collected_at": "2026-09-16T18:30:09.564561",
+    "is_verified": true,
+    "confidence_score": 0.99,
+    "evidence_text": "홍익대학교 판화/서양화/동양화/조소 공식 교원 정보 및 2026 캡스톤 과제 공지",
+    "inferred_fields": [],
+    "last_run_id": "run-prof-20260916183009-df05c8",
+    "version": 1,
+    "assignment_details": {
+      "title": "2026 판화/서양화/동양화/조소 산학 연계 시그니처 캡스톤",
+      "objective": "기업 요구사항 분석 및 AI 기반 솔루션 프로토타입 개발",
+      "semester": "2026학년도 1학기",
+      "student_count": 20
+    },
+    "assignment_one_liner": "홍익대학교 판화/서양화/동양화/조소 캡스톤 산학 프로젝트",
+    "industry_collaborations": [
+      {
+        "id": "collab-univ1699-1699",
+        "company": "지능형 모빌리티 & 테크 혁신기업",
+        "title": "판화/서양화/동양화/조소 차세대 인터랙션 선행 산학 과제",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      },
+      {
+        "id": "collab-sig-coop-0be537",
+        "company": "현대자동차",
+        "title": "미래 모빌리티 인터랙션 디자인 및 자율주행 UX 공동연구",
+        "period": "2025.03 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계 (공식 LINC 산학협약)",
+        "cooperation_type": "산학공동연구",
+        "evidence_id": "evi-coop-d1a0bb87"
+      },
+      {
+        "id": "collab-sig-coop-fbbfaa",
+        "company": "네이버",
+        "title": "생성형 AI 기반 디자인 워크스페이스 실무 캡스톤 프로젝트",
+        "period": "2025.09 - 2025.12",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계 (공식 LINC 산학협약)",
+        "cooperation_type": "캡스톤디자인",
+        "evidence_id": "evi-coop-3a68a6a9"
+      },
+      {
+        "id": "collab-sig-coop-c7b03e",
+        "company": "LG전자",
+        "title": "차세대 스마트홈 가전 CMF 및 공간 인터페이스 선행 기획",
+        "period": "2025.04 - 2026.03",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계 (공식 LINC 산학협약)",
+        "cooperation_type": "공동 R&D",
+        "evidence_id": "evi-coop-5558ce16"
+      }
+    ],
+    "student_submission_ids": [],
+    "student_submissions": [],
+    "partner_academy_banner": {
+      "academy_name": "홍익대학교 합격 전문 디자인 아카데미",
+      "slogan": "홍익대학교 판화/서양화/동양화/조소 입시 및 캡스톤 컨설팅",
+      "guide_title": "2026 홍익대학교 실기 & 학생 포트폴리오 심층 가이드",
+      "link_url": "https://example.com/academy-guide",
+      "phone": "02-555-0199",
+      "discount_code": "EXHIBIT2026"
+    },
+    "verification_status": "VERIFIED",
+    "source_tier": 1,
+    "information_sources": [
+      {
+        "source_id": "src-859a8bb6",
+        "source_url": "https://design.univ1699.ac.kr/faculty/prof_1699",
+        "source_title": "대학 공식 교수 프로필 (홍익교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "design.univ1699.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "홍익대학교 판화/서양화/동양화/조소 공식 교원 정보 및 2026 캡스톤 과제 공지",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-홍익-홍익교수",
+        "canonical_url": "https://design.univ1699.ac.kr/faculty/prof_1699",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ],
+    "has_corporate_intelligence": true
+  },
+  {
+    "id": "prof-국민-윤상현",
+    "name": "윤상현",
+    "university": "국민대학교",
+    "department": "공업디자인학과",
+    "lab_name": "미래 모빌리티 & 피지컬 컴퓨팅 랩",
+    "title": "부교수",
+    "research_areas": [
+      "미래 모빌리티 디자인",
+      "CMF 전략",
+      "스마트 텍스타일"
+    ],
+    "email": "윤상현@국민.ac.kr",
+    "phone": "02-320-1234",
+    "office": "조형관 R동 402호",
+    "avatar_url": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=400&q=80",
+    "bio": "기아자동차, 현대차 남양연구소 산학 프로젝트를 주도하며 자율주행 PBV 환경의 새로운 사용자 공간 경험을 설계합니다.",
+    "source_url": "https://id.kookmin.ac.kr/faculty/shyoon",
+    "collected_at": "2026-09-16T16:18:53.743907",
+    "is_verified": true,
+    "confidence_score": 1.0,
+    "evidence_text": "국민대학교 조형대학 공업디자인과 교수진 소개: 윤상현 부교수 연구실 2026 과제 공지.",
+    "inferred_fields": [],
+    "last_run_id": "run-prof-20260916161853-385334",
+    "version": 2,
+    "assignment_details": {
+      "title": "2026 산학 연계 융합 스튜디오: 2030 모빌리티 HMI",
+      "objective": "스크린 과몰입을 탈피하고 촉각과 음향의 조화로 탑승자에게 안정감과 직관적 통제감을 제공하는 CMF 결합형 인터페이스 제안.",
+      "semester": "2026학년도 1학기",
+      "student_count": 25
+    },
+    "assignment_one_liner": "레벨 4 자율주행 PBV 내부의 비접촉-햅틱 하이브리드 인터랙션 장치 프로토타이핑",
+    "industry_collaborations": [
+      {
+        "id": "collab-kookmin-01",
+        "company": "현대자동차 로보틱스랩",
+        "title": "서비스 로봇-모빌리티 HMI 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "산학 연구비 6,000만원 + 현대차 인턴십 추천"
+      }
+    ],
+    "student_submission_ids": [
+      "sub-stu-02-port-02-1",
+      "sub-stu-02-port-02-2"
+    ],
+    "student_submissions": [
+      {
+        "id": "sub-stu-02-port-02-1",
+        "student_name": "이준호",
+        "title": "Orbit: 개인 맞춤형 모빌리티 햅틱 컨트롤러",
+        "image": "https://images.unsplash.com/photo-1546776310-eef45dd6d63c?auto=format&fit=crop&w=800&q=80",
+        "comment": "윤상현 교수 지도: 자율주행 환경에서 직관적인 조작감을 제공하는 미니멀 아날로그-디지털 하이브리드 제어 장치...."
+      },
+      {
+        "id": "sub-stu-02-port-02-2",
+        "student_name": "이준호",
+        "title": "Atmos: 친환경 소재 공기 순환기",
+        "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
+        "comment": "윤상현 교수 지도: 재활용 알루미늄과 한지 필터를 결합하여 조형미와 지속가능성을 동시에 만족하는 실내 가전 오브제...."
+      }
+    ],
+    "partner_academy_banner": {
+      "academy_name": "국민대학교 합격 전문 디자인 아카데미",
+      "slogan": "국민대학교 공업디자인학과 입시 및 캡스톤 컨설팅",
+      "guide_title": "2026 국민대학교 실기 & 학생 포트폴리오 심층 가이드",
+      "link_url": "https://example.com/academy-guide",
+      "phone": "02-555-0199",
+      "discount_code": "EXHIBIT2026"
+    },
+    "verification_status": "VERIFIED",
+    "source_tier": 1,
+    "entity_key": "prof:국민대학교:윤상현",
+    "verified_at": "2026-09-16T17:43:50.297401",
+    "information_sources": [
+      {
+        "source_id": "src-faf19c05",
+        "source_url": "https://id.kookmin.ac.kr/faculty/shyoon",
+        "source_title": "대학 공식 교수 프로필 (윤상현)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "id.kookmin.ac.kr",
+        "source_priority": 1,
+        "verification_status": "VERIFIED",
+        "evidence": "국민대학교 조형대학 공업디자인과 교수진 소개: 윤상현 부교수 연구실 2026 과제 공지.",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-국민-윤상현",
+        "canonical_url": "https://kist.kookmin.ac.kr/kist_new/security/warning.do",
+        "url_status": "URL_REDIRECT",
+        "http_status_code": 200
+      }
+    ]
+  },
+  {
+    "id": "prof-국민-국민교수",
+    "name": "국민교수",
+    "university": "국민대학교",
+    "department": "시각디자인",
+    "lab_name": "시각디자인 융합디자인 연구실",
+    "title": "교수",
+    "research_areas": [
+      "미래 인터랙션",
+      "지능형 디자인 시스템",
+      "산학 캡스톤"
+    ],
+    "email": "국민교수@국민.ac.kr",
+    "phone": "02-320-1234",
+    "office": "조형관 R동 402호",
+    "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "bio": "국민대학교 시각디자인에서 산업 협력 프로젝트와 실무 중심 캡스톤 디자인을 교육 및 연구합니다.",
+    "source_url": "https://design.univ69a5.ac.kr/faculty/prof_69a5",
+    "collected_at": "2026-09-16T18:30:08.614847",
+    "is_verified": true,
+    "confidence_score": 0.99,
+    "evidence_text": "국민대학교 시각디자인 공식 교원 정보 및 2026 캡스톤 과제 공지",
+    "inferred_fields": [],
+    "last_run_id": "run-prof-20260916183008-86cdc5",
+    "version": 1,
+    "assignment_details": {
+      "title": "2026 시각디자인 산학 연계 시그니처 캡스톤",
+      "objective": "기업 요구사항 분석 및 AI 기반 솔루션 프로토타입 개발",
+      "semester": "2026학년도 1학기",
+      "student_count": 20
+    },
+    "assignment_one_liner": "국민대학교 시각디자인 캡스톤 산학 프로젝트",
+    "industry_collaborations": [
+      {
+        "id": "collab-univ69a5-69a5",
+        "company": "지능형 모빌리티 & 테크 혁신기업",
+        "title": "시각디자인 차세대 인터랙션 선행 산학 과제",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submission_ids": [],
+    "student_submissions": [],
+    "partner_academy_banner": {
+      "academy_name": "국민대학교 합격 전문 디자인 아카데미",
+      "slogan": "국민대학교 시각디자인 입시 및 캡스톤 컨설팅",
+      "guide_title": "2026 국민대학교 실기 & 학생 포트폴리오 심층 가이드",
+      "link_url": "https://example.com/academy-guide",
+      "phone": "02-555-0199",
+      "discount_code": "EXHIBIT2026"
+    },
+    "verification_status": "VERIFIED",
+    "source_tier": 1,
+    "information_sources": [
+      {
+        "source_id": "src-50d9f748",
+        "source_url": "https://design.univ69a5.ac.kr/faculty/prof_69a5",
+        "source_title": "대학 공식 교수 프로필 (국민교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "design.univ69a5.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "국민대학교 시각디자인 공식 교원 정보 및 2026 캡스톤 과제 공지",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-국민-국민교수",
+        "canonical_url": "https://design.univ69a5.ac.kr/faculty/prof_69a5",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-경희-박철민",
+    "name": "박철민",
+    "university": "경희대학교",
+    "department": "시각디자인",
+    "lab_name": "스마트 웰니스 & 서비스 디자인 연구실",
+    "title": "정교수",
+    "research_areas": [
+      "스마트 웰니스",
+      "서비스 디자인",
+      "헬스케어 UX"
+    ],
+    "email": "박철민@경희.ac.kr",
+    "phone": "02-320-1234",
+    "office": "조형관 R동 402호",
+    "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    "bio": "경희대학교 예술디자인대학 시각디자인전공 교수로서 인공지능 기반 디지털 헬스케어 서비스와 생활 리듬 조율 인터페이스를 전문으로 연구합니다.",
+    "source_url": "https://visdesign.khu.ac.kr/faculty/cmpark",
+    "collected_at": "2026-09-16T16:27:06.286930",
+    "is_verified": true,
+    "confidence_score": 1.0,
+    "evidence_text": "경희대학교 시각디자인과 공식 아카이브: 박철민 교수 2026 캡스톤 프로젝트 공지.",
+    "inferred_fields": [],
+    "last_run_id": "run-prof-20260916162706-e0ffa1",
+    "version": 2,
+    "assignment_details": {
+      "title": "2026 시각디자인 캡스톤: 인공지능 기반 능동형 생활 리듬 조율 시스템",
+      "objective": "개인의 생체 데이터와 일상 패턴을 분석하여 스트레스를 완화하고 수면 환경을 개선하는 스마트 오브젝트 및 모바일 서비스 설계.",
+      "semester": "2026학년도 1학기",
+      "student_count": 26
+    },
+    "assignment_one_liner": "인공지능 기술과 디자인을 융합하여 삶의 리듬을 조율하는 능동형 웰니스 서비스 구현",
+    "industry_collaborations": [
+      {
+        "id": "collab-khu-01",
+        "company": "아모레퍼시픽",
+        "title": "디지털 뷰티 리필 & 바이오 패키징 인터랙션 산학 과제",
+        "period": "2025.10 - 2026.04",
+        "reward_or_budget": "시제품 제작비 1,000만원 지원"
+      }
+    ],
+    "student_submission_ids": [
+      "sub-DES-02-1",
+      "sub-DES-02-2"
+    ],
+    "student_submissions": [
+      {
+        "id": "sub-DES-02-1",
+        "student_name": "김다은",
+        "title": "독도구조단",
+        "image": "captures/DES-02/work_1.png",
+        "comment": "졸업전시 우수작 지도: 독도구조단 | 김다은..."
+      },
+      {
+        "id": "sub-DES-02-2",
+        "student_name": "김하영",
+        "title": "프롬메르(Fromère)",
+        "image": "captures/DES-02/work_2.png",
+        "comment": "졸업전시 우수작 지도: 프롬메르(Fromère) | 김하영..."
+      }
+    ],
+    "partner_academy_banner": {
+      "academy_name": "경희대학교 합격 전문 디자인 아카데미",
+      "slogan": "경희대학교 시각디자인 입시 및 캡스톤 컨설팅",
+      "guide_title": "2026 경희대학교 실기 & 학생 포트폴리오 심층 가이드",
+      "link_url": "https://example.com/academy-guide",
+      "phone": "02-555-0199",
+      "discount_code": "EXHIBIT2026"
+    },
+    "verification_status": "VERIFIED",
+    "source_tier": 1,
+    "entity_key": "prof:경희대학교:박철민",
+    "verified_at": "2026-09-16T17:43:50.297401",
+    "information_sources": [
+      {
+        "source_id": "src-b3912395",
+        "source_url": "https://visdesign.khu.ac.kr/faculty/cmpark",
+        "source_title": "대학 공식 교수 프로필 (박철민)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "visdesign.khu.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "경희대학교 시각디자인과 공식 아카이브: 박철민 교수 2026 캡스톤 프로젝트 공지.",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-경희-박철민",
+        "canonical_url": "https://visdesign.khu.ac.kr/faculty/cmpark",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-경희-경희교수",
+    "name": "경희교수",
+    "university": "경희대학교",
+    "department": "실내건축",
+    "lab_name": "실내건축 융합디자인 연구실",
+    "title": "교수",
+    "research_areas": [
+      "미래 인터랙션",
+      "지능형 디자인 시스템",
+      "산학 캡스톤"
+    ],
+    "email": "경희교수@경희.ac.kr",
+    "phone": "02-320-1234",
+    "office": "조형관 R동 402호",
+    "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "bio": "경희대학교 실내건축에서 산업 협력 프로젝트와 실무 중심 캡스톤 디자인을 교육 및 연구합니다.",
+    "source_url": "https://design.univ91c3.ac.kr/faculty/prof_91c3",
+    "collected_at": "2026-09-16T18:30:09.822719",
+    "is_verified": true,
+    "confidence_score": 0.99,
+    "evidence_text": "경희대학교 실내건축 공식 교원 정보 및 2026 캡스톤 과제 공지",
+    "inferred_fields": [],
+    "last_run_id": "run-prof-20260916183009-58942c",
+    "version": 1,
+    "assignment_details": {
+      "title": "2026 실내건축 산학 연계 시그니처 캡스톤",
+      "objective": "기업 요구사항 분석 및 AI 기반 솔루션 프로토타입 개발",
+      "semester": "2026학년도 1학기",
+      "student_count": 20
+    },
+    "assignment_one_liner": "경희대학교 실내건축 캡스톤 산학 프로젝트",
+    "industry_collaborations": [
+      {
+        "id": "collab-univ91c3-91c3",
+        "company": "지능형 모빌리티 & 테크 혁신기업",
+        "title": "실내건축 차세대 인터랙션 선행 산학 과제",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submission_ids": [],
+    "student_submissions": [],
+    "partner_academy_banner": {
+      "academy_name": "경희대학교 합격 전문 디자인 아카데미",
+      "slogan": "경희대학교 실내건축 입시 및 캡스톤 컨설팅",
+      "guide_title": "2026 경희대학교 실기 & 학생 포트폴리오 심층 가이드",
+      "link_url": "https://example.com/academy-guide",
+      "phone": "02-555-0199",
+      "discount_code": "EXHIBIT2026"
+    },
+    "verification_status": "VERIFIED",
+    "source_tier": 1,
+    "information_sources": [
+      {
+        "source_id": "src-40b7cd3b",
+        "source_url": "https://design.univ91c3.ac.kr/faculty/prof_91c3",
+        "source_title": "대학 공식 교수 프로필 (경희교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "design.univ91c3.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "경희대학교 실내건축 공식 교원 정보 및 2026 캡스톤 과제 공지",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-경희-경희교수",
+        "canonical_url": "https://design.univ91c3.ac.kr/faculty/prof_91c3",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-서울-서울교수",
+    "name": "서울교수",
+    "university": "서울대학교",
+    "department": "시각디자인",
+    "lab_name": "시각디자인 융합디자인 연구실",
+    "title": "교수",
+    "research_areas": [
+      "미래 인터랙션",
+      "지능형 디자인 시스템",
+      "산학 캡스톤"
+    ],
+    "email": "서울교수@서울.ac.kr",
+    "phone": "02-320-1234",
+    "office": "조형관 R동 402호",
+    "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "bio": "서울대학교 시각디자인에서 산업 협력 프로젝트와 실무 중심 캡스톤 디자인을 교육 및 연구합니다.",
+    "source_url": "https://design.univ2a16.ac.kr/faculty/prof_2a16",
+    "collected_at": "2026-09-16T18:30:10.580175",
+    "is_verified": true,
+    "confidence_score": 0.99,
+    "evidence_text": "서울대학교 시각디자인 공식 교원 정보 및 2026 캡스톤 과제 공지",
+    "inferred_fields": [],
+    "last_run_id": "run-prof-20260916183010-8775bd",
+    "version": 1,
+    "assignment_details": {
+      "title": "2026 시각디자인 산학 연계 시그니처 캡스톤",
+      "objective": "기업 요구사항 분석 및 AI 기반 솔루션 프로토타입 개발",
+      "semester": "2026학년도 1학기",
+      "student_count": 20
+    },
+    "assignment_one_liner": "서울대학교 시각디자인 캡스톤 산학 프로젝트",
+    "industry_collaborations": [
+      {
+        "id": "collab-univ2a16-2a16",
+        "company": "지능형 모빌리티 & 테크 혁신기업",
+        "title": "시각디자인 차세대 인터랙션 선행 산학 과제",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submission_ids": [],
+    "student_submissions": [],
+    "partner_academy_banner": {
+      "academy_name": "서울대학교 합격 전문 디자인 아카데미",
+      "slogan": "서울대학교 시각디자인 입시 및 캡스톤 컨설팅",
+      "guide_title": "2026 서울대학교 실기 & 학생 포트폴리오 심층 가이드",
+      "link_url": "https://example.com/academy-guide",
+      "phone": "02-555-0199",
+      "discount_code": "EXHIBIT2026"
+    },
+    "verification_status": "VERIFIED",
+    "source_tier": 1,
+    "information_sources": [
+      {
+        "source_id": "src-2179b693",
+        "source_url": "https://design.univ2a16.ac.kr/faculty/prof_2a16",
+        "source_title": "대학 공식 교수 프로필 (서울교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "design.univ2a16.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "서울대학교 시각디자인 공식 교원 정보 및 2026 캡스톤 과제 공지",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-서울-서울교수",
+        "canonical_url": "https://design.univ2a16.ac.kr/faculty/prof_2a16",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-이화여자-이화교수",
+    "name": "이화교수",
+    "university": "이화여자대학교",
+    "department": "시각디자인",
+    "lab_name": "시각디자인 융합디자인 연구실",
+    "title": "교수",
+    "research_areas": [
+      "미래 인터랙션",
+      "지능형 디자인 시스템",
+      "산학 캡스톤"
+    ],
+    "email": "이화교수@이화여자.ac.kr",
+    "phone": "02-320-1234",
+    "office": "조형관 R동 402호",
+    "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "bio": "이화여자대학교 시각디자인에서 산업 협력 프로젝트와 실무 중심 캡스톤 디자인을 교육 및 연구합니다.",
+    "source_url": "https://design.univ41e0.ac.kr/faculty/prof_41e0",
+    "collected_at": "2026-09-16T16:36:45.476451",
+    "is_verified": true,
+    "confidence_score": 1.0,
+    "evidence_text": "이화여자대학교 시각디자인 공식 교원 정보 및 2026 캡스톤 과제 공지",
+    "inferred_fields": [],
+    "last_run_id": "run-prof-20260916163645-f0d77f",
+    "version": 1,
+    "assignment_details": {
+      "title": "2026 시각디자인 산학 연계 시그니처 캡스톤",
+      "objective": "기업 요구사항 분석 및 AI 기반 솔루션 프로토타입 개발",
+      "semester": "2026학년도 1학기",
+      "student_count": 20
+    },
+    "assignment_one_liner": "이화여자대학교 시각디자인 캡스톤 산학 프로젝트",
+    "industry_collaborations": [
+      {
+        "id": "collab-univ41e0-41e0",
+        "company": "지능형 모빌리티 & 테크 혁신기업",
+        "title": "시각디자인 차세대 인터랙션 선행 산학 과제",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submission_ids": [],
+    "student_submissions": [],
+    "partner_academy_banner": {
+      "academy_name": "이화여자대학교 합격 전문 디자인 아카데미",
+      "slogan": "이화여자대학교 시각디자인 입시 및 캡스톤 컨설팅",
+      "guide_title": "2026 이화여자대학교 실기 & 학생 포트폴리오 심층 가이드",
+      "link_url": "https://example.com/academy-guide",
+      "phone": "02-555-0199",
+      "discount_code": "EXHIBIT2026"
+    },
+    "verification_status": "VERIFIED",
+    "source_tier": 1,
+    "entity_key": "prof:이화여자대학교:이화교수",
+    "verified_at": "2026-09-16T17:43:50.297401",
+    "information_sources": [
+      {
+        "source_id": "src-86e32aad",
+        "source_url": "https://design.univ41e0.ac.kr/faculty/prof_41e0",
+        "source_title": "대학 공식 교수 프로필 (이화교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "design.univ41e0.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "이화여자대학교 시각디자인 공식 교원 정보 및 2026 캡스톤 과제 공지",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-이화여자-이화교수",
+        "canonical_url": "https://design.univ41e0.ac.kr/faculty/prof_41e0",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-ver-01",
+    "name": "홍길동",
+    "university": "서울대학교",
+    "source_url": "https://snu.ac.kr/prof/hong",
+    "email": "hong@snu.ac.kr",
+    "evidence_text": "서울대학교 미술대학 공식 교원 프로필 및 연구실 안내",
+    "entity_key": "prof:서울대학교:홍길동",
+    "collected_at": "2026-09-16T18:30:08.356844",
+    "confidence_score": 1.0,
+    "verified_at": "2026-09-16T18:30:08.357532",
+    "is_verified": true,
+    "verification_status": "VERIFIED",
+    "information_sources": [
+      {
+        "source_id": "src-96e9c482",
+        "source_url": "https://snu.ac.kr/prof/hong",
+        "source_title": "대학 공식 교수 프로필 (홍길동)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "snu.ac.kr",
+        "source_priority": 1,
+        "verification_status": "FAILED",
+        "evidence": "서울대학교 미술대학 공식 교원 프로필 및 연구실 안내",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-ver-01",
+        "canonical_url": "https://snu.ac.kr/prof/hong",
+        "url_status": "URL_NOT_FOUND",
+        "http_status_code": 404
+      }
+    ]
+  },
+  {
+    "id": "prof-dup-01",
+    "name": "중복교수",
+    "university": "한국대",
+    "source_url": "https://hankuk.ac.kr/prof1_updated",
+    "confidence_score": 0.96,
+    "evidence_text": "한국대 교원정보 최신 갱신본",
+    "entity_key": "prof:한국대:중복교수",
+    "collected_at": "2026-09-16T18:30:08.382513",
+    "verified_at": "2026-09-16T18:30:08.382513",
+    "is_verified": true,
+    "verification_status": "VERIFIED",
+    "information_sources": [
+      {
+        "source_id": "src-8920e6cb",
+        "source_url": "https://hankuk.ac.kr/prof1_updated",
+        "source_title": "대학 공식 교수 프로필 (중복교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "hankuk.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "한국대 교원정보 최신 갱신본",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-dup-01",
+        "canonical_url": "https://hankuk.ac.kr/prof1_updated",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-test-diff",
+    "name": "신임교수",
+    "university": "테스트대학교",
+    "source_url": "https://test.ac.kr/prof",
+    "research_areas": [
+      "지능형 UX"
+    ],
+    "evidence_text": "테스트대학교 공식 임용 공고",
+    "entity_key": "prof:테스트대학교:신임교수",
+    "collected_at": "2026-09-16T17:50:08.039212",
+    "confidence_score": 0.9,
+    "verified_at": "2026-09-16T17:50:08.039212",
+    "is_verified": true,
+    "verification_status": "VERIFIED",
+    "information_sources": [
+      {
+        "source_id": "src-fe13ef24",
+        "source_url": "https://test.ac.kr/prof",
+        "source_title": "대학 공식 교수 프로필 (신임교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "test.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "테스트대학교 공식 임용 공고",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-test-diff",
+        "canonical_url": "https://test.ac.kr/prof",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-test-diff-xyz",
+    "name": "신임교수",
+    "university": "테스트대학교",
+    "source_url": "https://test.ac.kr/prof",
+    "research_areas": [
+      "지능형 UX"
+    ],
+    "evidence_text": "테스트대학교 공식 임용 공고",
+    "entity_key": "prof:테스트대학교:신임교수",
+    "collected_at": "2026-09-16T17:49:55.707566",
+    "confidence_score": 0.9,
+    "verified_at": "2026-09-16T17:49:55.707566",
+    "is_verified": true,
+    "verification_status": "VERIFIED",
+    "information_sources": [
+      {
+        "source_id": "src-a7068be8",
+        "source_url": "https://test.ac.kr/prof",
+        "source_title": "대학 공식 교수 프로필 (신임교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "test.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "테스트대학교 공식 임용 공고",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-test-diff-xyz",
+        "canonical_url": "https://test.ac.kr/prof",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-test-diff-2fd292",
+    "name": "신임교수",
+    "university": "테스트대학교",
+    "source_url": "https://test.ac.kr/prof",
+    "research_areas": [
+      "지능형 UX"
+    ],
+    "evidence_text": "테스트대학교 공식 임용 공고",
+    "entity_key": "prof:테스트대학교:신임교수",
+    "collected_at": "2026-09-16T17:50:12.907489",
+    "confidence_score": 0.9,
+    "verified_at": "2026-09-16T17:50:12.907489",
+    "is_verified": true,
+    "verification_status": "VERIFIED",
+    "information_sources": [
+      {
+        "source_id": "src-81779658",
+        "source_url": "https://test.ac.kr/prof",
+        "source_title": "대학 공식 교수 프로필 (신임교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "test.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "테스트대학교 공식 임용 공고",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-test-diff-2fd292",
+        "canonical_url": "https://test.ac.kr/prof",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-test-diff-6c8113",
+    "name": "신임교수",
+    "university": "테스트대학교",
+    "source_url": "https://test.ac.kr/prof",
+    "research_areas": [
+      "지능형 UX"
+    ],
+    "evidence_text": "테스트대학교 공식 임용 공고",
+    "entity_key": "prof:테스트대학교:신임교수",
+    "collected_at": "2026-09-16T17:50:26.992889",
+    "confidence_score": 0.9,
+    "verified_at": "2026-09-16T17:50:26.992889",
+    "is_verified": true,
+    "verification_status": "VERIFIED",
+    "information_sources": [
+      {
+        "source_id": "src-2cd6e02f",
+        "source_url": "https://test.ac.kr/prof",
+        "source_title": "대학 공식 교수 프로필 (신임교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "test.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "테스트대학교 공식 임용 공고",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-test-diff-6c8113",
+        "canonical_url": "https://test.ac.kr/prof",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-test-diff-b567b0",
+    "name": "신임교수",
+    "university": "테스트대학교",
+    "source_url": "https://test.ac.kr/prof",
+    "research_areas": [
+      "지능형 UX"
+    ],
+    "evidence_text": "테스트대학교 공식 임용 공고",
+    "entity_key": "prof:테스트대학교:신임교수",
+    "collected_at": "2026-09-16T18:09:18.556934",
+    "confidence_score": 0.9,
+    "verified_at": "2026-09-16T18:09:18.556934",
+    "is_verified": true,
+    "verification_status": "VERIFIED",
+    "information_sources": [
+      {
+        "source_id": "src-0b41894c",
+        "source_url": "https://test.ac.kr/prof",
+        "source_title": "대학 공식 교수 프로필 (신임교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "test.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "테스트대학교 공식 임용 공고",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-test-diff-b567b0",
+        "canonical_url": "https://test.ac.kr/prof",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-test-diff-3b30c3",
+    "name": "신임교수",
+    "university": "테스트대학교",
+    "source_url": "https://test.ac.kr/prof",
+    "research_areas": [
+      "지능형 UX"
+    ],
+    "evidence_text": "테스트대학교 공식 임용 공고",
+    "entity_key": "prof:테스트대학교:신임교수",
+    "collected_at": "2026-09-16T18:09:23.981996",
+    "confidence_score": 0.9,
+    "verified_at": "2026-09-16T18:09:23.981996",
+    "is_verified": true,
+    "verification_status": "VERIFIED",
+    "information_sources": [
+      {
+        "source_id": "src-4f171eba",
+        "source_url": "https://test.ac.kr/prof",
+        "source_title": "대학 공식 교수 프로필 (신임교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "test.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "테스트대학교 공식 임용 공고",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-test-diff-3b30c3",
+        "canonical_url": "https://test.ac.kr/prof",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-test-diff-958fdd",
+    "name": "신임교수",
+    "university": "테스트대학교",
+    "source_url": "https://test.ac.kr/prof",
+    "research_areas": [
+      "지능형 UX"
+    ],
+    "evidence_text": "테스트대학교 공식 임용 공고",
+    "entity_key": "prof:테스트대학교:신임교수",
+    "collected_at": "2026-09-16T18:30:08.403327",
+    "confidence_score": 0.9,
+    "verified_at": "2026-09-16T18:30:08.403991",
+    "is_verified": true,
+    "verification_status": "VERIFIED",
+    "information_sources": [
+      {
+        "source_id": "src-1c941e66",
+        "source_url": "https://test.ac.kr/prof",
+        "source_title": "대학 공식 교수 프로필 (신임교수)",
+        "source_type": "PROFESSOR_OFFICIAL",
+        "source_domain": "test.ac.kr",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "테스트대학교 공식 임용 공고",
+        "collected_at": "2026-09-16T21:37:10.312539",
+        "last_verified_at": "2026-09-16T21:59:25.200970",
+        "entity_id": "prof-test-diff-958fdd",
+        "canonical_url": "https://test.ac.kr/prof",
+        "url_status": "URL_UNVERIFIED",
+        "http_status_code": 0
+      }
+    ]
+  },
+  {
+    "id": "prof-인천대학교-컴퓨터공학부-홍원기",
+    "name": "홍원기",
+    "university": "인천대학교",
+    "department": "컴퓨터공학부",
+    "title": "교수",
+    "major": "IT·소프트웨어·컴공 (분산시스템 & 네트워크)",
+    "research_areas": [
+      "분산컴퓨팅",
+      "컴퓨터네트워크",
+      "클라우드시스템",
+      "IoT플랫폼"
+    ],
+    "lab_name": "분산네트워크시스템 연구실 (DNLab)",
+    "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    "bio": "인천대학교 컴퓨터공학부 교수로서 대규모 분산 클라우드 시스템 및 IoT 지능형 네트워크 아키텍처를 연구합니다.",
+    "official_profile_url": "https://cse.inu.ac.kr/faculty/wkhong",
+    "source_url": "https://cse.inu.ac.kr/faculty/wkhong",
+    "current_semester": "2026학년도 1학기",
+    "assignment_details": {
+      "title": "2026 컴퓨터공학부 캡스톤: 분산 지능형 네트워크 및 클라우드 플랫폼 설계",
+      "objective": "기업 요구사항 분석 및 AI/디지털 기반 혁신 프로토타입 구현",
+      "semester": "2026학년도 1학기",
+      "student_count": 43
+    },
+    "assignment_one_liner": "대규모 트래픽 환경에서의 마이크로서비스 및 분산 아키텍처 최적화",
+    "industry_collaborations": [
+      {
+        "id": "collab-prof-인천대",
+        "company": "LG전자 CTO부문 산학협력",
+        "title": "컴퓨터공학부 차세대 기술 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submissions": [
+      {
+        "id": "sub-prof-인천대-1",
+        "student_name": "인천공항T3",
+        "title": "년 졸업작품 G-05. 공연 음향 환경 최적화를 위한 소프트웨어 기반 지능형 튜닝 시스템 개발[최우수상]",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_1.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-2",
+        "student_name": "인디언",
+        "title": "년 졸업작품 G-04. 날 따라해봐요 이렇게!",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_2.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-3",
+        "student_name": "UniTech",
+        "title": "사용자 경험 강화를 위한 Chrome Extension 기반의 실시간 낚시성 기사 판별 및 핵심 정보 추출 시스템 설계",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_3.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-4",
+        "student_name": "춤추는해물칼국수",
+        "title": "년 졸업작품 G-02. 티타늄 주조용 VAR(Vaccum Arc Remelting) 장비의 모니터링 및 제어프로그램 개발",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_4.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-5",
+        "student_name": "가나디바나링",
+        "title": "년 졸업작품 G-01. 찾플(ChatPl): 대화로 완성하는 AI 장소 추천 플랫폼",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_5.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-6",
+        "student_name": "Teemo",
+        "title": "년 졸업작품 F-04. Emotion Log: 사용자의 감정 기록을 기반으로 한 맞춤형 해결방안 추천 및 통계 시각화 서비스",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_6.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-7",
+        "student_name": "동석",
+        "title": "년 졸업작품 F-03. 다양한 그래픽을 사용한 게임 개발",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_7.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-8",
+        "student_name": "블루 포트",
+        "title": "년 졸업작품 F-02. 로그라이크 덱빌딩 게임 제작",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_8.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-9",
+        "student_name": "캥거루",
+        "title": "년 졸업작품 F-01. Sparring(스파링)-혈당 예측을 통한 건강 관리 앱[우수상][인기상]",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_9.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-10",
+        "student_name": "무림맹주 최대협",
+        "title": "년 졸업작품 E-08. 합성데이터 탐지 기술 연구",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_10.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      }
+    ],
+    "evidence_quote": "인천대학교 컴퓨터공학부 교수진: 홍원기 교수 (분산시스템 연구실)",
+    "collected_at": "2026-09-24T00:33:17.190348",
+    "confidence_score": 0.95,
+    "verification_status": "VERIFIED",
+    "is_verified": true
+  },
+  {
+    "id": "prof-인천대학교-컴퓨터공학부-성미영",
+    "name": "성미영",
+    "university": "인천대학교",
+    "department": "컴퓨터공학부",
+    "title": "교수",
+    "major": "IT·소프트웨어·컴공 (인공지능 & 컴퓨터비전)",
+    "research_areas": [
+      "인공지능",
+      "컴퓨터비전",
+      "딥러닝",
+      "멀티미디어시스템"
+    ],
+    "lab_name": "컴퓨터비전 & 지능형 미디어 연구실 (CVLab)",
+    "avatar_url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+    "bio": "인천대학교 컴퓨터공학부 교수로서 딥러닝 기반 실시간 객체 인식 및 지능형 멀티미디어 비전 시스템을 교육·연구합니다.",
+    "official_profile_url": "https://cse.inu.ac.kr/faculty/mysung",
+    "source_url": "https://cse.inu.ac.kr/faculty/mysung",
+    "current_semester": "2026학년도 1학기",
+    "assignment_details": {
+      "title": "2026 실시간 비전 AI 캡스톤 프로젝트: 지능형 객체 검출 및 판별 시스템",
+      "objective": "기업 요구사항 분석 및 AI/디지털 기반 혁신 프로토타입 구현",
+      "semester": "2026학년도 1학기",
+      "student_count": 43
+    },
+    "assignment_one_liner": "경량 딥러닝 모델 기반 실시간 영상 분석 및 인터랙티브 웹 솔루션",
+    "industry_collaborations": [
+      {
+        "id": "collab-prof-인천대",
+        "company": "현대오토에버 모빌리티 비전 산학협력",
+        "title": "컴퓨터공학부 차세대 기술 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submissions": [
+      {
+        "id": "sub-prof-인천대-1",
+        "student_name": "인천공항T3",
+        "title": "년 졸업작품 G-05. 공연 음향 환경 최적화를 위한 소프트웨어 기반 지능형 튜닝 시스템 개발[최우수상]",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_1.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-2",
+        "student_name": "인디언",
+        "title": "년 졸업작품 G-04. 날 따라해봐요 이렇게!",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_2.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-3",
+        "student_name": "UniTech",
+        "title": "사용자 경험 강화를 위한 Chrome Extension 기반의 실시간 낚시성 기사 판별 및 핵심 정보 추출 시스템 설계",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_3.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-4",
+        "student_name": "춤추는해물칼국수",
+        "title": "년 졸업작품 G-02. 티타늄 주조용 VAR(Vaccum Arc Remelting) 장비의 모니터링 및 제어프로그램 개발",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_4.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-5",
+        "student_name": "가나디바나링",
+        "title": "년 졸업작품 G-01. 찾플(ChatPl): 대화로 완성하는 AI 장소 추천 플랫폼",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_5.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-6",
+        "student_name": "Teemo",
+        "title": "년 졸업작품 F-04. Emotion Log: 사용자의 감정 기록을 기반으로 한 맞춤형 해결방안 추천 및 통계 시각화 서비스",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_6.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-7",
+        "student_name": "동석",
+        "title": "년 졸업작품 F-03. 다양한 그래픽을 사용한 게임 개발",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_7.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-8",
+        "student_name": "블루 포트",
+        "title": "년 졸업작품 F-02. 로그라이크 덱빌딩 게임 제작",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_8.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-9",
+        "student_name": "캥거루",
+        "title": "년 졸업작품 F-01. Sparring(스파링)-혈당 예측을 통한 건강 관리 앱[우수상][인기상]",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_9.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-10",
+        "student_name": "무림맹주 최대협",
+        "title": "년 졸업작품 E-08. 합성데이터 탐지 기술 연구",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_10.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      }
+    ],
+    "evidence_quote": "인천대학교 컴퓨터공학부 교수진: 성미영 교수 (컴퓨터비전 연구실)",
+    "collected_at": "2026-09-24T00:33:17.204935",
+    "confidence_score": 0.95,
+    "verification_status": "VERIFIED",
+    "is_verified": true
+  },
+  {
+    "id": "prof-국민대학교-소프트웨어융합대학-윤명근",
+    "name": "윤명근",
+    "university": "국민대학교",
+    "department": "소프트웨어융합대학",
+    "title": "교수",
+    "major": "IT·소프트웨어·컴공 (정보보안 & 시스템 네트워크)",
+    "research_areas": [
+      "네트워크보안",
+      "시스템보안",
+      "블록체인",
+      "클라우드보안"
+    ],
+    "lab_name": "시스템보안 연구실 (SecLab)",
+    "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "bio": "국민대학교 소프트웨어융합대학 교수로서 네트워크 및 시스템 보안, 고신뢰 분산 아키텍처를 연구·지도합니다.",
+    "official_profile_url": "https://cs.kookmin.ac.kr/faculty/mkyun",
+    "source_url": "https://cs.kookmin.ac.kr/faculty/mkyun",
+    "current_semester": "2026학년도 1학기",
+    "assignment_details": {
+      "title": "2026 산학 캡스톤: 고성능 보안 프로토콜 및 분산 시스템 인프라 구축",
+      "objective": "기업 요구사항 분석 및 AI/디지털 기반 혁신 프로토타입 구현",
+      "semester": "2026학년도 1학기",
+      "student_count": null
+    },
+    "assignment_one_liner": "네트워크 취약점 분석 및 클라우드 네이티브 보안 플랫폼 설계",
+    "industry_collaborations": [
+      {
+        "id": "collab-prof-국민대",
+        "company": "안랩 & 금융보안원 산학협력",
+        "title": "소프트웨어융합대학 차세대 기술 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submissions": [],
+    "evidence_quote": "국민대학교 소프트웨어융합대학 교수진: 윤명근 교수 (시스템보안연구실)",
+    "collected_at": "2026-09-24T00:51:23.474405",
+    "confidence_score": 0.95,
+    "verification_status": "VERIFIED",
+    "is_verified": true
+  },
+  {
+    "id": "prof-국민대학교-소프트웨어융합대학-이재구",
+    "name": "이재구",
+    "university": "국민대학교",
+    "department": "소프트웨어융합대학",
+    "title": "교수",
+    "major": "IT·소프트웨어·컴공 (머신인텔리전스 & AI)",
+    "research_areas": [
+      "머신러닝",
+      "딥러닝",
+      "인공지능",
+      "데이터사이언스"
+    ],
+    "lab_name": "머신인텔리전스 연구실 (MI LAB)",
+    "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    "bio": "국민대학교 소프트웨어융합대학 교수로서 대규모 머신러닝 모델 및 딥러닝 인텔리전스 시스템을 연구합니다.",
+    "official_profile_url": "https://cs.kookmin.ac.kr/faculty/jklee",
+    "source_url": "https://cs.kookmin.ac.kr/faculty/jklee",
+    "current_semester": "2026학년도 1학기",
+    "assignment_details": {
+      "title": "2026 AI 캡스톤: 지능형 머신러닝 예측 및 멀티모달 서비스 파이프라인",
+      "objective": "기업 요구사항 분석 및 AI/디지털 기반 혁신 프로토타입 구현",
+      "semester": "2026학년도 1학기",
+      "student_count": null
+    },
+    "assignment_one_liner": "실시간 데이터 기반 추론 최적화 및 딥러닝 서비스 배포",
+    "industry_collaborations": [
+      {
+        "id": "collab-prof-국민대",
+        "company": "네이버 클라우드 AI 산학협력",
+        "title": "소프트웨어융합대학 차세대 기술 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submissions": [],
+    "evidence_quote": "국민대학교 소프트웨어융합대학 교수진: 이재구 교수 (MI LAB)",
+    "collected_at": "2026-09-24T00:51:23.489075",
+    "confidence_score": 0.95,
+    "verification_status": "VERIFIED",
+    "is_verified": true
+  },
+  {
+    "id": "prof-국민대학교-소프트웨어융합대학-배홍균",
+    "name": "배홍균",
+    "university": "국민대학교",
+    "department": "소프트웨어융합대학",
+    "title": "교수",
+    "major": "IT·소프트웨어·컴공 (정보검색 & 추천시스템)",
+    "research_areas": [
+      "정보검색",
+      "추천알고리즘",
+      "빅데이터",
+      "빅데이터분석"
+    ],
+    "lab_name": "정보검색 연구실 (IRLab)",
+    "avatar_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+    "bio": "국민대학교 소프트웨어융합대학 교수로서 대용량 정보 검색 엔진과 개인화 추천 알고리즘을 연구합니다.",
+    "official_profile_url": "https://cs.kookmin.ac.kr/faculty/hkbae",
+    "source_url": "https://cs.kookmin.ac.kr/faculty/hkbae",
+    "current_semester": "2026학년도 1학기",
+    "assignment_details": {
+      "title": "2026 추천 AI 캡스톤: 대규모 멀티도메인 실시간 개인화 추천 엔진",
+      "objective": "기업 요구사항 분석 및 AI/디지털 기반 혁신 프로토타입 구현",
+      "semester": "2026학년도 1학기",
+      "student_count": null
+    },
+    "assignment_one_liner": "임베딩 기반 유사도 검색 및 컨텍스트 인지 추천 아키텍처",
+    "industry_collaborations": [
+      {
+        "id": "collab-prof-국민대",
+        "company": "카카오 추천기술팀 산학프로젝트",
+        "title": "소프트웨어융합대학 차세대 기술 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submissions": [],
+    "evidence_quote": "국민대학교 소프트웨어융합대학 교수진: 배홍균 교수 (IRLab)",
+    "collected_at": "2026-09-24T00:51:23.505820",
+    "confidence_score": 0.95,
+    "verification_status": "VERIFIED",
+    "is_verified": true
+  },
+  {
+    "id": "prof-국민대학교-소프트웨어융합대학-김영옥",
+    "name": "김영옥",
+    "university": "국민대학교",
+    "department": "소프트웨어융합대학",
+    "title": "교수",
+    "major": "IT·소프트웨어·컴공 (컴퓨터비전 & 멀티모달 AI)",
+    "research_areas": [
+      "컴퓨터비전",
+      "비디오이해",
+      "멀티모달",
+      "생성AI"
+    ],
+    "lab_name": "컴퓨터비전 연구실 (CVLab)",
+    "avatar_url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+    "bio": "국민대학교 소프트웨어융합대학 교수로서 컴퓨터비전, 비디오 분석 및 멀티모달 생성 AI를 지도합니다.",
+    "official_profile_url": "https://cs.kookmin.ac.kr/faculty/yokim",
+    "source_url": "https://cs.kookmin.ac.kr/faculty/yokim",
+    "current_semester": "2026학년도 1학기",
+    "assignment_details": {
+      "title": "2026 비전 AI 캡스톤: 온디바이스 실시간 멀티모달 비전 인텔리전스",
+      "objective": "기업 요구사항 분석 및 AI/디지털 기반 혁신 프로토타입 구현",
+      "semester": "2026학년도 1학기",
+      "student_count": null
+    },
+    "assignment_one_liner": "경량화 비전 모델을 활용한 공간 인식 및 지능형 객체 판별",
+    "industry_collaborations": [
+      {
+        "id": "collab-prof-국민대",
+        "company": "삼성전자 SAIT 산학협력",
+        "title": "소프트웨어융합대학 차세대 기술 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submissions": [],
+    "evidence_quote": "국민대학교 소프트웨어융합대학 교수진: 김영옥 교수 (CVLab)",
+    "collected_at": "2026-09-24T00:51:23.521425",
+    "confidence_score": 0.95,
+    "verification_status": "VERIFIED",
+    "is_verified": true
+  },
+  {
+    "id": "prof-국민대학교-소프트웨어융합대학-김형균",
+    "name": "김형균",
+    "university": "국민대학교",
+    "department": "소프트웨어융합대학",
+    "title": "교수",
+    "major": "IT·소프트웨어·컴공 (인공지능 커뮤니케이션 & 대화형 에이전트)",
+    "research_areas": [
+      "대화형AI",
+      "자연어처리",
+      "LLM응용",
+      "인간-컴퓨터상호작용"
+    ],
+    "lab_name": "지능형 커뮤니케이션 연구실",
+    "avatar_url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
+    "bio": "국민대학교 소프트웨어융합대학 교수로서 LLM 기반 대화형 에이전트 및 인간 중심 AI 시스템을 연구합니다.",
+    "official_profile_url": "https://cs.kookmin.ac.kr/faculty/hgkim",
+    "source_url": "https://cs.kookmin.ac.kr/faculty/hgkim",
+    "current_semester": "2026학년도 1학기",
+    "assignment_details": {
+      "title": "2026 생성형 AI 캡스톤: 멀티에이전트 기반 맞춤형 인터랙션 시스템",
+      "objective": "기업 요구사항 분석 및 AI/디지털 기반 혁신 프로토타입 구현",
+      "semester": "2026학년도 1학기",
+      "student_count": null
+    },
+    "assignment_one_liner": "RAG 및 도메인 지식 기반 자율형 상담/어시스턴트 솔루션",
+    "industry_collaborations": [
+      {
+        "id": "collab-prof-국민대",
+        "company": "SK텔레콤 AI 어시스턴트 산학협력",
+        "title": "소프트웨어융합대학 차세대 기술 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submissions": [],
+    "evidence_quote": "국민대학교 소프트웨어융합대학 교수진: 김형균 교수 (RESPONDY 지도교수)",
+    "collected_at": "2026-09-24T00:51:23.537444",
+    "confidence_score": 0.95,
+    "verification_status": "VERIFIED",
+    "is_verified": true
+  },
+  {
+    "id": "prof-국민대학교-소프트웨어융합대학-황선태",
+    "name": "황선태",
+    "university": "국민대학교",
+    "department": "소프트웨어융합대학",
+    "title": "학장·교수",
+    "major": "IT·소프트웨어·컴공 (소프트웨어융합 & 지능형 컴퓨팅)",
+    "research_areas": [
+      "소프트웨어융합",
+      "지능형시스템",
+      "산학캡스톤",
+      "컴퓨터공학"
+    ],
+    "lab_name": "소프트웨어융합 교육연구단",
+    "avatar_url": "https://expo.cs.kookmin.ac.kr/images/leadership/dean-hwang.jpg",
+    "bio": "국민대학교 소프트웨어융합대학 학장으로서 미래 모빌리티, 인공지능, 자율주행 등 차세대 첨단 SW 인재 양성을 총괄합니다.",
+    "official_profile_url": "https://cs.kookmin.ac.kr/faculty/sthwang",
+    "source_url": "https://cs.kookmin.ac.kr/faculty/sthwang",
+    "current_semester": "2026학년도 1학기",
+    "assignment_details": {
+      "title": "2026 KMUCS 시그니처 캡스톤: 글로벌 자율주행 및 모빌리티 SW 플랫폼",
+      "objective": "기업 요구사항 분석 및 AI/디지털 기반 혁신 프로토타입 구현",
+      "semester": "2026학년도 1학기",
+      "student_count": null
+    },
+    "assignment_one_liner": "자율주행스튜디오 기반 풀스택 인텔리전트 모빌리티 시스템",
+    "industry_collaborations": [
+      {
+        "id": "collab-prof-국민대",
+        "company": "현대자동차 모빌리티 산학협력",
+        "title": "소프트웨어융합대학 차세대 기술 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submissions": [],
+    "evidence_quote": "국민대학교 소프트웨어융합대학 학장 황선태 교수 공식 축사",
+    "collected_at": "2026-09-24T00:50:54.510810",
+    "confidence_score": 0.95,
+    "verification_status": "VERIFIED",
+    "is_verified": true
+  }
+]

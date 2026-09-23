@@ -1,0 +1,19 @@
+const w={"aws-day":"05.28 AWS-Day",capstone:"05.29 캡스톤"},L={M:"bg-[#3a8e9c] text-white border-[#4ea7b8]",A:"bg-[#c89548] text-[#231304] border-[#dca866]",G:"bg-[#facc15] text-[#3a2a04] border-[#fde047]",W:"bg-[#71c04d] text-[#031b0f] border-[#8fd665]",S:"bg-[#a8c95a] text-[#1a2410] border-[#bcdf6a]",R:"bg-[#7c5fc0] text-white border-[#9479d0]"};function E(n){return n.replace("연구","R")}function m(){const n=document.getElementById("search-dialog"),a=document.getElementById("search-input"),o=document.getElementById("search-results"),i=document.getElementById("search-message"),b=n?.querySelector(".search-close");if(!n||!a||!o||!i)return;let l=!1,d=null,u=null;const s=e=>{e?(i.classList.remove("hidden"),i.textContent=e):(i.classList.add("hidden"),i.textContent="")},x=e=>{if(e.length===0){o.innerHTML="",s("일치하는 발표자가 없습니다.");return}s(null),o.innerHTML=e.map(t=>`
+        <li>
+          <button type="button" data-team-no="${String(t.teamNo).padStart(2,"0")}" data-present-day="${t.presentDay}"
+            class="block w-full text-left px-5 py-4 bg-transparent border-0 text-white cursor-pointer hover:bg-white/[0.06] focus-visible:bg-white/[0.06] focus-visible:outline-none leading-relaxed">
+            <div class="grid grid-cols-[1fr_auto] gap-x-4 items-center">
+              <div class="min-w-0">
+                <div class="flex items-baseline flex-wrap gap-x-2">
+                  <span class="font-medium text-base">${c(t.name)}</span>
+                  <span class="text-white/45 font-mono text-xs">${c(t.sid)}</span>
+                </div>
+                <div class="mt-1 text-sm text-white/65 truncate">${c(t.title)}</div>
+              </div>
+              <div class="text-right shrink-0">
+                <span class="inline-flex items-center rounded-full border ${L[t.field]??"bg-white/10 text-white border-white/20"} px-2.5 py-0.5 text-[11px] font-mono font-extrabold tracking-tight">${c(E(t.booth))}</span>
+                <div class="mt-1.5 text-[11px] text-white/55 font-mono">${c(w[t.presentDay])}</div>
+              </div>
+            </div>
+          </button>
+        </li>`).join("")},y=async e=>{if(u?.abort(),!e.trim()){o.innerHTML="",s(null);return}u=new AbortController;try{const t=await fetch(`/api/search?q=${encodeURIComponent(e)}`,{signal:u.signal});if(t.status===429){o.innerHTML="",s("요청이 많습니다. 잠시 후 다시 시도해 주세요.");return}const r=await t.json();Array.isArray(r)?x(r):"tooMany"in r?(o.innerHTML="",s("결과가 많습니다. 검색어를 더 구체적으로 입력해 주세요.")):(o.innerHTML="",s("검색 일시 오류, 잠시 후 다시 시도해 주세요."))}catch(t){if(t.name==="AbortError")return;o.innerHTML="",s("검색 일시 오류, 잠시 후 다시 시도해 주세요.")}},p=()=>{l||(d!=null&&window.clearTimeout(d),d=window.setTimeout(()=>y(a.value),300))};a.addEventListener("input",p),a.addEventListener("compositionstart",()=>{l=!0}),a.addEventListener("compositionend",()=>{l=!1,p()}),o.addEventListener("click",e=>{const t=e.target.closest("button[data-team-no]");if(!t)return;const r=t.dataset.teamNo,h=`/${t.dataset.presentDay}?team=${r}`;n.close(),location.assign(h)});const g=()=>{n.open||(a.value="",o.innerHTML="",s(null),n.showModal(),a.focus())},f=()=>{n.open&&n.close()};b?.addEventListener("click",f),n.addEventListener("click",e=>{const t=n.querySelector(".search-body");if(!t)return;const r=t.getBoundingClientRect();(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)&&f()}),document.addEventListener("keydown",e=>{(e.metaKey||e.ctrlKey)&&(e.key==="k"||e.key==="K")&&(e.preventDefault(),n.open?f():g())}),document.querySelectorAll("[data-search-trigger]").forEach(e=>{e.addEventListener("click",t=>{t.preventDefault(),g()})})}function c(n){return n.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;")}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",m):m();

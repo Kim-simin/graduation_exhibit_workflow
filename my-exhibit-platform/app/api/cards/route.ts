@@ -1,6 +1,8 @@
+import { getStandardCategory } from "@/src/utils/categoryMapper";
 import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import { withFileLock } from "@/lib/storage-lock";
 
 export const dynamic = "force-dynamic";
 
@@ -137,7 +139,7 @@ export async function POST(req: Request) {
 
     const newQueueItem = {
       id: safeCardId,
-      category: category.trim() || "디자인·UX/UI",
+      category: getStandardCategory(category?.trim() || department?.trim() || ""),
       university: university.trim(),
       department: department.trim(),
       year: safeYear,
@@ -247,57 +249,64 @@ export async function PATCH(req: Request) {
       return NextResponse.json({ status: "FAILED", error: "university_queue.json 파일을 찾을 수 없습니다." }, { status: 500 });
     }
 
-    const raw = fs.readFileSync(queueFile, "utf-8");
-    const queueList = JSON.parse(raw);
+    const item = await withFileLock(queueFile, async () => {
+      const raw = fs.readFileSync(queueFile, "utf-8");
+      const queueList = JSON.parse(raw);
 
-    const idx = queueList.findIndex((item: any) => item.id === cardId);
-    if (idx === -1) {
+      const idx = queueList.findIndex((it: any) => it.id === cardId);
+      if (idx === -1) {
+        return null;
+      }
+
+      const currentItem = queueList[idx];
+
+      if (university !== undefined) currentItem.university = university.trim();
+      if (department !== undefined) currentItem.department = department.trim();
+      if (year !== undefined) currentItem.year = String(year).trim();
+      if (category !== undefined) currentItem.category = category.trim();
+      const finalTargetUrl = targetUrl !== undefined ? targetUrl : body.target_url;
+      if (finalTargetUrl !== undefined) {
+        currentItem.target_url = finalTargetUrl.trim();
+        currentItem.official_url = finalTargetUrl.trim();
+        currentItem.scraped_url = finalTargetUrl.trim();
+      }
+
+      if (slogan !== undefined) {
+        currentItem.slogan = slogan.trim();
+        if (!currentItem.card_news) currentItem.card_news = {};
+        currentItem.card_news.card_headline = slogan.trim();
+        if (!currentItem.curation_summary) currentItem.curation_summary = {};
+        currentItem.curation_summary.headline = slogan.trim();
+      }
+
+      if (tags !== undefined) {
+        const parsedTags = Array.isArray(tags)
+          ? tags.map((t: string) => t.trim()).filter(Boolean)
+          : typeof tags === "string"
+          ? tags.split(/[,#\s]+/).map((t: string) => t.trim()).filter(Boolean)
+          : [];
+
+        currentItem.tags = parsedTags;
+        if (!currentItem.card_news) currentItem.card_news = {};
+        currentItem.card_news.tags = parsedTags;
+        if (!currentItem.curation_summary) currentItem.curation_summary = {};
+        currentItem.curation_summary.inferred_industry_keywords = parsedTags;
+      }
+
+      if (university || department) {
+        const u = currentItem.university || "";
+        const d = currentItem.department || "";
+        const y = currentItem.year || "2025";
+        currentItem.exhibit_title = `[${u}] ${y} ${d} 졸업전시회`;
+      }
+
+      fs.writeFileSync(queueFile, JSON.stringify(queueList, null, 2), "utf-8");
+      return currentItem;
+    });
+
+    if (!item) {
       return NextResponse.json({ status: "FAILED", error: `ID ${cardId}에 해당하는 카드를 찾을 수 없습니다.` }, { status: 404 });
     }
-
-    const item = queueList[idx];
-
-    if (university !== undefined) item.university = university.trim();
-    if (department !== undefined) item.department = department.trim();
-    if (year !== undefined) item.year = String(year).trim();
-    if (category !== undefined) item.category = category.trim();
-    const finalTargetUrl = targetUrl !== undefined ? targetUrl : body.target_url;
-    if (finalTargetUrl !== undefined) {
-      item.target_url = finalTargetUrl.trim();
-      item.official_url = finalTargetUrl.trim();
-      item.scraped_url = finalTargetUrl.trim();
-    }
-
-    if (slogan !== undefined) {
-      item.slogan = slogan.trim();
-      if (!item.card_news) item.card_news = {};
-      item.card_news.card_headline = slogan.trim();
-      if (!item.curation_summary) item.curation_summary = {};
-      item.curation_summary.headline = slogan.trim();
-    }
-
-    if (tags !== undefined) {
-      const parsedTags = Array.isArray(tags)
-        ? tags.map((t: string) => t.trim()).filter(Boolean)
-        : typeof tags === "string"
-        ? tags.split(/[,#\s]+/).map((t: string) => t.trim()).filter(Boolean)
-        : [];
-
-      item.tags = parsedTags;
-      if (!item.card_news) item.card_news = {};
-      item.card_news.tags = parsedTags;
-      if (!item.curation_summary) item.curation_summary = {};
-      item.curation_summary.inferred_industry_keywords = parsedTags;
-    }
-
-    if (university || department) {
-      const u = item.university || "";
-      const d = item.department || "";
-      const y = item.year || "2025";
-      item.exhibit_title = `[${u}] ${y} ${d} 졸업전시회`;
-    }
-
-    fs.writeFileSync(queueFile, JSON.stringify(queueList, null, 2), "utf-8");
 
     return NextResponse.json({
       status: "SUCCESS",
@@ -328,17 +337,24 @@ export async function DELETE(req: Request) {
       return NextResponse.json({ status: "FAILED", error: "university_queue.json 파일을 찾을 수 없습니다." }, { status: 500 });
     }
 
-    const raw = fs.readFileSync(queueFile, "utf-8");
-    let queueList = JSON.parse(raw);
+    const deleteSuccess = await withFileLock(queueFile, async () => {
+      const raw = fs.readFileSync(queueFile, "utf-8");
+      let queueList = JSON.parse(raw);
 
-    const prevLength = queueList.length;
-    queueList = queueList.filter((item: any) => item.id !== cardId);
+      const prevLength = queueList.length;
+      queueList = queueList.filter((item: any) => item.id !== cardId);
 
-    if (queueList.length === prevLength) {
+      if (queueList.length === prevLength) {
+        return false;
+      }
+
+      fs.writeFileSync(queueFile, JSON.stringify(queueList, null, 2), "utf-8");
+      return true;
+    });
+
+    if (!deleteSuccess) {
       return NextResponse.json({ status: "FAILED", error: `ID ${cardId}에 해당하는 카드를 찾을 수 없습니다.` }, { status: 404 });
     }
-
-    fs.writeFileSync(queueFile, JSON.stringify(queueList, null, 2), "utf-8");
 
     // Remove public/captures/{cardId} and public/uploads/{cardId} if exist
     const possiblePublicDirs = [

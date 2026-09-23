@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useParams, notFound } from "next/navigation";
 import { getProfessorById, getContentsForEntity } from "@/lib/data";
@@ -16,16 +16,44 @@ import {
   Building2,
   ShieldCheck,
   CheckCircle2,
+  Palette,
 } from "lucide-react";
 import AcademyConsultModal from "@/components/monetization/AcademyConsultModal";
 
 export default function ProfessorDetailPage() {
   const params = useParams();
   const id = params.id as string;
-  const professor = getProfessorById(id);
+  const initialProfessor = getProfessorById(id);
+  const [professor, setProfessor] = useState<any>(initialProfessor);
+  const [isLoading, setIsLoading] = useState(!initialProfessor);
   const relatedContents = getContentsForEntity(id, "professor");
 
   const [isConsultOpen, setIsConsultOpen] = useState(false);
+
+  useEffect(() => {
+    if (!professor) {
+      fetch("/api/professors")
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.status === "SUCCESS" && Array.isArray(data.professors)) {
+            const found = data.professors.find((p: any) => p.id === id);
+            if (found) {
+              setProfessor(found);
+            }
+          }
+        })
+        .catch((err) => console.warn("Failed to fetch professor dynamically:", err))
+        .finally(() => setIsLoading(false));
+    }
+  }, [id, professor]);
+
+  if (isLoading) {
+    return (
+      <div style={{ maxWidth: "76rem", margin: "0 auto", padding: "4rem 1.25rem", textAlign: "center", color: "#94a3b8" }}>
+        교수진 및 연구실 정보를 로드하는 중입니다...
+      </div>
+    );
+  }
 
   if (!professor) {
     return notFound();
@@ -116,7 +144,7 @@ export default function ProfessorDetailPage() {
               </p>
 
               <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem" }}>
-                {professor.research_areas.map((area) => (
+                {professor.research_areas?.map((area: string) => (
                   <span
                     key={area}
                     style={{
@@ -131,6 +159,29 @@ export default function ProfessorDetailPage() {
                     #{area}
                   </span>
                 ))}
+              </div>
+
+              <div style={{ marginTop: "1rem" }}>
+                <Link
+                  href={`/?search=${encodeURIComponent(professor.university)}`}
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "0.4rem",
+                    padding: "0.45rem 0.9rem",
+                    borderRadius: "0.5rem",
+                    backgroundColor: "rgba(99, 102, 241, 0.15)",
+                    border: "1px solid rgba(99, 102, 241, 0.3)",
+                    color: "#a5b4fc",
+                    fontSize: "0.8125rem",
+                    fontWeight: 600,
+                    textDecoration: "none",
+                  }}
+                >
+                  <Palette style={{ width: "0.875rem", height: "0.875rem" }} />
+                  {professor.university} {professor.department} 졸업전시회 출품작 보기
+                  <ChevronRight style={{ width: "0.75rem", height: "0.75rem" }} />
+                </Link>
               </div>
             </div>
           </div>
@@ -162,11 +213,11 @@ export default function ProfessorDetailPage() {
                 }}
               >
                 <BookOpen style={{ width: "0.875rem", height: "0.875rem" }} />
-                {professor.assignment_details.semester} 지정 과제
+                {professor.assignment_details?.semester ?? "학기 미확인"} 지정 과제
               </div>
 
               <h2 style={{ fontSize: "1.35rem", fontWeight: 700, color: "#ffffff", margin: "0 0 0.85rem" }}>
-                {professor.assignment_details.title}
+                {professor.assignment_details?.title ?? "과제 명칭 확인된 정보 없음"}
               </h2>
 
               {/* 1줄 핵심 설명 강조 박스 */}
@@ -183,12 +234,12 @@ export default function ProfessorDetailPage() {
                   과제 1줄 핵심 문제의식:
                 </div>
                 <div style={{ fontSize: "1rem", fontWeight: 700, color: "#ffffff", lineHeight: 1.5 }}>
-                  "{professor.assignment_one_liner}"
+                  "{professor.assignment_one_liner ?? "확인된 정보 없음"}"
                 </div>
               </div>
 
               <p style={{ fontSize: "0.875rem", color: "#94a3b8", lineHeight: 1.6, margin: 0 }}>
-                <strong>연구 및 과제 목표:</strong> {professor.assignment_details.objective}
+                <strong>연구 및 과제 목표:</strong> {professor.assignment_details?.objective ?? "확인된 정보 없음"}
               </p>
             </div>
 
@@ -306,10 +357,13 @@ export default function ProfessorDetailPage() {
                       flexDirection: "column",
                     }}
                   >
-                    <div style={{ height: "14rem", backgroundColor: "#1e293b" }}>
+                    <div style={{ height: "14rem", backgroundColor: "#1e293b", position: "relative" }}>
                       <img
-                        src={sub.image}
+                        src={sub.image?.startsWith("http") || sub.image?.startsWith("/") ? sub.image : `/${sub.image}`}
                         alt={sub.title}
+                        onError={(e) => {
+                          (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80";
+                        }}
                         style={{ width: "100%", height: "100%", objectFit: "cover" }}
                       />
                     </div>

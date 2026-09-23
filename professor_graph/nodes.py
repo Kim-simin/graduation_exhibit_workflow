@@ -839,21 +839,21 @@ def database_update(state: ProfessorGraphState) -> Dict[str, Any]:
 
     final_merged_list = list(merged_dict.values())
 
-    target_files = [
-        os.path.join(DATA_DIR, "professors.json"),
-        os.path.join(PLATFORM_DATA_DIR, "professors.json")
-    ]
+    primary_file = os.path.join(DATA_DIR, "professors.json")
+    sync_file = os.path.join(PLATFORM_DATA_DIR, "professors.json")
 
     saved_files = []
-    for fpath in target_files:
-        os.makedirs(os.path.dirname(fpath), exist_ok=True)
-        try:
-            with open(fpath, "w", encoding="utf-8") as f:
-                json.dump(final_merged_list, f, ensure_ascii=False, indent=2)
-            saved_files.append(fpath)
-            print(f"  [DB 동기화 완료] -> {fpath} (전체 {len(final_merged_list)}명)")
-        except Exception as e:
-            print(f"  [DB 동기화 실패: {fpath}]: {e}")
+    try:
+        from research.storage_manager import atomic_write_json
+        success = atomic_write_json(primary_file, final_merged_list, sync_paths=[sync_file])
+        if success:
+            saved_files = [primary_file, sync_file]
+            print(f"  [DB 동기화 완료] -> {primary_file} & {sync_file} (전체 {len(final_merged_list)}명)")
+        else:
+            saved_files = [primary_file]
+            print(f"  [DB 부분 동기화] -> Primary만 성공, Platform 동기화 대기")
+    except Exception as e:
+        print(f"  [DB 동기화 실패]: {e}")
 
     db_result = {
         "persisted": len(saved_files) > 0,

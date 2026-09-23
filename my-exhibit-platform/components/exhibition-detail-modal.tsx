@@ -23,19 +23,13 @@ import {
   Building2,
   Briefcase,
   ShieldCheck,
+  Maximize2,
 } from "lucide-react";
 import { Exhibition, Artwork } from "@/lib/get-exhibitions";
+import { EDIT_CATEGORIES, getStandardCategory } from "@/src/utils/categoryMapper";
+import { ArtworkLightboxModal } from "./artwork-lightbox-modal";
 
-const EDIT_CATEGORIES = [
-  "디자인·UX/UI",
-  "미술·회화",
-  "공예·조형",
-  "영상·미디어",
-  "사진·브랜드",
-  "건축·공간",
-  "패션·의류",
-  "게임·캐릭터",
-];
+// EDIT_CATEGORIES is imported from categoryMapper
 
 // ==========================================
 // 개별 출품작 순서 뱃지 (더블클릭 인라인 숫자 편집 및 순서 이동 지원)
@@ -185,6 +179,10 @@ export function ExhibitionDetailModal({
   const posterFileInputRef = useRef<HTMLInputElement>(null);
   const newArtworkFileInputRef = useRef<HTMLInputElement>(null);
 
+  // 고화질 이미지 라이트박스 상태 관리
+  const [selectedArtworkIndex, setSelectedArtworkIndex] = useState<number | null>(null);
+  const [isPosterLightboxOpen, setIsPosterLightboxOpen] = useState(false);
+
   // 전시 데이터 변경 시 초기화
   useEffect(() => {
     if (!exhibition) return;
@@ -203,6 +201,8 @@ export function ExhibitionDetailModal({
     setArtworks(exhibition.artworks ? [...exhibition.artworks] : []);
     setReelsVideoUrl(null);
     setReelsError(null);
+    setSelectedArtworkIndex(null);
+    setIsPosterLightboxOpen(false);
   }, [exhibition, isOpen, initialEditMode]);
 
   if (!isOpen || !exhibition) return null;
@@ -697,17 +697,36 @@ export function ExhibitionDetailModal({
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start bg-slate-50 dark:bg-slate-950/60 p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
             {/* 좌측: 메인 포스터 영역 (마우스 오버레이 및 업로드/삭제 버튼) */}
             <div className="md:col-span-4 flex flex-col items-center">
-              <div className="relative group w-full aspect-[3/4] rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 shadow-sm flex items-center justify-center">
+              <div
+                onClick={() => {
+                  if (!isEditing && posterPath) {
+                    setIsPosterLightboxOpen(true);
+                  }
+                }}
+                className={`relative group w-full aspect-[3/4] rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 shadow-sm flex items-center justify-center ${
+                  !isEditing && posterPath ? "cursor-pointer hover:border-cyan-500 hover:ring-2 hover:ring-cyan-500/30 transition-all" : ""
+                }`}
+                title={!isEditing && posterPath ? "클릭하여 메인 포스터 고화질 확인" : undefined}
+              >
                 {posterPath ? (
                   <img
                     src={posterPath.startsWith("http") ? posterPath : `/api/images/${posterPath}`}
                     alt="메인 공식 포스터"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500 select-none"
                   />
                 ) : (
                   <div className="flex flex-col items-center justify-center p-4 text-center text-slate-400 dark:text-slate-500">
                     <ImageIcon className="w-12 h-12 mb-2 opacity-50" />
                     <span className="text-xs font-semibold">등록된 공식 포스터가 없습니다</span>
+                  </div>
+                )}
+
+                {/* 비편집 모드 마우스 오버 시 포스터 고화질 보기 오버레이 */}
+                {!isEditing && posterPath && (
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center pointer-events-none z-10">
+                    <span className="px-3 py-1.5 rounded-full bg-cyan-600/90 text-white text-xs font-bold flex items-center gap-1.5 shadow-lg backdrop-blur-sm">
+                      <Maximize2 className="w-3.5 h-3.5" /> 포스터 고화질 확인
+                    </span>
                   </div>
                 )}
 
@@ -1035,6 +1054,11 @@ export function ExhibitionDetailModal({
                     <div
                       key={idx}
                       draggable={isEditing}
+                      onClick={() => {
+                        if (!isEditing) {
+                          setSelectedArtworkIndex(idx);
+                        }
+                      }}
                       onDragStart={(e) => {
                         const tag = (e.target as HTMLElement)?.tagName?.toLowerCase();
                         if (tag === "input" || tag === "textarea" || tag === "button") {
@@ -1048,13 +1072,13 @@ export function ExhibitionDetailModal({
                       onDragEnd={handleDragEnd}
                       onDrop={(e) => handleDrop(idx, e)}
                       className={`relative group bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm transition-all duration-200 flex flex-col ${
-                        isEditing ? "cursor-grab active:cursor-grabbing" : ""
+                        isEditing ? "cursor-grab active:cursor-grabbing" : "cursor-pointer hover:border-cyan-500 hover:shadow-lg"
                       } ${
                         isDragging
                           ? "opacity-40 scale-95 border-2 border-blue-500 ring-2 ring-blue-500/50 z-30"
                           : isOver
                           ? "border-dashed border-2 border-blue-400 ring-2 ring-blue-500 scale-[1.02] bg-blue-50/20 dark:bg-blue-950/30 z-20"
-                          : "border border-slate-200 dark:border-slate-800 hover:border-cyan-500 hover:shadow-md"
+                          : "border border-slate-200 dark:border-slate-800"
                       }`}
                     >
                       {/* 드래그 핸들 및 더블클릭 순서 변경 배지 */}
@@ -1079,6 +1103,15 @@ export function ExhibitionDetailModal({
                             (e.target as HTMLElement).style.display = "none";
                           }}
                         />
+
+                        {/* 비편집 모드 마우스 오버 시 고화질 확대 오버레이 안내 */}
+                        {!isEditing && (
+                          <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center pointer-events-none z-10">
+                            <span className="px-3 py-1.5 rounded-full bg-cyan-600/90 text-white text-xs font-bold flex items-center gap-1.5 shadow-lg backdrop-blur-sm">
+                              <Maximize2 className="w-3.5 h-3.5" /> 고화질 확대
+                            </span>
+                          </div>
+                        )}
 
                         {/* 개별 작품 사진 교체 로딩 스피너 */}
                         {uploadingArtworkIndex === idx && (
@@ -1262,6 +1295,36 @@ export function ExhibitionDetailModal({
             )}
           </div>
         </div>
+
+        {/* 개별 출품작 고화질 뷰어 라이트박스 */}
+        <ArtworkLightboxModal
+          isOpen={selectedArtworkIndex !== null}
+          onClose={() => setSelectedArtworkIndex(null)}
+          artworks={artworks}
+          initialIndex={selectedArtworkIndex ?? 0}
+          university={university}
+          department={department}
+        />
+
+        {/* 메인 포스터 고화질 뷰어 */}
+        {posterPath && (
+          <ArtworkLightboxModal
+            isOpen={isPosterLightboxOpen}
+            onClose={() => setIsPosterLightboxOpen(false)}
+            artworks={[
+              {
+                title: `${university} ${department} 메인 공식 포스터`,
+                author: `${university} ${department}`,
+                role: "공식 전시 포스터",
+                imagePath: posterPath,
+                description: curationIntro || headline || "",
+              },
+            ]}
+            initialIndex={0}
+            university={university}
+            department={department}
+          />
+        )}
       </div>
     </div>
   );

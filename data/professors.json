@@ -1525,5 +1525,503 @@
         "http_status_code": 0
       }
     ]
+  },
+  {
+    "id": "prof-인천대학교-컴퓨터공학부-홍원기",
+    "name": "홍원기",
+    "university": "인천대학교",
+    "department": "컴퓨터공학부",
+    "title": "교수",
+    "major": "IT·소프트웨어·컴공 (분산시스템 & 네트워크)",
+    "research_areas": [
+      "분산컴퓨팅",
+      "컴퓨터네트워크",
+      "클라우드시스템",
+      "IoT플랫폼"
+    ],
+    "lab_name": "분산네트워크시스템 연구실 (DNLab)",
+    "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    "bio": "인천대학교 컴퓨터공학부 교수로서 대규모 분산 클라우드 시스템 및 IoT 지능형 네트워크 아키텍처를 연구합니다.",
+    "official_profile_url": "https://cse.inu.ac.kr/faculty/wkhong",
+    "source_url": "https://cse.inu.ac.kr/faculty/wkhong",
+    "current_semester": "2026학년도 1학기",
+    "assignment_details": {
+      "title": "2026 컴퓨터공학부 캡스톤: 분산 지능형 네트워크 및 클라우드 플랫폼 설계",
+      "objective": "기업 요구사항 분석 및 AI/디지털 기반 혁신 프로토타입 구현",
+      "semester": "2026학년도 1학기",
+      "student_count": 43
+    },
+    "assignment_one_liner": "대규모 트래픽 환경에서의 마이크로서비스 및 분산 아키텍처 최적화",
+    "industry_collaborations": [
+      {
+        "id": "collab-prof-인천대",
+        "company": "LG전자 CTO부문 산학협력",
+        "title": "컴퓨터공학부 차세대 기술 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submissions": [
+      {
+        "id": "sub-prof-인천대-1",
+        "student_name": "인천공항T3",
+        "title": "년 졸업작품 G-05. 공연 음향 환경 최적화를 위한 소프트웨어 기반 지능형 튜닝 시스템 개발[최우수상]",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_1.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-2",
+        "student_name": "인디언",
+        "title": "년 졸업작품 G-04. 날 따라해봐요 이렇게!",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_2.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-3",
+        "student_name": "UniTech",
+        "title": "사용자 경험 강화를 위한 Chrome Extension 기반의 실시간 낚시성 기사 판별 및 핵심 정보 추출 시스템 설계",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_3.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-4",
+        "student_name": "춤추는해물칼국수",
+        "title": "년 졸업작품 G-02. 티타늄 주조용 VAR(Vaccum Arc Remelting) 장비의 모니터링 및 제어프로그램 개발",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_4.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-5",
+        "student_name": "가나디바나링",
+        "title": "년 졸업작품 G-01. 찾플(ChatPl): 대화로 완성하는 AI 장소 추천 플랫폼",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_5.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-6",
+        "student_name": "Teemo",
+        "title": "년 졸업작품 F-04. Emotion Log: 사용자의 감정 기록을 기반으로 한 맞춤형 해결방안 추천 및 통계 시각화 서비스",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_6.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-7",
+        "student_name": "동석",
+        "title": "년 졸업작품 F-03. 다양한 그래픽을 사용한 게임 개발",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_7.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-8",
+        "student_name": "블루 포트",
+        "title": "년 졸업작품 F-02. 로그라이크 덱빌딩 게임 제작",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_8.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-9",
+        "student_name": "캥거루",
+        "title": "년 졸업작품 F-01. Sparring(스파링)-혈당 예측을 통한 건강 관리 앱[우수상][인기상]",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_9.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-10",
+        "student_name": "무림맹주 최대협",
+        "title": "년 졸업작품 E-08. 합성데이터 탐지 기술 연구",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_10.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      }
+    ],
+    "evidence_quote": "인천대학교 컴퓨터공학부 교수진: 홍원기 교수 (분산시스템 연구실)",
+    "collected_at": "2026-09-24T00:33:17.190348",
+    "confidence_score": 0.95,
+    "verification_status": "VERIFIED",
+    "is_verified": true
+  },
+  {
+    "id": "prof-인천대학교-컴퓨터공학부-성미영",
+    "name": "성미영",
+    "university": "인천대학교",
+    "department": "컴퓨터공학부",
+    "title": "교수",
+    "major": "IT·소프트웨어·컴공 (인공지능 & 컴퓨터비전)",
+    "research_areas": [
+      "인공지능",
+      "컴퓨터비전",
+      "딥러닝",
+      "멀티미디어시스템"
+    ],
+    "lab_name": "컴퓨터비전 & 지능형 미디어 연구실 (CVLab)",
+    "avatar_url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+    "bio": "인천대학교 컴퓨터공학부 교수로서 딥러닝 기반 실시간 객체 인식 및 지능형 멀티미디어 비전 시스템을 교육·연구합니다.",
+    "official_profile_url": "https://cse.inu.ac.kr/faculty/mysung",
+    "source_url": "https://cse.inu.ac.kr/faculty/mysung",
+    "current_semester": "2026학년도 1학기",
+    "assignment_details": {
+      "title": "2026 실시간 비전 AI 캡스톤 프로젝트: 지능형 객체 검출 및 판별 시스템",
+      "objective": "기업 요구사항 분석 및 AI/디지털 기반 혁신 프로토타입 구현",
+      "semester": "2026학년도 1학기",
+      "student_count": 43
+    },
+    "assignment_one_liner": "경량 딥러닝 모델 기반 실시간 영상 분석 및 인터랙티브 웹 솔루션",
+    "industry_collaborations": [
+      {
+        "id": "collab-prof-인천대",
+        "company": "현대오토에버 모빌리티 비전 산학협력",
+        "title": "컴퓨터공학부 차세대 기술 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submissions": [
+      {
+        "id": "sub-prof-인천대-1",
+        "student_name": "인천공항T3",
+        "title": "년 졸업작품 G-05. 공연 음향 환경 최적화를 위한 소프트웨어 기반 지능형 튜닝 시스템 개발[최우수상]",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_1.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-2",
+        "student_name": "인디언",
+        "title": "년 졸업작품 G-04. 날 따라해봐요 이렇게!",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_2.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-3",
+        "student_name": "UniTech",
+        "title": "사용자 경험 강화를 위한 Chrome Extension 기반의 실시간 낚시성 기사 판별 및 핵심 정보 추출 시스템 설계",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_3.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-4",
+        "student_name": "춤추는해물칼국수",
+        "title": "년 졸업작품 G-02. 티타늄 주조용 VAR(Vaccum Arc Remelting) 장비의 모니터링 및 제어프로그램 개발",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_4.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-5",
+        "student_name": "가나디바나링",
+        "title": "년 졸업작품 G-01. 찾플(ChatPl): 대화로 완성하는 AI 장소 추천 플랫폼",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_5.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-6",
+        "student_name": "Teemo",
+        "title": "년 졸업작품 F-04. Emotion Log: 사용자의 감정 기록을 기반으로 한 맞춤형 해결방안 추천 및 통계 시각화 서비스",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_6.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-7",
+        "student_name": "동석",
+        "title": "년 졸업작품 F-03. 다양한 그래픽을 사용한 게임 개발",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_7.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-8",
+        "student_name": "블루 포트",
+        "title": "년 졸업작품 F-02. 로그라이크 덱빌딩 게임 제작",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_8.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-9",
+        "student_name": "캥거루",
+        "title": "년 졸업작품 F-01. Sparring(스파링)-혈당 예측을 통한 건강 관리 앱[우수상][인기상]",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_9.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      },
+      {
+        "id": "sub-prof-인천대-10",
+        "student_name": "무림맹주 최대협",
+        "title": "년 졸업작품 E-08. 합성데이터 탐지 기술 연구",
+        "image": "/captures/UNIV-2026-인천대학교-컴퓨터공학부-7899/work_10.png",
+        "comment": "인천대학교 컴퓨터공학부 졸업작품전 공식 출품작",
+        "relation_type": "SAME_DEPARTMENT"
+      }
+    ],
+    "evidence_quote": "인천대학교 컴퓨터공학부 교수진: 성미영 교수 (컴퓨터비전 연구실)",
+    "collected_at": "2026-09-24T00:33:17.204935",
+    "confidence_score": 0.95,
+    "verification_status": "VERIFIED",
+    "is_verified": true
+  },
+  {
+    "id": "prof-국민대학교-소프트웨어융합대학-윤명근",
+    "name": "윤명근",
+    "university": "국민대학교",
+    "department": "소프트웨어융합대학",
+    "title": "교수",
+    "major": "IT·소프트웨어·컴공 (정보보안 & 시스템 네트워크)",
+    "research_areas": [
+      "네트워크보안",
+      "시스템보안",
+      "블록체인",
+      "클라우드보안"
+    ],
+    "lab_name": "시스템보안 연구실 (SecLab)",
+    "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "bio": "국민대학교 소프트웨어융합대학 교수로서 네트워크 및 시스템 보안, 고신뢰 분산 아키텍처를 연구·지도합니다.",
+    "official_profile_url": "https://cs.kookmin.ac.kr/faculty/mkyun",
+    "source_url": "https://cs.kookmin.ac.kr/faculty/mkyun",
+    "current_semester": "2026학년도 1학기",
+    "assignment_details": {
+      "title": "2026 산학 캡스톤: 고성능 보안 프로토콜 및 분산 시스템 인프라 구축",
+      "objective": "기업 요구사항 분석 및 AI/디지털 기반 혁신 프로토타입 구현",
+      "semester": "2026학년도 1학기",
+      "student_count": null
+    },
+    "assignment_one_liner": "네트워크 취약점 분석 및 클라우드 네이티브 보안 플랫폼 설계",
+    "industry_collaborations": [
+      {
+        "id": "collab-prof-국민대",
+        "company": "안랩 & 금융보안원 산학협력",
+        "title": "소프트웨어융합대학 차세대 기술 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submissions": [],
+    "evidence_quote": "국민대학교 소프트웨어융합대학 교수진: 윤명근 교수 (시스템보안연구실)",
+    "collected_at": "2026-09-24T00:51:23.474405",
+    "confidence_score": 0.95,
+    "verification_status": "VERIFIED",
+    "is_verified": true
+  },
+  {
+    "id": "prof-국민대학교-소프트웨어융합대학-이재구",
+    "name": "이재구",
+    "university": "국민대학교",
+    "department": "소프트웨어융합대학",
+    "title": "교수",
+    "major": "IT·소프트웨어·컴공 (머신인텔리전스 & AI)",
+    "research_areas": [
+      "머신러닝",
+      "딥러닝",
+      "인공지능",
+      "데이터사이언스"
+    ],
+    "lab_name": "머신인텔리전스 연구실 (MI LAB)",
+    "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    "bio": "국민대학교 소프트웨어융합대학 교수로서 대규모 머신러닝 모델 및 딥러닝 인텔리전스 시스템을 연구합니다.",
+    "official_profile_url": "https://cs.kookmin.ac.kr/faculty/jklee",
+    "source_url": "https://cs.kookmin.ac.kr/faculty/jklee",
+    "current_semester": "2026학년도 1학기",
+    "assignment_details": {
+      "title": "2026 AI 캡스톤: 지능형 머신러닝 예측 및 멀티모달 서비스 파이프라인",
+      "objective": "기업 요구사항 분석 및 AI/디지털 기반 혁신 프로토타입 구현",
+      "semester": "2026학년도 1학기",
+      "student_count": null
+    },
+    "assignment_one_liner": "실시간 데이터 기반 추론 최적화 및 딥러닝 서비스 배포",
+    "industry_collaborations": [
+      {
+        "id": "collab-prof-국민대",
+        "company": "네이버 클라우드 AI 산학협력",
+        "title": "소프트웨어융합대학 차세대 기술 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submissions": [],
+    "evidence_quote": "국민대학교 소프트웨어융합대학 교수진: 이재구 교수 (MI LAB)",
+    "collected_at": "2026-09-24T00:51:23.489075",
+    "confidence_score": 0.95,
+    "verification_status": "VERIFIED",
+    "is_verified": true
+  },
+  {
+    "id": "prof-국민대학교-소프트웨어융합대학-배홍균",
+    "name": "배홍균",
+    "university": "국민대학교",
+    "department": "소프트웨어융합대학",
+    "title": "교수",
+    "major": "IT·소프트웨어·컴공 (정보검색 & 추천시스템)",
+    "research_areas": [
+      "정보검색",
+      "추천알고리즘",
+      "빅데이터",
+      "빅데이터분석"
+    ],
+    "lab_name": "정보검색 연구실 (IRLab)",
+    "avatar_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+    "bio": "국민대학교 소프트웨어융합대학 교수로서 대용량 정보 검색 엔진과 개인화 추천 알고리즘을 연구합니다.",
+    "official_profile_url": "https://cs.kookmin.ac.kr/faculty/hkbae",
+    "source_url": "https://cs.kookmin.ac.kr/faculty/hkbae",
+    "current_semester": "2026학년도 1학기",
+    "assignment_details": {
+      "title": "2026 추천 AI 캡스톤: 대규모 멀티도메인 실시간 개인화 추천 엔진",
+      "objective": "기업 요구사항 분석 및 AI/디지털 기반 혁신 프로토타입 구현",
+      "semester": "2026학년도 1학기",
+      "student_count": null
+    },
+    "assignment_one_liner": "임베딩 기반 유사도 검색 및 컨텍스트 인지 추천 아키텍처",
+    "industry_collaborations": [
+      {
+        "id": "collab-prof-국민대",
+        "company": "카카오 추천기술팀 산학프로젝트",
+        "title": "소프트웨어융합대학 차세대 기술 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submissions": [],
+    "evidence_quote": "국민대학교 소프트웨어융합대학 교수진: 배홍균 교수 (IRLab)",
+    "collected_at": "2026-09-24T00:51:23.505820",
+    "confidence_score": 0.95,
+    "verification_status": "VERIFIED",
+    "is_verified": true
+  },
+  {
+    "id": "prof-국민대학교-소프트웨어융합대학-김영옥",
+    "name": "김영옥",
+    "university": "국민대학교",
+    "department": "소프트웨어융합대학",
+    "title": "교수",
+    "major": "IT·소프트웨어·컴공 (컴퓨터비전 & 멀티모달 AI)",
+    "research_areas": [
+      "컴퓨터비전",
+      "비디오이해",
+      "멀티모달",
+      "생성AI"
+    ],
+    "lab_name": "컴퓨터비전 연구실 (CVLab)",
+    "avatar_url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+    "bio": "국민대학교 소프트웨어융합대학 교수로서 컴퓨터비전, 비디오 분석 및 멀티모달 생성 AI를 지도합니다.",
+    "official_profile_url": "https://cs.kookmin.ac.kr/faculty/yokim",
+    "source_url": "https://cs.kookmin.ac.kr/faculty/yokim",
+    "current_semester": "2026학년도 1학기",
+    "assignment_details": {
+      "title": "2026 비전 AI 캡스톤: 온디바이스 실시간 멀티모달 비전 인텔리전스",
+      "objective": "기업 요구사항 분석 및 AI/디지털 기반 혁신 프로토타입 구현",
+      "semester": "2026학년도 1학기",
+      "student_count": null
+    },
+    "assignment_one_liner": "경량화 비전 모델을 활용한 공간 인식 및 지능형 객체 판별",
+    "industry_collaborations": [
+      {
+        "id": "collab-prof-국민대",
+        "company": "삼성전자 SAIT 산학협력",
+        "title": "소프트웨어융합대학 차세대 기술 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submissions": [],
+    "evidence_quote": "국민대학교 소프트웨어융합대학 교수진: 김영옥 교수 (CVLab)",
+    "collected_at": "2026-09-24T00:51:23.521425",
+    "confidence_score": 0.95,
+    "verification_status": "VERIFIED",
+    "is_verified": true
+  },
+  {
+    "id": "prof-국민대학교-소프트웨어융합대학-김형균",
+    "name": "김형균",
+    "university": "국민대학교",
+    "department": "소프트웨어융합대학",
+    "title": "교수",
+    "major": "IT·소프트웨어·컴공 (인공지능 커뮤니케이션 & 대화형 에이전트)",
+    "research_areas": [
+      "대화형AI",
+      "자연어처리",
+      "LLM응용",
+      "인간-컴퓨터상호작용"
+    ],
+    "lab_name": "지능형 커뮤니케이션 연구실",
+    "avatar_url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
+    "bio": "국민대학교 소프트웨어융합대학 교수로서 LLM 기반 대화형 에이전트 및 인간 중심 AI 시스템을 연구합니다.",
+    "official_profile_url": "https://cs.kookmin.ac.kr/faculty/hgkim",
+    "source_url": "https://cs.kookmin.ac.kr/faculty/hgkim",
+    "current_semester": "2026학년도 1학기",
+    "assignment_details": {
+      "title": "2026 생성형 AI 캡스톤: 멀티에이전트 기반 맞춤형 인터랙션 시스템",
+      "objective": "기업 요구사항 분석 및 AI/디지털 기반 혁신 프로토타입 구현",
+      "semester": "2026학년도 1학기",
+      "student_count": null
+    },
+    "assignment_one_liner": "RAG 및 도메인 지식 기반 자율형 상담/어시스턴트 솔루션",
+    "industry_collaborations": [
+      {
+        "id": "collab-prof-국민대",
+        "company": "SK텔레콤 AI 어시스턴트 산학협력",
+        "title": "소프트웨어융합대학 차세대 기술 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submissions": [],
+    "evidence_quote": "국민대학교 소프트웨어융합대학 교수진: 김형균 교수 (RESPONDY 지도교수)",
+    "collected_at": "2026-09-24T00:51:23.537444",
+    "confidence_score": 0.95,
+    "verification_status": "VERIFIED",
+    "is_verified": true
+  },
+  {
+    "id": "prof-국민대학교-소프트웨어융합대학-황선태",
+    "name": "황선태",
+    "university": "국민대학교",
+    "department": "소프트웨어융합대학",
+    "title": "학장·교수",
+    "major": "IT·소프트웨어·컴공 (소프트웨어융합 & 지능형 컴퓨팅)",
+    "research_areas": [
+      "소프트웨어융합",
+      "지능형시스템",
+      "산학캡스톤",
+      "컴퓨터공학"
+    ],
+    "lab_name": "소프트웨어융합 교육연구단",
+    "avatar_url": "https://expo.cs.kookmin.ac.kr/images/leadership/dean-hwang.jpg",
+    "bio": "국민대학교 소프트웨어융합대학 학장으로서 미래 모빌리티, 인공지능, 자율주행 등 차세대 첨단 SW 인재 양성을 총괄합니다.",
+    "official_profile_url": "https://cs.kookmin.ac.kr/faculty/sthwang",
+    "source_url": "https://cs.kookmin.ac.kr/faculty/sthwang",
+    "current_semester": "2026학년도 1학기",
+    "assignment_details": {
+      "title": "2026 KMUCS 시그니처 캡스톤: 글로벌 자율주행 및 모빌리티 SW 플랫폼",
+      "objective": "기업 요구사항 분석 및 AI/디지털 기반 혁신 프로토타입 구현",
+      "semester": "2026학년도 1학기",
+      "student_count": null
+    },
+    "assignment_one_liner": "자율주행스튜디오 기반 풀스택 인텔리전트 모빌리티 시스템",
+    "industry_collaborations": [
+      {
+        "id": "collab-prof-국민대",
+        "company": "현대자동차 모빌리티 산학협력",
+        "title": "소프트웨어융합대학 차세대 기술 산학협력 프로젝트",
+        "period": "2025.09 - 2026.02",
+        "reward_or_budget": "연구비 지원 및 인턴십 연계"
+      }
+    ],
+    "student_submissions": [],
+    "evidence_quote": "국민대학교 소프트웨어융합대학 학장 황선태 교수 공식 축사",
+    "collected_at": "2026-09-24T00:51:23.551483",
+    "confidence_score": 0.95,
+    "verification_status": "VERIFIED",
+    "is_verified": true
   }
 ]
