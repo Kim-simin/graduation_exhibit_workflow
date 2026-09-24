@@ -3,6 +3,17 @@ import sys
 import json
 import requests
 
+if sys.platform.startswith('win'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
+WORKSPACE_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if WORKSPACE_ROOT not in sys.path:
+    sys.path.insert(0, WORKSPACE_ROOT)
+
 def test_kookmin_flow():
     print("[1] Testing /api/cards/analyze-link for https://expo.cs.kookmin.ac.kr/ ...")
     api_url = "http://127.0.0.1:3000/api/cards/analyze-link"
