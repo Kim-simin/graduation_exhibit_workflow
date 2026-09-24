@@ -26,6 +26,7 @@ import {
   XCircle,
 } from "lucide-react";
 import ContentApprovalCard from "./ContentApprovalCard";
+import AntigravityIntakeBox from "./AntigravityIntakeBox";
 import {
   InformationSource,
   SourceSummary,
@@ -137,6 +138,13 @@ export default function NodeDetailPanel({
           {node.role}
         </p>
       </div>
+
+      {/* Antigravity Zero-Touch Intake Trigger (Only on Research Node) */}
+      {node.id === "node-research" && (
+        <div className="mb-4">
+          <AntigravityIntakeBox compact={true} />
+        </div>
+      )}
 
       {/* Property Matrix Grid */}
       <div className="space-y-4 text-xs">

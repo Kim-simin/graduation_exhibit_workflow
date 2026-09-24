@@ -1,0 +1,113 @@
+[
+  {
+    "name": "안성모",
+    "photo": "https://art.snu.ac.kr/wp-content/uploads/2023/03/unnamed-400x387.jpg",
+    "details": [
+      "",
+      "디자인과 학과장",
+      "공간디자인"
+    ],
+    "email": "sm.ahn@snu.ac.kr",
+    "office": "74) 207 / 02-880-7464",
+    "homepage": "www.futureformfinding.com",
+    "cv": "https://art.snu.ac.kr/wp-content/uploads/2023/03/CV_Seongmo_Ahn_2026.pdf"
+  },
+  {
+    "name": "윤주현",
+    "photo": "https://art.snu.ac.kr/wp-content/uploads/2018/04/윤주현-363x400.jpeg",
+    "details": [
+      "",
+      "인터렉션디자인, UX디자인"
+    ],
+    "email": "jheune@snu.ac.kr",
+    "office": "50) 207 / 02-880-7518",
+    "homepage": "intermedia.or.kr",
+    "cv": "https://art.snu.ac.kr/wp-content/uploads/2017/11/윤주현_CV_20260505.pdf"
+  },
+  {
+    "name": "김수정",
+    "photo": "https://art.snu.ac.kr/wp-content/uploads/2017/11/SZ_portrait_insta-382x400.jpg",
+    "details": [
+      "",
+      "뉴미디어디자인"
+    ],
+    "email": "suzung@snu.ac.kr",
+    "office": "50) 204 / 02-880-1451",
+    "homepage": "www.suzung.com",
+    "cv": "https://art.snu.ac.kr/wp-content/uploads/2017/11/김수정_이력서_국영문_2026_3.pdf"
+  },
+  {
+    "name": "김경선",
+    "photo": "https://art.snu.ac.kr/wp-content/uploads/2018/04/김경선-362x400.jpeg",
+    "details": [
+      "",
+      "그래픽,  타이포그래피"
+    ],
+    "email": "ks1@snu.ac.kr",
+    "office": "74) 213 / 02-880-7513",
+    "homepage": "",
+    "cv": "https://art.snu.ac.kr/wp-content/uploads/2017/11/김경선-교수님-CV_2020_KR-1.pdf"
+  },
+  {
+    "name": "정의철",
+    "photo": "https://art.snu.ac.kr/wp-content/uploads/2018/04/정의철-364x400.jpeg",
+    "details": [
+      "",
+      "미술대학 학장",
+      "제품UX디자인, HCI디자인"
+    ],
+    "email": "jech@snu.ac.kr",
+    "office": "50) 201 / 02-880-7516",
+    "homepage": "www.hcidlab.com",
+    "cv": "https://art.snu.ac.kr/wp-content/uploads/2017/12/정의철-교수님-CV_2020_KR-2.pdf"
+  },
+  {
+    "name": "장성연",
+    "photo": "https://art.snu.ac.kr/wp-content/uploads/2018/05/jangsy-352x400.jpg",
+    "details": [
+      "",
+      "디자인학부 학부장",
+      "리빙디자인, 조형"
+    ],
+    "email": "jang7047@snu.ac.kr",
+    "office": "74) 211 / 02-880-8965",
+    "homepage": "",
+    "cv": "https://art.snu.ac.kr/wp-content/uploads/2018/04/장성연-교수님-CV_2020_KR.pdf"
+  },
+  {
+    "name": "이장섭",
+    "photo": "https://art.snu.ac.kr/wp-content/uploads/2018/10/leejangsub_bk-340x400.jpg",
+    "details": [
+      "",
+      "공공커뮤니케이션, 브랜딩"
+    ],
+    "email": "leejangsub@snu.ac.kr",
+    "office": "- / 02-880-7510",
+    "homepage": "",
+    "cv": "https://art.snu.ac.kr/wp-content/uploads/2018/10/이장섭-CV_2020_KR-1.pdf"
+  },
+  {
+    "name": "Hamamoto, Chris",
+    "photo": "https://art.snu.ac.kr/wp-content/uploads/2022/09/chris-hamamoto-400x400.jpeg",
+    "details": [
+      "",
+      "Graphic Design, Computational Design"
+    ],
+    "email": "chamamoto@snu.ac.kr",
+    "office": "74) 210 / 02-880-2251",
+    "homepage": "chrishamamoto.com",
+    "cv": "https://art.snu.ac.kr/wp-content/uploads/2022/09/Hamamoto-CV.pdf"
+  },
+  {
+    "name": "배재혁",
+    "photo": "https://art.snu.ac.kr/wp-content/uploads/2025/03/배재혁-교수님-프로필-1.png",
+    "details": [
+      "",
+      "첨단기술융합디자인, 인터렉션 디자인"
+    ],
+    "email": "jaehyuck@snu.ac.kr",
+    "office": "74) 210 / 02-880-7516",
+    "homepage": "http://teamvoid.net",
+    "cv": "https://art.snu.ac.kr/wp-content/uploads/2025/03/배재혁_홈페이지_cv.pdf"
+  }
+]

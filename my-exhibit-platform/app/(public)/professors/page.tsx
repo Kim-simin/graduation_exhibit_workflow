@@ -380,7 +380,7 @@ export default function ProfessorsPage() {
                     lineHeight: 1.5,
                   }}
                 >
-                  "{prof.assignment_one_liner}"
+                  "{prof.assignment_one_liner || prof.bio || `${prof.department} 캡스톤 디자인 및 포트폴리오 지도`}"
                 </p>
               </div>
 

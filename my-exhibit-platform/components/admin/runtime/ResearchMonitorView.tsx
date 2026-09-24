@@ -25,6 +25,7 @@ import {
   Building2,
   Briefcase,
 } from "lucide-react";
+import AntigravityIntakeBox from "./AntigravityIntakeBox";
 
 interface ResearchRun {
   research_run_id: string;
@@ -266,6 +267,9 @@ export default function ResearchMonitorView() {
           </button>
         </div>
       </div>
+
+      {/* Antigravity Universal Zero-Touch Intake Engine */}
+      <AntigravityIntakeBox onSuccess={fetchData} />
 
       {/* 2. Top Stats Overview */}
       {researchMode === "corporate" ? (

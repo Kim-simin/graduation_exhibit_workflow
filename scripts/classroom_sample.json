@@ -1,0 +1,692 @@
+[
+  {
+    "id": 2,
+    "count": 17,
+    "description": "",
+    "link": "https://hongiksidi.com/gs/2025-admin/classroom/a/",
+    "name": "A",
+    "slug": "a",
+    "taxonomy": "classroom",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom/2",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/taxonomies/classroom"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025?classroom=2"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "count": 13,
+    "description": "",
+    "link": "https://hongiksidi.com/gs/2025-admin/classroom/b/",
+    "name": "B",
+    "slug": "b",
+    "taxonomy": "classroom",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom/3",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/taxonomies/classroom"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025?classroom=3"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "count": 16,
+    "description": "",
+    "link": "https://hongiksidi.com/gs/2025-admin/classroom/c/",
+    "name": "C",
+    "slug": "c",
+    "taxonomy": "classroom",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom/4",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/taxonomies/classroom"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025?classroom=4"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "count": 16,
+    "description": "",
+    "link": "https://hongiksidi.com/gs/2025-admin/classroom/d/",
+    "name": "D",
+    "slug": "d",
+    "taxonomy": "classroom",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom/5",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/taxonomies/classroom"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025?classroom=5"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "count": 15,
+    "description": "",
+    "link": "https://hongiksidi.com/gs/2025-admin/classroom/e/",
+    "name": "E",
+    "slug": "e",
+    "taxonomy": "classroom",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom/6",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/taxonomies/classroom"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025?classroom=6"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "count": 24,
+    "description": "",
+    "link": "https://hongiksidi.com/gs/2025-admin/classroom/f/",
+    "name": "F",
+    "slug": "f",
+    "taxonomy": "classroom",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom/7",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/taxonomies/classroom"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025?classroom=7"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "count": 19,
+    "description": "",
+    "link": "https://hongiksidi.com/gs/2025-admin/classroom/g/",
+    "name": "G",
+    "slug": "g",
+    "taxonomy": "classroom",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom/8",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/taxonomies/classroom"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025?classroom=8"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "count": 18,
+    "description": "",
+    "link": "https://hongiksidi.com/gs/2025-admin/classroom/h/",
+    "name": "H",
+    "slug": "h",
+    "taxonomy": "classroom",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom/9",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/taxonomies/classroom"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025?classroom=9"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "count": 20,
+    "description": "",
+    "link": "https://hongiksidi.com/gs/2025-admin/classroom/i/",
+    "name": "I",
+    "slug": "i",
+    "taxonomy": "classroom",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom/10",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/taxonomies/classroom"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025?classroom=10"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "count": 20,
+    "description": "",
+    "link": "https://hongiksidi.com/gs/2025-admin/classroom/j/",
+    "name": "J",
+    "slug": "j",
+    "taxonomy": "classroom",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom/11",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/taxonomies/classroom"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025?classroom=11"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "count": 17,
+    "description": "",
+    "link": "https://hongiksidi.com/gs/2025-admin/classroom/k/",
+    "name": "K",
+    "slug": "k",
+    "taxonomy": "classroom",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom/12",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/taxonomies/classroom"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025?classroom=12"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "count": 22,
+    "description": "",
+    "link": "https://hongiksidi.com/gs/2025-admin/classroom/l/",
+    "name": "L",
+    "slug": "l",
+    "taxonomy": "classroom",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom/13",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/taxonomies/classroom"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025?classroom=13"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "count": 18,
+    "description": "",
+    "link": "https://hongiksidi.com/gs/2025-admin/classroom/m/",
+    "name": "M",
+    "slug": "m",
+    "taxonomy": "classroom",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom/14",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/taxonomies/classroom"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025?classroom=14"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "count": 19,
+    "description": "",
+    "link": "https://hongiksidi.com/gs/2025-admin/classroom/n/",
+    "name": "N",
+    "slug": "n",
+    "taxonomy": "classroom",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom/15",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/taxonomies/classroom"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025?classroom=15"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "count": 20,
+    "description": "",
+    "link": "https://hongiksidi.com/gs/2025-admin/classroom/o/",
+    "name": "O",
+    "slug": "o",
+    "taxonomy": "classroom",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom/16",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/taxonomies/classroom"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025?classroom=16"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

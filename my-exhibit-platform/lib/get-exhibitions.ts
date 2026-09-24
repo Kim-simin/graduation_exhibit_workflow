@@ -96,10 +96,10 @@ export function getInitialExhibitions(): Exhibition[] {
         : `[${item.university}] ${item.department} 졸업전시회`;
 
       const cleanHeadline = hasRealPoster
-        ? (item.curation_summary?.headline || item.card_news?.card_headline || `${item.university} ${item.department} 졸업전시회`)
+        ? (item.curation_summary?.headline || item.card_news?.card_headline || item.exhibition_title || item.title || `${item.university} ${item.department} 졸업전시회`)
         : `${item.university} ${item.department} 공식 졸업전시 아카이브`;
 
-      const isResearched = (item.status === "리서치 완료" || item.status === "완료" || item.status === "승인 완료" || item.status === "published") && Boolean(hasRealPoster);
+      const isResearched = (item.status === "리서치 완료" || item.status === "완료" || item.status === "승인 완료" || item.status === "검수 완료" || item.status === "published") && Boolean(hasRealPoster);
       const isUploaded = isResearched || item.status === "published" || Boolean(item.isUploaded);
 
       return {
@@ -117,7 +117,7 @@ export function getInitialExhibitions(): Exhibition[] {
         headline: cleanHeadline,
         curationIntro:
           isResearched
-            ? (item.curation_summary?.curation_intro || item.card_news?.card_intro || "")
+            ? (item.curation_summary?.curation_intro || item.card_news?.card_intro || (typeof item.curation_summary === "string" ? item.curation_summary : "") || item.slogan || item.critic_feedback || "")
             : "아직 리서치 및 에셋 아카이빙이 진행되지 않았습니다. 관리자 관제 대시보드에서 리서치를 트리거하면 Gemini Search Grounding과 Playwright 크롤러가 공식 아카이브를 수집합니다.",
         period: item.exhibition_period || "일정 공지 대기",
         schedule: item.exhibition_period || "일정 공지 대기",

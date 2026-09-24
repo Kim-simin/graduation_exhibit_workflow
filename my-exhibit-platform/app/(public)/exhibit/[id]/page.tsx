@@ -185,7 +185,7 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
             <h2 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
               <Sparkles className="w-4 h-4 text-cyan-400" /> 전시 큐레이션 기획 의도
             </h2>
-            <div className="p-5 rounded-xl bg-slate-900/50 border border-gray-800/80 leading-relaxed text-gray-300 text-sm md:text-base">
+            <div className="p-5 rounded-xl bg-slate-900/50 border border-gray-800/80 leading-relaxed text-gray-300 text-sm md:text-base whitespace-pre-line">
               {exhibit.curationIntro}
             </div>
           </div>
