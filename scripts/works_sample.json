@@ -1,0 +1,691 @@
+[
+  {
+    "id": 278,
+    "date": "2025-12-28T12:27:48",
+    "date_gmt": "2025-12-28T12:27:48",
+    "guid": {
+      "rendered": "https://hongiksidi.com/gs/2025-admin/?post_type=works2025&#038;p=278"
+    },
+    "modified": "2026-01-03T07:06:48",
+    "modified_gmt": "2026-01-03T07:06:48",
+    "slug": "a-1",
+    "status": "publish",
+    "type": "works2025",
+    "link": "https://hongiksidi.com/gs/2025-admin/works2025/a-1/",
+    "title": {
+      "rendered": "A-1"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "template": "",
+    "classroom": [
+      2
+    ],
+    "class_list": [
+      "post-278",
+      "works2025",
+      "type-works2025",
+      "status-publish",
+      "hentry",
+      "classroom-a"
+    ],
+    "acf": {
+      "studentno": "1",
+      "titlekr": "아람피카레",
+      "titleen": "Arrampicare",
+      "thumbnail": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_0_RGB.jpg",
+      "images": [
+        {
+          "ID": 291,
+          "id": 291,
+          "title": "A_1_1_RGB",
+          "filename": "A_1_1_RGB.jpg",
+          "filesize": 124223,
+          "url": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_1_RGB.jpg",
+          "link": "https://hongiksidi.com/gs/2025-admin/works2025/a-1/a_1_1_rgb/",
+          "alt": "",
+          "author": "6",
+          "description": "",
+          "caption": "",
+          "name": "a_1_1_rgb",
+          "status": "inherit",
+          "uploaded_to": 278,
+          "date": "2025-12-28 12:23:16",
+          "modified": "2025-12-28 12:23:16",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://hongiksidi.com/gs/2025-admin/wp-includes/images/media/default.png",
+          "width": 1800,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_1_RGB-150x150.jpg",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_1_RGB-300x180.jpg",
+            "medium-width": 300,
+            "medium-height": 180,
+            "medium_large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_1_RGB-768x461.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 461,
+            "large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_1_RGB-1024x614.jpg",
+            "large-width": 1024,
+            "large-height": 614,
+            "1536x1536": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_1_RGB-1536x922.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 922,
+            "2048x2048": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_1_RGB.jpg",
+            "2048x2048-width": 1800,
+            "2048x2048-height": 1080
+          }
+        },
+        {
+          "ID": 290,
+          "id": 290,
+          "title": "A_1_2_RGB",
+          "filename": "A_1_2_RGB.jpg",
+          "filesize": 129055,
+          "url": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_2_RGB.jpg",
+          "link": "https://hongiksidi.com/gs/2025-admin/works2025/a-1/a_1_2_rgb/",
+          "alt": "",
+          "author": "6",
+          "description": "",
+          "caption": "",
+          "name": "a_1_2_rgb",
+          "status": "inherit",
+          "uploaded_to": 278,
+          "date": "2025-12-28 12:23:16",
+          "modified": "2025-12-28 12:23:16",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://hongiksidi.com/gs/2025-admin/wp-includes/images/media/default.png",
+          "width": 1800,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_2_RGB-150x150.jpg",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_2_RGB-300x180.jpg",
+            "medium-width": 300,
+            "medium-height": 180,
+            "medium_large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_2_RGB-768x461.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 461,
+            "large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_2_RGB-1024x614.jpg",
+            "large-width": 1024,
+            "large-height": 614,
+            "1536x1536": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_2_RGB-1536x922.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 922,
+            "2048x2048": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_2_RGB.jpg",
+            "2048x2048-width": 1800,
+            "2048x2048-height": 1080
+          }
+        },
+        {
+          "ID": 289,
+          "id": 289,
+          "title": "A_1_3_RGB",
+          "filename": "A_1_3_RGB.jpg",
+          "filesize": 137260,
+          "url": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_3_RGB.jpg",
+          "link": "https://hongiksidi.com/gs/2025-admin/works2025/a-1/a_1_3_rgb/",
+          "alt": "",
+          "author": "6",
+          "description": "",
+          "caption": "",
+          "name": "a_1_3_rgb",
+          "status": "inherit",
+          "uploaded_to": 278,
+          "date": "2025-12-28 12:23:15",
+          "modified": "2025-12-28 12:23:15",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://hongiksidi.com/gs/2025-admin/wp-includes/images/media/default.png",
+          "width": 1800,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_3_RGB-150x150.jpg",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_3_RGB-300x180.jpg",
+            "medium-width": 300,
+            "medium-height": 180,
+            "medium_large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_3_RGB-768x461.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 461,
+            "large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_3_RGB-1024x614.jpg",
+            "large-width": 1024,
+            "large-height": 614,
+            "1536x1536": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_3_RGB-1536x922.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 922,
+            "2048x2048": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_3_RGB.jpg",
+            "2048x2048-width": 1800,
+            "2048x2048-height": 1080
+          }
+        },
+        {
+          "ID": 288,
+          "id": 288,
+          "title": "A_1_4_RGB",
+          "filename": "A_1_4_RGB.jpg",
+          "filesize": 117294,
+          "url": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_4_RGB.jpg",
+          "link": "https://hongiksidi.com/gs/2025-admin/works2025/a-1/a_1_4_rgb/",
+          "alt": "",
+          "author": "6",
+          "description": "",
+          "caption": "",
+          "name": "a_1_4_rgb",
+          "status": "inherit",
+          "uploaded_to": 278,
+          "date": "2025-12-28 12:23:15",
+          "modified": "2025-12-28 12:23:15",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://hongiksidi.com/gs/2025-admin/wp-includes/images/media/default.png",
+          "width": 1800,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_4_RGB-150x150.jpg",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_4_RGB-300x180.jpg",
+            "medium-width": 300,
+            "medium-height": 180,
+            "medium_large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_4_RGB-768x461.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 461,
+            "large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_4_RGB-1024x614.jpg",
+            "large-width": 1024,
+            "large-height": 614,
+            "1536x1536": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_4_RGB-1536x922.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 922,
+            "2048x2048": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_4_RGB.jpg",
+            "2048x2048-width": 1800,
+            "2048x2048-height": 1080
+          }
+        },
+        {
+          "ID": 287,
+          "id": 287,
+          "title": "A_1_5_RGB",
+          "filename": "A_1_5_RGB.jpg",
+          "filesize": 125997,
+          "url": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_5_RGB.jpg",
+          "link": "https://hongiksidi.com/gs/2025-admin/works2025/a-1/a_1_5_rgb/",
+          "alt": "",
+          "author": "6",
+          "description": "",
+          "caption": "",
+          "name": "a_1_5_rgb",
+          "status": "inherit",
+          "uploaded_to": 278,
+          "date": "2025-12-28 12:23:14",
+          "modified": "2025-12-28 12:23:14",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://hongiksidi.com/gs/2025-admin/wp-includes/images/media/default.png",
+          "width": 1800,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_5_RGB-150x150.jpg",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_5_RGB-300x180.jpg",
+            "medium-width": 300,
+            "medium-height": 180,
+            "medium_large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_5_RGB-768x461.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 461,
+            "large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_5_RGB-1024x614.jpg",
+            "large-width": 1024,
+            "large-height": 614,
+            "1536x1536": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_5_RGB-1536x922.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 922,
+            "2048x2048": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_5_RGB.jpg",
+            "2048x2048-width": 1800,
+            "2048x2048-height": 1080
+          }
+        },
+        {
+          "ID": 286,
+          "id": 286,
+          "title": "A_1_6_RGB",
+          "filename": "A_1_6_RGB.jpg",
+          "filesize": 128209,
+          "url": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_6_RGB.jpg",
+          "link": "https://hongiksidi.com/gs/2025-admin/works2025/a-1/a_1_6_rgb/",
+          "alt": "",
+          "author": "6",
+          "description": "",
+          "caption": "",
+          "name": "a_1_6_rgb",
+          "status": "inherit",
+          "uploaded_to": 278,
+          "date": "2025-12-28 12:23:13",
+          "modified": "2025-12-28 12:23:13",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://hongiksidi.com/gs/2025-admin/wp-includes/images/media/default.png",
+          "width": 1800,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_6_RGB-150x150.jpg",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_6_RGB-300x180.jpg",
+            "medium-width": 300,
+            "medium-height": 180,
+            "medium_large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_6_RGB-768x461.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 461,
+            "large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_6_RGB-1024x614.jpg",
+            "large-width": 1024,
+            "large-height": 614,
+            "1536x1536": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_6_RGB-1536x922.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 922,
+            "2048x2048": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_6_RGB.jpg",
+            "2048x2048-width": 1800,
+            "2048x2048-height": 1080
+          }
+        },
+        {
+          "ID": 285,
+          "id": 285,
+          "title": "A_1_7_RGB",
+          "filename": "A_1_7_RGB.jpg",
+          "filesize": 149676,
+          "url": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_7_RGB.jpg",
+          "link": "https://hongiksidi.com/gs/2025-admin/works2025/a-1/a_1_7_rgb/",
+          "alt": "",
+          "author": "6",
+          "description": "",
+          "caption": "",
+          "name": "a_1_7_rgb",
+          "status": "inherit",
+          "uploaded_to": 278,
+          "date": "2025-12-28 12:23:13",
+          "modified": "2025-12-28 12:23:13",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://hongiksidi.com/gs/2025-admin/wp-includes/images/media/default.png",
+          "width": 1800,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_7_RGB-150x150.jpg",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_7_RGB-300x180.jpg",
+            "medium-width": 300,
+            "medium-height": 180,
+            "medium_large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_7_RGB-768x461.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 461,
+            "large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_7_RGB-1024x614.jpg",
+            "large-width": 1024,
+            "large-height": 614,
+            "1536x1536": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_7_RGB-1536x922.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 922,
+            "2048x2048": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_7_RGB.jpg",
+            "2048x2048-width": 1800,
+            "2048x2048-height": 1080
+          }
+        },
+        {
+          "ID": 284,
+          "id": 284,
+          "title": "A_1_8_RGB",
+          "filename": "A_1_8_RGB.jpg",
+          "filesize": 536987,
+          "url": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_8_RGB.jpg",
+          "link": "https://hongiksidi.com/gs/2025-admin/works2025/a-1/a_1_8_rgb/",
+          "alt": "",
+          "author": "6",
+          "description": "",
+          "caption": "",
+          "name": "a_1_8_rgb",
+          "status": "inherit",
+          "uploaded_to": 278,
+          "date": "2025-12-28 12:23:12",
+          "modified": "2025-12-28 12:23:12",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://hongiksidi.com/gs/2025-admin/wp-includes/images/media/default.png",
+          "width": 1280,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_8_RGB-150x150.jpg",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_8_RGB-300x253.jpg",
+            "medium-width": 300,
+            "medium-height": 253,
+            "medium_large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_8_RGB-768x648.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 648,
+            "large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_8_RGB-1024x864.jpg",
+            "large-width": 1024,
+            "large-height": 864,
+            "1536x1536": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_8_RGB.jpg",
+            "1536x1536-width": 1280,
+            "1536x1536-height": 1080,
+            "2048x2048": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_1_8_RGB.jpg",
+            "2048x2048-width": 1280,
+            "2048x2048-height": 1080
+          }
+        }
+      ],
+      "videolink": false,
+      "descriptionkr": "클라이밍의 감각을 일상 속으로\r\nArrampicare는 일상 속에서도 자연스럽게 클라이밍 훈련을 할 수 있도록 돕습니다. 효율적이고 정형화된 일상에서 벗어나 한층 불편해진 일상을 즐겨보세요.",
+      "descriptionen": "Bringing the tactile feel of climbing into everyday life\r\nArrampicare helps you train climbing effortlessly throughout your daily routine. Step away from a life that is efficient and standardized, and learn to enjoy a lifestyle that embraces a little more discomfort.",
+      "studentinfo": [
+        {
+          "artistkr": "권재현",
+          "artisten": "Jaehyun Kwon",
+          "instagramid": "@jaaaehyuuun",
+          "email": "kweon1128@gmail.com"
+        },
+        {
+          "artistkr": "윤소희",
+          "artisten": "Sohee Yoon",
+          "instagramid": "@dbsthdl",
+          "email": "soruu0707@gmail.com"
+        }
+      ]
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025/278",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/types/works2025"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/media?parent=278"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "classroom",
+          "embeddable": true,
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom?post=278"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 1860,
+    "date": "2025-12-29T18:53:27",
+    "date_gmt": "2025-12-29T18:53:27",
+    "guid": {
+      "rendered": "https://hongiksidi.com/gs/2025-admin/?post_type=works2025&#038;p=1860"
+    },
+    "modified": "2026-01-06T13:02:19",
+    "modified_gmt": "2026-01-06T13:02:19",
+    "slug": "a-2",
+    "status": "publish",
+    "type": "works2025",
+    "link": "https://hongiksidi.com/gs/2025-admin/works2025/a-2/",
+    "title": {
+      "rendered": "A-2"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "template": "",
+    "classroom": [
+      2
+    ],
+    "class_list": [
+      "post-1860",
+      "works2025",
+      "type-works2025",
+      "status-publish",
+      "hentry",
+      "classroom-a"
+    ],
+    "acf": {
+      "studentno": "2",
+      "titlekr": "툭툭",
+      "titleen": "TookTook",
+      "thumbnail": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_0_RGB.jpg",
+      "images": [
+        {
+          "ID": 1862,
+          "id": 1862,
+          "title": "A_2_1_RGB",
+          "filename": "A_2_1_RGB.jpg",
+          "filesize": 361035,
+          "url": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_1_RGB.jpg",
+          "link": "https://hongiksidi.com/gs/2025-admin/works2025/a-2/a_2_1_rgb/",
+          "alt": "",
+          "author": "6",
+          "description": "",
+          "caption": "",
+          "name": "a_2_1_rgb",
+          "status": "inherit",
+          "uploaded_to": 1860,
+          "date": "2025-12-29 18:52:13",
+          "modified": "2025-12-29 18:52:13",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://hongiksidi.com/gs/2025-admin/wp-includes/images/media/default.png",
+          "width": 1535,
+          "height": 794,
+          "sizes": {
+            "thumbnail": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_1_RGB-150x150.jpg",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_1_RGB-300x155.jpg",
+            "medium-width": 300,
+            "medium-height": 155,
+            "medium_large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_1_RGB-768x397.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 397,
+            "large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_1_RGB-1024x530.jpg",
+            "large-width": 1024,
+            "large-height": 530,
+            "1536x1536": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_1_RGB.jpg",
+            "1536x1536-width": 1535,
+            "1536x1536-height": 794,
+            "2048x2048": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_1_RGB.jpg",
+            "2048x2048-width": 1535,
+            "2048x2048-height": 794
+          }
+        },
+        {
+          "ID": 1863,
+          "id": 1863,
+          "title": "A_2_2_RGB",
+          "filename": "A_2_2_RGB.jpg",
+          "filesize": 228760,
+          "url": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_2_RGB.jpg",
+          "link": "https://hongiksidi.com/gs/2025-admin/works2025/a-2/a_2_2_rgb/",
+          "alt": "",
+          "author": "6",
+          "description": "",
+          "caption": "",
+          "name": "a_2_2_rgb",
+          "status": "inherit",
+          "uploaded_to": 1860,
+          "date": "2025-12-29 18:52:14",
+          "modified": "2025-12-29 18:52:14",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://hongiksidi.com/gs/2025-admin/wp-includes/images/media/default.png",
+          "width": 1535,
+          "height": 794,
+          "sizes": {
+            "thumbnail": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_2_RGB-150x150.jpg",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_2_RGB-300x155.jpg",
+            "medium-width": 300,
+            "medium-height": 155,
+            "medium_large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_2_RGB-768x397.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 397,
+            "large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_2_RGB-1024x530.jpg",
+            "large-width": 1024,
+            "large-height": 530,
+            "1536x1536": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_2_RGB.jpg",
+            "1536x1536-width": 1535,
+            "1536x1536-height": 794,
+            "2048x2048": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_2_RGB.jpg",
+            "2048x2048-width": 1535,
+            "2048x2048-height": 794
+          }
+        },
+        {
+          "ID": 1864,
+          "id": 1864,
+          "title": "A_2_3_RGB",
+          "filename": "A_2_3_RGB.jpg",
+          "filesize": 209272,
+          "url": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_3_RGB.jpg",
+          "link": "https://hongiksidi.com/gs/2025-admin/works2025/a-2/a_2_3_rgb/",
+          "alt": "",
+          "author": "6",
+          "description": "",
+          "caption": "",
+          "name": "a_2_3_rgb",
+          "status": "inherit",
+          "uploaded_to": 1860,
+          "date": "2025-12-29 18:52:14",
+          "modified": "2025-12-29 18:52:14",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://hongiksidi.com/gs/2025-admin/wp-includes/images/media/default.png",
+          "width": 1535,
+          "height": 794,
+          "sizes": {
+            "thumbnail": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_3_RGB-150x150.jpg",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_3_RGB-300x155.jpg",
+            "medium-width": 300,
+            "medium-height": 155,
+            "medium_large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_3_RGB-768x397.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 397,
+            "large": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_3_RGB-1024x530.jpg",
+            "large-width": 1024,
+            "large-height": 530,
+            "1536x1536": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_3_RGB.jpg",
+            "1536x1536-width": 1535,
+            "1536x1536-height": 794,
+            "2048x2048": "https://hongiksidi.com/gs/2025-admin/wp-content/uploads/2025/12/A_2_3_RGB.jpg",
+            "2048x2048-width": 1535,
+            "2048x2048-height": 794
+          }
+        }
+      ],
+      "videolink": false,
+      "descriptionkr": "“툭… 툭… 토도도독!”\r\n짜릿한 입질의 순간, 아직 혼자만 즐기고 계신가요? 낚시의 설렘과 이야기, 이제 툭툭에서 함께 나눠보세요.",
+      "descriptionen": "“Tap… tap… splash!”\r\nAre you still enjoying the thrill of the catch alone? Share the excitement and stories of fishing together now on TookTook.",
+      "studentinfo": [
+        {
+          "artistkr": "민솔",
+          "artisten": "Sol Min",
+          "instagramid": "",
+          "email": "sol@toss.im"
+        }
+      ]
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025/1860",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/works2025"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/types/works2025"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/media?parent=1860"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "classroom",
+          "embeddable": true,
+          "href": "https://hongiksidi.com/gs/2025-admin/wp-json/wp/v2/classroom?post=1860"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

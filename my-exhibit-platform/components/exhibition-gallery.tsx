@@ -679,7 +679,7 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
               <div className="p-2 sm:p-4 min-w-0 flex-1 flex flex-col justify-between bg-white dark:bg-[#111827]">
                 <div>
                   <p className="text-slate-600 dark:text-gray-400 text-[8px] sm:text-xs leading-tight line-clamp-2 mb-2 sm:mb-3">
-                    {item.headline || `${item.university} ${item.department} 공식 전시 아카이브`}
+                    {item.curationIntro || item.description || item.headline || `${item.university} ${item.department} 공식 전시 아카이브`}
                   </p>
 
                   <div className="flex flex-wrap gap-1 mb-2 sm:gap-1.5 sm:mb-3">

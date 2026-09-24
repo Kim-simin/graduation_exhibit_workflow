@@ -1,0 +1,447 @@
+수님과 박윤형 교수님이 영미권 유학 현장에서 얻은 배움을 바탕으로, ‘나의 디자인을 어떻게 더 멀리 데려갈 것인가’에 대한 이야기를 나눠봅니다.",explanationEn:"Design expands when it encounters new scenes. Based on their experiences and lessons learned while studying in the English-speaking world, Professors Yuseon Park and Yunhyung Park share their thoughts on how to take one’s design further."},{number:8,title:"나는 언제부터 내가 되기로 했을까?",engTitle:"Since when did I decide to be me?",name:"박요셉 Joseph Park",time:"12/3(수) 12:30-14:00",explanationKr:"‘나’로부터 작업을 시작하는, 저만의 작업 방식. 그리고 ‘나’를 알아가는 도구로써 자아실현하기에 관한 이야기를 저의 그림들과 함께 이야기를 나눠 보고자 합니다.",explanationEn:"Introduce my own way of working, starting from ‘I’. And I’d like to talk about self-realization with my paintings as a tool to get to know myself."},{number:10,title:"사진작가로 살아가기",engTitle:"Living as a Photographer",name:"윤정미 Jeongmee Yoon",time:"12/3(수) 18:00-19:30",explanationKr:"졸업 후, 사진 작가로 살아가는 방법에 대해 이야기합니다.",explanationEn:"Lecture on how to live as a photographer after graduation."},{number:11,title:"시각적 내러티브와 자기 서사",engTitle:"Visual Narrative and Self-Narrative",name:"김효은 Hyoeun Kim",time:"12/4(목) 10:00~11:30",explanationKr:"개인의 서사를 발견하고 이를 시각적 언어로 풀어내는 과정을 다룹니다. 이미지가 가진 소통 가능성을 탐색하고, 다양한 표현방식과 내러티브를 구축하는 과정에 대해 이야기합니다.",explanationEn:"This lecture explores the process of discovering personal narratives and expressing them through visual language. It explores the communicative potential of images and explores the process of constructing diverse forms of expression and narrative."},{number:12,title:"커리어 빌딩 - 꾸준히 성장하는 디자이너의 전략적 태도",engTitle:"Career Building – The Strategic Attitude of a Consistently Growing Designer",name:"허민재 Minjae Huh",time:"12/4(목) 12:30~14:00",explanationKr:"브랜딩 스튜디오 더블디, 비애티튜드 샵, 그리고 누핍의 크리에이티브 디렉터. 이러한 여러 수식어가 생기기까지 허민재 교수님의 커리어패스, 디자인 IP의 힘에 대해 이야기합니다.",explanationEn:"Founder of branding studio Double D, head of BeAttitude Shop, and creative director of Nupip — Professor Minjae Heo shares her career path and insights on the power of design IP, tracing how these multiple titles came to define her journey as a designer."},{number:13,title:"드로잉 워크숍 : 무나리가 물을 그리는 특별한 방법",engTitle:"Drawing Workshop: Munari's Special Way of Drawing Water",name:"송영성 Yungsung Song",time:"12/4(목) 15:00-16:30",explanationKr:"물은 땅 위를 어떻게 흐르고 어떻게 형태를 만들어 갈까? 디자인의 거장 브루노 무나리가 하버드 대학에서 진행한 전설적인 드로잉 워크숍을 다함께 체험해 봅니다.",explanationEn:"How does water flow over the land and shape its forms? Let’s all take part in the drawing workshop conducted at Harvard University by the master of design, Bruno Munari."},{number:17,title:"디자인 스튜디오 A to Z",engTitle:"Design Studio: A to Z",name:"서정민 Jeongmin Seo",time:"12/5(금) 13:30-15:00",explanationKr:"활발하게 활동하고 있는 디자인 스튜디오의 A부터 Z까지. 시작부터 성장, 갈등, 고민, 미래 등 디자인 스튜디오로 살아가는 것에 대해 실질적이고 다양한 이야기를 들어봅니다.",explanationEn:"Get the full picture of a thriving design studio, from A to Z. We’ll dive into the practical and varied realities of life as a design studio, covering everything from startup and growth to daily conflicts, ongoing challenges, and future visions."},{number:19,title:"외부 게임 디자이너와 함께 ‘게임디자이너로 취업하기’",engTitle:"Getting a Job as a Game Designer: A Session with an External Game Designer",name:"김현석 Hyunsuk Kim",time:"12/5(금) 18:00~19:30",explanationKr:"게임 디자이너로 취업하고 싶지만, 어디서부터 시작해야 할지 막막한가요? 메이플스토리와 배틀그라운드의 현직 디자이너가 직접 들려주는 실제 취업 스토리와 준비 노하우!",explanationEn:"Do you want to become a Game Designer but feel lost about where to begin? Get the real hiring stories and job preparation secrets straight from current designers who worked on MapleStory and PUBG: BATTLEGROUNDS!"}],studentWorkshop:[{number:1,title:"바이브 코딩을 활용한 인터랙티브 웹 콘텐츠 제작",engTitle:"Interactive Web Content Creation with Vibe Coding",name:"이승훈 SeungHun Lee",time:"12/1(월) 12:30-14:00",explanationKr:"바이브 코딩과 AI 도구를 활용하여 키보드, 마우스, 웹캠 등 다양한 입력 신호로 반응하는 인터랙티브 웹 콘텐츠를 직접 만들어봅니다. 팀별로 간단한 웹 게임을 기획하고 제작하는 실습형 워크숍입니다.",explanationEn:"Learn to create interactive web content that responds to keyboard, mouse, and webcam inputs using vibe coding and AI tools. A hands-on workshop where teams plan and build simple web games together."},{number:15,title:"어쩌다 오셨나요?",engTitle:"What brings you here?",name:"E반 (김재연 · 성연우 · 추예림 · 한지헌 · 이승주 · 한재원)",time:"12/4(목) 20:00-21:30",explanationKr:"어쩌다 이런 자리에 오셨나요? 저희도 잘 모르겠습니다… 모두가 자랑스러운 성공에 대해 이야기할 때 실패에 대해 솔직하게 털어놓는 이야기! 4학년 졸업전시를 하면서 나올 수 있는 모든 실패담을 전해드립니다. 이중에 누가누가 더 바보일까요?",explanationEn:"How did you end up in a place like this? Honestly, we’re not so sure either… While everyone talks proudly about their successes, we’re here to share our honest stories of failure. Through our senior graduation exhibition, we present every possible mistake we could make. So—who do you think is the bigger fool among us?"},{number:16,title:"프린트실과 함께하는 리소 mini zine 워크숍",engTitle:"Riso Print mini zine Workshop with Printshop",name:"홍익시디 프린트실 Hongiksidi Printshop",time:"12/5(금) 10:00-12:00",explanationKr:"리소 인쇄로 작은 진을 만드는 워크숍입니다. 각자 자유로운 주제로, 한 장의 종이를 자르거나 접어 작은 진의 형태로 완성합니다.",explanationEn:"A risograph workshop for making mini zines. Choose your own theme, and complete a small zine by cutting and folding a single sheet of paper."}],invitation:[{number:2,title:"3D 아트워크: 케이팝의 다음 레벨을 디자인하다",engTitle:"3D Artwork: Designing the Next Level of K-Pop",name:"정현균 Ohiomood",time:"12/1(월) 15:00~17:00",explanationKr:"K-pop 업계에서 주목받는 3D아티스트 오하이오무드가 들려주는 아이돌 세계관 시각화 과정과 창작 철학. 상업 디자인과 작가적 정체성 사이에서 자신만의 길을 찾아가는 현실적인 이야기를 공유합니다.",explanationEn:"Hear from Ohiomood, the 3D Artist gaining attention in the K-pop industry, as sharing the process of visualizing idol worldviews and creative philosophy. We'll also discuss the realistic journey of a personal path between commercial design and artistic identity."},{number:3,title:"쌀밥과 현미밥, 그리고 AI",engTitle:"Not drawing but invocating",name:"김영준 Youngjun Kim",time:"12/2(화) 10:00~12:00",explanationKr:"어쨌든 먹어야 하는 일상의 밥처럼, 허락도 없이 옆자리에 앉은 AI에게 마지못해 손을 내밉니다. 그런데 생각보다 맛있기도 건강에 좋기도 합니다. 이 강연은 시각예술 작가의 눈으로 바라본 AI 작업에 대한 관찰 기록을 들려드립니다.",explanationEn:"Like the daily necessity of eating, we grudgingly extend a hand to AI, which has seated itself next to us without permission. We try to learn how to coexist. This lecture shares an artist's observation record of AI through the eyes of a visual art creator."},{number:9,title:"책, 독립, 그리고 균형",engTitle:"Books, Independence, and Balance",name:"이기준 Kijoon Lee",time:"12/3(수) 15:00-17:00",explanationKr:"북디자이너로서 스튜디오에서 독립까지, 무엇이 다르고 어떤 것들을 해야 할까? 나아가 어떻게 디자이너로서 삶의 균형을 이루며 지속적으로 작업해나갈 수 있을지 이야기해 봅니다.",explanationEn:"What changes and what steps must a book designer take when transitioning from a studio position to working independently? We'll discuss how to achieve life balance as a designer and sustain a continuous practice."},{number:14,title:"잡음과 신호",engTitle:"Noise and Signal",name:"인더그래픽스 Inthegraphics",time:"12/4(목) 17:30~19:30",explanationKr:"크리에이티브 스튜디오 인더그래픽스의 대표, 이정인과 차상우가 창작에 대한 태도와 생각들을 이야기합니다.",explanationEn:"Jeongin Lee and Sangwoo Cha, the visionary leaders behind ‘Inthegraphics’, they share their attitudes and philosophies on the creative process and the nature of making."},{number:18,title:"일러스트로 확장하는 가능성",engTitle:"Expanding Possibilities through Illustration",name:"장띵(장동혁) DDING",time:"12/5(금) 15:00~17:00",explanationKr:"개인전부터 북커버, 앨범커버, 브랜드 협업까지 다양한 실무 경험을 통해 일러스트레이션의 세계가 어떻게 확장될 수 있는지 이야기합니다.",explanationEn:"Explore how the world of illustration can expand through diverse professional experiences, ranging from solo exhibitions to book covers, album covers, and brand collaborations."}]},ProgramPage=()=>{const[e,r]=reactExports.useState(null),[a,n]=reactExports.useState(null),[o,l]=reactExports.useState("hongsitalk"),c=d=>{const P=["invitation","hongsitalk","studentWorkshop"];for(const de of P)if((PROJECT_DATA[de]??[]).some(me=>me.number===d))return de;return null},E=d=>{const P=c(d);if(P&&P!==o){r(null),n(d),l(P);return}r(d)};return reactExports.useEffect(()=>{if(a==null)return;const d=requestAnimationFrame(()=>{r(a),n(null)});return()=>cancelAnimationFrame(d)},[o,a]),reactExports.useEffect(()=>{window.scrollTo(0,0)},[]),jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsx(Header,{}),jsxRuntimeExports.jsx(S$6.ProgramPageContainer,{children:jsxRuntimeExports.jsxs(S$6.ProgramSectionContainer,{children:[jsxRuntimeExports.jsx(S$6.TimeTable,{children:jsxRuntimeExports.jsx(S$6.TimeTableSticky,{children:jsxRuntimeExports.jsx(TimeLine,{onClick:E})})}),jsxRuntimeExports.jsxs(S$6.TextSection,{children:[jsxRuntimeExports.jsxs(S$6.SectionButtonWrapper,{children:[jsxRuntimeExports.jsx(S$6.SectionButton,{$active:o==="invitation",onClick:()=>{l("invitation"),r(null)},children:"연사초청"}),jsxRuntimeExports.jsx(S$6.SectionButton,{$active:o==="hongsitalk",onClick:()=>{l("hongsitalk"),r(null)},children:"홍시톡톡"}),jsxRuntimeExports.jsx(S$6.SectionButton,{$active:o==="studentWorkshop",onClick:()=>{l("studentWorkshop"),r(null)},children:"학생 주도 워크숍"})]}),jsxRuntimeExports.jsx(S$6.ProgramList,{children:(PROJECT_DATA[o]??[]).map(d=>jsxRuntimeExports.jsx(ProgramBox,{number:d.number,title:d.title,engTitle:d.engTitle,name:d.name,time:d.time,explanationKr:d.explanationKr,explanationEn:d.explanationEn,clickedNumber:e},d.number))})]})]})}),jsxRuntimeExports.jsx(Footer,{})]})},S$6={ProgramPageContainer:dt.section`
+    display: flex;
+    width: 100vw;
+    padding: 10rem 3rem 10rem;
+
+    @media (max-width: 900px) {
+      padding: 4rem 1.5rem 10rem;
+    }
+  `,ProgramSectionContainer:dt.section`
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+
+    width: 100%;
+    column-gap: 2rem;
+    align-items: start;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+  `,TimeTable:dt.section`
+    grid-column: 1 / 5;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 100%;
+
+    @media (max-width: 900px) {
+      grid-column: 1 / -1;
+      width: 100%;
+    }
+  `,TimeTableSticky:dt.div`
+    position: sticky;
+    top: 1rem; /* 헤더 고려 */
+    align-self: flex-start;
+    width: 100%;
+  `,TextSection:dt.section`
+    grid-column: 5 / 7;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+
+    height: fit-content;
+
+    border: 2.5px solid;
+    border-color: ${({theme:e})=>e.colors.brown1};
+
+    @media (max-width: 900px) {
+      grid-column: 1 / -1;
+      width: 100%;
+
+      border: 1.75px solid;
+    }
+  `,SectionButtonWrapper:dt.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    width: 100%;
+    height: 4rem;
+    border-bottom: 2px solid;
+    border-color: ${({theme:e})=>e.colors.brown1};
+
+    @media (max-width: 900px) {
+      height: 3.5rem;
+      border-bottom: 1.75px solid;
+    }
+  `,SectionButton:dt.button`
+    background-color: ${({$active:e,theme:r})=>e?r.colors.brown2:r.colors.white};
+    color: ${({$active:e,theme:r})=>e?r.colors.white:r.colors.brown1};
+    cursor: pointer;
+    ${({theme:e})=>e.fonts.Body1};
+
+    &:hover {
+      background-color: ${({$active:e,theme:r})=>e?r.colors.brown3:r.colors.brown4};
+    }
+
+    text-align: left;
+    padding-left: 1rem;
+
+    @media (max-width: 900px) {
+      ${({theme:e})=>e.fonts.Body4};
+    }
+  `,ProgramList:dt.div`
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    color: ${({theme:e})=>e.colors.brown1};
+  `},CLASS_META=[{id:"a",classLetter:"A",displayName:"Village A",room:"R721",title:{ko:"종이비행기를 날리는 17가지 방법",en:"17 Ways to Take Off"},professor:{ko:"안효진",en:"Hyojin An"},statement:{ko:"각자의 궤적과 자국이 남은 17장의 종이. 그 종이들은 저마다 다른 방식으로 접히고 설계된 17대의 종이비행기가 되어, 이제 각자의 하늘로 날아오를 준비를 합니다. 우리의 행선지는 어디일까요? 학부에서의 시간 동안 겪었던 모든 과정과 배움을 담아, 우리들의 종이비행기는 지금 이 순간 활주로 위에 올랐습니다.3, 2, 1—Take off!",en:"Seventeen sheets of paper, each marked with its own path and trace. Each one has been folded and designed in a unique way, becoming seventeen paper airplanes now ready to take off into their own skies. Where will our destinations be? Carrying all the experiences and lessons we’ve gained throughout our undergraduate years, our paper airplanes now stand on the runway, ready for flight. 3, 2, 1—Take off!"}},{id:"b",classLetter:"B",displayName:"Village B",room:"R1",title:{ko:"제너레이티브 퓨처: 가능성 위의 우리들",en:"Generative Future"},professor:{ko:"윤재영",en:"Jae Young Yun"},statement:{ko:`Generative Future는 최소한의 규칙과 최대한의 가능성 속에서 13팀이 만들어낸 실험의 장이다. AI, XR, 다크패턴 등 확장된 UX/UI의 언어를 탐구하며, 익숙한 포뮬라를 벗어나 새로운 경험의 미래를 제안한다. 막연했던 상상에 형태를 더하고, 기술의 흐름에 인간적인 맥락을 연결하며 아직 오지 않은 시간을 경험 가능한 형태로 전환한다. 형체를 갖추지 않은 가능성들을 통해, 우리는 미래를 이해하는 새로운 방식들을 실험한다.
+`,en:`Generative Future is an experimental space built on minimal rules and maximal possibilities. Thirteen teams explore the evolving language of UX/UI—including AI, XR, and dark patterns—escaping from familiar formulas to propose a new experience of the future. We give form to abstract imaginations, weave human context into technology, and transform the time yet to come into tangible experiences. Through possibilities still taking shape, we experiment with new ways of understanding the future.
+`}},{id:"c",classLetter:"C",displayName:"Village C",room:"R720",title:{ko:"동작과 파편",en:"Making Openings"},professor:{ko:"허민재",en:"Minjae Huh"},statement:{ko:"우리는 고유한 언어와 감각으로, 스스로의 논리에 따라 경계를 뚫고 자국을 남기는 주체적 동작을 통해 자신을 정의하는 가장 확실한 조각을 얻는다. 각자는 저마다의 리듬으로 구멍을 내고 흔적을 새긴다. 그 과정에서 뚫리고 남은 빈자리는 또 다른 형태의 조형 언어로 작동하며, 새로운 시각적 가능성을 드러낸다. 뚫림으로 인해 흩어진 파편들은 개별적으로 존재하면서도, 다시 모여 하나의 거대한 집단적 이미지를 이룬다. 이 리듬 속에서 우리는 다층적인 움직임과 흔적이 어우러진 또 하나의 완전한 형태를 마주한다.",en:`We move with our own language and sensibility, piercing boundaries and leaving marks through our own logic. Each of us makes openings and traces in unique rhythms. The spaces left behind become another visual language, revealing new possibilities. The scattered fragments exist on their own yet come together as one collective image. Within this rhythm, we encounter a different kind of wholeness shaped by movement and trace.
+`}},{id:"d",classLetter:"D",displayName:"Village D",room:"R719",title:{ko:"클루드 뉴비스",en:"Clued Newbies"},professor:{ko:"서정민",en:"Jeongmin Seo"},statement:{ko:`인터넷 초창기에 통신망에 대한 지식이 없어 모든 글을 대문자로 쓰던 서툰 초보자를 클루리스 뉴비라고 불렀다. 우리 역시 처음에는 어느 방향으로 나아가야 할지 알 수 없어 헤매던 클루리스 뉴비였지만, 학교 생활이라는 여정 속에서 자신만의 단서를 꾸준히 찾아왔다. 배움과 탐색의 과정을 거친 우리는 이제 충분한 단서를 얻고 시야를 넓힌 클루드 뉴비가 되었다. 단서가 주는 확신과 초보자의 무한한 가능성을 모두 품고, 우리는 이제 사회라는 새로운 무대로 힘차게 나아간다.
+`,en:"In the early days of the Internet, inexperienced beginners who typed all their messages in capital letters were called Clueless Newbies. We, too, once wandered without direction, but through our journey in school, we steadily discovered our own clues. Through learning and exploration, we have become Clued Newbies, carrying the confidence gained from those clues and the boundless potential of beginners, as we step boldly onto a new stage in society."}},{id:"e",classLetter:"E",displayName:"Village E",room:"R724",title:{ko:"안녕 (　　　　　　　　)",en:"AHNnyeong (　　　　　　　　)"},professor:{ko:"안병학",en:"Byunghak Ahn"},statement:{ko:"사람들은 무엇을 기대하며 이 전시장의 문을 열까? 그들에게 우리는 어떤 목소리로, 어떻게 인사를 건네야 할까? 이 전시는 자신이 안녕하기를 욕망함과 동시에, 오늘을 사는 모두가 안녕한지 반문하는 시도에 관한 이야기다. 질문으로 던진 (　　　　　　　　)은 무언가로 특정하기 어려울지도 모른다. 그렇기에 우리는 더욱, 그 여백이 날 것으로 남기를 바란다. 우리의 (　　　　　　　　)가 누군가에게는 욕망을 돌아보는, 또 누군가에게는 지워졌던 질문을 떠올리는 계기로 작동하기를 기대하면서… “안녕 (　　　　　　　　)”",en:"What do people expect when they open the door to this exhibition space? With what voice, how should we greet them? This exhibition is about the desire to be well oneself, while simultaneously questioning whether everyone living today is well. The (　　　　　　　　) thrown out as a question may be difficult to pin down as something specific. That is precisely why we hope that space remains raw. Hoping our (　　　　　　　　) may serve as a catalyst—for some, to reflect on their desires; for others, to recall questions long forgotten... “AHNnyeong (　　　　　　　　)"}},{id:"f",classLetter:"F",displayName:"Village F",room:"R718",title:{ko:"우리는 말한다",en:"Designer Speaks"},professor:{ko:"박유선",en:"Yuseon Park"},statement:{ko:`우리는 디자이너다. 디자이너는 각자의 언어를 선택해 발화한다. 24명의 작업자들은 개별 언어로 사고하고, 말하며, 반응한다. 그 목소리들이 하나의 대화가 되어 전시장에 모였다. Designer Speaks는 졸업이라는 이정표 위에서 우리가 남긴 첫 문장이자, 앞으로 이어질 더 큰 대화의 시작점이다. 
+`,en:"We are designers. Designers choose their own languages to speak. Twenty-four creators think, speak, and respond in their individual ways. Their voices come together as one conversation in this exhibition. Designer Speaks marks the first sentence we leave upon the milestone of graduation—and the beginning of a greater dialogue yet to unfold."}},{id:"g",classLetter:"G",displayName:"Village G",room:"R726",title:{ko:"출발역, 종착역, 환승역",en:"Departure, Arrival, and Transfer"},professor:{ko:"김예니",en:"Yeni Kim"},statement:{ko:"지금, 열차가 들어오고 있습니다. 한 역을 지나 다음 여정으로 향하는 우리는, 잠시 머물러 지난 시간을 돌아보고, 또다시 출발합니다. 영원한 끝맺음이 아닌 새로운 시작의 플랫폼에서 우리는 무엇을 들고 무엇을 두고 가게 될까요. 설렘과 떨림을 안고 노란 안전선 밖으로 발을 내딛습니다. 이번 졸업전시는 우리의 출발역이자 마지막 정차역입니다. ",en:"The train is approaching. As we pass one station and move toward the next journey, we pause for a moment to look back on the paths we’ve taken—and once again, we set off. On this platform of a new beginning, not an eternal ending, what will we take with us and what will we leave behind? With excitement and trepidation, we step beyond the yellow safety line. This graduation exhibition marks both our departure and our final stop."}},{id:"h",classLetter:"H",displayName:"Village H",room:"R727",title:{ko:"디핑소스 : 영감 레시피",en:"Dipping Sauce : Deep in Source"},professor:{ko:"박요셉",en:"Joseph Park"},statement:{ko:"매콤새콤 칠리소스? 고소짭짤 갈릭소스? 무엇을 찍어 먹을까요, 골라보세요! 가지각색 작가들이 영감의 소스를 깊게 파고들어 각자의 레시피를 완성했습니다. 기억을 섞고, 감정을 끓이고, 온도를 달리 만든 창작의 맛에 푹 담겨 보세요!",en:"Spicy-sweet chili? Savory garlic? What will you dip into today? Each artist dives deep into their own creative source, crafting a recipe that reflects their unique flavor. Mixing memories, simmering emotions, and playing with different temperatures, they’ve created a feast of imagination. Take a dip—taste, explore, and find your favorite flavor of creation."}},{id:"i",classLetter:"I",displayName:"Village I",room:"R711",title:{ko:"오프 더 월",en:"Off the Wall"},professor:{ko:"이인수",en:"Insu Lee"},statement:{ko:"Off the wall은 엉뚱하고 독창적인 것을 표현할 때 쓰는 관용구다. 서로 다른 매체를 다루는 창작자들이 모여 하나의 전시를 만든다. 완성된 작품뿐만 아니라 스케치와 기록, 시행착오의 흔적까지, 창작의 과정이 하나의 서사로 펼쳐진다. 관람객과 작가를 가르는 제4의 벽을 부수고, 네모난 틀 밖으로 튀어나오는 창작의 몸짓들. 컷 밖으로, 화면 너머로, 벽에서 떨어져 나온 것들이 공간을 점유하고 시선을 교란한다. 틀에 갇힌 일상의 벽에서 벗어나, 개성 있는 창작자들의 세계 속으로 빠져들어 보자.",en:"Off the wall is a phrase used to describe something unusual, creative, and original. Creators from diverse media come together to build our exhibition. Not only do the finished works take the spotlight, but the stories behind creation also reveal the traces of trial and error that we’ve traveled. By breaking the fourth wall, these creative gestures surge off the wall to occupy space and reframe perception. Step away from the walls and travel in the worlds of our distinctive creations"}},{id:"j",classLetter:"J",displayName:"Village J",room:"R725",title:{ko:"쥬이시, 젤리, 잼!",en:"Juicy, Jelly, Jam!"},professor:{ko:"김효은",en:"Hyoeun Kim"},statement:{ko:`J반은 각자의 관심사를 탐구하고, 그에 맞는 시각언어를 개발한다. 그 과정에서 우리는 과즙이 터져나오는 과일처럼 무르익고, 말랑말랑한 젤리처럼 유연해지고, 다양한 재료를 녹여 만든 잼처럼 어우러진다. 오래오래 졸여 달콤하게 버무려진 20가지 이야기를 준비했으니, 식빵에 발라서 맛있게 드시기를!
+`,en:`‘J’ class explores their interests and develops visual language that corresponds to them. In the process, we become ripe like ‘J’uicy fruit, flexible like ‘J’elly, and blend like ‘J’am made by various ingredients. We have prepared 20 stories that have been boiled down for a long time and sweetly mixed together, so hope you enjoy it by putting it on the bread!
+`}},{id:"k",classLetter:"K",displayName:"Village K",room:"R716",title:{ko:"러닝 타임: 2,102,400분",en:"Runningtime: 2,102,400 minutes"},professor:{ko:"김현석",en:"Hyunsuk Kim"},statement:{ko:`2,102,400. 이 숫자는 우리가 시각 언어를 구축해 온 4년이라는 시간이다. 2,102,400분 간 제작된 수많은 컷들은 하나의 시퀀스로 엮이고, 각기 다른 17개의 서사로 탄생하였다. 2,102,400분이 지나면, 엔딩 크레딧이 오른다. 새로운 막의 시작과 함께.
+`,en:`2,102,400. This figure signifies the four years we spent constructing the visual language. Over these 2,102,400 minutes, countless ‘cuts’ were produced, woven into ‘sequences’, and delivered as 17 narratives. Once the 2,102,400 minutes pass, the end credits will roll, with the start of a new act.
+`}},{id:"l",classLetter:"L",displayName:"Village L",room:"R717",title:{ko:"창문에서 바라보면",en:"Through the Window"},professor:{ko:"김주신",en:"Jusin Kim"},statement:{ko:`길을 걷다 우리를 잠시 멈춰 서게 하는 건, 창문 너머 분명 무언가가 일어나고 있다는 사실 때문이 아닐까요? 그 안에서 당신은 주인공으로, 스쳐가는 단역으로, 혹은 조용한 관찰자로 등장할 수도 있습니다. 717의 창문들 속 수많은 서사들은, 누군가의 시선 속에서 하나의 야경을 이루고 있습니다.
+`,en:`While walking down the street, the simple thought that something is going on beyond the window might be what makes us pause for a moment. Inside, you might appear as the main character, a transient extra, or a quiet observer. Within the windows of 717, countless stories come together through someone’s gaze, forming a nightscape.
+`}},{id:"m",classLetter:"M",displayName:"Village M",room:"R1",title:{ko:"틀을 넘어서는 고유의 궤적",en:"Unframed Traces"},professor:{ko:"윤정미",en:"Jeongmee Yoon"},statement:{ko:"사진은 경계를 규정하지 않는 자유로운 매체이다. 그 속에서 우리는 각자의 세계를 탐색하고 자신만의 시선으로 세계를 재해석한다. 4년 동안 쌓아온 경험과 성장의 흔적, 그리고 독창적 감각을 통해 제한 없는 사진의 세계 속에서 각자의 개성이 만들어낸 고유한 궤적을 드러낸다. 틀을 넘어 자유롭게 확장된 시선들이 모여, 우리가 걸어온 길과 앞으로 나아갈 길을 함께 비춘다.",en:"Photography is a medium that refuses to be confined by boundaries. Within its freedom, we explore our own worlds and reinterpret them through individual perspectives. This exhibition unveils the traces of four years of experience, growth, and creative vision—each shaped by the distinctive sensibility of its artist within the boundless realm of photography. As these unframed perspectives converge, they illuminate both the paths we have walked and the ones we are yet to take."}},{id:"n",classLetter:"N",displayName:"Village N",room:"R722",title:{ko:"숲",en:"Forest"},professor:{ko:"송영성",en:"Yungsung Song"},statement:{ko:"숲은 다양한 나무들이 한데 모여, 하나의 생태를 이루는 공간이다. 각자의 결과 속도를 지닌 나무처럼, 우리는 저마다의 방식으로 감정과 이야기를 표현하는 작가로 자라난다. 다양한 결이 맞닿으며 서로의 색을 비춘다. 각자의 형태로 존재하지만, 그 다름이 어우러져 하나의 풍경을 만든다. 그렇게 이 숲은, 모두의 시간이 스며든 결실이자, 새로운 작업을 향한 출발점이 된다.",en:"Forest is a space where different trees come together to form a living ecosystem. Like trees growing at their own pace, each artist nurtures a unique way of expressing emotion and story. Distinct textures meet and reflect one another, their differences weaving into a shared landscape. This forest stands as the culmination of our time and growth—an ardent beginning toward the works that lie ahead."}},{id:"o",classLetter:"O",displayName:"Village O",room:"R723",title:{ko:"(이어지는 원천",en:"(Ongoing source"},professor:{ko:"박윤형",en:"Yun Park"},statement:{ko:"«(Ongoing source: (이어지는 원천»은 생성형 인공지능이 창작의 주체로 등장한 시대에 예술과 디자인이 놓인 새로운 환경을 배경으로 한다. 본 전시는 창작을 ‘서로가 개입하고 공유할 수 있는 열린 흐름’으로 전환하는 시도이다. 우리는 스스로의 탐구와 실험을 기록하고 나누며, 모두가 서로의 작업에 영향을 주고받는 집단적 교류의 장을 지향한다. 궁극적으로 이곳은 오픈 소스 문화를 창작의 영역으로 확장하여, 작업을 폐쇄된 산출물이 아닌 공유 가능한 과정으로 보여주는 원천이 된다.",en:"In an era where generative AI has emerged as a creative agent, this exhibition explores how art and design adapt to new conditions of creation. «(Ongoing source» transforms making into an open flow, inviting mutual intervention and shared authorship. Through archiving and exchanging experiments, we envision a collective space where ideas evolve through interaction. Like open-source culture, it expands creation from a closed outcome into a shared process, opening new paths for collaboration."}}],ClassCard=({item:e,imageSrc:r,onClick:a})=>jsxRuntimeExports.jsxs(S$5.Card,{type:"button",onClick:a,children:[jsxRuntimeExports.jsxs(S$5.PreviewTitle,{children:["Village ",e.classLetter]}),jsxRuntimeExports.jsx(S$5.PreviewMedia,{children:r?jsxRuntimeExports.jsx(S$5.PreviewImg,{src:r,alt:`Village ${e.classLetter} classboard`}):jsxRuntimeExports.jsx(S$5.PreviewFallback,{children:jsxRuntimeExports.jsx(LoadingBar,{})})}),jsxRuntimeExports.jsxs(S$5.Wrapper,{children:[jsxRuntimeExports.jsxs(S$5.MainText,{children:[jsxRuntimeExports.jsx(S$5.KoTitle,{children:e.title.ko}),jsxRuntimeExports.jsx(S$5.EnTitle,{children:e.title.en})]}),jsxRuntimeExports.jsxs(S$5.SubText,{children:[jsxRuntimeExports.jsxs(S$5.Room,{children:[" ",e.room]}),jsxRuntimeExports.jsxs(S$5.ProfessorWrapper,{children:[jsxRuntimeExports.jsxs(S$5.KoProfessor,{children:["Prof. ",e.professor.ko]}),jsxRuntimeExports.jsx(S$5.EnProfessor,{children:e.professor.en})]})]})]})]}),S$5={Card:dt.button`
+    border: 2.5px solid ${({theme:e})=>e.colors.brown1};
+
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+    color: none;
+
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+
+    /* ✅ 인터랙션 */
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    @media (max-width: 900px) {
+      border-width: 1.75px;
+    }
+  `,PreviewTitle:dt.div`
+    ${({theme:e})=>e.fonts.Body2};
+    color: ${({theme:e})=>e.colors.white};
+    background-color: ${({theme:e})=>e.colors.brown1};
+    padding: 0.6rem 0.6rem;
+    width: 100%;
+    text-align: center;
+
+    @media (max-width: 900px) {
+      ${({theme:e})=>e.fonts.Body4};
+    }
+  `,PreviewMedia:dt.div`
+    width: 100%;
+    border-top: 2px solid ${({theme:e})=>e.colors.brown1};
+    border-bottom: 2px solid ${({theme:e})=>e.colors.brown1};
+    overflow: hidden;
+
+    @media (max-width: 900px) {
+      border-top-width: 1.5px;
+      border-bottom-width: 1.5px;
+    }
+  `,PreviewImg:dt.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  `,PreviewFallback:dt.div`
+    width: 100%;
+    min-height: 14rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ${({theme:e})=>e.fonts.Body2};
+    color: ${({theme:e})=>e.colors.brown1};
+  `,TextArea:dt.div`
+    display: flex;
+  `,Wrapper:dt.div`
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+  `,LeftTextWrapper:dt.div`
+    display: flex;
+  `,RightTextWrapper:dt.div`
+    display: flex;
+    flex-direction: column;
+  `,MainText:dt.div`
+    min-width: 0;
+    padding: 1rem 1rem;
+    @media (max-width: 900px) {
+      padding: 0.5rem 0.5rem;
+    }
+  `,SubText:dt.div`
+    min-width: 0;
+    margin-top: 0.8rem;
+    display: flex;
+    gap: 0.5rem;
+    border-top: 1px solid;
+    border-color: ${({theme:e})=>e.colors.brown1};
+
+    @media (max-width: 900px) {
+      gap: 0;
+      padding: 0.5rem 0;
+    }
+  `,KoTitle:dt.h1`
+    ${({theme:e})=>e.fonts.Body1};
+    font-weight: 700;
+    margin: 0;
+    color: ${({theme:e})=>e.colors.brown1};
+
+    @media (max-width: 900px) {
+      ${({theme:e})=>e.fonts.Body4};
+    }
+  `,ProfessorWrapper:dt.div`
+    display: flex;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  `,EnTitle:dt.h2`
+    ${({theme:e})=>e.fonts.Body1};
+    margin: 0;
+    color: ${({theme:e})=>e.colors.brown1};
+
+    @media (max-width: 900px) {
+      ${({theme:e})=>e.fonts.Body4};
+    }
+  `,KoProfessor:dt.p`
+    ${({theme:e})=>e.fonts.Body2};
+    padding: 0.5rem 0.3rem;
+    color: ${({theme:e})=>e.colors.brown1};
+
+    @media (max-width: 900px) {
+      ${({theme:e})=>e.fonts.Body3};
+      padding: 0rem 0.5rem;
+    }
+  `,EnProfessor:dt.p`
+    ${({theme:e})=>e.fonts.Body2};
+    padding: 0.5rem 0rem;
+    color: ${({theme:e})=>e.colors.brown1};
+
+    @media (max-width: 900px) {
+      ${({theme:e})=>e.fonts.Body3};
+      padding: 0rem 0.5rem;
+    }
+  `,Room:dt.p`
+    ${({theme:e})=>e.fonts.Body2};
+
+    padding: 0.5rem 1rem;
+    border-right: 1px solid;
+    color: ${({theme:e})=>e.colors.brown1};
+
+    @media (max-width: 900px) {
+      ${({theme:e})=>e.fonts.Body3};
+      padding: 0rem 0.5rem;
+      border-right: none;
+    }
+  `},Board01="/gs/2025/assets/classboard-01-Dj9TVaUN.webp",Board02="/gs/2025/assets/classboard-02-DbzjZ303.webp",Board03="/gs/2025/assets/classboard-03-BlgQxSTY.webp",Board04="/gs/2025/assets/classboard-04-DQt9kIG-.webp",Board05="/gs/2025/assets/classboard-05-6kvbe86k.webp",Board06="/gs/2025/assets/classboard-06-DTXLZis9.webp",Board07="/gs/2025/assets/classboard-07-vS2xp_O4.webp",Board08="/gs/2025/assets/classboard-08-BEFGUj2J.webp",Board09="/gs/2025/assets/classboard-09-CzZeyztN.webp",Board10="/gs/2025/assets/classboard-10-BcIqPuJT.webp",Board11="/gs/2025/assets/classboard-11-CmIk1AVE.webp",Board12="/gs/2025/assets/classboard-12-CxyFnhv-.webp",Board13="/gs/2025/assets/classboard-13-Cs88iYGv.webp",Board14="/gs/2025/assets/classboard-14-CzbpAIJy.webp",Board15="/gs/2025/assets/classboard-15-C9JVuuDA.webp",CLASSBOARD_MAP={a:Board01,b:Board02,c:Board03,d:Board04,e:Board05,f:Board06,g:Board07,h:Board08,i:Board09,j:Board10,k:Board11,l:Board12,m:Board13,n:Board14,o:Board15},ProjectPage=()=>{const e=useNavigate(),r=l=>{e(`/project/${l}`)},a=reactExports.useMemo(()=>CLASS_META.map(l=>CLASSBOARD_MAP[l.id]).filter(Boolean),[]),[n,o]=reactExports.useState(!0);return reactExports.useEffect(()=>{if(!a.length){o(!1);return}let l=!1,c=0;const E=a.length;return o(!0),a.forEach(d=>{const P=new Image;P.src=d;const de=()=>{c+=1,!l&&c>=E&&o(!1)};P.onload=de,P.onerror=de}),()=>{l=!0}},[a]),n?jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsx(Header,{}),jsxRuntimeExports.jsx(S$4.LoadingLayer,{children:jsxRuntimeExports.jsx(LoadingBar,{})}),jsxRuntimeExports.jsx(Footer,{})]}):jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsx(Header,{}),jsxRuntimeExports.jsx(S$4.Page,{children:jsxRuntimeExports.jsx(S$4.Grid,{children:CLASS_META.map(l=>jsxRuntimeExports.jsx(ClassCard,{item:l,imageSrc:CLASSBOARD_MAP[l.id],onClick:()=>r(l.id)},l.id))})}),jsxRuntimeExports.jsx(Footer,{})]})},S$4={Page:dt.main`
+    width: 100vw;
+    min-height: 100dvh;
+    padding: 10rem 3rem 10rem;
+
+    @media (max-width: 900px) {
+      padding: 4rem 1.5rem 10rem;
+    }
+  `,Grid:dt.section`
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.5rem;
+
+    @media (max-width: 1400px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+  `,LoadingLayer:dt.main`
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `,Card:dt.button`
+    border: 2.5px solid ${({theme:e})=>e.colors.brown1};
+    background: transparent;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+
+    @media (max-width: 900px) {
+      border-width: 1.75px;
+    }
+  `,PreviewTitle:dt.div`
+    ${({theme:e})=>e.fonts.Body2};
+    color: ${({theme:e})=>e.colors.white};
+    background-color: ${({theme:e})=>e.colors.brown1};
+    padding: 0.6rem 0.8rem;
+
+    @media (max-width: 900px) {
+      ${({theme:e})=>e.fonts.Body4};
+    }
+  `,PreviewMedia:dt.div`
+    width: 100%;
+    border-top: 2px solid ${({theme:e})=>e.colors.brown1};
+    border-bottom: 2px solid ${({theme:e})=>e.colors.brown1};
+    overflow: hidden;
+
+    @media (max-width: 900px) {
+      border-top-width: 1.5px;
+      border-bottom-width: 1.5px;
+    }
+  `,PreviewImg:dt.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  `,PreviewFallback:dt.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ${({theme:e})=>e.fonts.Body2};
+    color: ${({theme:e})=>e.colors.brown1};
+  `,PreviewDesc:dt.p`
+    ${({theme:e})=>e.fonts.Body2};
+    color: ${({theme:e})=>e.colors.brown1};
+    margin: 0;
+    padding: 1rem 1rem 0;
+
+    white-space: pre-line;
+
+    @media (max-width: 900px) {
+      ${({theme:e})=>e.fonts.Body3};
+    }
+  `,TextArea:dt.div`
+    padding: 0.5rem 0;
+  `},img1="/gs/2025/assets/archiveImg1-lmc-6Mw-.webp",img2="/gs/2025/assets/archiveImg2-DyW_bnXD.webp",img3="/gs/2025/assets/archiveImg3-BpiMlxUl.webp",img4="/gs/2025/assets/archiveImg4-DfB9qkd_.webp",img5="/gs/2025/assets/archiveImg5-CvV6MWvb.webp",img6="/gs/2025/assets/archiveImg6-dqIPis1K.webp",img7="/gs/2025/assets/archiveImg7-DNnSF_1o.webp",img8="/gs/2025/assets/archiveImg8-pA_XnuLI.webp",img9="/gs/2025/assets/archiveImg9-fHecqjLw.webp",img10="/gs/2025/assets/archiveImg10-DSlQ2W-c.webp",img11="/gs/2025/assets/archiveImg11-B5V8YqX2.webp",img12="/gs/2025/assets/archiveImg12-CFjfCEoG.webp",img13="/gs/2025/assets/archiveImg13-BeonIxcf.webp",img14="/gs/2025/assets/archiveImg14-BNX4MB85.webp",img15="/gs/2025/assets/archiveImg15-heSfvvLA.webp",img16="/gs/2025/assets/archiveImg16-JkHLueYK.webp",img17="/gs/2025/assets/archiveImg17-Til2ypQb.webp",img18="/gs/2025/assets/archiveImg18--4iM0FRr.webp",img19="/gs/2025/assets/archiveImg19-6Lm0wnti.webp",img20="/gs/2025/assets/archiveImg20-D40mOPQG.webp",img21="/gs/2025/assets/archiveImg21-DzUMzxFB.webp",img22="/gs/2025/assets/archiveImg22-BjpSwP4m.webp",img23="/gs/2025/assets/archiveImg23-kiYYua8h.webp",img24="/gs/2025/assets/archiveImg24-CZ0X2pc1.webp",img25="/gs/2025/assets/archiveImg25-CvtKIaHC.webp",img26="/gs/2025/assets/archiveImg26-IazDKAPo.webp",img27="/gs/2025/assets/archiveImg27-DXVoAzx8.webp",img28="/gs/2025/assets/archiveImg28-Ks8icpet.webp",img29="/gs/2025/assets/archiveImg29-Dzl__V3R.webp",img30="/gs/2025/assets/archiveImg30-Cy34b8YY.webp",img31="/gs/2025/assets/archiveImg31-7OqBzWB-.webp",img32="/gs/2025/assets/archiveImg32-CKX4KOm4.webp",img33="/gs/2025/assets/archiveImg33-DB9G-0fU.webp",img34="/gs/2025/assets/archiveImg34-BmPk_7Ih.webp",img35="/gs/2025/assets/archiveImg35-B3ZcYh4l.webp",img36="/gs/2025/assets/archiveImg36-9zgQ1Amx.webp",img41="/gs/2025/assets/goodsImg1-D6OTMPNF.webp",img42="/gs/2025/assets/goodsImg2-BLioJQNI.webp",img43="/gs/2025/assets/goodsImg3-DhFUtyf-.webp",img44="/gs/2025/assets/goodsImg4-BS2SHMZV.webp",img45="/gs/2025/assets/goodsImg5-Vj7pmfZK.webp",img46="/gs/2025/assets/goodsImg6-D6ecnRzu.webp",img47="/gs/2025/assets/goodsImg7-DIMAxD3B.webp",img48="/gs/2025/assets/goodsImg8-BLR9EM9e.webp",img49="/gs/2025/assets/goodsImg9-xwfj6D2T.webp",img50="/gs/2025/assets/goodsImg10-5H0ThFM8.webp",img51="/gs/2025/assets/goodsImg11-Dpdd8_5s.webp",img52="/gs/2025/assets/goodsImg12-vpGzvqPM.webp",img53="/gs/2025/assets/goodsImg13-DGNkpNV6.webp",img54="/gs/2025/assets/goodsImg14-COJzygri.webp",still1="/gs/2025/assets/stillcut1-3bmFrUf5.webp",still2="/gs/2025/assets/stillcut2-jgk24sRX.webp",still3="/gs/2025/assets/stillcut3-ouYdFNX2.webp",still4="/gs/2025/assets/stillcut4-CreFtnX3.webp",still5="/gs/2025/assets/stillcut5-CSfpUMgV.webp",still6="/gs/2025/assets/stillcut6-D6CqNnAr.webp",exhibitionImages=[img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26,img27,img28,img29,img30,img31,img32,img33,img34,img35,img36],goodsImages=[img41,img42,img43,img44,img45,img46,img47,img48,img49,img50,img51,img52,img53,img54],promoStills=[still1,still2,still3,still4,still5,still6],promoEmbeds=["https://www.youtube.com/embed/NZVdL4ejnLs?si=dkiCqgZTZapdXWIO"],ArchivePage=()=>{const[e,r]=reactExports.useState("exhibition"),[a,n]=reactExports.useState(0),[o,l]=reactExports.useState(!0),c=reactExports.useMemo(()=>e==="exhibition"?exhibitionImages:e==="goods"?goodsImages:e==="promo"?promoStills:[],[e]),E=4,d=3e3;return reactExports.useEffect(()=>{n(0),l(!0);const P=window.setTimeout(()=>l(!1),d);return()=>window.clearTimeout(P)},[e]),reactExports.useEffect(()=>{if(c.length===0){l(!1);return}a>=Math.min(E,c.length)&&l(!1)},[a,c.length]),jsxRuntimeExports.jsxs(S$3.ArchivePageContainer,{children:[jsxRuntimeExports.jsx(Header,{}),o&&jsxRuntimeExports.jsx(LoadingBar,{}),jsxRuntimeExports.jsx(S$3.Page,{style:{visibility:o?"hidden":"visible"},children:jsxRuntimeExports.jsxs(S$3.Layout,{children:[jsxRuntimeExports.jsx(S$3.Left,{children:e!=="promo"?jsxRuntimeExports.jsx(S$3.Grid,{children:c.map((P,de)=>jsxRuntimeExports.jsx(S$3.Item,{children:jsxRuntimeExports.jsx("img",{src:P,alt:`${e}-${de+1}`,loading:"lazy",decoding:"async",onLoad:()=>n(nt=>nt+1),onError:()=>n(nt=>nt+1)})},`${P}-${de}`))}):jsxRuntimeExports.jsxs(S$3.PromoWrapper,{children:[promoEmbeds.map((P,de)=>jsxRuntimeExports.jsx(S$3.VideoFrame,{src:P,title:`promo-video-${de+1}`,allow:"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",allowFullScreen:!0,loading:"lazy"},`${P}-${de}`)),jsxRuntimeExports.jsx(S$3.Grid,{children:promoStills.map((P,de)=>jsxRuntimeExports.jsx(S$3.Item,{children:jsxRuntimeExports.jsx("img",{src:P,alt:`promo-still-${de+1}`,loading:"eager",onLoad:()=>n(nt=>nt+1),onError:()=>n(nt=>nt+1)})},`${P}-${de}`))})]})}),jsxRuntimeExports.jsx(S$3.Right,{children:jsxRuntimeExports.jsxs(S$3.SideNav,{children:[jsxRuntimeExports.jsx(S$3.NavButton,{type:"button",$active:e==="exhibition",onClick:()=>r("exhibition"),children:"[1] 전시 전경 Exhibition View"}),jsxRuntimeExports.jsx(S$3.NavButton,{type:"button",$active:e==="goods",onClick:()=>r("goods"),children:"[2] 굿즈 이미지 Merchandise Image"}),jsxRuntimeExports.jsx(S$3.NavButton,{type:"button",$active:e==="promo",onClick:()=>r("promo"),children:"[3] 프로모션 영상 Promotion Video"})]})})]})}),jsxRuntimeExports.jsx(Footer,{})]})},S$3={ArchivePageContainer:dt.section`
+    width: 100vw;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  `,Page:dt.main`
+    width: 100%;
+    flex: 1;
+    padding: 10rem 3rem 10rem;
+
+    @media (max-width: 1024px) {
+      padding: 4rem 1.5rem 10rem;
+    }
+  `,Layout:dt.section`
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2rem;
+    align-items: start;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  `,Right:dt.aside`
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+
+    @media (max-width: 1024px) {
+      position: sticky;
+      top: 0rem; /* 모바일 헤더 높이에 맞춰 */
+      z-index: 10;
+      padding: 0rem 0;
+      background-color: ${({theme:e})=>e.colors.white};
+
+      order: -1;
+      display: flex;
+
+      ${({theme:e})=>e.fonts.Body3};
+    }
+  `,Left:dt.div`
+    min-width: 0;
+  `,SideNav:dt.nav`
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    @media (max-width: 1024px) {
+      flex-direction: row; /* ✅ 가로 나열 */
+      justify-content: space-between;
+      align-items: self-start;
+
+      overflow-x: auto; /* ✅ 넘치면 스크롤 */
+      -webkit-overflow-scrolling: touch;
+    }
+  `,NavButton:dt.button`
+    border-color: ${({theme:e})=>e.colors.brown1};
+    color: ${({theme:e,$active:r})=>e.colors.brown1};
+
+    ${({theme:e,$active:r})=>r?e.fonts.Title1:e.fonts.Title2};
+
+    padding: 0.3rem 1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: 150ms;
+
+    &:first-child {
+      padding: 0rem 1rem 0.3rem 1rem;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 1024px) {
+      ${({theme:e,$active:r})=>r?e.fonts.Body4:e.fonts.Body3};
+      padding: 0.8rem 0.9rem;
+
+      &:first-child {
+        padding: 0.8rem 0.9rem 0.8rem 0rem;
+      }
+
+      &:last-child {
+        padding: 0.8rem 0rem 0.8rem 0.9rem;
+      }
+    }
+  `,Grid:dt.div`
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+
+    @media (max-width: 1024px) {
+      gap: 0.8rem;
+    }
+  `,Item:dt.div`
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  `,PromoWrapper:dt.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  `,VideoFrame:dt.iframe`
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    display: block;
+  `},COMMITTEE_DATA=[{role_en:"Committee Chair",role_ko:"위원장",names:["송민지"]},{role_en:"Committee Vice-chair",role_ko:"부위원장",names:["안가영"]},{role_en:"Executives",role_ko:"집행부",names:["김수지","하고은","하유진","허유진"]},{role_en:"Spatial Department",role_ko:"공간부",names:["홍예빈","강보영","오혜령","마리얌"]},{role_en:"Equipment Department",role_ko:"기자재부",names:["조승완","구한나","이민경","최운영"]},{role_en:"General Affairs",role_ko:"사무부",names:["양서연","고가은","조예봄"]},{role_en:"Leumdari",role_ko:"이음다리부",names:["신혜영","이한주","정경윤","정시윤"]},{role_en:"Art & Media",role_ko:"아트미디어부",names:["강채연","백현지","정지우","조은비","지유나"]},{role_en:"International Student Representative",role_ko:"유학생 대표",names:["심가"]}],DESIGNER_DATA=[{role_en:"Art Director",role_ko:"아트디렉터",names:["강채연","진서영"]},{role_en:"Web Designer",role_ko:"웹디자이너",names:["강민서"]},{role_en:"Photographer",role_ko:"포토그래퍼",names:["나세연","정은유"]},{role_en:"Film Designer",role_ko:"영상 디자이너",names:["김연재"]},{role_en:"Spatial Designer",role_ko:"공간 디자이너",names:["윤건희","허은제"]}],EXHIBITION_DATA={title:`2025 홍익대학교 시각디자인과 졸업 주간 
+2025 HIVCD Graduation Show Week`,descriptionKo:"DOWNTOWN. 이 전시는 홍익시디의 학생들이 시민으로서 함께 쌓아 올린 집들로 이루어진 가상의 도시이다. 약 300명의 학생들이 각자 4년간의 시간과 노력을 담아 지은 ‘집’은 곧 작품이 되어 도시에 놓인다. 15개 반은 서로 다른 특색을 지닌 마을로 자리하고, 다양한 분야와 개성을 지닌 작품들은 그 안에서 저마다 다른 형태의 집으로 서 있다. 관람객은 이 도시에 초대된 여행자로서 거리를 거닐며 다양한 집들을 만나고 경험한다. 두 포스터가 이를 시각적으로 드러낸다. 첫 번째 포스터는 15개 반의 전시 제목을 간판으로 나타내어 도시의 구조를 보여준다. 두 번째 포스터는 시각디자인과 관련된 다양한 문구들 20개로 이루어져 있다. 이들은 때로는 특정 분야를 지칭하기도 하고, 때로는 여러 분야에 걸쳐 나타나기도 한다. 이들은 분야의 경계 없이 교차하며 작품들의 다양성과 다층성을 드러낸다. 작품이라는 집들이 모여 마을을 이루는 과정에서 다채로운 풍경이 나타난다. 간판은 이 모든 것을 아우르며 전시의 정체성을 드러내는 핵심 장치로 기능한다. 이렇게 완성된 도시는 네 해 동안의 시간과 관계에서 비롯된 정다움과 맞물리며 우리만의 다운타운을 완성한다.",descriptionEn:"DOWNTOWN. This exhibition is a fictional city built from the houses created by students. Each of the students has poured four years of effort into a ‘house,’ which stands here as an art project. 15 classes form distinct neighborhoods, where works of different fields and qualities gather side by side. Visitors are invited as travelers encountering these diverse houses. Two posters visualize this concept. The first poster presents the titles of the 15 class exhibitions as signboards, mapping out the city. The second poster is composed of 20 signboards featuring phrases related to visual design. Some point to specific fields, while others span across multiple areas. These phrases cross boundaries to reveal the diverse and layered nature of the artwork. As these houses—the works—gather to form neighborhoods, a multifaceted landscape emerges. The signboards tie everything together, functioning as a key device that expresses the identity of the exhibition. In the end, the city that is formed reflects the warmth that has formed from four years of shared time and relationships, completing our own DOWNTOWN.",committeeTitle:`2025 졸업준비위원회 
+Graduation Preparatory Committee`},EXHIBITION_INFO={period:"2025. 12. 1.–12. 6.",hours:["월–금 10:00–20:00","토 10:00–18:00","Mon–Fri 10:00–20:00","Sat 10:00–18:00"],location:`서울특별시 마포구 와우산로 94, 홍익대학교 홍문관 1층∙7층
+1F, 7F, Hongmun-gwan, Hongik University`};var lib={},slider={},innerSlider={},initialState={},hasRequiredInitialState;function requireInitialState(){return hasRequiredInitialState||(hasRequiredInitialState=1,(function(e){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var r={animating:!1,autoplaying:null,currentDirection:0,currentLeft:null,currentSlide:0,direction:1,dragging:!1,edgeDragged:!1,initialized:!1,lazyLoadedList:[],listHeight:null,listWidth:null,scrolling:!1,slideCount:null,slideHeight:null,slideWidth:null,swipeLeft:null,swiped:!1,swiping:!1,touchObject:{startX:0,startY:0,curX:0,curY:0},trackStyle:{},trackWidth:0,targetSlide:0};e.default=r})(initialState)),initialState}var lodash_debounce,hasRequiredLodash_debounce;function requireLodash_debounce(){if(hasRequiredLodash_debounce)return lodash_debounce;hasRequiredLodash_debounce=1;var e="Expected a function",r=NaN,a="[object Symbol]",n=/^\s+|\s+$/g,o=/^[-+]0x[0-9a-f]+$/i,l=/^0b[01]+$/i,c=/^0o[0-7]+$/i,E=parseInt,d=typeof commonjsGlobal=="object"&&commonjsGlobal&&commonjsGlobal.Object===Object&&commonjsGlobal,P=typeof self=="object"&&self&&self.Object===Object&&self,de=d||P||Function("return this")(),nt=Object.prototype,me=nt.toString,gt=Math.max,vt=Math.min,Ye=function(){return de.Date.now()};function At(St,kt,bt){var Tt,Pt,Mt,Ft,Vt,jt,Gt=0,Lt=!1,Ct=!1,pe=!0;if(typeof St!="function")throw new TypeError(e);kt=Et(kt)||0,tt(bt)&&(Lt=!!bt.leading,Ct="maxWait"in bt,Mt=Ct?gt(Et(bt.maxWait)||0,kt):Mt,pe="trailing"in bt?!!bt.trailing:pe);function wt(Qt){var sr=Tt,nr=Pt;return Tt=Pt=void 0,Gt=Qt,Ft=St.apply(nr,sr),Ft}function xt(Qt){return Gt=Qt,Vt=setTimeout(Rt,kt),Lt?wt(Qt):Ft}function yt(Qt){var sr=Qt-jt,nr=Qt-Gt,vr=kt-sr;return Ct?vt(vr,Mt-nr):vr}function Le(Qt){var sr=Qt-jt,nr=Qt-Gt;return jt===void 0||sr>=kt||sr<0||Ct&&nr>=Mt}function Rt(){var Qt=Ye();if(Le(Qt))return Bt(Qt);Vt=setTimeout(Rt,yt(Qt))}function Bt(Qt){return Vt=void 0,pe&&Tt?wt(Qt):(Tt=Pt=void 0,Ft)}function Ot(){Vt!==void 0&&clearTimeout(Vt),Gt=0,Tt=jt=Pt=Vt=void 0}function Ut(){return Vt===void 0?Ft:Bt(Ye())}function $t(){var Qt=Ye(),sr=Le(Qt);if(Tt=arguments,Pt=this,jt=Qt,sr){if(Vt===void 0)return xt(jt);if(Ct)return Vt=setTimeout(Rt,kt),wt(jt)}return Vt===void 0&&(Vt=setTimeout(Rt,kt)),Ft}return $t.cancel=Ot,$t.flush=Ut,$t}function tt(St){var kt=typeof St;return!!St&&(kt=="object"||kt=="function")}function st(St){return!!St&&typeof St=="object"}function Be(St){return typeof St=="symbol"||st(St)&&me.call(St)==a}function Et(St){if(typeof St=="number")return St;if(Be(St))return r;if(tt(St)){var kt=typeof St.valueOf=="function"?St.valueOf():St;St=tt(kt)?kt+"":kt}if(typeof St!="string")return St===0?St:+St;St=St.replace(n,"");var bt=l.test(St);return bt||c.test(St)?E(St.slice(2),bt?2:8):o.test(St)?r:+St}return lodash_debounce=At,lodash_debounce}var classnames={exports:{}};var hasRequiredClassnames;function requireClassnames(){return hasRequiredClassnames||(hasRequiredClassnames=1,(function(e){(function(){var r={}.hasOwnProperty;function a(){for(var l="",c=0;c<arguments.length;c++){var E=arguments[c];E&&(l=o(l,n(E)))}return l}function n(l){if(typeof l=="string"||typeof l=="number")return l;if(typeof l!="object")return"";if(Array.isArray(l))return a.apply(null,l);if(l.toString!==Object.prototype.toString&&!l.toString.toString().includes("[native code]"))return l.toString();var c="";for(var E in l)r.call(l,E)&&l[E]&&(c=o(c,E));return c}function o(l,c){return c?l?l+" "+c:l+c:l}e.exports?(a.default=a,e.exports=a):window.classNames=a})()})(classnames)),classnames.exports}var innerSliderUtils={},defaultProps={},hasRequiredDefaultProps;function requireDefaultProps(){return hasRequiredDefaultProps||(hasRequiredDefaultProps=1,(function(e){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var r=a(requireReact());function a(o){return o&&o.__esModule?o:{default:o}}var n={accessibility:!0,adaptiveHeight:!1,afterChange:null,appendDots:function(l){return r.default.createElement("ul",{style:{display:"block"}},l)},arrows:!0,autoplay:!1,autoplaySpeed:3e3,beforeChange:null,centerMode:!1,centerPadding:"50px",className:"",cssEase:"ease",customPaging:function(l){return r.default.createElement("button",null,l+1)},dots:!1,dotsClass:"slick-dots",draggable:!0,easing:"linear",edgeFriction:.35,fade:!1,focusOnSelect:!1,infinite:!0,initialSlide:0,lazyLoad:null,nextArrow:null,onEdge:null,onInit:null,onLazyLoadError:null,onReInit:null,pauseOnDotsHover:!1,pauseOnFocus:!1,pauseOnHover:!0,prevArrow:null,responsive:null,rows:1,rtl:!1,slide:"div",slidesPerRow:1,slidesToScroll:1,slidesToShow:1,speed:500,swipe:!0,swipeEvent:null,swipeToSlide:!1,touchMove:!0,touchThreshold:5,useCSS:!0,useTransform:!0,variableWidth:!1,vertical:!1,verticalSwiping:!1,waitForAnimate:!0,asNavFor:null,unslick:!1};e.default=n})(defaultProps)),defaultProps}var hasRequiredInnerSliderUtils;function requireInnerSliderUtils(){if(hasRequiredInnerSliderUtils)return innerSliderUtils;hasRequiredInnerSliderUtils=1,Object.defineProperty(innerSliderUtils,"__esModule",{value:!0}),innerSliderUtils.checkSpecKeys=innerSliderUtils.checkNavigable=innerSliderUtils.changeSlide=innerSliderUtils.canUseDOM=innerSliderUtils.canGoNext=void 0,innerSliderUtils.clamp=P,innerSliderUtils.extractObject=void 0,innerSliderUtils.filterSettings=wt,innerSliderUtils.validSettings=innerSliderUtils.swipeStart=innerSliderUtils.swipeMove=innerSliderUtils.swipeEnd=innerSliderUtils.slidesOnRight=innerSliderUtils.slidesOnLeft=innerSliderUtils.slideHandler=innerSliderUtils.siblingDirection=innerSliderUtils.safePreventDefault=innerSliderUtils.lazyStartIndex=innerSliderUtils.lazySlidesOnRight=innerSliderUtils.lazySlidesOnLeft=innerSliderUtils.lazyEndIndex=innerSliderUtils.keyHandler=innerSliderUtils.initializedState=innerSliderUtils.getWidth=innerSliderUtils.getTrackLeft=innerSliderUtils.getTrackCSS=innerSliderUtils.getTrackAnimateCSS=innerSliderUtils.getTotalSlides=innerSliderUtils.getSwipeDirection=innerSliderUtils.getSlideCount=innerSliderUtils.getRequiredLazySlides=innerSliderUtils.getPreClones=innerSliderUtils.getPostClones=innerSliderUtils.getOnDemandLazySlides=innerSliderUtils.getNavigableIndexes=innerSliderUtils.getHeight=void 0;var e=a(requireReact()),r=a(requireDefaultProps());function a(xt){return xt&&xt.__esModule?xt:{default:xt}}function n(xt){"@babel/helpers - typeof";return n=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(yt){return typeof yt}:function(yt){return yt&&typeof Symbol=="function"&&yt.constructor===Symbol&&yt!==Symbol.prototype?"symbol":typeof yt},n(xt)}function o(xt,yt){var Le=Object.keys(xt);if(Object.getOwnPropertySymbols){var Rt=Object.getOwnPropertySymbols(xt);yt&&(Rt=Rt.filter(function(Bt){return Object.getOwnPropertyDescriptor(xt,Bt).enumerable})),Le.push.apply(Le,Rt)}return Le}function l(xt){for(var yt=1;yt<arguments.length;yt++){var Le=arguments[yt]!=null?arguments[yt]:{};yt%2?o(Object(Le),!0).forEach(function(Rt){c(xt,Rt,Le[Rt])}):Object.getOwnPropertyDescriptors?Object.defineProperties(xt,Object.getOwnPropertyDescriptors(Le)):o(Object(Le)).forEach(function(Rt){Object.defineProperty(xt,Rt,Object.getOwnPropertyDescriptor(Le,Rt))})}return xt}function c(xt,yt,Le){return(yt=E(yt))in xt?Object.defineProperty(xt,yt,{value:Le,enumerable:!0,configurable:!0,writable:!0}):xt[yt]=Le,xt}function E(xt){var yt=d(xt,"string");return n(yt)=="symbol"?yt:yt+""}function d(xt,yt){if(n(xt)!="object"||!xt)return xt;var Le=xt[Symbol.toPrimitive];if(Le!==void 0){var Rt=Le.call(xt,yt);if(n(Rt)!="object")return Rt;throw new TypeError("@@toPrimitive must return a primitive value.")}return(yt==="string"?String:Number)(xt)}function P(xt,yt,Le){return Math.max(yt,Math.min(xt,Le))}var de=innerSliderUtils.safePreventDefault=function(yt){var Le=["onTouchStart","onTouchMove","onWheel"];Le.includes(yt._reactName)||yt.preventDefault()},nt=innerSliderUtils.getOnDemandLazySlides=function(yt){for(var Le=[],Rt=me(yt),Bt=gt(yt),Ot=Rt;Ot<Bt;Ot++)yt.lazyLoadedList.indexOf(Ot)<0&&Le.push(Ot);return Le};innerSliderUtils.getRequiredLazySlides=function(yt){for(var Le=[],Rt=me(yt),Bt=gt(yt),Ot=Rt;Ot<Bt;Ot++)Le.push(Ot);return Le};var me=innerSliderUtils.lazyStartIndex=function(yt){return yt.currentSlide-vt(yt)},gt=innerSliderUtils.lazyEndIndex=function(yt){return yt.currentSlide+Ye(yt)},vt=innerSliderUtils.lazySlidesOnLeft=function(yt){return yt.centerMode?Math.floor(yt.slidesToShow/2)+(parseInt(yt.centerPadding)>0?1:0):0},Ye=innerSliderUtils.lazySlidesOnRight=function(yt){return yt.centerMode?Math.floor((yt.slidesToShow-1)/2)+1+(parseInt(yt.centerPadding)>0?1:0):yt.slidesToShow},At=innerSliderUtils.getWidth=function(yt){return yt&&yt.offsetWidth||0},tt=innerSliderUtils.getHeight=function(yt){return yt&&yt.offsetHeight||0},st=innerSliderUtils.getSwipeDirection=function(yt){var Le=arguments.length>1&&arguments[1]!==void 0?arguments[1]:!1,Rt,Bt,Ot,Ut;return Rt=yt.startX-yt.curX,Bt=yt.startY-yt.curY,Ot=Math.atan2(Bt,Rt),Ut=Math.round(Ot*180/Math.PI),Ut<0&&(Ut=360-Math.abs(Ut)),Ut<=45&&Ut>=0||Ut<=360&&Ut>=315?"left":Ut>=135&&Ut<=225?"right":Le===!0?Ut>=35&&Ut<=135?"up":"down":"vertical"},Be=innerSliderUtils.canGoNext=function(yt){var Le=!0;return yt.infinite||(yt.centerMode&&yt.currentSlide>=yt.slideCount-1||yt.slideCount<=yt.slidesToShow||yt.currentSlide>=yt.slideCount-yt.slidesToShow)&&(Le=!1),Le};innerSliderUtils.extractObject=function(yt,Le){var Rt={};return Le.forEach(function(Bt){return Rt[Bt]=yt[Bt]}),Rt},innerSliderUtils.initializedState=function(yt){var Le=e.default.Children.count(yt.children),Rt=yt.listRef,Bt=Math.ceil(At(Rt)),Ot=yt.trackRef&&yt.trackRef.node,Ut=Math.ceil(At(Ot)),$t;if(yt.vertical)$t=Bt;else{var Qt=yt.centerMode&&parseInt(yt.centerPadding)*2;typeof yt.centerPadding=="string"&&yt.centerPadding.slice(-1)==="%"&&(Qt*=Bt/100),$t=Math.ceil((Bt-Qt)/yt.slidesToShow)}var sr=Rt&&tt(Rt.querySelector('[data-index="0"]')),nr=sr*yt.slidesToShow,vr=yt.currentSlide===void 0?yt.initialSlide:yt.currentSlide;yt.rtl&&yt.currentSlide===void 0&&(vr=Le-1-yt.initialSlide);var or=yt.lazyLoadedList||[],dr=nt(l(l({},yt),{},{currentSlide:vr,lazyLoadedList:or}));or=or.concat(dr);var ur={slideCount:Le,slideWidth:$t,listWidth:Bt,trackWidth:Ut,currentSlide:vr,slideHeight:sr,listHeight:nr,lazyLoadedList:or};return yt.autoplaying===null&&yt.autoplay&&(ur.autoplaying="playing"),ur},innerSliderUtils.slideHandler=function(yt){var Le=yt.waitForAnimate,Rt=yt.animating,Bt=yt.fade,Ot=yt.infinite,Ut=yt.index,$t=yt.slideCount,Qt=yt.lazyLoad,sr=yt.currentSlide,nr=yt.centerMode,vr=yt.slidesToScroll,or=yt.slidesToShow,dr=yt.useCSS,ur=yt.lazyLoadedList;if(Le&&Rt)return{};var rr=Ut,Er,Lr,kr,Ar={},jr={},zr=Ot?Ut:P(Ut,0,$t-1);if(Bt){if(!Ot&&(Ut<0||Ut>=$t))return{};Ut<0?rr=Ut+$t:Ut>=$t&&(rr=Ut-$t),Qt&&ur.indexOf(rr)<0&&(ur=ur.concat(rr)),Ar={animating:!0,currentSlide:rr,lazyLoadedList:ur,targetSlide:rr},jr={animating:!1,targetSlide:rr}}else Er=rr,rr<0?(Er=rr+$t,Ot?$t%vr!==0&&(Er=$t-$t%vr):Er=0):!Be(yt)&&rr>sr?rr=Er=sr:nr&&rr>=$t?(rr=Ot?$t:$t-1,Er=Ot?0:$t-1):rr>=$t&&(Er=rr-$t,Ot?$t%vr!==0&&(Er=0):Er=$t-or),!Ot&&rr+or>=$t&&(Er=$t-or),Lr=Mt(l(l({},yt),{},{slideIndex:rr})),kr=Mt(l(l({},yt),{},{slideIndex:Er})),Ot||(Lr===kr&&(rr=Er),Lr=kr),Qt&&(ur=ur.concat(nt(l(l({},yt),{},{currentSlide:rr})))),dr?(Ar={animating:!0,currentSlide:Er,trackStyle:Pt(l(l({},yt),{},{left:Lr})),lazyLoadedList:ur,targetSlide:zr},jr={animating:!1,currentSlide:Er,trackStyle:Tt(l(l({},yt),{},{left:kr})),swipeLeft:null,targetSlide:zr}):Ar={currentSlide:Er,trackStyle:Tt(l(l({},yt),{},{left:kr})),lazyLoadedList:ur,targetSlide:zr};return{state:Ar,nextState:jr}},innerSliderUtils.changeSlide=function(yt,Le){var Rt,Bt,Ot,Ut,$t,Qt=yt.slidesToScroll,sr=yt.slidesToShow,nr=yt.slideCount,vr=yt.currentSlide,or=yt.targetSlide,dr=yt.lazyLoad,ur=yt.infinite;if(Ut=nr%Qt!==0,Rt=Ut?0:(nr-vr)%Qt,Le.message==="previous")Ot=Rt===0?Qt:sr-Rt,$t=vr-Ot,dr&&!ur&&(Bt=vr-Ot,$t=Bt===-1?nr-1:Bt),ur||($t=or-Qt);else if(Le.message==="next")Ot=Rt===0?Qt:Rt,$t=vr+Ot,dr&&!ur&&($t=(vr+Qt)%nr+Rt),ur||($t=or+Qt);else if(Le.message==="dots")$t=Le.index*Le.slidesToScroll;else if(Le.message==="children"){if($t=Le.index,ur){var rr=Gt(l(l({},yt),{},{targetSlide:$t}));$t>Le.currentSlide&&rr==="left"?$t=$t-nr:$t<Le.currentSlide&&rr==="right"&&($t=$t+nr)}}else Le.message==="index"&&($t=Number(Le.index));return $t},innerSliderUtils.keyHandler=function(yt,Le,Rt){return yt.target.tagName.match("TEXTAREA|INPUT|SELECT")||!Le?"":yt.keyCode===37?Rt?"next":"previous":yt.keyCode===39?Rt?"previous":"next":""},innerSliderUtils.swipeStart=function(yt,Le,Rt){return yt.target.tagName==="IMG"&&de(yt),!Le||!Rt&&yt.type.indexOf("mouse")!==-1?"":{dragging:!0,touchObject:{startX:yt.touches?yt.touches[0].pageX:yt.clientX,startY:yt.touches?yt.touches[0].pageY:yt.clientY,curX:yt.touches?yt.touches[0].pageX:yt.clientX,curY:yt.touches?yt.touches[0].pageY:yt.clientY}}},innerSliderUtils.swipeMove=function(yt,Le){var Rt=Le.scrolling,Bt=Le.animating,Ot=Le.vertical,Ut=Le.swipeToSlide,$t=Le.verticalSwiping,Qt=Le.rtl,sr=Le.currentSlide,nr=Le.edgeFriction,vr=Le.edgeDragged,or=Le.onEdge,dr=Le.swiped,ur=Le.swiping,rr=Le.slideCount,Er=Le.slidesToScroll,Lr=Le.infinite,kr=Le.touchObject,Ar=Le.swipeEvent,jr=Le.listHeight,zr=Le.listWidth;if(!Rt){if(Bt)return de(yt);Ot&&Ut&&$t&&de(yt);var Fr,ci={},ai=Mt(Le);kr.curX=yt.touches?yt.touches[0].pageX:yt.clientX,kr.curY=yt.touches?yt.touches[0].pageY:yt.clientY,kr.swipeLength=Math.round(Math.sqrt(Math.pow(kr.curX-kr.startX,2)));var Vr=Math.round(Math.sqrt(Math.pow(kr.curY-kr.startY,2)));if(!$t&&!ur&&Vr>10)return{scrolling:!0};$t&&(kr.swipeLength=Vr);var vi=(Qt?-1:1)*(kr.curX>kr.startX?1:-1);$t&&(vi=kr.curY>kr.startY?1:-1);var fi=Math.ceil(rr/Er),Hr=st(Le.touchObject,$t),Jr=kr.swipeLength;return Lr||(sr===0&&(Hr==="right"||Hr==="down")||sr+1>=fi&&(Hr==="left"||Hr==="up")||!Be(Le)&&(Hr==="left"||Hr==="up"))&&(Jr=kr.swipeLength*nr,vr===!1&&or&&(or(Hr),ci.edgeDragged=!0)),!dr&&Ar&&(Ar(Hr),ci.swiped=!0),Ot?Fr=ai+Jr*(jr/zr)*vi:Qt?Fr=ai-Jr*vi:Fr=ai+Jr*vi,$t&&(Fr=ai+Jr*vi),ci=l(l({},ci),{},{touchObject:kr,swipeLeft:Fr,trackStyle:Tt(l(l({},Le),{},{left:Fr}))}),Math.abs(kr.curX-kr.startX)<Math.abs(kr.curY-kr.startY)*.8||kr.swipeLength>10&&(ci.swiping=!0,de(yt)),ci}},innerSliderUtils.swipeEnd=function(yt,Le){var Rt=Le.dragging,Bt=Le.swipe,Ot=Le.touchObject,Ut=Le.listWidth,$t=Le.touchThreshold,Qt=Le.verticalSwiping,sr=Le.listHeight,nr=Le.swipeToSlide,vr=Le.scrolling,or=Le.onSwipe,dr=Le.targetSlide,ur=Le.currentSlide,rr=Le.infinite;if(!Rt)return Bt&&de(yt),{};var Er=Qt?sr/$t:Ut/$t,Lr=st(Ot,Qt),kr={dragging:!1,edgeDragged:!1,scrolling:!1,swiping:!1,swiped:!1,swipeLeft:null,touchObject:{}};if(vr||!Ot.swipeLength)return kr;if(Ot.swipeLength>Er){de(yt),or&&or(Lr);var Ar,jr,zr=rr?ur:dr;switch(Lr){case"left":case"up":jr=zr+kt(Le),Ar=nr?St(Le,jr):jr,kr.currentDirection=0;break;case"right":case"down":jr=zr-kt(Le),Ar=nr?St(Le,jr):jr,kr.currentDirection=1;break;default:Ar=zr}kr.triggerSlideHandler=Ar}else{var Fr=Mt(Le);kr.trackStyle=Pt(l(l({},Le),{},{left:Fr}))}return kr};var Et=innerSliderUtils.getNavigableIndexes=function(yt){for(var Le=yt.infinite?yt.slideCount*2:yt.slideCount,Rt=yt.infinite?yt.slidesToShow*-1:0,Bt=yt.infinite?yt.slidesToShow*-1:0,Ot=[];Rt<Le;)Ot.push(Rt),Rt=Bt+yt.slidesToScroll,Bt+=Math.min(yt.slidesToScroll,yt.slidesToShow);return Ot},St=innerSliderUtils.checkNavigable=function(yt,Le){var Rt=Et(yt),Bt=0;if(Le>Rt[Rt.length-1])Le=Rt[Rt.length-1];else for(var Ot in Rt){if(Le<Rt[Ot]){Le=Bt;break}Bt=Rt[Ot]}return Le},kt=innerSliderUtils.getSlideCount=function(yt){var Le=yt.centerMode?yt.slideWidth*Math.floor(yt.slidesToShow/2):0;if(yt.swipeToSlide){var Rt,Bt=yt.listRef,Ot=Bt.querySelectorAll&&Bt.querySelectorAll(".slick-slide")||[];if(Array.from(Ot).every(function(Qt){if(yt.vertical){if(Qt.offsetTop+tt(Qt)/2>yt.swipeLeft*-1)return Rt=Qt,!1}else if(Qt.offsetLeft-Le+At(Qt)/2>yt.swipeLeft*-1)return Rt=Qt,!1;return!0}),!Rt)return 0;var Ut=yt.rtl===!0?yt.slideCount-yt.currentSlide:yt.currentSlide,$t=Math.abs(Rt.dataset.index-Ut)||1;return $t}else return yt.slidesToScroll},bt=innerSliderUtils.checkSpecKeys=function(yt,Le){return Le.reduce(function(Rt,Bt){return Rt&&yt.hasOwnProperty(Bt)},!0)?null:console.error("Keys Missing:",yt)},Tt=innerSliderUtils.getTrackCSS=function(yt){bt(yt,["left","variableWidth","slideCount","slidesToShow","slideWidth"]);var Le,Rt;if(!yt.vertical)Le=jt(yt)*yt.slideWidth;else{var Bt=yt.unslick?yt.slideCount:yt.slideCount+2*yt.slidesToShow;Rt=Bt*yt.slideHeight}var Ot={opacity:1,transition:"",WebkitTransition:""};if(yt.useTransform){var Ut=yt.vertical?"translate3d(0px, "+yt.left+"px, 0px)":"translate3d("+yt.left+"px, 0px, 0px)",$t=yt.vertical?"translate3d(0px, "+yt.left+"px, 0px)":"translate3d("+yt.left+"px, 0px, 0px)",Qt=yt.vertical?"translateY("+yt.left+"px)":"translateX("+yt.left+"px)";Ot=l(l({},Ot),{},{WebkitTransform:Ut,transform:$t,msTransform:Qt})}else yt.vertical?Ot.top=yt.left:Ot.left=yt.left;return yt.fade&&(Ot={opacity:1}),Le&&(Ot.width=Le),Rt&&(Ot.height=Rt),window&&!window.addEventListener&&window.attachEvent&&(yt.vertical?Ot.marginTop=yt.left+"px":Ot.marginLeft=yt.left+"px"),Ot},Pt=innerSliderUtils.getTrackAnimateCSS=function(yt){bt(yt,["left","variableWidth","slideCount","slidesToShow","slideWidth","speed","cssEase"]);var Le=Tt(yt);return yt.useTransform?(Le.WebkitTransition="-webkit-transform "+yt.speed+"ms "+yt.cssEase,Le.transition="transform "+yt.speed+"ms "+yt.cssEase):yt.vertical?Le.transition="top "+yt.speed+"ms "+yt.cssEase:Le.transition="left "+yt.speed+"ms "+yt.cssEase,Le},Mt=innerSliderUtils.getTrackLeft=function(yt){if(yt.un
