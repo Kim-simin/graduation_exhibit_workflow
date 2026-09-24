@@ -340,12 +340,12 @@ export default function ProfessorDetailPage() {
             <div>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1rem" }}>
                 <h3 style={{ fontSize: "1.25rem", fontWeight: 700, color: "#ffffff", margin: 0 }}>
-                  해당 과제 우수 학생 제출물 ({professor.student_submissions.length}건)
+                  해당 과제 우수 학생 제출물 ({professor.student_submissions?.length || 0}건)
                 </h3>
               </div>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "1.25rem" }}>
-                {professor.student_submissions.map((sub) => (
+                {professor.student_submissions?.map((sub: any) => (
                   <div
                     key={sub.id}
                     style={{
