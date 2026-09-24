@@ -1,5 +1,51 @@
 [
   {
+    "id": "UNIV-2026-국민대학교-소프트웨어학부-kmu-expo",
+    "category": "IT·소프트웨어·컴공",
+    "university": "국민대학교",
+    "department": "소프트웨어학부",
+    "year": "2026",
+    "status": "리서치 완료",
+    "isUploaded": true,
+    "isResearched": true,
+    "poster_image": "uploads/UNIV-2026-국민대학교-소프트웨어학부/main_poster_2026.jpg",
+    "exhibition_title": "2026 KMUCS EXPO | 국민대학교 소프트웨어융합대학 졸업작품전",
+    "exhibit_title": "[국민대학교] 2026 소프트웨어학부 졸업작품전 (KMUCS EXPO)",
+    "title": "2026 KMUCS EXPO | 국민대학교 소프트웨어융합대학 졸업작품전",
+    "target_url": "https://expo.cs.kookmin.ac.kr/",
+    "official_url": "https://expo.cs.kookmin.ac.kr/",
+    "scraped_url": "https://expo.cs.kookmin.ac.kr/",
+    "exhibition_period": "2026.05.26 ~ 05.29",
+    "exhibition_venue": "국민대학교 미래관 자율주행스튜디오",
+    "slogan": "AI 시대를 이끄는 소프트웨어 혁신: 2026 KMUCS EXPO",
+    "exhibit_slogan": "AI 시대를 이끄는 소프트웨어 혁신: 2026 KMUCS EXPO",
+    "critic_score": 100,
+    "critic_feedback": "소프트웨어융합대학 공식 검수 및 30개 팀 실시간 아카이빙 승인 완료",
+    "curation_summary": {
+      "headline": "2026 KMUCS EXPO | 국민대학교 소프트웨어융합대학 졸업작품 전시회 및 잡페어",
+      "curation_intro": "국민대학교 소프트웨어융합대학의 2026 KMUCS EXPO 공식 졸업작품 아카이브입니다. 모바일·인공지능·게임·웹서비스·사회혁신 5개 분야 일반분반 30팀의 졸업작품 데모와 AWS 클라우드·AI 실전 프로젝트, 12개 IT 기업 잡페어 및 글로벌 커리어 워크숍 등 실무 중심 소프트웨어 혁신의 결실을 확인하실 수 있습니다.",
+      "inferred_industry_keywords": [
+        "소프트웨어융합대학",
+        "인공지능",
+        "모바일앱",
+        "클라우드",
+        "게임개발",
+        "2026KMUCS"
+      ]
+    },
+    "artworks": [],
+    "has_corporate_cooperation": true,
+    "corporate_cooperation_count": 4,
+    "cooperation_companies": [
+      "Amazon Web Services (AWS)",
+      "(주)이비티이아이",
+      "라프디(주)",
+      "TechReady"
+    ],
+    "instagramPublished": true,
+    "publishedAt": "2026-09-24T18:04:06.593593"
+  },
+  {
     "id": "UNIV-2026-인천대학교-컴퓨터공학부-7899",
     "category": "IT·소프트웨어·컴공",
     "university": "인천대학교",
@@ -35,7 +81,9 @@
       "card_headline": "인천대학교 2026년 컴퓨터공학부 졸업전시회",
       "card_intro": "2026년도 인천대학교 컴퓨터공학부 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다."
     },
-    "raw_description": "2026년도 인천대학교 컴퓨터공학부 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다."
+    "raw_description": "2026년도 인천대학교 컴퓨터공학부 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+    "instagramPublished": true,
+    "publishedAt": "2026-09-24T17:32:09.121180"
   },
   {
     "id": "UNIV-2026-전남대학교-건축학과-8940",
