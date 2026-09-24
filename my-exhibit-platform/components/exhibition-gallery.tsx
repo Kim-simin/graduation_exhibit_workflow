@@ -698,7 +698,10 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                       <span className="text-slate-600 dark:text-slate-300 truncate flex min-w-0 items-center gap-1">
                         <Building2 className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-blue-500 shrink-0" />
                         <span className="font-medium truncate">
-                          {item.cooperationCompanies?.slice(0, 2).join(", ")}
+                          {item.cooperationCompanies
+                            ?.slice(0, 2)
+                            .map((c: any) => (typeof c === "string" ? c : c?.company_name || c?.name || String(c)))
+                            .join(", ")}
                           {(item.cooperationCompanies?.length || 0) > 2 ? ` 외 ${(item.cooperationCompanies?.length || 0) - 2}개사` : ""}
                         </span>
                       </span>

@@ -894,14 +894,17 @@ export function ExhibitionDetailModal({
                     <Building2 className="w-3.5 h-3.5 text-blue-500" /> 공식 산학협력 협약 기업:
                   </span>
                   <div className="flex flex-wrap gap-1.5">
-                    {(exhibition.cooperationCompanies || []).map((comp, idx) => (
-                      <span
-                        key={idx}
-                        className="px-2.5 py-1 rounded-lg bg-white dark:bg-slate-800 border border-blue-200 dark:border-blue-700 text-blue-800 dark:text-blue-300 text-xs font-bold shadow-2xs"
-                      >
-                        🏢 {comp}
-                      </span>
-                    ))}
+                    {(exhibition.cooperationCompanies || []).map((comp: any, idx) => {
+                      const compName = typeof comp === "string" ? comp : comp?.company_name || comp?.name || String(comp);
+                      return (
+                        <span
+                          key={idx}
+                          className="px-2.5 py-1 rounded-lg bg-white dark:bg-slate-800 border border-blue-200 dark:border-blue-700 text-blue-800 dark:text-blue-300 text-xs font-bold shadow-2xs"
+                        >
+                          🏢 {compName}
+                        </span>
+                      );
+                    })}
                   </div>
                 </div>
 

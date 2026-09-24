@@ -131,7 +131,9 @@ export function getInitialExhibitions(): Exhibition[] {
         instagramPublished: Boolean(item.instagramPublished),
         publishedAt: item.publishedAt || null,
         cardCaption: item.card_news?.card_caption || "",
-        cooperationCompanies: item.cooperation_companies || [],
+        cooperationCompanies: (item.cooperation_companies || []).map((c: any) =>
+          typeof c === "string" ? c : c?.company_name || c?.name || String(c)
+        ),
         crossValidationStatus: item.cross_validation_status || null,
         hasCorporateCooperation: Boolean(item.has_corporate_cooperation || (item.cooperation_companies && item.cooperation_companies.length > 0)),
         corporateCooperationCount: item.corporate_cooperation_count || (item.cooperation_companies ? item.cooperation_companies.length : 0),

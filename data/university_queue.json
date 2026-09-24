@@ -1,5 +1,352 @@
 [
   {
+    "id": "UNIV-2026-국민대학교-소프트웨어학부-kmu-expo",
+    "category": "IT·소프트웨어·컴공",
+    "university": "국민대학교",
+    "department": "소프트웨어학부",
+    "year": "2026",
+    "status": "리서치 완료",
+    "isUploaded": true,
+    "isResearched": true,
+    "poster_image": "uploads/UNIV-2026-국민대학교-소프트웨어학부/main_poster_2026.jpg",
+    "exhibition_title": "2026 KMUCS EXPO | 국민대학교 소프트웨어융합대학 졸업작품전",
+    "exhibit_title": "[국민대학교] 2026 소프트웨어학부 졸업작품전 (KMUCS EXPO)",
+    "title": "2026 KMUCS EXPO | 국민대학교 소프트웨어융합대학 졸업작품전",
+    "target_url": "https://expo.cs.kookmin.ac.kr/",
+    "official_url": "https://expo.cs.kookmin.ac.kr/",
+    "scraped_url": "https://expo.cs.kookmin.ac.kr/",
+    "exhibition_period": "2026.05.26 ~ 05.29",
+    "exhibition_venue": "국민대학교 미래관 자율주행스튜디오",
+    "slogan": "AI 시대를 이끄는 소프트웨어 혁신: 2026 KMUCS EXPO",
+    "exhibit_slogan": "AI 시대를 이끄는 소프트웨어 혁신: 2026 KMUCS EXPO",
+    "critic_score": 100,
+    "critic_feedback": "소프트웨어융합대학 공식 검수 및 30개 팀 실시간 아카이빙 승인 완료",
+    "curation_summary": {
+      "headline": "2026 KMUCS EXPO | 국민대학교 소프트웨어융합대학 졸업작품 전시회 및 잡페어",
+      "curation_intro": "국민대학교 소프트웨어융합대학의 2026 KMUCS EXPO 공식 졸업작품 아카이브입니다. 모바일·인공지능·게임·웹서비스·사회혁신 5개 분야 일반분반 30팀의 졸업작품 데모와 AWS 클라우드·AI 실전 프로젝트, 12개 IT 기업 잡페어 및 글로벌 커리어 워크숍 등 실무 중심 소프트웨어 혁신의 결실을 확인하실 수 있습니다.",
+      "inferred_industry_keywords": [
+        "소프트웨어융합대학",
+        "인공지능",
+        "모바일앱",
+        "클라우드",
+        "게임개발",
+        "2026KMUCS"
+      ]
+    },
+    "artworks": [
+      {
+        "title": "[M1] KRIP",
+        "student_name": "최원준, 이영욱, 조윤주, 조현상",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-01.png",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-01.png",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-01.png",
+        "description": "[모바일 / M1] 제약 없는 진짜 서울 여행의 시작\n외국인 여행자를 위한 통합 서울 여행 모바일 앱 — Gemini VLM 기반 메뉴판 번역·주문서 자동 생성, AI 맞춤 일정 추천, 위치 기반 관광지 탐색, WebSocket 실시간 채팅으로 여행 메이트 매칭.",
+        "inferred_role": "모바일 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-01"
+      },
+      {
+        "title": "[W1] Trace Inspector",
+        "student_name": "김신영, 강민성",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-02.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-02.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-02.webp",
+        "description": "[웹서비스·임베디드 / W1] 추적 가능한 시각화 기반 코드 정적분석기\nGo 프로그램의 정적 분석 과정을 단계별로 시각화하는 분석 도구.",
+        "inferred_role": "웹서비스·임베디드 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-02"
+      },
+      {
+        "title": "[M2] CULTOUR",
+        "student_name": "문지환, 박상윤, 윤준희, 김효준",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-03.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-03.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-03.webp",
+        "description": "[모바일 / M2] 발걸음이 닿는 곳마다, 당신만의 보물이 됩니다.\nAI 기반 문화재 스탬프 투어 — 실시간 이미지 인증으로 관광·학습을 결합한 참여형 경험.",
+        "inferred_role": "모바일 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-03"
+      },
+      {
+        "title": "[W2] RESPONDY",
+        "student_name": "허승범, 임은빈, 지수연, 송승은, 안재훈",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-04.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-04.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-04.webp",
+        "description": "[웹서비스·임베디드 / W2] AI 기반 커뮤니케이션 어시스턴트\n메신저 대화 이미지를 OCR로 분석해 상황·감정 맥락에 맞는 답장을 추천하는 데스크톱 어시스턴트.\n지도교수: 김형균",
+        "inferred_role": "웹서비스·임베디드 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-04"
+      },
+      {
+        "title": "[G1] NUNBORA: FROSTBLIND",
+        "student_name": "김동신, 손승완, 조현호, 최민호, 홍성목, 나디아 코즐로바",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-05.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-05.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-05.webp",
+        "description": "[게임 / G1] 4인 협동 생존 PC 게임\n미래 에너지 기업 SDI의 빙하 코어 사수 — 빛 없는 심연에서 시야의 한계를 다루는 협동 호러 슈터. (Team TRIGRI)",
+        "inferred_role": "게임 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-05"
+      },
+      {
+        "title": "[W3] Pet-Log",
+        "student_name": "유장훈, 김태우",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-06.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-06.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-06.webp",
+        "description": "[웹서비스·임베디드 / W3] IoT 기반 실시간 반려동물 케어 솔루션\n센서 + 영상 분석으로 반려동물 활동·건강 데이터를 자동 수집하는 IoT 케어.",
+        "inferred_role": "웹서비스·임베디드 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-06"
+      },
+      {
+        "title": "[A1] CNN-based QUBO Pruning",
+        "student_name": "김민우, 김선우",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-07.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-07.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-07.webp",
+        "description": "[인공지능 / A1] Quantum Annealing Optimization Research\nSimulated Annealing 기반 조합 최적화로 CNN 모델을 정확도 손실 최소화로 경량화.",
+        "inferred_role": "인공지능 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-07"
+      },
+      {
+        "title": "[G2] ETERNAL MORTIS",
+        "student_name": "박시윤, 김효준, 손강민, 정찬하",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-08.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-08.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-08.webp",
+        "description": "[게임 / G2] UE5 GAS·절차적 던전 액션 RPG\nGameplay Ability System과 절차적 던전 생성을 결합한 언리얼 액션 RPG.",
+        "inferred_role": "게임 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-08"
+      },
+      {
+        "title": "[W4] flowMeet",
+        "student_name": "황수민, 윤성욱, 박정은, 박건민, 백채린, 윤신지",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-09.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-09.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-09.webp",
+        "description": "[웹서비스·임베디드 / W4] 기획이 흐름을 만나는 순간\n노트 시각화·AI 회의 요약·AI 에이전트로 협업 흐름을 유지하게 돕는 회의 협업 도구.",
+        "inferred_role": "웹서비스·임베디드 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-09"
+      },
+      {
+        "title": "[W5] AI CHITECT",
+        "student_name": "정수한, 이창록",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-10.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-10.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-10.webp",
+        "description": "[웹서비스·임베디드 / W5] AI 기반 단독주택 설계 시스템\n사용자 생활방식·공간 취향에 맞춰 단독주택 설계안을 자동으로 제안.",
+        "inferred_role": "웹서비스·임베디드 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-10"
+      },
+      {
+        "title": "[G3] Call of The King",
+        "student_name": "정희섭, 김도건, 유범익, 이동훈",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-11.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-11.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-11.webp",
+        "description": "[게임 / G3] 체스+카드 2차원 보드 PvP 전략 게임\n기존 TCG 틀에서 벗어나 2차원 보드를 도입해 전략의 폭을 재정의한 PvP 게임.",
+        "inferred_role": "게임 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-11"
+      },
+      {
+        "title": "[G4] CoreLight",
+        "student_name": "구자빈, 전경진",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-12.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-12.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-12.webp",
+        "description": "[게임 / G4] KMU Coop Defense\nFPS 전투와 탑다운 건설을 결합한 2인 비대칭 협동 디펜스 게임.",
+        "inferred_role": "게임 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-12"
+      },
+      {
+        "title": "[S1] Kutoring",
+        "student_name": "박상범, 김영일, 조보국, 이상윤, 이준서",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-13.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-13.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-13.webp",
+        "description": "[사회혁신 / S1] 외국인 유학생-한국인 P2P 헬프 매칭\n실시간 매칭·번역 영상통화·학식 공지 번역을 한 앱에서 제공하는 캠퍼스 헬프 플랫폼.",
+        "inferred_role": "사회혁신 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-13"
+      },
+      {
+        "title": "[M3] FitPlus",
+        "student_name": "남재준, 이창조",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-14.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-14.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-14.webp",
+        "description": "[모바일 / M3] 웹캠 기반 실시간 운동 자세 코칭\nMediaPipe Pose 기반으로 카메라만으로 자세를 분석·기록하는 AI 운동 코치.",
+        "inferred_role": "모바일 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-14"
+      },
+      {
+        "title": "[W6] MIE",
+        "student_name": "남현종",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-15.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-15.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-15.webp",
+        "description": "[웹서비스·임베디드 / W6] 웹 기반 CAE 렌더링 엔진 및 어플리케이션 프레임워크\nCAD/CAE 데이터 처리·WebGL 렌더링·WASM Geometry Kernel을 결합한 웹 시각화 엔진.",
+        "inferred_role": "웹서비스·임베디드 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-15"
+      },
+      {
+        "title": "[S2] 길벗 (시각장애인)",
+        "student_name": "한여진, 이일환, 전예찬, 김예지, 양나래, 황연주",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-16.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-16.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-16.webp",
+        "description": "[사회혁신 / S2] 시각장애인 보행 보조 AI\n실시간 환경 분석과 접근성 중심 안내로 보행 중 위험을 줄이는 AI 음성·진동 가이드. (팀16 리트리버)",
+        "inferred_role": "사회혁신 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-16"
+      },
+      {
+        "title": "[M4] FOCUS",
+        "student_name": "이지상, 민승호, 이동언, 이제준, 신윤솔",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-17.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-17.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-17.webp",
+        "description": "[모바일 / M4] IRL 스트리밍 선택적 초상권 보호\n스트리머와 주변 인물을 실시간으로 구분, 비대상 인물의 얼굴을 자동으로 모자이크·아바타 처리.",
+        "inferred_role": "모바일 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-17"
+      },
+      {
+        "title": "[A2] LUMA",
+        "student_name": "아노, 윤준서, 예르잔 울판, 초라핀스카 베로니카",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-18.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-18.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-18.webp",
+        "description": "[인공지능 / A2] 문맥 인지형 실시간 스트레스 탐지·케어\n다학제간 18팀 — 생활 맥락과 결합한 스트레스 인식·사후 케어 시스템.",
+        "inferred_role": "인공지능 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-18"
+      },
+      {
+        "title": "[M5] Taxi Mate",
+        "student_name": "김태림, 김서현, 박소윤, 한윤구",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-19.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-19.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-19.webp",
+        "description": "[모바일 / M5] 함께 타고, 함께 아끼세요\n지도 기반 동승자 매칭과 OCR 영수증 인식·카카오페이 정산으로 택시 동승을 단순화. (Crescist)",
+        "inferred_role": "모바일 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-19"
+      },
+      {
+        "title": "[W7] EBTI AX·HX Project",
+        "student_name": "김태환, 이다연, 신윤서",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-20.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-20.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-20.webp",
+        "description": "[웹서비스·임베디드 / W7] Behavioral AI Showcase — Hybrid Care Hub\n산학협력 (주)이비티이아이 — Behavioral AI를 활용한 하이브리드 케어 허브 PoC.",
+        "inferred_role": "웹서비스·임베디드 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-20"
+      },
+      {
+        "title": "[W8] Link:D MATCH",
+        "student_name": "오형석, 백송훈, 최윤지, 고주희, 이은진",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-21.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-21.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-21.webp",
+        "description": "[웹서비스·임베디드 / W8] AI 인플루언서-상품 매칭\n라프디(주) 산학협력 — 상품 정보와 인플루언서 데이터를 분석해 매칭을 자동화.",
+        "inferred_role": "웹서비스·임베디드 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-21"
+      },
+      {
+        "title": "[A3] ReadyTalk edu",
+        "student_name": "양지웅, 정유미, 이윤서, 양승일, 유혜성",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-22.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-22.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-22.webp",
+        "description": "[인공지능 / A3] 중소형 학원 통합 운영 AI 솔루션\n산학협력 TechReady — 학생 관리·학습 지원을 통합 지원하는 AI 학원 운영 솔루션.",
+        "inferred_role": "인공지능 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-22"
+      },
+      {
+        "title": "[A4] LLMong",
+        "student_name": "김동연, 강아영, 김동진, 박가현, 배경준, 하승준",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-23.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-23.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-23.webp",
+        "description": "[인공지능 / A4] AI 기반 한국형 문서 파싱 / Document Parser for RAG\nRAG 파이프라인을 위한 한국어 공공·기업 문서 파싱 서비스.",
+        "inferred_role": "인공지능 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-23"
+      },
+      {
+        "title": "[W9] MU:RANG",
+        "student_name": "박하늘, 권상혁, 허가림",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-24.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-24.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-24.webp",
+        "description": "[웹서비스·임베디드 / W9] VR 활용 악기 연주 플랫폼\nVR과 사물 인터페이스로 악기 연주 학습·체험을 결합한 플랫폼.",
+        "inferred_role": "웹서비스·임베디드 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-24"
+      },
+      {
+        "title": "[W10] 한발짝",
+        "student_name": "이지희, 이재은",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-25.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-25.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-25.webp",
+        "description": "[웹서비스·임베디드 / W10] AI 기반 할 일 분해·집중 관리\n텍스트·파일을 AI로 분석해 의미 있는 작은 단계로 분해하고 집중·기록을 돕는 서비스.",
+        "inferred_role": "웹서비스·임베디드 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-25"
+      },
+      {
+        "title": "[M6] 길벗 (위치 기반)",
+        "student_name": "남지은, 조혜원",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-26.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-26.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-26.webp",
+        "description": "[모바일 / M6] 위치 기반 기억 보조·보호자 안심 확인\n기억 보조가 필요한 개인의 하루를 기록하고 보호자에게 안심 확인을 제공. (ODYSSEY)",
+        "inferred_role": "모바일 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-26"
+      },
+      {
+        "title": "[W11] SHIELD",
+        "student_name": "강문경, 이총명, 이승진",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-27.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-27.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-27.webp",
+        "description": "[웹서비스·임베디드 / W11] AI 법률 상담·변호사 매칭 플랫폼\nAI가 정리한 의뢰서로 변호사 매칭까지 — 법률 상담 진입장벽을 낮추는 플랫폼.",
+        "inferred_role": "웹서비스·임베디드 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-27"
+      },
+      {
+        "title": "[A5] K-Pop Visual Studio",
+        "student_name": "김수만, 김정인, 배문경, 백경지",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-28.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-28.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-28.webp",
+        "description": "[인공지능 / A5] 멀티모달 딥러닝 안무 유사도 측정\nST-GCN·HRNet 기반으로 두 K-pop 안무 영상 간 유사도를 정량적으로 측정.",
+        "inferred_role": "인공지능 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-28"
+      },
+      {
+        "title": "[G5] HEROINES OF STORM",
+        "student_name": "이성재, 백승현, 전영환",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-29.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-29.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-29.webp",
+        "description": "[게임 / G5] 3D 1v1 협동 액션·어드벤처\n3D 다층 구조와 거점 점령 메커니즘으로 액션과 협동을 결합. (Team LTS)",
+        "inferred_role": "게임 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-29"
+      },
+      {
+        "title": "[M7] 냉집사",
+        "student_name": "임수민, 이지우",
+        "image": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-30.webp",
+        "thumbnail": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-30.webp",
+        "screenshot_path": "captures/UNIV-2026-국민대학교-소프트웨어학부/team-30.webp",
+        "description": "[모바일 / M7] 냉장고 촬영 기반 AI 식재료·레시피\n냉장고를 촬영해 무엇이 있는지 정리하고 AI가 레시피를 추천.",
+        "inferred_role": "모바일 엔지니어",
+        "detail_url": "https://expo.cs.kookmin.ac.kr/capstone#team-30"
+      }
+    ],
+    "has_corporate_cooperation": true,
+    "corporate_cooperation_count": 4,
+    "cooperation_companies": [
+      "Amazon Web Services (AWS)",
+      "(주)이비티이아이",
+      "라프디(주)",
+      "TechReady"
+    ],
+    "instagramPublished": true,
+    "publishedAt": "2026-09-24T18:04:06.593593"
+  },
+  {
     "id": "UNIV-2026-인천대학교-컴퓨터공학부-7899",
     "category": "IT·소프트웨어·컴공",
     "university": "인천대학교",
@@ -466,7 +813,9 @@
       "card_headline": "인천대학교 2026년 컴퓨터공학부 졸업전시회",
       "card_intro": "2026년도 인천대학교 컴퓨터공학부 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다."
     },
-    "raw_description": "2026년도 인천대학교 컴퓨터공학부 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다."
+    "raw_description": "2026년도 인천대학교 컴퓨터공학부 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+    "instagramPublished": true,
+    "publishedAt": "2026-09-24T17:32:09.121180"
   },
   {
     "id": "UNIV-2026-전남대학교-건축학과-8940",
