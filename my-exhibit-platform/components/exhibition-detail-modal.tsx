@@ -18,8 +18,6 @@ import {
   RotateCcw,
   Sparkles,
   Instagram,
-  Film,
-  Download,
   Building2,
   Briefcase,
   ShieldCheck,
@@ -165,10 +163,6 @@ export function ExhibitionDetailModal({
   const [posterPath, setPosterPath] = useState<string | null>(null);
   const [artworks, setArtworks] = useState<Artwork[]>([]);
 
-  // 릴스 모션그래픽 비디오 생성 상태
-  const [isGeneratingReels, setIsGeneratingReels] = useState(false);
-  const [reelsVideoUrl, setReelsVideoUrl] = useState<string | null>(null);
-  const [reelsError, setReelsError] = useState<string | null>(null);
   const [showCorporateReport, setShowCorporateReport] = useState(false);
 
   // 출품작 드래그 앤 드롭 상태 관리
@@ -199,8 +193,6 @@ export function ExhibitionDetailModal({
     setTargetUrl(exhibition.targetUrl || "");
     setPosterPath(exhibition.posterPath || null);
     setArtworks(exhibition.artworks ? [...exhibition.artworks] : []);
-    setReelsVideoUrl(null);
-    setReelsError(null);
     setSelectedArtworkIndex(null);
     setIsPosterLightboxOpen(false);
   }, [exhibition, isOpen, initialEditMode]);
@@ -250,40 +242,6 @@ export function ExhibitionDetailModal({
   const handlePosterDelete = () => {
     if (window.confirm("메인 포스터를 삭제하시겠습니까?")) {
       setPosterPath(null);
-    }
-  };
-
-  // 3-1. 9:16 인스타그램 릴스 모션 비디오 자동 생성 핸들러
-  const handleGenerateReels = async () => {
-    if (!posterPath) {
-      alert("릴스 모션을 생성하려면 메인 포스터 이미지가 등록되어 있어야 합니다.");
-      return;
-    }
-    setIsGeneratingReels(true);
-    setReelsError(null);
-    try {
-      const res = await fetch("/api/reels/generate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          cardId: exhibition.id,
-          posterPath,
-          university,
-          department,
-          title,
-          duration: 5,
-        }),
-      });
-      const data = await res.json();
-      if (!res.ok || !data.success) {
-        throw new Error(data.error || "릴스 비디오 생성에 실패했습니다.");
-      }
-      setReelsVideoUrl(data.videoUrl);
-    } catch (err: any) {
-      console.error("[Reels Generate Error]", err);
-      setReelsError(err.message || "릴스 생성 중 오류가 발생했습니다.");
-    } finally {
-      setIsGeneratingReels(false);
     }
   };
 
@@ -777,61 +735,19 @@ export function ExhibitionDetailModal({
                 </button>
               )}
 
-              {/* 릴스 모션그래픽 생성 버튼 & 프리뷰 */}
-              {posterPath && (
-                <div className="w-full mt-3 flex flex-col items-center gap-2">
-                  <button
-                    type="button"
-                    disabled={isGeneratingReels}
-                    onClick={handleGenerateReels}
-                    className="w-full inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 hover:from-pink-700 hover:via-purple-700 hover:to-indigo-700 text-white text-xs font-bold shadow-md shadow-purple-500/20 transition-all disabled:opacity-50"
-                    title="1080x1920 무왜곡 2.5D 모션그래픽 릴스 비디오 생성"
+              {/* 공식 아카이브 웹사이트 바로가기 버튼 */}
+              {targetUrl && (
+                <div className="w-full mt-3">
+                  <a
+                    href={targetUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-full inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-600 via-cyan-500 to-blue-600 hover:from-cyan-500 hover:to-blue-500 active:scale-[0.98] text-white text-xs sm:text-sm font-bold shadow-md shadow-cyan-500/20 transition-all"
+                    title="공식 아카이브 웹사이트 새 창으로 열기"
                   >
-                    {isGeneratingReels ? (
-                      <>
-                        <Loader2 className="w-4 h-4 animate-spin" />
-                        <span>릴스 모션 렌더링 중...</span>
-                      </>
-                    ) : (
-                      <>
-                        <Film className="w-4 h-4" />
-                        <span>🎬 릴스 모션 생성</span>
-                      </>
-                    )}
-                  </button>
-
-                  {reelsError && (
-                    <div className="w-full p-2 text-[11px] text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-950/40 rounded-lg border border-red-200 dark:border-red-900/50 text-center">
-                      {reelsError}
-                    </div>
-                  )}
-
-                  {reelsVideoUrl && (
-                    <div className="w-full mt-1 p-3 bg-slate-100 dark:bg-slate-900/90 rounded-xl border border-purple-500/30 flex flex-col items-center gap-2 shadow-sm">
-                      <div className="flex items-center justify-between w-full">
-                        <span className="text-xs font-extrabold text-purple-600 dark:text-purple-400 flex items-center gap-1">
-                          <Film className="w-3.5 h-3.5" /> 릴스 프리뷰 (9:16)
-                        </span>
-                        <a
-                          href={reelsVideoUrl}
-                          download={`reels_${exhibition.id || "video"}.mp4`}
-                          className="inline-flex items-center gap-1 text-[11px] font-bold text-blue-600 dark:text-blue-400 hover:underline"
-                        >
-                          <Download className="w-3 h-3" /> 다운로드
-                        </a>
-                      </div>
-                      <div className="relative w-full max-w-[180px] aspect-[9/16] rounded-lg overflow-hidden bg-black shadow-inner border border-slate-700/50">
-                        <video
-                          src={reelsVideoUrl}
-                          controls
-                          autoPlay
-                          loop
-                          playsInline
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    </div>
-                  )}
+                    <span>공식 아카이브 웹사이트 바로가기</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
                 </div>
               )}
             </div>
@@ -920,34 +836,21 @@ export function ExhibitionDetailModal({
                 )}
               </div>
 
-              {/* 공식 아카이브 웹사이트 URL */}
-              <div className="pt-2">
-                {isEditing ? (
-                  <div>
-                    <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1 flex items-center gap-1">
-                      <ExternalLink className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" /> 공식 아카이브 웹사이트 URL
-                    </label>
-                    <input
-                      type="text"
-                      value={targetUrl}
-                      onChange={(e) => setTargetUrl(e.target.value)}
-                      placeholder="https://..."
-                      className="w-full px-3 py-1.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 font-mono text-xs"
-                    />
-                  </div>
-                ) : (
-                  targetUrl && (
-                    <a
-                      href={targetUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-cyan-50 dark:bg-cyan-950/60 border border-cyan-200 dark:border-cyan-800 text-cyan-700 dark:text-cyan-300 text-xs font-semibold hover:bg-cyan-100 dark:hover:bg-cyan-900 transition"
-                    >
-                      공식 아카이브 웹사이트 바로가기 <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  )
-                )}
-              </div>
+              {/* 공식 아카이브 웹사이트 URL (편집 모드 시 입력 필드) */}
+              {isEditing && (
+                <div className="pt-2">
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1 flex items-center gap-1">
+                    <ExternalLink className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" /> 공식 아카이브 웹사이트 URL
+                  </label>
+                  <input
+                    type="text"
+                    value={targetUrl}
+                    onChange={(e) => setTargetUrl(e.target.value)}
+                    placeholder="https://..."
+                    className="w-full px-3 py-1.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 font-mono text-xs"
+                  />
+                </div>
+              )}
             </div>
           </div>
 
