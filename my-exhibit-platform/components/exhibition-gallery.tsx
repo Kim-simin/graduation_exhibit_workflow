@@ -594,12 +594,12 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                   setSelectedExhibition(item);
                 }
               }}
-              className={`group relative min-w-0 bg-white dark:bg-[#111827] border rounded-2xl overflow-hidden shadow-sm transition flex flex-col ${
+              className={`group relative min-w-0 bg-white dark:bg-[#111827] border rounded-2xl overflow-hidden shadow-sm transition-all duration-300 ease-out flex flex-col ${
                 isAdminEditMode
-                  ? "border-red-400/70 dark:border-red-500/50 hover:shadow-lg"
+                  ? "border-red-400/70 dark:border-red-500/50 hover:shadow-lg hover:-translate-y-1"
                   : item.isResearched
-                  ? "border-slate-200 dark:border-gray-800 hover:border-cyan-500 hover:shadow-md cursor-pointer"
-                  : "border-slate-200 dark:border-gray-800/60 bg-slate-50/70 dark:bg-slate-950/70 opacity-95 cursor-default"
+                  ? "border-slate-200 dark:border-gray-800/80 hover:border-cyan-500/80 dark:hover:border-cyan-400/80 hover:shadow-2xl hover:shadow-cyan-500/15 dark:hover:shadow-cyan-950/40 hover:-translate-y-2 hover:scale-[1.015] active:scale-[0.985] active:translate-y-0 cursor-pointer select-none"
+                  : "border-slate-200 dark:border-gray-800/60 bg-slate-50/70 dark:bg-slate-950/70 opacity-95 hover:border-slate-300 dark:hover:border-slate-700 hover:-translate-y-1 hover:shadow-md cursor-default"
               }`}
             >
               {/* 관리자 편집 모드 활성화 시 수정/삭제 오버레이 버튼 바 */}
@@ -641,20 +641,38 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
 
               {/* 대학교 카드 상단: 해당 대학교 온라인 전시 링크공유 액션 바 */}
               <div
-                className="z-10 px-2 py-1.5 sm:px-3 sm:py-2 bg-slate-50/95 dark:bg-[#0c101d] border-b border-slate-100 dark:border-gray-800/80 flex items-center justify-between gap-1 text-[8px] sm:text-xs select-none"
+                className="z-10 px-2 py-1.5 sm:px-3 sm:py-2 bg-slate-50/95 dark:bg-[#0c101d] border-b border-slate-100 dark:border-gray-800/80 flex items-center justify-between gap-1 text-[8px] sm:text-xs select-none transition-colors duration-200 group-hover:bg-slate-100/90 dark:group-hover:bg-[#101728]"
                 onClick={(e) => e.stopPropagation()}
               >
-                <div className="flex items-center gap-1 sm:gap-1.5 min-w-0">
-                  <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-pulse shrink-0" />
-                  <Globe className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 text-cyan-600 dark:text-cyan-400 shrink-0" />
-                  <span className="font-bold text-slate-700 dark:text-slate-300 truncate text-[8px] sm:text-[11px] hidden sm:inline">
-                    온라인 전시
-                  </span>
-                </div>
+                {item.targetUrl ? (
+                  <a
+                    href={item.targetUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="inline-flex items-center gap-1 sm:gap-1.5 min-w-0 text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors group/link cursor-pointer"
+                    title={`${item.university} 공식 온라인 전시 사이트 새 창으로 열기 (${item.targetUrl})`}
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-pulse shrink-0" />
+                    <Globe className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 text-cyan-600 dark:text-cyan-400 shrink-0 group-hover/link:rotate-45 transition-transform duration-300" />
+                    <span className="font-bold truncate text-[8px] sm:text-[11px] hidden sm:inline group-hover/link:underline underline-offset-2">
+                      온라인 전시
+                    </span>
+                    <ExternalLink className="w-2 h-2 sm:w-2.5 sm:h-2.5 opacity-60 group-hover/link:opacity-100 hidden sm:inline shrink-0 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
+                  </a>
+                ) : (
+                  <div className="flex items-center gap-1 sm:gap-1.5 min-w-0">
+                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-pulse shrink-0" />
+                    <Globe className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 text-cyan-600 dark:text-cyan-400 shrink-0" />
+                    <span className="font-bold text-slate-700 dark:text-slate-300 truncate text-[8px] sm:text-[11px] hidden sm:inline">
+                      온라인 전시
+                    </span>
+                  </div>
+                )}
                 <button
                   type="button"
                   onClick={(e) => handleShareLink(item, e)}
-                  className={`inline-flex items-center gap-0.5 sm:gap-1 px-1.5 py-0.5 sm:px-2.5 sm:py-1 rounded-md sm:rounded-lg text-[8px] sm:text-[11px] font-bold transition-all shrink-0 shadow-xs active:scale-95 ${
+                  className={`inline-flex items-center gap-0.5 sm:gap-1 px-1.5 py-0.5 sm:px-2.5 sm:py-1 rounded-md sm:rounded-lg text-[8px] sm:text-[11px] font-bold transition-all shrink-0 shadow-xs hover:scale-105 active:scale-95 ${
                     copiedCardId === item.id
                       ? "bg-emerald-600 text-white border border-emerald-600 shadow-emerald-500/20"
                       : "bg-white dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-cyan-950/60 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:text-cyan-600 dark:hover:text-cyan-400 hover:border-cyan-300 dark:hover:border-cyan-700"
@@ -682,7 +700,7 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                     <img
                       src={`/api/images/${item.posterPath}`}
                       alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                      className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
                       onError={(e) => {
                         (e.target as HTMLElement).style.display = "none";
                       }}
@@ -776,7 +794,7 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                       <span className="text-[8px] sm:text-xs text-cyan-300 dark:text-cyan-400 font-semibold tracking-wide uppercase block mb-0.5 truncate">
                         {item.university} · {item.department}
                       </span>
-                      <h3 className="text-[10px] sm:text-sm font-bold leading-tight line-clamp-2 drop-shadow-md">
+                      <h3 className="text-[10px] sm:text-sm font-bold leading-tight line-clamp-2 drop-shadow-md group-hover:text-cyan-100 transition-colors duration-200">
                         {item.title}
                       </h3>
                     </div>
@@ -883,9 +901,10 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                             setSelectedExhibition(item);
                             setIsDetailEditMode(false);
                           }}
-                          className="min-w-0 text-[8px] sm:text-xs text-cyan-700 dark:text-cyan-400 font-semibold inline-flex items-center gap-0.5 group-hover:translate-x-0.5 transition cursor-pointer whitespace-nowrap"
+                          className="min-w-0 text-[8px] sm:text-xs text-cyan-700 dark:text-cyan-400 font-bold inline-flex items-center gap-0.5 group-hover:text-cyan-500 dark:group-hover:text-cyan-300 transition-colors cursor-pointer whitespace-nowrap"
                         >
-                          <span className="sm:hidden">관람</span><span className="hidden sm:inline">전시 관람하기</span> <ArrowUpRight className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
+                          <span className="sm:hidden">관람</span><span className="hidden sm:inline">전시 관람하기</span>
+                          <ArrowUpRight className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform duration-300 ease-out" />
                         </span>
                       </div>
                     </>
