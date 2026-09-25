@@ -22,6 +22,8 @@ import {
   Briefcase,
   ShieldCheck,
   Maximize2,
+  Share2,
+  Check,
 } from "lucide-react";
 import { Exhibition, Artwork } from "@/lib/get-exhibitions";
 import { EDIT_CATEGORIES, getStandardCategory, isArtworkZoomDisabled } from "@/src/utils/categoryMapper";
@@ -176,6 +178,61 @@ export function ExhibitionDetailModal({
   // 고화질 이미지 라이트박스 상태 관리
   const [selectedArtworkIndex, setSelectedArtworkIndex] = useState<number | null>(null);
   const [isPosterLightboxOpen, setIsPosterLightboxOpen] = useState(false);
+
+  // 온라인 전시 링크공유 상태
+  const [isLinkCopied, setIsLinkCopied] = useState(false);
+
+  const handleModalShareLink = async () => {
+    const shareUrl =
+      targetUrl && targetUrl.startsWith("http")
+        ? targetUrl
+        : typeof window !== "undefined" && exhibition
+        ? `${window.location.origin}/exhibit/${encodeURIComponent(exhibition.id)}`
+        : "";
+
+    if (!shareUrl) return;
+
+    const shareTitle = `${university} ${department} 온라인 졸업전시회`;
+    const shareText = `[${university}] ${title} 공식 온라인 전시를 확인해보세요!`;
+
+    if (
+      typeof navigator !== "undefined" &&
+      navigator.share &&
+      /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)
+    ) {
+      try {
+        await navigator.share({
+          title: shareTitle,
+          text: shareText,
+          url: shareUrl,
+        });
+        setIsLinkCopied(true);
+        setTimeout(() => setIsLinkCopied(false), 2000);
+        return;
+      } catch (err: any) {
+        if (err.name === "AbortError") return;
+      }
+    }
+
+    try {
+      if (typeof navigator !== "undefined" && navigator.clipboard) {
+        await navigator.clipboard.writeText(shareUrl);
+      } else {
+        const textArea = document.createElement("textarea");
+        textArea.value = shareUrl;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+      }
+      setIsLinkCopied(true);
+      setTimeout(() => setIsLinkCopied(false), 2000);
+    } catch (e) {
+      console.error("모달 링크 복사 실패:", e);
+    }
+  };
 
   // 전시 데이터 변경 시 초기화
   useEffect(() => {
@@ -638,6 +695,30 @@ export function ExhibitionDetailModal({
                 </button>
               </>
             ) : null}
+
+            {/* 온라인 전시 링크공유 버튼 */}
+            <button
+              type="button"
+              onClick={handleModalShareLink}
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition shadow-sm whitespace-nowrap shrink-0 ${
+                isLinkCopied
+                  ? "bg-emerald-600 text-white"
+                  : "bg-slate-100 dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-cyan-950/60 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:text-cyan-600 dark:hover:text-cyan-400"
+              }`}
+              title="해당 대학교 온라인 전시 링크공유"
+            >
+              {isLinkCopied ? (
+                <>
+                  <Check className="w-3.5 h-3.5" />
+                  <span>복사완료</span>
+                </>
+              ) : (
+                <>
+                  <Share2 className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" />
+                  <span>링크공유</span>
+                </>
+              )}
+            </button>
 
             <button
               type="button"

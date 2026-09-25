@@ -1,5 +1,31 @@
 [
   {
+    "event_id": "sch-evt-6396b389",
+    "event_type": "SCHEDULE_DISABLED",
+    "schedule_id": "sched-test-create-01",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-25T16:12:09.001Z",
+    "details": {
+      "enabled": false,
+      "schedule_name": "수정된 테스트 자동화 스케줄 (11:00 KST)"
+    }
+  },
+  {
+    "event_id": "sch-evt-7a313dd8",
+    "event_type": "SCHEDULE_DISABLED",
+    "schedule_id": "sched-daily-morning",
+    "actor_id": "admin",
+    "actor_role": "ADMIN",
+    "run_id": null,
+    "timestamp": "2026-09-25T16:12:07.884Z",
+    "details": {
+      "enabled": false,
+      "schedule_name": "일일 정기 대학 전시 리서치 및 콘텐츠 생성 (KST 09:00)"
+    }
+  },
+  {
     "event_id": "sch-evt-a8febdf3",
     "event_type": "DRY_RUN_EXECUTED",
     "schedule_id": "sched-daily-morning",

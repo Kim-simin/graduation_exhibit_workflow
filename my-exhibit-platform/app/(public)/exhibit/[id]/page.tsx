@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { ArrowLeft, Sparkles, School, Calendar, MapPin, CheckCircle2, Clock, ArrowUpRight, Maximize2, GraduationCap } from "lucide-react";
+import { ArrowLeft, Sparkles, School, Calendar, MapPin, CheckCircle2, Clock, ArrowUpRight, Maximize2, GraduationCap, Share2, Check } from "lucide-react";
 import { Exhibition } from "@/lib/get-exhibitions";
 import { ArtworkLightboxModal } from "@/components/artwork-lightbox-modal";
 import { isArtworkZoomDisabled } from "@/src/utils/categoryMapper";
@@ -13,6 +13,7 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
   const [isLoading, setIsLoading] = useState(true);
   const [selectedArtworkIndex, setSelectedArtworkIndex] = useState<number | null>(null);
   const [isPosterLightboxOpen, setIsPosterLightboxOpen] = useState(false);
+  const [isLinkCopied, setIsLinkCopied] = useState(false);
 
   useEffect(() => {
     async function fetchExhibit() {
@@ -94,6 +95,59 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
 
   const isZoomDisabled = isArtworkZoomDisabled(exhibit);
 
+  const handleShare = async () => {
+    if (!exhibit) return;
+    const shareUrl =
+      exhibit.targetUrl && exhibit.targetUrl.startsWith("http")
+        ? exhibit.targetUrl
+        : typeof window !== "undefined"
+        ? window.location.href
+        : "";
+
+    if (!shareUrl) return;
+
+    const shareTitle = `${exhibit.university} ${exhibit.department} 온라인 졸업전시회`;
+    const shareText = `[${exhibit.university}] ${exhibit.title} 공식 온라인 전시를 확인해보세요!`;
+
+    if (
+      typeof navigator !== "undefined" &&
+      navigator.share &&
+      /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)
+    ) {
+      try {
+        await navigator.share({
+          title: shareTitle,
+          text: shareText,
+          url: shareUrl,
+        });
+        setIsLinkCopied(true);
+        setTimeout(() => setIsLinkCopied(false), 2000);
+        return;
+      } catch (err: any) {
+        if (err.name === "AbortError") return;
+      }
+    }
+
+    try {
+      if (typeof navigator !== "undefined" && navigator.clipboard) {
+        await navigator.clipboard.writeText(shareUrl);
+      } else {
+        const textArea = document.createElement("textarea");
+        textArea.value = shareUrl;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+      }
+      setIsLinkCopied(true);
+      setTimeout(() => setIsLinkCopied(false), 2000);
+    } catch (e) {
+      console.error("링크 복사 실패:", e);
+    }
+  };
+
   return (
     <main className="min-h-screen px-4 md:px-12 py-10 max-w-5xl mx-auto space-y-6">
       <div className="flex flex-wrap items-center justify-between gap-3">
@@ -103,14 +157,39 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
         >
           <ArrowLeft className="w-4 h-4" /> 전체 아카이브 목록으로 돌아가기
         </Link>
-        <Link
-          href={`/professors?univ=${encodeURIComponent(exhibit.university)}&dept=${encodeURIComponent(exhibit.department)}`}
-          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-500/30 text-indigo-300 text-xs font-bold transition shadow-sm"
-        >
-          <GraduationCap className="w-4 h-4 text-indigo-400" />
-          <span>{exhibit.university} {exhibit.department} 교수진 & 커리큘럼 보기</span>
-          <ArrowUpRight className="w-3.5 h-3.5 opacity-70" />
-        </Link>
+        <div className="flex flex-wrap items-center gap-2">
+          {/* 해당 대학교 온라인 전시 링크공유 버튼 */}
+          <button
+            type="button"
+            onClick={handleShare}
+            className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition shadow-sm ${
+              isLinkCopied
+                ? "bg-emerald-600 text-white"
+                : "bg-slate-800 hover:bg-cyan-950/60 border border-slate-700 text-slate-200 hover:text-cyan-400 hover:border-cyan-500/50"
+            }`}
+            title="해당 대학교 온라인 전시 링크공유"
+          >
+            {isLinkCopied ? (
+              <>
+                <Check className="w-3.5 h-3.5" />
+                <span>복사완료</span>
+              </>
+            ) : (
+              <>
+                <Share2 className="w-3.5 h-3.5 text-cyan-400" />
+                <span>온라인 전시 링크공유</span>
+              </>
+            )}
+          </button>
+          <Link
+            href={`/professors?univ=${encodeURIComponent(exhibit.university)}&dept=${encodeURIComponent(exhibit.department)}`}
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-500/30 text-indigo-300 text-xs font-bold transition shadow-sm"
+          >
+            <GraduationCap className="w-4 h-4 text-indigo-400" />
+            <span>{exhibit.university} {exhibit.department} 교수진 & 커리큘럼 보기</span>
+            <ArrowUpRight className="w-3.5 h-3.5 opacity-70" />
+          </Link>
+        </div>
       </div>
 
       <div className="bg-[#111827] border border-gray-800 rounded-2xl overflow-hidden shadow-2xl">
