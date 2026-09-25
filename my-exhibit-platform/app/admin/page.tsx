@@ -38,6 +38,7 @@ import {
   Share2,
   Youtube,
   School,
+  GraduationCap,
   Sparkles,
   Globe,
   X,

@@ -1,5 +1,95 @@
 [
   {
+    "id": "UNIV-2025-세종대학교-디자인이노베이션전공-firstchase",
+    "category": "디자인·UX/UI",
+    "university": "세종대학교",
+    "department": "디자인이노베이션전공",
+    "year": 2025,
+    "status": "리서치 완료",
+    "isUploaded": true,
+    "isResearched": true,
+    "poster_image": "uploads/UNIV-2025-세종대학교-디자인이노베이션전공/main_poster_2025.jpg",
+    "exhibition_title": "2025 세종대학교 디자인이노베이션전공 졸업전시회 | First Chase",
+    "exhibit_title": "2025 세종대학교 디자인이노베이션전공 졸업전시회 | First Chase",
+    "title": "2025 세종대학교 디자인이노베이션전공 졸업전시회 | First Chase",
+    "target_url": "http://sj-di.com/2025-firstchase",
+    "official_url": "http://sj-di.com/2025-firstchase",
+    "scraped_url": "http://sj-di.com/2025-firstchase",
+    "exhibition_period": "2025.10.31 - 2025.11.10 (10:00 - 18:00)",
+    "exhibition_venue": "세종대학교 광개토관 B1 세종뮤지엄갤러리 3관",
+    "slogan": "트랙을 넘어 세상으로의 첫 질주",
+    "exhibit_slogan": "트랙을 넘어 세상으로의 첫 질주",
+    "critic_score": 97,
+    "critic_feedback": "세종대학교 디자인이노베이션전공 제44회 졸업전시 'First Chase'는 시각디자인(아이덴티티 디자인, 디지털 미디어 프로젝트)과 공업디자인(제품·운송 디자인, 제품 시스템 디자인)의 경계를 허물고 혁신적인 조형 언어와 인터랙티브 솔루션을 조화롭게 제시합니다.",
+    "curation_summary": {
+      "headline": "제44회 디자인이노베이션 졸업전시회 | 트랙을 넘어 세상으로의 첫 질주",
+      "curation_intro": "졸업은 단순한 끝이 아닌 새로운 트랙의 시작입니다. 우리는 지금 막 그 출발선 앞에 서 있습니다. 지난 시간 속 우리의 경험과 흔적은 서로 겹치고 쌓이며 앞으로 나아가게 하는 추진력이 되었습니다. 우리는 속도를 높여 눈앞의 트랙을 넘어 더 큰 무대로 달려갑니다. First Chase, 우리의 첫 질주는 곧 새로운 시작이 됩니다.",
+      "inferred_industry_keywords": [
+        "디자인이노베이션",
+        "세종대학교",
+        "FirstChase",
+        "아이덴티티디자인",
+        "디지털미디어",
+        "제품운송디자인",
+        "제품시스템디자인"
+      ]
+    },
+    "cooperation_companies": [
+      "세종대학교 창의소프트학부",
+      "세종뮤지엄갤러리",
+      "세종대학교 디자인이노베이션 졸업준비위원회"
+    ],
+    "has_corporate_cooperation": true,
+    "corporate_cooperation_count": 3,
+    "cross_validation_status": "CORROBORATED",
+    "artworks": []
+  },
+  {
+    "id": "UNIV-2025-대진대학교-시각디자인학과-fe26",
+    "category": "디자인·UX/UI",
+    "university": "대진대학교",
+    "department": "시각디자인학과",
+    "year": 2025,
+    "status": "리서치 완료",
+    "isUploaded": true,
+    "isResearched": true,
+    "poster_image": "uploads/UNIV-2025-대진대학교-시각디자인학과/main_poster_2025.jpg",
+    "exhibition_title": "대진대학교 시각디자인 26기 졸업전시회 | Fe26 : REINFORCE",
+    "exhibit_title": "대진대학교 시각디자인 26기 졸업전시회 | Fe26 : REINFORCE",
+    "title": "대진대학교 시각디자인 26기 졸업전시회 | Fe26 : REINFORCE",
+    "target_url": "https://dju26-design.co.kr/",
+    "official_url": "https://dju26-design.co.kr/",
+    "scraped_url": "https://dju26-design.co.kr/",
+    "exhibition_period": "2024.11.20 - 2024.11.25 (온라인 아카이브 상시 운영)",
+    "exhibition_venue": "대진대학교 인문예술대학 디자인갤러리 & 온라인 아카이브",
+    "slogan": "Fe26 : REINFORCE - 단단하게 결속되어 세상을 변화시키는 디자인",
+    "exhibit_slogan": "Fe26 : REINFORCE - 단단하게 결속되어 세상을 변화시키는 디자인",
+    "critic_score": 98,
+    "critic_feedback": "대진대학교 시각디자인학과 26기 졸업전시 'Fe26 : REINFORCE'는 에디토리얼, 인터랙티브, 패키지, 시각디자인의 4대 전공 트랙을 통해 총 138점의 수준 높은 디자인 결과물을 선보이며 강인한 실험 정신과 시각적 완결성을 증명합니다.",
+    "curation_summary": {
+      "headline": "대진대학교 시각디자인 26기 졸업전시회 | Fe26 : REINFORCE",
+      "curation_intro": "철의 원소 기호 Fe와 원자 번호 26에서 출발한 'Fe26 : REINFORCE'는 대진대학교 시각디자인학과 26기 학생들이 불확실한 환경 속에서 단련되어 단단하고 유연한 디자이너로 거듭나는 과정을 상징합니다. EDITORIAL DESIGN, INTERACTIVE DESIGN, PACKAGE DESIGN, VISUAL DESIGN의 4대 트랙을 통해 세상의 문제를 해결하고 새로운 시각적 경험을 제시하는 138점의 작품을 만나보실 수 있습니다.",
+      "inferred_industry_keywords": [
+        "시각디자인학과",
+        "대진대학교",
+        "Fe26",
+        "EDITORIAL DESIGN",
+        "INTERACTIVE DESIGN",
+        "PACKAGE DESIGN",
+        "VISUAL DESIGN"
+      ]
+    },
+    "cooperation_companies": [
+      "대진대학교 인문예술대학 시각디자인학과",
+      "한국디지털디자인학회",
+      "Fe26 졸업준비위원회"
+    ],
+    "has_corporate_cooperation": true,
+    "corporate_cooperation_count": 3,
+    "cross_validation_status": "CORROBORATED",
+    "artworks": []
+  },
+  {
     "id": "UNIV-2025-홍익대학교-시각디자인과-hivcd",
     "category": "디자인·UX/UI",
     "university": "홍익대학교",
@@ -123,44 +213,8 @@
       "(주)이비티이아이",
       "라프디(주)",
       "TechReady"
-    ]
-  },
-  {
-    "id": "UNIV-2025-대진대학교-시각디자인학과-fe26",
-    "category": "디자인·UX/UI",
-    "university": "대진대학교",
-    "department": "시각디자인학과",
-    "year": "2025",
-    "status": "리서치 완료",
-    "isUploaded": true,
-    "isResearched": true,
-    "poster_image": "uploads/UNIV-2025-대진대학교-시각디자인학과/main_poster_2025.png",
-    "exhibition_title": "대진대학교 시각디자인 26기 온라인 졸업전시회",
-    "exhibit_title": "[대진대학교] 2025 시각디자인학과 졸업작품전",
-    "title": "대진대학교 시각디자인 26기 온라인 졸업전시회",
-    "target_url": "https://dju26-design.co.kr/",
-    "official_url": "https://dju26-design.co.kr/",
-    "scraped_url": "https://dju26-design.co.kr/",
-    "exhibition_period": "2025 상시 운영",
-    "exhibition_venue": "대진대학교 공식 온라인 졸업전시관",
-    "slogan": "시간의 흐름 속에서도 변치 않는 강철처럼, Daejin University Visual Design 26th Graduation Exhibition.",
-    "exhibit_slogan": "시간의 흐름 속에서도 변치 않는 강철처럼, Daejin University Visual Design 26th Graduation Exhibition.",
-    "critic_score": 100,
-    "critic_feedback": "Antigravity 자율 에이전트 인제스트 및 정밀 교차 검증 완료",
-    "curation_summary": {
-      "headline": "대진대학교 시각디자인 26기 온라인 졸업전시회",
-      "curation_intro": "대진대학교 시각디자인학과 2025년도 공식 졸업전시 아카이브입니다. 학생들의 정밀 수집된 출품작과 창의적 비전을 확인하실 수 있습니다.",
-      "inferred_industry_keywords": [
-        "시각디자인학과",
-        "졸업전시",
-        "2025",
-        "디자인·UX/UI"
-      ]
-    },
-    "artworks": [],
-    "has_corporate_cooperation": false,
-    "corporate_cooperation_count": 0,
-    "cooperation_companies": []
+    ],
+    "disable_artwork_zoom": true
   },
   {
     "id": "DES-02",
@@ -6606,5 +6660,46 @@
     "scraped_url": null,
     "scraped_text": "",
     "download_dir": ""
+  },
+  {
+    "id": "UNIV-2026-인천대학교-컴퓨터공학부-7899",
+    "category": "IT·소프트웨어·컴공",
+    "university": "인천대학교",
+    "department": "컴퓨터공학부",
+    "year": "2026",
+    "status": "리서치 완료",
+    "isUploaded": true,
+    "isResearched": true,
+    "poster_image": "uploads/UNIV-2026-_____-______-7899/main_poster_1790164250856.png",
+    "exhibition_title": "인천대학교 2026년 컴퓨터공학부 졸업전시회",
+    "exhibit_title": "[인천대학교] 2026 컴퓨터공학부 졸업전시회",
+    "title": "인천대학교 2026년 컴퓨터공학부 졸업전시회",
+    "target_url": "https://cse.inu.ac.kr/isis/13789/subview.do",
+    "official_url": "https://cse.inu.ac.kr/isis/13789/subview.do",
+    "scraped_url": "https://cse.inu.ac.kr/isis/13789/subview.do",
+    "critic_score": 100,
+    "critic_feedback": "관리자 검수 및 실시간 카드 편집 승인 완료",
+    "curation_summary": {
+      "headline": "인천대학교 2026년 컴퓨터공학부 졸업전시회",
+      "curation_intro": "2026년도 인천대학교 컴퓨터공학부 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+      "inferred_industry_keywords": [
+        "디자인",
+        "컴퓨터공학부",
+        "2026졸전"
+      ]
+    },
+    "artworks": [],
+    "exhibition_period": "2026.05.29",
+    "schedule": "2026.05.29",
+    "exhibition_venue": "인천대학교 소극장(11호관 208호)",
+    "slogan": "인천대학교 2026년 컴퓨터공학부 졸업전시회",
+    "card_news": {
+      "card_headline": "인천대학교 2026년 컴퓨터공학부 졸업전시회",
+      "card_intro": "2026년도 인천대학교 컴퓨터공학부 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다."
+    },
+    "raw_description": "2026년도 인천대학교 컴퓨터공학부 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+    "instagramPublished": true,
+    "publishedAt": "2026-09-24T17:32:09.121180",
+    "disable_artwork_zoom": true
   }
 ]
