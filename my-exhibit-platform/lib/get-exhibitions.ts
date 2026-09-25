@@ -20,6 +20,7 @@ export interface Exhibition {
   title: string;
   isResearched: boolean;
   posterPath: string | null;
+  posterVideoPath?: string | null;
   headline: string;
   curationIntro: string;
   period: string;
@@ -81,6 +82,11 @@ export function getInitialExhibitions(): Exhibition[] {
         ? poster.replace(/\\/g, "/").replace(/^.*data\/downloads\//, "").replace(/^.*downloads\//, "").replace(/^\/+/, "").replace(/^public\//, "")
         : null;
 
+      const posterVideo = item.poster_video || item.motion_poster_url || item.motion_poster || (item.university?.includes("세종") && item.department?.includes("디자인이노베이션") ? "uploads/UNIV-2025-세종대학교-디자인이노베이션전공/motion_poster.mp4" : null);
+      const cleanPosterVideoPath = posterVideo
+        ? posterVideo.replace(/\\/g, "/").replace(/^.*data\/downloads\//, "").replace(/^.*downloads\//, "").replace(/^\/+/, "").replace(/^public\//, "")
+        : null;
+
       const artworks = (item.artworks || [])
         .filter((a: any) => a.image && !a.image.includes("unsplash"))
         .map((a: any) => ({
@@ -117,6 +123,7 @@ export function getInitialExhibitions(): Exhibition[] {
         status: item.status || "대기",
         targetUrl: item.target_url || item.scraped_url || item.official_url || "",
         posterPath: cleanPosterPath,
+        posterVideoPath: cleanPosterVideoPath,
         headline: cleanHeadline,
         curationIntro:
           isResearched

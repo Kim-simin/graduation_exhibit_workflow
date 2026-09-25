@@ -42,7 +42,9 @@
     "has_corporate_cooperation": true,
     "corporate_cooperation_count": 3,
     "cross_validation_status": "CORROBORATED",
-    "artworks": []
+    "artworks": [],
+    "poster_video": "uploads/UNIV-2025-세종대학교-디자인이노베이션전공/motion_poster.mp4",
+    "motion_poster_url": "http://sj-di.com/wp-content/uploads/2025/10/final-web.mp4"
   },
   {
     "id": "UNIV-2025-대진대학교-시각디자인학과-fe26",

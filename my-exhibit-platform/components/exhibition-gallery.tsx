@@ -31,6 +31,8 @@ import {
   Plus,
   Share2,
   Globe,
+  Play,
+  Film,
 } from "lucide-react";
 import { Exhibition, Artwork } from "@/lib/get-exhibitions";
 import ScreenshotUploadModal from "./screenshot-upload-modal";
@@ -705,7 +707,19 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                         (e.target as HTMLElement).style.display = "none";
                       }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                    {/* 모션그래픽 비디오 (마우스 호버 시 실제 공식 포스터 모션그래픽 재생) */}
+                    {item.posterVideoPath && (
+                      <video
+                        src={`/api/images/${item.posterVideoPath}`}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="auto"
+                        className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:scale-108 transition-transform duration-500 ease-out"
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
                   </>
                 ) : (
                   /* 리서치 전 (수집 대기) 플레이스홀더 */
@@ -762,13 +776,19 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                 {/* Overlays / Badges for Researched Cards */}
                 {item.isResearched && (
                   <>
-                    <div className="absolute top-1 left-1 sm:top-3 sm:left-3 flex max-w-[46%] flex-wrap gap-1 sm:gap-1.5">
+                    <div className="absolute top-1 left-1 sm:top-3 sm:left-3 flex max-w-[46%] flex-wrap gap-1 sm:gap-1.5 pointer-events-none">
                       <span className="max-w-full truncate px-1 py-0.5 sm:px-2.5 sm:py-1 rounded-sm sm:rounded-md bg-white/90 dark:bg-cyan-950/80 backdrop-blur-md border border-slate-200 dark:border-cyan-500/40 text-cyan-800 dark:text-cyan-300 text-[8px] sm:text-xs font-semibold shadow-sm">
                         {item.category}
                       </span>
                       <span className="px-1 py-0.5 sm:px-2 sm:py-1 rounded-sm sm:rounded-md bg-slate-900/80 backdrop-blur-md border border-slate-700 text-white text-[8px] sm:text-xs font-mono">
                         {item.year}
                       </span>
+                      {item.posterVideoPath && (
+                        <span className="px-1 py-0.5 sm:px-2 sm:py-1 rounded-sm sm:rounded-md bg-purple-600/90 dark:bg-purple-950/80 backdrop-blur-md border border-purple-400/40 text-purple-100 text-[8px] sm:text-xs font-bold shadow-sm flex items-center gap-0.5">
+                          <Play className="w-2 h-2 sm:w-2.5 sm:h-2.5 fill-current" />
+                          <span className="sm:hidden">모션</span><span className="hidden sm:inline">모션 포스터</span>
+                        </span>
+                      )}
                     </div>
 
                     <div className="absolute top-1 right-1 sm:top-3 sm:right-3 flex max-w-[48%] flex-col items-end gap-1 sm:gap-1.5">
