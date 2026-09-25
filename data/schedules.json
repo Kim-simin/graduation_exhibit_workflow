@@ -3,7 +3,7 @@
     "scheduleId": "sched-daily-morning",
     "name": "일일 정기 대학 전시 리서치 및 콘텐츠 생성 (KST 09:00)",
     "workflowId": "wf-intelligence-pipeline",
-    "enabled": true,
+    "enabled": false,
     "cronExpression": "0 9 * * *",
     "timezone": "Asia/Seoul",
     "scope": {
@@ -13,7 +13,7 @@
       "category": "디자인·UX/UI"
     },
     "createdAt": "2026-09-16T09:00:00+09:00",
-    "updatedAt": "2026-09-16T09:00:00+09:00",
+    "updatedAt": "2026-09-25T16:12:07.884Z",
     "lastRunAt": "2026-09-17T21:21:31.077456+09:00",
     "nextRunAt": "2026-09-18T09:00:00+09:00",
     "lastRunStatus": "WAITING_FOR_APPROVAL",
@@ -47,7 +47,7 @@
     "scheduleId": "sched-test-create-01",
     "name": "수정된 테스트 자동화 스케줄 (11:00 KST)",
     "workflowId": "wf-intelligence-pipeline",
-    "enabled": true,
+    "enabled": false,
     "cronExpression": "0 11 * * *",
     "timezone": "Asia/Seoul",
     "scope": {
@@ -57,7 +57,7 @@
       "content_type": "REELS"
     },
     "createdAt": "2026-09-17T12:21:30.640Z",
-    "updatedAt": "2026-09-17T12:21:30.844Z",
+    "updatedAt": "2026-09-25T16:12:09.001Z",
     "lastRunAt": null,
     "nextRunAt": "2026-09-18T11:00:00+09:00",
     "lastRunStatus": "NONE",

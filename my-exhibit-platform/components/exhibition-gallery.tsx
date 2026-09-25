@@ -29,6 +29,8 @@ import {
   Briefcase,
   PlusCircle,
   Plus,
+  Share2,
+  Globe,
 } from "lucide-react";
 import { Exhibition, Artwork } from "@/lib/get-exhibitions";
 import ScreenshotUploadModal from "./screenshot-upload-modal";
@@ -63,6 +65,10 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
   const [isInstaModalOpen, setIsInstaModalOpen] = useState(false);
   const [selectedInstaCard, setSelectedInstaCard] = useState<Exhibition | null>(null);
   const [cooldownRemaining, setCooldownRemaining] = useState(0);
+
+  // 온라인 전시 링크공유 복사 상태 및 알림 토스트
+  const [copiedCardId, setCopiedCardId] = useState<string | null>(null);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   // 쿨다운 상태 초기 조회
   useEffect(() => {
@@ -134,6 +140,73 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
   useEffect(() => {
     refreshExhibitions();
   }, []);
+
+  // 해당 대학교 온라인 전시 링크공유 핸들러 (Web Share API 및 클립보드 복사 지원)
+  const handleShareLink = async (item: Exhibition, e: React.MouseEvent) => {
+    e.stopPropagation();
+
+    // targetUrl이 있으면 해당 대학교 공식 온라인 전시 웹사이트 URL, 없으면 플랫폼 내 전시 상세 페이지 URL
+    const shareUrl =
+      item.targetUrl && item.targetUrl.startsWith("http")
+        ? item.targetUrl
+        : typeof window !== "undefined"
+        ? `${window.location.origin}/exhibit/${encodeURIComponent(item.id)}`
+        : "";
+
+    if (!shareUrl) return;
+
+    console.log("[handleShareLink] Sharing URL:", shareUrl, "for item:", item.id);
+
+    const shareTitle = `${item.university} ${item.department} 온라인 졸업전시회`;
+    const shareText = `[${item.university}] ${item.title} 공식 온라인 전시를 확인해보세요!`;
+
+    // 1. 모바일/앱 환경 Web Share API 지원 시 우선 네이티브 공유창 호출
+    if (
+      typeof navigator !== "undefined" &&
+      navigator.share &&
+      /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)
+    ) {
+      try {
+        await navigator.share({
+          title: shareTitle,
+          text: shareText,
+          url: shareUrl,
+        });
+        setCopiedCardId(item.id);
+        setToastMessage(`[${item.university}] 링크가 공유되었습니다.`);
+        setTimeout(() => setCopiedCardId(null), 2500);
+        setTimeout(() => setToastMessage(null), 3000);
+        return;
+      } catch (err: any) {
+        if (err.name === "AbortError") {
+          return; // 사용자가 모바일 공유 취소 시 무시
+        }
+      }
+    }
+
+    // 2. 데스크톱 웹 및 Web Share 미지원/취소 외 실패 시 클립보드 복사 폴백
+    try {
+      if (typeof navigator !== "undefined" && navigator.clipboard) {
+        await navigator.clipboard.writeText(shareUrl);
+      } else {
+        const textArea = document.createElement("textarea");
+        textArea.value = shareUrl;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+      }
+
+      setCopiedCardId(item.id);
+      setToastMessage(`[${item.university}] 온라인 전시 링크가 복사되었습니다!`);
+      setTimeout(() => setCopiedCardId(null), 2500);
+      setTimeout(() => setToastMessage(null), 3000);
+    } catch (err) {
+      console.error("온라인 전시 링크 복사 실패:", err);
+    }
+  };
 
   // 카드 수정 모달 열기 (실시간 상세 편집 모달을 isEditing: true 상태로 오픈)
   const handleOpenEditModal = (item: Exhibition, e: React.MouseEvent) => {
@@ -566,6 +639,42 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                 </div>
               )}
 
+              {/* 대학교 카드 상단: 해당 대학교 온라인 전시 링크공유 액션 바 */}
+              <div
+                className="z-10 px-2 py-1.5 sm:px-3 sm:py-2 bg-slate-50/95 dark:bg-[#0c101d] border-b border-slate-100 dark:border-gray-800/80 flex items-center justify-between gap-1 text-[8px] sm:text-xs select-none"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div className="flex items-center gap-1 sm:gap-1.5 min-w-0">
+                  <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-pulse shrink-0" />
+                  <Globe className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 text-cyan-600 dark:text-cyan-400 shrink-0" />
+                  <span className="font-bold text-slate-700 dark:text-slate-300 truncate text-[8px] sm:text-[11px] hidden sm:inline">
+                    온라인 전시
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  onClick={(e) => handleShareLink(item, e)}
+                  className={`inline-flex items-center gap-0.5 sm:gap-1 px-1.5 py-0.5 sm:px-2.5 sm:py-1 rounded-md sm:rounded-lg text-[8px] sm:text-[11px] font-bold transition-all shrink-0 shadow-xs active:scale-95 ${
+                    copiedCardId === item.id
+                      ? "bg-emerald-600 text-white border border-emerald-600 shadow-emerald-500/20"
+                      : "bg-white dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-cyan-950/60 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:text-cyan-600 dark:hover:text-cyan-400 hover:border-cyan-300 dark:hover:border-cyan-700"
+                  }`}
+                  title={`${item.university} 온라인 전시 링크공유`}
+                >
+                  {copiedCardId === item.id ? (
+                    <>
+                      <Check className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white shrink-0" />
+                      <span>복사완료</span>
+                    </>
+                  ) : (
+                    <>
+                      <Share2 className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-cyan-600 dark:text-cyan-400 shrink-0" />
+                      <span>링크공유</span>
+                    </>
+                  )}
+                </button>
+              </div>
+
               {/* Poster Aspect Ratio Frame */}
               <div className="relative aspect-[4/5] w-full min-w-0 overflow-hidden bg-slate-100 dark:bg-slate-900">
                 {item.isResearched && item.posterPath ? (
@@ -921,6 +1030,14 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
             refreshExhibitions();
           }}
         />
+      )}
+
+      {/* 링크 복사 완료 토스트 알림 */}
+      {toastMessage && (
+        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 rounded-xl bg-slate-900/95 dark:bg-[#0f172a]/95 text-white text-xs sm:text-sm font-bold shadow-2xl border border-cyan-500/50 backdrop-blur-md flex items-center gap-2 animate-in fade-in slide-in-from-bottom-4 duration-200">
+          <Check className="w-4 h-4 text-cyan-400 shrink-0" />
+          <span>{toastMessage}</span>
+        </div>
       )}
     </main>
   );

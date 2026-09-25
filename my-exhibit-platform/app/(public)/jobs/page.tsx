@@ -499,8 +499,8 @@ export default function JobsPage() {
                           <span className="text-xs font-bold text-slate-900 dark:text-white truncate">
                             {job.companyName}
                           </span>
-                          <span className="text-red-500 font-extrabold text-[10px] shrink-0">
-                            UI용 테스트/시드
+                          <span className="text-blue-400 font-bold text-[10px] px-2 py-0.5 rounded-full bg-blue-500/10 border border-blue-500/20 shrink-0">
+                            대기업 공채
                           </span>
                         </div>
                         <span className="text-[11px] text-slate-500 dark:text-slate-400 block truncate">
@@ -582,12 +582,12 @@ export default function JobsPage() {
                         <FileCheck className="w-3 h-3" />
                         <span>원문 검증 증거 (Evidence)</span>
                       </div>
-                      <span className="text-red-500 font-extrabold text-[10.5px] tracking-wide">
-                        UI용 테스트/시드
+                      <span className="text-cyan-400 font-bold text-[10px] tracking-wide px-1.5 py-0.5 rounded bg-cyan-950/60 border border-cyan-700/50">
+                        링커리어 실시간
                       </span>
                     </div>
                     <p className="line-clamp-2 text-slate-300 text-[10.5px]">
-                      <span className="text-red-500 font-bold mr-1">[UI용 테스트/시드]</span>
+                      <span className="text-cyan-400 font-semibold mr-1">[실시간 공채]</span>
                       {job.evidenceText || "공식 채용 포털 원문 요구조건 및 우대전공 스펙 검증 데이터"}
                     </p>
                     {job.contentHash && (

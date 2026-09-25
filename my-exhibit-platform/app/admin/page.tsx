@@ -80,7 +80,7 @@ function AdminDashboardContent() {
   const [adminTab, setAdminTab] = useState<"dashboard" | "queue" | "agents" | "runs" | "schedules" | "datasync" | "content" | "cardnews" | "research">(
     (urlTab && ["dashboard", "queue", "agents", "runs", "schedules", "datasync", "content", "cardnews", "research"].includes(urlTab))
       ? urlTab
-      : "cardnews"
+      : "dashboard"
   );
   const [runtimeData, setRuntimeData] = useState<any>(null);
   const [operationsData, setOperationsData] = useState<any>(null);
@@ -1046,27 +1046,6 @@ function AdminDashboardContent() {
                 </button>
 
                 <button
-                  onClick={() => setAdminTab("queue")}
-                  className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-bold transition ${
-                    adminTab === "queue"
-                      ? "bg-amber-600 text-white shadow-lg shadow-amber-600/25"
-                      : "text-slate-400 hover:text-white hover:bg-slate-800/60"
-                  }`}
-                >
-                  <div className="flex items-center gap-2.5">
-                    <FileCheck2 className="w-4 h-4 text-amber-400" />
-                    <span>Approval Queue</span>
-                  </div>
-                  <span className={`text-[10px] font-mono px-1.5 py-0.5 rounded ${
-                    (operationsData?.counts?.waiting_approval || 0) > 0
-                      ? "bg-amber-500 text-slate-950 font-black"
-                      : "bg-black/30 text-slate-400"
-                  }`}>
-                    {operationsData?.counts?.waiting_approval || 0}
-                  </span>
-                </button>
-
-                <button
                   onClick={() => setAdminTab("agents")}
                   className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-bold transition ${
                     adminTab === "agents"
@@ -1080,23 +1059,6 @@ function AdminDashboardContent() {
                   </div>
                   <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-black/30">
                     {runtimeData?.agents?.length || 5}
-                  </span>
-                </button>
-
-                <button
-                  onClick={() => setAdminTab("runs")}
-                  className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-bold transition ${
-                    adminTab === "runs"
-                      ? "bg-cyan-600 text-white shadow-lg shadow-cyan-600/25"
-                      : "text-slate-400 hover:text-white hover:bg-slate-800/60"
-                  }`}
-                >
-                  <div className="flex items-center gap-2.5">
-                    <Clock className="w-4 h-4" />
-                    <span>Runs</span>
-                  </div>
-                  <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-black/30">
-                    {runtimeData?.runs?.length || 0}
                   </span>
                 </button>
 
@@ -1116,102 +1078,6 @@ function AdminDashboardContent() {
                     CRON
                   </span>
                 </button>
-
-                <button
-                  onClick={() => setAdminTab("datasync")}
-                  className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-bold transition ${
-                    adminTab === "datasync"
-                      ? "bg-cyan-600 text-white shadow-lg shadow-cyan-600/25"
-                      : "text-slate-400 hover:text-white hover:bg-slate-800/60"
-                  }`}
-                >
-                  <div className="flex items-center gap-2.5">
-                    <Database className="w-4 h-4" />
-                    <span>Data Sync</span>
-                  </div>
-                  <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-black/30">
-                    4 Domains
-                  </span>
-                </button>
-
-                <button
-                  onClick={() => setAdminTab("content")}
-                  className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-bold transition ${
-                    adminTab === "content"
-                      ? "bg-cyan-600 text-white shadow-lg shadow-cyan-600/25"
-                      : "text-slate-400 hover:text-white hover:bg-slate-800/60"
-                  }`}
-                >
-                  <div className="flex items-center gap-2.5">
-                    <FileCheck2 className="w-4 h-4" />
-                    <span>Content</span>
-                  </div>
-                  <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-black/30">
-                    STEP 8
-                  </span>
-                </button>
-
-                <button
-                  onClick={() => setAdminTab("research")}
-                  className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-bold transition ${
-                    adminTab === "research"
-                      ? "bg-cyan-600 text-white shadow-lg shadow-cyan-600/25"
-                      : "text-slate-400 hover:text-white hover:bg-slate-800/60"
-                  }`}
-                >
-                  <div className="flex items-center gap-2.5">
-                    <Globe className="w-4 h-4 text-cyan-400" />
-                    <span>Research & Crawl</span>
-                  </div>
-                  <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-black/30 text-cyan-300">
-                    STEP 13
-                  </span>
-                </button>
-              </nav>
-            </div>
-
-            {/* Legacy Sub-Consoles */}
-            <div className="pt-2 border-t border-slate-800/80">
-              <span className="text-[10px] font-mono font-bold text-slate-500 uppercase tracking-wider px-3 block mb-2">
-                Legacy Consoles
-              </span>
-              <nav className="space-y-1">
-                <button
-                  onClick={() => setAdminTab("cardnews")}
-                  className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-medium transition ${
-                    adminTab === "cardnews"
-                      ? "bg-slate-800 text-white font-bold"
-                      : "text-slate-400 hover:text-white hover:bg-slate-800/40"
-                  }`}
-                >
-                  <div className="flex items-center gap-2.5">
-                    <span>🎨</span>
-                    <span>카드뉴스 검수</span>
-                  </div>
-                  <span className="text-[10px] text-cyan-400 font-mono">v2.5</span>
-                </button>
-
-                <Link
-                  href="/admin/professors"
-                  className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-medium text-slate-400 hover:text-white hover:bg-slate-800/40 transition"
-                >
-                  <div className="flex items-center gap-2.5">
-                    <span>🎓</span>
-                    <span>교수 관제</span>
-                  </div>
-                  <ExternalLink className="w-3 h-3 text-slate-600" />
-                </Link>
-
-                <Link
-                  href="/admin/content"
-                  className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-medium text-slate-400 hover:text-white hover:bg-slate-800/40 transition"
-                >
-                  <div className="flex items-center gap-2.5">
-                    <span>🎬</span>
-                    <span>콘텐츠 리서치</span>
-                  </div>
-                  <ExternalLink className="w-3 h-3 text-slate-600" />
-                </Link>
               </nav>
             </div>
           </div>
