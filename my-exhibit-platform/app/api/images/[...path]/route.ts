@@ -43,6 +43,7 @@ export async function GET(
     if (ext === ".jpg" || ext === ".jpeg") contentType = "image/jpeg";
     else if (ext === ".webp") contentType = "image/webp";
     else if (ext === ".svg") contentType = "image/svg+xml";
+    else if (ext === ".mp4") contentType = "video/mp4";
 
     // 4. 바이너리 버퍼 스트리밍 응답
     const fileBuffer = fs.readFileSync(targetFile);

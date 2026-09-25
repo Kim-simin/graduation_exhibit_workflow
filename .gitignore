@@ -34,6 +34,8 @@ env/
 temp/
 *.log
 *.mp4
+/public/
+!my-exhibit-platform/public/uploads/**/motion_poster.mp4
 data/chrome_insta_profile/
 data/downloads/
 data/captures/

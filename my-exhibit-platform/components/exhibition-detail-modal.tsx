@@ -750,11 +750,24 @@ export function ExhibitionDetailModal({
                 title={!isEditing && posterPath ? "클릭하여 메인 포스터 고화질 확인" : undefined}
               >
                 {posterPath ? (
-                  <img
-                    src={posterPath.startsWith("http") ? posterPath : `/api/images/${posterPath}`}
-                    alt="메인 공식 포스터"
-                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500 select-none"
-                  />
+                  <>
+                    <img
+                      src={posterPath.startsWith("http") ? posterPath : `/api/images/${posterPath}`}
+                      alt="메인 공식 포스터"
+                      className="w-full h-full object-cover group-hover:scale-105 transition duration-500 select-none"
+                    />
+                    {exhibition?.posterVideoPath && (
+                      <video
+                        src={`/api/images/${exhibition.posterVideoPath}`}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="auto"
+                        className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                      />
+                    )}
+                  </>
                 ) : (
                   <div className="flex flex-col items-center justify-center p-4 text-center text-slate-400 dark:text-slate-500">
                     <ImageIcon className="w-12 h-12 mb-2 opacity-50" />
