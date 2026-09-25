@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { getStandardCategory } from "@/src/utils/categoryMapper";
+import { getStandardCategory, isArtworkZoomDisabled } from "@/src/utils/categoryMapper";
 
 export interface Artwork {
   title: string;
@@ -8,6 +8,7 @@ export interface Artwork {
   role: string;
   imagePath: string;
   description: string;
+  department?: string;
 }
 
 export interface Exhibition {
@@ -43,6 +44,7 @@ export interface Exhibition {
   corporateCooperationCount?: number;
   verifiedRequiredSkills?: string[];
   corporateResearchReport?: string;
+  disableArtworkZoom?: boolean;
 }
 
 export function mapCategory(rawCat: string): string {
@@ -85,6 +87,7 @@ export function getInitialExhibitions(): Exhibition[] {
           title: a.title || "출품작",
           author: a.student_name || `${item.university} 작가`,
           role: a.inferred_role || "크리에이터",
+          department: a.department || a.sub_department || a.track || a.major || "",
           imagePath: a.image.replace(/\\/g, "/").replace(/^.*data\/downloads\//, "").replace(/^.*downloads\//, "").replace(/^\/+/, "").replace(/^public\//, ""),
           description: a.description || "",
         }));
@@ -139,6 +142,15 @@ export function getInitialExhibitions(): Exhibition[] {
         corporateCooperationCount: item.corporate_cooperation_count || (item.cooperation_companies ? item.cooperation_companies.length : 0),
         verifiedRequiredSkills: item.verified_required_skills || [],
         corporateResearchReport: item.corporate_research_report || null,
+        disableArtworkZoom: isArtworkZoomDisabled({
+          id: item.id,
+          category: item.category,
+          department: item.department,
+          university: item.university,
+          year: item.year,
+          title: cleanTitle,
+          disableArtworkZoom: Boolean(item.disable_artwork_zoom || item.disableArtworkZoom),
+        }),
       };
     });
   } catch (err) {

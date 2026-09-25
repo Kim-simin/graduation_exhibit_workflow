@@ -63,6 +63,7 @@ export interface Professor {
   name: string;
   university: string;
   department: string;
+  major?: string;
   lab_name: string;
   title: string;
   research_areas: string[];

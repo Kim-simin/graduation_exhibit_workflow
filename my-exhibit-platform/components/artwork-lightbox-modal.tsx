@@ -286,6 +286,11 @@ export function ArtworkLightboxModal({
               <span className="text-xs px-2 py-0.5 rounded bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 font-medium">
                 {currentArt.author || "작가 미상"}
               </span>
+              {(currentArt.department || department) && (
+                <span className="text-xs px-2 py-0.5 rounded bg-blue-500/20 border border-blue-500/30 text-blue-300 font-medium">
+                  {currentArt.department || department}
+                </span>
+              )}
               {currentArt.role && (
                 <span className="text-xs text-gray-400 font-mono">
                   · {currentArt.role}

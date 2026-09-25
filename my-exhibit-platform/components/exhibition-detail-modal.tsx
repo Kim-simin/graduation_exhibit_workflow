@@ -24,7 +24,7 @@ import {
   Maximize2,
 } from "lucide-react";
 import { Exhibition, Artwork } from "@/lib/get-exhibitions";
-import { EDIT_CATEGORIES, getStandardCategory } from "@/src/utils/categoryMapper";
+import { EDIT_CATEGORIES, getStandardCategory, isArtworkZoomDisabled } from "@/src/utils/categoryMapper";
 import { ArtworkLightboxModal } from "./artwork-lightbox-modal";
 
 // EDIT_CATEGORIES is imported from categoryMapper
@@ -198,6 +198,8 @@ export function ExhibitionDetailModal({
   }, [exhibition, isOpen, initialEditMode]);
 
   if (!isOpen || !exhibition) return null;
+
+  const isZoomDisabled = isArtworkZoomDisabled(exhibition);
 
   // 1. 공통 파일 업로드 헬퍼
   const uploadImageFile = async (file: File): Promise<string | null> => {
@@ -946,6 +948,8 @@ export function ExhibitionDetailModal({
               <span className="text-xs text-slate-500 dark:text-slate-400">
                 {isEditing
                   ? "💡 마우스로 카드를 드래그하거나 좌상단 번호(#)를 더블클릭하여 순서를 빠르게 재배치할 수 있습니다. (사진 교체, 삭제, 인라인 편집 지원)"
+                  : isZoomDisabled
+                  ? ""
                   : "* 카드를 클릭하면 고화질 이미지를 확인할 수 있습니다."}
               </span>
             </div>
@@ -961,7 +965,7 @@ export function ExhibitionDetailModal({
                       key={idx}
                       draggable={isEditing}
                       onClick={() => {
-                        if (!isEditing) {
+                        if (!isEditing && !isZoomDisabled) {
                           setSelectedArtworkIndex(idx);
                         }
                       }}
@@ -978,13 +982,17 @@ export function ExhibitionDetailModal({
                       onDragEnd={handleDragEnd}
                       onDrop={(e) => handleDrop(idx, e)}
                       className={`relative group bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm transition-all duration-200 flex flex-col ${
-                        isEditing ? "cursor-grab active:cursor-grabbing" : "cursor-pointer hover:border-cyan-500 hover:shadow-lg"
+                        isEditing
+                          ? "cursor-grab active:cursor-grabbing border border-slate-200 dark:border-slate-800"
+                          : isZoomDisabled
+                          ? "cursor-default border border-slate-200 dark:border-slate-800"
+                          : "cursor-pointer hover:border-cyan-500 hover:shadow-lg border border-slate-200 dark:border-slate-800"
                       } ${
                         isDragging
                           ? "opacity-40 scale-95 border-2 border-blue-500 ring-2 ring-blue-500/50 z-30"
                           : isOver
                           ? "border-dashed border-2 border-blue-400 ring-2 ring-blue-500 scale-[1.02] bg-blue-50/20 dark:bg-blue-950/30 z-20"
-                          : "border border-slate-200 dark:border-slate-800"
+                          : ""
                       }`}
                     >
                       {/* 드래그 핸들 및 더블클릭 순서 변경 배지 */}
@@ -1004,14 +1012,16 @@ export function ExhibitionDetailModal({
                               : `/api/images/${art.imagePath}`
                           }
                           alt={art.title}
-                          className="w-full h-full object-cover group-hover:scale-105 transition duration-500 select-none pointer-events-none"
+                          className={`w-full h-full object-cover transition duration-500 select-none pointer-events-none ${
+                            isZoomDisabled ? "" : "group-hover:scale-105"
+                          }`}
                           onError={(e) => {
                             (e.target as HTMLElement).style.display = "none";
                           }}
                         />
 
                         {/* 비편집 모드 마우스 오버 시 고화질 확대 오버레이 안내 */}
-                        {!isEditing && (
+                        {!isEditing && !isZoomDisabled && (
                           <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center pointer-events-none z-10">
                             <span className="px-3 py-1.5 rounded-full bg-cyan-600/90 text-white text-xs font-bold flex items-center gap-1.5 shadow-lg backdrop-blur-sm">
                               <Maximize2 className="w-3.5 h-3.5" /> 고화질 확대
@@ -1071,7 +1081,7 @@ export function ExhibitionDetailModal({
                         {isEditing ? (
                           <div className="space-y-2">
                             <div className="text-[11px] text-blue-600 dark:text-blue-400 font-bold flex items-center gap-1">
-                              <span>{department || "학과"} #{idx + 1}</span>
+                              <span>{(art.department || department || "학과")} #{idx + 1}</span>
                             </div>
                             <div className="grid grid-cols-2 gap-2">
                               <div>
@@ -1137,8 +1147,8 @@ export function ExhibitionDetailModal({
                         ) : (
                           <div>
                             <div className="flex items-center justify-between mb-1">
-                              <span className="text-xs px-2 py-0.5 rounded bg-cyan-50 dark:bg-cyan-950 text-cyan-800 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-800 font-medium truncate max-w-[130px]">
-                                {department} #{idx + 1}
+                              <span className="text-xs px-2 py-0.5 rounded bg-cyan-50 dark:bg-cyan-950 text-cyan-800 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-800 font-medium truncate max-w-[200px]" title={art.department || department}>
+                                {(art.department || department)} #{idx + 1}
                               </span>
                               <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
                                 {art.author}
@@ -1204,7 +1214,7 @@ export function ExhibitionDetailModal({
 
         {/* 개별 출품작 고화질 뷰어 라이트박스 */}
         <ArtworkLightboxModal
-          isOpen={selectedArtworkIndex !== null}
+          isOpen={selectedArtworkIndex !== null && !isZoomDisabled}
           onClose={() => setSelectedArtworkIndex(null)}
           artworks={artworks}
           initialIndex={selectedArtworkIndex ?? 0}

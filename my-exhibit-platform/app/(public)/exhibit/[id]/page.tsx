@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowLeft, Sparkles, School, Calendar, MapPin, CheckCircle2, Clock, ArrowUpRight, Maximize2, GraduationCap } from "lucide-react";
 import { Exhibition } from "@/lib/get-exhibitions";
 import { ArtworkLightboxModal } from "@/components/artwork-lightbox-modal";
+import { isArtworkZoomDisabled } from "@/src/utils/categoryMapper";
 
 export default function ExhibitDetailPage({ params }: { params: { id: string } }) {
   const exhibitId = params.id;
@@ -90,6 +91,8 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
       </main>
     );
   }
+
+  const isZoomDisabled = isArtworkZoomDisabled(exhibit);
 
   return (
     <main className="min-h-screen px-4 md:px-12 py-10 max-w-5xl mx-auto space-y-6">
@@ -195,33 +198,47 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
               <h2 className="text-lg font-bold text-white">
                 🎨 출품작 갤러리 (총 {exhibit.artworks.length}점)
               </h2>
-              <span className="text-xs text-slate-400">
-                * 카드를 클릭하면 고화질 이미지를 확인할 수 있습니다.
-              </span>
+              {!isZoomDisabled && (
+                <span className="text-xs text-slate-400">
+                  * 카드를 클릭하면 고화질 이미지를 확인할 수 있습니다.
+                </span>
+              )}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {exhibit.artworks.map((art, idx) => (
                 <div
                   key={idx}
-                  onClick={() => setSelectedArtworkIndex(idx)}
-                  className="rounded-xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-cyan-500 hover:shadow-lg transition duration-200 flex flex-col group cursor-pointer"
+                  onClick={() => {
+                    if (!isZoomDisabled) {
+                      setSelectedArtworkIndex(idx);
+                    }
+                  }}
+                  className={`rounded-xl overflow-hidden bg-slate-900 border border-slate-800 transition duration-200 flex flex-col group ${
+                    isZoomDisabled
+                      ? "cursor-default"
+                      : "cursor-pointer hover:border-cyan-500 hover:shadow-lg"
+                  }`}
                 >
                   <div className="relative w-full h-48 bg-slate-950 overflow-hidden flex items-center justify-center select-none">
                     <img 
                       src={`/api/images/${art.imagePath}`} 
                       alt={art.title} 
-                      className="w-full h-48 object-cover group-hover:scale-105 transition duration-300 pointer-events-none"
+                      className={`w-full h-48 object-cover transition duration-300 pointer-events-none ${
+                        isZoomDisabled ? "" : "group-hover:scale-105"
+                      }`}
                       onError={(e) => {
                         (e.target as HTMLElement).style.display = "none";
                       }}
                     />
                     {/* 카드 호버 시 고화질 확대 힌트 */}
-                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center pointer-events-none z-10">
-                      <span className="px-3 py-1.5 rounded-full bg-cyan-600/90 text-white text-xs font-bold flex items-center gap-1.5 shadow-lg backdrop-blur-sm">
-                        <Maximize2 className="w-3.5 h-3.5" /> 고화질 확대
-                      </span>
-                    </div>
+                    {!isZoomDisabled && (
+                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center pointer-events-none z-10">
+                        <span className="px-3 py-1.5 rounded-full bg-cyan-600/90 text-white text-xs font-bold flex items-center gap-1.5 shadow-lg backdrop-blur-sm">
+                          <Maximize2 className="w-3.5 h-3.5" /> 고화질 확대
+                        </span>
+                      </div>
+                    )}
                   </div>
                   <div className="p-3">
                     <span className="text-xs text-cyan-400 font-mono font-bold">#{idx + 1}</span>
@@ -240,7 +257,7 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
 
       {/* 개별 출품작 고화질 라이트박스 뷰어 */}
       <ArtworkLightboxModal
-        isOpen={selectedArtworkIndex !== null}
+        isOpen={selectedArtworkIndex !== null && !isZoomDisabled}
         onClose={() => setSelectedArtworkIndex(null)}
         artworks={exhibit.artworks}
         initialIndex={selectedArtworkIndex ?? 0}

@@ -39,11 +39,11 @@ export function getStandardCategory(deptName: string): string {
   const d = (deptName || "").toLowerCase().replace(/\s+/g, ''); // 공백 제거 후 소문자 변환
 
   // 1. IT·소프트웨어·컴공
-  if (/컴퓨터|소프트웨어|sw|인공지능|ai|데이터|정보통신|보안|웹개발|프론트엔드|백엔드/i.test(d)) {
+  if (/컴퓨터|소프트웨어|컴공|sw|인공지능|ai|데이터|정보통신|보안|웹개발|프론트엔드|백엔드|it/i.test(d)) {
     return "IT·소프트웨어·컴공";
   }
   // 2. 기계·전자·일반공학
-  if (/기계|전자|전기|메카트로닉스|신소재|화학공학|로봇|산업공학|임베디드|반도체/i.test(d)) {
+  if (/기계|전자|전기|메카트로닉스|신소재|화학공학|로봇|산업공학|임베디드|반도체|일반공학/i.test(d)) {
     return "기계·전자·일반공학";
   }
   // 3. 영상·웹툰·애니 (신규 확장)
@@ -77,4 +77,37 @@ export function getStandardCategory(deptName: string): string {
 
   // 매핑되지 않은 경우 기본값 (또는 "기타" 분류)
   return "디자인·UX/UI"; 
+}
+
+/**
+ * IT·소프트웨어·컴공, 기계·전자·일반공학 등 확대 비활성화 카테고리 여부 판별
+ */
+export function isCategoryZoomDisabled(categoryOrDept?: string): boolean {
+  if (!categoryOrDept) return false;
+  const standardCat = getStandardCategory(categoryOrDept);
+  return standardCat === "IT·소프트웨어·컴공" || standardCat === "기계·전자·일반공학";
+}
+
+/**
+ * 작품 클릭 시 고화질 확대(라이트박스 팝업) 비활성화 여부 판별
+ * - IT/소프트웨어/컴공, 기계/전자/일반공학 카테고리 전체 적용
+ * - 개별 플래그(disableArtworkZoom / disable_artwork_zoom) 지원
+ */
+export function isArtworkZoomDisabled(exhibition?: {
+  id?: string;
+  category?: string;
+  department?: string;
+  university?: string;
+  year?: string | number;
+  title?: string;
+  disableArtworkZoom?: boolean;
+} | null): boolean {
+  if (!exhibition) return false;
+  if (exhibition.disableArtworkZoom) return true;
+  if (isCategoryZoomDisabled(exhibition.category) || isCategoryZoomDisabled(exhibition.department)) {
+    return true;
+  }
+  if (exhibition.id === "UNIV-2026-인천대학교-컴퓨터공학부-7899") return true;
+  if (exhibition.title?.includes("인천대학교 2026년 컴퓨터공학부 졸업전시회")) return true;
+  return false;
 }

@@ -1,5 +1,142 @@
 [
   {
+    "id": "prof-sejong-di-김영은",
+    "name": "김영은",
+    "english_name": "Youngeun Kim",
+    "university": "세종대학교",
+    "department": "디자인이노베이션전공",
+    "lab_name": "스페이셜 & 인터랙티브 미디어랩",
+    "title": "조교수",
+    "research_areas": [
+      "공간 퍼포먼스 디자인",
+      "그래픽 & 미디어 디자인",
+      "인터랙티브 디자인",
+      "융합 디자인"
+    ],
+    "email": "youngkim@sejong.ac.kr",
+    "phone": "02-3408-3323",
+    "office": "세종대학교 진관홀",
+    "avatar_url": "",
+    "bio": "세종대학교 디자인이노베이션전공 조교수. 서울대학교 미술대학 디자인 전공 및 런던예술대학교(LCC) Graphic and Media 학사, 영국 건축협회 건축학교(AA School) Spatial Performance and Design 석사 졸업. 공간과 미디어가 융합된 인터랙티브 경험 디자인 전문.",
+    "source_url": "https://www.sejong.ac.kr",
+    "official_profile_url": "https://www.sejong.ac.kr",
+    "collected_at": "2026-09-25T20:45:00.000Z",
+    "is_verified": true,
+    "confidence_score": 0.95,
+    "evidence_text": "세종대학교 공식 포털 및 디자인이노베이션전공 교원 명부 확인 교수진"
+  },
+  {
+    "id": "prof-sejong-di-민자경",
+    "name": "민자경",
+    "english_name": "Jakyung Min",
+    "university": "세종대학교",
+    "department": "디자인이노베이션전공",
+    "lab_name": "시각 커뮤니케이션 & 브랜딩 연구실",
+    "title": "부교수",
+    "research_areas": [
+      "시각디자인",
+      "비주얼 커뮤니케이션",
+      "브랜드 아이덴티티",
+      "타이포그래피",
+      "출판 디자인"
+    ],
+    "email": "mjk@sejong.ac.kr",
+    "phone": "02-3408-3323",
+    "office": "세종대학교 진관홀",
+    "avatar_url": "",
+    "bio": "세종대학교 디자인이노베이션전공 부교수. 세종대학교 산업디자인 학사, 홍익대 시각디자인 및 시카고예술대학(SAIC) 석사, 홍익대 시각디자인 박사 졸업. 시각 커뮤니케이션과 브랜드 아이덴티티 디자인 전문 연구.",
+    "source_url": "https://www.sejong.ac.kr",
+    "official_profile_url": "https://www.sejong.ac.kr",
+    "collected_at": "2026-09-25T20:45:00.000Z",
+    "is_verified": true,
+    "confidence_score": 0.95,
+    "evidence_text": "세종대학교 공식 포털 및 디자인이노베이션전공 교원 명부 확인 교수진"
+  },
+  {
+    "id": "prof-sejong-di-김진성",
+    "name": "김진성",
+    "english_name": "Jinsung Kim",
+    "university": "세종대학교",
+    "department": "디자인이노베이션전공",
+    "lab_name": "모빌리티 & 프로덕트 디자인랩",
+    "title": "부교수",
+    "research_areas": [
+      "모빌리티 디자인",
+      "운송 디자인",
+      "산업디자인",
+      "제품 디자인",
+      "사용자 경험(UX)",
+      "디자인 방법론"
+    ],
+    "email": "jinsungk@sejong.ac.kr",
+    "phone": "02-3408-3323",
+    "office": "세종대학교 진관홀",
+    "avatar_url": "",
+    "bio": "세종대학교 디자인이노베이션전공 부교수. 서울대학교 산업디자인 학사, 영국 왕립예술학교(RCA) 운송 디자인(Transport Design) 석사 졸업. 한국자동차디자인협회(KADA) 이사 및 모빌리티 디자인 방법론 전문가.",
+    "source_url": "https://www.sejong.ac.kr",
+    "official_profile_url": "https://www.sejong.ac.kr",
+    "collected_at": "2026-09-25T20:45:00.000Z",
+    "is_verified": true,
+    "confidence_score": 0.95,
+    "evidence_text": "세종대학교 공식 포털 및 디자인이노베이션전공 교원 명부 확인 교수진"
+  },
+  {
+    "id": "prof-sejong-di-박용진",
+    "name": "박용진",
+    "english_name": "Yongjin Park",
+    "university": "세종대학교",
+    "department": "디자인이노베이션전공",
+    "lab_name": "비주얼 커뮤니케이션 & 모션랩",
+    "title": "부교수",
+    "research_areas": [
+      "브랜드 디자인",
+      "디지털 미디어 디자인",
+      "영상 디자인",
+      "모션 그래픽스",
+      "인포메이션 디자인",
+      "타이포그래피"
+    ],
+    "email": "yjpark@sejong.ac.kr",
+    "phone": "02-3408-3323",
+    "office": "세종대학교 진관홀",
+    "avatar_url": "",
+    "bio": "세종대학교 소프트웨어융합대학 디자인이노베이션전공 부교수. 서울대학교 시각디자인 학사, 시카고 예술대학(SAIC) Visual Communication M.F.A 졸업. JTBC 브랜드디자인팀, 미국 Digital Kitchen 및 Sarofsky 크리에이티브 리드 출신으로 영상 미디어와 모션 그래픽스 전문 지도.",
+    "source_url": "https://www.sejong.ac.kr",
+    "official_profile_url": "https://www.sejong.ac.kr",
+    "collected_at": "2026-09-25T20:45:00.000Z",
+    "is_verified": true,
+    "confidence_score": 0.95,
+    "evidence_text": "세종대학교 공식 포털 및 디자인이노베이션전공 교원 명부 확인 교수진"
+  },
+  {
+    "id": "prof-sejong-di-전환수",
+    "name": "전환수",
+    "english_name": "Hwansoo Jeon",
+    "university": "세종대학교",
+    "department": "디자인이노베이션전공",
+    "lab_name": "디자인 익스피리언스 연구실",
+    "title": "학과장 / 조교수",
+    "research_areas": [
+      "산업디자인",
+      "제품디자인",
+      "CMF디자인",
+      "디자인엔지니어링",
+      "AI디자인",
+      "Physical UX 디자인"
+    ],
+    "email": "designexp@sejong.ac.kr",
+    "phone": "02-3408-3323",
+    "office": "세종대학교 진관홀 514호",
+    "avatar_url": "",
+    "bio": "세종대학교 소프트웨어융합대학 창의소프트학부 디자인이노베이션전공 학과장(조교수). 서울대학교 재료공학 학사, 영국 왕립예술학교(RCA) M.A 및 임페리얼 칼리지 런던(Imperial College London) M.Sc 졸업. 산업디자인, 제품 CMF 및 Physical UX 전문 연구.",
+    "source_url": "https://www.sejong.ac.kr",
+    "official_profile_url": "https://www.sejong.ac.kr",
+    "collected_at": "2026-09-25T20:45:00.000Z",
+    "is_verified": true,
+    "confidence_score": 0.95,
+    "evidence_text": "세종대학교 공식 포털 및 창의소프트학부 디자인이노베이션전공 교원 명부 확인 교수진"
+  },
+  {
     "id": "prof-hongik-vcd-안효진",
     "name": "안효진",
     "english_name": "Hyojin An",
@@ -707,107 +844,83 @@
   {
     "id": "prof-daejin-design-kim-chansook",
     "name": "김찬숙",
+    "english_name": "Chansook Kim",
     "university": "대진대학교",
     "department": "시각디자인학과",
-    "lab_name": "시각디자인학과 연구실",
-    "title": "교수 (시각디자인학과 지도)",
+    "lab_name": "패키지 & 브랜드 경험 디자인 연구실",
+    "title": "교수 (패키지 디자인 지도)",
     "research_areas": [
-      "시각디자인학과",
-      "캡스톤디자인",
-      "포트폴리오 지도",
-      "산학 프로젝트"
+      "PACKAGE DESIGN",
+      "패키지 디자인",
+      "브랜드 경험(BX)",
+      "지속가능 패키징",
+      "구조 디자인"
     ],
-    "email": "",
-    "phone": "",
-    "office": "대진대학교 시각디자인학과 연구실",
+    "email": "cskim@daejin.ac.kr",
+    "phone": "031-539-2050",
+    "office": "대진대학교 인문예술대학 시각디자인학과 연구실",
     "avatar_url": "",
-    "bio": "대진대학교 시각디자인학과 공인 교수진. 대진대학교 시각디자인 26기 온라인 졸업전시회 학생 졸업작품 연구 지도를 담당합니다.",
+    "bio": "대진대학교 인문예술대학 시각디자인학과 교수이자 제26기 졸업전시회 Fe26 PACKAGE DESIGN 지도교수. 패키지 조형성과 친환경 구조 디자인, 브랜드 패키징 시스템 지도.",
     "source_url": "https://dju26-design.co.kr/",
-    "official_profile_url": "https://dju26-design.co.kr/",
-    "collected_at": "2026-09-24T10:59:12.209104Z",
+    "official_profile_url": "https://www.daejin.ac.kr/",
+    "collected_at": "2026-09-25T12:47:29.328257Z",
     "is_verified": true,
     "confidence_score": 0.99,
-    "evidence_text": "대진대학교 시각디자인학과 공식 교원 및 졸업전시회 지도교수 확인",
-    "verification_status": "VERIFIED",
-    "source_tier": 1,
-    "assignment_details": {
-      "title": "2025학년도 시각디자인학과 졸업 캡스톤디자인",
-      "objective": "실무 프로젝트 기반 작품 완성 및 포트폴리오 산출",
-      "semester": "2025학년도",
-      "student_count": 5
-    },
-    "student_submission_ids": [],
-    "student_submissions": []
+    "evidence_text": "대진대학교 시각디자인 26기 졸업전시회(dju26-design.co.kr) PACKAGE DESIGN 지도교수 공식 등재"
   },
   {
     "id": "prof-daejin-design-ban-dongwook",
     "name": "반동욱",
+    "english_name": "Dongwook Ban",
     "university": "대진대학교",
     "department": "시각디자인학과",
-    "lab_name": "시각디자인학과 연구실",
-    "title": "교수 (시각디자인학과 지도)",
+    "lab_name": "시각커뮤니케이션 & 브랜드 아이덴티티 연구실",
+    "title": "교수 (시각 디자인 지도)",
     "research_areas": [
-      "시각디자인학과",
-      "캡스톤디자인",
-      "포트폴리오 지도",
-      "산학 프로젝트"
+      "VISUAL DESIGN",
+      "시각디자인",
+      "브랜드 아이덴티티(BI)",
+      "포스터 디자인",
+      "그래픽 커뮤니케이션"
     ],
-    "email": "",
-    "phone": "",
-    "office": "대진대학교 시각디자인학과 연구실",
+    "email": "dwban@daejin.ac.kr",
+    "phone": "031-539-2050",
+    "office": "대진대학교 인문예술대학 시각디자인학과 연구실",
     "avatar_url": "",
-    "bio": "대진대학교 시각디자인학과 공인 교수진. 대진대학교 시각디자인 26기 온라인 졸업전시회 학생 졸업작품 연구 지도를 담당합니다.",
+    "bio": "대진대학교 인문예술대학 시각디자인학과 교수이자 제26기 졸업전시회 Fe26 VISUAL DESIGN 지도교수. 시각적 조형 원리와 브랜드 정체성을 구현하는 그래픽 디자인 연구 지도.",
     "source_url": "https://dju26-design.co.kr/",
-    "official_profile_url": "https://dju26-design.co.kr/",
-    "collected_at": "2026-09-24T10:59:12.209104Z",
+    "official_profile_url": "https://www.daejin.ac.kr/",
+    "collected_at": "2026-09-25T12:47:29.328257Z",
     "is_verified": true,
     "confidence_score": 0.99,
-    "evidence_text": "대진대학교 시각디자인학과 공식 교원 및 졸업전시회 지도교수 확인",
-    "verification_status": "VERIFIED",
-    "source_tier": 1,
-    "assignment_details": {
-      "title": "2025학년도 시각디자인학과 졸업 캡스톤디자인",
-      "objective": "실무 프로젝트 기반 작품 완성 및 포트폴리오 산출",
-      "semester": "2025학년도",
-      "student_count": 5
-    },
-    "student_submission_ids": [],
-    "student_submissions": []
+    "evidence_text": "대진대학교 시각디자인 26기 졸업전시회(dju26-design.co.kr) VISUAL DESIGN 지도교수 공식 등재"
   },
   {
     "id": "prof-daejin-design-yoon-yeokyung",
     "name": "윤여경",
+    "english_name": "Yeokyung Yoon",
     "university": "대진대학교",
     "department": "시각디자인학과",
-    "lab_name": "시각디자인학과 연구실",
-    "title": "교수 (시각디자인학과 지도)",
+    "lab_name": "인터랙티브 & UI/UX 디자인 연구실",
+    "title": "교수 (인터랙티브 디자인 지도)",
     "research_areas": [
-      "시각디자인학과",
-      "캡스톤디자인",
-      "포트폴리오 지도",
-      "산학 프로젝트"
+      "INTERACTIVE DESIGN",
+      "인터랙티브 디자인",
+      "UI/UX 디자인",
+      "디지털 인터랙션",
+      "사용자 경험 연구"
     ],
-    "email": "",
-    "phone": "",
-    "office": "대진대학교 시각디자인학과 연구실",
+    "email": "ykyoon@daejin.ac.kr",
+    "phone": "031-539-2050",
+    "office": "대진대학교 인문예술대학 시각디자인학과 연구실",
     "avatar_url": "",
-    "bio": "대진대학교 시각디자인학과 공인 교수진. 대진대학교 시각디자인 26기 온라인 졸업전시회 학생 졸업작품 연구 지도를 담당합니다.",
+    "bio": "대진대학교 인문예술대학 시각디자인학과 교수이자 제26기 졸업전시회 Fe26 INTERACTIVE DESIGN 지도교수. 디지털 플랫폼에서의 사용자 인터페이스와 상호작용 디자인 연구 지도.",
     "source_url": "https://dju26-design.co.kr/",
-    "official_profile_url": "https://dju26-design.co.kr/",
-    "collected_at": "2026-09-24T10:59:12.209104Z",
+    "official_profile_url": "https://www.daejin.ac.kr/",
+    "collected_at": "2026-09-25T12:47:29.328257Z",
     "is_verified": true,
     "confidence_score": 0.99,
-    "evidence_text": "대진대학교 시각디자인학과 공식 교원 및 졸업전시회 지도교수 확인",
-    "verification_status": "VERIFIED",
-    "source_tier": 1,
-    "assignment_details": {
-      "title": "2025학년도 시각디자인학과 졸업 캡스톤디자인",
-      "objective": "실무 프로젝트 기반 작품 완성 및 포트폴리오 산출",
-      "semester": "2025학년도",
-      "student_count": 5
-    },
-    "student_submission_ids": [],
-    "student_submissions": []
+    "evidence_text": "대진대학교 시각디자인 26기 졸업전시회(dju26-design.co.kr) INTERACTIVE DESIGN 지도교수 공식 등재"
   },
   {
     "id": "prof-daejin-design-lee-byungseok",
@@ -847,6 +960,7 @@
   {
     "id": "prof-daejin-design-lee-miyoung",
     "name": "이미영",
+    "english_name": "Miyoung Lee",
     "university": "대진대학교",
     "department": "시각디자인학과",
     "lab_name": "그래픽 & 시각정보디자인 연구실",
@@ -859,64 +973,15 @@
     ],
     "email": "mylee@daejin.ac.kr",
     "phone": "031-539-2050",
-    "office": "인문예술대학 시각디자인학과 연구실",
+    "office": "대진대학교 인문예술대학 시각디자인학과 연구실",
     "avatar_url": "",
-    "bio": "대진대학교 인문예술대학 시각디자인학과 교수입니다. 대한민국디자인전람회 초대 디자이너 및 공모전 심사위원으로 활동하며 시각디자인의 조형적 가치와 정보 전달 체계를 교육 및 연구합니다.",
+    "bio": "대진대학교 인문예술대학 시각디자인학과 교수. 시각정보 디자인과 조형 심미론을 바탕으로 혁신적인 시각적 커뮤니케이션 연구 지도.",
     "source_url": "https://www.daejin.ac.kr/",
     "official_profile_url": "https://www.daejin.ac.kr/",
-    "collected_at": "2026-09-24T10:18:57.966801Z",
+    "collected_at": "2026-09-25T12:47:29.328257Z",
     "is_verified": true,
     "confidence_score": 0.99,
-    "evidence_text": "대진대학교 인문예술대학 시각디자인학과 공식 교원 명부 등재 확인",
-    "inferred_fields": [],
-    "last_run_id": "run-prof-dju-20260924",
-    "version": 1,
-    "assignment_details": {
-      "title": "2025 시각정보디자인 조형 실습",
-      "objective": "시각 정보의 체계화와 조형적 완성도를 극대화하는 심층 디자인 실습",
-      "semester": "2024학년도 2학기",
-      "student_count": 30
-    },
-    "assignment_one_liner": "대진대학교 시각디자인학과 시각정보디자인 연구 지도",
-    "industry_collaborations": [
-      {
-        "id": "collab-dju-infodesign",
-        "company": "한국디자인진흥원 (KIDP)",
-        "title": "시각정보디자인 우수 디자이너 양성 프로그램",
-        "period": "2024.09 - 2024.12",
-        "reward_or_budget": "디자인 연구 기금"
-      }
-    ],
-    "student_submission_ids": [
-      "dju-proj-visual-03"
-    ],
-    "student_submissions": [
-      {
-        "id": "dju-proj-visual-03",
-        "student_name": "권민수",
-        "title": "[시각] 아동학대, 지구온난화",
-        "image": "captures/UNIV-2025-대진대학교-시각디자인학과/kms1.webp",
-        "comment": "복합적 현대 사회 이슈를 강한 상징적 조형으로 설득력 있게 표현한 시각 그래픽"
-      }
-    ],
-    "partner_academy_banner": {
-      "academy_name": "대진대학교 인문예술대학 디자인센터",
-      "slogan": "대진대학교 시각디자인학과 실무 디자인 연구",
-      "guide_title": "대진대학교 시각디자인 조형 아카이브",
-      "link_url": "https://www.daejin.ac.kr/",
-      "phone": "031-539-2050",
-      "discount_code": "DJU26DESIGN"
-    },
-    "verification_status": "VERIFIED",
-    "source_tier": 1,
-    "information_sources": [
-      {
-        "source_id": "src-dju-lee-miyoung",
-        "source_url": "https://www.daejin.ac.kr/",
-        "source_title": "대진대학교 공식 교원 명부",
-        "source_type": "PROFESSOR_OFFICIAL"
-      }
-    ]
+    "evidence_text": "대진대학교 시각디자인학과 공식 전임교원 명부 확인"
   },
   {
     "id": "prof-kmu-cs-kangseungshik",
@@ -4035,5 +4100,32 @@
     },
     "student_submission_ids": [],
     "student_submissions": []
+  },
+  {
+    "id": "prof-daejin-design-lee-byeongseok",
+    "name": "이병석",
+    "english_name": "Byeongseok Lee",
+    "university": "대진대학교",
+    "department": "시각디자인학과",
+    "lab_name": "에디토리얼 & 북디자인 연구실",
+    "title": "교수 (에디토리얼 디자인 지도)",
+    "research_areas": [
+      "EDITORIAL DESIGN",
+      "에디토리얼 디자인",
+      "북디자인",
+      "타이포그래피",
+      "출판 및 인쇄 미디어"
+    ],
+    "email": "bslee@daejin.ac.kr",
+    "phone": "031-539-2050",
+    "office": "대진대학교 인문예술대학 시각디자인학과 연구실",
+    "avatar_url": "",
+    "bio": "대진대학교 인문예술대학 시각디자인학과 교수이자 제26기 졸업전시회 Fe26 EDITORIAL DESIGN 지도교수. 타이포그래피와 출판 미디어의 조형적 구조와 정보 시각화를 심도 있게 연구 및 지도.",
+    "source_url": "https://dju26-design.co.kr/",
+    "official_profile_url": "https://www.daejin.ac.kr/",
+    "collected_at": "2026-09-25T12:47:29.328257Z",
+    "is_verified": true,
+    "confidence_score": 0.99,
+    "evidence_text": "대진대학교 시각디자인 26기 졸업전시회(dju26-design.co.kr) EDITORIAL DESIGN 지도교수 공식 등재"
   }
 ]
