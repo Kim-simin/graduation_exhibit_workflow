@@ -182,21 +182,22 @@ export default function CurriculumCard({
             </span>
           </button>
 
-          {/* 핵심 실무 툴 칩 요약 */}
+          {/* 전체 실무 소프트웨어 툴 칩 (전체 노출) */}
           <div className="flex flex-wrap items-center gap-1.5">
-            {(curriculum.tech_stack || []).slice(0, 4).map((tool) => (
+            {Array.from(
+              new Set(
+                (curriculum.tech_stack && curriculum.tech_stack.length > 0)
+                  ? curriculum.tech_stack
+                  : (curriculum.grade_tech_tree || []).flatMap((g) => g.tools || [])
+              )
+            ).map((tool) => (
               <span
                 key={tool}
-                className="px-2 py-0.5 rounded-md bg-indigo-950/80 border border-indigo-500/30 text-indigo-300 font-bold text-[10px]"
+                className="px-2 py-0.5 rounded-md bg-indigo-950/80 border border-indigo-500/40 text-indigo-300 font-bold text-[10px] shadow-xs"
               >
                 {tool}
               </span>
             ))}
-            {(curriculum.tech_stack?.length || 0) > 4 && (
-              <span className="text-[10px] text-slate-500 font-semibold px-1">
-                +{(curriculum.tech_stack?.length || 0) - 4}
-              </span>
-            )}
           </div>
         </div>
       </div>
