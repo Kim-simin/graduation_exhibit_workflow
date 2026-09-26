@@ -91,7 +91,7 @@ export default function CurriculumCard({
       <div>
         {/* ① 상단: 선도대학 학과 식별 배지 & 숏츠(9:16) 영상 */}
         <div
-          className="relative h-[290px] w-full bg-slate-950 overflow-hidden cursor-pointer"
+          className="relative h-[220px] w-full bg-slate-950 overflow-hidden cursor-pointer"
           onClick={() => onOpenModal(curriculum)}
           title="클릭하여 30초 실무 요약 숏츠 크게보기"
         >
@@ -109,8 +109,8 @@ export default function CurriculumCard({
           <div className="absolute inset-0 bg-gradient-to-t from-[#13192b] via-transparent to-black/70 pointer-events-none" />
 
           {/* 상단 좌측: 선도대학 학과 식별 배지 (굵은 텍스트 강조) */}
-          <div className="absolute top-3 left-3 z-10 max-w-[82%]">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-950/90 backdrop-blur-md border border-amber-500/40 text-white text-xs font-bold shadow-lg truncate">
+          <div className="absolute top-2.5 left-2.5 z-10 max-w-[82%]">
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-950/90 backdrop-blur-md border border-amber-500/40 text-white text-xs font-bold shadow-lg truncate">
               <Sparkles className="w-3.5 h-3.5 text-amber-400 shrink-0" />
               <span className="text-amber-400 font-extrabold mr-0.5">[선도 학과]</span>
               <span className="font-black text-white truncate">
@@ -120,7 +120,7 @@ export default function CurriculumCard({
           </div>
 
           {/* 상단 우측: 30초 실무 요약 숏츠 배지 */}
-          <div className="absolute top-3 right-3 z-10">
+          <div className="absolute top-2.5 right-2.5 z-10">
             <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-rose-600/90 backdrop-blur-md text-white text-[11px] font-bold shadow-md">
               <Play className="w-3 h-3 fill-current" />
               <span>30초 숏츠</span>
@@ -133,13 +133,13 @@ export default function CurriculumCard({
               isHovered ? "opacity-90" : "opacity-60"
             }`}
           >
-            <div className="w-12 h-12 rounded-full bg-indigo-600/80 backdrop-blur-sm flex items-center justify-center text-white shadow-xl group-hover:scale-110 transition-transform">
-              <Play className="w-6 h-6 fill-current translate-x-0.5" />
+            <div className="w-11 h-11 rounded-full bg-indigo-600/80 backdrop-blur-sm flex items-center justify-center text-white shadow-xl group-hover:scale-110 transition-transform">
+              <Play className="w-5 h-5 fill-current translate-x-0.5" />
             </div>
           </div>
 
           {/* 하단 텍스트 오버레이 (선도대학명 & 학과 & 세부 선도 타이틀) */}
-          <div className="absolute bottom-3 left-3.5 right-3.5 z-10 pointer-events-none">
+          <div className="absolute bottom-2.5 left-3 right-3 z-10 pointer-events-none">
             <div className="text-xs font-extrabold text-cyan-300 flex items-center gap-1.5 mb-0.5">
               <Building2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
               <strong className="text-sm font-black text-white">
@@ -156,61 +156,47 @@ export default function CurriculumCard({
           </div>
         </div>
 
-        {/* ② 중단: 학과 실무 커리큘럼 및 3단계 학습 프로세스 */}
+        {/* ② 중단: 학과 실무 커리큘럼 타이틀 및 숏츠/테크트리 바로가기 */}
         <div className="p-4 sm:p-5">
           {/* 커리큘럼 실무 핵심 과정명 */}
           <h3
-            className="text-base sm:text-lg font-black text-white leading-snug mb-3 line-clamp-2 group-hover:text-cyan-200 transition-colors cursor-pointer"
+            className="text-sm sm:text-base font-black text-white leading-snug mb-3 line-clamp-2 group-hover:text-cyan-200 transition-colors cursor-pointer"
             onClick={() => onOpenModal(curriculum)}
           >
             {curriculum.curriculum_title}
           </h3>
 
-          {/* 1~4학년 실무 작업 테크트리 수직 박스 */}
-          <div className="bg-slate-950/70 border border-slate-800/80 rounded-xl p-3 shadow-inner">
-            <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2.5 flex items-center justify-between">
-              <span className="flex items-center gap-1.5 text-cyan-300">
-                <Layers className="w-3.5 h-3.5 text-cyan-400" />
-                <span>1~4학년 실무 작업 테크트리</span>
-              </span>
-              <span className="text-[10px] text-indigo-300 font-semibold bg-indigo-950/80 px-2 py-0.5 rounded-full border border-indigo-500/30">
-                실무 툴 & 로드맵
-              </span>
-            </div>
+          {/* 1~4학년 테크트리 & 30초 숏츠 모달 열기 퀵 버튼 (상세 내용은 두번째 모달에서 노출) */}
+          <button
+            type="button"
+            onClick={() => onOpenModal(curriculum)}
+            className="w-full py-2.5 px-3 rounded-xl bg-slate-900/90 hover:bg-slate-800/90 border border-slate-800 hover:border-cyan-500/50 text-cyan-300 hover:text-white text-xs font-bold transition flex items-center justify-between group/btn shadow-inner mb-2.5"
+          >
+            <span className="flex items-center gap-1.5">
+              <Layers className="w-3.5 h-3.5 text-cyan-400" />
+              <span>1~4학년 실무 테크트리 & 숏츠 보기</span>
+            </span>
+            <span className="text-[11px] text-amber-400 font-extrabold flex items-center gap-0.5 group-hover/btn:translate-x-0.5 transition-transform">
+              <span>상세보기</span>
+              <span>▶</span>
+            </span>
+          </button>
 
-            <div className="space-y-1">
-              {(curriculum.grade_tech_tree || []).map((step, idx) => (
-                <div key={idx} className="flex flex-col">
-                  <div className="bg-slate-900/90 border border-slate-800/90 hover:border-indigo-500/40 rounded-lg px-2.5 py-2 transition-colors">
-                    {/* 1학년: Figma, Illustrator 형태 */}
-                    <div className="flex items-center justify-between gap-1 mb-1">
-                      <div className="text-xs font-black">
-                        <span className="text-amber-400 font-extrabold mr-1.5">
-                          {step.grade}:
-                        </span>
-                        <span className="text-cyan-300 font-bold">
-                          {step.tools.join(", ")}
-                        </span>
-                      </div>
-                      <span className="text-[10px] font-semibold text-slate-400 px-1.5 py-0.5 rounded bg-slate-800/80 shrink-0">
-                        {step.stage}
-                      </span>
-                    </div>
-                    {/* 상세 실무 내용 설명 */}
-                    <div className="text-[11px] text-slate-300 pl-0.5 leading-snug line-clamp-1">
-                      {step.desc}
-                    </div>
-                  </div>
-
-                  {/* 수직 연결 화살표 ↓ */}
-                  {idx < (curriculum.grade_tech_tree?.length || 4) - 1 && (
-                    <div className="flex items-center justify-center py-0.5 text-cyan-400 text-xs font-black select-none leading-none">
-                      ↓
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+          {/* 핵심 실무 툴 칩 요약 */}
+          <div className="flex flex-wrap items-center gap-1.5">
+            {(curriculum.tech_stack || []).slice(0, 4).map((tool) => (
+              <span
+                key={tool}
+                className="px-2 py-0.5 rounded-md bg-indigo-950/80 border border-indigo-500/30 text-indigo-300 font-bold text-[10px]"
+              >
+                {tool}
+              </span>
+            ))}
+            {(curriculum.tech_stack?.length || 0) > 4 && (
+              <span className="text-[10px] text-slate-500 font-semibold px-1">
+                +{(curriculum.tech_stack?.length || 0) - 4}
+              </span>
+            )}
           </div>
         </div>
       </div>
