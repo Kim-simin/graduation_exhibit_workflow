@@ -1,82 +1,121 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
-import { getProfessors, getTaxonomy } from "@/lib/data";
+import { getCurriculums } from "@/lib/data";
+import { DepartmentCurriculum } from "@/types/curriculum";
 import {
   GraduationCap,
-  ArrowRight,
-  BookOpen,
-  Users,
-  Sparkles,
-  ShieldCheck,
-  ExternalLink,
-  CheckCircle2,
-  AlertCircle,
   Search,
+  Sparkles,
+  BookOpen,
+  Layers,
+  Building2,
 } from "lucide-react";
+import CurriculumCard from "@/components/CurriculumCard";
+import CurriculumShortsModal from "@/components/CurriculumShortsModal";
 
-export default function ProfessorsPage() {
-  const initialProfessors = getProfessors();
-  const [professors, setProfessors] = useState(initialProfessors);
-  const taxonomy = getTaxonomy();
-  const [selectedTaxonomy, setSelectedTaxonomy] = useState<string>("all");
+// 1. 전국 대학 표준 학과 분류 카테고리 (구글 시트 및 대학 기준)
+export const DEPARTMENT_CATEGORIES = [
+  { id: "all", name: "전체 학과", icon: "🌐" },
+  { id: "cs", name: "컴퓨터공학·소프트웨어", icon: "💻" },
+  { id: "visual_ux", name: "시각·인터랙션·UX디자인", icon: "🎨" },
+  { id: "industrial", name: "산업·제품·모빌리티디자인", icon: "⚙️" },
+  { id: "ai", name: "인공지능·데이터사이언스", icon: "🤖" },
+  { id: "media", name: "영상·애니메이션·미디어", icon: "🎬" },
+  { id: "space", name: "공간·실내건축·공공디자인", icon: "🏛️" },
+  { id: "game", name: "게임그래픽·메타버스", icon: "🎮" },
+];
+
+export default function CurriculumsPage() {
+  const initialCurriculums = getCurriculums();
+  const [curriculums, setCurriculums] = useState<DepartmentCurriculum[]>(initialCurriculums);
+  const [selectedDeptCategory, setSelectedDeptCategory] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
+  const [selectedShorts, setSelectedShorts] = useState<DepartmentCurriculum | null>(null);
 
   useEffect(() => {
-    // 1. Read URL query params for univ or dept
+    // 1. URL 쿼리 파라미터 읽기 (univ 또는 dept)
     if (typeof window !== "undefined") {
       const sp = new URLSearchParams(window.location.search);
       const univParam = sp.get("univ") || "";
       const deptParam = sp.get("dept") || "";
+      const categoryParam = sp.get("category") || "";
       if (univParam || deptParam) {
         setSearchQuery([univParam, deptParam].filter(Boolean).join(" "));
       }
+      if (categoryParam) {
+        const found = DEPARTMENT_CATEGORIES.find((c) => c.name.includes(categoryParam) || c.id === categoryParam);
+        if (found) {
+          setSelectedDeptCategory(found.id);
+        }
+      }
     }
 
-    // 2. Dynamic fetch of latest professors
-    async function fetchDynamicProfessors() {
+    // 2. 동적 커리큘럼 데이터 로드 (API fallback)
+    async function fetchDynamicCurriculums() {
       try {
-        const res = await fetch("/api/professors");
+        const res = await fetch("/api/curriculums");
         if (res.ok) {
           const data = await res.json();
-          if (data.status === "SUCCESS" && Array.isArray(data.professors) && data.professors.length > 0) {
-            setProfessors(data.professors);
+          if (data.status === "SUCCESS" && Array.isArray(data.curriculums) && data.curriculums.length > 0) {
+            setCurriculums(data.curriculums);
           }
         }
       } catch (err) {
-        console.warn("Dynamic professors load fallback to static:", err);
+        console.warn("Curriculums dynamic load fallback to static:", err);
       }
     }
-    fetchDynamicProfessors();
+
+    fetchDynamicCurriculums();
   }, []);
 
-  const filteredProfessors = professors.filter((prof) => {
-    // 1. Taxonomy filter
-    if (selectedTaxonomy !== "all") {
-      const tax = taxonomy.find((t) => t.id === selectedTaxonomy);
-      if (tax) {
-        const matchTax =
-          prof.research_areas?.some((ra) => tax.keywords.some((kw) => ra.includes(kw))) ||
-          tax.related_majors.some((rm) => prof.department?.includes(rm));
-        if (!matchTax) return false;
+  // 학과(전공) 카테고리 및 검색어 기반 실시간 필터링
+  const filteredCurriculums = useMemo(() => {
+    return curriculums.filter((curr) => {
+      // 1. 학과 카테고리 필터
+      if (selectedDeptCategory !== "all") {
+        const targetCategory = DEPARTMENT_CATEGORIES.find((c) => c.id === selectedDeptCategory);
+        if (targetCategory) {
+          const matchCategory =
+            curr.department_category.includes(targetCategory.name) ||
+            targetCategory.name.includes(curr.department_category);
+          if (!matchCategory) return false;
+        }
       }
-    }
 
-    // 2. Search query filter
-    if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase().trim();
-      const matchSearch =
-        prof.name?.toLowerCase().includes(q) ||
-        prof.university?.toLowerCase().includes(q) ||
-        prof.department?.toLowerCase().includes(q) ||
-        prof.major?.toLowerCase().includes(q) ||
-        prof.research_areas?.some((ra) => ra.toLowerCase().includes(q));
-      if (!matchSearch) return false;
-    }
+      // 2. 검색어 필터
+      if (searchQuery.trim()) {
+        const q = searchQuery.toLowerCase().trim();
+        const matchSearch =
+          curr.curriculum_title.toLowerCase().includes(q) ||
+          curr.department_category.toLowerCase().includes(q) ||
+          curr.lead_school.university.toLowerCase().includes(q) ||
+          curr.lead_school.department.toLowerCase().includes(q) ||
+          (curr.tech_stack || []).some((tool) => tool.toLowerCase().includes(q)) ||
+          curr.benchmarked_universities.some(
+            (p) =>
+              p.university.toLowerCase().includes(q) || p.department.toLowerCase().includes(q)
+          ) ||
+          (curr.grade_tech_tree || []).some(
+            (g) =>
+              g.grade.toLowerCase().includes(q) ||
+              g.stage.toLowerCase().includes(q) ||
+              g.desc.toLowerCase().includes(q) ||
+              g.tools.some((t) => t.toLowerCase().includes(q))
+          ) ||
+          (curr.steps || []).some(
+            (s) =>
+              s.name.toLowerCase().includes(q) ||
+              s.desc.toLowerCase().includes(q) ||
+              s.step_num.toLowerCase().includes(q)
+          );
+        if (!matchSearch) return false;
+      }
 
-    return true;
-  });
+      return true;
+    });
+  }, [curriculums, selectedDeptCategory, searchQuery]);
 
   return (
     <div style={{ maxWidth: "80rem", margin: "0 auto", padding: "2rem 1.25rem" }}>
@@ -98,55 +137,42 @@ export default function ProfessorsPage() {
           }}
         >
           <GraduationCap style={{ width: "0.875rem", height: "0.875rem" }} />
-          Verified Academic Faculty & Research Lab Archive
+          Verified Leading University Department & Curriculum Archive
         </div>
         <h1 style={{ fontSize: "2.25rem", fontWeight: 800, color: "#ffffff", margin: "0 0 0.5rem" }}>
-          전국 주요 디자인 학과 교수진 및 학기 과제 아카이브
+          전국 대학교 표준 커리큘럼 & 실무 테크트리 아카이브
         </h1>
-        <p style={{ fontSize: "1rem", color: "#94a3b8", maxWidth: "48rem", lineHeight: 1.6, margin: 0 }}>
-          각 대학 연구실의 공식 교원 정보, 공식 출처 검증(Verified)된 지도교수 핵심 탐구 과제 및 학생 우수 제출물을 열람하십시오.
+        <p style={{ fontSize: "1rem", color: "#94a3b8", maxWidth: "52rem", lineHeight: 1.6, margin: 0 }}>
+          각 분야 선도대학의 실무 중심 커리큘럼과 핵심 소프트웨어 툴, 숏폼 요약 및 동일 교육과정 운영 대학교를 확인하세요.
         </p>
       </div>
 
-      {/* 공통 Taxonomy 산업군/전공 필터 칩 바 */}
+      {/* [1. 상단 필터 칩: '학과(전공)' 카테고리로 전면 교체] */}
       <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", marginBottom: "2rem" }}>
-        <button
-          type="button"
-          onClick={() => setSelectedTaxonomy("all")}
-          style={{
-            padding: "0.45rem 0.85rem",
-            borderRadius: "9999px",
-            fontSize: "0.8125rem",
-            fontWeight: selectedTaxonomy === "all" ? 700 : 500,
-            backgroundColor: selectedTaxonomy === "all" ? "#6366f1" : "#1e293b",
-            color: selectedTaxonomy === "all" ? "#ffffff" : "#94a3b8",
-            border: selectedTaxonomy === "all" ? "1px solid #818cf8" : "1px solid #334155",
-            cursor: "pointer",
-            transition: "all 0.15s ease",
-          }}
-        >
-          🌐 전체 분야 ({professors.length})
-        </button>
-        {taxonomy.map((tax) => {
-          const isSelected = selectedTaxonomy === tax.id;
-          const matchCount = professors.filter(
-            (p) =>
-              p.research_areas?.some((ra) => tax.keywords.some((kw) => ra.includes(kw))) ||
-              tax.related_majors.some((rm) => p.department?.includes(rm))
-          ).length;
+        {DEPARTMENT_CATEGORIES.map((cat) => {
+          const isSelected = selectedDeptCategory === cat.id;
+          const matchCount =
+            cat.id === "all"
+              ? curriculums.length
+              : curriculums.filter(
+                  (c) =>
+                    c.department_category.includes(cat.name) ||
+                    cat.name.includes(c.department_category)
+                ).length;
+
           return (
             <button
-              key={tax.id}
+              key={cat.id}
               type="button"
-              onClick={() => setSelectedTaxonomy(tax.id)}
+              onClick={() => setSelectedDeptCategory(cat.id)}
               style={{
                 padding: "0.45rem 0.85rem",
                 borderRadius: "9999px",
                 fontSize: "0.8125rem",
                 fontWeight: isSelected ? 700 : 500,
-                backgroundColor: isSelected ? tax.color || "#6366f1" : "#1e293b",
+                backgroundColor: isSelected ? "#6366f1" : "#1e293b",
                 color: isSelected ? "#ffffff" : "#cbd5e1",
-                border: isSelected ? `1px solid ${tax.color || "#818cf8"}` : "1px solid #334155",
+                border: isSelected ? "1px solid #818cf8" : "1px solid #334155",
                 cursor: "pointer",
                 transition: "all 0.15s ease",
                 display: "inline-flex",
@@ -154,17 +180,19 @@ export default function ProfessorsPage() {
                 gap: "0.35rem",
               }}
             >
-              <span>{tax.icon}</span>
-              <span>{tax.name}</span>
-              <span style={{ fontSize: "0.6875rem", opacity: 0.8 }}>({matchCount})</span>
+              <span>{cat.icon}</span>
+              <span>{cat.name}</span>
+              <span style={{ fontSize: "0.6875rem", opacity: 0.85, fontWeight: "bold" }}>
+                ({matchCount})
+              </span>
             </button>
           );
         })}
       </div>
 
-      {/* 대학교/학과/교수 검색 바 */}
+      {/* 커리큘럼 검색 바 */}
       <div style={{ marginBottom: "2rem", display: "flex", alignItems: "center", gap: "0.75rem", flexWrap: "wrap" }}>
-        <div style={{ position: "relative", flex: 1, minWidth: "260px", maxWidth: "32rem" }}>
+        <div style={{ position: "relative", flex: 1, minWidth: "260px", maxWidth: "34rem" }}>
           <Search
             style={{
               position: "absolute",
@@ -180,7 +208,7 @@ export default function ProfessorsPage() {
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="대학교명, 학과, 교수명, 연구 키워드 검색..."
+            placeholder="선도 대학교, 학과, 커리큘럼 과정명, 실무 툴(Figma, ROS2, PyTorch 등) 검색..."
             style={{
               width: "100%",
               padding: "0.6rem 1rem 0.6rem 2.4rem",
@@ -194,274 +222,34 @@ export default function ProfessorsPage() {
           />
         </div>
         <span style={{ fontSize: "0.8125rem", color: "#94a3b8" }}>
-          조회 결과: <strong style={{ color: "#ffffff" }}>{filteredProfessors.length}명</strong>
+          조회 결과: <strong style={{ color: "#ffffff" }}>{filteredCurriculums.length}개</strong> 선도 학과 커리큘럼
         </span>
       </div>
 
-      {/* 교수 리스트 그리드 */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(360px, 1fr))",
-          gap: "1.5rem",
-        }}
-      >
-        {filteredProfessors.length === 0 ? (
-          <div
-            style={{
-              gridColumn: "1 / -1",
-              padding: "5rem 1rem",
-              textAlign: "center",
-              borderRadius: "1rem",
-              backgroundColor: "#0f172a",
-              border: "1px dashed #334155",
-              color: "#64748b",
-            }}
-          >
-            <GraduationCap style={{ width: "2.5rem", height: "2.5rem", margin: "0 auto 0.75rem", opacity: 0.4 }} />
-            <p style={{ fontSize: "0.875rem", fontWeight: 600, margin: 0 }}>현재 등록된 교수진 및 학기 과제 카드 정보가 없습니다.</p>
+      {/* [2. '선도대학교 학과 카드' 쇼케이스 그리드] */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {filteredCurriculums.length === 0 ? (
+          <div className="col-span-full py-20 text-center rounded-2xl bg-[#0f172a] border border-dashed border-slate-800 text-slate-500">
+            <GraduationCap className="w-10 h-10 mx-auto mb-3 opacity-40" />
+            <p className="text-sm font-semibold">선택한 학과 카테고리에 등록된 선도 커리큘럼이 없습니다.</p>
           </div>
         ) : (
-          filteredProfessors.map((prof) => {
-          const isVerified = prof.is_verified === true || prof.verification_status === "VERIFIED";
-
-          return (
-            <div
-              key={prof.id}
-              style={{
-                backgroundColor: "#0f172a",
-                border: "1px solid #1e293b",
-                borderRadius: "1rem",
-                padding: "1.75rem",
-                display: "flex",
-                flexDirection: "column",
-                boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
-              }}
-            >
-              {/* 상단 검증 뱃지 및 출처 링크 */}
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  marginBottom: "1rem",
-                  paddingBottom: "0.5rem",
-                  borderBottom: "1px solid #1e293b",
-                }}
-              >
-                {isVerified ? (
-                  <span
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "0.25rem",
-                      fontSize: "0.6875rem",
-                      fontWeight: 700,
-                      color: "#10b981",
-                      backgroundColor: "rgba(16, 185, 129, 0.1)",
-                      border: "1px solid rgba(16, 185, 129, 0.25)",
-                      padding: "0.2rem 0.5rem",
-                      borderRadius: "9999px",
-                    }}
-                  >
-                    <CheckCircle2 style={{ width: "0.75rem", height: "0.75rem" }} />
-                    공식 학술 출처 인증 (VERIFIED)
-                  </span>
-                ) : (
-                  <span
-                    style={{
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "0.25rem",
-                      fontSize: "0.6875rem",
-                      fontWeight: 600,
-                      color: "#f59e0b",
-                      backgroundColor: "rgba(245, 158, 11, 0.1)",
-                      border: "1px solid rgba(245, 158, 11, 0.25)",
-                      padding: "0.2rem 0.5rem",
-                      borderRadius: "9999px",
-                    }}
-                  >
-                    <AlertCircle style={{ width: "0.75rem", height: "0.75rem" }} />
-                    공식 교원 정보 확인 중
-                  </span>
-                )}
-
-                {prof.source_url && (
-                  <a
-                    href={prof.source_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      fontSize: "0.6875rem",
-                      color: "#64748b",
-                      textDecoration: "none",
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "0.25rem",
-                    }}
-                  >
-                    <span>출처 확인</span>
-                    <ExternalLink style={{ width: "0.6875rem", height: "0.6875rem" }} />
-                  </a>
-                )}
-              </div>
-
-              {/* 교수 프로필 요약 */}
-              <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
-                <img
-                  src={prof.avatar_url || "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80"}
-                  alt={prof.name}
-                  style={{
-                    width: "4rem",
-                    height: "4rem",
-                    borderRadius: "9999px",
-                    objectFit: "cover",
-                    border: isVerified ? "2px solid #10b981" : "2px solid #6366f1",
-                  }}
-                />
-                <div>
-                  <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                    <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#ffffff", margin: 0 }}>
-                      {prof.name} 교수
-                    </h3>
-                    <span style={{ fontSize: "0.75rem", color: "#818cf8" }}>{prof.title}</span>
-                  </div>
-                  <p style={{ fontSize: "0.8125rem", color: "#94a3b8", margin: "0.2rem 0 0" }}>
-                    {prof.university} {prof.department}
-                  </p>
-                  <span
-                    style={{
-                      display: "inline-block",
-                      fontSize: "0.6875rem",
-                      color: "#22d3ee",
-                      backgroundColor: "rgba(6, 182, 212, 0.1)",
-                      padding: "0.15rem 0.45rem",
-                      borderRadius: "0.25rem",
-                      marginTop: "0.25rem",
-                    }}
-                  >
-                    {prof.lab_name}
-                  </span>
-                </div>
-              </div>
-
-              {/* 핵심 학기 과제 1줄 설명 박스 */}
-              <div
-                style={{
-                  backgroundColor: "rgba(30, 41, 59, 0.6)",
-                  border: "1px solid #334155",
-                  borderRadius: "0.625rem",
-                  padding: "1rem",
-                  marginBottom: "1.25rem",
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: "0.6875rem",
-                    fontWeight: 700,
-                    color: "#f59e0b",
-                    textTransform: "uppercase",
-                    marginBottom: "0.35rem",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "0.3rem",
-                  }}
-                >
-                  <BookOpen style={{ width: "0.75rem", height: "0.75rem" }} />
-                  학기 핵심 탐구 과제 (1줄 요약)
-                </div>
-                <p
-                  style={{
-                    fontSize: "0.875rem",
-                    fontWeight: 600,
-                    color: "#f1f5f9",
-                    margin: 0,
-                    lineHeight: 1.5,
-                  }}
-                >
-                  "{prof.assignment_one_liner || prof.bio || `${prof.department} 캡스톤 디자인 및 포트폴리오 지도`}"
-                </p>
-              </div>
-
-              {/* 연구 분야 태그 */}
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem", marginBottom: "1.5rem" }}>
-                {prof.research_areas?.map((area) => (
-                  <span
-                    key={area}
-                    style={{
-                      fontSize: "0.6875rem",
-                      padding: "0.2rem 0.5rem",
-                      borderRadius: "0.25rem",
-                      backgroundColor: "#1e293b",
-                      color: "#94a3b8",
-                    }}
-                  >
-                    #{area}
-                  </span>
-                ))}
-              </div>
-
-              {/* 하단 상세 링크 및 우수 제출물 개수 */}
-              <div
-                style={{
-                  marginTop: "auto",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "0.75rem",
-                  paddingTop: "1rem",
-                  borderTop: "1px solid #1e293b",
-                }}
-              >
-                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "0.5rem" }}>
-                  <span style={{ fontSize: "0.75rem", color: "#64748b" }}>
-                    등록된 학생 제출물: <strong style={{ color: "#ffffff" }}>{prof.student_submissions?.length || 0}건</strong>
-                  </span>
-                  {prof.student_submissions && prof.student_submissions.length > 0 && (
-                    <Link
-                      href={`/?search=${encodeURIComponent(prof.university)}`}
-                      style={{
-                        fontSize: "0.6875rem",
-                        color: "#38bdf8",
-                        backgroundColor: "rgba(56, 189, 248, 0.1)",
-                        border: "1px solid rgba(56, 189, 248, 0.25)",
-                        padding: "0.15rem 0.45rem",
-                        borderRadius: "0.25rem",
-                        textDecoration: "none",
-                        fontWeight: 600,
-                      }}
-                    >
-                      🎨 {prof.university} 졸전 출품작 보기 ↗
-                    </Link>
-                  )}
-                </div>
-
-                <Link
-                  href={`/professors/${prof.id}`}
-                  style={{
-                    width: "100%",
-                    padding: "0.5rem 0.9rem",
-                    borderRadius: "0.375rem",
-                    backgroundColor: "#6366f1",
-                    color: "#ffffff",
-                    fontSize: "0.8125rem",
-                    fontWeight: 600,
-                    textDecoration: "none",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "0.35rem",
-                  }}
-                >
-                  과제 & 쇼케이스 보기
-                  <ArrowRight style={{ width: "0.8rem", height: "0.8rem" }} />
-                </Link>
-              </div>
-            </div>
-          );
-        })
+          filteredCurriculums.map((curriculum) => (
+            <CurriculumCard
+              key={curriculum.id}
+              curriculum={curriculum}
+              onOpenModal={(curr) => setSelectedShorts(curr)}
+            />
+          ))
         )}
       </div>
+
+      {/* 9:16 숏츠 쇼케이스 팝업 모달 */}
+      <CurriculumShortsModal
+        isOpen={Boolean(selectedShorts)}
+        onClose={() => setSelectedShorts(null)}
+        curriculum={selectedShorts}
+      />
     </div>
   );
 }
