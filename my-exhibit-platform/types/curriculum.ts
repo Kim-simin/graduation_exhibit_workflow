@@ -31,3 +31,25 @@ export interface DepartmentCurriculum {
 }
 
 export type StandardCurriculum = DepartmentCurriculum;
+
+export interface LeadingUniversityTarget {
+  category: string;
+  category_id?: string;
+  university: string;
+  default_dept?: string;
+  sub_track?: string;
+  status: "COMPLETED" | "PENDING";
+  curriculum?: DepartmentCurriculum;
+}
+
+export interface LeadingCategoryMaster {
+  id: string;
+  category: string;
+  icon: string;
+  universities: {
+    university: string;
+    default_dept: string;
+    sub_track?: string;
+  }[];
+}
+

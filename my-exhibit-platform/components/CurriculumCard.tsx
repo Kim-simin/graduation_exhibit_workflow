@@ -2,15 +2,24 @@
 
 import React, { useRef, useState } from "react";
 import Link from "next/link";
-import { Play, Sparkles, Building2, ExternalLink, Layers, CheckCircle2 } from "lucide-react";
+import { Play, Sparkles, Building2, ExternalLink, Layers, CheckCircle2, Edit, Trash2 } from "lucide-react";
 import { DepartmentCurriculum } from "@/types/curriculum";
 
 interface CurriculumCardProps {
   curriculum: DepartmentCurriculum;
   onOpenModal: (curriculum: DepartmentCurriculum) => void;
+  isAdminEditMode?: boolean;
+  onEdit?: (curriculum: DepartmentCurriculum) => void;
+  onDelete?: (curriculum: DepartmentCurriculum) => void;
 }
 
-export default function CurriculumCard({ curriculum, onOpenModal }: CurriculumCardProps) {
+export default function CurriculumCard({
+  curriculum,
+  onOpenModal,
+  isAdminEditMode = false,
+  onEdit,
+  onDelete,
+}: CurriculumCardProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -30,10 +39,55 @@ export default function CurriculumCard({ curriculum, onOpenModal }: CurriculumCa
 
   return (
     <div
-      className="bg-[#13192b] border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between group"
+      className={`bg-[#13192b] border rounded-2xl overflow-hidden transition-all duration-300 shadow-xl flex flex-col justify-between group ${
+        isAdminEditMode
+          ? "border-red-500/50 hover:border-red-400"
+          : "border-slate-800 hover:border-cyan-500/50"
+      }`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
+      {/* 관리자 관제 모드 활성화 시 상단 수정/삭제 바 */}
+      {isAdminEditMode && (
+        <div
+          className="z-30 px-3 py-2 bg-red-950/90 backdrop-blur-md border-b border-red-500/40 flex items-center justify-between gap-2"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <span className="text-[11px] font-mono font-bold text-red-200 truncate flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
+            <span>선도학과 카드 관리</span>
+          </span>
+          <div className="flex items-center gap-1.5 shrink-0">
+            {onEdit && (
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onEdit(curriculum);
+                }}
+                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 hover:bg-slate-800 text-slate-200 text-xs font-bold transition shadow-sm"
+                title="커리큘럼 카드 수정"
+              >
+                <Edit className="w-3 h-3 text-cyan-400" /> 수정
+              </button>
+            )}
+            {onDelete && (
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onDelete(curriculum);
+                }}
+                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-red-600 hover:bg-red-700 text-white text-xs font-bold transition shadow-sm"
+                title="커리큘럼 카드 삭제"
+              >
+                <Trash2 className="w-3 h-3" /> 삭제
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+
       <div>
         {/* ① 상단: 선도대학 학과 식별 배지 & 숏츠(9:16) 영상 */}
         <div
