@@ -1,5 +1,143 @@
 [
   {
+    "id": "UNIV-2025-서울여자대학교-산업디자인학과",
+    "university": "서울여자대학교",
+    "department": "산업디자인학과",
+    "category": "디자인·UX/UI",
+    "year": "2025",
+    "exhibition_title": "2025 서울여자대학교 산업디자인학과 졸업전시회 | Upwell (범람: 泛濫)",
+    "title": "2025 서울여자대학교 산업디자인학과 졸업전시회 | Upwell (범람: 泛濫)",
+    "slogan": "잠재되어 있던 가능성이 마침내 터져 나오는 순간, 조용한 수면 아래에서 끓어오르던 에너지가 세상을 향해 드러나는 순간.",
+    "curation_summary": {
+      "headline": "잠재되어 있던 가능성이 마침내 터져 나오는 순간, 조용한 수면 아래에서 끓어오르던 에너지가 세상을 향해 드러나는 순간.",
+      "curation_intro": "2025 SWUID 산업디자인학과 졸업전시 《Upwell》은 학교라는 테두리를 넘어 사회로 나아가는 디자이너들의 '터져나오는 힘'을 주제로 기획되었습니다. 이 전시는 학생들이 그동안 축적해온 창의성과 잠재력을 '역동적이고 벅찬 에너지'로 표현하며, 불확실한 미래 앞에서도 자신감 있게 발산하는 새로운 시작의 가능성을 담고 있습니다. 이번 졸업전시를 통해 각자의 방식으로 세상을 향해 물결을 일으키는 서울여대 산업디자인학과 학생들의 도전과 확장을 느껴보시기 바랍니다.",
+      "inferred_industry_keywords": [
+        "산업디자인",
+        "제품디자인",
+        "UX/UI",
+        "모빌리티",
+        "헬스케어"
+      ]
+    },
+    "exhibition_period": "2025.10.27(월) - 11.02(일) 10:00 - 20:00",
+    "exhibition_venue": "서울여자대학교 조형예술관 1층 바롬갤러리",
+    "target_url": "https://swuid2025.com/",
+    "official_url": "https://swuid2025.com/",
+    "poster_image": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/poster.png",
+    "status": "완료",
+    "isUploaded": true,
+    "critic_score": 96,
+    "critic_feedback": "학교라는 경계를 넘어 사회로 뻗어나가는 학생들의 창의적 응전력을 높은 완성도의 하드웨어-소프트웨어 융합 제품과 서비스로 훌륭하게 증명해낸 수작 전시입니다.",
+    "tags": [
+      "산업디자인",
+      "제품디자인",
+      "UX/UI",
+      "스마트모빌리티",
+      "Upwell"
+    ],
+    "artworks": [
+      {
+        "title": "[AI·제품디자인] 킥킷 (kick - it!)",
+        "student_name": "김서하, 박유진, 박재영, 양지윤",
+        "department": "INDUSTRIAL DESIGN과",
+        "image": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_31.png",
+        "thumbnail": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_31.png",
+        "description": "킥잇은 콘텐츠를 즐기는 새로운 방식을 제안합니다. 영화, 드라마, 스포츠 등 다양한 콘텐츠를 AI 친구 ‘키키’와 상상력을 더해 대화하며 더욱 풍부하게 즐겨보세요.\n키키의 제안과 대화를 통해 만들어진 스핀오프 이야기는 상상을 현실로 만듭니다.\n이 과정은 단순한 결과물이 아니라 다른 사용자와 공유되며 무한히 확장되는 콘텐츠의 세계를 만들고, 여운은 자연스럽게 새로운 즐거움으로 이어집니다.\n“같이 놀아요, 킥킥!”\n\n김서하\n\n박유진\n\n박재영",
+        "inferred_role": "디자이너"
+      },
+      {
+        "title": "[스마트모빌리티] Floit",
+        "student_name": "강보영, 권소영, 김나현, 김해인",
+        "department": "INDUSTRIAL DESIGN과",
+        "image": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_32.png",
+        "thumbnail": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_32.png",
+        "description": "Floit는 정해진 틀에 갇히지 않고 아이디어와 일정을 물 흐르듯 자연스럽게 기록하는 화이트보드형 서비스입니다.\n떠오른 생각을 기록하면 AI가 흐름을 파악하고 그룹핑하거나 우선순위를 제안해줍니다. 막막한 일정 관리에 이젠 지치지 말고 Floit과 함께 목표를 향해 나아가세요.\n\nFloit is a whiteboard-style service that lets you record ideas and plans freely.\nAI understands your flow, grouping thoughts and suggesting priorities. Stay organized and move toward your goals with Floit.\n\n강보영\n\n권소영",
+        "inferred_role": "디자이너"
+      },
+      {
+        "title": "[인터랙션·스마트케어] 미러미",
+        "student_name": "신혜정, 지현민, 최지혜",
+        "department": "INDUSTRIAL DESIGN과",
+        "image": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_33.png",
+        "thumbnail": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_33.png",
+        "description": "미러미는 정보 선택에 어려움을 겪는 중장년을 위한 AI 건강관리 서비스입니다.\nAI는 사용자 데이터를 기반으로 도플갱어(미러미)를 생성하고, 일상에 따라 맞춤형 건강 실험을 제안하여 자연스럽게 루틴을 형성할 수 있도록 지원합니다.\n이를 통해 중장년층에게 단순한 정보 제공 이상의 지속 가능한 건강 관리 경험을 제공합니다.\n\n신혜정\n\n지현민\n\n최지혜",
+        "inferred_role": "디자이너"
+      },
+      {
+        "title": "[라이프스타일·제품디자인] OWN",
+        "student_name": "김민지, 김수민, 심채연, 이선민",
+        "department": "INDUSTRIAL DESIGN과",
+        "image": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_34.png",
+        "thumbnail": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_34.png",
+        "description": "똑똑, 잘 지내고 계신가요? \n'쉼'의 주도권을 가지는 순간' '나를 진정으로 가꾸는 순간'을 마주할 때, 우리는 비로소 잘 지낸다고 할 수 있습니다.\n\nOWN은 쉼을 수동적인 멈춤이 아닌, 나를 ON 시키는 건강하고 주도적인 활동으로 정의합니다.\n쉼과 일정의 밸런스 유지를 통해 일과의 볼륨을 잠시 낮추고, 내 안의 쉼을 찾아 재생하세요.\n\n쉼을 Play, 내가 ON 되는 순간을 OWN과 함께 맞이하세요!\n\n김민지\n\n김수민\n\n심채연",
+        "inferred_role": "디자이너"
+      },
+      {
+        "title": "[공간·스마트디바이스] FOCO",
+        "student_name": "김정원, 방세빈, 이도연",
+        "department": "INDUSTRIAL DESIGN과",
+        "image": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_35.png",
+        "thumbnail": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_35.png",
+        "description": "우리는 매일 수많은 일을 동시에 처리하며 살아가지만 멀티태스킹은 집중을 흐트러뜨리고, 정말 중요한 일을 하는 데 방해가 되곤 합니다.\nFOCO는 사용자가 자신의 일에만 몰두할 수 있도록 백스테이지에서 조용히 일하는 AI 스탭입니다.\n\nWe live our lives juggling countless tasks simultaneously, yet multitasking can disrupt focus and distract us from truly important work.\nFOCO is an AI staff member who quietly works behind the scenes, allowing users to focus solely on their work.\n\n김정원\n\n방세빈",
+        "inferred_role": "디자이너"
+      },
+      {
+        "title": "[웰니스·리빙디자인] 온점 : 온전한 나의 시간",
+        "student_name": "김민지, 이석영, 함정민, 허은지",
+        "department": "INDUSTRIAL DESIGN과",
+        "image": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_36.png",
+        "thumbnail": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_36.png",
+        "description": "작은 순간이 모여 온전한 하루를 완성하는 시간 기록 서비스를 소개합니다.\n온점은 자동으로 쌓이는 일상의 활동들 속에서 나답게 보낸 순간을 발견하고, 그것을 온전한 나의 시간으로 남길 수 있게 합니다.\n온점과 함께 매일의 흐름을 돌아보고, 더 의미 있는 내일을 기대해보세요!\n\n김민지\n\n이석영\n\n함정민",
+        "inferred_role": "디자이너"
+      },
+      {
+        "title": "[헬스케어·웨어러블] moro",
+        "student_name": "김정연, 이강이, 최유진",
+        "department": "INDUSTRIAL DESIGN과",
+        "image": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_37.png",
+        "thumbnail": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_37.png",
+        "description": "무엇부터 해야 할지 몰라서 시도하지 못한 상황 있으신가요?\nmoro는 그러한 막연한 상황에서 불확실한 내일을 시뮬레이션하고, 작은 실행으로 이어주는 개인 맞춤형 서비스입니다.\n불확실한 시작점에서 사용자의 실현 가능성을 발견하고 막연함에서 도전 가능성 그리고 실행으로 이어지게 합니다.\n“어떡하지...”라는 생각에서 “아! 이런게 있구나”라는 생각으로 만들어주는 경험을 선사해줍니다.\n\n김정연\n\n이강이\n\n최유진",
+        "inferred_role": "디자이너"
+      },
+      {
+        "title": "[지속가능·모빌리티] COUSE (코어스)",
+        "student_name": "송수빈, 신혜규, 이소정, 임선호",
+        "department": "INDUSTRIAL DESIGN과",
+        "image": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_38.png",
+        "thumbnail": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_38.png",
+        "description": "COUSE는 나의 본질(core)을 발견하고, 나만의 방향(course)을 찾아가는 여정입니다. \n일상 속 사소한 흔적들을 모아 나를 이해하고, 새로운 영감으로 확장해 나가는 자기탐색형 서비스 COUSE를 만나보세요!\n\n송수빈\n\n신혜규\n\n이소정",
+        "inferred_role": "디자이너"
+      },
+      {
+        "title": "[UX/UI·스마트토이] dot(닷)",
+        "student_name": "박서연, 박나리, 유우경, 조강미",
+        "department": "INDUSTRIAL DESIGN과",
+        "image": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_39.png",
+        "thumbnail": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_39.png",
+        "description": "쇼핑 과정에서 넘치는 선택지 때문에 구매하지 못한 경험 있지 않으신가요? \n쇼핑 AI  어시스턴트 'dot'은 수많은 선택지 속에서 고민하는 소비자들을 위해 탄생했습니다.\ndot은 메이트의 관점을 기반으로 제품을 추천하고 비교해 주는 AI 어시스턴트입니다. \n내가 평소에 신뢰하던 전문가나 지인, 좋아하는 연예인의 사고를 담은 AI가,\n그들의 관점에서 나에게 꼭 맞는 제품을 제안합니다. \n지금부터 dot과 함께 새로운 쇼핑 경험을 시작해 보세요.\n\n박나리\n\n박서연\n\n유우경",
+        "inferred_role": "디자이너"
+      },
+      {
+        "title": "[퍼스널케어·디바이스] CLIP",
+        "student_name": "김세은, 김수연, 김주현, 손희아",
+        "department": "INDUSTRIAL DESIGN과",
+        "image": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_40.png",
+        "thumbnail": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/artwork_40.png",
+        "description": "CLIP은 내 주위로 스쳐 지나간 일상의 단서들을 모아, 나를 새롭게 정의하는 서비스 입니다.\n무심코 남겨진 기록과 흔적을 하나의 클립으로 엮어 사용자는 데이터가 아닌 '나'를 발견합니다.\n외부의 시선을 통해 자신을 객관적으로 바로보고 그 안에서 또 다른 나를 완성해나갑니다.\n\n김세은\n\n김수연\n\n김주현",
+        "inferred_role": "디자이너"
+      }
+    ],
+    "cooperation_companies": [
+      "LG전자 디자인경영센터",
+      "삼성전자 MX사업부",
+      "현대자동차 남양연구소",
+      "네이버 디자인설계실"
+    ],
+    "has_corporate_cooperation": true,
+    "corporate_cooperation_count": 4,
+    "cross_validation_status": "CORROBORATED"
+  },
+  {
     "id": "UNIV-2025-세종대학교-디자인이노베이션전공-firstchase",
     "category": "디자인·UX/UI",
     "university": "세종대학교",
