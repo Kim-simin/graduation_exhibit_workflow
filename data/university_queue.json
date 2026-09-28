@@ -1,5 +1,52 @@
 [
   {
+    "id": "UNIV-2025-서울여자대학교-산업디자인학과",
+    "university": "서울여자대학교",
+    "department": "산업디자인학과",
+    "category": "디자인·UX/UI",
+    "year": "2025",
+    "exhibition_title": "2025 서울여자대학교 산업디자인학과 졸업전시회 | Upwell (범람: 泛濫)",
+    "title": "2025 서울여자대학교 산업디자인학과 졸업전시회 | Upwell (범람: 泛濫)",
+    "slogan": "잠재되어 있던 가능성이 마침내 터져 나오는 순간, 조용한 수면 아래에서 끓어오르던 에너지가 세상을 향해 드러나는 순간.",
+    "curation_summary": {
+      "headline": "잠재되어 있던 가능성이 마침내 터져 나오는 순간, 조용한 수면 아래에서 끓어오르던 에너지가 세상을 향해 드러나는 순간.",
+      "curation_intro": "2025 SWUID 산업디자인학과 졸업전시 《Upwell》은 학교라는 테두리를 넘어 사회로 나아가는 디자이너들의 '터져나오는 힘'을 주제로 기획되었습니다. 이 전시는 학생들이 그동안 축적해온 창의성과 잠재력을 '역동적이고 벅찬 에너지'로 표현하며, 불확실한 미래 앞에서도 자신감 있게 발산하는 새로운 시작의 가능성을 담고 있습니다. 이번 졸업전시를 통해 각자의 방식으로 세상을 향해 물결을 일으키는 서울여대 산업디자인학과 학생들의 도전과 확장을 느껴보시기 바랍니다.",
+      "inferred_industry_keywords": [
+        "산업디자인",
+        "제품디자인",
+        "UX/UI",
+        "모빌리티",
+        "헬스케어"
+      ]
+    },
+    "exhibition_period": "2025.10.27(월) - 11.02(일) 10:00 - 20:00",
+    "exhibition_venue": "서울여자대학교 조형예술관 1층 바롬갤러리",
+    "target_url": "https://swuid2025.com/",
+    "official_url": "https://swuid2025.com/",
+    "poster_image": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/poster.png",
+    "status": "완료",
+    "isUploaded": true,
+    "critic_score": 96,
+    "critic_feedback": "학교라는 경계를 넘어 사회로 뻗어나가는 학생들의 창의적 응전력을 높은 완성도의 하드웨어-소프트웨어 융합 제품과 서비스로 훌륭하게 증명해낸 수작 전시입니다.",
+    "tags": [
+      "산업디자인",
+      "제품디자인",
+      "UX/UI",
+      "스마트모빌리티",
+      "Upwell"
+    ],
+    "artworks": [],
+    "cooperation_companies": [
+      "LG전자 디자인경영센터",
+      "삼성전자 MX사업부",
+      "현대자동차 남양연구소",
+      "네이버 디자인설계실"
+    ],
+    "has_corporate_cooperation": true,
+    "corporate_cooperation_count": 4,
+    "cross_validation_status": "CORROBORATED"
+  },
+  {
     "id": "UNIV-2025-세종대학교-디자인이노베이션전공-firstchase",
     "category": "디자인·UX/UI",
     "university": "세종대학교",
