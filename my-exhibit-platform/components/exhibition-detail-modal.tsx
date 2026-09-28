@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 import {
   X,
   Edit,
@@ -24,6 +25,8 @@ import {
   Maximize2,
   Share2,
   Check,
+  GraduationCap,
+  ClipboardPaste,
 } from "lucide-react";
 import { Exhibition, Artwork } from "@/lib/get-exhibitions";
 import { EDIT_CATEGORIES, getStandardCategory, isArtworkZoomDisabled } from "@/src/utils/categoryMapper";
@@ -179,40 +182,21 @@ export function ExhibitionDetailModal({
   const [selectedArtworkIndex, setSelectedArtworkIndex] = useState<number | null>(null);
   const [isPosterLightboxOpen, setIsPosterLightboxOpen] = useState(false);
 
-  // 온라인 전시 링크공유 상태
+  // 온라인 전시 링크공유 상단 오버레이 패널 상태
+  const [isSharePanelOpen, setIsSharePanelOpen] = useState(false);
   const [isLinkCopied, setIsLinkCopied] = useState(false);
 
-  const handleModalShareLink = async () => {
-    const shareUrl =
-      targetUrl && targetUrl.startsWith("http")
-        ? targetUrl
-        : typeof window !== "undefined" && exhibition
-        ? `${window.location.origin}/exhibit/${encodeURIComponent(exhibition.id)}`
-        : "";
+  const getModalShareUrl = () => {
+    return targetUrl && targetUrl.startsWith("http")
+      ? targetUrl
+      : typeof window !== "undefined" && exhibition
+      ? `${window.location.origin}/exhibit/${encodeURIComponent(exhibition.id)}`
+      : "";
+  };
 
+  const handleCopyModalUrl = async () => {
+    const shareUrl = getModalShareUrl();
     if (!shareUrl) return;
-
-    const shareTitle = `${university} ${department} 온라인 졸업전시회`;
-    const shareText = `[${university}] ${title} 공식 온라인 전시를 확인해보세요!`;
-
-    if (
-      typeof navigator !== "undefined" &&
-      navigator.share &&
-      /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)
-    ) {
-      try {
-        await navigator.share({
-          title: shareTitle,
-          text: shareText,
-          url: shareUrl,
-        });
-        setIsLinkCopied(true);
-        setTimeout(() => setIsLinkCopied(false), 2000);
-        return;
-      } catch (err: any) {
-        if (err.name === "AbortError") return;
-      }
-    }
 
     try {
       if (typeof navigator !== "undefined" && navigator.clipboard) {
@@ -228,10 +212,30 @@ export function ExhibitionDetailModal({
         document.body.removeChild(textArea);
       }
       setIsLinkCopied(true);
-      setTimeout(() => setIsLinkCopied(false), 2000);
+      setTimeout(() => setIsLinkCopied(false), 2500);
     } catch (e) {
       console.error("모달 링크 복사 실패:", e);
     }
+  };
+
+  const handleModalNativeShare = async () => {
+    const shareUrl = getModalShareUrl();
+    if (!shareUrl) return;
+    if (typeof navigator !== "undefined" && navigator.share) {
+      try {
+        await navigator.share({
+          title: `${university} ${department} 온라인 졸업전시회`,
+          text: `[${university}] ${title} 공식 온라인 전시를 확인해보세요!`,
+          url: shareUrl,
+        });
+      } catch (err: any) {
+        if (err.name !== "AbortError") console.error(err);
+      }
+    }
+  };
+
+  const handleModalShareLink = () => {
+    setIsSharePanelOpen((prev) => !prev);
   };
 
   // 전시 데이터 변경 시 초기화
@@ -623,12 +627,24 @@ export function ExhibitionDetailModal({
               </div>
             ) : (
               <>
-                <h2 className="text-xl md:text-2xl font-black text-slate-900 dark:text-white truncate">
+                <h2 className="text-xl md:text-2xl font-black text-slate-900 dark:text-white leading-tight break-words">
                   {title}
                 </h2>
-                <p className="text-cyan-700 dark:text-cyan-400 text-xs font-semibold mt-0.5">
-                  {university} {department}
-                </p>
+                <div className="flex items-center gap-2 mt-1 flex-wrap">
+                  <span className="text-cyan-700 dark:text-cyan-400 text-xs sm:text-sm font-bold">
+                    {university} · {department}
+                  </span>
+                  {university && (
+                    <Link
+                      href={`/professors?univ=${encodeURIComponent(university)}&openInsight=true`}
+                      className="inline-flex items-center gap-1 text-[11px] text-indigo-500 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-300 font-bold bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-500/30 px-2 py-0.5 rounded-full transition"
+                      title={`${university} 교수 인사이트 보기`}
+                    >
+                      <GraduationCap className="w-3 h-3" />
+                      <span>교수 인사이트 ↗</span>
+                    </Link>
+                  )}
+                </div>
               </>
             )}
           </div>
@@ -701,23 +717,14 @@ export function ExhibitionDetailModal({
               type="button"
               onClick={handleModalShareLink}
               className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition shadow-sm whitespace-nowrap shrink-0 ${
-                isLinkCopied
-                  ? "bg-emerald-600 text-white"
+                isSharePanelOpen
+                  ? "bg-cyan-600 text-white shadow-cyan-500/25"
                   : "bg-slate-100 dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-cyan-950/60 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:text-cyan-600 dark:hover:text-cyan-400"
               }`}
               title="해당 대학교 온라인 전시 링크공유"
             >
-              {isLinkCopied ? (
-                <>
-                  <Check className="w-3.5 h-3.5" />
-                  <span>복사완료</span>
-                </>
-              ) : (
-                <>
-                  <Share2 className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" />
-                  <span>링크공유</span>
-                </>
-              )}
+              <Share2 className="w-3.5 h-3.5 text-cyan-500 dark:text-cyan-400 shrink-0" />
+              <span>링크공유</span>
             </button>
 
             <button
@@ -731,6 +738,75 @@ export function ExhibitionDetailModal({
             </button>
           </div>
         </div>
+
+        {/* 3. 모달 상단 '링크공유' 오버레이 패널 */}
+        {isSharePanelOpen && (
+          <div className="z-30 px-6 py-4 bg-cyan-50/95 dark:bg-cyan-950/90 border-b border-cyan-300 dark:border-cyan-800/80 backdrop-blur-md animate-in fade-in slide-in-from-top-3 duration-200">
+            <div className="flex items-center justify-between gap-3 mb-2.5">
+              <div className="flex items-center gap-2">
+                <span className="p-1 rounded-lg bg-cyan-600 text-white">
+                  <Share2 className="w-3.5 h-3.5" />
+                </span>
+                <span className="text-xs font-bold text-cyan-900 dark:text-cyan-200">
+                  온라인 전시 링크 공유
+                </span>
+                <span className="text-[11px] font-semibold text-cyan-700 dark:text-cyan-400">
+                  [{university}] {title}
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsSharePanelOpen(false)}
+                className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1"
+                title="패널 닫기"
+              >
+                <X className="w-3.5 h-3.5" />
+              </button>
+            </div>
+
+            <div className="flex flex-wrap sm:flex-nowrap items-center gap-2">
+              <div className="flex-1 min-w-0 bg-white dark:bg-slate-900 border border-cyan-300 dark:border-cyan-700 rounded-xl px-3 py-1.5 flex items-center">
+                <input
+                  type="text"
+                  readOnly
+                  value={getModalShareUrl()}
+                  className="w-full bg-transparent text-xs font-mono text-slate-800 dark:text-slate-200 outline-none select-all truncate"
+                />
+              </div>
+              <button
+                type="button"
+                onClick={handleCopyModalUrl}
+                className={`inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold transition shadow-sm shrink-0 ${
+                  isLinkCopied
+                    ? "bg-emerald-600 text-white"
+                    : "bg-cyan-600 hover:bg-cyan-700 text-white active:scale-95"
+                }`}
+              >
+                {isLinkCopied ? (
+                  <>
+                    <Check className="w-3.5 h-3.5" />
+                    <span>복사완료!</span>
+                  </>
+                ) : (
+                  <>
+                    <ClipboardPaste className="w-3.5 h-3.5" />
+                    <span>링크 복사</span>
+                  </>
+                )}
+              </button>
+              {typeof navigator !== "undefined" && typeof navigator.share === "function" && (
+                <button
+                  type="button"
+                  onClick={handleModalNativeShare}
+                  className="inline-flex items-center justify-center gap-1 px-3 py-2 rounded-xl bg-white dark:bg-slate-900 border border-cyan-300 dark:border-cyan-700 text-cyan-700 dark:text-cyan-300 hover:bg-cyan-100/50 dark:hover:bg-slate-800 text-xs font-bold transition shrink-0"
+                >
+                  <Share2 className="w-3.5 h-3.5" />
+                  <span>기기 공유</span>
+                </button>
+              )}
+            </div>
+          </div>
+        )}
 
         {/* 모달 본문 스크롤 영역 */}
         <div className="flex-1 overflow-y-auto p-6 md:p-8 space-y-8">
@@ -750,24 +826,11 @@ export function ExhibitionDetailModal({
                 title={!isEditing && posterPath ? "클릭하여 메인 포스터 고화질 확인" : undefined}
               >
                 {posterPath ? (
-                  <>
-                    <img
-                      src={posterPath.startsWith("http") ? posterPath : `/api/images/${posterPath}`}
-                      alt="메인 공식 포스터"
-                      className="w-full h-full object-cover group-hover:scale-105 transition duration-500 select-none"
-                    />
-                    {exhibition?.posterVideoPath && (
-                      <video
-                        src={`/api/images/${exhibition.posterVideoPath}`}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="auto"
-                        className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-                      />
-                    )}
-                  </>
+                  <img
+                    src={posterPath.startsWith("http") ? posterPath : `/api/images/${posterPath}`}
+                    alt="메인 공식 포스터"
+                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500 select-none"
+                  />
                 ) : (
                   <div className="flex flex-col items-center justify-center p-4 text-center text-slate-400 dark:text-slate-500">
                     <ImageIcon className="w-12 h-12 mb-2 opacity-50" />
@@ -879,18 +942,36 @@ export function ExhibitionDetailModal({
                   </div>
                 </div>
               ) : (
-                <div>
-                  <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2 leading-snug">
-                    {headline || `${university} ${department} 졸업전시회`}
-                  </h3>
-                  <p className="text-xs md:text-sm text-slate-600 dark:text-slate-300 leading-relaxed whitespace-pre-line">
-                    {curationIntro || "등록된 상세 소개글이 없습니다."}
-                  </p>
+                <div className="space-y-4">
+                  <div>
+                    <span className="text-xs font-bold text-cyan-600 dark:text-cyan-400 block mb-1">
+                      {university} · {department}
+                    </span>
+                    <h3 className="text-lg md:text-xl font-black text-slate-900 dark:text-white leading-snug">
+                      {title}
+                    </h3>
+                    {headline && headline !== title && (
+                      <p className="text-xs sm:text-sm font-semibold text-slate-500 dark:text-slate-400 mt-1">
+                        {headline}
+                      </p>
+                    )}
+                  </div>
+
+                  {/* 메인 카드에서 이전된 전시 본문 전체 설명글 (가독성 높은 전체 뷰) */}
+                  <div className="p-4 sm:p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
+                    <div className="flex items-center gap-1.5 text-xs font-bold text-cyan-700 dark:text-cyan-400">
+                      <Sparkles className="w-3.5 h-3.5" />
+                      <span>전시 기획 서문 및 큐레이션 소개</span>
+                    </div>
+                    <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed md:leading-loose whitespace-pre-line break-words font-normal">
+                      {curationIntro || exhibition.description || "등록된 상세 소개글이 없습니다."}
+                    </p>
+                  </div>
                 </div>
               )}
 
-              {/* 일정 및 장소 정보 */}
-              <div className="pt-3 border-t border-slate-200 dark:border-slate-800">
+              {/* 일정 및 장소 정보 카드 */}
+              <div className="pt-2">
                 {isEditing ? (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                     <div>
@@ -919,14 +1000,24 @@ export function ExhibitionDetailModal({
                     </div>
                   </div>
                 ) : (
-                  <div className="grid grid-cols-2 gap-3 text-xs">
-                    <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400">
-                      <Calendar className="w-4 h-4 text-cyan-600 dark:text-cyan-400 shrink-0" />
-                      <span className="truncate">{period || "일정 공지 대기"}</span>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                    <div className="p-3 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 flex items-start gap-2.5">
+                      <div className="p-2 rounded-lg bg-cyan-50 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-400 shrink-0">
+                        <Calendar className="w-4 h-4" />
+                      </div>
+                      <div className="min-w-0">
+                        <span className="text-[11px] font-bold text-slate-400 dark:text-slate-500 block mb-0.5">전시 일정 / 관람 기간</span>
+                        <span className="font-semibold text-slate-800 dark:text-slate-200 break-words">{period || "일정 공지 대기"}</span>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400">
-                      <MapPin className="w-4 h-4 text-cyan-600 dark:text-cyan-400 shrink-0" />
-                      <span className="truncate">{venue || "장소 미정"}</span>
+                    <div className="p-3 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 flex items-start gap-2.5">
+                      <div className="p-2 rounded-lg bg-cyan-50 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-400 shrink-0">
+                        <MapPin className="w-4 h-4" />
+                      </div>
+                      <div className="min-w-0">
+                        <span className="text-[11px] font-bold text-slate-400 dark:text-slate-500 block mb-0.5">전시 장소 / 오프라인 위치</span>
+                        <span className="font-semibold text-slate-800 dark:text-slate-200 break-words">{venue || "장소 미정"}</span>
+                      </div>
                     </div>
                   </div>
                 )}

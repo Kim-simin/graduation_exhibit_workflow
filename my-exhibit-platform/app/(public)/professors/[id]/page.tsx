@@ -135,9 +135,33 @@ export default function ProfessorDetailPage() {
                 </span>
               </div>
 
-              <p style={{ fontSize: "0.9375rem", color: "#94a3b8", margin: "0 0 0.85rem" }}>
-                {professor.university} {professor.department}
-              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", margin: "0 0 0.85rem", flexWrap: "wrap" }}>
+                <Link
+                  href={`/professors?univ=${encodeURIComponent(professor.university)}&openInsight=true`}
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "0.3rem",
+                    padding: "0.2rem 0.6rem",
+                    borderRadius: "0.375rem",
+                    backgroundColor: "rgba(99, 102, 241, 0.15)",
+                    border: "1px solid rgba(99, 102, 241, 0.35)",
+                    color: "#c7d2fe",
+                    fontSize: "0.875rem",
+                    fontWeight: 600,
+                    textDecoration: "none",
+                    transition: "all 0.15s ease",
+                  }}
+                  title={`${professor.university} 교수 인사이트 보기`}
+                >
+                  <Building2 style={{ width: "0.85rem", height: "0.85rem", color: "#818cf8" }} />
+                  <span>{professor.university}</span>
+                  <span style={{ fontSize: "0.6875rem", color: "#38bdf8", fontWeight: 700 }}>
+                    교수 인사이트 ↗
+                  </span>
+                </Link>
+                <span style={{ fontSize: "0.9375rem", color: "#94a3b8" }}>{professor.department}</span>
+              </div>
 
               <p style={{ fontSize: "0.9375rem", color: "#cbd5e1", lineHeight: 1.6, margin: "0 0 1rem" }}>
                 {professor.bio}
@@ -231,7 +255,7 @@ export default function ProfessorDetailPage() {
                 }}
               >
                 <div style={{ fontSize: "0.75rem", color: "#f59e0b", fontWeight: 700, marginBottom: "0.25rem" }}>
-                  과제 1줄 핵심 문제의식:
+                  {professor.university} {professor.department} 핵심 탐구 과제 요약:
                 </div>
                 <div style={{ fontSize: "1rem", fontWeight: 700, color: "#ffffff", lineHeight: 1.5 }}>
                   "{professor.assignment_one_liner ?? "확인된 정보 없음"}"

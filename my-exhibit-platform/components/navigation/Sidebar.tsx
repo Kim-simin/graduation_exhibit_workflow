@@ -34,7 +34,7 @@ export default function Sidebar() {
       iconEmoji: "👥",
     },
     {
-      label: "학과 커리큘럼 (교수)",
+      label: "대학교 커리큘럼",
       href: "/professors",
       badge: null,
       iconEmoji: "🎓",

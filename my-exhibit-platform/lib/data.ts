@@ -7,7 +7,9 @@ import brandAssetsData from "@/data/brand_assets.json";
 import taxonomyData from "@/data/taxonomy.json";
 import recruitmentIntelligence from "@/data/research/intelligence/recruitment_intelligence.json";
 import generatedContentsData from "@/data/generated_contents.json";
+import curriculumsData from "@/data/curriculums.json";
 import { Student, Professor, RFP, Mentor, CorporateData, BrandAsset, GeneratedContentItem, JobPosting } from "@/types";
+import { StandardCurriculum, DepartmentCurriculum } from "@/types/curriculum";
 
 export interface TaxonomyItem {
   id: string;
@@ -42,6 +44,14 @@ export function getVerifiedProfessors(): Professor[] {
 
 export function getProfessorById(id: string): Professor | undefined {
   return ((professorsData as unknown as Professor[]) || []).find((p) => p.id === id);
+}
+
+export function getCurriculums(): StandardCurriculum[] {
+  return (curriculumsData as unknown as StandardCurriculum[]) || [];
+}
+
+export function getCurriculumById(id: string): StandardCurriculum | undefined {
+  return getCurriculums().find((c) => c.id === id);
 }
 
 export function getRfps(): RFP[] {

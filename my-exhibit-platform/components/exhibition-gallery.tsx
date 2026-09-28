@@ -68,9 +68,80 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
   const [selectedInstaCard, setSelectedInstaCard] = useState<Exhibition | null>(null);
   const [cooldownRemaining, setCooldownRemaining] = useState(0);
 
-  // 온라인 전시 링크공유 복사 상태 및 알림 토스트
+  // 온라인 전시 링크공유 상단 오버레이 패널 상태
+  const [shareOverlayItem, setShareOverlayItem] = useState<Exhibition | null>(null);
+  const [isCopiedInOverlay, setIsCopiedInOverlay] = useState(false);
   const [copiedCardId, setCopiedCardId] = useState<string | null>(null);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+
+  // 공유 URL 헬퍼
+  const getShareUrl = (item: Exhibition) => {
+    return item.targetUrl && item.targetUrl.startsWith("http")
+      ? item.targetUrl
+      : typeof window !== "undefined"
+      ? `${window.location.origin}/exhibit/${encodeURIComponent(item.id)}`
+      : "";
+  };
+
+  // 상단 링크공유 오버레이 패널 열기
+  const handleOpenShareOverlay = (item: Exhibition, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setShareOverlayItem(item);
+    setIsCopiedInOverlay(false);
+  };
+
+  // 오버레이 패널 내 링크 복사
+  const handleCopyOverlayUrl = async (url: string) => {
+    if (!url) return;
+    try {
+      if (typeof navigator !== "undefined" && navigator.clipboard) {
+        await navigator.clipboard.writeText(url);
+      } else {
+        const textArea = document.createElement("textarea");
+        textArea.value = url;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+      }
+      setIsCopiedInOverlay(true);
+      setTimeout(() => setIsCopiedInOverlay(false), 2500);
+    } catch (err) {
+      console.error("클립보드 복사 실패:", err);
+    }
+  };
+
+  // 기기 네이티브 Web Share API 지원 시 호출
+  const handleNativeShare = async (item: Exhibition) => {
+    const shareUrl = getShareUrl(item);
+    if (!shareUrl) return;
+    if (typeof navigator !== "undefined" && navigator.share) {
+      try {
+        await navigator.share({
+          title: `${item.university} ${item.department} 온라인 졸업전시회`,
+          text: `[${item.university}] ${item.title} 공식 온라인 전시를 확인해보세요!`,
+          url: shareUrl,
+        });
+      } catch (err: any) {
+        if (err.name !== "AbortError") console.error(err);
+      }
+    }
+  };
+
+  // ESC 키로 공유 오버레이 패널 닫기
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setShareOverlayItem(null);
+      }
+    };
+    if (shareOverlayItem) {
+      window.addEventListener("keydown", handleKeyDown);
+      return () => window.removeEventListener("keydown", handleKeyDown);
+    }
+  }, [shareOverlayItem]);
 
   // 쿨다운 상태 초기 조회
   useEffect(() => {
@@ -142,73 +213,6 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
   useEffect(() => {
     refreshExhibitions();
   }, []);
-
-  // 해당 대학교 온라인 전시 링크공유 핸들러 (Web Share API 및 클립보드 복사 지원)
-  const handleShareLink = async (item: Exhibition, e: React.MouseEvent) => {
-    e.stopPropagation();
-
-    // targetUrl이 있으면 해당 대학교 공식 온라인 전시 웹사이트 URL, 없으면 플랫폼 내 전시 상세 페이지 URL
-    const shareUrl =
-      item.targetUrl && item.targetUrl.startsWith("http")
-        ? item.targetUrl
-        : typeof window !== "undefined"
-        ? `${window.location.origin}/exhibit/${encodeURIComponent(item.id)}`
-        : "";
-
-    if (!shareUrl) return;
-
-    console.log("[handleShareLink] Sharing URL:", shareUrl, "for item:", item.id);
-
-    const shareTitle = `${item.university} ${item.department} 온라인 졸업전시회`;
-    const shareText = `[${item.university}] ${item.title} 공식 온라인 전시를 확인해보세요!`;
-
-    // 1. 모바일/앱 환경 Web Share API 지원 시 우선 네이티브 공유창 호출
-    if (
-      typeof navigator !== "undefined" &&
-      navigator.share &&
-      /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)
-    ) {
-      try {
-        await navigator.share({
-          title: shareTitle,
-          text: shareText,
-          url: shareUrl,
-        });
-        setCopiedCardId(item.id);
-        setToastMessage(`[${item.university}] 링크가 공유되었습니다.`);
-        setTimeout(() => setCopiedCardId(null), 2500);
-        setTimeout(() => setToastMessage(null), 3000);
-        return;
-      } catch (err: any) {
-        if (err.name === "AbortError") {
-          return; // 사용자가 모바일 공유 취소 시 무시
-        }
-      }
-    }
-
-    // 2. 데스크톱 웹 및 Web Share 미지원/취소 외 실패 시 클립보드 복사 폴백
-    try {
-      if (typeof navigator !== "undefined" && navigator.clipboard) {
-        await navigator.clipboard.writeText(shareUrl);
-      } else {
-        const textArea = document.createElement("textarea");
-        textArea.value = shareUrl;
-        textArea.style.position = "fixed";
-        textArea.style.left = "-999999px";
-        document.body.appendChild(textArea);
-        textArea.select();
-        document.execCommand("copy");
-        document.body.removeChild(textArea);
-      }
-
-      setCopiedCardId(item.id);
-      setToastMessage(`[${item.university}] 온라인 전시 링크가 복사되었습니다!`);
-      setTimeout(() => setCopiedCardId(null), 2500);
-      setTimeout(() => setToastMessage(null), 3000);
-    } catch (err) {
-      console.error("온라인 전시 링크 복사 실패:", err);
-    }
-  };
 
   // 카드 수정 모달 열기 (실시간 상세 편집 모달을 isEditing: true 상태로 오픈)
   const handleOpenEditModal = (item: Exhibition, e: React.MouseEvent) => {
@@ -641,60 +645,6 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                 </div>
               )}
 
-              {/* 대학교 카드 상단: 해당 대학교 온라인 전시 링크공유 액션 바 */}
-              <div
-                className="z-10 px-2 py-1.5 sm:px-3 sm:py-2 bg-slate-50/95 dark:bg-[#0c101d] border-b border-slate-100 dark:border-gray-800/80 flex items-center justify-between gap-1 text-[8px] sm:text-xs select-none transition-colors duration-200 group-hover:bg-slate-100/90 dark:group-hover:bg-[#101728]"
-                onClick={(e) => e.stopPropagation()}
-              >
-                {item.targetUrl ? (
-                  <a
-                    href={item.targetUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                    className="inline-flex items-center gap-1 sm:gap-1.5 min-w-0 text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors group/link cursor-pointer"
-                    title={`${item.university} 공식 온라인 전시 사이트 새 창으로 열기 (${item.targetUrl})`}
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-pulse shrink-0" />
-                    <Globe className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 text-cyan-600 dark:text-cyan-400 shrink-0 group-hover/link:rotate-45 transition-transform duration-300" />
-                    <span className="font-bold truncate text-[8px] sm:text-[11px] hidden sm:inline group-hover/link:underline underline-offset-2">
-                      온라인 전시
-                    </span>
-                    <ExternalLink className="w-2 h-2 sm:w-2.5 sm:h-2.5 opacity-60 group-hover/link:opacity-100 hidden sm:inline shrink-0 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
-                  </a>
-                ) : (
-                  <div className="flex items-center gap-1 sm:gap-1.5 min-w-0">
-                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-pulse shrink-0" />
-                    <Globe className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 text-cyan-600 dark:text-cyan-400 shrink-0" />
-                    <span className="font-bold text-slate-700 dark:text-slate-300 truncate text-[8px] sm:text-[11px] hidden sm:inline">
-                      온라인 전시
-                    </span>
-                  </div>
-                )}
-                <button
-                  type="button"
-                  onClick={(e) => handleShareLink(item, e)}
-                  className={`inline-flex items-center gap-0.5 sm:gap-1 px-1.5 py-0.5 sm:px-2.5 sm:py-1 rounded-md sm:rounded-lg text-[8px] sm:text-[11px] font-bold transition-all shrink-0 shadow-xs hover:scale-105 active:scale-95 ${
-                    copiedCardId === item.id
-                      ? "bg-emerald-600 text-white border border-emerald-600 shadow-emerald-500/20"
-                      : "bg-white dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-cyan-950/60 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:text-cyan-600 dark:hover:text-cyan-400 hover:border-cyan-300 dark:hover:border-cyan-700"
-                  }`}
-                  title={`${item.university} 온라인 전시 링크공유`}
-                >
-                  {copiedCardId === item.id ? (
-                    <>
-                      <Check className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white shrink-0" />
-                      <span>복사완료</span>
-                    </>
-                  ) : (
-                    <>
-                      <Share2 className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-cyan-600 dark:text-cyan-400 shrink-0" />
-                      <span>링크공유</span>
-                    </>
-                  )}
-                </button>
-              </div>
-
               {/* Poster Aspect Ratio Frame */}
               <div className="relative aspect-[4/5] w-full min-w-0 overflow-hidden bg-slate-100 dark:bg-slate-900">
                 {item.isResearched && item.posterPath ? (
@@ -702,7 +652,7 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                     <img
                       src={`/api/images/${item.posterPath}`}
                       alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       onError={(e) => {
                         (e.target as HTMLElement).style.display = "none";
                       }}
@@ -710,16 +660,15 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                     {/* 모션그래픽 비디오 (마우스 호버 시 실제 공식 포스터 모션그래픽 재생) */}
                     {item.posterVideoPath && (
                       <video
-                        src={`/api/images/${item.posterVideoPath}`}
+                        src={item.posterVideoPath.startsWith("http") || item.posterVideoPath.startsWith("/api/images/") ? item.posterVideoPath : `/api/images/${item.posterVideoPath}`}
                         autoPlay
                         loop
                         muted
                         playsInline
                         preload="auto"
-                        className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:scale-108 transition-transform duration-500 ease-out"
+                        className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:scale-105 transition-transform duration-500 ease-out"
                       />
                     )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
                   </>
                 ) : (
                   /* 리서치 전 (수집 대기) 플레이스홀더 */
@@ -773,175 +722,115 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                   </div>
                 )}
 
-                {/* Overlays / Badges for Researched Cards */}
+                {/* Overlays / Badges for Researched Cards: 카테고리와 연도만 심플하게 표시 */}
                 {item.isResearched && (
-                  <>
-                    <div className="absolute top-1 left-1 sm:top-3 sm:left-3 flex max-w-[46%] flex-wrap gap-1 sm:gap-1.5 pointer-events-none">
-                      <span className="max-w-full truncate px-1 py-0.5 sm:px-2.5 sm:py-1 rounded-sm sm:rounded-md bg-white/90 dark:bg-cyan-950/80 backdrop-blur-md border border-slate-200 dark:border-cyan-500/40 text-cyan-800 dark:text-cyan-300 text-[8px] sm:text-xs font-semibold shadow-sm">
-                        {item.category}
-                      </span>
-                      <span className="px-1 py-0.5 sm:px-2 sm:py-1 rounded-sm sm:rounded-md bg-slate-900/80 backdrop-blur-md border border-slate-700 text-white text-[8px] sm:text-xs font-mono">
-                        {item.year}
-                      </span>
-                      {item.posterVideoPath && (
-                        <span className="px-1 py-0.5 sm:px-2 sm:py-1 rounded-sm sm:rounded-md bg-purple-600/90 dark:bg-purple-950/80 backdrop-blur-md border border-purple-400/40 text-purple-100 text-[8px] sm:text-xs font-bold shadow-sm flex items-center gap-0.5">
-                          <Play className="w-2 h-2 sm:w-2.5 sm:h-2.5 fill-current" />
-                          <span className="sm:hidden">모션</span><span className="hidden sm:inline">모션 포스터</span>
-                        </span>
-                      )}
-                    </div>
-
-                    <div className="absolute top-1 right-1 sm:top-3 sm:right-3 flex max-w-[48%] flex-col items-end gap-1 sm:gap-1.5">
-                      <div className="flex max-w-full items-center gap-0.5 sm:gap-1.5 px-1 py-0.5 sm:px-2.5 sm:py-1 rounded-sm sm:rounded-full bg-emerald-500/90 dark:bg-emerald-950/80 backdrop-blur-md dark:border dark:border-emerald-500/40 text-white dark:text-emerald-300 text-[8px] sm:text-xs font-bold shadow-md whitespace-nowrap">
-                        <CheckCircle2 className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 shrink-0" />
-                        <span className="sm:hidden">{item.criticScore}점</span><span className="hidden sm:inline">검수 {item.criticScore}점</span>
-                      </div>
-                      {item.instagramPublished && (
-                        <div className="flex max-w-full items-center gap-0.5 sm:gap-1 px-1 py-0.5 sm:px-2.5 rounded-sm sm:rounded-full bg-gradient-to-r from-rose-500 to-purple-600 text-white text-[8px] sm:text-[11px] font-bold shadow-md whitespace-nowrap">
-                          <Instagram className="w-2.5 h-2.5 sm:w-3 sm:h-3 shrink-0" />
-                          <span className="sm:hidden">발행</span><span className="hidden sm:inline">인스타 발행 완료 ✅</span>
-                        </div>
-                      )}
-                      {item.hasCorporateCooperation && (
-                        <div className="flex max-w-full items-center gap-0.5 sm:gap-1 px-1 py-0.5 sm:px-2 rounded-sm sm:rounded-full bg-blue-600/90 dark:bg-blue-950/80 backdrop-blur-md border border-blue-400/40 text-white text-[8px] sm:text-[11px] font-bold shadow-md whitespace-nowrap">
-                          <Building2 className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-blue-300 shrink-0" />
-                          <span>산학 {item.cooperationCompanies?.length || 1}개사</span>
-                        </div>
-                      )}
-                    </div>
-
-                    <div className="absolute bottom-1 left-1 right-1 sm:bottom-3 sm:left-3 sm:right-3 text-white min-w-0">
-                      <span className="text-[8px] sm:text-xs text-cyan-300 dark:text-cyan-400 font-semibold tracking-wide uppercase block mb-0.5 truncate">
-                        {item.university} · {item.department}
-                      </span>
-                      <h3 className="text-[10px] sm:text-sm font-bold leading-tight line-clamp-2 drop-shadow-md group-hover:text-cyan-100 transition-colors duration-200">
-                        {item.title}
-                      </h3>
-                    </div>
-                  </>
+                  <div className="absolute top-1.5 left-1.5 sm:top-2.5 sm:left-2.5 flex flex-wrap gap-1 sm:gap-1.5 pointer-events-none">
+                    <span className="truncate px-1.5 py-0.5 sm:px-2.5 sm:py-1 rounded-md bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border border-slate-200 dark:border-slate-700 text-cyan-800 dark:text-cyan-300 text-[9px] sm:text-xs font-semibold shadow-sm">
+                      {item.category}
+                    </span>
+                    <span className="px-1.5 py-0.5 sm:px-2 sm:py-1 rounded-md bg-slate-900/80 backdrop-blur-md border border-slate-700 text-white text-[9px] sm:text-xs font-mono">
+                      {item.year}
+                    </span>
+                  </div>
                 )}
               </div>
 
-              {/* Card Meta Content */}
-              <div className="p-2 sm:p-4 min-w-0 flex-1 flex flex-col justify-between bg-white dark:bg-[#111827]">
-                <div>
-                  <p className="text-slate-600 dark:text-gray-400 text-[8px] sm:text-xs leading-tight line-clamp-2 mb-2 sm:mb-3">
-                    {item.curationIntro || item.description || item.headline || `${item.university} ${item.department} 공식 전시 아카이브`}
-                  </p>
-
-                  <div className="flex flex-wrap gap-1 mb-2 sm:gap-1.5 sm:mb-3">
-                    {(item.tags || []).slice(0, 3).map((tag, idx) => (
-                      <span
-                        key={idx}
-                        className="max-w-full truncate px-1 py-0.5 sm:px-2 rounded-sm sm:rounded bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-gray-700/60 text-slate-600 dark:text-gray-300 text-[7px] sm:text-[10px]"
-                      >
-                        #{tag}
-                      </span>
-                    ))}
-                  </div>
-
-                  {item.hasCorporateCooperation && (item.cooperationCompanies || []).length > 0 && (
-                    <div className="mb-2 p-1 sm:p-1.5 rounded-md sm:rounded-lg bg-blue-50/70 dark:bg-blue-950/40 border border-blue-200/60 dark:border-blue-800/50 flex min-w-0 items-center justify-between gap-1 text-[8px] sm:text-[11px]">
-                      <span className="text-slate-600 dark:text-slate-300 truncate flex min-w-0 items-center gap-1">
-                        <Building2 className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-blue-500 shrink-0" />
-                        <span className="font-medium truncate">
-                          {item.cooperationCompanies
-                            ?.slice(0, 2)
-                            .map((c: any) => (typeof c === "string" ? c : c?.company_name || c?.name || String(c)))
-                            .join(", ")}
-                          {(item.cooperationCompanies?.length || 0) > 2 ? ` 외 ${(item.cooperationCompanies?.length || 0) - 2}개사` : ""}
-                        </span>
-                      </span>
-                      <span className="px-1 py-0.5 sm:px-1.5 rounded-sm sm:rounded text-[7px] sm:text-[10px] font-bold bg-blue-600 text-white shrink-0">
-                        {item.crossValidationStatus || "CORROBORATED"}
-                      </span>
-                    </div>
-                  )}
+              {/* Card Mid Info: 선별 작품 위 중단 영역 (파란색: 대학·전공 / 흰색: 전시 타이틀) */}
+              {item.isResearched && (
+                <div className="px-3 pt-3 pb-1 bg-white dark:bg-[#111827] min-w-0">
+                  <span className="text-[10px] sm:text-xs font-bold text-cyan-600 dark:text-cyan-400 block mb-0.5 truncate">
+                    {item.university} · {item.department}
+                  </span>
+                  <h3 className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white leading-snug line-clamp-2">
+                    {item.title}
+                  </h3>
                 </div>
+              )}
 
-                <div className="pt-2 sm:pt-3 border-t border-slate-100 dark:border-gray-800/60 flex min-w-0 items-center justify-between gap-1 text-[8px] sm:text-xs">
-                  {item.isResearched ? (
-                    <>
-                      <span className="text-slate-500 dark:text-gray-400 hidden sm:flex items-center gap-1">
-                        <Layers className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" />
-                        선별 작품 <strong className="text-slate-700 dark:text-gray-200">{item.artworks?.length || 0}점</strong>
-                      </span>
-                      <div className="flex min-w-0 items-center gap-1 sm:gap-1.5">
-                        {!isProduction && isAdminEditMode && (
-                          <>
-                            <button
-                              type="button"
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                setSelectedInstaCard(item);
-                                setIsInstaModalOpen(true);
-                              }}
-                              disabled={cooldownRemaining > 0}
-                              className={`text-[11px] px-2 py-0.5 rounded font-semibold flex items-center gap-1 transition shadow-sm border ${
-                                cooldownRemaining > 0
-                                  ? "bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-400 cursor-not-allowed"
-                                  : item.instagramPublished
-                                  ? "bg-rose-50 dark:bg-rose-950/40 border-rose-300 dark:border-rose-800 text-rose-700 dark:text-rose-300 hover:bg-rose-100 dark:hover:bg-rose-900/50"
-                                  : "bg-gradient-to-r from-rose-500 via-purple-600 to-indigo-600 hover:opacity-90 text-white border-transparent"
-                              }`}
-                            >
-                              <Instagram className="w-3 h-3" />
-                              {cooldownRemaining > 0
-                                ? `쿨다운 (${formatSeconds(cooldownRemaining)})`
-                                : item.instagramPublished
-                                ? "SNS 재발행"
-                                : "📸 SNS 업로드"}
-                            </button>
-
-                            <button
-                              type="button"
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                setUploadModalData({
-                                  id: item.id,
-                                  university: item.university,
-                                  department: item.department,
-                                  year: item.year || "2025",
-                                  category: item.category,
-                                  title: item.title,
-                                  posterPath: item.posterPath,
-                                  artworks: item.artworks,
-                                });
-                                setIsUploadModalOpen(true);
-                              }}
-                              className="text-[11px] px-2 py-0.5 rounded bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-gray-700 text-slate-700 dark:text-gray-300 flex items-center gap-1 transition shadow-sm"
-                            >
-                              <ClipboardPaste className="w-3 h-3 text-cyan-600 dark:text-cyan-400" /> 스크린샷
-                            </button>
-                          </>
-                        )}
-                        <span
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setSelectedExhibition(item);
-                            setIsDetailEditMode(false);
-                          }}
-                          className="min-w-0 text-[8px] sm:text-xs text-cyan-700 dark:text-cyan-400 font-bold inline-flex items-center gap-0.5 group-hover:text-cyan-500 dark:group-hover:text-cyan-300 transition-colors cursor-pointer whitespace-nowrap"
-                        >
-                          <span className="sm:hidden">관람</span><span className="hidden sm:inline">전시 관람하기</span>
-                          <ArrowUpRight className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform duration-300 ease-out" />
-                        </span>
-                      </div>
-                    </>
-                  ) : (
-                    <div className="w-full flex items-center justify-between text-slate-500 dark:text-gray-500">
-                      <span>{isProduction ? "공식 아카이브 준비 중" : "대기 큐 등록됨"}</span>
+              {/* Card Bottom Action Bar: 포스터와 선별 작품 수 / 전시 관람하기만 미니멀하게 구성 */}
+              <div className="px-3 pb-3 pt-2 bg-white dark:bg-[#111827] flex min-w-0 items-center justify-between gap-1 text-[9px] sm:text-xs select-none">
+                {item.isResearched ? (
+                  <>
+                    <span className="text-slate-600 dark:text-gray-300 font-semibold flex items-center gap-1 sm:gap-1.5">
+                      <Layers className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400 shrink-0" />
+                      <span>선별 작품 <strong className="text-slate-900 dark:text-white font-bold">{item.artworks?.length || 0}점</strong></span>
+                    </span>
+                    <div className="flex min-w-0 items-center gap-1 sm:gap-1.5">
                       {!isProduction && isAdminEditMode && (
-                        <Link
-                          href={adminResearchUrl}
-                          className="text-cyan-600 dark:text-cyan-400 hover:text-cyan-700 dark:hover:text-cyan-300 font-bold inline-flex items-center gap-1"
-                        >
-                          리서치 가동 <ArrowUpRight className="w-3.5 h-3.5" />
-                        </Link>
+                        <>
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedInstaCard(item);
+                              setIsInstaModalOpen(true);
+                            }}
+                            disabled={cooldownRemaining > 0}
+                            className={`text-[11px] px-2 py-0.5 rounded font-semibold flex items-center gap-1 transition shadow-sm border ${
+                              cooldownRemaining > 0
+                                ? "bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-400 cursor-not-allowed"
+                                : item.instagramPublished
+                                ? "bg-rose-50 dark:bg-rose-950/40 border-rose-300 dark:border-rose-800 text-rose-700 dark:text-rose-300 hover:bg-rose-100 dark:hover:bg-rose-900/50"
+                                : "bg-gradient-to-r from-rose-500 via-purple-600 to-indigo-600 hover:opacity-90 text-white border-transparent"
+                            }`}
+                          >
+                            <Instagram className="w-3 h-3" />
+                            {cooldownRemaining > 0
+                              ? `쿨다운 (${formatSeconds(cooldownRemaining)})`
+                              : item.instagramPublished
+                              ? "SNS 재발행"
+                              : "📸 SNS 업로드"}
+                          </button>
+
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setUploadModalData({
+                                id: item.id,
+                                university: item.university,
+                                department: item.department,
+                                year: item.year || "2025",
+                                category: item.category,
+                                title: item.title,
+                                posterPath: item.posterPath,
+                                artworks: item.artworks,
+                              });
+                              setIsUploadModalOpen(true);
+                            }}
+                            className="text-[11px] px-2 py-0.5 rounded bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-gray-700 text-slate-700 dark:text-gray-300 flex items-center gap-1 transition shadow-sm"
+                          >
+                            <ClipboardPaste className="w-3 h-3 text-cyan-600 dark:text-cyan-400" /> 스크린샷
+                          </button>
+                        </>
                       )}
+                      <span
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setSelectedExhibition(item);
+                          setIsDetailEditMode(false);
+                        }}
+                        className="min-w-0 text-[9px] sm:text-xs text-cyan-700 dark:text-cyan-400 font-bold inline-flex items-center gap-0.5 group-hover:text-cyan-500 dark:group-hover:text-cyan-300 transition-colors cursor-pointer whitespace-nowrap"
+                      >
+                        <span className="sm:hidden">관람</span>
+                        <span className="hidden sm:inline">전시 관람하기</span>
+                        <ArrowUpRight className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300 ease-out" />
+                      </span>
                     </div>
-                  )}
-                </div>
+                  </>
+                ) : (
+                  <div className="w-full flex items-center justify-between text-slate-500 dark:text-gray-500">
+                    <span>{isProduction ? "공식 아카이브 준비 중" : "대기 큐 등록됨"}</span>
+                    {!isProduction && isAdminEditMode && (
+                      <Link
+                        href={adminResearchUrl}
+                        className="text-cyan-600 dark:text-cyan-400 hover:text-cyan-700 dark:hover:text-cyan-300 font-bold inline-flex items-center gap-1"
+                      >
+                        리서치 가동 <ArrowUpRight className="w-3.5 h-3.5" />
+                      </Link>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           );
@@ -1069,6 +958,113 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
             refreshExhibitions();
           }}
         />
+      )}
+
+      {/* 3. 화면 상단 '링크공유' 오버레이 패널 (클릭 시 화면 상단에 깔끔하게 노출) */}
+      {shareOverlayItem && (
+        <>
+          <div
+            className="fixed inset-0 z-50 bg-black/40 backdrop-blur-xs transition-opacity animate-in fade-in duration-200"
+            onClick={() => setShareOverlayItem(null)}
+          />
+          <div
+            className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[94vw] max-w-lg bg-white/95 dark:bg-[#0f172a]/95 backdrop-blur-xl border border-cyan-500/40 dark:border-cyan-500/50 rounded-2xl shadow-2xl shadow-cyan-950/30 p-5 md:p-6 animate-in fade-in slide-in-from-top-6 duration-300 text-slate-900 dark:text-slate-100"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
+              <div className="flex items-center gap-2">
+                <span className="p-1.5 rounded-lg bg-cyan-500/10 text-cyan-600 dark:text-cyan-400">
+                  <Share2 className="w-4 h-4" />
+                </span>
+                <span className="text-xs font-bold text-cyan-700 dark:text-cyan-300">
+                  온라인 전시 링크 공유
+                </span>
+                <span className="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[11px] font-semibold text-slate-600 dark:text-slate-300">
+                  {shareOverlayItem.university}
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShareOverlayItem(null)}
+                className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+                title="닫기"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="py-4">
+              <h4 className="text-sm md:text-base font-extrabold text-slate-900 dark:text-white mb-1 line-clamp-2">
+                {shareOverlayItem.title}
+              </h4>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mb-4">
+                {shareOverlayItem.university} · {shareOverlayItem.department} ({shareOverlayItem.year || "2025"})
+              </p>
+
+              {/* URL 복사 인풋 바 */}
+              <div className="flex items-center gap-2 bg-slate-50 dark:bg-slate-950/80 p-1.5 rounded-xl border border-slate-200 dark:border-slate-800">
+                <input
+                  type="text"
+                  readOnly
+                  value={getShareUrl(shareOverlayItem)}
+                  className="flex-1 bg-transparent px-2.5 py-1 text-xs font-mono text-slate-700 dark:text-slate-300 outline-none select-all truncate"
+                />
+                <button
+                  type="button"
+                  onClick={() => handleCopyOverlayUrl(getShareUrl(shareOverlayItem))}
+                  className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-bold transition shadow-sm shrink-0 ${
+                    isCopiedInOverlay
+                      ? "bg-emerald-600 text-white"
+                      : "bg-cyan-600 hover:bg-cyan-700 text-white active:scale-95"
+                  }`}
+                >
+                  {isCopiedInOverlay ? (
+                    <>
+                      <Check className="w-3.5 h-3.5" />
+                      <span>복사완료!</span>
+                    </>
+                  ) : (
+                    <>
+                      <ClipboardPaste className="w-3.5 h-3.5" />
+                      <span>링크 복사</span>
+                    </>
+                  )}
+                </button>
+              </div>
+
+              {/* 추가 옵션: 공식 웹사이트 열기 & 모바일 공유 */}
+              <div className="flex items-center gap-2 mt-3 pt-3 border-t border-slate-100 dark:border-slate-800/80">
+                {shareOverlayItem.targetUrl && (
+                  <a
+                    href={shareOverlayItem.targetUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-bold transition"
+                  >
+                    <Globe className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" />
+                    <span>공식 웹사이트 바로가기</span>
+                    <ExternalLink className="w-3 h-3 opacity-60" />
+                  </a>
+                )}
+                {typeof navigator !== "undefined" && typeof navigator.share === "function" && (
+                  <button
+                    type="button"
+                    onClick={() => handleNativeShare(shareOverlayItem)}
+                    className="inline-flex items-center justify-center gap-1 px-3 py-2 rounded-xl bg-cyan-50 dark:bg-cyan-950/40 hover:bg-cyan-100 dark:hover:bg-cyan-900/50 text-cyan-700 dark:text-cyan-300 text-xs font-bold transition"
+                    title="기기 네이티브 공유창 열기"
+                  >
+                    <Share2 className="w-3.5 h-3.5" />
+                    <span>기기 공유</span>
+                  </button>
+                )}
+              </div>
+            </div>
+
+            <p className="text-[11px] text-slate-400 dark:text-slate-500 text-center">
+              복사된 링크를 메신저나 SNS에 붙여넣어 학생들의 졸업전시를 응원해주세요.
+            </p>
+          </div>
+        </>
       )}
 
       {/* 링크 복사 완료 토스트 알림 */}

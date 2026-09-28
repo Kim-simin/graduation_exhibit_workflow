@@ -84,7 +84,7 @@ export function getInitialExhibitions(): Exhibition[] {
 
       const posterVideo = item.poster_video || item.motion_poster_url || item.motion_poster || (item.university?.includes("세종") && item.department?.includes("디자인이노베이션") ? "uploads/UNIV-2025-세종대학교-디자인이노베이션전공/motion_poster.mp4" : null);
       const cleanPosterVideoPath = posterVideo
-        ? posterVideo.replace(/\\/g, "/").replace(/^.*data\/downloads\//, "").replace(/^.*downloads\//, "").replace(/^\/+/, "").replace(/^public\//, "")
+        ? `${posterVideo.replace(/\\/g, "/").replace(/^.*data\/downloads\//, "").replace(/^.*downloads\//, "").replace(/^\/+/, "").replace(/^public\//, "")}?v=horse_center_v3`
         : null;
 
       const artworks = (item.artworks || [])
