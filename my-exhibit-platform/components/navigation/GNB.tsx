@@ -30,7 +30,7 @@ export default function GNB() {
       badge: { text: "인재풀", bg: "bg-[#252843] text-indigo-300" },
     },
     {
-      label: "학과 커리큘럼 (교수)",
+      label: "대학교 커리큘럼",
       href: "/professors",
       icon: GraduationCap,
       badge: null,
