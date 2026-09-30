@@ -303,8 +303,8 @@ export default function OpportunitiesPage() {
         </div>
       </section>
 
-      {/* 2. Interactive Discovery Filters (Sticky Bar) */}
-      <section className="sticky top-16 z-40 bg-[#0f1424]/95 backdrop-blur-md border-b border-slate-800/80 py-4 shadow-md">
+      {/* 2. Interactive Discovery Filters (스크롤 시 따라 내려오지 않도록 위치 고정) */}
+      <section className="relative z-20 bg-[#0f1424] border-b border-slate-800/80 py-4 shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-3">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
             {/* School & Major Dropdowns */}
