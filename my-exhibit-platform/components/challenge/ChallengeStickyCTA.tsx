@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { Challenge } from "@/types/challenge";
-import { Users, Briefcase, ArrowRight, Sparkles } from "lucide-react";
+import { Users, Briefcase, ArrowRight, Sparkles, ExternalLink } from "lucide-react";
 
 interface ChallengeStickyCTAProps {
   challenge: Challenge;
@@ -54,6 +54,20 @@ export default function ChallengeStickyCTA({
 
         {/* 우측 CTA 버튼 그룹 (모바일은 가로 꽉 차게 배치) */}
         <div className="flex items-center gap-2.5 w-full md:w-auto justify-end">
+          {/* 공식 공고 바로가기 */}
+          {challenge.officialUrl && (
+            <a
+              href={challenge.officialUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs md:text-sm font-bold bg-[#171e35] hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-700/80 transition shadow-md whitespace-nowrap"
+              title="주관기관 공식 공고문 바로가기"
+            >
+              <span>공식 공고</span>
+              <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
+            </a>
+          )}
+
           {/* 팀 참여 신청 버튼 */}
           {hasRecruitingSlots ? (
             <button

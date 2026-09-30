@@ -13,6 +13,7 @@ import {
   ArrowRight,
   ShieldCheck,
   CheckCircle2,
+  ExternalLink,
 } from "lucide-react";
 
 interface ChallengeCardProps {
@@ -140,17 +141,45 @@ export default function ChallengeCard({
           &ldquo;{challenge.shortProblem}&rdquo;
         </p>
 
-        {/* 제공 기관 & 지역 메타 정보 */}
+        {/* 제공 기관 & 지역 메타 정보 (클릭 시 공식 사이트 연계) */}
         <div className="mt-3.5 pt-3 border-t border-slate-800/60 flex flex-wrap items-center gap-y-1.5 gap-x-4 text-xs text-slate-400">
           <div className="flex items-center gap-1.5">
             <Building2 className="w-3.5 h-3.5 text-indigo-400 shrink-0" />
-            <span className="text-slate-300 font-medium truncate max-w-[180px]">
-              {challenge.providerName}
-            </span>
+            {challenge.providerUrl ? (
+              <a
+                href={challenge.providerUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="text-slate-300 hover:text-indigo-300 font-medium truncate max-w-[200px] hover:underline flex items-center gap-1"
+                title={`${challenge.providerName} 공식 웹사이트`}
+              >
+                <span className="truncate">{challenge.providerName}</span>
+                <ExternalLink className="w-2.5 h-2.5 text-slate-400 shrink-0" />
+              </a>
+            ) : (
+              <span className="text-slate-300 font-medium truncate max-w-[200px]">
+                {challenge.providerName}
+              </span>
+            )}
           </div>
           <div className="flex items-center gap-1.5">
             <MapPin className="w-3.5 h-3.5 text-slate-500 shrink-0" />
-            <span className="truncate">{challenge.region}</span>
+            {challenge.regionUrl ? (
+              <a
+                href={challenge.regionUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="text-slate-400 hover:text-indigo-300 truncate hover:underline flex items-center gap-1"
+                title={`${challenge.region} 포털`}
+              >
+                <span className="truncate">{challenge.region}</span>
+                <ExternalLink className="w-2.5 h-2.5 text-slate-500 shrink-0" />
+              </a>
+            ) : (
+              <span className="truncate">{challenge.region}</span>
+            )}
           </div>
         </div>
 
@@ -227,33 +256,76 @@ export default function ChallengeCard({
         </div>
       </div>
 
-      {/* 하단 메타 & 액션 버튼 영역 */}
-      <div className="mt-5 pt-3.5 border-t border-slate-800/80 flex items-center justify-between gap-3">
-        <div className="flex items-center gap-2 text-[11px] text-slate-400">
-          <Clock className="w-3 h-3 text-slate-500" />
-          <span>기간 {challenge.duration}</span>
+      <div>
+        {/* 원천 공고 검증 및 공식 링크 바 */}
+        <div className="mt-4 pt-3 border-t border-slate-800/70 flex items-center justify-between gap-2 text-[11px] text-slate-400">
+          <div className="flex items-center gap-1.5 truncate">
+            <ShieldCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+            <span className="truncate text-slate-300 font-medium">
+              {challenge.providerName.split("&")[0].trim()}
+            </span>
+            <span className="text-slate-600">·</span>
+            <span className="text-[10px] text-emerald-400 font-bold">공식 산학공고</span>
+          </div>
+
+          {challenge.officialUrl && (
+            <a
+              href={challenge.officialUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center gap-1 text-indigo-400 hover:text-indigo-300 font-bold hover:underline shrink-0 transition-colors"
+              title="주관기관 공식 공고 원문 확인"
+            >
+              <span>공식 공고</span>
+              <ExternalLink className="w-3 h-3" />
+            </a>
+          )}
         </div>
 
-        <div className="flex items-center gap-2">
-          {/* 팀 참여 버튼 */}
-          {hasRecruitingSlots && onOpenTeamModal && (
-            <button
-              type="button"
-              onClick={() => onOpenTeamModal(challenge, filteredReq?.majorCategoryName)}
-              className="px-3 py-1.5 rounded-xl text-xs font-bold bg-[#1e2338] hover:bg-indigo-600 text-indigo-300 hover:text-white border border-indigo-700/40 hover:border-indigo-500 transition-all shadow-sm"
-            >
-              팀 참여
-            </button>
-          )}
+        {/* 하단 메타 & 액션 버튼 영역 */}
+        <div className="mt-3.5 pt-3 border-t border-slate-800/80 flex items-center justify-between gap-2">
+          <div className="flex items-center gap-1.5 text-[11px] text-slate-400">
+            <Clock className="w-3 h-3 text-slate-500 shrink-0" />
+            <span className="whitespace-nowrap">기간 {challenge.duration}</span>
+          </div>
 
-          {/* 상세보기 버튼 */}
-          <Link
-            href={`/industry-challenges/${challenge.id}`}
-            className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-500 text-white transition-all shadow-sm shadow-indigo-600/30"
-          >
-            <span>상세보기</span>
-            <ArrowRight className="w-3 h-3" />
-          </Link>
+          <div className="flex items-center gap-2">
+            {/* 공식 공고 바로가기 버튼 */}
+            {challenge.officialUrl && (
+              <a
+                href={challenge.officialUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-bold bg-[#171e35] hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-700/80 transition-all shadow-sm whitespace-nowrap"
+                title="공식 공고 및 원문 확인"
+              >
+                <span>공식 원문</span>
+                <ExternalLink className="w-3 h-3 text-slate-400" />
+              </a>
+            )}
+
+            {/* 팀 참여 버튼 */}
+            {hasRecruitingSlots && onOpenTeamModal && (
+              <button
+                type="button"
+                onClick={() => onOpenTeamModal(challenge, filteredReq?.majorCategoryName)}
+                className="px-3 py-1.5 rounded-xl text-xs font-bold bg-[#1e2338] hover:bg-indigo-600 text-indigo-300 hover:text-white border border-indigo-700/40 hover:border-indigo-500 transition-all shadow-sm whitespace-nowrap"
+              >
+                팀 참여
+              </button>
+            )}
+
+            {/* 상세보기 버튼 */}
+            <Link
+              href={`/industry-challenges/${challenge.id}`}
+              className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-500 text-white transition-all shadow-sm shadow-indigo-600/30 whitespace-nowrap"
+            >
+              <span>상세보기</span>
+              <ArrowRight className="w-3 h-3" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
