@@ -13,6 +13,7 @@ import SchedulerManager from "@/components/admin/runtime/SchedulerManager";
 import OperationsTopBar from "@/components/admin/runtime/OperationsTopBar";
 import ApprovalQueueView from "@/components/admin/runtime/ApprovalQueueView";
 import ResearchMonitorView from "@/components/admin/runtime/ResearchMonitorView";
+import OpportunityManagerView from "@/components/admin/runtime/OpportunityManagerView";
 import {
   Activity,
   Bot,
@@ -23,6 +24,7 @@ import {
   Database,
   FileCheck2,
   Calendar,
+  Compass,
 } from "lucide-react";
 
 import {
@@ -77,8 +79,8 @@ function AdminDashboardContent() {
   const searchParams = useSearchParams();
   const urlTab = searchParams.get("tab") as any;
   // STEP 9-1 & 11: Agent Runtime & Operations Dashboard State (Single Source of Truth)
-  const [adminTab, setAdminTab] = useState<"dashboard" | "queue" | "agents" | "runs" | "schedules" | "datasync" | "content" | "cardnews" | "research">(
-    (urlTab && ["dashboard", "queue", "agents", "runs", "schedules", "datasync", "content", "cardnews", "research"].includes(urlTab))
+  const [adminTab, setAdminTab] = useState<"dashboard" | "queue" | "agents" | "runs" | "schedules" | "datasync" | "content" | "cardnews" | "research" | "opportunities">(
+    (urlTab && ["dashboard", "queue", "agents", "runs", "schedules", "datasync", "content", "cardnews", "research", "opportunities"].includes(urlTab))
       ? urlTab
       : "dashboard"
   );
@@ -1078,6 +1080,23 @@ function AdminDashboardContent() {
                     CRON
                   </span>
                 </button>
+
+                <button
+                  onClick={() => setAdminTab("opportunities")}
+                  className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-bold transition ${
+                    adminTab === "opportunities"
+                      ? "bg-emerald-600 text-white shadow-lg shadow-emerald-600/25"
+                      : "text-slate-400 hover:text-white hover:bg-slate-800/60"
+                  }`}
+                >
+                  <div className="flex items-center gap-2.5">
+                    <Compass className="w-4 h-4" />
+                    <span>공유자원·장비</span>
+                  </div>
+                  <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-black/30 text-emerald-300">
+                    32
+                  </span>
+                </button>
               </nav>
             </div>
           </div>
@@ -1140,6 +1159,13 @@ function AdminDashboardContent() {
           {adminTab === "research" && (
             <div className="animate-in fade-in duration-200">
               <ResearchMonitorView />
+            </div>
+          )}
+
+          {/* TAB: OPPORTUNITIES & SHARED RESOURCES */}
+          {adminTab === "opportunities" && (
+            <div className="animate-in fade-in duration-200">
+              <OpportunityManagerView />
             </div>
           )}
 

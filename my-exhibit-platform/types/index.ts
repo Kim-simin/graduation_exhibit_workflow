@@ -341,3 +341,5 @@ export interface GeneratedContentItem {
 }
 
 export * from "./platform";
+export * from "./challenge";
+export * from "./opportunity";

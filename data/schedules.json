@@ -64,5 +64,19 @@
     "maxAttempts": 3,
     "retryCount": 0,
     "nextRetryAt": null
+  },
+  {
+    "scheduleId": "sched-real-source-discovery",
+    "name": "일일 공식 출처(NST/UniAll/NTIS/ZEUS/K-Startup) 신규 수집 및 UPSERT (04:00 KST)",
+    "workflowId": "wf-source-discovery-pipeline",
+    "enabled": true,
+    "cronExpression": "0 4 * * *",
+    "timezone": "Asia/Seoul",
+    "script": "scripts/run_real_source_discovery.py",
+    "createdAt": "2026-09-30T01:15:19.828180+09:00",
+    "updatedAt": "2026-09-30T01:15:19.828180+09:00",
+    "lastRunAt": "2026-09-30T01:15:19.828180+09:00",
+    "nextRunAt": "2026-10-01T04:00:00+09:00",
+    "lastRunStatus": "SUCCESS"
   }
 ]

@@ -13,20 +13,35 @@ import {
   ShieldCheck,
   Send,
   Upload,
+  Sparkles,
+  Rocket,
 } from "lucide-react";
 
 function RFPSubmitContent() {
   const searchParams = useSearchParams();
   const initialRfpId = searchParams.get("rfp_id") || "";
+  const challengeId = searchParams.get("challengeId") || "";
+  const challengeTitle = searchParams.get("challengeTitle") || "";
+  const parentChallenge = searchParams.get("parentChallenge") || "";
+  const industry = searchParams.get("industry") || "";
+  const provider = searchParams.get("provider") || "";
+  const selectedMajor = searchParams.get("selectedMajor") || "";
+
   const rfps = getRfps();
 
   const [selectedRfpId, setSelectedRfpId] = useState(initialRfpId || (rfps[0]?.id ?? ""));
   const [studentName, setStudentName] = useState("");
-  const [university, setUniversity] = useState("홍익대학교");
-  const [department, setDepartment] = useState("시각디자인과");
+  const [university, setUniversity] = useState("부산대학교");
+  const [department, setDepartment] = useState(selectedMajor || "컴퓨터공학과");
   const [email, setEmail] = useState("");
-  const [summaryTitle, setSummaryTitle] = useState("");
-  const [problemRecognition, setProblemRecognition] = useState("");
+  const [summaryTitle, setSummaryTitle] = useState(
+    challengeTitle ? `[${industry || "산학협력"}] ${challengeTitle} 최적화 솔루션` : ""
+  );
+  const [problemRecognition, setProblemRecognition] = useState(
+    challengeTitle
+      ? `[${challengeTitle}] 현장 작업 및 운영 프로세스 상의 효율 저하 및 리스크 문제를 해결하고자 합니다.`
+      : ""
+  );
   const [solution, setSolution] = useState("");
   const [outcomeImage, setOutcomeImage] = useState(
     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
@@ -37,7 +52,13 @@ function RFPSubmitContent() {
     if (initialRfpId) {
       setSelectedRfpId(initialRfpId);
     }
-  }, [initialRfpId]);
+    if (selectedMajor) {
+      setDepartment(selectedMajor);
+    }
+    if (challengeTitle) {
+      setSummaryTitle(`[${industry || "산학협력"}] ${challengeTitle} 최적화 솔루션`);
+    }
+  }, [initialRfpId, selectedMajor, challengeTitle, industry]);
 
   const selectedRfp = rfps.find((r) => r.id === selectedRfpId) || rfps[0];
 
@@ -49,7 +70,7 @@ function RFPSubmitContent() {
   return (
     <div style={{ maxWidth: "56rem", margin: "0 auto", padding: "2rem 1.25rem" }}>
       <Link
-        href={selectedRfp ? `/rfp/${selectedRfp.id}` : "/rfp"}
+        href={challengeId ? `/industry-challenges/${challengeId}` : selectedRfp ? `/rfp/${selectedRfp.id}` : "/industry-challenges"}
         style={{
           display: "inline-flex",
           alignItems: "center",
@@ -61,7 +82,7 @@ function RFPSubmitContent() {
         }}
       >
         <ArrowLeft style={{ width: "1rem", height: "1rem" }} />
-        과제 공고로 돌아가기
+        {challengeId ? "산학협력 Challenge 공고로 돌아가기" : "과제 공고로 돌아가기"}
       </Link>
 
       {!isSubmitted ? (
@@ -116,36 +137,80 @@ function RFPSubmitContent() {
           </div>
 
           <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
-            {/* 0. 타겟 RFP 공고 선택 */}
-            <div>
-              <label style={{ display: "block", fontSize: "0.8125rem", fontWeight: 600, color: "#cbd5e1", marginBottom: "0.35rem" }}>
-                제출할 과제 공고 선택
-              </label>
-              <select
-                value={selectedRfpId}
-                onChange={(e) => setSelectedRfpId(e.target.value)}
+            {/* 0. 타겟 과제 공고 선택 또는 연계 Challenge 정보 */}
+            {challengeTitle ? (
+              <div
                 style={{
-                  width: "100%",
-                  padding: "0.65rem 0.85rem",
-                  backgroundColor: "#1e293b",
-                  border: "1px solid #334155",
-                  borderRadius: "0.5rem",
-                  color: "#ffffff",
-                  fontSize: "0.875rem",
-                  boxSizing: "border-box",
+                  padding: "1rem 1.25rem",
+                  borderRadius: "0.75rem",
+                  backgroundColor: "rgba(88, 28, 135, 0.25)",
+                  border: "1px solid rgba(168, 85, 247, 0.4)",
                 }}
               >
-                {rfps.length === 0 ? (
-                  <option value="">등록된 산학 과제 공고가 없습니다</option>
-                ) : (
-                  rfps.map((r) => (
-                    <option key={r.id} value={r.id}>
-                      [{r.company_name}] {r.title}
-                    </option>
-                  ))
-                )}
-              </select>
-            </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.4rem",
+                    fontSize: "0.75rem",
+                    fontWeight: 700,
+                    color: "#c084fc",
+                    marginBottom: "0.35rem",
+                  }}
+                >
+                  <Rocket style={{ width: "0.9rem", height: "0.9rem" }} />
+                  산학협력 IP / Challenge 연계 과제 제안서
+                </div>
+                <div style={{ fontSize: "1.1rem", fontWeight: 800, color: "#ffffff", marginBottom: "0.25rem" }}>
+                  [{parentChallenge || industry || "산업혁신"}] {challengeTitle}
+                </div>
+                <div style={{ fontSize: "0.8125rem", color: "#94a3b8", display: "flex", flexWrap: "wrap", gap: "1rem" }}>
+                  <span>
+                    제공 기관: <strong style={{ color: "#e2e8f0" }}>{provider || "산학협력 컨소시엄"}</strong>
+                  </span>
+                  {selectedMajor && (
+                    <span>
+                      지원 희망 전공: <strong style={{ color: "#c084fc" }}>{selectedMajor}</strong>
+                    </span>
+                  )}
+                  {industry && (
+                    <span>
+                      산업 분야: <strong style={{ color: "#38bdf8" }}>{industry}</strong>
+                    </span>
+                  )}
+                </div>
+              </div>
+            ) : (
+              <div>
+                <label style={{ display: "block", fontSize: "0.8125rem", fontWeight: 600, color: "#cbd5e1", marginBottom: "0.35rem" }}>
+                  제출할 과제 공고 선택
+                </label>
+                <select
+                  value={selectedRfpId}
+                  onChange={(e) => setSelectedRfpId(e.target.value)}
+                  style={{
+                    width: "100%",
+                    padding: "0.65rem 0.85rem",
+                    backgroundColor: "#1e293b",
+                    border: "1px solid #334155",
+                    borderRadius: "0.5rem",
+                    color: "#ffffff",
+                    fontSize: "0.875rem",
+                    boxSizing: "border-box",
+                  }}
+                >
+                  {rfps.length === 0 ? (
+                    <option value="">등록된 산학 과제 공고가 없습니다</option>
+                  ) : (
+                    rfps.map((r) => (
+                      <option key={r.id} value={r.id}>
+                        [{r.company_name}] {r.title}
+                      </option>
+                    ))
+                  )}
+                </select>
+              </div>
+            )}
 
             {/* 기본 인적 사항 */}
             <div
@@ -445,11 +510,19 @@ function RFPSubmitContent() {
             과제 제안서가 정상 등록되었습니다!
           </h2>
           <p style={{ fontSize: "0.9375rem", color: "#94a3b8", lineHeight: 1.6, maxWidth: "36rem", margin: "0 auto 1.75rem" }}>
-            제출하신 3단계 솔루션이 <strong style={{ color: "#ffffff" }}>[{selectedRfp?.company_name ?? "산학협력기업"}]</strong> 산학 평가 피드에 게재되었습니다. 기업 실무 심사단 검토 후 인턴십 또는 정식 계약 제안이 등록하신 이메일로 안내됩니다.
+            {challengeTitle ? (
+              <>
+                제출하신 3단계 솔루션이 <strong style={{ color: "#ffffff" }}>[{provider || "산학협력 컨소시엄"}]</strong>의 <strong style={{ color: "#c084fc" }}>[{challengeTitle}]</strong> Challenge 심사 피드에 정상 접수되었습니다. 기관 실무 심사단 검토 후 프로젝트 진행 및 멘토링 매칭 결과가 등록하신 이메일로 안내됩니다.
+              </>
+            ) : (
+              <>
+                제출하신 3단계 솔루션이 <strong style={{ color: "#ffffff" }}>[{selectedRfp?.company_name ?? "산학협력기업"}]</strong> 산학 평가 피드에 게재되었습니다. 기업 실무 심사단 검토 후 인턴십 또는 정식 계약 제안이 등록하신 이메일로 안내됩니다.
+              </>
+            )}
           </p>
           <div style={{ display: "flex", justifyContent: "center", gap: "1rem" }}>
             <Link
-              href={selectedRfp?.id ? `/rfp/${selectedRfp.id}` : "/rfp"}
+              href={challengeId ? `/industry-challenges/${challengeId}` : selectedRfp?.id ? `/rfp/${selectedRfp.id}` : "/industry-challenges"}
               style={{
                 padding: "0.75rem 1.5rem",
                 backgroundColor: "#6366f1",
@@ -460,7 +533,7 @@ function RFPSubmitContent() {
                 textDecoration: "none",
               }}
             >
-              과제 피드에서 내 제출물 확인
+              {challengeId ? "해당 Challenge로 돌아가기" : "과제 피드에서 내 제출물 확인"}
             </Link>
             <button
               onClick={() => setIsSubmitted(false)}

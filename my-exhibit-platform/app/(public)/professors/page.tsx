@@ -27,7 +27,7 @@ import CurriculumEditModal from "@/components/CurriculumEditModal";
 import ThemeToggle from "@/components/theme-toggle";
 
 // [1. 사용자 지정 선도학과 14개 표준 클러스터]
-export const DEPARTMENT_CATEGORIES = [
+const DEPARTMENT_CATEGORIES = [
   { id: "all", name: "전체 학과", icon: "🌐" },
   { id: "business", name: "상경 (경영/경제)", icon: "💼" },
   { id: "social", name: "사회 (사회/심리)", icon: "🤝" },
@@ -58,9 +58,10 @@ export default function CurriculumsPage() {
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [editingCardData, setEditingCardData] = useState<Partial<DepartmentCurriculum> | null>(null);
 
-  // 1. 관리자 관제 시스템 상태 (로컬 개발 및 관제 모드)
+  // 1. 관리자 관제 시스템 상태 (기본 비노출, ?admin=true 진입 시에만 관리용으로 노출)
   const isProduction = process.env.NODE_ENV === "production";
   const [isAdminEditMode, setIsAdminEditMode] = useState(false);
+  const [showAdminControl, setShowAdminControl] = useState(false);
 
   // 2. 동적 커리큘럼 데이터 로드 (API)
   const fetchCurriculums = useCallback(async () => {
@@ -93,6 +94,10 @@ export default function CurriculumsPage() {
       const univParam = sp.get("univ") || "";
       const deptParam = sp.get("dept") || "";
       const categoryParam = sp.get("category") || "";
+      const adminParam = sp.get("admin");
+      if (adminParam === "true" || adminParam === "1") {
+        setShowAdminControl(true);
+      }
       if (univParam || deptParam) {
         setSearchQuery([univParam, deptParam].filter(Boolean).join(" "));
       }
@@ -279,30 +284,32 @@ export default function CurriculumsPage() {
           </p>
         </div>
 
-        {/* 관제 시스템 토글 버튼 및 테마 토글 */}
+        {/* 관제 시스템 토글 버튼 (일반 사용자에게는 비노출, ?admin=true 시에만 관리용으로 노출) 및 테마 토글 */}
         <div className="flex items-center gap-3">
-          <button
-            type="button"
-            onClick={() => setIsAdminEditMode(!isAdminEditMode)}
-            className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs md:text-sm shadow-md transition border ${
-              isAdminEditMode
-                ? "bg-red-950/60 border-red-500 text-red-300 ring-2 ring-red-500/30 animate-pulse"
-                : "bg-slate-900 border-slate-700 hover:border-slate-500 text-slate-200"
-            }`}
-            title="클릭 시 선도대학교 미작성 카드 칸 및 커리큘럼 관리 기능이 활성화됩니다"
-          >
-            {isAdminEditMode ? (
-              <>
-                <ShieldAlert className="w-4 h-4 text-red-400" />
-                <span>관제 모드 활성 (미작성 카드 관리 중)</span>
-              </>
-            ) : (
-              <>
-                <Shield className="w-4 h-4 text-slate-300" />
-                <span>관리자 관제 시스템</span>
-              </>
-            )}
-          </button>
+          {showAdminControl && (
+            <button
+              type="button"
+              onClick={() => setIsAdminEditMode(!isAdminEditMode)}
+              className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs md:text-sm shadow-md transition border ${
+                isAdminEditMode
+                  ? "bg-red-950/60 border-red-500 text-red-300 ring-2 ring-red-500/30 animate-pulse"
+                  : "bg-slate-900 border-slate-700 hover:border-slate-500 text-slate-200"
+              }`}
+              title="클릭 시 선도대학교 미작성 카드 칸 및 커리큘럼 관리 기능이 활성화됩니다"
+            >
+              {isAdminEditMode ? (
+                <>
+                  <ShieldAlert className="w-4 h-4 text-red-400" />
+                  <span>관제 모드 활성 (미작성 카드 관리 중)</span>
+                </>
+              ) : (
+                <>
+                  <Shield className="w-4 h-4 text-slate-300" />
+                  <span>관리자 관제 시스템</span>
+                </>
+              )}
+            </button>
+          )}
 
           <ThemeToggle />
         </div>

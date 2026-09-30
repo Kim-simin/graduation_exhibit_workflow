@@ -1,0 +1,1140 @@
+{
+  "majorCategories": [
+    {
+      "id": "biz_econ",
+      "name": "상경 (경영/경제)",
+      "subName": "경영/경제",
+      "icon": "💼",
+      "description": "경영, 경제, 글로벌비즈니스, 무역, 회계"
+    },
+    {
+      "id": "social_psy",
+      "name": "사회 (사회/심리)",
+      "subName": "사회/심리",
+      "icon": "🤝",
+      "description": "사회학, 심리학, 인지과학, 사회복지"
+    },
+    {
+      "id": "media_stat",
+      "name": "미디어 (언론/통계)",
+      "subName": "언론/통계",
+      "icon": "📊",
+      "description": "미디어커뮤니케이션, 언론홍보, 응용통계, 데이터저널리즘"
+    },
+    {
+      "id": "math_phys_chem",
+      "name": "수학 / 물리 / 화학",
+      "subName": "기초과학",
+      "icon": "🔬",
+      "description": "응용수학, 물리학, 화학, 재료과학"
+    },
+    {
+      "id": "bio_pharm",
+      "name": "생명 (바이오/제약)",
+      "subName": "바이오/제약",
+      "icon": "🧬",
+      "description": "생명공학, 바이오메디컬, 제약공학, 유전공학"
+    },
+    {
+      "id": "cs_it",
+      "name": "컴퓨터공학 (IT/SW)",
+      "subName": "IT/SW",
+      "icon": "💻",
+      "description": "컴퓨터공학, 소프트웨어, 인공지능, 데이터사이언스, 정보통신"
+    },
+    {
+      "id": "mech_eng",
+      "name": "기계공학 (자동차/중공업)",
+      "subName": "자동차/중공업",
+      "icon": "⚙️",
+      "description": "기계공학, 미래모빌리티, 로봇공학, 항공우주"
+    },
+    {
+      "id": "elec_eng",
+      "name": "전자공학 (반도체/디스플레이)",
+      "subName": "반도체/디스플레이",
+      "icon": "⚡",
+      "description": "전자공학, 반도체시스템, 임베디드, 디스플레이"
+    },
+    {
+      "id": "chem_eng",
+      "name": "화학공학 (정유/배터리)",
+      "subName": "정유/배터리",
+      "icon": "🔋",
+      "description": "화학공학, 2차전지, 에너지화학, 신소재"
+    },
+    {
+      "id": "arch_eng",
+      "name": "건축학 (설계/공학)",
+      "subName": "설계/공학",
+      "icon": "🏛",
+      "description": "건축학, 건축공학, 도시설계, 실내건축"
+    },
+    {
+      "id": "design",
+      "name": "디자인 (시각/산업 등)",
+      "subName": "시각/산업 등",
+      "icon": "🎨",
+      "description": "시각디자인, 산업디자인, UX/UI, 서비스인터랙션"
+    },
+    {
+      "id": "film_media",
+      "name": "영상 (제작/미디어)",
+      "subName": "제작/미디어",
+      "icon": "🎬",
+      "description": "영상디자인, 디지털미디어, 방송제작, 3D모션"
+    },
+    {
+      "id": "nursing",
+      "name": "간호학",
+      "subName": "간호/임상",
+      "icon": "🩺",
+      "description": "간호학과, 임상간호학, 헬스케어케어"
+    },
+    {
+      "id": "health_admin",
+      "name": "보건행정",
+      "subName": "보건/의료정보",
+      "icon": "🏥",
+      "description": "보건의료행정, 병원경영, 의료빅데이터정보"
+    }
+  ],
+  "parentChallenges": [
+    {
+      "id": "parent-shipbuilding",
+      "title": "스마트조선 생산성·안전 혁신",
+      "industry": "스마트조선 / 해양모빌리티",
+      "provider": "HD현대중공업 & 동남권 산학협력협의체",
+      "region": "동남권 공유대학 (부산·울산·경남)",
+      "description": "조선소 야드의 복잡한 생산 공정과 고위험 작업 환경을 AI 비전, 도면 LLM, IoT 및 인간공학 UX로 혁신하는 메가 산업 챌린지입니다.",
+      "bannerImage": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "parent-smart-hospital",
+      "title": "미래형 스마트병원 & 디지털 헬스케어 혁신",
+      "industry": "스마트의료 / 바이오헬스",
+      "provider": "서울아산병원 & 루닛 바이오메디컬 컨소시엄",
+      "region": "수도권 바이오메디컬 혁신 클러스터",
+      "description": "환자 안전 모니터링, 감염병 비대면 방역 로보틱스, 만성질환 라이프로그 가이드 등 의료진과 환자를 돕는 스마트병원 산학 솔루션을 공동 개발합니다.",
+      "bannerImage": "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "parent-smart-city",
+      "title": "탄소중립 스마트시티 & 그린 인프라 솔루션",
+      "industry": "스마트시티 / 친환경에너지 / UAM",
+      "provider": "현대건설 & 한국전력 스마트인프라 Lab",
+      "region": "중부권 스마트모빌리티 협의체",
+      "description": "제로에너지 빌딩 전력망 지능화, 도심항공교통(UAM) 버티포트 승하차 공간 UX, 폐배터리 순환경제 ESG 마켓을 아우르는 도시 재생 과제입니다.",
+      "bannerImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+    }
+  ],
+  "challenges": [
+    {
+      "id": "challenge-shipbuilding-llm",
+      "title": "조선 도면 해석 LLM 및 검색 파이프라인",
+      "slug": "shipbuilding-cad-drawing-llm",
+      "parentChallengeId": "parent-shipbuilding",
+      "parentChallengeTitle": "스마트조선 생산성·안전 혁신",
+      "industry": "스마트조선 / AI·빅데이터",
+      "region": "동남권 공유대학",
+      "providerId": "hd-hyundai",
+      "providerName": "HD현대중공업 & 부산대학교 조선해양공학과",
+      "providerType": "기업",
+      "status": "RECRUITING",
+      "difficulty": "Advanced",
+      "duration": "12주",
+      "accessLevel": "PUBLIC",
+      "shortProblem": "수천 장의 선박 설계 도면과 심볼을 현장 엔지니어가 수작업으로 탐색·검토하여 발생하는 리드타임 지연 문제",
+      "problemStatement": "초대형 상선 및 LNG 운반선 건조에는 선체, 배관, 전계장 등 수만 장의 2D/3D CAD 도면과 사양서가 발생합니다. 현장 작업자와 감리 엔지니어는 필요한 도면 번호 및 특정 밸브·배관 경로를 확인하기 위해 일일 평균 2시간 이상을 도면 수동 검색에 낭비하고 있으며, 휴먼 에러로 인한 오시공 비용이 매년 발생합니다.",
+      "goal": "조선 전용 CAD 도면(DWG, PDF) 심볼을 OCR 및 멀티모달 비전으로 인식하고, 작업자가 자연어 질의(예: '3번 카고홀드 주배관 밸브 체크리스트 보여줘')를 입력하면 도면 위치와 사양을 즉각 추출해 보여주는 RAG 기반 대화형 도면 검색 엔진 구축",
+      "background": "스마트야드 구축을 위해서는 현장 모바일 태블릿 환경에서 실시간으로 신뢰도 높은 도면 인사이트를 제공해야 합니다. 대형 LLM과 도면 멀티모달 인식 모델의 융합이 절실합니다.",
+      "majorRequirements": [
+        {
+          "id": "req-ship-llm-cs",
+          "challengeId": "challenge-shipbuilding-llm",
+          "majorCategoryId": "cs_it",
+          "majorCategoryName": "컴퓨터공학 (IT/SW)",
+          "roleName": "LLM & RAG 파이프라인 개발",
+          "requiredSkills": ["LLM", "RAG", "OCR", "Python", "Vector DB"],
+          "capacity": 2,
+          "currentMembers": 1,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-ship-llm-mech",
+          "challengeId": "challenge-shipbuilding-llm",
+          "majorCategoryId": "mech_eng",
+          "majorCategoryName": "기계공학 (자동차/중공업)",
+          "roleName": "조선 CAD 도면 해석 및 배관 심볼 구조화",
+          "requiredSkills": ["CAD Interpretation", "조선공학", "배관설계", "P&ID"],
+          "capacity": 1,
+          "currentMembers": 0,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-ship-llm-design",
+          "challengeId": "challenge-shipbuilding-llm",
+          "majorCategoryId": "design",
+          "majorCategoryName": "디자인 (시각/산업 등)",
+          "roleName": "현장 태블릿 도면 뷰어 인터랙션 & UX",
+          "requiredSkills": ["UX Research", "Figma", "UI System", "Design System"],
+          "capacity": 1,
+          "currentMembers": 1,
+          "status": "FILLED"
+        }
+      ],
+      "skills": ["LLM", "RAG", "OCR", "CAD", "UX", "Vector DB"],
+      "resources": [
+        {
+          "id": "res-ship-01",
+          "challengeId": "challenge-shipbuilding-llm",
+          "type": "DATASET",
+          "title": "비식별화된 선박 P&ID 및 배치도면 500종 세트",
+          "description": "실제 건조 공정에 사용된 배관·계장 다이어그램(P&ID) 샘플 이미지 및 라벨링 메타데이터",
+          "url": "https://data.example.org/ship-pid-dataset",
+          "accessLevel": "PUBLIC",
+          "providerName": "HD현대 스마트조선 연구소"
+        },
+        {
+          "id": "res-ship-02",
+          "challengeId": "challenge-shipbuilding-llm",
+          "type": "PATENT",
+          "title": "선박 설계 도면 멀티레이어 심볼 인식 특허 (KR-10-2023-XXXX)",
+          "description": "도면 내 중첩 심볼의 윤곽선 분리 및 텍스트 상관분석 알고리즘 공개 특허",
+          "url": "https://patents.example.org/kr-2023-ship-symbol",
+          "accessLevel": "UNIVERSITY_ONLY",
+          "providerName": "특허청 산학협력 공개특허"
+        },
+        {
+          "id": "res-ship-03",
+          "challengeId": "challenge-shipbuilding-llm",
+          "type": "BRAND_IP",
+          "title": "HD현대 공통 산업 디자인 가이드라인 & Icon Library",
+          "description": "방폭 태블릿 및 작업자 인터페이스 전용 고대비 아이콘 및 폰트 에셋",
+          "accessLevel": "PARTNER_ONLY",
+          "providerName": "HD현대 브랜드전략팀"
+        }
+      ],
+      "expectedOutcomes": [
+        "자연어 질의 기반 도면 검색 웹 애플리케이션 Prototype",
+        "조선 P&ID 심볼 추출 파이프라인 Python 소스코드",
+        "현장 작업자 태블릿 최적화 Figma 디자인 시스템 산출물",
+        "산학 공동 특허 출원 검토서"
+      ],
+      "timeline": [
+        { "phase": "Phase 1: 팀 빌딩 & 킥오프", "period": "1~2주차", "description": "도면 데이터셋 인수인계 및 전공별 역할 R&R 확정", "status": "completed" },
+        { "phase": "Phase 2: RAG 모델 & CAD 파서 개발", "period": "3~6주차", "description": "멀티모달 OCR 및 벡터 DB 구축, 도면 레이아웃 분석", "status": "current" },
+        { "phase": "Phase 3: 태블릿 UI 프로토타이핑", "period": "7~9주차", "description": "야드 작업자 대상 usability 검증 및 인터랙션 고도화", "status": "upcoming" },
+        { "phase": "Phase 4: 통합 실증 & 제안서 발표", "period": "10~12주차", "description": "HD현대 현장 실무진 파일럿 테스트 및 최종 성과 발표", "status": "upcoming" }
+      ],
+      "proposalDeadline": "2026-10-31",
+      "startDate": "2026-11-10",
+      "endDate": "2027-02-10",
+      "createdAt": "2026-09-20T09:00:00Z",
+      "updatedAt": "2026-09-28T14:00:00Z"
+    },
+    {
+      "id": "challenge-shipbuilding-safety-iot",
+      "title": "선박 밀폐구역 작업자 안전 모니터링 센서 IoT",
+      "slug": "ship-worker-safety-iot-monitoring",
+      "parentChallengeId": "parent-shipbuilding",
+      "parentChallengeTitle": "스마트조선 생산성·안전 혁신",
+      "industry": "스마트조선 / IoT·산업안전",
+      "region": "동남권 공유대학",
+      "providerId": "samsung-heavy",
+      "providerName": "삼성중공업 안전혁신센터 & 울산대학교",
+      "providerType": "기업",
+      "status": "RECRUITING",
+      "difficulty": "Intermediate",
+      "duration": "10주",
+      "accessLevel": "PUBLIC",
+      "shortProblem": "이중 선체 내부 밀폐구역의 산소 결핍 및 유해가스로 인한 질식사고 위험을 실시간 감지하지 못하는 문제",
+      "problemStatement": "선박 블록 내부 용접 및 도장 작업 시 통신 음영 지역인 격실에서 가스 누출이나 환기 불량으로 인한 인명 피해가 지속적으로 우려됩니다. 기존 유선 감지기는 설치가 번거롭고 이동성이 떨어져 실시간 구조 골든타임을 확보하기 어렵습니다.",
+      "goal": "저전력 LoRa/BLE 통신과 복합 가스 센서를 결합한 휴대형 안전 모듈 및 작업자 심박·체온 이상 감지 대시보드 개발",
+      "background": "중대재해처벌법 강화 및 스마트 안전 장비 도입 의무화에 따라 현장 부착형 IoT 기기의 신뢰성과 배터리 수명 최적화가 필수 과제로 부상했습니다.",
+      "majorRequirements": [
+        {
+          "id": "req-ship-safe-cs",
+          "challengeId": "challenge-shipbuilding-safety-iot",
+          "majorCategoryId": "cs_it",
+          "majorCategoryName": "컴퓨터공학 (IT/SW)",
+          "roleName": "센서 데이터 스트리밍 & 실시간 이상감지 알고리즘",
+          "requiredSkills": ["Python", "FastAPI", "WebSocket", "Anomaly Detection"],
+          "capacity": 2,
+          "currentMembers": 0,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-ship-safe-elec",
+          "challengeId": "challenge-shipbuilding-safety-iot",
+          "majorCategoryId": "elec_eng",
+          "majorCategoryName": "전자공학 (반도체/디스플레이)",
+          "roleName": "임베디드 회로 설계 & 저전력 무선 통신 펌웨어",
+          "requiredSkills": ["Embedded C", "BLE/LoRa", "회로설계", "Sensor Integration"],
+          "capacity": 2,
+          "currentMembers": 1,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-ship-safe-soc",
+          "challengeId": "challenge-shipbuilding-safety-iot",
+          "majorCategoryId": "social_psy",
+          "majorCategoryName": "사회 (사회/심리)",
+          "roleName": "작업자 안전 피로도 심리 모델링 & 행동 유도 분석",
+          "requiredSkills": ["산업심리학", "행동분석", "설문서베이", "안전문화조사"],
+          "capacity": 1,
+          "currentMembers": 0,
+          "status": "RECRUITING"
+        }
+      ],
+      "skills": ["Sensor", "LoRa", "Embedded", "Safety Analytics", "Python"],
+      "resources": [
+        {
+          "id": "res-safe-01",
+          "challengeId": "challenge-shipbuilding-safety-iot",
+          "type": "EQUIPMENT",
+          "title": "동남권 공유대학 첨단 센서 계측 및 RF 챔버 테스트베드",
+          "description": "방폭 및 차폐 환경에서의 무선 신호 도달거리 및 센서 정밀 교정 장비 지원",
+          "accessLevel": "UNIVERSITY_ONLY",
+          "providerName": "울산대 스마트제조혁신센터"
+        },
+        {
+          "id": "res-safe-02",
+          "challengeId": "challenge-shipbuilding-safety-iot",
+          "type": "DATASET",
+          "title": "밀폐공간 4종 가스 농도(O2, CO, H2S, CH4) 100만 건 시계열 데이터",
+          "description": "실제 조선소 블록 테스트 환경에서 수집된 시계열 환경 데이터셋",
+          "accessLevel": "PUBLIC",
+          "providerName": "한국해양과학기술원"
+        }
+      ],
+      "expectedOutcomes": [
+        "착용형 복합 가스 센서 하드웨어 프로토타입",
+        "현장 종합 관제 반응형 웹 대시보드",
+        "작업자 심리 안정 및 알람 수용도 분석 보고서"
+      ],
+      "timeline": [
+        { "phase": "Phase 1: 요구사항 정의 및 센서 모듈 선정", "period": "1~2주차", "description": "방폭 규격 검토 및 센서 통신 프로토콜 설계", "status": "completed" },
+        { "phase": "Phase 2: 하드웨어 제작 및 펌웨어 포팅", "period": "3~5주차", "description": "BLE/LoRa 통신 노드 및 이상 징후 감지 규칙 엔진 구현", "status": "current" },
+        { "phase": "Phase 3: 관제 화면 연동 및 필드 모의 테스트", "period": "6~8주차", "description": "실내 모의 격실 환경에서 통신 및 알림 동작 실증", "status": "upcoming" },
+        { "phase": "Phase 4: 성과 정리 및 최종 데모", "period": "9~10주차", "description": "조선소 안전 관리자 평가 및 시제품 전시", "status": "upcoming" }
+      ],
+      "proposalDeadline": "2026-10-25",
+      "startDate": "2026-11-05",
+      "endDate": "2027-01-20",
+      "createdAt": "2026-09-22T10:00:00Z",
+      "updatedAt": "2026-09-28T11:00:00Z"
+    },
+    {
+      "id": "challenge-shipbuilding-dashboard",
+      "title": "조선소 야드 설비 예지보전 AI Dashboard",
+      "slug": "shipyard-predictive-maintenance-dashboard",
+      "parentChallengeId": "parent-shipbuilding",
+      "parentChallengeTitle": "스마트조선 생산성·안전 혁신",
+      "industry": "스마트조선 / 스마트팩토리",
+      "region": "동남권 공유대학",
+      "providerId": "ksoe",
+      "providerName": "한국조선해양 미래기술연구원",
+      "providerType": "연구소",
+      "status": "RECRUITING",
+      "difficulty": "Intermediate",
+      "duration": "12주",
+      "accessLevel": "PUBLIC",
+      "shortProblem": "골리앗 크레인 및 플라즈마 절단기 등 핵심 장비의 불시 고장으로 야드 전체 공정이 멈추는 돌발 셧다운 문제",
+      "problemStatement": "수천 톤급 대형 블록을 인양하는 골리앗 크레인의 감속기와 모터는 고장 시 하루 수억 원의 공정 지연 손실을 초래합니다. 진동과 모터 전류 데이터를 실시간 분석하여 고장 징후를 72시간 전에 사전 예측할 수 있는 직관적인 대시보드가 필요합니다.",
+      "goal": "진동 FFT 분석 및 베어링 열화도 예측 모델을 기반으로 설비 보전 엔지니어가 즉각 조치할 수 있는 3D Digital Twin 예지보전 Dashboard 개발",
+      "background": "공장 자동화와 IIoT 기술 보급으로 센서 데이터는 풍부해졌으나, 현장 정비원이 이해하기 쉬운 UX 및 시각화 도구가 부족한 상황입니다.",
+      "majorRequirements": [
+        {
+          "id": "req-ship-dash-mech",
+          "challengeId": "challenge-shipbuilding-dashboard",
+          "majorCategoryId": "mech_eng",
+          "majorCategoryName": "기계공학 (자동차/중공업)",
+          "roleName": "크레인 회전체 진동 모드 해석 및 고장 메커니즘 분석",
+          "requiredSkills": ["회전체역학", "진동해석", "FFT", "설비진단"],
+          "capacity": 2,
+          "currentMembers": 1,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-ship-dash-cs",
+          "challengeId": "challenge-shipbuilding-dashboard",
+          "majorCategoryId": "cs_it",
+          "majorCategoryName": "컴퓨터공학 (IT/SW)",
+          "roleName": "시계열 이상 감지 AI 모델 & 웹소켓 파이프라인",
+          "requiredSkills": ["Time-series AI", "PyTorch", "Next.js", "Three.js"],
+          "capacity": 1,
+          "currentMembers": 1,
+          "status": "FILLED"
+        },
+        {
+          "id": "req-ship-dash-design",
+          "challengeId": "challenge-shipbuilding-dashboard",
+          "majorCategoryId": "design",
+          "majorCategoryName": "디자인 (시각/산업 등)",
+          "roleName": "설비 상태 시각화 & 관제 대시보드 UI/UX",
+          "requiredSkills": ["Dashboard UX", "Data Visualization", "Figma", "Design Token"],
+          "capacity": 1,
+          "currentMembers": 0,
+          "status": "RECRUITING"
+        }
+      ],
+      "skills": ["Predictive Maintenance", "Data Analysis", "Dashboard UX", "FFT", "Three.js"],
+      "resources": [
+        {
+          "id": "res-dash-01",
+          "challengeId": "challenge-shipbuilding-dashboard",
+          "type": "DATASET",
+          "title": "대형 인양 크레인 베어링 가속기어 6개월분 진동 원시 데이터",
+          "description": "정상 운전 및 고장 시점의 샘플 레이트 10kHz 가속도계 진동 센서 로그",
+          "accessLevel": "PUBLIC",
+          "providerName": "한국기계연구원 스마트산업기계연구실"
+        },
+        {
+          "id": "res-dash-02",
+          "challengeId": "challenge-shipbuilding-dashboard",
+          "type": "RESEARCH",
+          "title": "야드 중장비 예지보전 신뢰도 표준 가이드 리포트",
+          "description": "ISO 10816 회전기계 진동 평가 기준 및 보전주기 계산 알고리즘 문서",
+          "accessLevel": "UNIVERSITY_ONLY",
+          "providerName": "한국조선해양"
+        }
+      ],
+      "expectedOutcomes": [
+        "실시간 진동 파형 분석 및 열화도 표시 대시보드",
+        "웹 기반 3D 장비 모델 상태 시각화 모듈",
+        "현장 엔지니어 피드백 반영 보고서"
+      ],
+      "timeline": [
+        { "phase": "Phase 1: 데이터 탐색 및 신호 전처리", "period": "1~3주차", "description": "진동 센서 결측치 보정 및 주파수 스펙트럼 추출", "status": "completed" },
+        { "phase": "Phase 2: 열화 예측 알고리즘 개발", "period": "4~7주차", "description": "잔여 수명(RUL) 추정 모델 및 알람 임계치 설정", "status": "current" },
+        { "phase": "Phase 3: 대시보드 디자인 및 웹 프론트엔드 연동", "period": "8~10주차", "description": "Chart.js/Three.js 기반 직관적 시각화 구현", "status": "upcoming" },
+        { "phase": "Phase 4: 종합 평가 및 데모 시연", "period": "11~12주차", "description": "야드 보전팀 실무자 품평회 및 캡스톤 보고서 제출", "status": "upcoming" }
+      ],
+      "proposalDeadline": "2026-11-15",
+      "startDate": "2026-12-01",
+      "endDate": "2027-02-28",
+      "createdAt": "2026-09-24T14:00:00Z",
+      "updatedAt": "2026-09-28T16:00:00Z"
+    },
+    {
+      "id": "challenge-ocean-cruise-branding",
+      "title": "해양관광 친환경 크루즈 브랜딩 및 인터랙티브 콘텐츠",
+      "slug": "eco-ocean-cruise-branding-content",
+      "parentChallengeId": "parent-shipbuilding",
+      "parentChallengeTitle": "스마트조선 생산성·안전 혁신",
+      "industry": "해양관광 / 브랜드디자인",
+      "region": "동남권 공유대학",
+      "providerId": "busan-tourism",
+      "providerName": "부산관광공사 & 팬스타크루즈",
+      "providerType": "지자체",
+      "status": "RECRUITING",
+      "difficulty": "Beginner",
+      "duration": "8주",
+      "accessLevel": "PUBLIC",
+      "shortProblem": "친환경 전기 추진 유람선 취항에도 불구하고 젊은 2030 세대에게 어필하는 브랜드 아이덴티티와 디지털 경험 부재",
+      "problemStatement": "부산-거제 연안을 운항하는 친환경 하이브리드 크루즈선이 신규 도입되나, 전통적인 효도관광 이미지에 머물러 있어 MZ세대 및 글로벌 관광객의 유입이 저조합니다. 차별화된 비주얼 브랜딩과 선내 AR 미디어아트 경험이 필요합니다.",
+      "goal": "해양 생태계 보존 스토리를 담은 크루즈 BI 시스템 개발 및 선상 프로젝션 매핑 숏폼 미디어 콘텐츠 제작",
+      "background": "해양 레저 산업 활성화와 친환경 모빌리티 홍보를 위해 지역 예술·디자인 전공 학생들의 감각적인 참여가 절실합니다.",
+      "majorRequirements": [
+        {
+          "id": "req-cruise-design",
+          "challengeId": "challenge-ocean-cruise-branding",
+          "majorCategoryId": "design",
+          "majorCategoryName": "디자인 (시각/산업 등)",
+          "roleName": "크루즈 브랜드 아이덴티티(BI) & 굿즈 디자인",
+          "requiredSkills": ["Brand Identity", "Package Design", "Illustrator", "Typography"],
+          "capacity": 2,
+          "currentMembers": 1,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-cruise-film",
+          "challengeId": "challenge-ocean-cruise-branding",
+          "majorCategoryId": "film_media",
+          "majorCategoryName": "영상 (제작/미디어)",
+          "roleName": "선상 인터랙티브 미디어 영상 & 홍보 숏폼 제작",
+          "requiredSkills": ["After Effects", "Premiere", "3D Motion", "Storyboarding"],
+          "capacity": 2,
+          "currentMembers": 0,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-cruise-biz",
+          "challengeId": "challenge-ocean-cruise-branding",
+          "majorCategoryId": "biz_econ",
+          "majorCategoryName": "상경 (경영/경제)",
+          "roleName": "2030 타겟 탑승 패키지 상품 기획 및 마케팅 전략",
+          "requiredSkills": ["Business Model", "Tourism Marketing", "Pricing Strategy"],
+          "capacity": 1,
+          "currentMembers": 1,
+          "status": "FILLED"
+        }
+      ],
+      "skills": ["Brand Design", "Content Creation", "Business Model", "Motion Graphics", "UX"],
+      "resources": [
+        {
+          "id": "res-cruise-01",
+          "challengeId": "challenge-ocean-cruise-branding",
+          "type": "BRAND_IP",
+          "title": "부산 해양관광 공식 브랜드 에셋 및 로고 IP 킷",
+          "description": "부산시 공식 시각 자산 및 유람선 3D 선체 렌더링 파일",
+          "accessLevel": "PUBLIC",
+          "providerName": "부산광역시 & 부산관광공사"
+        }
+      ],
+      "expectedOutcomes": [
+        "친환경 크루즈 브랜드 가이드북(CI/BI)",
+        "공식 홍보 티저 영상 및 선상 미디어아트 클립(4K)",
+        "탑승권 및 MD 굿즈 실물 목업",
+        "체험형 패키지 사업계획서"
+      ],
+      "timeline": [
+        { "phase": "Phase 1: 브랜드 컨셉 도출 및 타겟 분석", "period": "1~2주차", "description": "부산 연안 크루즈 트렌드 조사 및 무드보드 확정", "status": "completed" },
+        { "phase": "Phase 2: 비주얼 아이덴티티 및 영상 콘티 작업", "period": "3~4주차", "description": "로고타입, 전용 서체, 3D 캐릭터 및 영상 스토리보드 제작", "status": "current" },
+        { "phase": "Phase 3: 굿즈 목업 및 영상 렌더링", "period": "5~6주차", "description": "선상 프로젝션 시뮬레이션 및 마케팅 채널 배포 준비", "status": "upcoming" },
+        { "phase": "Phase 4: 시민 품평회 및 최종 납품", "period": "7~8주차", "description": "부산국제관광전 특별 부스 전시 및 성과 확산", "status": "upcoming" }
+      ],
+      "proposalDeadline": "2026-10-20",
+      "startDate": "2026-11-01",
+      "endDate": "2026-12-31",
+      "createdAt": "2026-09-18T11:00:00Z",
+      "updatedAt": "2026-09-27T10:00:00Z"
+    },
+    {
+      "id": "challenge-hospital-fall-monitoring",
+      "title": "입원환자 낙상 위험 조기 예측 비전 AI & E-Call 시스템",
+      "slug": "hospital-patient-fall-prediction-ai",
+      "parentChallengeId": "parent-smart-hospital",
+      "parentChallengeTitle": "미래형 스마트병원 & 디지털 헬스케어 혁신",
+      "industry": "스마트의료 / 비전AI",
+      "region": "수도권 바이오메디컬 혁신 클러스터",
+      "providerId": "asan-medical",
+      "providerName": "서울아산병원 디지털혁신본부 & 루닛",
+      "providerType": "기업",
+      "status": "RECRUITING",
+      "difficulty": "Advanced",
+      "duration": "14주",
+      "accessLevel": "PUBLIC",
+      "shortProblem": "고령 환자의 야간 침상 이탈 시 간호 인력 부족으로 30초 내 골든타임을 놓쳐 발생하는 중증 골절 낙상 사고",
+      "problemStatement": "국내 병원 내 안전사고 중 낙상 비율은 약 40%에 달하며, 특히 야간에 홀로 화장실을 가려다 침대 난간을 넘다 일어나는 사고가 치명적입니다. 환자의 프라이버시를 침해하지 않는 비식별화 골격(Skeleton) 비전 센서로 낙상 전조 동작을 5초 전에 조기 감지하는 체계가 시급합니다.",
+      "goal": "비식별화된 적외선 Depth 센서를 활용한 환자 기립 전조 예측 AI 모델 및 간호 스테이션 스마트 워치 긴급 E-Call 인터랙션 개발",
+      "background": "간호 간병 통합 서비스 병동의 간호사 피로도를 줄이면서 환자 안전을 지키는 휴먼 중심 헬스케어 테크놀로지가 요구됩니다.",
+      "majorRequirements": [
+        {
+          "id": "req-fall-nursing",
+          "challengeId": "challenge-hospital-fall-monitoring",
+          "majorCategoryId": "nursing",
+          "majorCategoryName": "간호학",
+          "roleName": "임상 낙상 위험 평가 척도(Morse Fall Scale) 분석 및 워크플로우 검증",
+          "requiredSkills": ["Morse Fall Scale", "임상간호", "환자안전수칙", "간호간병통합"],
+          "capacity": 2,
+          "currentMembers": 1,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-fall-cs",
+          "challengeId": "challenge-hospital-fall-monitoring",
+          "majorCategoryId": "cs_it",
+          "majorCategoryName": "컴퓨터공학 (IT/SW)",
+          "roleName": "스켈레톤 포즈 예측 딥러닝 모델 & 알림 서버",
+          "requiredSkills": ["MediaPipe", "PyTorch", "Computer Vision", "WebSocket"],
+          "capacity": 2,
+          "currentMembers": 1,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-fall-design",
+          "challengeId": "challenge-hospital-fall-monitoring",
+          "majorCategoryId": "design",
+          "majorCategoryName": "디자인 (시각/산업 등)",
+          "roleName": "간호스테이션 모니터링 UI 및 스마트워치 긴급 알림 UX",
+          "requiredSkills": ["Healthcare UX", "Watch OS UI", "Accessibility", "Figma"],
+          "capacity": 1,
+          "currentMembers": 0,
+          "status": "RECRUITING"
+        }
+      ],
+      "skills": ["Vision AI", "Pose Estimation", "Healthcare UX", "Python", "Wearable UI"],
+      "resources": [
+        {
+          "id": "res-fall-01",
+          "challengeId": "challenge-hospital-fall-monitoring",
+          "type": "DATASET",
+          "title": "비식별화된 병상 모의 낙상 시나리오 3D 관절 좌표 5,000건",
+          "description": "개인 식별 요소를 완전히 제거한 33개 관절 키포인트 시계열 좌표 데이터셋",
+          "accessLevel": "PUBLIC",
+          "providerName": "국립암센터 & 의료AI 데이터셋 오픈허브"
+        },
+        {
+          "id": "res-fall-02",
+          "challengeId": "challenge-hospital-fall-monitoring",
+          "type": "PATENT",
+          "title": "환자 자세 변위 기반 실시간 낙상 예측 알고리즘 등록 특허",
+          "description": "가속도계 및 비전 센서 하이브리드 필터링 특허 명세서",
+          "accessLevel": "UNIVERSITY_ONLY",
+          "providerName": "서울아산병원 아카데미"
+        }
+      ],
+      "expectedOutcomes": [
+        "낙상 전조 예측 딥러닝 알고리즘 (정밀도 92% 이상)",
+        "간호사 스마트워치용 알람 워치페이스 앱",
+        "병원 간호사 사용성 평가 및 윤리 가이드라인 보고서"
+      ],
+      "timeline": [
+        { "phase": "Phase 1: 임상 프로토콜 분석 및 데이터셋 검토", "period": "1~3주차", "description": "간호 임상 현장 낙상 케이스 분석 및 윤리성 검토", "status": "completed" },
+        { "phase": "Phase 2: 관절 추정 모델 학습 및 전조 감지", "period": "4~8주차", "description": "침대 난간 접촉 및 상체 기립 각도 임계 알고리즘 구현", "status": "current" },
+        { "phase": "Phase 3: 웨어러블 UI 연동 및 시뮬레이션", "period": "9~11주차", "description": "가상 병실 모의 환자 대상 진동 알람 응답 시간 테스트", "status": "upcoming" },
+        { "phase": "Phase 4: 현장 실무진 평가 및 논문/특허 정리", "period": "12~14주차", "description": "아산병원 의료진 피드백 반영 및 최종 결과물 시연", "status": "upcoming" }
+      ],
+      "proposalDeadline": "2026-11-01",
+      "startDate": "2026-11-15",
+      "endDate": "2027-02-25",
+      "createdAt": "2026-09-21T09:00:00Z",
+      "updatedAt": "2026-09-28T15:00:00Z"
+    },
+    {
+      "id": "challenge-chronic-care-lifelog",
+      "title": "모바일 만성질환 환자 라이프로그 분석 및 복약 가이드",
+      "slug": "chronic-disease-lifelog-medication-guide",
+      "parentChallengeId": "parent-smart-hospital",
+      "parentChallengeTitle": "미래형 스마트병원 & 디지털 헬스케어 혁신",
+      "industry": "디지털헬스케어 / 의료빅데이터",
+      "region": "수도권 바이오메디컬 혁신 클러스터",
+      "providerId": "yuhan-care",
+      "providerName": "유한양행 & 가톨릭대학교 의과대학",
+      "providerType": "기업",
+      "status": "RECRUITING",
+      "difficulty": "Intermediate",
+      "duration": "10주",
+      "accessLevel": "PUBLIC",
+      "shortProblem": "고혈압·당뇨 복합 환자가 여러 약물의 복용 타이밍과 식습관 상호작용을 파악하지 못해 발생하는 부작용 및 복약 순응도 저하",
+      "problemStatement": "만성질환자의 60% 이상이 복약 누락이나 약물-식품 상호작용으로 인해 혈당 및 혈압 조절에 실패합니다. 보건행정 데이터(DUR 시스템)와 생체 바이오마커, 쉬운 모바일 가이드를 결합한 개인 맞춤형 라이프로그 솔루션이 필요합니다.",
+      "goal": "식품의약품안전처 의약품 안전사용서비스(DUR) 오픈 API와 혈당·혈압 측정 데이터를 연동하여 이상 징후를 경고하고 복약 순응도를 30% 개선하는 모바일 헬스케어 서비스 프로토타입 구현",
+      "background": "원격 모니터링 규제 샌드박스 완화 및 디지털 치료제(DTx) 시장 확대로 데이터 기반 복약 코칭의 중요성이 강조되고 있습니다.",
+      "majorRequirements": [
+        {
+          "id": "req-care-admin",
+          "challengeId": "challenge-chronic-care-lifelog",
+          "majorCategoryId": "health_admin",
+          "majorCategoryName": "보건행정",
+          "roleName": "DUR 의약품 금기 기준 분석 및 수가/제도 연계성 검토",
+          "requiredSkills": ["보건의료정보", "DUR 수가코드", "의료빅데이터", "의무기록"],
+          "capacity": 1,
+          "currentMembers": 0,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-care-bio",
+          "challengeId": "challenge-chronic-care-lifelog",
+          "majorCategoryId": "bio_pharm",
+          "majorCategoryName": "생명 (바이오/제약)",
+          "roleName": "약물 대사 경로 및 생체 바이오마커 변동성 해석",
+          "requiredSkills": ["약리학", "바이오마커", "대사경로", "생체데이터"],
+          "capacity": 2,
+          "currentMembers": 1,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-care-cs",
+          "challengeId": "challenge-chronic-care-lifelog",
+          "majorCategoryId": "cs_it",
+          "majorCategoryName": "컴퓨터공학 (IT/SW)",
+          "roleName": "모바일 앱 풀스택 개발 & 건강 데이터 통계 엔진",
+          "requiredSkills": ["React Native", "TypeScript", "FastAPI", "OAuth2"],
+          "capacity": 2,
+          "currentMembers": 1,
+          "status": "RECRUITING"
+        }
+      ],
+      "skills": ["Health Informatics", "DUR API", "Bio Markers", "Mobile App", "Python"],
+      "resources": [
+        {
+          "id": "res-care-01",
+          "challengeId": "challenge-chronic-care-lifelog",
+          "type": "API",
+          "title": "건강보험심사평가원 의약품 안심서비스(DUR) 오픈 API 샌드박스",
+          "description": "병용 금기 의약품 및 연령 금기 실시간 검증 REST API 엔드포인트",
+          "accessLevel": "PUBLIC",
+          "providerName": "건강보험심사평가원 빅데이터부"
+        },
+        {
+          "id": "res-care-02",
+          "challengeId": "challenge-chronic-care-lifelog",
+          "type": "DATASET",
+          "title": "합성 생성된 1,000인 만성질환 혈당·혈압 90일 라이프로그",
+          "description": "식사 시간, 복약 여부, 연속혈당기(CGM) 측정치가 기록된 합성 데이터셋",
+          "accessLevel": "PUBLIC",
+          "providerName": "한국보건산업진흥원"
+        }
+      ],
+      "expectedOutcomes": [
+        "만성질환 맞춤 복약 알람 & 식습관 코칭 모바일 앱",
+        "DUR 자동 교차검증 백엔드 서비스",
+        "보건 의료 데이터 거버넌스 및 비즈니스 모델 보고서"
+      ],
+      "timeline": [
+        { "phase": "Phase 1: DUR 데이터 구조 분석 및 약물군 매핑", "period": "1~2주차", "description": "고혈압·당뇨 10대 처방약 상호작용 매트릭스 도출", "status": "completed" },
+        { "phase": "Phase 2: 모바일 앱 프로토타입 구현", "period": "3~6주차", "description": "복약 기록, 생체 수치 입력 UI 및 푸시 알람 파이프라인 연동", "status": "current" },
+        { "phase": "Phase 3: 사용자 테스트 및 순응도 시뮬레이션", "period": "7~8주차", "description": "고령 환자 대상 가독성/사용성 테스트(N=20)", "status": "upcoming" },
+        { "phase": "Phase 4: 최종 성과 보고 및 데모데이", "period": "9~10주차", "description": "제약사 실무진 및 보건학 교수진 참여 발표", "status": "upcoming" }
+      ],
+      "proposalDeadline": "2026-10-28",
+      "startDate": "2026-11-10",
+      "endDate": "2027-01-20",
+      "createdAt": "2026-09-23T11:00:00Z",
+      "updatedAt": "2026-09-28T09:00:00Z"
+    },
+    {
+      "id": "challenge-isolation-robot-interface",
+      "title": "병원 감염병 격리병동 자율방역 로봇 주행 인터페이스",
+      "slug": "hospital-isolation-disinfection-robot",
+      "parentChallengeId": "parent-smart-hospital",
+      "parentChallengeTitle": "미래형 스마트병원 & 디지털 헬스케어 혁신",
+      "industry": "의료로봇 / 메카트로닉스",
+      "region": "수도권 바이오메디컬 혁신 클러스터",
+      "providerId": "hyundai-robotics",
+      "providerName": "현대로보틱스 & 고려대학교 안암병원",
+      "providerType": "기업",
+      "status": "RECRUITING",
+      "difficulty": "Advanced",
+      "duration": "12주",
+      "accessLevel": "PUBLIC",
+      "shortProblem": "격리병동의 복잡한 의료 카트와 휠체어 사이에서 방역 로봇이 소독 사각지대를 만들고 의료진 동선과 충돌하는 문제",
+      "problemStatement": "음압 격리병동의 주기적 UV-C 자율 방역 로봇은 멸균 성능은 우수하나, 병원 복도의 임시 적재물 및 침대 이동 시 경로 재계획이 지연되어 의료진의 긴급 이동을 방해합니다. 임상 간호 동선과 결합된 직관적인 로봇 회피 및 방역 매핑 HMI가 필수적입니다.",
+      "goal": "LiDAR 및 SLAM 기반 동적 장애물 회피 알고리즘 최적화 및 간호사가 격리구역 밖에서 한눈에 소독 현황을 제어하는 터치 인터페이스 개발",
+      "background": "원내 감염 제로화와 의료 인력의 2차 감염 방지를 위한 첨단 서비스 로봇 도입이 가속화되고 있습니다.",
+      "majorRequirements": [
+        {
+          "id": "req-robot-mech",
+          "challengeId": "challenge-isolation-robot-interface",
+          "majorCategoryId": "mech_eng",
+          "majorCategoryName": "기계공학 (자동차/중공업)",
+          "roleName": "로봇 주행 매니퓰레이터 기구학 & SLAM 경로 계획",
+          "requiredSkills": ["ROS2", "SLAM", "C++", "모바일로봇제어"],
+          "capacity": 2,
+          "currentMembers": 1,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-robot-elec",
+          "challengeId": "challenge-isolation-robot-interface",
+          "majorCategoryId": "elec_eng",
+          "majorCategoryName": "전자공학 (반도체/디스플레이)",
+          "roleName": "센서 퓨전 (LiDAR + Depth 카메라) 및 모터 드라이버 회로",
+          "requiredSkills": ["LiDAR 센서퓨전", "CAN 통신", "임베디드 리눅스", "PCB"],
+          "capacity": 1,
+          "currentMembers": 0,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-robot-nursing",
+          "challengeId": "challenge-isolation-robot-interface",
+          "majorCategoryId": "nursing",
+          "majorCategoryName": "간호학",
+          "roleName": "감염 관리 멸균 가이드라인 검토 및 병동 이동 동선 설계",
+          "requiredSkills": ["병원감염관리지침", "멸균프로토콜", "병동동선분석"],
+          "capacity": 1,
+          "currentMembers": 0,
+          "status": "RECRUITING"
+        }
+      ],
+      "skills": ["ROS2", "SLAM", "Robotics", "Infection Control", "Sensor Fusion"],
+      "resources": [
+        {
+          "id": "res-robot-01",
+          "challengeId": "challenge-isolation-robot-interface",
+          "type": "EQUIPMENT",
+          "title": "격리병동 실물 모의 시뮬레이션 테스트 룸 및 연구용 자율주행 AGV",
+          "description": "병원 복도 환경을 그대로 재현한 모의 병동 주행 테스트베드",
+          "accessLevel": "UNIVERSITY_ONLY",
+          "providerName": "고려대 메디컬 로보틱스 연구실"
+        },
+        {
+          "id": "res-robot-02",
+          "challengeId": "challenge-isolation-robot-interface",
+          "type": "RESEARCH",
+          "title": "질병관리청 의료기관 감염예방 및 방역 소독 표준 매뉴얼",
+          "description": "공기 중 바이러스 살균 및 접촉 표면 방역 권장 조도·시간 기준서",
+          "accessLevel": "PUBLIC",
+          "providerName": "질병관리청"
+        }
+      ],
+      "expectedOutcomes": [
+        "모의 병동 자율방역 로봇 주행 실증 소프트웨어",
+        "간호사 전용 태블릿 기반 격리병동 방역 HMI 시스템",
+        "원내 2차 감염 저감 효과 평가 보고서"
+      ],
+      "timeline": [
+        { "phase": "Phase 1: 감염병동 공간 맵핑 및 방역 요구도 파악", "period": "1~3주차", "description": "병동 레이아웃 2D/3D 지도 생성 및 살균 포인트 지정", "status": "completed" },
+        { "phase": "Phase 2: 주행 회피 알고리즘 최적화", "period": "4~7주차", "description": "돌발 장애물(수액걸이, 휠체어) 실시간 인식 및 경로 재탐색", "status": "current" },
+        { "phase": "Phase 3: 간호사용 관제 인터페이스 제작", "period": "8~10주차", "description": "소독 구역 지정 및 배터리 충전 복귀 원터치 기능 구현", "status": "upcoming" },
+        { "phase": "Phase 4: 병동 현장 시연 및 최종 발표", "period": "11~12주차", "description": "의료진 및 로봇공학 전문가 대상 모의 시연", "status": "upcoming" }
+      ],
+      "proposalDeadline": "2026-11-10",
+      "startDate": "2026-11-20",
+      "endDate": "2027-02-20",
+      "createdAt": "2026-09-22T13:00:00Z",
+      "updatedAt": "2026-09-28T12:00:00Z"
+    },
+    {
+      "id": "challenge-bems-energy-optimization",
+      "title": "제로에너지 빌딩 BEMS 실시간 전력 수요예측 AI",
+      "slug": "zero-energy-building-bems-power-ai",
+      "parentChallengeId": "parent-smart-city",
+      "parentChallengeTitle": "탄소중립 스마트시티 & 그린 인프라 솔루션",
+      "industry": "스마트시티 / 스마트그리드",
+      "region": "중부권 스마트모빌리티 협의체",
+      "providerId": "hyundai-enc",
+      "providerName": "현대건설 스마트건축본부 & 충남대학교",
+      "providerType": "기업",
+      "status": "RECRUITING",
+      "difficulty": "Intermediate",
+      "duration": "12주",
+      "accessLevel": "PUBLIC",
+      "shortProblem": "신재생에너지(태양광·지열) 발전량의 불규칙성으로 인해 상업용 건물의 피크 전력 요금이 과다 청구되는 문제",
+      "problemStatement": "제로에너지 건축물 인증 의무화에 따라 태양광 패널과 ESS를 갖춘 빌딩이 늘고 있으나, 기상 급변에 따른 발전량 급감과 냉난방 부하 급증을 예측하지 못해 여전히 화석연료 비상 전력에 의존하고 있습니다. 기상 예보와 재실 인원을 복합 분석하는 BEMS 전력 제어 AI가 필요합니다.",
+      "goal": "외기온도, 일사량 및 층별 재실자 센서 데이터를 입력받아 24시간 후 전력 부하를 예측 오차율(MAPE) 6% 이내로 추정하는 머신러닝 엔진 및 건축설비 최적화 연동",
+      "background": "RE100 및 ESG 경영 규제 대응을 위해 건물 에너지 관리 시스템(BEMS)의 스마트화는 건축 및 IT 분야의 핵심 화두입니다.",
+      "majorRequirements": [
+        {
+          "id": "req-bems-arch",
+          "challengeId": "challenge-bems-energy-optimization",
+          "majorCategoryId": "arch_eng",
+          "majorCategoryName": "건축학 (설계/공학)",
+          "roleName": "건축 외피 단열 성능 및 공조(HVAC) 부하 모델링",
+          "requiredSkills": ["EnergyPlus", "건축환경공학", "BIM", "친환경건축설계"],
+          "capacity": 2,
+          "currentMembers": 1,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-bems-elec",
+          "challengeId": "challenge-bems-energy-optimization",
+          "majorCategoryId": "elec_eng",
+          "majorCategoryName": "전자공학 (반도체/디스플레이)",
+          "roleName": "스마트 전력 계량기(AMI) 및 인버터 데이터 수집 통신",
+          "requiredSkills": ["Modbus", "전력전자", "스마트그리드", "AMI"],
+          "capacity": 2,
+          "currentMembers": 0,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-bems-cs",
+          "challengeId": "challenge-bems-energy-optimization",
+          "majorCategoryId": "cs_it",
+          "majorCategoryName": "컴퓨터공학 (IT/SW)",
+          "roleName": "시계열 전력 수요 예측 딥러닝(Transformer) 모델",
+          "requiredSkills": ["Python", "Temporal Fusion Transformer", "TimescaleDB", "Docker"],
+          "capacity": 2,
+          "currentMembers": 1,
+          "status": "RECRUITING"
+        }
+      ],
+      "skills": ["BEMS", "Energy AI", "HVAC Modeling", "Smart Grid", "Python"],
+      "resources": [
+        {
+          "id": "res-bems-01",
+          "challengeId": "challenge-bems-energy-optimization",
+          "type": "DATASET",
+          "title": "세종시 정부청사 제로에너지동 1년치 분단위 BEMS 전력 로그",
+          "description": "전력 소비량, 실내외 온습도, 일사량, HVAC 가동 상태 50만 건",
+          "accessLevel": "PUBLIC",
+          "providerName": "한국에너지공단 건물에너지실"
+        },
+        {
+          "id": "res-bems-02",
+          "challengeId": "challenge-bems-energy-optimization",
+          "type": "PATENT",
+          "title": "건물 재실 인원 기반 지능형 공조 피크제어 알고리즘 특허",
+          "description": "CO2 센서 연동 가변풍량(VAV) 제어 공개 특허",
+          "accessLevel": "UNIVERSITY_ONLY",
+          "providerName": "현대건설 기술연구원"
+        }
+      ],
+      "expectedOutcomes": [
+        "빌딩 24시간 전력 피크 예측 알고리즘 패키지",
+        "HVAC 부하 제어 시뮬레이션 모델 (EnergyPlus 연동)",
+        "연간 에너지 비용 절감 및 탄소 배출 저감 효과 분석서"
+      ],
+      "timeline": [
+        { "phase": "Phase 1: 빌딩 열특성 파라미터 및 데이터셋 전처리", "period": "1~3주차", "description": "건축 도면 기반 외피 면적 산출 및 에너지 소비 패턴 분석", "status": "completed" },
+        { "phase": "Phase 2: AI 부하 예측 모델 훈련", "period": "4~7주차", "description": "기상청 단기예보 연동 및 전력 피크 예측 성능 고도화", "status": "current" },
+        { "phase": "Phase 3: BEMS 제어 로직 시뮬레이션", "period": "8~10주차", "description": "ESS 충방전 스케줄링 연계 최적 제어 검증", "status": "upcoming" },
+        { "phase": "Phase 4: 최종 성과 발표 및 파일럿 검증", "period": "11~12주차", "description": "현대건설 스마트홈 사업부 실무자 평가", "status": "upcoming" }
+      ],
+      "proposalDeadline": "2026-10-30",
+      "startDate": "2026-11-10",
+      "endDate": "2027-02-10",
+      "createdAt": "2026-09-20T14:00:00Z",
+      "updatedAt": "2026-09-27T17:00:00Z"
+    },
+    {
+      "id": "challenge-battery-recycling-safety",
+      "title": "폐배터리 리사이클링 유용금속 추출 공정 안전 모니터링",
+      "slug": "ev-battery-recycling-safety-monitoring",
+      "parentChallengeId": "parent-smart-city",
+      "parentChallengeTitle": "탄소중립 스마트시티 & 그린 인프라 솔루션",
+      "industry": "2차전지 / 순환경제",
+      "region": "중부권 스마트모빌리티 협의체",
+      "providerId": "sk-ecoplant",
+      "providerName": "SK에코플랜트 & KAIST 화학생명공학과",
+      "providerType": "기업",
+      "status": "RECRUITING",
+      "difficulty": "Advanced",
+      "duration": "12주",
+      "accessLevel": "PUBLIC",
+      "shortProblem": "전기차 폐배터리 파쇄 및 습식 제련 공정 중 급격한 열폭주와 유독 가스 누출 위험",
+      "problemStatement": "전기차 폐배터리에서 리튬, 니켈, 코발트를 회수하는 공정은 강산성 용액과 방전되지 않은 잔류 전압으로 인해 화재 폭발 위험이 매우 높습니다. 화학 반응기 내 발열 및 가스 농도를 분광 센서와 물리화학 반응 모델로 실시간 추적하는 안전 감시 시스템이 필요합니다.",
+      "goal": "배터리 블랙매스(Black Mass) 침출 반응 시 온도/압력 급상승 이상 징후를 조기에 감지하고 자동 냉각 밸브를 제어하는 공정 감시 프로토타입 설계",
+      "background": "전기차 보급 확대에 따른 폐배터리 처리 급증으로 2차전지 리사이클링 공정의 무사고 가동이 글로벌 시장 경쟁력의 핵심이 되었습니다.",
+      "majorRequirements": [
+        {
+          "id": "req-batt-chem",
+          "challengeId": "challenge-battery-recycling-safety",
+          "majorCategoryId": "chem_eng",
+          "majorCategoryName": "화학공학 (정유/배터리)",
+          "roleName": "습식 제련 침출 반응 속도론 및 열역학 화학 반응 모델링",
+          "requiredSkills": ["반응공학", "열역학", "2차전지소재", "화학공정모사(Aspen)"],
+          "capacity": 2,
+          "currentMembers": 1,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-batt-sci",
+          "challengeId": "challenge-battery-recycling-safety",
+          "majorCategoryId": "math_phys_chem",
+          "majorCategoryName": "수학 / 물리 / 화학",
+          "roleName": "분광학 기반 이온 농도 계측 및 반응기 동역학 수치해석",
+          "requiredSkills": ["분광분석", "수치해석", "무기화학", "Matlab"],
+          "capacity": 1,
+          "currentMembers": 0,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-batt-cs",
+          "challengeId": "challenge-battery-recycling-safety",
+          "majorCategoryId": "cs_it",
+          "majorCategoryName": "컴퓨터공학 (IT/SW)",
+          "roleName": "공정 센서 실시간 이상감지 파이프라인 & 비상 정지 로직",
+          "requiredSkills": ["Python", "PLC Modbus 연동", "시계열 이상감지", "InfluxDB"],
+          "capacity": 1,
+          "currentMembers": 0,
+          "status": "RECRUITING"
+        }
+      ],
+      "skills": ["Chemical Engineering", "Battery Recycling", "Thermodynamics", "Sensor Monitoring", "Python"],
+      "resources": [
+        {
+          "id": "res-batt-01",
+          "challengeId": "challenge-battery-recycling-safety",
+          "type": "RESEARCH",
+          "title": "리튬이온 배터리 재활용 침출 안전 공정 보고서",
+          "description": "국립환경과학원 폐2차전지 재활용 안전 관리 가이드",
+          "accessLevel": "PUBLIC",
+          "providerName": "국립환경과학원"
+        },
+        {
+          "id": "res-batt-02",
+          "challengeId": "challenge-battery-recycling-safety",
+          "type": "DATASET",
+          "title": "모의 반응기 온도·압력·배출가스 1,000시간 실험 시계열 데이터",
+          "description": "비정상 발열 및 정상 운전 상태의 연속 계측 시계열 데이터",
+          "accessLevel": "UNIVERSITY_ONLY",
+          "providerName": "KAIST 화학공정연구단"
+        }
+      ],
+      "expectedOutcomes": [
+        "화학 침출 반응 열폭주 조기 예측 알고리즘",
+        "공정 안전 관리 실시간 통합 모니터링 대시보드",
+        "폐배터리 리사이클링 화재 안전 표준 제안서"
+      ],
+      "timeline": [
+        { "phase": "Phase 1: 반응 메커니즘 분석 및 계측 센서 선정", "period": "1~3주차", "description": "침출액 산도 및 발열 반응 속도식 도출", "status": "completed" },
+        { "phase": "Phase 2: 공정 시뮬레이션 모델 수립", "period": "4~7주차", "description": "온도 급상승 시나리오 모사 및 냉각수 투입 제어선 산출", "status": "current" },
+        { "phase": "Phase 3: 이상 감지 알고리즘 및 UI 연동", "period": "8~10주차", "description": "경고 알람 발생 테스트 및 인터록 기능 검증", "status": "upcoming" },
+        { "phase": "Phase 4: 성과 보고서 및 기업 기술 세미나", "period": "11~12주차", "description": "SK에코플랜트 엔지니어 대상 기술 발표", "status": "upcoming" }
+      ],
+      "proposalDeadline": "2026-11-05",
+      "startDate": "2026-11-15",
+      "endDate": "2027-02-15",
+      "createdAt": "2026-09-24T15:00:00Z",
+      "updatedAt": "2026-09-28T18:00:00Z"
+    },
+    {
+      "id": "challenge-uam-vertiport-space-ux",
+      "title": "도심형 UAM 버티포트(Vertiport) 공간 설계 및 시민 승하차 UX",
+      "slug": "urban-uam-vertiport-space-passenger-ux",
+      "parentChallengeId": "parent-smart-city",
+      "parentChallengeTitle": "탄소중립 스마트시티 & 그린 인프라 솔루션",
+      "industry": "미래모빌리티 / 공간디자인",
+      "region": "중부권 스마트모빌리티 협의체",
+      "providerId": "hanwha-systems",
+      "providerName": "한화시스템 UAM 사업부 & 홍익대학교 건축도시대학원",
+      "providerType": "기업",
+      "status": "RECRUITING",
+      "difficulty": "Intermediate",
+      "duration": "10주",
+      "accessLevel": "PUBLIC",
+      "shortProblem": "도심 고층 빌딩 옥상에 신설될 UAM 이착륙장에서 탑승객의 대기 불안감, 강풍 노출, 복잡한 보안 검색 동선 문제",
+      "problemStatement": "2028년 도심 상공을 비행할 UAM 기체 탑승을 위해 도심 빌딩 옥상 버티포트가 구축되고 있으나, 좁은 공간에서 승객 보안 검색, 탑승 대기, 회전익 하강 기류(Downwash) 소음 차단 동선이 최적화되지 않았습니다. 안전과 감성을 모두 충족하는 공간 및 인터랙션 설계가 요구됩니다.",
+      "goal": "빌딩 옥상 버티포트의 스마트 체크인-보안검색-탑승 브릿지 공간 설계 3D 모델 및 승객 안심 인터랙티브 키오스크 UX 제안",
+      "background": "한국형 도심항공교통(K-UAM) 그랜드챌린지 실증 사업이 본격화됨에 따라 지상 인프라와 탑승객 경험 설계가 핵심 경쟁력으로 부각되었습니다.",
+      "majorRequirements": [
+        {
+          "id": "req-uam-arch",
+          "challengeId": "challenge-uam-vertiport-space-ux",
+          "majorCategoryId": "arch_eng",
+          "majorCategoryName": "건축학 (설계/공학)",
+          "roleName": "버티포트 옥상 공간 구조 설계 및 소음·기류 차단 외피",
+          "requiredSkills": ["건축공간설계", "Rhino 3D", "BIM", "소음차폐설계"],
+          "capacity": 2,
+          "currentMembers": 0,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-uam-design",
+          "challengeId": "challenge-uam-vertiport-space-ux",
+          "majorCategoryId": "design",
+          "majorCategoryName": "디자인 (시각/산업 등)",
+          "roleName": "탑승객 게이트 키오스크 UI 및 심리 안심 인터랙션",
+          "requiredSkills": ["Spatial UX", "Figma", "Service Design", "Kiosk Interaction"],
+          "capacity": 2,
+          "currentMembers": 1,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-uam-media",
+          "challengeId": "challenge-uam-vertiport-space-ux",
+          "majorCategoryId": "media_stat",
+          "majorCategoryName": "미디어 (언론/통계)",
+          "roleName": "도심 비행 수용성 시민 여론 분석 및 미디어 홍보 기획",
+          "requiredSkills": ["통계설문분석", "PR홍보전략", "여론조사", "스토리텔링"],
+          "capacity": 1,
+          "currentMembers": 0,
+          "status": "RECRUITING"
+        }
+      ],
+      "skills": ["Architectural Design", "Service UX", "3D Modeling", "Noise Shielding", "PR"],
+      "resources": [
+        {
+          "id": "res-uam-01",
+          "challengeId": "challenge-uam-vertiport-space-ux",
+          "type": "BRAND_IP",
+          "title": "한화시스템 UAM 버터플라이(Butterfly) 기체 외형 3D CAD 에셋",
+          "description": "5인승 전기식 수직이착륙(eVTOL) 기체 규격 및 회전익 렌더링 파일",
+          "accessLevel": "PUBLIC",
+          "providerName": "한화시스템 미래모빌리티연구소"
+        },
+        {
+          "id": "res-uam-02",
+          "challengeId": "challenge-uam-vertiport-space-ux",
+          "type": "RESEARCH",
+          "title": "국토교통부 K-UAM 버티포트 설계 지침 초안",
+          "description": "이착륙 패드(FATO/TLOF) 규격, 안전 구역, 소방 방재 기준서",
+          "accessLevel": "PUBLIC",
+          "providerName": "국토교통부 UAM 정책기획단"
+        }
+      ],
+      "expectedOutcomes": [
+        "버티포트 옥상 터미널 3D 건축 설계 모델 및 렌더링 샷",
+        "탑승 수속 스마트 키오스크 및 탑승 안내 디지털 사이니지 UX 프로토타입",
+        "도심 항공교통 시민 수용성 분석 및 홍보 전략 보고서"
+      ],
+      "timeline": [
+        { "phase": "Phase 1: 기체 규격 및 승객 흐름 동선 분석", "period": "1~2주차", "description": "착륙-보안검색-탑승-이륙 소요시간 및 병목 지점 도출", "status": "completed" },
+        { "phase": "Phase 2: 공간 레이아웃 및 3D 모델링", "period": "3~5주차", "description": "소음 저감 방음벽 배치 및 승객 대기 라운지 모델링", "status": "current" },
+        { "phase": "Phase 3: 인터랙티브 키오스크 UX 설계", "period": "6~8주차", "description": "안면인식 탑승권 발권 및 기체 상태 안내 인터페이스 제작", "status": "upcoming" },
+        { "phase": "Phase 4: 전문가 품평회 및 전시", "period": "9~10주차", "description": "항공 모빌리티 포럼 출품 및 최종 제안서 시연", "status": "upcoming" }
+      ],
+      "proposalDeadline": "2026-10-22",
+      "startDate": "2026-11-01",
+      "endDate": "2027-01-10",
+      "createdAt": "2026-09-19T13:00:00Z",
+      "updatedAt": "2026-09-26T15:00:00Z"
+    },
+    {
+      "id": "challenge-local-esg-smart-market",
+      "title": "지역 소멸 대응 스마트 로컬 마켓 ESG 플랫폼",
+      "slug": "local-revitalization-esg-smart-market",
+      "parentChallengeId": "parent-smart-city",
+      "parentChallengeTitle": "탄소중립 스마트시티 & 그린 인프라 솔루션",
+      "industry": "지역소생 / ESG플랫폼",
+      "region": "중부권 스마트모빌리티 협의체",
+      "providerId": "kspo-local",
+      "providerName": "중소벤처기업진흥공단 & 충남창조경제혁신센터",
+      "providerType": "지자체",
+      "status": "RECRUITING",
+      "difficulty": "Beginner",
+      "duration": "8주",
+      "accessLevel": "PUBLIC",
+      "shortProblem": "지방 소도시의 청년 유출과 전통시장 노후화로 인해 우수한 로컬 특산품의 디지털 판로가 단절된 문제",
+      "problemStatement": "충남 및 인근 인구 감소 소도시의 전통시장과 청년 로컬 크리에이터들은 품질 좋은 친환경 농축산물을 생산하고도 온라인 직거래와 스토리텔링 브랜딩 역량 부족으로 유통 대기업에 높은 수수료를 뺏기고 있습니다. 로컬 생산자와 가치소비자를 잇는 ESG 커뮤니티 플랫폼이 필요합니다.",
+      "goal": "산지 탄소발자국 저감 인증 배지 시스템을 탑재한 로컬 직거래 마켓플레이스 웹앱 및 지역 농가 브랜드 리뉴얼 패키지 디자인",
+      "background": "지역 균형 발전과 청년 로컬 창업 생태계 조성을 위한 산학 연계 소셜 프로젝트의 파급력이 높습니다.",
+      "majorRequirements": [
+        {
+          "id": "req-local-biz",
+          "challengeId": "challenge-local-esg-smart-market",
+          "majorCategoryId": "biz_econ",
+          "majorCategoryName": "상경 (경영/경제)",
+          "roleName": "로컬 마켓 비즈니스 모델(BM) 수립 & 유통 수수료 구조 설계",
+          "requiredSkills": ["Business Model Canvas", "ESG경영", "유통마진분석", "크라우드펀딩"],
+          "capacity": 2,
+          "currentMembers": 1,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-local-soc",
+          "challengeId": "challenge-local-esg-smart-market",
+          "majorCategoryId": "social_psy",
+          "majorCategoryName": "사회 (사회/심리)",
+          "roleName": "지역 주민-청년 생산자 상생 공동체 인터뷰 및 사회적 가치 측정",
+          "requiredSkills": ["질적연구", "사회적가치평가", "인터뷰조사", "지역학"],
+          "capacity": 1,
+          "currentMembers": 0,
+          "status": "RECRUITING"
+        },
+        {
+          "id": "req-local-design",
+          "challengeId": "challenge-local-esg-smart-market",
+          "majorCategoryId": "design",
+          "majorCategoryName": "디자인 (시각/산업 등)",
+          "roleName": "특산품 친환경 패키지 디자인 & 마켓 앱 UI/UX",
+          "requiredSkills": ["친환경패키지", "브랜딩", "Figma", "Web UI"],
+          "capacity": 1,
+          "currentMembers": 0,
+          "status": "RECRUITING"
+        }
+      ],
+      "skills": ["ESG Marketing", "Package Design", "Social Research", "UI/UX", "Business Model"],
+      "resources": [
+        {
+          "id": "res-local-01",
+          "challengeId": "challenge-local-esg-smart-market",
+          "type": "DATASET",
+          "title": "충남 15개 시군 특산물 직거래 물동량 및 청년 농가 DB",
+          "description": "품목별 출하 시기, 도매가 추이 및 탄소배출 계수 환산표",
+          "accessLevel": "PUBLIC",
+          "providerName": "충남창조경제혁신센터 로컬비즈랩"
+        }
+      ],
+      "expectedOutcomes": [
+        "로컬 ESG 마켓 반응형 웹 서비스 프로토타입",
+        "지역 특산품 3종 친환경 크라프트 패키지 디자인 목업",
+        "소셜 임팩트 산출 및 지역 청년 일자리 창출 제안서"
+      ],
+      "timeline": [
+        { "phase": "Phase 1: 지역 농가 및 로컬 크리에이터 심층 인터뷰", "period": "1~2주차", "description": "충남 공주·부여 현장 방문 및 농가 애로사항 파악", "status": "completed" },
+        { "phase": "Phase 2: 브랜드 콘셉트 및 플랫폼 와이어프레임", "period": "3~4주차", "description": "탄소 저감 포인트 제도 및 로컬 스토리 보드 구상", "status": "current" },
+        { "phase": "Phase 3: 패키지 실물 제작 및 웹 UI 구현", "period": "5~6주차", "description": "친환경 용기 테스트 및 모바일 주문 플로우 코딩", "status": "upcoming" },
+        { "phase": "Phase 4: 팝업 마켓 파일럿 테스트 및 발표", "period": "7~8주차", "description": "대학가 플리마켓 연계 파일럿 판매 및 피드백 분석", "status": "upcoming" }
+      ],
+      "proposalDeadline": "2026-10-18",
+      "startDate": "2026-10-25",
+      "endDate": "2026-12-20",
+      "createdAt": "2026-09-17T15:00:00Z",
+      "updatedAt": "2026-09-25T11:00:00Z"
+    }
+  ]
+}
