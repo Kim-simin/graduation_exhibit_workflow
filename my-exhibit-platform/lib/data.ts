@@ -177,5 +177,5 @@ export function getContentsForEntity(
   return allContents.slice(0, 2);
 }
 
-
-
+export * from "./challenge";
+export * from "./opportunity";

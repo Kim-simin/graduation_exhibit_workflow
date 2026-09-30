@@ -1,0 +1,34 @@
+[
+  {
+    "title": "한국과학기술원(KAIST) 첨단 연구장비 공동활용 플랫폼 (26개 서비스)",
+    "sourceUrl": "https://www.zeus.go.kr/resv/organ/sortView",
+    "detailUrl": "https://www.zeus.go.kr/resv/organ/sortView",
+    "discoveredAt": "2026-09-30T01:15:19.828180+09:00",
+    "rawEligibilityText": "기관명: 한국과학기술원(KAIST), 지역: 대전, 분류: Core Research Facility",
+    "rawRecruitmentText": "지원 장비 규격: 초고분해능 투과전자현미경(Cs-TEM), 800MHz 핵자기공명분광기(NMR), 고정밀 질량분석기(HR-MS), 클린룸 나노팹 등 26개 전문 분석 서비스"
+  },
+  {
+    "title": "경북대학교 첨단 공동연구장비 분석센터 (14개 서비스)",
+    "sourceUrl": "https://www.zeus.go.kr/resv/organ/sortView",
+    "detailUrl": "https://www.zeus.go.kr/resv/organ/sortView",
+    "discoveredAt": "2026-09-30T01:15:19.828180+09:00",
+    "rawEligibilityText": "기관명: 경북대학교, 지역: 대구, 분류: Analysis Equipment",
+    "rawRecruitmentText": "지원 장비 규격: 전계방출형 주사전자현미경(FE-SEM), X선 회절분석기(XRD), 유도결합 플라즈마 분광기(ICP-OES) 등 14개 장비 서비스"
+  },
+  {
+    "title": "고려대학교 기초과학연구원 공동기기원 인프라 (12개 서비스)",
+    "sourceUrl": "https://www.zeus.go.kr/resv/organ/sortView",
+    "detailUrl": "https://www.zeus.go.kr/resv/organ/sortView",
+    "discoveredAt": "2026-09-30T01:15:19.828180+09:00",
+    "rawEligibilityText": "기관명: 고려대학교, 지역: 서울, 분류: Scientific Equipment",
+    "rawRecruitmentText": "지원 장비 규격: 공초점 레이저 주사현미경(CLSM), 고성능 유전자증폭기, 초원심분리기, 열분석장비(DSC/TGA) 등 12개 서비스"
+  },
+  {
+    "title": "국립수산과학원 해양바이오 및 수산환경 공용 연구장비 (12개 서비스)",
+    "sourceUrl": "https://www.zeus.go.kr/resv/organ/sortView",
+    "detailUrl": "https://www.zeus.go.kr/resv/organ/sortView",
+    "discoveredAt": "2026-09-30T01:15:19.828180+09:00",
+    "rawEligibilityText": "기관명: 국립수산과학원, 지역: 부산, 분류: Marine Equipment",
+    "rawRecruitmentText": "지원 장비 규격: 해양 생체시료 분석기, 유전자 시퀀서, 중금속 극미량 분석기, 수질 다항목 측정장비 등 12개 서비스"
+  }
+]

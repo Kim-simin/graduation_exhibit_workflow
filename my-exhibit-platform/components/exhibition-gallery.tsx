@@ -33,6 +33,8 @@ import {
   Globe,
   Play,
   Film,
+  Compass,
+  ArrowRight,
 } from "lucide-react";
 import { Exhibition, Artwork } from "@/lib/get-exhibitions";
 import ScreenshotUploadModal from "./screenshot-upload-modal";
@@ -421,6 +423,74 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
           </div>
         </div>
       )}
+
+      {/* 실시간 대학 공유자원 & R&D·프로젝트 하이라이트 배너 */}
+      <section className="my-6 p-4 md:p-5 rounded-2xl bg-gradient-to-r from-emerald-950/70 via-indigo-950/60 to-cyan-950/70 border border-emerald-500/40 shadow-xl relative overflow-hidden text-white">
+        <div className="absolute right-0 top-0 -mt-4 -mr-4 w-40 h-40 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none" />
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 relative z-10">
+          <div className="space-y-1.5">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                실시간 게시중 (LIVE)
+              </span>
+              <span className="text-xs font-mono text-cyan-300">
+                공식 출처 인증 기회 9건 · 개방 연구/제작 장비 23종
+              </span>
+            </div>
+            <h2 className="text-base sm:text-lg font-extrabold tracking-tight">
+              전국 대학 공유자원 & 실전 R&D·프로젝트 탐색 허브
+            </h2>
+            <p className="text-xs text-slate-300 max-w-2xl leading-relaxed">
+              부산대·UNIST·부산공유대학 등 공식 연계: <strong>AI 창업 경진대회(상금 1억, D-1)</strong>, <strong>글로벌 AX-PBL(D-1)</strong>, <strong>캡스톤디자인 지원</strong> 및 <strong>첨단 연구·3D제작 장비</strong>를 내 전공 기준으로 탐색하세요.
+            </p>
+          </div>
+
+          <div className="flex items-center gap-2 shrink-0">
+            <Link
+              href="/opportunities"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-extrabold text-xs sm:text-sm shadow-lg shadow-emerald-500/30 transition transform hover:-translate-y-0.5 whitespace-nowrap"
+            >
+              <Compass className="w-4 h-4" />
+              <span>내 전공 맞춤 자원 전체보기</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+
+        {/* Quick Ticker Chips */}
+        <div className="mt-3.5 pt-3 border-t border-slate-700/60 flex items-center gap-2 overflow-x-auto no-scrollbar text-xs">
+          <span className="text-[11px] text-slate-400 font-semibold shrink-0">주요 모집처:</span>
+          <Link
+            href="/opportunities"
+            className="px-2.5 py-1 rounded-lg bg-black/40 hover:bg-black/60 border border-slate-700/80 text-emerald-300 font-medium shrink-0 transition flex items-center gap-1.5"
+          >
+            <span className="text-[10px] font-bold px-1 rounded bg-rose-950 text-rose-300 border border-rose-800">D-1</span>
+            <span>2026 AI 창업 경진대회 (상금 1억 7백만원)</span>
+          </Link>
+          <Link
+            href="/opportunities"
+            className="px-2.5 py-1 rounded-lg bg-black/40 hover:bg-black/60 border border-slate-700/80 text-cyan-300 font-medium shrink-0 transition flex items-center gap-1.5"
+          >
+            <span className="text-[10px] font-bold px-1 rounded bg-rose-950 text-rose-300 border border-rose-800">D-1</span>
+            <span>글로벌 AX-PBL 해외 현장실증 (항공료·숙식 지원)</span>
+          </Link>
+          <Link
+            href="/opportunities"
+            className="px-2.5 py-1 rounded-lg bg-black/40 hover:bg-black/60 border border-slate-700/80 text-amber-300 font-medium shrink-0 transition flex items-center gap-1.5"
+          >
+            <span className="text-[10px] font-bold px-1 rounded bg-amber-950 text-amber-300 border border-amber-800">상시</span>
+            <span>UNIST 연구지원본부(UCRF) 12종 & 부산대 V-Space 11종</span>
+          </Link>
+          <Link
+            href="/opportunities"
+            className="px-2.5 py-1 rounded-lg bg-black/40 hover:bg-black/60 border border-slate-700/80 text-purple-300 font-medium shrink-0 transition flex items-center gap-1.5"
+          >
+            <span className="text-[10px] font-bold px-1 rounded bg-purple-950 text-purple-300 border border-purple-800">D-19</span>
+            <span>Gemini Academy 실무 AI 무료 강의</span>
+          </Link>
+        </div>
+      </section>
 
       {/* 8대 산업군 인터랙티브 필터 바 */}
       <section className="py-6">

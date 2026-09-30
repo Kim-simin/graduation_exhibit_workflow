@@ -25,6 +25,15 @@ export default function Sidebar() {
       iconEmoji: "🌐",
     },
     {
+      label: "공유자원·R&D",
+      href: "/opportunities",
+      badge: {
+        text: "실시간",
+        bg: "bg-emerald-950/80 text-emerald-300 border border-emerald-700/50 dark:bg-emerald-100 dark:text-emerald-700 dark:border-emerald-300",
+      },
+      iconEmoji: "🧭",
+    },
+    {
       label: "대학생",
       href: "/students",
       badge: {
@@ -65,6 +74,15 @@ export default function Sidebar() {
         bg: "bg-sky-950/80 text-sky-300 border border-sky-700/50 dark:bg-sky-100 dark:text-sky-700 dark:border-sky-300",
       },
       iconEmoji: "✨",
+    },
+    {
+      label: "산학협력 IP",
+      href: "/industry-challenges",
+      badge: {
+        text: "Challenge",
+        bg: "bg-purple-950/80 text-purple-300 border border-purple-700/50 dark:bg-purple-100 dark:text-purple-700 dark:border-purple-300",
+      },
+      iconEmoji: "🚀",
     },
   ];
 

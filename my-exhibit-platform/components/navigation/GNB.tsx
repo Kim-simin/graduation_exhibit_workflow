@@ -10,6 +10,8 @@ import {
   Sparkles,
   Archive,
   Layers,
+  Rocket,
+  Compass,
 } from "lucide-react";
 import ThemeToggle from "@/components/theme-toggle";
 
@@ -22,6 +24,12 @@ export default function GNB() {
       href: "/",
       icon: Archive,
       badge: null,
+    },
+    {
+      label: "공유자원·R&D",
+      href: "/opportunities",
+      icon: Compass,
+      badge: { text: "실시간", bg: "bg-emerald-950/80 text-emerald-300 border border-emerald-700/50" },
     },
     {
       label: "대학생",
@@ -46,6 +54,12 @@ export default function GNB() {
       href: "/mentoring",
       icon: Sparkles,
       badge: { text: "1:1 첨삭", bg: "bg-[#252843] text-indigo-300" },
+    },
+    {
+      label: "산학협력 IP",
+      href: "/industry-challenges",
+      icon: Rocket,
+      badge: { text: "Challenge", bg: "bg-purple-950/80 text-purple-300 border border-purple-700/50" },
     },
   ];
 

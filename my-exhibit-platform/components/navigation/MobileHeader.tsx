@@ -6,12 +6,14 @@ import ThemeToggle from "@/components/theme-toggle";
 
 const links = [
   { href: "/", label: "졸업전시" },
+  { href: "/opportunities", label: "공유자원·R&D" },
   { href: "/students", label: "인재풀" },
   { href: "/rfp", label: "기업과제" },
   { href: "/mentoring", label: "멘토링" },
   { href: "/professors", label: "대학교 커리큘럼" },
   { href: "/jobs", label: "채용공고" },
   { href: "/brand-assets", label: "기업 브랜드 IP" },
+  { href: "/industry-challenges", label: "산학협력 IP" },
   { href: "/rfp/submit", label: "과제 제안서 제출" },
 ];
 
