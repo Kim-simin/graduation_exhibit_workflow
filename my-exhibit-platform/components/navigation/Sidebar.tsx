@@ -7,7 +7,6 @@ import {
   Archive,
   Users,
   GraduationCap,
-  Briefcase,
   Sparkles,
   Layers,
   Shield,
@@ -148,15 +147,6 @@ export default function Sidebar() {
               </Link>
             );
           })}
-
-          {/* [ 💼 과제 제안서 제출 ] CTA 버튼 (둥근 모서리 rounded-2xl) */}
-          <Link
-            href="/rfp/submit"
-            className="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-2.5 px-3 rounded-2xl shadow-lg shadow-indigo-600/25 flex items-center justify-center gap-1.5 mt-3 text-xs transition-all whitespace-nowrap"
-          >
-            <Briefcase className="w-3.5 h-3.5" />
-            <span>과제 제안서 제출</span>
-          </Link>
         </nav>
       </div>
 

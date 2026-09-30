@@ -14,7 +14,6 @@ const links = [
   { href: "/jobs", label: "채용공고" },
   { href: "/brand-assets", label: "기업 브랜드 IP" },
   { href: "/industry-challenges", label: "산학협력 IP" },
-  { href: "/rfp/submit", label: "과제 제안서 제출" },
 ];
 
 export default function MobileHeader() {
