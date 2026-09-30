@@ -139,14 +139,14 @@ export default function ResourceDetailModal({
 
         {/* 액션 버튼 */}
         <div className="mt-6 pt-3 border-t border-slate-800 flex items-center justify-between gap-3">
-          {resource.url && resource.accessLevel === "PUBLIC" ? (
+          {resource.url ? (
             <a
               href={resource.url}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-cyan-600 hover:bg-cyan-500 text-white transition shadow-sm"
             >
-              <span>공개 자료실 바로가기</span>
+              <span>{resource.accessLevel === "PUBLIC" ? "공개 자료실 / 원문 바로가기" : "원문 자료실 / 안내 포털"}</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
           ) : (

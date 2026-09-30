@@ -184,25 +184,70 @@ export default function ChallengeDetailPage() {
         </p>
 
         {/* 메타 인포 그리드 */}
-        <div className="pt-4 border-t border-slate-800/80 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+        <div className="pt-4 border-t border-slate-800/80 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
           <div>
             <span className="text-slate-400 block text-[11px] mb-0.5">제공 기관 / 파트너</span>
             <div className="flex items-center gap-1.5 font-bold text-white">
-              <Building2 className="w-3.5 h-3.5 text-indigo-400" />
-              <span>{challenge.providerName}</span>
+              <Building2 className="w-3.5 h-3.5 text-indigo-400 shrink-0" />
+              {challenge.providerUrl ? (
+                <a
+                  href={challenge.providerUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-indigo-300 hover:underline flex items-center gap-1 truncate"
+                  title={`${challenge.providerName} 공식 웹사이트`}
+                >
+                  <span className="truncate">{challenge.providerName}</span>
+                  <ExternalLink className="w-3 h-3 text-slate-400 shrink-0" />
+                </a>
+              ) : (
+                <span className="truncate">{challenge.providerName}</span>
+              )}
             </div>
           </div>
           <div>
             <span className="text-slate-400 block text-[11px] mb-0.5">협력 권역</span>
             <div className="flex items-center gap-1.5 font-bold text-white">
-              <MapPin className="w-3.5 h-3.5 text-slate-400" />
-              <span>{challenge.region}</span>
+              <MapPin className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+              {challenge.regionUrl ? (
+                <a
+                  href={challenge.regionUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-indigo-300 hover:underline flex items-center gap-1 truncate"
+                  title={`${challenge.region} 포털`}
+                >
+                  <span className="truncate">{challenge.region}</span>
+                  <ExternalLink className="w-3 h-3 text-slate-400 shrink-0" />
+                </a>
+              ) : (
+                <span className="truncate">{challenge.region}</span>
+              )}
+            </div>
+          </div>
+          <div>
+            <span className="text-slate-400 block text-[11px] mb-0.5">공식 원문 / 공고</span>
+            <div className="flex items-center gap-1.5 font-bold text-white">
+              {challenge.officialUrl ? (
+                <a
+                  href={challenge.officialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-indigo-400 hover:text-indigo-300 hover:underline font-bold"
+                  title="주관기관 공식 공고문 바로가기"
+                >
+                  <span>공식 공고 확인</span>
+                  <ExternalLink className="w-3 h-3 text-indigo-400" />
+                </a>
+              ) : (
+                <span className="text-slate-500">정보 준비중</span>
+              )}
             </div>
           </div>
           <div>
             <span className="text-slate-400 block text-[11px] mb-0.5">제안서 제출 마감</span>
             <div className="flex items-center gap-1.5 font-bold text-rose-400">
-              <Calendar className="w-3.5 h-3.5" />
+              <Calendar className="w-3.5 h-3.5 shrink-0" />
               <span>{challenge.proposalDeadline} 까지</span>
             </div>
           </div>
@@ -405,8 +450,20 @@ export default function ChallengeDetailPage() {
                 </div>
 
                 <div className="mt-3 pt-2 border-t border-slate-800/60 flex items-center justify-between text-[10px] text-slate-500">
-                  <span className="truncate max-w-[150px]">{res.providerName || "협력 기관"}</span>
-                  <span className="text-cyan-400 font-semibold group-hover:underline">상세보기 &rarr;</span>
+                  <span className="truncate max-w-[130px]">{res.providerName || "협력 기관"}</span>
+                  {res.url ? (
+                    <a
+                      href={res.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-cyan-400 hover:text-cyan-300 font-bold flex items-center gap-1 hover:underline"
+                    >
+                      <span>원천 데이터 ↗</span>
+                    </a>
+                  ) : (
+                    <span className="text-cyan-400 font-semibold group-hover:underline">상세보기 &rarr;</span>
+                  )}
                 </div>
               </div>
             ))}

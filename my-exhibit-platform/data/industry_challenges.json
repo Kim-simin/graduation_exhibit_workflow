@@ -107,7 +107,9 @@
       "provider": "HD현대중공업 & 동남권 산학협력협의체",
       "region": "동남권 공유대학 (부산·울산·경남)",
       "description": "조선소 야드의 복잡한 생산 공정과 고위험 작업 환경을 AI 비전, 도면 LLM, IoT 및 인간공학 UX로 혁신하는 메가 산업 챌린지입니다.",
-      "bannerImage": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80"
+      "bannerImage": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80",
+      "officialUrl": "https://www.usg.ac.kr/",
+      "providerUrl": "https://www.hd-hyundai.com/"
     },
     {
       "id": "parent-smart-hospital",
@@ -116,7 +118,9 @@
       "provider": "서울아산병원 & 루닛 바이오메디컬 컨소시엄",
       "region": "수도권 바이오메디컬 혁신 클러스터",
       "description": "환자 안전 모니터링, 감염병 비대면 방역 로보틱스, 만성질환 라이프로그 가이드 등 의료진과 환자를 돕는 스마트병원 산학 솔루션을 공동 개발합니다.",
-      "bannerImage": "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=80"
+      "bannerImage": "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=80",
+      "officialUrl": "https://www.khidi.or.kr/",
+      "providerUrl": "https://www.amc.seoul.kr/"
     },
     {
       "id": "parent-smart-city",
@@ -125,7 +129,9 @@
       "provider": "현대건설 & 한국전력 스마트인프라 Lab",
       "region": "중부권 스마트모빌리티 협의체",
       "description": "제로에너지 빌딩 전력망 지능화, 도심항공교통(UAM) 버티포트 승하차 공간 UX, 폐배터리 순환경제 ESG 마켓을 아우르는 도시 재생 과제입니다.",
-      "bannerImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+      "bannerImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+      "officialUrl": "https://dscu.ac.kr/",
+      "providerUrl": "https://www.hdec.kr/"
     }
   ],
   "challenges": [
@@ -155,7 +161,13 @@
           "majorCategoryId": "cs_it",
           "majorCategoryName": "컴퓨터공학 (IT/SW)",
           "roleName": "LLM & RAG 파이프라인 개발",
-          "requiredSkills": ["LLM", "RAG", "OCR", "Python", "Vector DB"],
+          "requiredSkills": [
+            "LLM",
+            "RAG",
+            "OCR",
+            "Python",
+            "Vector DB"
+          ],
           "capacity": 2,
           "currentMembers": 1,
           "status": "RECRUITING"
@@ -166,7 +178,12 @@
           "majorCategoryId": "mech_eng",
           "majorCategoryName": "기계공학 (자동차/중공업)",
           "roleName": "조선 CAD 도면 해석 및 배관 심볼 구조화",
-          "requiredSkills": ["CAD Interpretation", "조선공학", "배관설계", "P&ID"],
+          "requiredSkills": [
+            "CAD Interpretation",
+            "조선공학",
+            "배관설계",
+            "P&ID"
+          ],
           "capacity": 1,
           "currentMembers": 0,
           "status": "RECRUITING"
@@ -177,13 +194,25 @@
           "majorCategoryId": "design",
           "majorCategoryName": "디자인 (시각/산업 등)",
           "roleName": "현장 태블릿 도면 뷰어 인터랙션 & UX",
-          "requiredSkills": ["UX Research", "Figma", "UI System", "Design System"],
+          "requiredSkills": [
+            "UX Research",
+            "Figma",
+            "UI System",
+            "Design System"
+          ],
           "capacity": 1,
           "currentMembers": 1,
           "status": "FILLED"
         }
       ],
-      "skills": ["LLM", "RAG", "OCR", "CAD", "UX", "Vector DB"],
+      "skills": [
+        "LLM",
+        "RAG",
+        "OCR",
+        "CAD",
+        "UX",
+        "Vector DB"
+      ],
       "resources": [
         {
           "id": "res-ship-01",
@@ -191,7 +220,7 @@
           "type": "DATASET",
           "title": "비식별화된 선박 P&ID 및 배치도면 500종 세트",
           "description": "실제 건조 공정에 사용된 배관·계장 다이어그램(P&ID) 샘플 이미지 및 라벨링 메타데이터",
-          "url": "https://data.example.org/ship-pid-dataset",
+          "url": "https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=71452",
           "accessLevel": "PUBLIC",
           "providerName": "HD현대 스마트조선 연구소"
         },
@@ -201,7 +230,7 @@
           "type": "PATENT",
           "title": "선박 설계 도면 멀티레이어 심볼 인식 특허 (KR-10-2023-XXXX)",
           "description": "도면 내 중첩 심볼의 윤곽선 분리 및 텍스트 상관분석 알고리즘 공개 특허",
-          "url": "https://patents.example.org/kr-2023-ship-symbol",
+          "url": "https://www.kipris.or.kr/",
           "accessLevel": "UNIVERSITY_ONLY",
           "providerName": "특허청 산학협력 공개특허"
         },
@@ -212,7 +241,8 @@
           "title": "HD현대 공통 산업 디자인 가이드라인 & Icon Library",
           "description": "방폭 태블릿 및 작업자 인터페이스 전용 고대비 아이콘 및 폰트 에셋",
           "accessLevel": "PARTNER_ONLY",
-          "providerName": "HD현대 브랜드전략팀"
+          "providerName": "HD현대 브랜드전략팀",
+          "url": "https://www.hd-hyundai.com/brand/ci"
         }
       ],
       "expectedOutcomes": [
@@ -222,16 +252,40 @@
         "산학 공동 특허 출원 검토서"
       ],
       "timeline": [
-        { "phase": "Phase 1: 팀 빌딩 & 킥오프", "period": "1~2주차", "description": "도면 데이터셋 인수인계 및 전공별 역할 R&R 확정", "status": "completed" },
-        { "phase": "Phase 2: RAG 모델 & CAD 파서 개발", "period": "3~6주차", "description": "멀티모달 OCR 및 벡터 DB 구축, 도면 레이아웃 분석", "status": "current" },
-        { "phase": "Phase 3: 태블릿 UI 프로토타이핑", "period": "7~9주차", "description": "야드 작업자 대상 usability 검증 및 인터랙션 고도화", "status": "upcoming" },
-        { "phase": "Phase 4: 통합 실증 & 제안서 발표", "period": "10~12주차", "description": "HD현대 현장 실무진 파일럿 테스트 및 최종 성과 발표", "status": "upcoming" }
+        {
+          "phase": "Phase 1: 팀 빌딩 & 킥오프",
+          "period": "1~2주차",
+          "description": "도면 데이터셋 인수인계 및 전공별 역할 R&R 확정",
+          "status": "completed"
+        },
+        {
+          "phase": "Phase 2: RAG 모델 & CAD 파서 개발",
+          "period": "3~6주차",
+          "description": "멀티모달 OCR 및 벡터 DB 구축, 도면 레이아웃 분석",
+          "status": "current"
+        },
+        {
+          "phase": "Phase 3: 태블릿 UI 프로토타이핑",
+          "period": "7~9주차",
+          "description": "야드 작업자 대상 usability 검증 및 인터랙션 고도화",
+          "status": "upcoming"
+        },
+        {
+          "phase": "Phase 4: 통합 실증 & 제안서 발표",
+          "period": "10~12주차",
+          "description": "HD현대 현장 실무진 파일럿 테스트 및 최종 성과 발표",
+          "status": "upcoming"
+        }
       ],
       "proposalDeadline": "2026-10-31",
       "startDate": "2026-11-10",
       "endDate": "2027-02-10",
       "createdAt": "2026-09-20T09:00:00Z",
-      "updatedAt": "2026-09-28T14:00:00Z"
+      "updatedAt": "2026-09-28T14:00:00Z",
+      "officialUrl": "https://www.hd-hyundai.com/innovation/digital",
+      "providerUrl": "https://www.hd-hyundai.com/",
+      "regionUrl": "https://naoe.pusan.ac.kr/",
+      "applicationUrl": "/rfp/submit?challengeId=challenge-shipbuilding-llm"
     },
     {
       "id": "challenge-shipbuilding-safety-iot",
@@ -259,7 +313,12 @@
           "majorCategoryId": "cs_it",
           "majorCategoryName": "컴퓨터공학 (IT/SW)",
           "roleName": "센서 데이터 스트리밍 & 실시간 이상감지 알고리즘",
-          "requiredSkills": ["Python", "FastAPI", "WebSocket", "Anomaly Detection"],
+          "requiredSkills": [
+            "Python",
+            "FastAPI",
+            "WebSocket",
+            "Anomaly Detection"
+          ],
           "capacity": 2,
           "currentMembers": 0,
           "status": "RECRUITING"
@@ -270,7 +329,12 @@
           "majorCategoryId": "elec_eng",
           "majorCategoryName": "전자공학 (반도체/디스플레이)",
           "roleName": "임베디드 회로 설계 & 저전력 무선 통신 펌웨어",
-          "requiredSkills": ["Embedded C", "BLE/LoRa", "회로설계", "Sensor Integration"],
+          "requiredSkills": [
+            "Embedded C",
+            "BLE/LoRa",
+            "회로설계",
+            "Sensor Integration"
+          ],
           "capacity": 2,
           "currentMembers": 1,
           "status": "RECRUITING"
@@ -281,13 +345,24 @@
           "majorCategoryId": "social_psy",
           "majorCategoryName": "사회 (사회/심리)",
           "roleName": "작업자 안전 피로도 심리 모델링 & 행동 유도 분석",
-          "requiredSkills": ["산업심리학", "행동분석", "설문서베이", "안전문화조사"],
+          "requiredSkills": [
+            "산업심리학",
+            "행동분석",
+            "설문서베이",
+            "안전문화조사"
+          ],
           "capacity": 1,
           "currentMembers": 0,
           "status": "RECRUITING"
         }
       ],
-      "skills": ["Sensor", "LoRa", "Embedded", "Safety Analytics", "Python"],
+      "skills": [
+        "Sensor",
+        "LoRa",
+        "Embedded",
+        "Safety Analytics",
+        "Python"
+      ],
       "resources": [
         {
           "id": "res-safe-01",
@@ -296,7 +371,8 @@
           "title": "동남권 공유대학 첨단 센서 계측 및 RF 챔버 테스트베드",
           "description": "방폭 및 차폐 환경에서의 무선 신호 도달거리 및 센서 정밀 교정 장비 지원",
           "accessLevel": "UNIVERSITY_ONLY",
-          "providerName": "울산대 스마트제조혁신센터"
+          "providerName": "울산대 스마트제조혁신센터",
+          "url": "https://www.data.go.kr/"
         },
         {
           "id": "res-safe-02",
@@ -305,7 +381,8 @@
           "title": "밀폐공간 4종 가스 농도(O2, CO, H2S, CH4) 100만 건 시계열 데이터",
           "description": "실제 조선소 블록 테스트 환경에서 수집된 시계열 환경 데이터셋",
           "accessLevel": "PUBLIC",
-          "providerName": "한국해양과학기술원"
+          "providerName": "한국해양과학기술원",
+          "url": "https://www.data.go.kr/"
         }
       ],
       "expectedOutcomes": [
@@ -314,16 +391,40 @@
         "작업자 심리 안정 및 알람 수용도 분석 보고서"
       ],
       "timeline": [
-        { "phase": "Phase 1: 요구사항 정의 및 센서 모듈 선정", "period": "1~2주차", "description": "방폭 규격 검토 및 센서 통신 프로토콜 설계", "status": "completed" },
-        { "phase": "Phase 2: 하드웨어 제작 및 펌웨어 포팅", "period": "3~5주차", "description": "BLE/LoRa 통신 노드 및 이상 징후 감지 규칙 엔진 구현", "status": "current" },
-        { "phase": "Phase 3: 관제 화면 연동 및 필드 모의 테스트", "period": "6~8주차", "description": "실내 모의 격실 환경에서 통신 및 알림 동작 실증", "status": "upcoming" },
-        { "phase": "Phase 4: 성과 정리 및 최종 데모", "period": "9~10주차", "description": "조선소 안전 관리자 평가 및 시제품 전시", "status": "upcoming" }
+        {
+          "phase": "Phase 1: 요구사항 정의 및 센서 모듈 선정",
+          "period": "1~2주차",
+          "description": "방폭 규격 검토 및 센서 통신 프로토콜 설계",
+          "status": "completed"
+        },
+        {
+          "phase": "Phase 2: 하드웨어 제작 및 펌웨어 포팅",
+          "period": "3~5주차",
+          "description": "BLE/LoRa 통신 노드 및 이상 징후 감지 규칙 엔진 구현",
+          "status": "current"
+        },
+        {
+          "phase": "Phase 3: 관제 화면 연동 및 필드 모의 테스트",
+          "period": "6~8주차",
+          "description": "실내 모의 격실 환경에서 통신 및 알림 동작 실증",
+          "status": "upcoming"
+        },
+        {
+          "phase": "Phase 4: 성과 정리 및 최종 데모",
+          "period": "9~10주차",
+          "description": "조선소 안전 관리자 평가 및 시제품 전시",
+          "status": "upcoming"
+        }
       ],
       "proposalDeadline": "2026-10-25",
       "startDate": "2026-11-05",
       "endDate": "2027-01-20",
       "createdAt": "2026-09-22T10:00:00Z",
-      "updatedAt": "2026-09-28T11:00:00Z"
+      "updatedAt": "2026-09-28T11:00:00Z",
+      "officialUrl": "https://www.samsungshi.com/Kor/business/esg_safety.aspx",
+      "providerUrl": "https://www.samsungshi.com/",
+      "regionUrl": "https://www.ulsan.ac.kr/",
+      "applicationUrl": "/rfp/submit?challengeId=challenge-shipbuilding-safety-iot"
     },
     {
       "id": "challenge-shipbuilding-dashboard",
@@ -351,7 +452,12 @@
           "majorCategoryId": "mech_eng",
           "majorCategoryName": "기계공학 (자동차/중공업)",
           "roleName": "크레인 회전체 진동 모드 해석 및 고장 메커니즘 분석",
-          "requiredSkills": ["회전체역학", "진동해석", "FFT", "설비진단"],
+          "requiredSkills": [
+            "회전체역학",
+            "진동해석",
+            "FFT",
+            "설비진단"
+          ],
           "capacity": 2,
           "currentMembers": 1,
           "status": "RECRUITING"
@@ -362,7 +468,12 @@
           "majorCategoryId": "cs_it",
           "majorCategoryName": "컴퓨터공학 (IT/SW)",
           "roleName": "시계열 이상 감지 AI 모델 & 웹소켓 파이프라인",
-          "requiredSkills": ["Time-series AI", "PyTorch", "Next.js", "Three.js"],
+          "requiredSkills": [
+            "Time-series AI",
+            "PyTorch",
+            "Next.js",
+            "Three.js"
+          ],
           "capacity": 1,
           "currentMembers": 1,
           "status": "FILLED"
@@ -373,13 +484,24 @@
           "majorCategoryId": "design",
           "majorCategoryName": "디자인 (시각/산업 등)",
           "roleName": "설비 상태 시각화 & 관제 대시보드 UI/UX",
-          "requiredSkills": ["Dashboard UX", "Data Visualization", "Figma", "Design Token"],
+          "requiredSkills": [
+            "Dashboard UX",
+            "Data Visualization",
+            "Figma",
+            "Design Token"
+          ],
           "capacity": 1,
           "currentMembers": 0,
           "status": "RECRUITING"
         }
       ],
-      "skills": ["Predictive Maintenance", "Data Analysis", "Dashboard UX", "FFT", "Three.js"],
+      "skills": [
+        "Predictive Maintenance",
+        "Data Analysis",
+        "Dashboard UX",
+        "FFT",
+        "Three.js"
+      ],
       "resources": [
         {
           "id": "res-dash-01",
@@ -388,7 +510,8 @@
           "title": "대형 인양 크레인 베어링 가속기어 6개월분 진동 원시 데이터",
           "description": "정상 운전 및 고장 시점의 샘플 레이트 10kHz 가속도계 진동 센서 로그",
           "accessLevel": "PUBLIC",
-          "providerName": "한국기계연구원 스마트산업기계연구실"
+          "providerName": "한국기계연구원 스마트산업기계연구실",
+          "url": "https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=71441"
         },
         {
           "id": "res-dash-02",
@@ -397,7 +520,8 @@
           "title": "야드 중장비 예지보전 신뢰도 표준 가이드 리포트",
           "description": "ISO 10816 회전기계 진동 평가 기준 및 보전주기 계산 알고리즘 문서",
           "accessLevel": "UNIVERSITY_ONLY",
-          "providerName": "한국조선해양"
+          "providerName": "한국조선해양",
+          "url": "https://www.kosha.or.kr/"
         }
       ],
       "expectedOutcomes": [
@@ -406,16 +530,40 @@
         "현장 엔지니어 피드백 반영 보고서"
       ],
       "timeline": [
-        { "phase": "Phase 1: 데이터 탐색 및 신호 전처리", "period": "1~3주차", "description": "진동 센서 결측치 보정 및 주파수 스펙트럼 추출", "status": "completed" },
-        { "phase": "Phase 2: 열화 예측 알고리즘 개발", "period": "4~7주차", "description": "잔여 수명(RUL) 추정 모델 및 알람 임계치 설정", "status": "current" },
-        { "phase": "Phase 3: 대시보드 디자인 및 웹 프론트엔드 연동", "period": "8~10주차", "description": "Chart.js/Three.js 기반 직관적 시각화 구현", "status": "upcoming" },
-        { "phase": "Phase 4: 종합 평가 및 데모 시연", "period": "11~12주차", "description": "야드 보전팀 실무자 품평회 및 캡스톤 보고서 제출", "status": "upcoming" }
+        {
+          "phase": "Phase 1: 데이터 탐색 및 신호 전처리",
+          "period": "1~3주차",
+          "description": "진동 센서 결측치 보정 및 주파수 스펙트럼 추출",
+          "status": "completed"
+        },
+        {
+          "phase": "Phase 2: 열화 예측 알고리즘 개발",
+          "period": "4~7주차",
+          "description": "잔여 수명(RUL) 추정 모델 및 알람 임계치 설정",
+          "status": "current"
+        },
+        {
+          "phase": "Phase 3: 대시보드 디자인 및 웹 프론트엔드 연동",
+          "period": "8~10주차",
+          "description": "Chart.js/Three.js 기반 직관적 시각화 구현",
+          "status": "upcoming"
+        },
+        {
+          "phase": "Phase 4: 종합 평가 및 데모 시연",
+          "period": "11~12주차",
+          "description": "야드 보전팀 실무자 품평회 및 캡스톤 보고서 제출",
+          "status": "upcoming"
+        }
       ],
       "proposalDeadline": "2026-11-15",
       "startDate": "2026-12-01",
       "endDate": "2027-02-28",
       "createdAt": "2026-09-24T14:00:00Z",
-      "updatedAt": "2026-09-28T16:00:00Z"
+      "updatedAt": "2026-09-28T16:00:00Z",
+      "officialUrl": "https://www.ksoe.co.kr/business/digital",
+      "providerUrl": "https://www.ksoe.co.kr/",
+      "regionUrl": "https://www.usg.ac.kr/",
+      "applicationUrl": "/rfp/submit?challengeId=challenge-shipbuilding-dashboard"
     },
     {
       "id": "challenge-ocean-cruise-branding",
@@ -443,7 +591,12 @@
           "majorCategoryId": "design",
           "majorCategoryName": "디자인 (시각/산업 등)",
           "roleName": "크루즈 브랜드 아이덴티티(BI) & 굿즈 디자인",
-          "requiredSkills": ["Brand Identity", "Package Design", "Illustrator", "Typography"],
+          "requiredSkills": [
+            "Brand Identity",
+            "Package Design",
+            "Illustrator",
+            "Typography"
+          ],
           "capacity": 2,
           "currentMembers": 1,
           "status": "RECRUITING"
@@ -454,7 +607,12 @@
           "majorCategoryId": "film_media",
           "majorCategoryName": "영상 (제작/미디어)",
           "roleName": "선상 인터랙티브 미디어 영상 & 홍보 숏폼 제작",
-          "requiredSkills": ["After Effects", "Premiere", "3D Motion", "Storyboarding"],
+          "requiredSkills": [
+            "After Effects",
+            "Premiere",
+            "3D Motion",
+            "Storyboarding"
+          ],
           "capacity": 2,
           "currentMembers": 0,
           "status": "RECRUITING"
@@ -465,13 +623,23 @@
           "majorCategoryId": "biz_econ",
           "majorCategoryName": "상경 (경영/경제)",
           "roleName": "2030 타겟 탑승 패키지 상품 기획 및 마케팅 전략",
-          "requiredSkills": ["Business Model", "Tourism Marketing", "Pricing Strategy"],
+          "requiredSkills": [
+            "Business Model",
+            "Tourism Marketing",
+            "Pricing Strategy"
+          ],
           "capacity": 1,
           "currentMembers": 1,
           "status": "FILLED"
         }
       ],
-      "skills": ["Brand Design", "Content Creation", "Business Model", "Motion Graphics", "UX"],
+      "skills": [
+        "Brand Design",
+        "Content Creation",
+        "Business Model",
+        "Motion Graphics",
+        "UX"
+      ],
       "resources": [
         {
           "id": "res-cruise-01",
@@ -480,7 +648,8 @@
           "title": "부산 해양관광 공식 브랜드 에셋 및 로고 IP 킷",
           "description": "부산시 공식 시각 자산 및 유람선 3D 선체 렌더링 파일",
           "accessLevel": "PUBLIC",
-          "providerName": "부산광역시 & 부산관광공사"
+          "providerName": "부산광역시 & 부산관광공사",
+          "url": "https://www.busan.go.kr/bhintro"
         }
       ],
       "expectedOutcomes": [
@@ -490,16 +659,40 @@
         "체험형 패키지 사업계획서"
       ],
       "timeline": [
-        { "phase": "Phase 1: 브랜드 컨셉 도출 및 타겟 분석", "period": "1~2주차", "description": "부산 연안 크루즈 트렌드 조사 및 무드보드 확정", "status": "completed" },
-        { "phase": "Phase 2: 비주얼 아이덴티티 및 영상 콘티 작업", "period": "3~4주차", "description": "로고타입, 전용 서체, 3D 캐릭터 및 영상 스토리보드 제작", "status": "current" },
-        { "phase": "Phase 3: 굿즈 목업 및 영상 렌더링", "period": "5~6주차", "description": "선상 프로젝션 시뮬레이션 및 마케팅 채널 배포 준비", "status": "upcoming" },
-        { "phase": "Phase 4: 시민 품평회 및 최종 납품", "period": "7~8주차", "description": "부산국제관광전 특별 부스 전시 및 성과 확산", "status": "upcoming" }
+        {
+          "phase": "Phase 1: 브랜드 컨셉 도출 및 타겟 분석",
+          "period": "1~2주차",
+          "description": "부산 연안 크루즈 트렌드 조사 및 무드보드 확정",
+          "status": "completed"
+        },
+        {
+          "phase": "Phase 2: 비주얼 아이덴티티 및 영상 콘티 작업",
+          "period": "3~4주차",
+          "description": "로고타입, 전용 서체, 3D 캐릭터 및 영상 스토리보드 제작",
+          "status": "current"
+        },
+        {
+          "phase": "Phase 3: 굿즈 목업 및 영상 렌더링",
+          "period": "5~6주차",
+          "description": "선상 프로젝션 시뮬레이션 및 마케팅 채널 배포 준비",
+          "status": "upcoming"
+        },
+        {
+          "phase": "Phase 4: 시민 품평회 및 최종 납품",
+          "period": "7~8주차",
+          "description": "부산국제관광전 특별 부스 전시 및 성과 확산",
+          "status": "upcoming"
+        }
       ],
       "proposalDeadline": "2026-10-20",
       "startDate": "2026-11-01",
       "endDate": "2026-12-31",
       "createdAt": "2026-09-18T11:00:00Z",
-      "updatedAt": "2026-09-27T10:00:00Z"
+      "updatedAt": "2026-09-27T10:00:00Z",
+      "officialUrl": "https://bto.or.kr/kor/CMS/Board/Board.do?mCode=MN019",
+      "providerUrl": "https://bto.or.kr/",
+      "regionUrl": "https://www.usg.ac.kr/",
+      "applicationUrl": "https://bto.or.kr/kor/CMS/Board/Board.do?mCode=MN019"
     },
     {
       "id": "challenge-hospital-fall-monitoring",
@@ -527,7 +720,12 @@
           "majorCategoryId": "nursing",
           "majorCategoryName": "간호학",
           "roleName": "임상 낙상 위험 평가 척도(Morse Fall Scale) 분석 및 워크플로우 검증",
-          "requiredSkills": ["Morse Fall Scale", "임상간호", "환자안전수칙", "간호간병통합"],
+          "requiredSkills": [
+            "Morse Fall Scale",
+            "임상간호",
+            "환자안전수칙",
+            "간호간병통합"
+          ],
           "capacity": 2,
           "currentMembers": 1,
           "status": "RECRUITING"
@@ -538,7 +736,12 @@
           "majorCategoryId": "cs_it",
           "majorCategoryName": "컴퓨터공학 (IT/SW)",
           "roleName": "스켈레톤 포즈 예측 딥러닝 모델 & 알림 서버",
-          "requiredSkills": ["MediaPipe", "PyTorch", "Computer Vision", "WebSocket"],
+          "requiredSkills": [
+            "MediaPipe",
+            "PyTorch",
+            "Computer Vision",
+            "WebSocket"
+          ],
           "capacity": 2,
           "currentMembers": 1,
           "status": "RECRUITING"
@@ -549,13 +752,24 @@
           "majorCategoryId": "design",
           "majorCategoryName": "디자인 (시각/산업 등)",
           "roleName": "간호스테이션 모니터링 UI 및 스마트워치 긴급 알림 UX",
-          "requiredSkills": ["Healthcare UX", "Watch OS UI", "Accessibility", "Figma"],
+          "requiredSkills": [
+            "Healthcare UX",
+            "Watch OS UI",
+            "Accessibility",
+            "Figma"
+          ],
           "capacity": 1,
           "currentMembers": 0,
           "status": "RECRUITING"
         }
       ],
-      "skills": ["Vision AI", "Pose Estimation", "Healthcare UX", "Python", "Wearable UI"],
+      "skills": [
+        "Vision AI",
+        "Pose Estimation",
+        "Healthcare UX",
+        "Python",
+        "Wearable UI"
+      ],
       "resources": [
         {
           "id": "res-fall-01",
@@ -564,7 +778,8 @@
           "title": "비식별화된 병상 모의 낙상 시나리오 3D 관절 좌표 5,000건",
           "description": "개인 식별 요소를 완전히 제거한 33개 관절 키포인트 시계열 좌표 데이터셋",
           "accessLevel": "PUBLIC",
-          "providerName": "국립암센터 & 의료AI 데이터셋 오픈허브"
+          "providerName": "국립암센터 & 의료AI 데이터셋 오픈허브",
+          "url": "https://www.data.go.kr/"
         },
         {
           "id": "res-fall-02",
@@ -573,7 +788,8 @@
           "title": "환자 자세 변위 기반 실시간 낙상 예측 알고리즘 등록 특허",
           "description": "가속도계 및 비전 센서 하이브리드 필터링 특허 명세서",
           "accessLevel": "UNIVERSITY_ONLY",
-          "providerName": "서울아산병원 아카데미"
+          "providerName": "서울아산병원 아카데미",
+          "url": "https://www.data.go.kr/"
         }
       ],
       "expectedOutcomes": [
@@ -582,16 +798,40 @@
         "병원 간호사 사용성 평가 및 윤리 가이드라인 보고서"
       ],
       "timeline": [
-        { "phase": "Phase 1: 임상 프로토콜 분석 및 데이터셋 검토", "period": "1~3주차", "description": "간호 임상 현장 낙상 케이스 분석 및 윤리성 검토", "status": "completed" },
-        { "phase": "Phase 2: 관절 추정 모델 학습 및 전조 감지", "period": "4~8주차", "description": "침대 난간 접촉 및 상체 기립 각도 임계 알고리즘 구현", "status": "current" },
-        { "phase": "Phase 3: 웨어러블 UI 연동 및 시뮬레이션", "period": "9~11주차", "description": "가상 병실 모의 환자 대상 진동 알람 응답 시간 테스트", "status": "upcoming" },
-        { "phase": "Phase 4: 현장 실무진 평가 및 논문/특허 정리", "period": "12~14주차", "description": "아산병원 의료진 피드백 반영 및 최종 결과물 시연", "status": "upcoming" }
+        {
+          "phase": "Phase 1: 임상 프로토콜 분석 및 데이터셋 검토",
+          "period": "1~3주차",
+          "description": "간호 임상 현장 낙상 케이스 분석 및 윤리성 검토",
+          "status": "completed"
+        },
+        {
+          "phase": "Phase 2: 관절 추정 모델 학습 및 전조 감지",
+          "period": "4~8주차",
+          "description": "침대 난간 접촉 및 상체 기립 각도 임계 알고리즘 구현",
+          "status": "current"
+        },
+        {
+          "phase": "Phase 3: 웨어러블 UI 연동 및 시뮬레이션",
+          "period": "9~11주차",
+          "description": "가상 병실 모의 환자 대상 진동 알람 응답 시간 테스트",
+          "status": "upcoming"
+        },
+        {
+          "phase": "Phase 4: 현장 실무진 평가 및 논문/특허 정리",
+          "period": "12~14주차",
+          "description": "아산병원 의료진 피드백 반영 및 최종 결과물 시연",
+          "status": "upcoming"
+        }
       ],
       "proposalDeadline": "2026-11-01",
       "startDate": "2026-11-15",
       "endDate": "2027-02-25",
       "createdAt": "2026-09-21T09:00:00Z",
-      "updatedAt": "2026-09-28T15:00:00Z"
+      "updatedAt": "2026-09-28T15:00:00Z",
+      "officialUrl": "https://www.amc.seoul.kr/research/",
+      "providerUrl": "https://www.lunit.io/ko",
+      "regionUrl": "https://www.khidi.or.kr/",
+      "applicationUrl": "/rfp/submit?challengeId=challenge-hospital-fall-monitoring"
     },
     {
       "id": "challenge-chronic-care-lifelog",
@@ -619,7 +859,12 @@
           "majorCategoryId": "health_admin",
           "majorCategoryName": "보건행정",
           "roleName": "DUR 의약품 금기 기준 분석 및 수가/제도 연계성 검토",
-          "requiredSkills": ["보건의료정보", "DUR 수가코드", "의료빅데이터", "의무기록"],
+          "requiredSkills": [
+            "보건의료정보",
+            "DUR 수가코드",
+            "의료빅데이터",
+            "의무기록"
+          ],
           "capacity": 1,
           "currentMembers": 0,
           "status": "RECRUITING"
@@ -630,7 +875,12 @@
           "majorCategoryId": "bio_pharm",
           "majorCategoryName": "생명 (바이오/제약)",
           "roleName": "약물 대사 경로 및 생체 바이오마커 변동성 해석",
-          "requiredSkills": ["약리학", "바이오마커", "대사경로", "생체데이터"],
+          "requiredSkills": [
+            "약리학",
+            "바이오마커",
+            "대사경로",
+            "생체데이터"
+          ],
           "capacity": 2,
           "currentMembers": 1,
           "status": "RECRUITING"
@@ -641,13 +891,24 @@
           "majorCategoryId": "cs_it",
           "majorCategoryName": "컴퓨터공학 (IT/SW)",
           "roleName": "모바일 앱 풀스택 개발 & 건강 데이터 통계 엔진",
-          "requiredSkills": ["React Native", "TypeScript", "FastAPI", "OAuth2"],
+          "requiredSkills": [
+            "React Native",
+            "TypeScript",
+            "FastAPI",
+            "OAuth2"
+          ],
           "capacity": 2,
           "currentMembers": 1,
           "status": "RECRUITING"
         }
       ],
-      "skills": ["Health Informatics", "DUR API", "Bio Markers", "Mobile App", "Python"],
+      "skills": [
+        "Health Informatics",
+        "DUR API",
+        "Bio Markers",
+        "Mobile App",
+        "Python"
+      ],
       "resources": [
         {
           "id": "res-care-01",
@@ -656,7 +917,8 @@
           "title": "건강보험심사평가원 의약품 안심서비스(DUR) 오픈 API 샌드박스",
           "description": "병용 금기 의약품 및 연령 금기 실시간 검증 REST API 엔드포인트",
           "accessLevel": "PUBLIC",
-          "providerName": "건강보험심사평가원 빅데이터부"
+          "providerName": "건강보험심사평가원 빅데이터부",
+          "url": "https://www.data.go.kr/data/15000561/openapi.do"
         },
         {
           "id": "res-care-02",
@@ -665,7 +927,8 @@
           "title": "합성 생성된 1,000인 만성질환 혈당·혈압 90일 라이프로그",
           "description": "식사 시간, 복약 여부, 연속혈당기(CGM) 측정치가 기록된 합성 데이터셋",
           "accessLevel": "PUBLIC",
-          "providerName": "한국보건산업진흥원"
+          "providerName": "한국보건산업진흥원",
+          "url": "https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=71398"
         }
       ],
       "expectedOutcomes": [
@@ -674,16 +937,40 @@
         "보건 의료 데이터 거버넌스 및 비즈니스 모델 보고서"
       ],
       "timeline": [
-        { "phase": "Phase 1: DUR 데이터 구조 분석 및 약물군 매핑", "period": "1~2주차", "description": "고혈압·당뇨 10대 처방약 상호작용 매트릭스 도출", "status": "completed" },
-        { "phase": "Phase 2: 모바일 앱 프로토타입 구현", "period": "3~6주차", "description": "복약 기록, 생체 수치 입력 UI 및 푸시 알람 파이프라인 연동", "status": "current" },
-        { "phase": "Phase 3: 사용자 테스트 및 순응도 시뮬레이션", "period": "7~8주차", "description": "고령 환자 대상 가독성/사용성 테스트(N=20)", "status": "upcoming" },
-        { "phase": "Phase 4: 최종 성과 보고 및 데모데이", "period": "9~10주차", "description": "제약사 실무진 및 보건학 교수진 참여 발표", "status": "upcoming" }
+        {
+          "phase": "Phase 1: DUR 데이터 구조 분석 및 약물군 매핑",
+          "period": "1~2주차",
+          "description": "고혈압·당뇨 10대 처방약 상호작용 매트릭스 도출",
+          "status": "completed"
+        },
+        {
+          "phase": "Phase 2: 모바일 앱 프로토타입 구현",
+          "period": "3~6주차",
+          "description": "복약 기록, 생체 수치 입력 UI 및 푸시 알람 파이프라인 연동",
+          "status": "current"
+        },
+        {
+          "phase": "Phase 3: 사용자 테스트 및 순응도 시뮬레이션",
+          "period": "7~8주차",
+          "description": "고령 환자 대상 가독성/사용성 테스트(N=20)",
+          "status": "upcoming"
+        },
+        {
+          "phase": "Phase 4: 최종 성과 보고 및 데모데이",
+          "period": "9~10주차",
+          "description": "제약사 실무진 및 보건학 교수진 참여 발표",
+          "status": "upcoming"
+        }
       ],
       "proposalDeadline": "2026-10-28",
       "startDate": "2026-11-10",
       "endDate": "2027-01-20",
       "createdAt": "2026-09-23T11:00:00Z",
-      "updatedAt": "2026-09-28T09:00:00Z"
+      "updatedAt": "2026-09-28T09:00:00Z",
+      "officialUrl": "https://www.yuhan.co.kr/RND/Pipeline/",
+      "providerUrl": "https://www.yuhan.co.kr/",
+      "regionUrl": "https://medicine.catholic.ac.kr/",
+      "applicationUrl": "/rfp/submit?challengeId=challenge-chronic-care-lifelog"
     },
     {
       "id": "challenge-isolation-robot-interface",
@@ -711,7 +998,12 @@
           "majorCategoryId": "mech_eng",
           "majorCategoryName": "기계공학 (자동차/중공업)",
           "roleName": "로봇 주행 매니퓰레이터 기구학 & SLAM 경로 계획",
-          "requiredSkills": ["ROS2", "SLAM", "C++", "모바일로봇제어"],
+          "requiredSkills": [
+            "ROS2",
+            "SLAM",
+            "C++",
+            "모바일로봇제어"
+          ],
           "capacity": 2,
           "currentMembers": 1,
           "status": "RECRUITING"
@@ -722,7 +1014,12 @@
           "majorCategoryId": "elec_eng",
           "majorCategoryName": "전자공학 (반도체/디스플레이)",
           "roleName": "센서 퓨전 (LiDAR + Depth 카메라) 및 모터 드라이버 회로",
-          "requiredSkills": ["LiDAR 센서퓨전", "CAN 통신", "임베디드 리눅스", "PCB"],
+          "requiredSkills": [
+            "LiDAR 센서퓨전",
+            "CAN 통신",
+            "임베디드 리눅스",
+            "PCB"
+          ],
           "capacity": 1,
           "currentMembers": 0,
           "status": "RECRUITING"
@@ -733,13 +1030,23 @@
           "majorCategoryId": "nursing",
           "majorCategoryName": "간호학",
           "roleName": "감염 관리 멸균 가이드라인 검토 및 병동 이동 동선 설계",
-          "requiredSkills": ["병원감염관리지침", "멸균프로토콜", "병동동선분석"],
+          "requiredSkills": [
+            "병원감염관리지침",
+            "멸균프로토콜",
+            "병동동선분석"
+          ],
           "capacity": 1,
           "currentMembers": 0,
           "status": "RECRUITING"
         }
       ],
-      "skills": ["ROS2", "SLAM", "Robotics", "Infection Control", "Sensor Fusion"],
+      "skills": [
+        "ROS2",
+        "SLAM",
+        "Robotics",
+        "Infection Control",
+        "Sensor Fusion"
+      ],
       "resources": [
         {
           "id": "res-robot-01",
@@ -748,7 +1055,8 @@
           "title": "격리병동 실물 모의 시뮬레이션 테스트 룸 및 연구용 자율주행 AGV",
           "description": "병원 복도 환경을 그대로 재현한 모의 병동 주행 테스트베드",
           "accessLevel": "UNIVERSITY_ONLY",
-          "providerName": "고려대 메디컬 로보틱스 연구실"
+          "providerName": "고려대 메디컬 로보틱스 연구실",
+          "url": "https://www.zeus.go.kr/"
         },
         {
           "id": "res-robot-02",
@@ -757,7 +1065,8 @@
           "title": "질병관리청 의료기관 감염예방 및 방역 소독 표준 매뉴얼",
           "description": "공기 중 바이러스 살균 및 접촉 표면 방역 권장 조도·시간 기준서",
           "accessLevel": "PUBLIC",
-          "providerName": "질병관리청"
+          "providerName": "질병관리청",
+          "url": "https://www.kdca.go.kr/"
         }
       ],
       "expectedOutcomes": [
@@ -766,16 +1075,40 @@
         "원내 2차 감염 저감 효과 평가 보고서"
       ],
       "timeline": [
-        { "phase": "Phase 1: 감염병동 공간 맵핑 및 방역 요구도 파악", "period": "1~3주차", "description": "병동 레이아웃 2D/3D 지도 생성 및 살균 포인트 지정", "status": "completed" },
-        { "phase": "Phase 2: 주행 회피 알고리즘 최적화", "period": "4~7주차", "description": "돌발 장애물(수액걸이, 휠체어) 실시간 인식 및 경로 재탐색", "status": "current" },
-        { "phase": "Phase 3: 간호사용 관제 인터페이스 제작", "period": "8~10주차", "description": "소독 구역 지정 및 배터리 충전 복귀 원터치 기능 구현", "status": "upcoming" },
-        { "phase": "Phase 4: 병동 현장 시연 및 최종 발표", "period": "11~12주차", "description": "의료진 및 로봇공학 전문가 대상 모의 시연", "status": "upcoming" }
+        {
+          "phase": "Phase 1: 감염병동 공간 맵핑 및 방역 요구도 파악",
+          "period": "1~3주차",
+          "description": "병동 레이아웃 2D/3D 지도 생성 및 살균 포인트 지정",
+          "status": "completed"
+        },
+        {
+          "phase": "Phase 2: 주행 회피 알고리즘 최적화",
+          "period": "4~7주차",
+          "description": "돌발 장애물(수액걸이, 휠체어) 실시간 인식 및 경로 재탐색",
+          "status": "current"
+        },
+        {
+          "phase": "Phase 3: 간호사용 관제 인터페이스 제작",
+          "period": "8~10주차",
+          "description": "소독 구역 지정 및 배터리 충전 복귀 원터치 기능 구현",
+          "status": "upcoming"
+        },
+        {
+          "phase": "Phase 4: 병동 현장 시연 및 최종 발표",
+          "period": "11~12주차",
+          "description": "의료진 및 로봇공학 전문가 대상 모의 시연",
+          "status": "upcoming"
+        }
       ],
       "proposalDeadline": "2026-11-10",
       "startDate": "2026-11-20",
       "endDate": "2027-02-20",
       "createdAt": "2026-09-22T13:00:00Z",
-      "updatedAt": "2026-09-28T12:00:00Z"
+      "updatedAt": "2026-09-28T12:00:00Z",
+      "officialUrl": "https://www.hyundai-robotics.com/product/product_list.html?cate=service",
+      "providerUrl": "https://www.hyundai-robotics.com/",
+      "regionUrl": "https://anam.kumc.or.kr/",
+      "applicationUrl": "/rfp/submit?challengeId=challenge-isolation-robot-interface"
     },
     {
       "id": "challenge-bems-energy-optimization",
@@ -803,7 +1136,12 @@
           "majorCategoryId": "arch_eng",
           "majorCategoryName": "건축학 (설계/공학)",
           "roleName": "건축 외피 단열 성능 및 공조(HVAC) 부하 모델링",
-          "requiredSkills": ["EnergyPlus", "건축환경공학", "BIM", "친환경건축설계"],
+          "requiredSkills": [
+            "EnergyPlus",
+            "건축환경공학",
+            "BIM",
+            "친환경건축설계"
+          ],
           "capacity": 2,
           "currentMembers": 1,
           "status": "RECRUITING"
@@ -814,7 +1152,12 @@
           "majorCategoryId": "elec_eng",
           "majorCategoryName": "전자공학 (반도체/디스플레이)",
           "roleName": "스마트 전력 계량기(AMI) 및 인버터 데이터 수집 통신",
-          "requiredSkills": ["Modbus", "전력전자", "스마트그리드", "AMI"],
+          "requiredSkills": [
+            "Modbus",
+            "전력전자",
+            "스마트그리드",
+            "AMI"
+          ],
           "capacity": 2,
           "currentMembers": 0,
           "status": "RECRUITING"
@@ -825,13 +1168,24 @@
           "majorCategoryId": "cs_it",
           "majorCategoryName": "컴퓨터공학 (IT/SW)",
           "roleName": "시계열 전력 수요 예측 딥러닝(Transformer) 모델",
-          "requiredSkills": ["Python", "Temporal Fusion Transformer", "TimescaleDB", "Docker"],
+          "requiredSkills": [
+            "Python",
+            "Temporal Fusion Transformer",
+            "TimescaleDB",
+            "Docker"
+          ],
           "capacity": 2,
           "currentMembers": 1,
           "status": "RECRUITING"
         }
       ],
-      "skills": ["BEMS", "Energy AI", "HVAC Modeling", "Smart Grid", "Python"],
+      "skills": [
+        "BEMS",
+        "Energy AI",
+        "HVAC Modeling",
+        "Smart Grid",
+        "Python"
+      ],
       "resources": [
         {
           "id": "res-bems-01",
@@ -840,7 +1194,8 @@
           "title": "세종시 정부청사 제로에너지동 1년치 분단위 BEMS 전력 로그",
           "description": "전력 소비량, 실내외 온습도, 일사량, HVAC 가동 상태 50만 건",
           "accessLevel": "PUBLIC",
-          "providerName": "한국에너지공단 건물에너지실"
+          "providerName": "한국에너지공단 건물에너지실",
+          "url": "https://data.go.kr/data/15082103/fileData.do"
         },
         {
           "id": "res-bems-02",
@@ -849,7 +1204,8 @@
           "title": "건물 재실 인원 기반 지능형 공조 피크제어 알고리즘 특허",
           "description": "CO2 센서 연동 가변풍량(VAV) 제어 공개 특허",
           "accessLevel": "UNIVERSITY_ONLY",
-          "providerName": "현대건설 기술연구원"
+          "providerName": "현대건설 기술연구원",
+          "url": "https://www.kipris.or.kr/"
         }
       ],
       "expectedOutcomes": [
@@ -858,16 +1214,40 @@
         "연간 에너지 비용 절감 및 탄소 배출 저감 효과 분석서"
       ],
       "timeline": [
-        { "phase": "Phase 1: 빌딩 열특성 파라미터 및 데이터셋 전처리", "period": "1~3주차", "description": "건축 도면 기반 외피 면적 산출 및 에너지 소비 패턴 분석", "status": "completed" },
-        { "phase": "Phase 2: AI 부하 예측 모델 훈련", "period": "4~7주차", "description": "기상청 단기예보 연동 및 전력 피크 예측 성능 고도화", "status": "current" },
-        { "phase": "Phase 3: BEMS 제어 로직 시뮬레이션", "period": "8~10주차", "description": "ESS 충방전 스케줄링 연계 최적 제어 검증", "status": "upcoming" },
-        { "phase": "Phase 4: 최종 성과 발표 및 파일럿 검증", "period": "11~12주차", "description": "현대건설 스마트홈 사업부 실무자 평가", "status": "upcoming" }
+        {
+          "phase": "Phase 1: 빌딩 열특성 파라미터 및 데이터셋 전처리",
+          "period": "1~3주차",
+          "description": "건축 도면 기반 외피 면적 산출 및 에너지 소비 패턴 분석",
+          "status": "completed"
+        },
+        {
+          "phase": "Phase 2: AI 부하 예측 모델 훈련",
+          "period": "4~7주차",
+          "description": "기상청 단기예보 연동 및 전력 피크 예측 성능 고도화",
+          "status": "current"
+        },
+        {
+          "phase": "Phase 3: BEMS 제어 로직 시뮬레이션",
+          "period": "8~10주차",
+          "description": "ESS 충방전 스케줄링 연계 최적 제어 검증",
+          "status": "upcoming"
+        },
+        {
+          "phase": "Phase 4: 최종 성과 발표 및 파일럿 검증",
+          "period": "11~12주차",
+          "description": "현대건설 스마트홈 사업부 실무자 평가",
+          "status": "upcoming"
+        }
       ],
       "proposalDeadline": "2026-10-30",
       "startDate": "2026-11-10",
       "endDate": "2027-02-10",
       "createdAt": "2026-09-20T14:00:00Z",
-      "updatedAt": "2026-09-27T17:00:00Z"
+      "updatedAt": "2026-09-27T17:00:00Z",
+      "officialUrl": "https://www.hdec.kr/kr/esg/sustainability.aspx",
+      "providerUrl": "https://www.hdec.kr/",
+      "regionUrl": "https://dscu.ac.kr/",
+      "applicationUrl": "/rfp/submit?challengeId=challenge-bems-energy-optimization"
     },
     {
       "id": "challenge-battery-recycling-safety",
@@ -895,7 +1275,12 @@
           "majorCategoryId": "chem_eng",
           "majorCategoryName": "화학공학 (정유/배터리)",
           "roleName": "습식 제련 침출 반응 속도론 및 열역학 화학 반응 모델링",
-          "requiredSkills": ["반응공학", "열역학", "2차전지소재", "화학공정모사(Aspen)"],
+          "requiredSkills": [
+            "반응공학",
+            "열역학",
+            "2차전지소재",
+            "화학공정모사(Aspen)"
+          ],
           "capacity": 2,
           "currentMembers": 1,
           "status": "RECRUITING"
@@ -906,7 +1291,12 @@
           "majorCategoryId": "math_phys_chem",
           "majorCategoryName": "수학 / 물리 / 화학",
           "roleName": "분광학 기반 이온 농도 계측 및 반응기 동역학 수치해석",
-          "requiredSkills": ["분광분석", "수치해석", "무기화학", "Matlab"],
+          "requiredSkills": [
+            "분광분석",
+            "수치해석",
+            "무기화학",
+            "Matlab"
+          ],
           "capacity": 1,
           "currentMembers": 0,
           "status": "RECRUITING"
@@ -917,13 +1307,24 @@
           "majorCategoryId": "cs_it",
           "majorCategoryName": "컴퓨터공학 (IT/SW)",
           "roleName": "공정 센서 실시간 이상감지 파이프라인 & 비상 정지 로직",
-          "requiredSkills": ["Python", "PLC Modbus 연동", "시계열 이상감지", "InfluxDB"],
+          "requiredSkills": [
+            "Python",
+            "PLC Modbus 연동",
+            "시계열 이상감지",
+            "InfluxDB"
+          ],
           "capacity": 1,
           "currentMembers": 0,
           "status": "RECRUITING"
         }
       ],
-      "skills": ["Chemical Engineering", "Battery Recycling", "Thermodynamics", "Sensor Monitoring", "Python"],
+      "skills": [
+        "Chemical Engineering",
+        "Battery Recycling",
+        "Thermodynamics",
+        "Sensor Monitoring",
+        "Python"
+      ],
       "resources": [
         {
           "id": "res-batt-01",
@@ -932,7 +1333,8 @@
           "title": "리튬이온 배터리 재활용 침출 안전 공정 보고서",
           "description": "국립환경과학원 폐2차전지 재활용 안전 관리 가이드",
           "accessLevel": "PUBLIC",
-          "providerName": "국립환경과학원"
+          "providerName": "국립환경과학원",
+          "url": "https://www.data.go.kr/"
         },
         {
           "id": "res-batt-02",
@@ -941,7 +1343,8 @@
           "title": "모의 반응기 온도·압력·배출가스 1,000시간 실험 시계열 데이터",
           "description": "비정상 발열 및 정상 운전 상태의 연속 계측 시계열 데이터",
           "accessLevel": "UNIVERSITY_ONLY",
-          "providerName": "KAIST 화학공정연구단"
+          "providerName": "KAIST 화학공정연구단",
+          "url": "https://www.data.go.kr/"
         }
       ],
       "expectedOutcomes": [
@@ -950,16 +1353,40 @@
         "폐배터리 리사이클링 화재 안전 표준 제안서"
       ],
       "timeline": [
-        { "phase": "Phase 1: 반응 메커니즘 분석 및 계측 센서 선정", "period": "1~3주차", "description": "침출액 산도 및 발열 반응 속도식 도출", "status": "completed" },
-        { "phase": "Phase 2: 공정 시뮬레이션 모델 수립", "period": "4~7주차", "description": "온도 급상승 시나리오 모사 및 냉각수 투입 제어선 산출", "status": "current" },
-        { "phase": "Phase 3: 이상 감지 알고리즘 및 UI 연동", "period": "8~10주차", "description": "경고 알람 발생 테스트 및 인터록 기능 검증", "status": "upcoming" },
-        { "phase": "Phase 4: 성과 보고서 및 기업 기술 세미나", "period": "11~12주차", "description": "SK에코플랜트 엔지니어 대상 기술 발표", "status": "upcoming" }
+        {
+          "phase": "Phase 1: 반응 메커니즘 분석 및 계측 센서 선정",
+          "period": "1~3주차",
+          "description": "침출액 산도 및 발열 반응 속도식 도출",
+          "status": "completed"
+        },
+        {
+          "phase": "Phase 2: 공정 시뮬레이션 모델 수립",
+          "period": "4~7주차",
+          "description": "온도 급상승 시나리오 모사 및 냉각수 투입 제어선 산출",
+          "status": "current"
+        },
+        {
+          "phase": "Phase 3: 이상 감지 알고리즘 및 UI 연동",
+          "period": "8~10주차",
+          "description": "경고 알람 발생 테스트 및 인터록 기능 검증",
+          "status": "upcoming"
+        },
+        {
+          "phase": "Phase 4: 성과 보고서 및 기업 기술 세미나",
+          "period": "11~12주차",
+          "description": "SK에코플랜트 엔지니어 대상 기술 발표",
+          "status": "upcoming"
+        }
       ],
       "proposalDeadline": "2026-11-05",
       "startDate": "2026-11-15",
       "endDate": "2027-02-15",
       "createdAt": "2026-09-24T15:00:00Z",
-      "updatedAt": "2026-09-28T18:00:00Z"
+      "updatedAt": "2026-09-28T18:00:00Z",
+      "officialUrl": "https://www.skecoplant.com/business/eco-circuler",
+      "providerUrl": "https://www.skecoplant.com/",
+      "regionUrl": "https://cbe.kaist.ac.kr/",
+      "applicationUrl": "/rfp/submit?challengeId=challenge-battery-recycling-safety"
     },
     {
       "id": "challenge-uam-vertiport-space-ux",
@@ -987,7 +1414,12 @@
           "majorCategoryId": "arch_eng",
           "majorCategoryName": "건축학 (설계/공학)",
           "roleName": "버티포트 옥상 공간 구조 설계 및 소음·기류 차단 외피",
-          "requiredSkills": ["건축공간설계", "Rhino 3D", "BIM", "소음차폐설계"],
+          "requiredSkills": [
+            "건축공간설계",
+            "Rhino 3D",
+            "BIM",
+            "소음차폐설계"
+          ],
           "capacity": 2,
           "currentMembers": 0,
           "status": "RECRUITING"
@@ -998,7 +1430,12 @@
           "majorCategoryId": "design",
           "majorCategoryName": "디자인 (시각/산업 등)",
           "roleName": "탑승객 게이트 키오스크 UI 및 심리 안심 인터랙션",
-          "requiredSkills": ["Spatial UX", "Figma", "Service Design", "Kiosk Interaction"],
+          "requiredSkills": [
+            "Spatial UX",
+            "Figma",
+            "Service Design",
+            "Kiosk Interaction"
+          ],
           "capacity": 2,
           "currentMembers": 1,
           "status": "RECRUITING"
@@ -1009,13 +1446,24 @@
           "majorCategoryId": "media_stat",
           "majorCategoryName": "미디어 (언론/통계)",
           "roleName": "도심 비행 수용성 시민 여론 분석 및 미디어 홍보 기획",
-          "requiredSkills": ["통계설문분석", "PR홍보전략", "여론조사", "스토리텔링"],
+          "requiredSkills": [
+            "통계설문분석",
+            "PR홍보전략",
+            "여론조사",
+            "스토리텔링"
+          ],
           "capacity": 1,
           "currentMembers": 0,
           "status": "RECRUITING"
         }
       ],
-      "skills": ["Architectural Design", "Service UX", "3D Modeling", "Noise Shielding", "PR"],
+      "skills": [
+        "Architectural Design",
+        "Service UX",
+        "3D Modeling",
+        "Noise Shielding",
+        "PR"
+      ],
       "resources": [
         {
           "id": "res-uam-01",
@@ -1024,7 +1472,8 @@
           "title": "한화시스템 UAM 버터플라이(Butterfly) 기체 외형 3D CAD 에셋",
           "description": "5인승 전기식 수직이착륙(eVTOL) 기체 규격 및 회전익 렌더링 파일",
           "accessLevel": "PUBLIC",
-          "providerName": "한화시스템 미래모빌리티연구소"
+          "providerName": "한화시스템 미래모빌리티연구소",
+          "url": "https://www.hanwhasystems.com/kr/business/new_business/uam.do"
         },
         {
           "id": "res-uam-02",
@@ -1033,7 +1482,8 @@
           "title": "국토교통부 K-UAM 버티포트 설계 지침 초안",
           "description": "이착륙 패드(FATO/TLOF) 규격, 안전 구역, 소방 방재 기준서",
           "accessLevel": "PUBLIC",
-          "providerName": "국토교통부 UAM 정책기획단"
+          "providerName": "국토교통부 UAM 정책기획단",
+          "url": "https://www.molit.go.kr/"
         }
       ],
       "expectedOutcomes": [
@@ -1042,16 +1492,40 @@
         "도심 항공교통 시민 수용성 분석 및 홍보 전략 보고서"
       ],
       "timeline": [
-        { "phase": "Phase 1: 기체 규격 및 승객 흐름 동선 분석", "period": "1~2주차", "description": "착륙-보안검색-탑승-이륙 소요시간 및 병목 지점 도출", "status": "completed" },
-        { "phase": "Phase 2: 공간 레이아웃 및 3D 모델링", "period": "3~5주차", "description": "소음 저감 방음벽 배치 및 승객 대기 라운지 모델링", "status": "current" },
-        { "phase": "Phase 3: 인터랙티브 키오스크 UX 설계", "period": "6~8주차", "description": "안면인식 탑승권 발권 및 기체 상태 안내 인터페이스 제작", "status": "upcoming" },
-        { "phase": "Phase 4: 전문가 품평회 및 전시", "period": "9~10주차", "description": "항공 모빌리티 포럼 출품 및 최종 제안서 시연", "status": "upcoming" }
+        {
+          "phase": "Phase 1: 기체 규격 및 승객 흐름 동선 분석",
+          "period": "1~2주차",
+          "description": "착륙-보안검색-탑승-이륙 소요시간 및 병목 지점 도출",
+          "status": "completed"
+        },
+        {
+          "phase": "Phase 2: 공간 레이아웃 및 3D 모델링",
+          "period": "3~5주차",
+          "description": "소음 저감 방음벽 배치 및 승객 대기 라운지 모델링",
+          "status": "current"
+        },
+        {
+          "phase": "Phase 3: 인터랙티브 키오스크 UX 설계",
+          "period": "6~8주차",
+          "description": "안면인식 탑승권 발권 및 기체 상태 안내 인터페이스 제작",
+          "status": "upcoming"
+        },
+        {
+          "phase": "Phase 4: 전문가 품평회 및 전시",
+          "period": "9~10주차",
+          "description": "항공 모빌리티 포럼 출품 및 최종 제안서 시연",
+          "status": "upcoming"
+        }
       ],
       "proposalDeadline": "2026-10-22",
       "startDate": "2026-11-01",
       "endDate": "2027-01-10",
       "createdAt": "2026-09-19T13:00:00Z",
-      "updatedAt": "2026-09-26T15:00:00Z"
+      "updatedAt": "2026-09-26T15:00:00Z",
+      "officialUrl": "https://www.hanwhasystems.com/kr/business/new_business/uam.do",
+      "providerUrl": "https://www.hanwhasystems.com/",
+      "regionUrl": "https://grad.hongik.ac.kr/",
+      "applicationUrl": "/rfp/submit?challengeId=challenge-uam-vertiport-space-ux"
     },
     {
       "id": "challenge-local-esg-smart-market",
@@ -1079,7 +1553,12 @@
           "majorCategoryId": "biz_econ",
           "majorCategoryName": "상경 (경영/경제)",
           "roleName": "로컬 마켓 비즈니스 모델(BM) 수립 & 유통 수수료 구조 설계",
-          "requiredSkills": ["Business Model Canvas", "ESG경영", "유통마진분석", "크라우드펀딩"],
+          "requiredSkills": [
+            "Business Model Canvas",
+            "ESG경영",
+            "유통마진분석",
+            "크라우드펀딩"
+          ],
           "capacity": 2,
           "currentMembers": 1,
           "status": "RECRUITING"
@@ -1090,7 +1569,12 @@
           "majorCategoryId": "social_psy",
           "majorCategoryName": "사회 (사회/심리)",
           "roleName": "지역 주민-청년 생산자 상생 공동체 인터뷰 및 사회적 가치 측정",
-          "requiredSkills": ["질적연구", "사회적가치평가", "인터뷰조사", "지역학"],
+          "requiredSkills": [
+            "질적연구",
+            "사회적가치평가",
+            "인터뷰조사",
+            "지역학"
+          ],
           "capacity": 1,
           "currentMembers": 0,
           "status": "RECRUITING"
@@ -1101,13 +1585,24 @@
           "majorCategoryId": "design",
           "majorCategoryName": "디자인 (시각/산업 등)",
           "roleName": "특산품 친환경 패키지 디자인 & 마켓 앱 UI/UX",
-          "requiredSkills": ["친환경패키지", "브랜딩", "Figma", "Web UI"],
+          "requiredSkills": [
+            "친환경패키지",
+            "브랜딩",
+            "Figma",
+            "Web UI"
+          ],
           "capacity": 1,
           "currentMembers": 0,
           "status": "RECRUITING"
         }
       ],
-      "skills": ["ESG Marketing", "Package Design", "Social Research", "UI/UX", "Business Model"],
+      "skills": [
+        "ESG Marketing",
+        "Package Design",
+        "Social Research",
+        "UI/UX",
+        "Business Model"
+      ],
       "resources": [
         {
           "id": "res-local-01",
@@ -1116,7 +1611,8 @@
           "title": "충남 15개 시군 특산물 직거래 물동량 및 청년 농가 DB",
           "description": "품목별 출하 시기, 도매가 추이 및 탄소배출 계수 환산표",
           "accessLevel": "PUBLIC",
-          "providerName": "충남창조경제혁신센터 로컬비즈랩"
+          "providerName": "충남창조경제혁신센터 로컬비즈랩",
+          "url": "https://www.data.go.kr/"
         }
       ],
       "expectedOutcomes": [
@@ -1125,16 +1621,40 @@
         "소셜 임팩트 산출 및 지역 청년 일자리 창출 제안서"
       ],
       "timeline": [
-        { "phase": "Phase 1: 지역 농가 및 로컬 크리에이터 심층 인터뷰", "period": "1~2주차", "description": "충남 공주·부여 현장 방문 및 농가 애로사항 파악", "status": "completed" },
-        { "phase": "Phase 2: 브랜드 콘셉트 및 플랫폼 와이어프레임", "period": "3~4주차", "description": "탄소 저감 포인트 제도 및 로컬 스토리 보드 구상", "status": "current" },
-        { "phase": "Phase 3: 패키지 실물 제작 및 웹 UI 구현", "period": "5~6주차", "description": "친환경 용기 테스트 및 모바일 주문 플로우 코딩", "status": "upcoming" },
-        { "phase": "Phase 4: 팝업 마켓 파일럿 테스트 및 발표", "period": "7~8주차", "description": "대학가 플리마켓 연계 파일럿 판매 및 피드백 분석", "status": "upcoming" }
+        {
+          "phase": "Phase 1: 지역 농가 및 로컬 크리에이터 심층 인터뷰",
+          "period": "1~2주차",
+          "description": "충남 공주·부여 현장 방문 및 농가 애로사항 파악",
+          "status": "completed"
+        },
+        {
+          "phase": "Phase 2: 브랜드 콘셉트 및 플랫폼 와이어프레임",
+          "period": "3~4주차",
+          "description": "탄소 저감 포인트 제도 및 로컬 스토리 보드 구상",
+          "status": "current"
+        },
+        {
+          "phase": "Phase 3: 패키지 실물 제작 및 웹 UI 구현",
+          "period": "5~6주차",
+          "description": "친환경 용기 테스트 및 모바일 주문 플로우 코딩",
+          "status": "upcoming"
+        },
+        {
+          "phase": "Phase 4: 팝업 마켓 파일럿 테스트 및 발표",
+          "period": "7~8주차",
+          "description": "대학가 플리마켓 연계 파일럿 판매 및 피드백 분석",
+          "status": "upcoming"
+        }
       ],
       "proposalDeadline": "2026-10-18",
       "startDate": "2026-10-25",
       "endDate": "2026-12-20",
       "createdAt": "2026-09-17T15:00:00Z",
-      "updatedAt": "2026-09-25T11:00:00Z"
+      "updatedAt": "2026-09-25T11:00:00Z",
+      "officialUrl": "https://ccei.creativekorea.or.kr/chungnam/",
+      "providerUrl": "https://www.kosmes.or.kr/",
+      "regionUrl": "https://ccei.creativekorea.or.kr/chungnam/",
+      "applicationUrl": "/rfp/submit?challengeId=challenge-local-esg-smart-market"
     }
   ]
 }

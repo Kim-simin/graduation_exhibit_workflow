@@ -69,6 +69,8 @@ export interface ParentChallenge {
   region: string;
   description: string;
   bannerImage?: string;
+  officialUrl?: string;
+  providerUrl?: string;
 }
 
 export interface Challenge {
@@ -100,6 +102,10 @@ export interface Challenge {
   endDate: string;
   createdAt: string;
   updatedAt: string;
+  officialUrl?: string;
+  providerUrl?: string;
+  regionUrl?: string;
+  applicationUrl?: string;
 }
 
 export interface TeamApplication {
