@@ -1,0 +1,616 @@
+{
+  "routes": [
+    "app/(public)/brand-assets/page.tsx",
+    "app/(public)/corporate/page.tsx",
+    "app/(public)/curriculums/page.tsx",
+    "app/(public)/exhibit/[id]/page.tsx",
+    "app/(public)/industry-challenges/[id]/page.tsx",
+    "app/(public)/industry-challenges/page.tsx",
+    "app/(public)/jobs/page.tsx",
+    "app/(public)/mentoring/[id]/page.tsx",
+    "app/(public)/mentoring/page.tsx",
+    "app/(public)/opportunities/page.tsx",
+    "app/(public)/page.tsx",
+    "app/(public)/professors/[id]/page.tsx",
+    "app/(public)/professors/page.tsx",
+    "app/(public)/rfp/[id]/page.tsx",
+    "app/(public)/rfp/page.tsx",
+    "app/(public)/rfp/submit/page.tsx",
+    "app/(public)/students/[id]/page.tsx",
+    "app/(public)/students/page.tsx",
+    "app/admin/content/page.tsx",
+    "app/admin/page.tsx",
+    "app/admin/professors/page.tsx",
+    "app/api/admin/approval-queue/route.ts",
+    "app/api/admin/approval/bulk/route.ts",
+    "app/api/admin/approval/route.ts",
+    "app/api/admin/operations/route.ts",
+    "app/api/admin/opportunities/route.ts",
+    "app/api/admin/research/route.ts",
+    "app/api/admin/runtime/route.ts",
+    "app/api/admin/schedules/[id]/run/route.ts",
+    "app/api/admin/schedules/[id]/toggle/route.ts",
+    "app/api/admin/schedules/route.ts",
+    "app/api/cards/analyze-link/route.ts",
+    "app/api/cards/route.ts",
+    "app/api/content-generation/route.ts",
+    "app/api/content-research/route.ts",
+    "app/api/curriculums/route.ts",
+    "app/api/data-intelligence/route.ts",
+    "app/api/exhibitions/[id]/route.ts",
+    "app/api/exhibitions/route.ts",
+    "app/api/images/[...path]/route.ts",
+    "app/api/jobs/departments/route.ts",
+    "app/api/jobs/route.ts",
+    "app/api/opportunities/[id]/route.ts",
+    "app/api/opportunities/route.ts",
+    "app/api/professors/queue/route.ts",
+    "app/api/professors/route.ts",
+    "app/api/professors/scan/route.ts",
+    "app/api/publish/instagram/route.ts",
+    "app/api/publish/instagram/status/route.ts",
+    "app/api/publish/threads/route.ts",
+    "app/api/publish/youtube/route.ts",
+    "app/api/record-video/route.ts",
+    "app/api/reels/generate/route.ts",
+    "app/api/research/antigravity-intake/route.ts",
+    "app/api/research/approve/route.ts",
+    "app/api/research/direct-upload/route.ts",
+    "app/api/research/manual/route.ts",
+    "app/api/research/route.ts",
+    "app/api/research/sources/route.ts",
+    "app/api/research/vision-extract/route.ts",
+    "app/api/stream-log/route.ts",
+    "app/api/taxonomy/route.ts",
+    "app/api/upload/route.ts"
+  ],
+  "api_routes": {
+    "/api/admin/approval": {
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "file": "app/api/admin/approval/route.ts",
+      "length": 10683
+    },
+    "/api/admin/approval/bulk": {
+      "methods": [
+        "POST"
+      ],
+      "file": "app/api/admin/approval/bulk/route.ts",
+      "length": 7368
+    },
+    "/api/admin/approval-queue": {
+      "methods": [
+        "GET"
+      ],
+      "file": "app/api/admin/approval-queue/route.ts",
+      "length": 9349
+    },
+    "/api/admin/operations": {
+      "methods": [
+        "GET"
+      ],
+      "file": "app/api/admin/operations/route.ts",
+      "length": 6585
+    },
+    "/api/admin/opportunities": {
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "file": "app/api/admin/opportunities/route.ts",
+      "length": 4092
+    },
+    "/api/admin/research": {
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "file": "app/api/admin/research/route.ts",
+      "length": 5778
+    },
+    "/api/admin/runtime": {
+      "methods": [
+        "GET"
+      ],
+      "file": "app/api/admin/runtime/route.ts",
+      "length": 6163
+    },
+    "/api/admin/schedules": {
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "file": "app/api/admin/schedules/route.ts",
+      "length": 6760
+    },
+    "/api/admin/schedules/[id]/run": {
+      "methods": [
+        "POST"
+      ],
+      "file": "app/api/admin/schedules/[id]/run/route.ts",
+      "length": 4460
+    },
+    "/api/admin/schedules/[id]/toggle": {
+      "methods": [
+        "POST"
+      ],
+      "file": "app/api/admin/schedules/[id]/toggle/route.ts",
+      "length": 3678
+    },
+    "/api/cards": {
+      "methods": [
+        "POST",
+        "DELETE",
+        "PATCH"
+      ],
+      "file": "app/api/cards/route.ts",
+      "length": 13786
+    },
+    "/api/cards/analyze-link": {
+      "methods": [
+        "POST"
+      ],
+      "file": "app/api/cards/analyze-link/route.ts",
+      "length": 2670
+    },
+    "/api/content-generation": {
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "file": "app/api/content-generation/route.ts",
+      "length": 5005
+    },
+    "/api/content-research": {
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "file": "app/api/content-research/route.ts",
+      "length": 4903
+    },
+    "/api/curriculums": {
+      "methods": [
+        "GET",
+        "POST",
+        "DELETE"
+      ],
+      "file": "app/api/curriculums/route.ts",
+      "length": 6342
+    },
+    "/api/data-intelligence": {
+      "methods": [
+        "GET"
+      ],
+      "file": "app/api/data-intelligence/route.ts",
+      "length": 1706
+    },
+    "/api/exhibitions": {
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "file": "app/api/exhibitions/route.ts",
+      "length": 1659
+    },
+    "/api/exhibitions/[id]": {
+      "methods": [
+        "GET",
+        "PATCH"
+      ],
+      "file": "app/api/exhibitions/[id]/route.ts",
+      "length": 5934
+    },
+    "/api/images/[...path]": {
+      "methods": [
+        "GET"
+      ],
+      "file": "app/api/images/[...path]/route.ts",
+      "length": 2000
+    },
+    "/api/jobs": {
+      "methods": [
+        "GET"
+      ],
+      "file": "app/api/jobs/route.ts",
+      "length": 9958
+    },
+    "/api/jobs/departments": {
+      "methods": [
+        "GET"
+      ],
+      "file": "app/api/jobs/departments/route.ts",
+      "length": 4379
+    },
+    "/api/opportunities": {
+      "methods": [
+        "GET"
+      ],
+      "file": "app/api/opportunities/route.ts",
+      "length": 1937
+    },
+    "/api/opportunities/[id]": {
+      "methods": [
+        "GET"
+      ],
+      "file": "app/api/opportunities/[id]/route.ts",
+      "length": 907
+    },
+    "/api/professors": {
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "file": "app/api/professors/route.ts",
+      "length": 4004
+    },
+    "/api/professors/queue": {
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "file": "app/api/professors/queue/route.ts",
+      "length": 5265
+    },
+    "/api/professors/scan": {
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "file": "app/api/professors/scan/route.ts",
+      "length": 3393
+    },
+    "/api/publish/instagram": {
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "file": "app/api/publish/instagram/route.ts",
+      "length": 7273
+    },
+    "/api/publish/instagram/status": {
+      "methods": [
+        "GET"
+      ],
+      "file": "app/api/publish/instagram/status/route.ts",
+      "length": 1371
+    },
+    "/api/publish/threads": {
+      "methods": [
+        "POST"
+      ],
+      "file": "app/api/publish/threads/route.ts",
+      "length": 649
+    },
+    "/api/publish/youtube": {
+      "methods": [
+        "POST"
+      ],
+      "file": "app/api/publish/youtube/route.ts",
+      "length": 653
+    },
+    "/api/record-video": {
+      "methods": [
+        "POST"
+      ],
+      "file": "app/api/record-video/route.ts",
+      "length": 3233
+    },
+    "/api/reels/generate": {
+      "methods": [
+        "POST"
+      ],
+      "file": "app/api/reels/generate/route.ts",
+      "length": 5224
+    },
+    "/api/research": {
+      "methods": [
+        "POST"
+      ],
+      "file": "app/api/research/route.ts",
+      "length": 1167
+    },
+    "/api/research/antigravity-intake": {
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "file": "app/api/research/antigravity-intake/route.ts",
+      "length": 3529
+    },
+    "/api/research/approve": {
+      "methods": [
+        "POST"
+      ],
+      "file": "app/api/research/approve/route.ts",
+      "length": 7869
+    },
+    "/api/research/direct-upload": {
+      "methods": [
+        "POST"
+      ],
+      "file": "app/api/research/direct-upload/route.ts",
+      "length": 5873
+    },
+    "/api/research/manual": {
+      "methods": [
+        "POST"
+      ],
+      "file": "app/api/research/manual/route.ts",
+      "length": 2502
+    },
+    "/api/research/sources": {
+      "methods": [
+        "GET"
+      ],
+      "file": "app/api/research/sources/route.ts",
+      "length": 6182
+    },
+    "/api/research/vision-extract": {
+      "methods": [
+        "POST"
+      ],
+      "file": "app/api/research/vision-extract/route.ts",
+      "length": 4518
+    },
+    "/api/stream-log": {
+      "methods": [
+        "GET"
+      ],
+      "file": "app/api/stream-log/route.ts",
+      "length": 823
+    },
+    "/api/taxonomy": {
+      "methods": [
+        "GET"
+      ],
+      "file": "app/api/taxonomy/route.ts",
+      "length": 1617
+    },
+    "/api/upload": {
+      "methods": [
+        "POST"
+      ],
+      "file": "app/api/upload/route.ts",
+      "length": 3133
+    }
+  },
+  "env_usages": {
+    "app/(public)/exhibit/[id]/page.tsx": [
+      "NODE_ENV"
+    ],
+    "app/(public)/professors/page.tsx": [
+      "NODE_ENV"
+    ],
+    "app/api/admin/research/route.ts": [
+      "NODE_ENV"
+    ],
+    "app/api/admin/schedules/[id]/run/route.ts": [
+      "NODE_ENV"
+    ],
+    "app/api/cards/route.ts": [
+      "NODE_ENV"
+    ],
+    "app/api/cards/analyze-link/route.ts": [
+      "NODE_ENV"
+    ],
+    "app/api/content-generation/route.ts": [
+      "NODE_ENV"
+    ],
+    "app/api/content-research/route.ts": [
+      "NODE_ENV"
+    ],
+    "app/api/jobs/route.ts": [
+      "WORKNET_API_KEY"
+    ],
+    "app/api/professors/queue/route.ts": [
+      "NODE_ENV"
+    ],
+    "app/api/professors/scan/route.ts": [
+      "NODE_ENV"
+    ],
+    "app/api/publish/instagram/route.ts": [
+      "NODE_ENV"
+    ],
+    "app/api/publish/threads/route.ts": [
+      "NODE_ENV"
+    ],
+    "app/api/publish/youtube/route.ts": [
+      "NODE_ENV"
+    ],
+    "app/api/record-video/route.ts": [
+      "LOCALAPPDATA",
+      "NODE_ENV"
+    ],
+    "app/api/reels/generate/route.ts": [
+      "NODE_ENV"
+    ],
+    "app/api/research/manual/route.ts": [
+      "NODE_ENV"
+    ],
+    "app/api/research/vision-extract/route.ts": [
+      "NODE_ENV"
+    ],
+    "components/exhibition-detail-modal.tsx": [
+      "NODE_ENV"
+    ],
+    "components/exhibition-gallery.tsx": [
+      "NODE_ENV"
+    ],
+    "components/navigation/GNB.tsx": [
+      "NODE_ENV"
+    ],
+    "components/navigation/Sidebar.tsx": [
+      "NODE_ENV"
+    ],
+    "lib/gemini.ts": [
+      "GEMINI_API_KEY",
+      "OPENAI_API_KEY"
+    ]
+  },
+  "root_env_keys": [
+    "LLAMA_API_BASE",
+    "LLAMA_MODEL",
+    "LANGCHAIN_TRACING_V2",
+    "LANGCHAIN_API_KEY",
+    "LANGCHAIN_PROJECT",
+    "OPENAI_API_KEY",
+    "OPENAI_MODEL",
+    "INSTA_USERNAME",
+    "INSTA_PASSWORD"
+  ],
+  "components": {
+    "add-exhibition-modal.tsx": {
+      "file": "components/add-exhibition-modal.tsx"
+    },
+    "artwork-lightbox-modal.tsx": {
+      "file": "components/artwork-lightbox-modal.tsx"
+    },
+    "CurriculumCard.tsx": {
+      "file": "components/CurriculumCard.tsx"
+    },
+    "CurriculumEditModal.tsx": {
+      "file": "components/CurriculumEditModal.tsx"
+    },
+    "CurriculumShortsModal.tsx": {
+      "file": "components/CurriculumShortsModal.tsx"
+    },
+    "exhibition-detail-modal.tsx": {
+      "file": "components/exhibition-detail-modal.tsx"
+    },
+    "exhibition-gallery.tsx": {
+      "file": "components/exhibition-gallery.tsx"
+    },
+    "instagram-upload-modal.tsx": {
+      "file": "components/instagram-upload-modal.tsx"
+    },
+    "PendingCurriculumCard.tsx": {
+      "file": "components/PendingCurriculumCard.tsx"
+    },
+    "screenshot-upload-modal.tsx": {
+      "file": "components/screenshot-upload-modal.tsx"
+    },
+    "theme-toggle.tsx": {
+      "file": "components/theme-toggle.tsx"
+    },
+    "UniversityProfessorInsightModal.tsx": {
+      "file": "components/UniversityProfessorInsightModal.tsx"
+    },
+    "VideoRecorderBar.tsx": {
+      "file": "components/VideoRecorderBar.tsx"
+    },
+    "admin/runtime/AgentWorkflowGraph.tsx": {
+      "file": "components/admin/runtime/AgentWorkflowGraph.tsx"
+    },
+    "admin/runtime/AntigravityIntakeBox.tsx": {
+      "file": "components/admin/runtime/AntigravityIntakeBox.tsx"
+    },
+    "admin/runtime/ApprovalQueueView.tsx": {
+      "file": "components/admin/runtime/ApprovalQueueView.tsx"
+    },
+    "admin/runtime/ContentApprovalCard.tsx": {
+      "file": "components/admin/runtime/ContentApprovalCard.tsx"
+    },
+    "admin/runtime/NodeDetailPanel.tsx": {
+      "file": "components/admin/runtime/NodeDetailPanel.tsx"
+    },
+    "admin/runtime/OperationsTopBar.tsx": {
+      "file": "components/admin/runtime/OperationsTopBar.tsx"
+    },
+    "admin/runtime/OpportunityManagerView.tsx": {
+      "file": "components/admin/runtime/OpportunityManagerView.tsx"
+    },
+    "admin/runtime/RejectionModal.tsx": {
+      "file": "components/admin/runtime/RejectionModal.tsx"
+    },
+    "admin/runtime/ResearchMonitorView.tsx": {
+      "file": "components/admin/runtime/ResearchMonitorView.tsx"
+    },
+    "admin/runtime/RunMonitorPanel.tsx": {
+      "file": "components/admin/runtime/RunMonitorPanel.tsx"
+    },
+    "admin/runtime/SchedulerManager.tsx": {
+      "file": "components/admin/runtime/SchedulerManager.tsx"
+    },
+    "challenge/ChallengeCard.tsx": {
+      "file": "components/challenge/ChallengeCard.tsx"
+    },
+    "challenge/ChallengeStickyCTA.tsx": {
+      "file": "components/challenge/ChallengeStickyCTA.tsx"
+    },
+    "challenge/MajorFilterChips.tsx": {
+      "file": "components/challenge/MajorFilterChips.tsx"
+    },
+    "challenge/ResourceDetailModal.tsx": {
+      "file": "components/challenge/ResourceDetailModal.tsx"
+    },
+    "challenge/TeamApplicationModal.tsx": {
+      "file": "components/challenge/TeamApplicationModal.tsx"
+    },
+    "monetization/AcademyConsultModal.tsx": {
+      "file": "components/monetization/AcademyConsultModal.tsx"
+    },
+    "monetization/CorporateOfferModal.tsx": {
+      "file": "components/monetization/CorporateOfferModal.tsx"
+    },
+    "monetization/FreelanceProjectModal.tsx": {
+      "file": "components/monetization/FreelanceProjectModal.tsx"
+    },
+    "monetization/MentoringBookingModal.tsx": {
+      "file": "components/monetization/MentoringBookingModal.tsx"
+    },
+    "monetization/ScoutModal.tsx": {
+      "file": "components/monetization/ScoutModal.tsx"
+    },
+    "navigation/GNB.tsx": {
+      "file": "components/navigation/GNB.tsx"
+    },
+    "navigation/MobileHeader.tsx": {
+      "file": "components/navigation/MobileHeader.tsx"
+    },
+    "navigation/Sidebar.tsx": {
+      "file": "components/navigation/Sidebar.tsx"
+    },
+    "opportunity/EquipmentCard.tsx": {
+      "file": "components/opportunity/EquipmentCard.tsx"
+    },
+    "opportunity/OpportunityCard.tsx": {
+      "file": "components/opportunity/OpportunityCard.tsx"
+    },
+    "opportunity/ResourceDetailModal.tsx": {
+      "file": "components/opportunity/ResourceDetailModal.tsx"
+    }
+  },
+  "data_files": [
+    "brand_assets.json",
+    "content_research.json",
+    "corporate.json",
+    "curriculums.json",
+    "equipment.json",
+    "equipment.json.bak",
+    "generated_contents.json",
+    "industry_challenges.json",
+    "jobs.json",
+    "leading_departments_master.json",
+    "logs/approval_audit_logs.json",
+    "logs/corporate_research_runs.json",
+    "logs/pipeline_runs.json",
+    "logs/research_runs.json",
+    "logs/scheduler_audit_logs.json",
+    "mentors.json",
+    "opportunities.json",
+    "opportunities.json.bak",
+    "professors.json",
+    "professors.json.bak",
+    "research/intelligence/recruitment_intelligence.json",
+    "rfp.json",
+    "runtime_pipeline.json",
+    "schedules.json",
+    "schedules.json.bak",
+    "students.json",
+    "taxonomy.json",
+    "university_queue.json"
+  ]
+}

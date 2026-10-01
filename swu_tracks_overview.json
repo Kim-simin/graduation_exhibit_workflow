@@ -1,0 +1,250 @@
+{
+  "df": {
+    "department": "DIGITAL FABRICATION과",
+    "count": 30,
+    "projects": [
+      {
+        "href": "/project/1",
+        "text": "Plug&Go | 강규림 | Plug&Go | 강규림",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F1%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/2",
+        "text": "airbin | 강현수 | airbin | 강현수",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F2%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/3",
+        "text": "AirTack | 김민지 | AirTack | 김민지",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F3%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/4",
+        "text": "터틀가든 | 김민지 | 터틀가든 | 김민지",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F4%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/5",
+        "text": "Dear Angel | 김서하 | Dear Angel | 김서하",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F5%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/6",
+        "text": "Check Out | 김세은 | Check Out | 김세은",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F6%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/7",
+        "text": "Hold on | 김수민 | Hold on | 김수민",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F7%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/8",
+        "text": "SORT (소트) | 김수연 | SORT (소트) | 김수연",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F8%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/9",
+        "text": "neurin | 김정연 | neurin | 김정연",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F9%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/10",
+        "text": "Pack n' Roll | 김정원 | Pack n' Roll | 김정원",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F10%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/11",
+        "text": "PeTrion+ | 김주연 | PeTrion+ | 김주연",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F11%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/12",
+        "text": "FLOVY | 김주현 | FLOVY | 김주현",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F12%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/13",
+        "text": "NOOK | 김지오 | NOOK | 김지오",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F13%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/14",
+        "text": "Safe Security Tape | 김희진 | Safe Security Tape | 김희진",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F14%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/15",
+        "text": "CoolLink | 박유진 | CoolLink | 박유진",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F15%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/16",
+        "text": "flipsheet (플립시트) | 박재영 | flipsheet (플립시트) | 박재영",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F16%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/17",
+        "text": "Kinekt | 손희아 | Kinekt | 손희아",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F17%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/18",
+        "text": "Camport | 신혜규 | Camport | 신혜규",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F18%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/19",
+        "text": "world | 심채연 | world | 심채연",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F19%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/20",
+        "text": "Fair Desk | 양지윤 | Fair Desk | 양지윤",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F20%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/21",
+        "text": "CamPack | 이강이 | CamPack | 이강이",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F21%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/22",
+        "text": "STABLO | 이도연 | STABLO | 이도연",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F22%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/23",
+        "text": "Linko | 이석영 | Linko | 이석영",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F23%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/24",
+        "text": "PET-MENT | 이소정 | PET-MENT | 이소정",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F24%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/25",
+        "text": "Buzz | 이수빈 | Buzz | 이수빈",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F25%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/26",
+        "text": "Steply | 조강미 | Steply | 조강미",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F26%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/27",
+        "text": "Lirio | 지현민 | Lirio | 지현민",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F27%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/28",
+        "text": "willus | 최유진 | willus | 최유진",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F28%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/29",
+        "text": "Traqlet | 최지혜 | Traqlet | 최지혜",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F29%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/30",
+        "text": "FITLY | 김나현 | FITLY | 김나현",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F30%2Fthumbnail&w=3840&q=75"
+      }
+    ]
+  },
+  "ux": {
+    "department": "UX DESIGN과",
+    "count": 10,
+    "projects": [
+      {
+        "href": "/project/31",
+        "text": "킥킷 (kick - it!) | 김서하 | 박유진 | 박재영 | 양지윤 | 킥킷 (kick - it!) | 김서하 | 박유진 | 박재영 | 양지윤",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F31%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/32",
+        "text": "Floit | 강보영 | 권소영 | 김나현 | 김해인 | Floit | 강보영 | 권소영 | 김나현 | 김해인",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F32%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/33",
+        "text": "미러미 | 신혜정 | 지현민 | 최지혜 | 미러미 | 신혜정 | 지현민 | 최지혜",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F33%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/34",
+        "text": "OWN | 김민지 | 김수민 | 심채연 | 이선민 | OWN | 김민지 | 김수민 | 심채연 | 이선민",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F34%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/35",
+        "text": "FOCO | 김정원 | 방세빈 | 이도연 | FOCO | 김정원 | 방세빈 | 이도연",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F35%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/36",
+        "text": "온점 : 온전한 나의 시간 | 김민지 | 이석영 | 함정민 | 허은지 | 온점 : 온전한 나의 시간 | 김민지 | 이석영 | 함정민 | 허은지",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F36%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/37",
+        "text": "moro | 김정연 | 이강이 | 최유진 | moro | 김정연 | 이강이 | 최유진",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F37%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/38",
+        "text": "COUSE (코어스) | 송수빈 | 신혜규 | 이소정 | 임선호 | COUSE (코어스) | 송수빈 | 신혜규 | 이소정 | 임선호",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F38%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/39",
+        "text": "dot(닷) | 박서연 | 박나리 | 유우경 | 조강미 | dot(닷) | 박서연 | 박나리 | 유우경 | 조강미",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F39%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/40",
+        "text": "CLIP | 김세은 | 김수연 | 김주현 | 손희아 | CLIP | 김세은 | 김수연 | 김주현 | 손희아",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F40%2Fthumbnail&w=3840&q=75"
+      }
+    ]
+  },
+  "bx": {
+    "department": "BX DESIGN과",
+    "count": 6,
+    "projects": [
+      {
+        "href": "/project/41",
+        "text": "Insta 350, Tiny Planet | 김주연 | 이선민 | 임선호 | Insta 350, Tiny Planet | 김주연 | 이선민 | 임선호",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F41%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/42",
+        "text": "Solongos Cube | 김지오 | 김희진 | Solongos Cube | 김지오 | 김희진",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F42%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/43",
+        "text": "Library 273 | 방세빈 | 이수빈 | 함정민 | 허은지 | Library 273 | 방세빈 | 이수빈 | 함정민 | 허은지",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F43%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/44",
+        "text": "SEREIN(세렌) | 권소영 | 김해인 | SEREIN(세렌) | 권소영 | 김해인",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F44%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/45",
+        "text": "HayDyu | 강보영 | 강현수 | 박서연 | HayDyu | 강보영 | 강현수 | 박서연",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F45%2Fthumbnail&w=3840&q=75"
+      },
+      {
+        "href": "/project/46",
+        "text": "MINI X-Let | 강규림 | 신혜정 | MINI X-Let | 강규림 | 신혜정",
+        "img": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdnlzsjt9c%2Fimage%2Fupload%2Fw_1200%2Ch_1200%2Cc_fill%2Cq_auto%2Cf_auto%2Fswuid2025%2Fproject%2F46%2Fthumbnail&w=3840&q=75"
+      }
+    ]
+  }
+}

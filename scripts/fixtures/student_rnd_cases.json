@@ -1,0 +1,359 @@
+{
+  "now": "2026-09-29T12:00:00+09:00",
+  "base": {
+    "id": "test-student-rnd",
+    "type": "RND",
+    "title": "테스트 전용 학부 연구 참여 모집",
+    "providerName": "테스트 대학교",
+    "region": "전국",
+    "description": "Synthetic fixture; never import into production.",
+    "targetStudents": "학부 재학생",
+    "eligibleAudience": [
+      "학부생"
+    ],
+    "eligibleUniversities": [
+      "ALL"
+    ],
+    "eligibleDepartments": [
+      "ALL"
+    ],
+    "eligibleMajors": [
+      "ALL"
+    ],
+    "majorRestriction": false,
+    "crossUniversityAvailable": true,
+    "accessScope": "PUBLIC",
+    "recruitmentStartAt": "2026-09-01",
+    "recruitmentEndAt": "2026-09-30",
+    "status": "OPEN",
+    "recruitmentStatus": "OPEN",
+    "benefits": [],
+    "technologies": [],
+    "fields": [
+      "연구"
+    ],
+    "sourceUrl": "https://www.ntis.go.kr/ThSearchProjectList.do",
+    "sourceType": "NTIS",
+    "sourceOrganization": "테스트 전용",
+    "sourceVerifiedAt": "2026-09-28T09:00:00+09:00",
+    "tags": [
+      "R&D"
+    ],
+    "approvalStatus": "PUBLISHED",
+    "createdAt": "2026-09-28T09:00:00+09:00",
+    "updatedAt": "2026-09-28T09:00:00+09:00",
+    "recruitmentEvidence": {
+      "sourceUrl": "https://example.ac.kr/research/notice/123",
+      "sourceKind": "UNIVERSITY_OFFICIAL",
+      "isOfficialDetail": true,
+      "eligibilityText": "지원자격: 대학 학부생 및 대학 재학생",
+      "recruitmentText": "모집기간: 2026년 9월 1일부터 9월 30일까지 접수",
+      "verifiedAt": "2026-09-28T09:00:00+09:00",
+      "rollingAdmission": false
+    }
+  },
+  "cases": [
+    {
+      "name": "공식 학부생 모집",
+      "patch": {},
+      "expectedActive": true,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "NTIS 과제만 존재",
+      "patch": {
+        "recruitmentEvidence": null
+      },
+      "expectedActive": false,
+      "expectedStatus": "UNKNOWN"
+    },
+    {
+      "name": "IRIS 발견을 검증으로 사용",
+      "patch": {
+        "recruitmentEvidence": {
+          "sourceUrl": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?id=123",
+          "sourceKind": "RESEARCH_INSTITUTE_OFFICIAL"
+        }
+      },
+      "expectedActive": false,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "마감",
+      "patch": {
+        "recruitmentEndAt": "2026-09-28"
+      },
+      "expectedActive": false,
+      "expectedStatus": "CLOSED"
+    },
+    {
+      "name": "접수 전",
+      "patch": {
+        "recruitmentStartAt": "2026-10-01",
+        "recruitmentEndAt": "2026-10-30"
+      },
+      "expectedActive": false,
+      "expectedStatus": "UPCOMING"
+    },
+    {
+      "name": "기한 없음",
+      "patch": {
+        "recruitmentEndAt": null
+      },
+      "expectedActive": false,
+      "expectedStatus": "UNKNOWN"
+    },
+    {
+      "name": "잘못된 날짜",
+      "patch": {
+        "recruitmentEndAt": "not-a-date"
+      },
+      "expectedActive": false,
+      "expectedStatus": "UNKNOWN"
+    },
+    {
+      "name": "존재하지 않는 날짜",
+      "patch": {
+        "recruitmentEndAt": "2026-02-30"
+      },
+      "expectedActive": false,
+      "expectedStatus": "UNKNOWN"
+    },
+    {
+      "name": "원문에 상시 모집 명시",
+      "patch": {
+        "recruitmentEndAt": null,
+        "recruitmentEvidence": {
+          "rollingAdmission": true,
+          "recruitmentText": "학부생 연구인턴 상시 모집"
+        }
+      },
+      "expectedActive": true,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "상시 표시만 있음",
+      "patch": {
+        "recruitmentEndAt": null,
+        "recruitmentEvidence": {
+          "rollingAdmission": true
+        }
+      },
+      "expectedActive": false,
+      "expectedStatus": "UNKNOWN"
+    },
+    {
+      "name": "상시 검증 30일 초과",
+      "patch": {
+        "recruitmentEndAt": null,
+        "recruitmentEvidence": {
+          "rollingAdmission": true,
+          "recruitmentText": "학생연구원 상시 모집",
+          "verifiedAt": "2026-08-01T09:00:00+09:00"
+        }
+      },
+      "expectedActive": false,
+      "expectedStatus": "UNKNOWN"
+    },
+    {
+      "name": "대학원생 전용",
+      "patch": {
+        "eligibleAudience": [
+          "재학생"
+        ],
+        "recruitmentEvidence": {
+          "eligibilityText": "대학원 재학생(석사·박사 과정)만 지원 가능"
+        }
+      },
+      "expectedActive": false,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "연구인턴 직무만 확인",
+      "patch": {
+        "eligibleAudience": [
+          "연구인턴"
+        ],
+        "recruitmentEvidence": {
+          "eligibilityText": "연구인턴 모집, 석사학위 이상 지원 가능"
+        }
+      },
+      "expectedActive": false,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "학부생 지원불가",
+      "patch": {
+        "recruitmentEvidence": {
+          "eligibilityText": "학부생 지원 불가"
+        }
+      },
+      "expectedActive": false,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "학부생 지원할 수 없음",
+      "patch": {
+        "recruitmentEvidence": {
+          "eligibilityText": "학부생은 지원할 수 없습니다"
+        }
+      },
+      "expectedActive": false,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "학부생 모집하지 않음",
+      "patch": {
+        "recruitmentEvidence": {
+          "eligibilityText": "학부생 모집하지 않음"
+        }
+      },
+      "expectedActive": false,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "목록페이지",
+      "patch": {
+        "recruitmentEvidence": {
+          "sourceUrl": "https://www.nst.re.kr/www/selectBbsNttList.do?bbsNo=19&key=61",
+          "sourceKind": "NST"
+        }
+      },
+      "expectedActive": false,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "공식 홈",
+      "patch": {
+        "recruitmentEvidence": {
+          "sourceUrl": "https://example.ac.kr/"
+        }
+      },
+      "expectedActive": false,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "공식 상세 미확인",
+      "patch": {
+        "recruitmentEvidence": {
+          "isOfficialDetail": false
+        }
+      },
+      "expectedActive": false,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "유사 도메인",
+      "patch": {
+        "recruitmentEvidence": {
+          "sourceUrl": "https://example.ac.kr.attacker.com/notice/123"
+        }
+      },
+      "expectedActive": false,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "위조 저장 플래그",
+      "patch": {
+        "studentParticipationVerified": true,
+        "officialSourceVerified": true,
+        "recruitmentEvidence": null
+      },
+      "expectedActive": false,
+      "expectedStatus": "UNKNOWN"
+    },
+    {
+      "name": "장비는 R&D 아님",
+      "patch": {
+        "type": "RESEARCH_EQUIPMENT"
+      },
+      "expectedActive": false,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "검토 후보",
+      "patch": {
+        "approvalStatus": "PENDING_REVIEW"
+      },
+      "expectedActive": false,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "거절 후보",
+      "patch": {
+        "approvalStatus": "REJECTED"
+      },
+      "expectedActive": false,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "종료 상태 우선",
+      "patch": {
+        "status": "CLOSED"
+      },
+      "expectedActive": false,
+      "expectedStatus": "CLOSED"
+    },
+    {
+      "name": "미래 검증일",
+      "patch": {
+        "recruitmentEvidence": {
+          "verifiedAt": "2026-10-01T09:00:00+09:00"
+        }
+      },
+      "expectedActive": false,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "날짜만 있는 마감 당일",
+      "patch": {
+        "recruitmentEndAt": "2026-09-29"
+      },
+      "expectedActive": true,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "공식 기관 상세",
+      "patch": {
+        "recruitmentEvidence": {
+          "sourceUrl": "https://school.krict.re.kr/prog/jobOffer/kor/sub04_04_02/view.do?id=123",
+          "sourceKind": "RESEARCH_INSTITUTE_OFFICIAL"
+        }
+      },
+      "expectedActive": true,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "원문 손상",
+      "patch": {
+        "recruitmentEvidence": {
+          "eligibilityText": [
+            "학부생"
+          ]
+        }
+      },
+      "expectedActive": false,
+      "expectedStatus": "OPEN"
+    },
+    {
+      "name": "모집 원문 손상",
+      "patch": {
+        "recruitmentEvidence": {
+          "recruitmentText": 123
+        }
+      },
+      "expectedActive": false,
+      "expectedStatus": "UNKNOWN"
+    },
+    {
+      "name": "URL 결합 손상",
+      "patch": {
+        "recruitmentEvidence": {
+          "sourceUrl": "https://example.ac.kr/notice/123https://example.ac.kr/other"
+        }
+      },
+      "expectedActive": false,
+      "expectedStatus": "OPEN"
+    }
+  ]
+}

@@ -3,8 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npm run dev --prefix my-exhibit-platform",
-    "build": "npm run build --prefix my-exhibit-platform",
-    "start": "npm run start --prefix my-exhibit-platform"
+    "dev": "npm run dev --prefix web",
+    "build": "npm run build --prefix web",
+    "start": "npm run start --prefix web",
+    "dev:web": "npm run dev --prefix web",
+    "build:web": "npm run build --prefix web",
+    "start:web": "npm run start --prefix web",
+    "dev:admin": "npm run dev --prefix admin",
+    "build:admin": "npm run build --prefix admin",
+    "start:admin": "npm run start --prefix admin",
+    "publish:export": "py scripts/publish_pipeline.py"
   }
 }

@@ -1,0 +1,1149 @@
+'use client';
+
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import {
+  Sparkles,
+  Search,
+  ClipboardPaste,
+  School,
+  Layers,
+  Eye,
+  ArrowUpRight,
+  X,
+  Calendar,
+  Filter,
+  MapPin,
+  CheckCircle2,
+  Clock,
+  Shield,
+  ShieldAlert,
+  Edit,
+  Trash2,
+  ExternalLink,
+  Save,
+  Loader2,
+  Check,
+  Instagram,
+  Building2,
+  Briefcase,
+  PlusCircle,
+  Plus,
+  Share2,
+  Globe,
+  Play,
+  Film,
+  Compass,
+  ArrowRight,
+} from "lucide-react";
+import { Exhibition, Artwork } from "@/lib/get-exhibitions";
+import ScreenshotUploadModal from "./screenshot-upload-modal";
+import { InstagramUploadModal } from "./instagram-upload-modal";
+import { ExhibitionDetailModal } from "./exhibition-detail-modal";
+import AddExhibitionModal from "./add-exhibition-modal";
+import ThemeToggle from "./theme-toggle";
+import { STANDARD_CATEGORIES, EDIT_CATEGORIES, getStandardCategory } from "@/src/utils/categoryMapper";
+
+// 10대 통합 표준 카테고리 메타데이터
+const INDUSTRIES = STANDARD_CATEGORIES;
+
+// EDIT_CATEGORIES imported from categoryMapper
+
+interface Props {
+  initialExhibitions: Exhibition[];
+}
+
+export default function ExhibitionGallery({ initialExhibitions }: Props) {
+  const [selectedCategory, setSelectedCategory] = useState("전체 분야");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedYear, setSelectedYear] = useState<string>("all");
+  const [statusFilter, setStatusFilter] = useState<"all" | "uploaded" | "pending">("all");
+  const [selectedExhibition, setSelectedExhibition] = useState<Exhibition | null>(null);
+  const [isDetailEditMode, setIsDetailEditMode] = useState(false);
+  const [exhibitions, setExhibitions] = useState<Exhibition[]>(initialExhibitions);
+  const [isUploadModalOpen, setIsUploadModalOpen] = useState(false);
+  const [uploadModalData, setUploadModalData] = useState<any>(null);
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+
+  // 인스타그램 캐러셀 피드 발행 모달 및 쿨다운 상태
+  const [isInstaModalOpen, setIsInstaModalOpen] = useState(false);
+  const [selectedInstaCard, setSelectedInstaCard] = useState<Exhibition | null>(null);
+  const [cooldownRemaining, setCooldownRemaining] = useState(0);
+
+  // 온라인 전시 링크공유 상단 오버레이 패널 상태
+  const [shareOverlayItem, setShareOverlayItem] = useState<Exhibition | null>(null);
+  const [isCopiedInOverlay, setIsCopiedInOverlay] = useState(false);
+  const [copiedCardId, setCopiedCardId] = useState<string | null>(null);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
+
+  // 공유 URL 헬퍼
+  const getShareUrl = (item: Exhibition) => {
+    return item.targetUrl && item.targetUrl.startsWith("http")
+      ? item.targetUrl
+      : typeof window !== "undefined"
+      ? `${window.location.origin}/exhibit/${encodeURIComponent(item.id)}`
+      : "";
+  };
+
+  // 상단 링크공유 오버레이 패널 열기
+  const handleOpenShareOverlay = (item: Exhibition, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setShareOverlayItem(item);
+    setIsCopiedInOverlay(false);
+  };
+
+  // 오버레이 패널 내 링크 복사
+  const handleCopyOverlayUrl = async (url: string) => {
+    if (!url) return;
+    try {
+      if (typeof navigator !== "undefined" && navigator.clipboard) {
+        await navigator.clipboard.writeText(url);
+      } else {
+        const textArea = document.createElement("textarea");
+        textArea.value = url;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+      }
+      setIsCopiedInOverlay(true);
+      setTimeout(() => setIsCopiedInOverlay(false), 2500);
+    } catch (err) {
+      console.error("클립보드 복사 실패:", err);
+    }
+  };
+
+  // 기기 네이티브 Web Share API 지원 시 호출
+  const handleNativeShare = async (item: Exhibition) => {
+    const shareUrl = getShareUrl(item);
+    if (!shareUrl) return;
+    if (typeof navigator !== "undefined" && navigator.share) {
+      try {
+        await navigator.share({
+          title: `${item.university} ${item.department} 온라인 졸업전시회`,
+          text: `[${item.university}] ${item.title} 공식 온라인 전시를 확인해보세요!`,
+          url: shareUrl,
+        });
+      } catch (err: any) {
+        if (err.name !== "AbortError") console.error(err);
+      }
+    }
+  };
+
+  // ESC 키로 공유 오버레이 패널 닫기
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setShareOverlayItem(null);
+      }
+    };
+    if (shareOverlayItem) {
+      window.addEventListener("keydown", handleKeyDown);
+      return () => window.removeEventListener("keydown", handleKeyDown);
+    }
+  }, [shareOverlayItem]);
+
+  // 쿨다운 상태 초기 조회
+  useEffect(() => {
+    async function checkCooldown() {
+      try {
+        const res = await fetch("/api/publish/instagram");
+        if (res.ok) {
+          const data = await res.json();
+          if (data.cooldownActive && data.remainingSeconds > 0) {
+            setCooldownRemaining(data.remainingSeconds);
+          }
+        }
+      } catch (err) {
+        console.error("쿨다운 조회 오류:", err);
+      }
+    }
+    checkCooldown();
+  }, []);
+
+  // 쿨다운 1초 카운트다운 타이머
+  useEffect(() => {
+    if (cooldownRemaining <= 0) return;
+    const timer = setInterval(() => {
+      setCooldownRemaining((prev) => (prev > 0 ? prev - 1 : 0));
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [cooldownRemaining]);
+
+  const formatSeconds = (totalSeconds: number) => {
+    const mins = Math.floor(totalSeconds / 60);
+    const secs = totalSeconds % 60;
+    return `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+  };
+
+  const isProduction = process.env.NODE_ENV === "production";
+
+  // 1. 관리자 모드 On/Off 토글 상태 (프로덕션 배포 시 원천 차단)
+  const [isAdmin, setIsAdmin] = useState(false);
+  const isAdminEditMode = !isProduction && isAdmin;
+  const setIsAdminEditMode = (val: boolean) => {
+    if (isProduction) return;
+    setIsAdmin(val);
+  };
+  const [deletingCardId, setDeletingCardId] = useState<string | null>(null);
+
+  // 백그라운드에서 최신 큐 데이터 동기화
+  const refreshExhibitions = async () => {
+    try {
+      const res = await fetch("/api/exhibitions");
+      if (res.ok) {
+        const data = await res.json();
+        if (data.exhibitions && Array.isArray(data.exhibitions) && data.exhibitions.length > 0) {
+          setExhibitions(data.exhibitions);
+          setSelectedExhibition((prev) => {
+            if (!prev) return null;
+            return data.exhibitions.find((e: Exhibition) => e.id === prev.id) || prev;
+          });
+          setSelectedInstaCard((prev) => {
+            if (!prev) return null;
+            return data.exhibitions.find((e: Exhibition) => e.id === prev.id) || prev;
+          });
+        }
+      }
+    } catch (err) {
+      console.error("전시 데이터 동기화 실패:", err);
+    }
+  };
+
+  useEffect(() => {
+    refreshExhibitions();
+  }, []);
+
+  // 카드 수정 모달 열기 (실시간 상세 편집 모달을 isEditing: true 상태로 오픈)
+  const handleOpenEditModal = (item: Exhibition, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setSelectedExhibition(item);
+    setIsDetailEditMode(true);
+  };
+
+  // 출품작 드래그 순서 변경 시 부모 상태 및 SNS 연동 데이터 즉시 동기화
+  const handleArtworksReorder = (updatedArtworks: Artwork[]) => {
+    if (!selectedExhibition) return;
+    const updatedCard: Exhibition = {
+      ...selectedExhibition,
+      artworks: updatedArtworks,
+      works: updatedArtworks,
+    };
+    setSelectedExhibition(updatedCard);
+    setExhibitions((prev) =>
+      prev.map((item) => (item.id === selectedExhibition.id ? { ...item, artworks: updatedArtworks, works: updatedArtworks } : item))
+    );
+    setSelectedInstaCard((prev) =>
+      prev && prev.id === selectedExhibition.id ? { ...prev, artworks: updatedArtworks, works: updatedArtworks } : prev
+    );
+  };
+
+  // 카드 영구 삭제 (DELETE /api/cards)
+  const handleDeleteCard = async (item: Exhibition, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const confirmed = window.confirm(
+      `[경고] '${item.university} ${item.department}' 전시 카드를 영구 삭제하시겠습니까?\n관련 캡처 에셋 및 대기열 데이터가 모두 제거됩니다.`
+    );
+    if (!confirmed) return;
+
+    setDeletingCardId(item.id);
+    try {
+      const res = await fetch("/api/cards", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ cardId: item.id }),
+      });
+
+      const data = await res.json();
+      if (res.ok && data.status === "SUCCESS") {
+        // UI 즉시 갱신
+        setExhibitions((prev) => prev.filter((ex) => ex.id !== item.id));
+      } else {
+        alert(data.error || "카드 삭제에 실패했습니다.");
+      }
+    } catch (err: any) {
+      alert(`삭제 요청 중 오류가 발생했습니다: ${err.message}`);
+    } finally {
+      setDeletingCardId(null);
+    }
+  };
+
+  // 2. 관리자 권한을 고려한 복합 필터링
+  const filteredExhibitions = exhibitions.filter((item) => {
+    const isDraftOrPending =
+      item.status === "draft" ||
+      item.status === "pending" ||
+      item.status === "대기" ||
+      item.status === "수집 대기" ||
+      item.status === "리서치 대기";
+
+    const isPublished =
+      !isDraftOrPending &&
+      (item.status === "published" ||
+        item.isUploaded === true ||
+        (item as any).uploadStatus === "completed" ||
+        item.status === "리서치 완료" ||
+        item.status === "수집 완료" ||
+        item.status === "완료" ||
+        item.status === "승인 완료" ||
+        (item.isResearched === true && Boolean(item.posterPath && item.posterPath.length > 5)));
+
+    // [수정 핵심] 프로덕션 환경이거나 일반 방문자 모드일 때는 미발행/대기/미완성 카드 완전 차단
+    if ((isProduction || !isAdminEditMode) && !isPublished) {
+      return false;
+    }
+
+    // 관리자 모드 내부 상태 필터링 (전체 / 업로드 완료 / 미업로드)
+    if (isAdminEditMode && statusFilter !== "all") {
+      if (statusFilter === "uploaded" && !isPublished) return false;
+      if (statusFilter === "pending" && isPublished) return false;
+    }
+
+    // 연도 조건 매칭 (선택된 경우만)
+    const matchesYear =
+      selectedYear === "all" ||
+      String(item.year || "").includes(selectedYear) ||
+      String(item.schedule || "").includes(selectedYear) ||
+      String(item.title || "").includes(selectedYear);
+
+    // 카테고리 조건 매칭 (10대 표준 카테고리 및 학과 자동 매핑 일치)
+    const matchesCategory =
+      selectedCategory === "전체" ||
+      selectedCategory === "전체 분야" ||
+      item.category === selectedCategory ||
+      getStandardCategory(item.category || item.department || "") === selectedCategory ||
+      item.department?.includes(selectedCategory);
+
+    // 통합 검색어 매칭 (대학명, 학과, 작품명, 슬로건, 태그, 학생명 등)
+    const q = searchQuery.trim().toLowerCase();
+    const matchesSearch =
+      !q ||
+      item.university?.toLowerCase().includes(q) ||
+      item.department?.toLowerCase().includes(q) ||
+      item.title?.toLowerCase().includes(q) ||
+      item.category?.toLowerCase().includes(q) ||
+      item.headline?.toLowerCase().includes(q) ||
+      item.slogan?.toLowerCase().includes(q) ||
+      item.tags?.some((t) => t.toLowerCase().includes(q)) ||
+      item.artworks?.some(
+        (a) =>
+          a.title?.toLowerCase().includes(q) ||
+          a.author?.toLowerCase().includes(q) ||
+          a.role?.toLowerCase().includes(q)
+      );
+
+    return matchesYear && matchesCategory && matchesSearch;
+  });
+
+  const filteredExhibits = filteredExhibitions;
+
+  return (
+    <main className="min-h-screen px-4 md:px-8 py-8 w-full max-w-7xl mx-auto relative text-slate-800 dark:text-slate-100 min-w-0">
+      {/* Top Hero Bar */}
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-8 border-b border-slate-200 dark:border-slate-800 gap-4">
+        <div>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-50 dark:bg-cyan-950/60 border border-cyan-200 dark:border-cyan-700/50 text-cyan-800 dark:text-cyan-400 text-xs font-semibold mb-3">
+            <Sparkles className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" /> 전국 대학교 졸업전시 통합 공식 아카이브
+          </div>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+            전국 대학교 학생 <span className="text-cyan-600 dark:text-cyan-400">졸업작품 전시회</span>
+          </h1>
+          <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base mt-2">
+            실제 리서치 및 Gemini Vision으로 검수된 전국 주요 대학의 디자인·예술·건축 졸업전시 작품을 탐색하세요.
+          </p>
+        </div>
+        <div className="flex flex-wrap items-center gap-3">
+          {!isProduction && (
+            <button
+              onClick={() => {
+                setUploadModalData(null);
+                setIsUploadModalOpen(true);
+              }}
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white font-extrabold text-xs md:text-sm shadow-md shadow-cyan-600/20 transition"
+            >
+              <ClipboardPaste className="w-4 h-4" /> 📸 스크린샷 직접 등록 (Ctrl+V)
+            </button>
+          )}
+
+          {/* 1. 관리자 관제 시스템 버튼: 메인 갤러리 카드 관리(수정/삭제) 모드 On/Off 토글 버튼 (로컬 전용) */}
+          {!isProduction && (
+            <button
+              onClick={() => setIsAdminEditMode(!isAdminEditMode)}
+              className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs md:text-sm shadow-sm transition border ${
+                isAdminEditMode
+                  ? "bg-red-500/10 dark:bg-red-950/40 border-red-500 text-red-600 dark:text-red-400 ring-2 ring-red-500/20 shadow-md animate-pulse"
+                  : "bg-white dark:bg-slate-800 border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 dark:text-slate-200"
+              }`}
+              title="클릭 시 전시 카드 수정 및 삭제 버튼이 활성화됩니다"
+            >
+              {isAdminEditMode ? (
+                <>
+                  <ShieldAlert className="w-4 h-4 text-red-500" />
+                  <span>관리자 모드 활성 (수정/삭제 중)</span>
+                </>
+              ) : (
+                <>
+                  <Shield className="w-4 h-4 text-slate-600 dark:text-slate-300" />
+                  <span>관리자 관제 시스템</span>
+                </>
+              )}
+            </button>
+          )}
+
+          <ThemeToggle />
+        </div>
+      </div>
+
+      {/* 관리자 모드 활성화 알림 배너 */}
+      {isAdminEditMode && (
+        <div className="mt-4 p-3.5 rounded-xl bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-900/50 flex items-center justify-between gap-3 text-red-900 dark:text-red-200 text-xs">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-red-500 animate-ping" />
+            <span className="font-bold">🔧 카드 관리(수정/삭제) 모드가 켜져 있습니다.</span>
+            <span className="text-red-700 dark:text-red-300 hidden sm:inline">
+              각 카드의 [수정] 버튼으로 대학명·전공·URL 등을 변경하거나, [삭제] 버튼으로 영구 제거할 수 있습니다.
+            </span>
+          </div>
+          <div className="flex items-center gap-2 shrink-0">
+            <Link
+              href={`/admin?tab=cardnews&year=${encodeURIComponent(selectedYear !== "all" ? selectedYear : "2026")}`}
+              className="px-3 py-1.5 rounded-lg bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs shadow-sm transition flex items-center gap-1.5"
+            >
+              <PlusCircle className="w-3.5 h-3.5" />
+              <span>대학교 카드 추가</span>
+            </Link>
+            <button
+              onClick={() => setIsAdminEditMode(false)}
+              className="px-2.5 py-1 rounded-lg bg-red-100 dark:bg-red-900/60 hover:bg-red-200 dark:hover:bg-red-900 font-bold transition shrink-0"
+            >
+              관리자 모드 종료
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* 실시간 대학 공유자원 & R&D·프로젝트 하이라이트 배너 */}
+      <section className="my-6 p-4 md:p-5 rounded-2xl bg-gradient-to-r from-emerald-950/70 via-indigo-950/60 to-cyan-950/70 border border-emerald-500/40 shadow-xl relative overflow-hidden text-white">
+        <div className="absolute right-0 top-0 -mt-4 -mr-4 w-40 h-40 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none" />
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 relative z-10">
+          <div className="space-y-1.5">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                실시간 게시중 (LIVE)
+              </span>
+              <span className="text-xs font-mono text-cyan-300">
+                공식 출처 인증 기회 9건 · 개방 연구/제작 장비 23종
+              </span>
+            </div>
+            <h2 className="text-base sm:text-lg font-extrabold tracking-tight">
+              전국 대학 공유자원 & 실전 R&D·프로젝트 탐색 허브
+            </h2>
+            <p className="text-xs text-slate-300 max-w-2xl leading-relaxed">
+              부산대·UNIST·부산공유대학 등 공식 연계: <strong>AI 창업 경진대회(상금 1억, D-1)</strong>, <strong>글로벌 AX-PBL(D-1)</strong>, <strong>캡스톤디자인 지원</strong> 및 <strong>첨단 연구·3D제작 장비</strong>를 내 전공 기준으로 탐색하세요.
+            </p>
+          </div>
+
+          <div className="flex items-center gap-2 shrink-0">
+            <Link
+              href="/opportunities"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-extrabold text-xs sm:text-sm shadow-lg shadow-emerald-500/30 transition transform hover:-translate-y-0.5 whitespace-nowrap"
+            >
+              <Compass className="w-4 h-4" />
+              <span>내 전공 맞춤 자원 전체보기</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+
+        {/* Quick Ticker Chips */}
+        <div className="mt-3.5 pt-3 border-t border-slate-700/60 flex items-center gap-2 overflow-x-auto no-scrollbar text-xs">
+          <span className="text-[11px] text-slate-400 font-semibold shrink-0">주요 모집처:</span>
+          <Link
+            href="/opportunities"
+            className="px-2.5 py-1 rounded-lg bg-black/40 hover:bg-black/60 border border-slate-700/80 text-emerald-300 font-medium shrink-0 transition flex items-center gap-1.5"
+          >
+            <span className="text-[10px] font-bold px-1 rounded bg-rose-950 text-rose-300 border border-rose-800">D-1</span>
+            <span>2026 AI 창업 경진대회 (상금 1억 7백만원)</span>
+          </Link>
+          <Link
+            href="/opportunities"
+            className="px-2.5 py-1 rounded-lg bg-black/40 hover:bg-black/60 border border-slate-700/80 text-cyan-300 font-medium shrink-0 transition flex items-center gap-1.5"
+          >
+            <span className="text-[10px] font-bold px-1 rounded bg-rose-950 text-rose-300 border border-rose-800">D-1</span>
+            <span>글로벌 AX-PBL 해외 현장실증 (항공료·숙식 지원)</span>
+          </Link>
+          <Link
+            href="/opportunities"
+            className="px-2.5 py-1 rounded-lg bg-black/40 hover:bg-black/60 border border-slate-700/80 text-amber-300 font-medium shrink-0 transition flex items-center gap-1.5"
+          >
+            <span className="text-[10px] font-bold px-1 rounded bg-amber-950 text-amber-300 border border-amber-800">상시</span>
+            <span>UNIST 연구지원본부(UCRF) 12종 & 부산대 V-Space 11종</span>
+          </Link>
+          <Link
+            href="/opportunities"
+            className="px-2.5 py-1 rounded-lg bg-black/40 hover:bg-black/60 border border-slate-700/80 text-purple-300 font-medium shrink-0 transition flex items-center gap-1.5"
+          >
+            <span className="text-[10px] font-bold px-1 rounded bg-purple-950 text-purple-300 border border-purple-800">D-19</span>
+            <span>Gemini Academy 실무 AI 무료 강의</span>
+          </Link>
+        </div>
+      </section>
+
+      {/* 8대 산업군 인터랙티브 필터 바 */}
+      <section className="py-6">
+        <div className="flex flex-wrap justify-between items-center gap-3 mb-3">
+          <div className="flex flex-wrap items-center gap-3 min-w-0">
+            <h2 className="text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400 font-bold">
+              산업군 / 전공 분야 필터
+            </h2>
+            {/* 연도별 드롭다운 필터 */}
+            <div className="relative inline-flex items-center">
+              <Calendar className="w-3.5 h-3.5 absolute left-2.5 text-slate-500 dark:text-slate-400 pointer-events-none" />
+              <select
+                id="year-filter"
+                aria-label="전시 연도 선택"
+                value={selectedYear}
+                onChange={(e) => setSelectedYear(e.target.value)}
+                className="pl-8 pr-7 py-1 text-xs font-bold rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-cyan-500 dark:hover:border-cyan-500 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 shadow-sm cursor-pointer transition appearance-none"
+              >
+                <option value="all">전체 연도</option>
+                <option value="2025">2025년</option>
+                <option value="2026">2026년</option>
+              </select>
+              <div className="absolute right-2.5 pointer-events-none text-slate-400 text-[10px]">
+                ▼
+              </div>
+            </div>
+
+            {/* 관리자 모드일 때 노출되는 상태 토글 UI (연도 드롭다운 옆 배치) */}
+            {!isProduction && isAdminEditMode && (
+              <div className="flex items-center gap-2">
+                {/* 1. 상태 선택 드롭다운 (셀렉트 박스) */}
+                <div className="relative inline-flex items-center">
+                  <Filter className="w-3.5 h-3.5 absolute left-2.5 text-slate-500 dark:text-slate-400 pointer-events-none" />
+                  <select
+                    id="status-filter"
+                    aria-label="상태별 필터 선택"
+                    value={statusFilter}
+                    onChange={(e) => setStatusFilter(e.target.value as "all" | "uploaded" | "pending")}
+                    className="pl-8 pr-7 py-1 text-xs font-bold rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-cyan-500 dark:hover:border-cyan-500 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 shadow-sm cursor-pointer transition appearance-none"
+                  >
+                    <option value="all">상태: 전체</option>
+                    <option value="uploaded">업로드 완료</option>
+                    <option value="pending">미업로드 / 대기</option>
+                  </select>
+                  <div className="absolute right-2.5 pointer-events-none text-slate-400 text-[10px]">
+                    ▼
+                  </div>
+                </div>
+
+                {/* 2. 상태별 세그먼트 토글 버튼 그룹 */}
+                <div
+                  id="status-toggle-group"
+                  className="hidden sm:inline-flex items-center bg-slate-100 dark:bg-slate-800/80 p-0.5 rounded-xl border border-slate-200 dark:border-slate-700 text-xs shadow-sm"
+                >
+                  <button
+                    type="button"
+                    onClick={() => setStatusFilter("all")}
+                    className={`px-2.5 py-1 rounded-lg font-bold transition flex items-center gap-1 ${
+                      statusFilter === "all"
+                        ? "bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-xs"
+                        : "text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200"
+                    }`}
+                  >
+                    전체
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setStatusFilter("uploaded")}
+                    className={`px-2.5 py-1 rounded-lg font-bold transition flex items-center gap-1.5 ${
+                      statusFilter === "uploaded"
+                        ? "bg-emerald-600 text-white shadow-xs"
+                        : "text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200"
+                    }`}
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                    업로드 완료
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setStatusFilter("pending")}
+                    className={`px-2.5 py-1 rounded-lg font-bold transition flex items-center gap-1.5 ${
+                      statusFilter === "pending"
+                        ? "bg-amber-500 text-white shadow-xs"
+                        : "text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200"
+                    }`}
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+                    미업로드
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+          <span className="text-xs text-cyan-700 dark:text-cyan-400 font-semibold">
+            선택된 결과: {filteredExhibits.length}건
+          </span>
+        </div>
+        <div className="flex flex-wrap items-center gap-2 md:gap-3 w-full">
+          {INDUSTRIES.map((cat) => {
+            const isSelected = selectedCategory === cat.name;
+            return (
+              <button
+                key={cat.id}
+                onClick={() => setSelectedCategory(cat.name)}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-2xl text-xs font-semibold transition border shadow-xs ${
+                  isSelected
+                    ? "bg-cyan-600 text-white border-cyan-600 shadow-sm ring-2 ring-cyan-600/20 dark:bg-cyan-500/20 dark:text-cyan-300 dark:border-cyan-400"
+                    : "bg-white dark:bg-[#111422] text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/60"
+                }`}
+              >
+                <span>{cat.icon}</span>
+                <span>{cat.name}</span>
+              </button>
+            );
+          })}
+
+          {/* 직무/학과/작품 통합 검색 바 (공간 부족 시 자연스럽게 아래로 줄바꿈 됨) */}
+          <div className="relative flex-grow min-w-[200px] max-w-full sm:max-w-xs">
+            <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500 pointer-events-none" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="대학명, 학과, 작품 검색..."
+              className="w-full text-xs font-medium bg-slate-50 dark:bg-[#0f121e] border border-slate-200 dark:border-slate-700 rounded-2xl pl-8 pr-7 py-1.5 text-slate-800 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500 transition-colors shadow-xs"
+            />
+            {searchQuery && (
+              <button
+                type="button"
+                onClick={() => setSearchQuery("")}
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-0.5"
+                title="검색어 지우기"
+              >
+                <X className="w-3 h-3" />
+              </button>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* 전시 카드 그리드 */}
+      {filteredExhibits.length > 0 ? (
+        <section className="grid grid-cols-3 gap-2 sm:gap-4 w-full min-w-0 pt-2">
+          {/* 관리자 모드일 때 첫 번째 슬롯에 카드 추가 카드 배치 */}
+          {isAdminEditMode && (
+            <Link
+              href={`/admin?tab=cardnews&year=${encodeURIComponent(selectedYear !== "all" ? selectedYear : "2026")}`}
+              className="group relative min-w-0 border-2 border-dashed border-red-300 dark:border-red-800/80 hover:border-red-500 dark:hover:border-red-500 rounded-2xl p-2 sm:p-6 bg-red-50/30 dark:bg-red-950/20 hover:bg-red-50/60 dark:hover:bg-red-950/40 transition cursor-pointer flex flex-col items-center justify-center text-center min-h-[180px] sm:min-h-[360px]"
+            >
+              <div className="w-8 h-8 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-red-100 dark:bg-red-900/50 text-red-600 dark:text-red-300 flex items-center justify-center mb-2 sm:mb-4 group-hover:scale-110 transition shadow-inner">
+                <Plus className="w-4 h-4 sm:w-7 sm:h-7" />
+              </div>
+              <h4 className="font-extrabold text-[10px] sm:text-base leading-tight text-slate-800 dark:text-slate-100 mb-1 line-clamp-2">
+                {selectedYear === "all" ? "새 대학교 카드 추가" : `${selectedYear}년 대학교 카드 추가`}
+              </h4>
+              <p className="text-[8px] sm:text-xs text-slate-500 dark:text-slate-400 max-w-[220px] mb-2 sm:mb-4 line-clamp-3">
+                기존 카드뉴스 검수 시스템으로 이동하여 AI 링크 분석 및 졸업작품을 자동 등록합니다.
+              </p>
+              <span className="inline-flex items-center gap-1 px-1.5 py-1 sm:px-3.5 sm:py-2 rounded-lg sm:rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-[8px] sm:text-xs shadow-sm transition">
+                <PlusCircle className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
+                신규 전시 등록하기
+              </span>
+            </Link>
+          )}
+          {filteredExhibits.map((item) => {
+          const targetUrlParam = item.targetUrl ? `&target_url=${encodeURIComponent(item.targetUrl)}` : "";
+          // AI 리서치 관제 화면 진입점 라우트: cardId, card_id, univ, dept 모두 바인딩
+          const adminResearchUrl = `/admin?tab=cardnews&cardId=${encodeURIComponent(item.id)}&card_id=${encodeURIComponent(item.id)}&univ=${encodeURIComponent(item.university)}&dept=${encodeURIComponent(item.department)}&category=${encodeURIComponent(item.category)}&year=${encodeURIComponent(item.year || '2026')}${targetUrlParam}`;
+
+          const isDeleting = deletingCardId === item.id;
+
+          return (
+            <div
+              key={item.id}
+              onClick={() => {
+                if (item.isResearched && !isAdminEditMode) {
+                  setSelectedExhibition(item);
+                }
+              }}
+              className={`group relative min-w-0 bg-white dark:bg-[#111827] border rounded-2xl overflow-hidden shadow-sm transition-all duration-300 ease-out flex flex-col ${
+                isAdminEditMode
+                  ? "border-red-400/70 dark:border-red-500/50 hover:shadow-lg hover:-translate-y-1"
+                  : item.isResearched
+                  ? "border-slate-200 dark:border-gray-800/80 hover:border-cyan-500/80 dark:hover:border-cyan-400/80 hover:shadow-2xl hover:shadow-cyan-500/15 dark:hover:shadow-cyan-950/40 hover:-translate-y-2 hover:scale-[1.015] active:scale-[0.985] active:translate-y-0 cursor-pointer select-none"
+                  : "border-slate-200 dark:border-gray-800/60 bg-slate-50/70 dark:bg-slate-950/70 opacity-95 hover:border-slate-300 dark:hover:border-slate-700 hover:-translate-y-1 hover:shadow-md cursor-default"
+              }`}
+            >
+              {/* 관리자 편집 모드 활성화 시 수정/삭제 오버레이 버튼 바 */}
+              {isAdminEditMode && (
+                <div
+                  className="z-30 p-2.5 bg-red-950/80 backdrop-blur-md border-b border-red-500/40 flex items-center justify-between gap-2"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <span className="text-[11px] font-mono font-bold text-red-200 truncate flex items-center gap-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
+                    {item.id}
+                  </span>
+                  <div className="flex items-center gap-1.5 shrink-0">
+                    <button
+                      type="button"
+                      onClick={(e) => handleOpenEditModal(item, e)}
+                      className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs font-bold transition shadow-sm"
+                      title="카드 정보 수정"
+                    >
+                      <Edit className="w-3 h-3 text-cyan-600 dark:text-cyan-400" /> 수정
+                    </button>
+                    <button
+                      type="button"
+                      onClick={(e) => handleDeleteCard(item, e)}
+                      disabled={isDeleting}
+                      className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-red-600 hover:bg-red-700 text-white text-xs font-bold transition shadow-sm disabled:opacity-50"
+                      title="카드 영구 삭제"
+                    >
+                      {isDeleting ? (
+                        <Loader2 className="w-3 h-3 animate-spin" />
+                      ) : (
+                        <Trash2 className="w-3 h-3" />
+                      )}
+                      삭제
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {/* Poster Aspect Ratio Frame */}
+              <div className="relative aspect-[4/5] w-full min-w-0 overflow-hidden bg-slate-100 dark:bg-slate-900">
+                {item.isResearched && item.posterPath ? (
+                  <>
+                    <img
+                      src={`/api/images/${item.posterPath}`}
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                      onError={(e) => {
+                        (e.target as HTMLElement).style.display = "none";
+                      }}
+                    />
+                    {/* 모션그래픽 비디오 (마우스 호버 시 실제 공식 포스터 모션그래픽 재생) */}
+                    {item.posterVideoPath && (
+                      <video
+                        src={item.posterVideoPath.startsWith("http") || item.posterVideoPath.startsWith("/api/images/") ? item.posterVideoPath : `/api/images/${item.posterVideoPath}`}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="auto"
+                        className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:scale-105 transition-transform duration-500 ease-out"
+                      />
+                    )}
+                  </>
+                ) : (
+                  /* 리서치 전 (수집 대기) 플레이스홀더 */
+                  <div className="w-full h-full flex flex-col items-center justify-center p-2 sm:p-6 text-center bg-slate-50 dark:bg-gradient-to-b dark:from-slate-900 dark:to-slate-950 border-b border-slate-200 dark:border-gray-800/50">
+                    <div className="w-8 h-8 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-white dark:bg-slate-800/70 border border-slate-200 dark:border-gray-700/60 flex items-center justify-center mb-1 sm:mb-4 text-cyan-600 dark:text-cyan-400 shadow-sm">
+                      <Clock className="w-4 h-4 sm:w-8 sm:h-8 opacity-80 animate-pulse" />
+                    </div>
+                    <span className="px-1 py-0.5 sm:px-3 sm:py-1 rounded-sm sm:rounded-full bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/30 text-amber-700 dark:text-amber-300 text-[8px] sm:text-xs font-bold mb-1 sm:mb-2 whitespace-nowrap">
+                      리서치 전 (수집 대기)
+                    </span>
+                    <h4 className="text-[10px] sm:text-base font-bold leading-tight line-clamp-2 text-slate-800 dark:text-gray-200">
+                      {item.university} {item.department}
+                    </h4>
+                    <p className="text-[8px] sm:text-xs text-slate-500 dark:text-gray-500 mt-1 sm:mt-2 max-w-[220px] line-clamp-2">
+                      {isProduction
+                        ? "공식 아카이브 에셋 검수 및 준비 중입니다."
+                        : "아직 아카이브 에셋이 수집되지 않았습니다. 관리자에서 리서치를 가동하세요."}
+                    </p>
+                    {!isProduction && isAdminEditMode && (
+                      <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setUploadModalData({
+                              id: item.id,
+                              university: item.university,
+                              department: item.department,
+                              year: item.year || "2025",
+                              category: item.category,
+                              title: item.title,
+                              posterPath: item.posterPath,
+                              artworks: item.artworks,
+                            });
+                            setIsUploadModalOpen(true);
+                          }}
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-cyan-600 hover:bg-cyan-700 text-white font-bold text-xs shadow-sm transition"
+                        >
+                          <ClipboardPaste className="w-3.5 h-3.5" /> 스크린샷 붙여넣기
+                        </button>
+                        {/* 2. [리서치 가동 ↗] 클릭 시 기존 AI 리서치 관제 화면(검수 뷰어/큐 실행 뷰)으로 정확히 라우팅 */}
+                        <Link
+                          href={adminResearchUrl}
+                          onClick={(e) => e.stopPropagation()}
+                          className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-300 dark:border-gray-700 text-cyan-700 dark:text-cyan-300 hover:bg-slate-50 dark:hover:text-white text-xs font-bold transition shadow-sm"
+                        >
+                          리서치 가동 <ArrowUpRight className="w-3.5 h-3.5" />
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {/* Overlays / Badges for Researched Cards: 카테고리와 연도만 심플하게 표시 */}
+                {item.isResearched && (
+                  <div className="absolute top-1.5 left-1.5 sm:top-2.5 sm:left-2.5 flex flex-wrap gap-1 sm:gap-1.5 pointer-events-none">
+                    <span className="truncate px-1.5 py-0.5 sm:px-2.5 sm:py-1 rounded-md bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border border-slate-200 dark:border-slate-700 text-cyan-800 dark:text-cyan-300 text-[9px] sm:text-xs font-semibold shadow-sm">
+                      {item.category}
+                    </span>
+                    <span className="px-1.5 py-0.5 sm:px-2 sm:py-1 rounded-md bg-slate-900/80 backdrop-blur-md border border-slate-700 text-white text-[9px] sm:text-xs font-mono">
+                      {item.year}
+                    </span>
+                  </div>
+                )}
+              </div>
+
+              {/* Card Mid Info: 선별 작품 위 중단 영역 (파란색: 대학·전공 / 흰색: 전시 타이틀) */}
+              {item.isResearched && (
+                <div className="px-3 pt-3 pb-1 bg-white dark:bg-[#111827] min-w-0">
+                  <span className="text-[10px] sm:text-xs font-bold text-cyan-600 dark:text-cyan-400 block mb-0.5 truncate">
+                    {item.university} · {item.department}
+                  </span>
+                  <h3 className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white leading-snug line-clamp-2">
+                    {item.title}
+                  </h3>
+                </div>
+              )}
+
+              {/* Card Bottom Action Bar: 포스터와 선별 작품 수 / 전시 관람하기만 미니멀하게 구성 */}
+              <div className="px-3 pb-3 pt-2 bg-white dark:bg-[#111827] flex min-w-0 items-center justify-between gap-1 text-[9px] sm:text-xs select-none">
+                {item.isResearched ? (
+                  <>
+                    <span className="text-slate-600 dark:text-gray-300 font-semibold flex items-center gap-1 sm:gap-1.5">
+                      <Layers className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400 shrink-0" />
+                      <span>선별 작품 <strong className="text-slate-900 dark:text-white font-bold">{item.artworks?.length || 0}점</strong></span>
+                    </span>
+                    <div className="flex min-w-0 items-center gap-1 sm:gap-1.5">
+                      {!isProduction && isAdminEditMode && (
+                        <>
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedInstaCard(item);
+                              setIsInstaModalOpen(true);
+                            }}
+                            disabled={cooldownRemaining > 0}
+                            className={`text-[11px] px-2 py-0.5 rounded font-semibold flex items-center gap-1 transition shadow-sm border ${
+                              cooldownRemaining > 0
+                                ? "bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-400 cursor-not-allowed"
+                                : item.instagramPublished
+                                ? "bg-rose-50 dark:bg-rose-950/40 border-rose-300 dark:border-rose-800 text-rose-700 dark:text-rose-300 hover:bg-rose-100 dark:hover:bg-rose-900/50"
+                                : "bg-gradient-to-r from-rose-500 via-purple-600 to-indigo-600 hover:opacity-90 text-white border-transparent"
+                            }`}
+                          >
+                            <Instagram className="w-3 h-3" />
+                            {cooldownRemaining > 0
+                              ? `쿨다운 (${formatSeconds(cooldownRemaining)})`
+                              : item.instagramPublished
+                              ? "SNS 재발행"
+                              : "📸 SNS 업로드"}
+                          </button>
+
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setUploadModalData({
+                                id: item.id,
+                                university: item.university,
+                                department: item.department,
+                                year: item.year || "2025",
+                                category: item.category,
+                                title: item.title,
+                                posterPath: item.posterPath,
+                                artworks: item.artworks,
+                              });
+                              setIsUploadModalOpen(true);
+                            }}
+                            className="text-[11px] px-2 py-0.5 rounded bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-gray-700 text-slate-700 dark:text-gray-300 flex items-center gap-1 transition shadow-sm"
+                          >
+                            <ClipboardPaste className="w-3 h-3 text-cyan-600 dark:text-cyan-400" /> 스크린샷
+                          </button>
+                        </>
+                      )}
+                      <span
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setSelectedExhibition(item);
+                          setIsDetailEditMode(false);
+                        }}
+                        className="min-w-0 text-[9px] sm:text-xs text-cyan-700 dark:text-cyan-400 font-bold inline-flex items-center gap-0.5 group-hover:text-cyan-500 dark:group-hover:text-cyan-300 transition-colors cursor-pointer whitespace-nowrap"
+                      >
+                        <span className="sm:hidden">관람</span>
+                        <span className="hidden sm:inline">전시 관람하기</span>
+                        <ArrowUpRight className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300 ease-out" />
+                      </span>
+                    </div>
+                  </>
+                ) : (
+                  <div className="w-full flex items-center justify-between text-slate-500 dark:text-gray-500">
+                    <span>{isProduction ? "공식 아카이브 준비 중" : "대기 큐 등록됨"}</span>
+                    {!isProduction && isAdminEditMode && (
+                      <Link
+                        href={adminResearchUrl}
+                        className="text-cyan-600 dark:text-cyan-400 hover:text-cyan-700 dark:hover:text-cyan-300 font-bold inline-flex items-center gap-1"
+                      >
+                        리서치 가동 <ArrowUpRight className="w-3.5 h-3.5" />
+                      </Link>
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        })}
+        </section>
+      ) : (
+        <div className="my-12 py-16 px-6 rounded-2xl border border-dashed border-slate-300 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/30 flex flex-col items-center justify-center text-center">
+          <div className="w-16 h-16 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-4 text-slate-400">
+            <Calendar className="w-8 h-8 text-slate-400 dark:text-slate-500" />
+          </div>
+          <h3 className="text-lg font-bold text-slate-800 dark:text-slate-200 mb-2">
+            {selectedYear === "2026"
+              ? "현재 공식 업로드 및 발행 완료된 2026년 졸업전시가 없습니다."
+              : "해당 조건에 부합하는 전시가 없습니다."}
+          </h3>
+          <p className="text-sm text-slate-500 dark:text-slate-400 max-w-md">
+            {selectedYear === "2026" && !isAdminEditMode
+              ? "2026년 졸업전시 데이터는 현재 수집 및 검수 대기 중이며, 공식 아카이브 확정 및 발행 승인 후 순차적으로 공개됩니다."
+              : "선택하신 연도, 상태 또는 전공 분야에 등록된 전시가 없습니다. 다른 필터를 선택해보세요."}
+          </p>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+            {!isProduction && isAdminEditMode && (
+              <Link
+                href={`/admin?tab=cardnews&year=${encodeURIComponent(selectedYear !== "all" ? selectedYear : "2026")}`}
+                className="px-4 py-2 text-xs font-extrabold rounded-xl bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-700 hover:to-rose-700 text-white transition shadow-md flex items-center gap-1.5"
+              >
+                <PlusCircle className="w-4 h-4" />
+                <span>{selectedYear === "all" ? "2026년" : `${selectedYear}년`} 대학교 졸업전시회 카드 추가하기</span>
+              </Link>
+            )}
+            <button
+              onClick={() => {
+                setSelectedYear("all");
+                setSelectedCategory("전체 분야");
+                setStatusFilter("all");
+              }}
+              className="px-4 py-2 text-xs font-bold rounded-xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition shadow-sm"
+            >
+              전체 필터 초기화
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* 전시 상세 뷰어 및 실시간 편집 모달 (포스터 & 출품작 사진 업로드/삭제 지원) */}
+      <ExhibitionDetailModal
+        isOpen={Boolean(selectedExhibition)}
+        onClose={() => {
+          setSelectedExhibition(null);
+          setIsDetailEditMode(false);
+        }}
+        exhibition={selectedExhibition}
+        initialEditMode={isDetailEditMode}
+        onArtworksReorder={handleArtworksReorder}
+        onUpdateExhibition={(updated) => {
+          setSelectedExhibition(updated);
+          const updatedWorks = updated.artworks || updated.works || [];
+          setExhibitions((prev) =>
+            prev.map((item) =>
+              item.id === updated.id
+                ? { ...item, ...updated, artworks: updatedWorks, works: updatedWorks }
+                : item
+            )
+          );
+          setSelectedInstaCard((prev) =>
+            prev && prev.id === updated.id
+              ? { ...prev, ...updated, artworks: updatedWorks, works: updatedWorks }
+              : prev
+          );
+        }}
+        onOpenInstagramModal={(card) => {
+          setSelectedInstaCard(card);
+          setIsInstaModalOpen(true);
+        }}
+        onSaveSuccess={async () => {
+          await refreshExhibitions();
+        }}
+      />
+
+      {/* 스크린샷 직접 붙여넣기 모달 (로컬 전용) */}
+      {!isProduction && (
+        <ScreenshotUploadModal
+          isOpen={isUploadModalOpen}
+          onClose={() => setIsUploadModalOpen(false)}
+          initialData={uploadModalData}
+          queueList={exhibitions}
+          onSuccess={async () => {
+            await refreshExhibitions();
+          }}
+        />
+      )}
+
+      {/* SNS 캐러셀 발행 모달 (로컬 전용) */}
+      {!isProduction && (
+        <InstagramUploadModal
+          isOpen={isInstaModalOpen}
+          onClose={() => setIsInstaModalOpen(false)}
+          exhibition={selectedInstaCard}
+          isCooldownActive={cooldownRemaining > 0}
+          cooldownRemaining={cooldownRemaining}
+          onSuccess={(cardId, publishedAt) => {
+            setExhibitions((prev) =>
+              prev.map((ex) =>
+                ex.id === cardId
+                  ? { ...ex, instagramPublished: true, publishedAt }
+                  : ex
+              )
+            );
+            setCooldownRemaining(180);
+          }}
+        />
+      )}
+
+      {/* 관리자 전용 대학교 졸업전시회 카드 신규 추가 모달 (로컬 전용) */}
+      {!isProduction && (
+        <AddExhibitionModal
+          isOpen={isAddModalOpen}
+          onClose={() => setIsAddModalOpen(false)}
+          defaultYear={selectedYear === "all" ? "2026" : selectedYear}
+          onSuccess={(newExhibition) => {
+            setExhibitions((prev) => [newExhibition, ...prev]);
+            if (selectedYear !== "all" && selectedYear !== newExhibition.year) {
+              setSelectedYear(newExhibition.year);
+            }
+            refreshExhibitions();
+          }}
+        />
+      )}
+
+      {/* 3. 화면 상단 '링크공유' 오버레이 패널 (클릭 시 화면 상단에 깔끔하게 노출) */}
+      {shareOverlayItem && (
+        <>
+          <div
+            className="fixed inset-0 z-50 bg-black/40 backdrop-blur-xs transition-opacity animate-in fade-in duration-200"
+            onClick={() => setShareOverlayItem(null)}
+          />
+          <div
+            className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[94vw] max-w-lg bg-white/95 dark:bg-[#0f172a]/95 backdrop-blur-xl border border-cyan-500/40 dark:border-cyan-500/50 rounded-2xl shadow-2xl shadow-cyan-950/30 p-5 md:p-6 animate-in fade-in slide-in-from-top-6 duration-300 text-slate-900 dark:text-slate-100"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
+              <div className="flex items-center gap-2">
+                <span className="p-1.5 rounded-lg bg-cyan-500/10 text-cyan-600 dark:text-cyan-400">
+                  <Share2 className="w-4 h-4" />
+                </span>
+                <span className="text-xs font-bold text-cyan-700 dark:text-cyan-300">
+                  온라인 전시 링크 공유
+                </span>
+                <span className="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[11px] font-semibold text-slate-600 dark:text-slate-300">
+                  {shareOverlayItem.university}
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShareOverlayItem(null)}
+                className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+                title="닫기"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="py-4">
+              <h4 className="text-sm md:text-base font-extrabold text-slate-900 dark:text-white mb-1 line-clamp-2">
+                {shareOverlayItem.title}
+              </h4>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mb-4">
+                {shareOverlayItem.university} · {shareOverlayItem.department} ({shareOverlayItem.year || "2025"})
+              </p>
+
+              {/* URL 복사 인풋 바 */}
+              <div className="flex items-center gap-2 bg-slate-50 dark:bg-slate-950/80 p-1.5 rounded-xl border border-slate-200 dark:border-slate-800">
+                <input
+                  type="text"
+                  readOnly
+                  value={getShareUrl(shareOverlayItem)}
+                  className="flex-1 bg-transparent px-2.5 py-1 text-xs font-mono text-slate-700 dark:text-slate-300 outline-none select-all truncate"
+                />
+                <button
+                  type="button"
+                  onClick={() => handleCopyOverlayUrl(getShareUrl(shareOverlayItem))}
+                  className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-bold transition shadow-sm shrink-0 ${
+                    isCopiedInOverlay
+                      ? "bg-emerald-600 text-white"
+                      : "bg-cyan-600 hover:bg-cyan-700 text-white active:scale-95"
+                  }`}
+                >
+                  {isCopiedInOverlay ? (
+                    <>
+                      <Check className="w-3.5 h-3.5" />
+                      <span>복사완료!</span>
+                    </>
+                  ) : (
+                    <>
+                      <ClipboardPaste className="w-3.5 h-3.5" />
+                      <span>링크 복사</span>
+                    </>
+                  )}
+                </button>
+              </div>
+
+              {/* 추가 옵션: 공식 웹사이트 열기 & 모바일 공유 */}
+              <div className="flex items-center gap-2 mt-3 pt-3 border-t border-slate-100 dark:border-slate-800/80">
+                {shareOverlayItem.targetUrl && (
+                  <a
+                    href={shareOverlayItem.targetUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-bold transition"
+                  >
+                    <Globe className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" />
+                    <span>공식 웹사이트 바로가기</span>
+                    <ExternalLink className="w-3 h-3 opacity-60" />
+                  </a>
+                )}
+                {typeof navigator !== "undefined" && typeof navigator.share === "function" && (
+                  <button
+                    type="button"
+                    onClick={() => handleNativeShare(shareOverlayItem)}
+                    className="inline-flex items-center justify-center gap-1 px-3 py-2 rounded-xl bg-cyan-50 dark:bg-cyan-950/40 hover:bg-cyan-100 dark:hover:bg-cyan-900/50 text-cyan-700 dark:text-cyan-300 text-xs font-bold transition"
+                    title="기기 네이티브 공유창 열기"
+                  >
+                    <Share2 className="w-3.5 h-3.5" />
+                    <span>기기 공유</span>
+                  </button>
+                )}
+              </div>
+            </div>
+
+            <p className="text-[11px] text-slate-400 dark:text-slate-500 text-center">
+              복사된 링크를 메신저나 SNS에 붙여넣어 학생들의 졸업전시를 응원해주세요.
+            </p>
+          </div>
+        </>
+      )}
+
+      {/* 링크 복사 완료 토스트 알림 */}
+      {toastMessage && (
+        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 rounded-xl bg-slate-900/95 dark:bg-[#0f172a]/95 text-white text-xs sm:text-sm font-bold shadow-2xl border border-cyan-500/50 backdrop-blur-md flex items-center gap-2 animate-in fade-in slide-in-from-bottom-4 duration-200">
+          <Check className="w-4 h-4 text-cyan-400 shrink-0" />
+          <span>{toastMessage}</span>
+        </div>
+      )}
+    </main>
+  );
+}
