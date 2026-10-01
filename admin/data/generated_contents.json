@@ -1,0 +1,719 @@
+{
+  "contents": [
+    {
+      "content_id": "cnt-9c33482d2b",
+      "project_id": "proj-d203447f5c",
+      "research_ids": [
+        "proj-d203447f5c"
+      ],
+      "platform": "instagram",
+      "content_type": "reels",
+      "objective": "실무 정보 전달 & 졸업전시 포트폴리오 가이드",
+      "target_audience": "디자인/공학 전공 학부생, 대학원 연구원, 산학 협력 디자이너",
+      "engagement_strategy": {
+        "share": "첫 3초 충격적 후킹(2026년 규정 미준수 시 탈락)을 통한 동기 간 바이럴 확산",
+        "save": "핵심 3대 팩트 수치 보관 목적 저장 유도",
+        "retention": "빠른 화면 전환 컷(0~3초 후킹 → 10초 상황 → 30초 실측)으로 60초 완청률 달성"
+      },
+      "title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "hook": "자동차 디자이너라면 2026년부터 이거 모르면 포트폴리오 탈락합니다!",
+      "body": "### Hook (0~3초)\n자동차 디자이너라면 2026년부터 이거 모르면 포트폴리오 탈락합니다!\n*(시각 연출: 빠른 템포의 차량 콕핏 전환 모션 그래픽, 볼드 텍스트 오버레이)*\n\n### Context (3~10초)\n국내 자율주행 레벨3+ 차량 실내 인터페이스 기준이 전면 개편됩니다. 핵심은 운전자 주의 분산 방지입니다.\n*(시각 연출: 야간 주행 중 차량 실내 엠비언트 라이팅 시연 컷)*\n\n### Story / Information (10~30초)\n첫째, 국내 자율주행 레벨3+ 차량 실내 인터페이스 안전 가이드라인은 2026년 3분기부터 의무 적용된다.. 둘째, 자율주행 엠비언트 라이팅 조도 표준 최대 허용치는 120cd/m2이다..\n*(시각 연출: 조도계 측정 그래픽(120cd/m2) 및 실시간 UI 반응 시각화)*\n\n### Key Point (30~45초)\n셋째, HMI 안전 표준의 초기 가이드라인 도입률 목표치는 65%로 설정되었다.. 시각뿐만 아니라 햅틱 진동 피드백 결합이 이제 필수 설계 요건입니다.\n*(시각 연출: 스티어링 휠 햅틱 인터랙션 및 화면 지연시간 비교 그래프)*\n\n### Conclusion (45~55초)\n단순히 예쁜 그래픽을 넘어 안전 규격 수치를 반영한 모빌리티 UI가 이번 졸업전시의 당락을 가릅니다.\n*(시각 연출: 완성된 지능형 콕핏 렌더링 360도 회전 뷰)*\n\n### CTA (55~60초)\n졸업작품 준비 중인 팀원들에게 공유하고, 규격 수치 잊지 않게 지금 저장해두세요!\n*(시각 연출: 저장 & 공유 아이콘 애니메이션과 플랫폼 프로필 링크 안내)*",
+      "caption": "자동차 디자이너라면 2026년부터 이거 모르면 포트폴리오 탈락합니다!\n\n### Hook (0~3초)\n자동차 디자이너라면 2026년부터 이거 모르면 포트폴리오 탈락합니다!\n*(시각 연출: 빠른 템포의 차량 콕핏 전환 모션 그래픽, 볼드 텍스트 오버레이)*\n\n### Context (3~10초)\n국내 자율주행 레벨3+ 차량 실내 인터페이스 기준이 전면 개편됩니다. 핵심은 운전자 주의 분산 방지입니다.\n*(시각 연출: 야간 주행 중 차량 실내 엠비언트 라이팅 시연 컷)*\n\n### Story / Information (10...\n\n👉 졸업작품 준비 중인 팀원들에게 공유하고, 규격 수치 잊지 않게 지금 저장해두세요!\n\n#자율주행 #HMI디자인 #모빌리티UX #졸업전시 #자동차디자인 #엠비언트라이팅 #SDV #디자인과제",
+      "cta": "졸업작품 준비 중인 팀원들에게 공유하고, 규격 수치 잊지 않게 지금 저장해두세요!",
+      "keywords": [
+        "HMI 가이드라인",
+        "엠비언트 라이팅",
+        "자율주행 레벨3+",
+        "SDV 디지털 콕핏",
+        "응답 지연시간(Latency)"
+      ],
+      "hashtags": [
+        "#자율주행",
+        "#HMI디자인",
+        "#모빌리티UX",
+        "#졸업전시",
+        "#자동차디자인",
+        "#엠비언트라이팅",
+        "#SDV",
+        "#디자인과제"
+      ],
+      "structure": [
+        {
+          "section_name": "Hook (0~3초)",
+          "content_text": "자동차 디자이너라면 2026년부터 이거 모르면 포트폴리오 탈락합니다!",
+          "visual_notes": "빠른 템포의 차량 콕핏 전환 모션 그래픽, 볼드 텍스트 오버레이",
+          "asset_ref": "asset-reels-hook"
+        },
+        {
+          "section_name": "Context (3~10초)",
+          "content_text": "국내 자율주행 레벨3+ 차량 실내 인터페이스 기준이 전면 개편됩니다. 핵심은 운전자 주의 분산 방지입니다.",
+          "visual_notes": "야간 주행 중 차량 실내 엠비언트 라이팅 시연 컷",
+          "asset_ref": "asset-reels-context"
+        },
+        {
+          "section_name": "Story / Information (10~30초)",
+          "content_text": "첫째, 국내 자율주행 레벨3+ 차량 실내 인터페이스 안전 가이드라인은 2026년 3분기부터 의무 적용된다.. 둘째, 자율주행 엠비언트 라이팅 조도 표준 최대 허용치는 120cd/m2이다..",
+          "visual_notes": "조도계 측정 그래픽(120cd/m2) 및 실시간 UI 반응 시각화",
+          "asset_ref": "asset-reels-info"
+        },
+        {
+          "section_name": "Key Point (30~45초)",
+          "content_text": "셋째, HMI 안전 표준의 초기 가이드라인 도입률 목표치는 65%로 설정되었다.. 시각뿐만 아니라 햅틱 진동 피드백 결합이 이제 필수 설계 요건입니다.",
+          "visual_notes": "스티어링 휠 햅틱 인터랙션 및 화면 지연시간 비교 그래프",
+          "asset_ref": "asset-reels-keypoint"
+        },
+        {
+          "section_name": "Conclusion (45~55초)",
+          "content_text": "단순히 예쁜 그래픽을 넘어 안전 규격 수치를 반영한 모빌리티 UI가 이번 졸업전시의 당락을 가릅니다.",
+          "visual_notes": "완성된 지능형 콕핏 렌더링 360도 회전 뷰",
+          "asset_ref": "asset-reels-conclusion"
+        },
+        {
+          "section_name": "CTA (55~60초)",
+          "content_text": "졸업작품 준비 중인 팀원들에게 공유하고, 규격 수치 잊지 않게 지금 저장해두세요!",
+          "visual_notes": "저장 & 공유 아이콘 애니메이션과 플랫폼 프로필 링크 안내",
+          "asset_ref": "asset-reels-cta"
+        }
+      ],
+      "visual_direction": "미니멀 다크 모드 콕핏 그래픽, 볼드 타이포그래피, 실측 수치 인포그래픽 강조",
+      "asset_requirements": [
+        {
+          "asset_type": "VIDEO_CLIP",
+          "resolution": "1080x1920",
+          "duration_sec": 60,
+          "notes": "차량 실내 엠비언트 조명 연출 컷"
+        },
+        {
+          "asset_type": "INFOGRAPHIC",
+          "resolution": "1080x1080",
+          "notes": "조도 120cd/m2 및 지연시간 200ms 규격 도표"
+        }
+      ],
+      "source_traceability": [
+        {
+          "claim": "주장 1: 국내 자율주행 레벨3+ 차량 실내 인터페이스 안전 가이드라인은 2026년 3분기부터 의무 적용된다.",
+          "fact_id": "fact-6d18e6dedf",
+          "fact_text": "국내 자율주행 레벨3+ 차량 실내 인터페이스 안전 가이드라인은 2026년 3분기부터 의무 적용된다.",
+          "source_id": "src-37c4f09ebf",
+          "publisher": "한국디자인진흥원(KIDP)",
+          "source_url": "https://kidp.or.kr/policy/mobility-hmi-standard-2026"
+        },
+        {
+          "claim": "주장 2: 자율주행 엠비언트 라이팅 조도 표준 최대 허용치는 120cd/m2이다.",
+          "fact_id": "fact-6942cc39ae",
+          "fact_text": "자율주행 엠비언트 라이팅 조도 표준 최대 허용치는 120cd/m2이다.",
+          "source_id": "src-37c4f09ebf",
+          "publisher": "한국디자인진흥원(KIDP)",
+          "source_url": "https://kidp.or.kr/policy/mobility-hmi-standard-2026"
+        },
+        {
+          "claim": "주장 3: HMI 안전 표준의 초기 가이드라인 도입률 목표치는 65%로 설정되었다.",
+          "fact_id": "fact-44dca6ea49",
+          "fact_text": "HMI 안전 표준의 초기 가이드라인 도입률 목표치는 65%로 설정되었다.",
+          "source_id": "src-37c4f09ebf",
+          "publisher": "한국디자인진흥원(KIDP)",
+          "source_url": "https://kidp.or.kr/policy/mobility-hmi-standard-2026"
+        }
+      ],
+      "qa_result": {
+        "passed": true,
+        "score": 1,
+        "checked_items": [
+          "Source Presence",
+          "Fact Consistency",
+          "CTA Presence",
+          "Format & Structure",
+          "Hook Quality",
+          "Title Presence",
+          "Asset Requirements",
+          "Schema Completeness",
+          "Content Length",
+          "Engagement Alignment"
+        ],
+        "errors": [],
+        "warnings": [],
+        "source_presence_verified": true,
+        "fact_consistency_verified": true,
+        "unsupported_claims": [],
+        "format_adherence": true,
+        "cta_verified": true,
+        "asset_requirements_verified": true
+      },
+      "version": 1,
+      "parent_version_id": null,
+      "status": "APPROVED",
+      "created_at": "2026-09-16T18:30:04.208742",
+      "updated_at": "2026-09-17T12:21:37.820Z",
+      "approval_status": "APPROVED",
+      "approval_required": true,
+      "approval_version": 1,
+      "approved_by": "admin_director",
+      "approved_at": "2026-09-17T12:21:37.820Z",
+      "rejected_by": null,
+      "rejected_at": null,
+      "rejection_reason": null
+    },
+    {
+      "content_id": "cnt-step11-test-03",
+      "project_id": "proj-step11-demo-3",
+      "platform": "youtube",
+      "content_type": "longform",
+      "title": "[STEP 11 Test 03] 인터랙션 디자인 졸업작품 심층 분석",
+      "hook": "심층 아티클 롱폼 분석",
+      "body": "롱폼 인터뷰 및 분석...",
+      "version": 3,
+      "status": "REJECTED",
+      "approval_status": "REJECTED",
+      "created_at": "2026-09-16T23:03:35.342700",
+      "source_traceability": [],
+      "approval_required": true,
+      "approval_version": 3,
+      "updated_at": "2026-09-17T12:21:34.905Z",
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_by": "test_admin_qa",
+      "rejected_at": "2026-09-17T12:21:34.905Z",
+      "rejection_reason": "포트폴리오 심층 가이드라인 보완 및 원문 출처 보강 필요",
+      "research_ids": [],
+      "keywords": [],
+      "hashtags": [],
+      "objective": "산학 연구 및 졸업작품 연계 콘텐츠",
+      "engagement_strategy": {
+        "share": "",
+        "save": "",
+        "retention": ""
+      },
+      "structure": [],
+      "visual_direction": "",
+      "asset_requirements": []
+    },
+    {
+      "content_id": "cnt-step11-test-02",
+      "project_id": "proj-step11-demo",
+      "platform": "instagram",
+      "content_type": "cardnews",
+      "title": "[STEP 11 Test 02] 2026 카드뉴스 디자인 트렌드 가이드",
+      "hook": "카드뉴스 시인성 극대화 가이드라인",
+      "body": "카드뉴스 시인성 분석 내용...",
+      "version": 2,
+      "status": "APPROVED",
+      "approval_status": "APPROVED",
+      "created_at": "2026-09-16T23:03:35.342700",
+      "source_traceability": [
+        {
+          "claim": "조도 표준 최대 허용치 규격 준수",
+          "source_url": "https://kidp.or.kr/policy/mobility-hmi-standard-2026",
+          "publisher": "한국디자인진흥원(KIDP)"
+        }
+      ],
+      "approved_by": "test_bulk_admin",
+      "approved_at": "2026-09-17T12:21:35.240Z",
+      "updated_at": "2026-09-17T12:21:35.240Z",
+      "rejected_by": null,
+      "rejected_at": null,
+      "rejection_reason": null,
+      "research_ids": [],
+      "keywords": [],
+      "hashtags": [],
+      "objective": "산학 연구 및 졸업작품 연계 콘텐츠",
+      "engagement_strategy": {
+        "share": "",
+        "save": "",
+        "retention": ""
+      },
+      "structure": [],
+      "visual_direction": "",
+      "asset_requirements": []
+    },
+    {
+      "content_id": "cnt-step11-test-01",
+      "project_id": "proj-step11-demo",
+      "platform": "instagram",
+      "content_type": "reels",
+      "title": "[STEP 11 Test 01] 2026 AI 기반 미래 모빌리티 콕핏 디자인",
+      "hook": "2026년 모빌리티 졸업전시 필수 규격 3선",
+      "body": "미래 모빌리티 콕핏 인터페이스 규격 요약...",
+      "version": 1,
+      "status": "APPROVED",
+      "approval_status": "APPROVED",
+      "created_at": "2026-09-16T23:03:35.342700",
+      "source_traceability": [
+        {
+          "claim": "국내 자율주행 HMI 가이드라인 의무 적용",
+          "source_url": "https://kidp.or.kr/policy/mobility-hmi-standard-2026",
+          "publisher": "한국디자인진흥원(KIDP)"
+        }
+      ],
+      "approval_required": true,
+      "approval_version": 1,
+      "updated_at": "2026-09-17T12:21:34.545Z",
+      "approved_by": "test_admin_individual",
+      "approved_at": "2026-09-17T12:21:34.545Z",
+      "rejected_by": null,
+      "rejected_at": null,
+      "rejection_reason": null,
+      "research_ids": [],
+      "keywords": [],
+      "hashtags": [],
+      "objective": "산학 연구 및 졸업작품 연계 콘텐츠",
+      "engagement_strategy": {
+        "share": "",
+        "save": "",
+        "retention": ""
+      },
+      "structure": [],
+      "visual_direction": "",
+      "asset_requirements": []
+    },
+    {
+      "content_id": "cnt-c368965fcf",
+      "project_id": "proj-d203447f5c",
+      "research_ids": [
+        "proj-d203447f5c"
+      ],
+      "platform": "instagram",
+      "content_type": "reels",
+      "objective": "실무 정보 전달 & 졸업전시 포트폴리오 가이드",
+      "target_audience": "디자인/공학 전공 학부생, 대학원 연구원, 산학 협력 디자이너",
+      "engagement_strategy": {
+        "share": "첫 3초 충격적 후킹(2026년 규정 미준수 시 탈락)을 통한 동기 간 바이럴 확산",
+        "save": "핵심 3대 팩트 수치 보관 목적 저장 유도",
+        "retention": "빠른 화면 전환 컷(0~3초 후킹 → 10초 상황 → 30초 실측)으로 60초 완청률 달성"
+      },
+      "title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+      "hook": "자동차 디자이너라면 2026년부터 이거 모르면 포트폴리오 탈락합니다!",
+      "body": "### Hook (0~3초)\n자동차 디자이너라면 2026년부터 이거 모르면 포트폴리오 탈락합니다!\n*(시각 연출: 빠른 템포의 차량 콕핏 전환 모션 그래픽, 볼드 텍스트 오버레이)*\n\n### Context (3~10초)\n국내 자율주행 레벨3+ 차량 실내 인터페이스 기준이 전면 개편됩니다. 핵심은 운전자 주의 분산 방지입니다.\n*(시각 연출: 야간 주행 중 차량 실내 엠비언트 라이팅 시연 컷)*\n\n### Story / Information (10~30초)\n첫째, 국내 자율주행 레벨3+ 차량 실내 인터페이스 안전 가이드라인은 2026년 3분기부터 의무 적용된다.. 둘째, 자율주행 엠비언트 라이팅 조도 표준 최대 허용치는 120cd/m2이다..\n*(시각 연출: 조도계 측정 그래픽(120cd/m2) 및 실시간 UI 반응 시각화)*\n\n### Key Point (30~45초)\n셋째, HMI 안전 표준의 초기 가이드라인 도입률 목표치는 65%로 설정되었다.. 시각뿐만 아니라 햅틱 진동 피드백 결합이 이제 필수 설계 요건입니다.\n*(시각 연출: 스티어링 휠 햅틱 인터랙션 및 화면 지연시간 비교 그래프)*\n\n### Conclusion (45~55초)\n단순히 예쁜 그래픽을 넘어 안전 규격 수치를 반영한 모빌리티 UI가 이번 졸업전시의 당락을 가릅니다.\n*(시각 연출: 완성된 지능형 콕핏 렌더링 360도 회전 뷰)*\n\n### CTA (55~60초)\n졸업작품 준비 중인 팀원들에게 공유하고, 규격 수치 잊지 않게 지금 저장해두세요!\n*(시각 연출: 저장 & 공유 아이콘 애니메이션과 플랫폼 프로필 링크 안내)*",
+      "caption": "자동차 디자이너라면 2026년부터 이거 모르면 포트폴리오 탈락합니다!\n\n### Hook (0~3초)\n자동차 디자이너라면 2026년부터 이거 모르면 포트폴리오 탈락합니다!\n*(시각 연출: 빠른 템포의 차량 콕핏 전환 모션 그래픽, 볼드 텍스트 오버레이)*\n\n### Context (3~10초)\n국내 자율주행 레벨3+ 차량 실내 인터페이스 기준이 전면 개편됩니다. 핵심은 운전자 주의 분산 방지입니다.\n*(시각 연출: 야간 주행 중 차량 실내 엠비언트 라이팅 시연 컷)*\n\n### Story / Information (10...\n\n👉 졸업작품 준비 중인 팀원들에게 공유하고, 규격 수치 잊지 않게 지금 저장해두세요!\n\n#자율주행 #HMI디자인 #모빌리티UX #졸업전시 #자동차디자인 #엠비언트라이팅 #SDV #디자인과제",
+      "cta": "졸업작품 준비 중인 팀원들에게 공유하고, 규격 수치 잊지 않게 지금 저장해두세요!",
+      "keywords": [
+        "HMI 가이드라인",
+        "엠비언트 라이팅",
+        "자율주행 레벨3+",
+        "SDV 디지털 콕핏",
+        "응답 지연시간(Latency)"
+      ],
+      "hashtags": [
+        "#자율주행",
+        "#HMI디자인",
+        "#모빌리티UX",
+        "#졸업전시",
+        "#자동차디자인",
+        "#엠비언트라이팅",
+        "#SDV",
+        "#디자인과제"
+      ],
+      "structure": [
+        {
+          "section_name": "Hook (0~3초)",
+          "content_text": "자동차 디자이너라면 2026년부터 이거 모르면 포트폴리오 탈락합니다!",
+          "visual_notes": "빠른 템포의 차량 콕핏 전환 모션 그래픽, 볼드 텍스트 오버레이",
+          "asset_ref": "asset-reels-hook"
+        },
+        {
+          "section_name": "Context (3~10초)",
+          "content_text": "국내 자율주행 레벨3+ 차량 실내 인터페이스 기준이 전면 개편됩니다. 핵심은 운전자 주의 분산 방지입니다.",
+          "visual_notes": "야간 주행 중 차량 실내 엠비언트 라이팅 시연 컷",
+          "asset_ref": "asset-reels-context"
+        },
+        {
+          "section_name": "Story / Information (10~30초)",
+          "content_text": "첫째, 국내 자율주행 레벨3+ 차량 실내 인터페이스 안전 가이드라인은 2026년 3분기부터 의무 적용된다.. 둘째, 자율주행 엠비언트 라이팅 조도 표준 최대 허용치는 120cd/m2이다..",
+          "visual_notes": "조도계 측정 그래픽(120cd/m2) 및 실시간 UI 반응 시각화",
+          "asset_ref": "asset-reels-info"
+        },
+        {
+          "section_name": "Key Point (30~45초)",
+          "content_text": "셋째, HMI 안전 표준의 초기 가이드라인 도입률 목표치는 65%로 설정되었다.. 시각뿐만 아니라 햅틱 진동 피드백 결합이 이제 필수 설계 요건입니다.",
+          "visual_notes": "스티어링 휠 햅틱 인터랙션 및 화면 지연시간 비교 그래프",
+          "asset_ref": "asset-reels-keypoint"
+        },
+        {
+          "section_name": "Conclusion (45~55초)",
+          "content_text": "단순히 예쁜 그래픽을 넘어 안전 규격 수치를 반영한 모빌리티 UI가 이번 졸업전시의 당락을 가릅니다.",
+          "visual_notes": "완성된 지능형 콕핏 렌더링 360도 회전 뷰",
+          "asset_ref": "asset-reels-conclusion"
+        },
+        {
+          "section_name": "CTA (55~60초)",
+          "content_text": "졸업작품 준비 중인 팀원들에게 공유하고, 규격 수치 잊지 않게 지금 저장해두세요!",
+          "visual_notes": "저장 & 공유 아이콘 애니메이션과 플랫폼 프로필 링크 안내",
+          "asset_ref": "asset-reels-cta"
+        }
+      ],
+      "visual_direction": "미니멀 다크 모드 콕핏 그래픽, 볼드 타이포그래피, 실측 수치 인포그래픽 강조",
+      "asset_requirements": [
+        {
+          "asset_type": "VIDEO_CLIP",
+          "resolution": "1080x1920",
+          "duration_sec": 60,
+          "notes": "차량 실내 엠비언트 조명 연출 컷"
+        },
+        {
+          "asset_type": "INFOGRAPHIC",
+          "resolution": "1080x1080",
+          "notes": "조도 120cd/m2 및 지연시간 200ms 규격 도표"
+        }
+      ],
+      "source_traceability": [
+        {
+          "claim": "주장 1: 국내 자율주행 레벨3+ 차량 실내 인터페이스 안전 가이드라인은 2026년 3분기부터 의무 적용된다.",
+          "fact_id": "fact-6d18e6dedf",
+          "fact_text": "국내 자율주행 레벨3+ 차량 실내 인터페이스 안전 가이드라인은 2026년 3분기부터 의무 적용된다.",
+          "source_id": "src-37c4f09ebf",
+          "publisher": "한국디자인진흥원(KIDP)",
+          "source_url": "https://kidp.or.kr/policy/mobility-hmi-standard-2026"
+        },
+        {
+          "claim": "주장 2: 자율주행 엠비언트 라이팅 조도 표준 최대 허용치는 120cd/m2이다.",
+          "fact_id": "fact-6942cc39ae",
+          "fact_text": "자율주행 엠비언트 라이팅 조도 표준 최대 허용치는 120cd/m2이다.",
+          "source_id": "src-37c4f09ebf",
+          "publisher": "한국디자인진흥원(KIDP)",
+          "source_url": "https://kidp.or.kr/policy/mobility-hmi-standard-2026"
+        },
+        {
+          "claim": "주장 3: HMI 안전 표준의 초기 가이드라인 도입률 목표치는 65%로 설정되었다.",
+          "fact_id": "fact-44dca6ea49",
+          "fact_text": "HMI 안전 표준의 초기 가이드라인 도입률 목표치는 65%로 설정되었다.",
+          "source_id": "src-37c4f09ebf",
+          "publisher": "한국디자인진흥원(KIDP)",
+          "source_url": "https://kidp.or.kr/policy/mobility-hmi-standard-2026"
+        }
+      ],
+      "qa_result": {
+        "passed": true,
+        "score": 1,
+        "checked_items": [
+          "Source Presence",
+          "Fact Consistency",
+          "CTA Presence",
+          "Format & Structure",
+          "Hook Quality",
+          "Title Presence",
+          "Asset Requirements",
+          "Schema Completeness",
+          "Content Length",
+          "Engagement Alignment"
+        ],
+        "errors": [],
+        "warnings": [],
+        "source_presence_verified": true,
+        "fact_consistency_verified": true,
+        "unsupported_claims": [],
+        "format_adherence": true,
+        "cta_verified": true,
+        "asset_requirements_verified": true
+      },
+      "version": 2,
+      "parent_version_id": "cnt-c368965fcf-v1",
+      "status": "HUMAN_REVIEW",
+      "created_at": "2026-09-16T18:30:04.222160",
+      "updated_at": "2026-09-16T18:30:04.222160"
+    },
+    {
+      "content_id": "cnt-b3e28f4412",
+      "project_id": "proj-d203447f5c",
+      "research_ids": [
+        "proj-d203447f5c"
+      ],
+      "platform": "instagram",
+      "content_type": "carousel",
+      "objective": "실무 정보 전달 & 졸업전시 포트폴리오 가이드",
+      "target_audience": "디자인/공학 전공 학부생, 대학원 연구원, 산학 협력 디자이너",
+      "engagement_strategy": {
+        "share": "포트폴리오 스터디원 및 팀 프로젝트 동료 간 가이드 공유 유도",
+        "save": "규제 기준 수치(120cd/m2, 200ms) 및 체크리스트 반복 열람 목적 스크랩 최우선",
+        "retention": "7장 슬라이드 순차 열람을 통한 끝까지 읽기(Completion Rate) 극대화"
+      },
+      "title": "[카드뉴스] 2026 자율주행 차량 실내 HMI 안전 표준 완벽 정리",
+      "hook": "[카드뉴스] 2026 자율주행 HMI 표준 가이드라인 요약",
+      "body": "### Slide 1: Cover\n[카드뉴스] 2026 자율주행 HMI 표준 가이드라인 요약\n*(시각 연출: 미니멀 다크 모드 배경, 대형 타이포그래피, 모빌리티 실루엣)*\n\n### Slide 2: Problem / Question\n왜 기존 차량 UI 디자인 방식으로는 2026년 산학 과제 통과가 어려울까?\n*(시각 연출: 기존 화려하기만 한 UI와 야간 눈부심 비교 다이어그램)*\n\n### Slide 3: Information\n정부 공인 표준 가이드라인 발표: 국내 자율주행 레벨3+ 차량 실내 인터페이스 안전 가이드라인은 2026년 3분기부터 의무 적용된다..\n*(시각 연출: 한국디자인진흥원(KIDP) 및 국토교통부 표준 로고와 인증 뱃지)*\n\n### Slide 4: Key Facts\n핵심 규격 수치: ① 조도 한계: 자율주행 엠비언트 라이팅 조도 표준 최대 허용치는 120cd/m2이다. ② 지연 한계: HMI 안전 표준의 초기 가이드라인 도입률 목표치는 65%로 설정되었다.\n*(시각 연출: 수치 강조 인포그래픽 카드 (120cd/m2 & 200ms 강조))*\n\n### Slide 5: Key Insight\n생체 반응형 엠비언트 조명 연동 시 승객 불안감 42.8% 감소 실측 데이터 확인.\n*(시각 연출: 서울대학교 지능형 모빌리티 랩 심박 변이도 실험 결과 차트)*\n\n### Slide 6: Conclusion\n디자이너의 역할은 심미성에서 안전 규제와 멀티모달 인터랙션 설계로 진화하고 있습니다.\n*(시각 연출: 체크리스트 요약 박스)*\n\n### Slide 7: CTA\n필요할 때 바로 찾아볼 수 있게 지금 저장하고, 동기들과 스터디에 활용하세요!\n*(시각 연출: 스크랩/저장 가이드 화살표 애니메이션)*",
+      "caption": "[카드뉴스] 2026 자율주행 HMI 표준 가이드라인 요약\n\n### Slide 1: Cover\n[카드뉴스] 2026 자율주행 HMI 표준 가이드라인 요약\n*(시각 연출: 미니멀 다크 모드 배경, 대형 타이포그래피, 모빌리티 실루엣)*\n\n### Slide 2: Problem / Question\n왜 기존 차량 UI 디자인 방식으로는 2026년 산학 과제 통과가 어려울까?\n*(시각 연출: 기존 화려하기만 한 UI와 야간 눈부심 비교 다이어그램)*\n\n### Slide 3: Information\n정부 공인 표준 ...\n\n👉 필요할 때 바로 찾아볼 수 있게 지금 저장하고, 동기들과 스터디에 활용하세요!\n\n#자율주행 #HMI디자인 #모빌리티UX #졸업전시 #자동차디자인 #엠비언트라이팅 #SDV #디자인과제",
+      "cta": "필요할 때 바로 찾아볼 수 있게 지금 저장하고, 동기들과 스터디에 활용하세요!",
+      "keywords": [
+        "HMI 가이드라인",
+        "엠비언트 라이팅",
+        "자율주행 레벨3+",
+        "SDV 디지털 콕핏",
+        "응답 지연시간(Latency)"
+      ],
+      "hashtags": [
+        "#자율주행",
+        "#HMI디자인",
+        "#모빌리티UX",
+        "#졸업전시",
+        "#자동차디자인",
+        "#엠비언트라이팅",
+        "#SDV",
+        "#디자인과제"
+      ],
+      "structure": [
+        {
+          "section_name": "Slide 1: Cover",
+          "content_text": "[카드뉴스] 2026 자율주행 HMI 표준 가이드라인 요약",
+          "visual_notes": "미니멀 다크 모드 배경, 대형 타이포그래피, 모빌리티 실루엣",
+          "asset_ref": "card-01-cover"
+        },
+        {
+          "section_name": "Slide 2: Problem / Question",
+          "content_text": "왜 기존 차량 UI 디자인 방식으로는 2026년 산학 과제 통과가 어려울까?",
+          "visual_notes": "기존 화려하기만 한 UI와 야간 눈부심 비교 다이어그램",
+          "asset_ref": "card-02-problem"
+        },
+        {
+          "section_name": "Slide 3: Information",
+          "content_text": "정부 공인 표준 가이드라인 발표: 국내 자율주행 레벨3+ 차량 실내 인터페이스 안전 가이드라인은 2026년 3분기부터 의무 적용된다..",
+          "visual_notes": "한국디자인진흥원(KIDP) 및 국토교통부 표준 로고와 인증 뱃지",
+          "asset_ref": "card-03-policy"
+        },
+        {
+          "section_name": "Slide 4: Key Facts",
+          "content_text": "핵심 규격 수치: ① 조도 한계: 자율주행 엠비언트 라이팅 조도 표준 최대 허용치는 120cd/m2이다. ② 지연 한계: HMI 안전 표준의 초기 가이드라인 도입률 목표치는 65%로 설정되었다.",
+          "visual_notes": "수치 강조 인포그래픽 카드 (120cd/m2 & 200ms 강조)",
+          "asset_ref": "card-04-facts"
+        },
+        {
+          "section_name": "Slide 5: Key Insight",
+          "content_text": "생체 반응형 엠비언트 조명 연동 시 승객 불안감 42.8% 감소 실측 데이터 확인.",
+          "visual_notes": "서울대학교 지능형 모빌리티 랩 심박 변이도 실험 결과 차트",
+          "asset_ref": "card-05-insight"
+        },
+        {
+          "section_name": "Slide 6: Conclusion",
+          "content_text": "디자이너의 역할은 심미성에서 안전 규제와 멀티모달 인터랙션 설계로 진화하고 있습니다.",
+          "visual_notes": "체크리스트 요약 박스",
+          "asset_ref": "card-06-conclusion"
+        },
+        {
+          "section_name": "Slide 7: CTA",
+          "content_text": "필요할 때 바로 찾아볼 수 있게 지금 저장하고, 동기들과 스터디에 활용하세요!",
+          "visual_notes": "스크랩/저장 가이드 화살표 애니메이션",
+          "asset_ref": "card-07-cta"
+        }
+      ],
+      "visual_direction": "미니멀 다크 모드 콕핏 그래픽, 볼드 타이포그래피, 실측 수치 인포그래픽 강조",
+      "asset_requirements": [
+        {
+          "asset_type": "VIDEO_CLIP",
+          "resolution": "1080x1920",
+          "duration_sec": 60,
+          "notes": "차량 실내 엠비언트 조명 연출 컷"
+        },
+        {
+          "asset_type": "INFOGRAPHIC",
+          "resolution": "1080x1080",
+          "notes": "조도 120cd/m2 및 지연시간 200ms 규격 도표"
+        }
+      ],
+      "source_traceability": [
+        {
+          "claim": "주장 1: 국내 자율주행 레벨3+ 차량 실내 인터페이스 안전 가이드라인은 2026년 3분기부터 의무 적용된다.",
+          "fact_id": "fact-6d18e6dedf",
+          "fact_text": "국내 자율주행 레벨3+ 차량 실내 인터페이스 안전 가이드라인은 2026년 3분기부터 의무 적용된다.",
+          "source_id": "src-37c4f09ebf",
+          "publisher": "한국디자인진흥원(KIDP)",
+          "source_url": "https://kidp.or.kr/policy/mobility-hmi-standard-2026"
+        },
+        {
+          "claim": "주장 2: 자율주행 엠비언트 라이팅 조도 표준 최대 허용치는 120cd/m2이다.",
+          "fact_id": "fact-6942cc39ae",
+          "fact_text": "자율주행 엠비언트 라이팅 조도 표준 최대 허용치는 120cd/m2이다.",
+          "source_id": "src-37c4f09ebf",
+          "publisher": "한국디자인진흥원(KIDP)",
+          "source_url": "https://kidp.or.kr/policy/mobility-hmi-standard-2026"
+        },
+        {
+          "claim": "주장 3: HMI 안전 표준의 초기 가이드라인 도입률 목표치는 65%로 설정되었다.",
+          "fact_id": "fact-44dca6ea49",
+          "fact_text": "HMI 안전 표준의 초기 가이드라인 도입률 목표치는 65%로 설정되었다.",
+          "source_id": "src-37c4f09ebf",
+          "publisher": "한국디자인진흥원(KIDP)",
+          "source_url": "https://kidp.or.kr/policy/mobility-hmi-standard-2026"
+        }
+      ],
+      "qa_result": {
+        "passed": true,
+        "score": 1,
+        "checked_items": [
+          "Source Presence",
+          "Fact Consistency",
+          "CTA Presence",
+          "Format & Structure",
+          "Hook Quality",
+          "Title Presence",
+          "Asset Requirements",
+          "Schema Completeness",
+          "Content Length",
+          "Engagement Alignment"
+        ],
+        "errors": [],
+        "warnings": [],
+        "source_presence_verified": true,
+        "fact_consistency_verified": true,
+        "unsupported_claims": [],
+        "format_adherence": true,
+        "cta_verified": true,
+        "asset_requirements_verified": true
+      },
+      "version": 1,
+      "parent_version_id": null,
+      "status": "HUMAN_REVIEW",
+      "created_at": "2026-09-16T18:30:04.234611",
+      "updated_at": "2026-09-16T18:30:04.234611"
+    }
+  ],
+  "latest_content": {
+    "content_id": "cnt-9c33482d2b",
+    "project_id": "proj-d203447f5c",
+    "research_ids": [
+      "proj-d203447f5c"
+    ],
+    "platform": "instagram",
+    "content_type": "reels",
+    "objective": "실무 정보 전달 & 졸업전시 포트폴리오 가이드",
+    "target_audience": "디자인/공학 전공 학부생, 대학원 연구원, 산학 협력 디자이너",
+    "engagement_strategy": {
+      "share": "첫 3초 충격적 후킹(2026년 규정 미준수 시 탈락)을 통한 동기 간 바이럴 확산",
+      "save": "핵심 3대 팩트 수치 보관 목적 저장 유도",
+      "retention": "빠른 화면 전환 컷(0~3초 후킹 → 10초 상황 → 30초 실측)으로 60초 완청률 달성"
+    },
+    "title": "2026 자율주행 HMI 가이드라인: 디자이너 필수 수치 3가지",
+    "hook": "자동차 디자이너라면 2026년부터 이거 모르면 포트폴리오 탈락합니다!",
+    "body": "### Hook (0~3초)\n자동차 디자이너라면 2026년부터 이거 모르면 포트폴리오 탈락합니다!\n*(시각 연출: 빠른 템포의 차량 콕핏 전환 모션 그래픽, 볼드 텍스트 오버레이)*\n\n### Context (3~10초)\n국내 자율주행 레벨3+ 차량 실내 인터페이스 기준이 전면 개편됩니다. 핵심은 운전자 주의 분산 방지입니다.\n*(시각 연출: 야간 주행 중 차량 실내 엠비언트 라이팅 시연 컷)*\n\n### Story / Information (10~30초)\n첫째, 국내 자율주행 레벨3+ 차량 실내 인터페이스 안전 가이드라인은 2026년 3분기부터 의무 적용된다.. 둘째, 자율주행 엠비언트 라이팅 조도 표준 최대 허용치는 120cd/m2이다..\n*(시각 연출: 조도계 측정 그래픽(120cd/m2) 및 실시간 UI 반응 시각화)*\n\n### Key Point (30~45초)\n셋째, HMI 안전 표준의 초기 가이드라인 도입률 목표치는 65%로 설정되었다.. 시각뿐만 아니라 햅틱 진동 피드백 결합이 이제 필수 설계 요건입니다.\n*(시각 연출: 스티어링 휠 햅틱 인터랙션 및 화면 지연시간 비교 그래프)*\n\n### Conclusion (45~55초)\n단순히 예쁜 그래픽을 넘어 안전 규격 수치를 반영한 모빌리티 UI가 이번 졸업전시의 당락을 가릅니다.\n*(시각 연출: 완성된 지능형 콕핏 렌더링 360도 회전 뷰)*\n\n### CTA (55~60초)\n졸업작품 준비 중인 팀원들에게 공유하고, 규격 수치 잊지 않게 지금 저장해두세요!\n*(시각 연출: 저장 & 공유 아이콘 애니메이션과 플랫폼 프로필 링크 안내)*",
+    "caption": "자동차 디자이너라면 2026년부터 이거 모르면 포트폴리오 탈락합니다!\n\n### Hook (0~3초)\n자동차 디자이너라면 2026년부터 이거 모르면 포트폴리오 탈락합니다!\n*(시각 연출: 빠른 템포의 차량 콕핏 전환 모션 그래픽, 볼드 텍스트 오버레이)*\n\n### Context (3~10초)\n국내 자율주행 레벨3+ 차량 실내 인터페이스 기준이 전면 개편됩니다. 핵심은 운전자 주의 분산 방지입니다.\n*(시각 연출: 야간 주행 중 차량 실내 엠비언트 라이팅 시연 컷)*\n\n### Story / Information (10...\n\n👉 졸업작품 준비 중인 팀원들에게 공유하고, 규격 수치 잊지 않게 지금 저장해두세요!\n\n#자율주행 #HMI디자인 #모빌리티UX #졸업전시 #자동차디자인 #엠비언트라이팅 #SDV #디자인과제",
+    "cta": "졸업작품 준비 중인 팀원들에게 공유하고, 규격 수치 잊지 않게 지금 저장해두세요!",
+    "keywords": [
+      "HMI 가이드라인",
+      "엠비언트 라이팅",
+      "자율주행 레벨3+",
+      "SDV 디지털 콕핏",
+      "응답 지연시간(Latency)"
+    ],
+    "hashtags": [
+      "#자율주행",
+      "#HMI디자인",
+      "#모빌리티UX",
+      "#졸업전시",
+      "#자동차디자인",
+      "#엠비언트라이팅",
+      "#SDV",
+      "#디자인과제"
+    ],
+    "structure": [
+      {
+        "section_name": "Hook (0~3초)",
+        "content_text": "자동차 디자이너라면 2026년부터 이거 모르면 포트폴리오 탈락합니다!",
+        "visual_notes": "빠른 템포의 차량 콕핏 전환 모션 그래픽, 볼드 텍스트 오버레이",
+        "asset_ref": "asset-reels-hook"
+      },
+      {
+        "section_name": "Context (3~10초)",
+        "content_text": "국내 자율주행 레벨3+ 차량 실내 인터페이스 기준이 전면 개편됩니다. 핵심은 운전자 주의 분산 방지입니다.",
+        "visual_notes": "야간 주행 중 차량 실내 엠비언트 라이팅 시연 컷",
+        "asset_ref": "asset-reels-context"
+      },
+      {
+        "section_name": "Story / Information (10~30초)",
+        "content_text": "첫째, 국내 자율주행 레벨3+ 차량 실내 인터페이스 안전 가이드라인은 2026년 3분기부터 의무 적용된다.. 둘째, 자율주행 엠비언트 라이팅 조도 표준 최대 허용치는 120cd/m2이다..",
+        "visual_notes": "조도계 측정 그래픽(120cd/m2) 및 실시간 UI 반응 시각화",
+        "asset_ref": "asset-reels-info"
+      },
+      {
+        "section_name": "Key Point (30~45초)",
+        "content_text": "셋째, HMI 안전 표준의 초기 가이드라인 도입률 목표치는 65%로 설정되었다.. 시각뿐만 아니라 햅틱 진동 피드백 결합이 이제 필수 설계 요건입니다.",
+        "visual_notes": "스티어링 휠 햅틱 인터랙션 및 화면 지연시간 비교 그래프",
+        "asset_ref": "asset-reels-keypoint"
+      },
+      {
+        "section_name": "Conclusion (45~55초)",
+        "content_text": "단순히 예쁜 그래픽을 넘어 안전 규격 수치를 반영한 모빌리티 UI가 이번 졸업전시의 당락을 가릅니다.",
+        "visual_notes": "완성된 지능형 콕핏 렌더링 360도 회전 뷰",
+        "asset_ref": "asset-reels-conclusion"
+      },
+      {
+        "section_name": "CTA (55~60초)",
+        "content_text": "졸업작품 준비 중인 팀원들에게 공유하고, 규격 수치 잊지 않게 지금 저장해두세요!",
+        "visual_notes": "저장 & 공유 아이콘 애니메이션과 플랫폼 프로필 링크 안내",
+        "asset_ref": "asset-reels-cta"
+      }
+    ],
+    "visual_direction": "미니멀 다크 모드 콕핏 그래픽, 볼드 타이포그래피, 실측 수치 인포그래픽 강조",
+    "asset_requirements": [
+      {
+        "asset_type": "VIDEO_CLIP",
+        "resolution": "1080x1920",
+        "duration_sec": 60,
+        "notes": "차량 실내 엠비언트 조명 연출 컷"
+      },
+      {
+        "asset_type": "INFOGRAPHIC",
+        "resolution": "1080x1080",
+        "notes": "조도 120cd/m2 및 지연시간 200ms 규격 도표"
+      }
+    ],
+    "source_traceability": [
+      {
+        "claim": "주장 1: 국내 자율주행 레벨3+ 차량 실내 인터페이스 안전 가이드라인은 2026년 3분기부터 의무 적용된다.",
+        "fact_id": "fact-6d18e6dedf",
+        "fact_text": "국내 자율주행 레벨3+ 차량 실내 인터페이스 안전 가이드라인은 2026년 3분기부터 의무 적용된다.",
+        "source_id": "src-37c4f09ebf",
+        "publisher": "한국디자인진흥원(KIDP)",
+        "source_url": "https://kidp.or.kr/policy/mobility-hmi-standard-2026"
+      },
+      {
+        "claim": "주장 2: 자율주행 엠비언트 라이팅 조도 표준 최대 허용치는 120cd/m2이다.",
+        "fact_id": "fact-6942cc39ae",
+        "fact_text": "자율주행 엠비언트 라이팅 조도 표준 최대 허용치는 120cd/m2이다.",
+        "source_id": "src-37c4f09ebf",
+        "publisher": "한국디자인진흥원(KIDP)",
+        "source_url": "https://kidp.or.kr/policy/mobility-hmi-standard-2026"
+      },
+      {
+        "claim": "주장 3: HMI 안전 표준의 초기 가이드라인 도입률 목표치는 65%로 설정되었다.",
+        "fact_id": "fact-44dca6ea49",
+        "fact_text": "HMI 안전 표준의 초기 가이드라인 도입률 목표치는 65%로 설정되었다.",
+        "source_id": "src-37c4f09ebf",
+        "publisher": "한국디자인진흥원(KIDP)",
+        "source_url": "https://kidp.or.kr/policy/mobility-hmi-standard-2026"
+      }
+    ],
+    "qa_result": {
+      "passed": true,
+      "score": 1,
+      "checked_items": [
+        "Source Presence",
+        "Fact Consistency",
+        "CTA Presence",
+        "Format & Structure",
+        "Hook Quality",
+        "Title Presence",
+        "Asset Requirements",
+        "Schema Completeness",
+        "Content Length",
+        "Engagement Alignment"
+      ],
+      "errors": [],
+      "warnings": [],
+      "source_presence_verified": true,
+      "fact_consistency_verified": true,
+      "unsupported_claims": [],
+      "format_adherence": true,
+      "cta_verified": true,
+      "asset_requirements_verified": true
+    },
+    "version": 1,
+    "parent_version_id": null,
+    "status": "APPROVED",
+    "created_at": "2026-09-16T18:30:04.208742",
+    "updated_at": "2026-09-17T12:21:37.820Z",
+    "approval_status": "APPROVED",
+    "approval_required": true,
+    "approval_version": 1,
+    "approved_by": "admin_director",
+    "approved_at": "2026-09-17T12:21:37.820Z",
+    "rejected_by": null,
+    "rejected_at": null,
+    "rejection_reason": null
+  },
+  "last_updated": "2026-09-17T12:21:37.820Z"
+}

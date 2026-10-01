@@ -1,0 +1,236 @@
+[
+  {
+    "id": "ip-01",
+    "company": "무신사 (MUSINSA)",
+    "logo_url": "/brands/musinsa.png",
+    "logo_emoji": "🖤",
+    "category": "패션 / 버추얼 커머스",
+    "license": "졸업작품/캡스톤 비영리 자유 이용",
+    "description": "국내 최대 패션 플랫폼 무신사의 공식 BI 및 버추얼 3D 의류 에셋 팩",
+    "badge": "공식 파트너십 인증",
+    "package_size": "148 MB",
+    "download_count": 1420,
+    "assets": [
+      "SVG/AI 로고 키트",
+      "브랜드 가이드라인",
+      "3D 에셋 / 캐릭터 원본",
+      "공식 전용 폰트"
+    ],
+    "information_sources": [
+      {
+        "source_id": "src-brand-ip-01",
+        "source_url": "https://musinsa.com/brand/guidelines",
+        "source_title": "무신사 공식 브랜드 가이드라인",
+        "source_type": "BRAND_IP_OFFICIAL",
+        "source_domain": "musinsa.com",
+        "source_priority": 1,
+        "verification_status": "VERIFIED",
+        "evidence": "무신사 공식 브랜드 가이드라인 원문 라이선스 및 에셋 가이드",
+        "collected_at": "2026-09-16T21:37:10.318539",
+        "last_verified_at": "2026-09-16T21:59:20.005089",
+        "entity_id": "ip-01",
+        "canonical_url": "https://musinsa.com/brand/guidelines",
+        "source_name": "무신사",
+        "url_status": "URL_BLOCKED",
+        "http_status_code": 403
+      }
+    ],
+    "source_url": "https://musinsa.com/brand/guidelines",
+    "official_policy_url": "https://musinsa.com/brand/guidelines"
+  },
+  {
+    "id": "ip-02",
+    "company": "배달의민족 (우아한형제들)",
+    "logo_url": "/brands/baemin.png",
+    "logo_emoji": "🛵",
+    "category": "F&B / 배달 라이프스타일",
+    "license": "졸업작품/캡스톤 비영리 자유 이용",
+    "description": "배민 배달이 캐릭터 3D 리그 및 배민 한나·주아·을지로 공식 서체 패키지",
+    "badge": "공식 파트너십 인증",
+    "package_size": "215 MB",
+    "download_count": 2340,
+    "assets": [
+      "SVG/AI 로고 키트",
+      "브랜드 가이드라인",
+      "3D 에셋 / 캐릭터 원본",
+      "공식 전용 폰트"
+    ],
+    "information_sources": [
+      {
+        "source_id": "src-brand-ip-02",
+        "source_url": "https://font.woowahan.com/",
+        "source_title": "우아한형제들 배민 글꼴 라이선스 포털",
+        "source_type": "BRAND_IP_OFFICIAL",
+        "source_domain": "font.woowahan.com",
+        "source_priority": 1,
+        "verification_status": "UNVERIFIED",
+        "evidence": "우아한형제들 배민 글꼴 라이선스 포털 원문 라이선스 및 에셋 가이드",
+        "collected_at": "2026-09-16T21:37:10.318539",
+        "last_verified_at": "2026-09-16T21:59:20.005089",
+        "entity_id": "ip-02",
+        "canonical_url": "https://font.woowahan.com/",
+        "source_name": "우아한형제들",
+        "url_status": "URL_TIMEOUT",
+        "http_status_code": 0
+      }
+    ],
+    "source_url": "https://font.woowahan.com/",
+    "official_policy_url": "https://font.woowahan.com/"
+  },
+  {
+    "id": "ip-03",
+    "company": "카카오 (카카오프렌즈 IPX)",
+    "logo_url": "/brands/kakao.png",
+    "logo_emoji": "🦁",
+    "category": "캐릭터 / 엔터테인먼트",
+    "license": "졸업작품/캡스톤 비영리 자유 이용",
+    "description": "라이언·춘식이 3D 모델링 원본 및 카카오 브랜드 컬러 에셋 팔레트",
+    "badge": "공식 파트너십 인증",
+    "package_size": "480 MB",
+    "download_count": 3890,
+    "assets": [
+      "SVG/AI 로고 키트",
+      "브랜드 가이드라인",
+      "3D 에셋 / 캐릭터 원본",
+      "공식 전용 폰트"
+    ],
+    "information_sources": [
+      {
+        "source_id": "src-brand-ip-03",
+        "source_url": "https://www.kakaocorp.com/page/service/service/KakaoFriends",
+        "source_title": "카카오프렌즈 공식 IP 소개",
+        "source_type": "BRAND_IP_OFFICIAL",
+        "source_domain": "www.kakaocorp.com",
+        "source_priority": 1,
+        "verification_status": "FAILED",
+        "evidence": "카카오프렌즈 공식 IP 소개 원문 라이선스 및 에셋 가이드",
+        "collected_at": "2026-09-16T21:37:10.318539",
+        "last_verified_at": "2026-09-16T21:59:20.005089",
+        "entity_id": "ip-03",
+        "canonical_url": "https://www.kakaocorp.com/page/service/service/KakaoFriends",
+        "source_name": "카카오프렌즈",
+        "url_status": "URL_NOT_FOUND",
+        "http_status_code": 404
+      }
+    ],
+    "source_url": "https://www.kakaocorp.com/page/service/service/KakaoFriends",
+    "official_policy_url": "https://www.kakaocorp.com/page/service/service/KakaoFriends"
+  },
+  {
+    "id": "ip-04",
+    "company": "현대카드 (Hyundai Card)",
+    "logo_url": "/brands/hyundaicard.png",
+    "logo_emoji": "💳",
+    "category": "금융 / 타이포그래피",
+    "license": "졸업작품/캡스톤 비영리 자유 이용",
+    "description": "현대카드 Youandi 전용 서체 및 플레이트 비례 규격 그리드 가이드",
+    "badge": "공식 파트너십 인증",
+    "package_size": "85 MB",
+    "download_count": 1780,
+    "assets": [
+      "SVG/AI 로고 키트",
+      "브랜드 가이드라인",
+      "3D 에셋 / 캐릭터 원본",
+      "공식 전용 폰트"
+    ],
+    "information_sources": [
+      {
+        "source_id": "src-brand-ip-04",
+        "source_url": "https://clova.ai/ko",
+        "source_title": "네이버 클로바 브랜드/AI 포털",
+        "source_type": "BRAND_IP_OFFICIAL",
+        "source_domain": "clova.ai",
+        "source_priority": 1,
+        "verification_status": "VERIFIED",
+        "evidence": "네이버 클로바 브랜드/AI 포털 원문 라이선스 및 에셋 가이드",
+        "collected_at": "2026-09-16T21:37:10.318539",
+        "last_verified_at": "2026-09-16T21:59:20.005089",
+        "entity_id": "ip-04",
+        "canonical_url": "https://clova.ai/ko",
+        "source_name": "네이버",
+        "url_status": "URL_VALID",
+        "http_status_code": 200
+      }
+    ],
+    "source_url": "https://clova.ai/ko",
+    "official_policy_url": "https://clova.ai/ko"
+  },
+  {
+    "id": "ip-05",
+    "company": "당근 (Karrot)",
+    "logo_url": "/brands/karrot.png",
+    "logo_emoji": "🥕",
+    "category": "하이퍼로컬 / 커뮤니티",
+    "license": "졸업작품/캡스톤 비영리 자유 이용",
+    "description": "당근이 캐릭터 인터랙션 일러스트 및 로컬 커뮤니티 아이콘 세트",
+    "badge": "공식 파트너십 인증",
+    "package_size": "112 MB",
+    "download_count": 1650,
+    "assets": [
+      "SVG/AI 로고 키트",
+      "브랜드 가이드라인",
+      "3D 에셋 / 캐릭터 원본",
+      "공식 전용 폰트"
+    ],
+    "information_sources": [
+      {
+        "source_id": "src-brand-ip-05",
+        "source_url": "https://www.apgroup.com",
+        "source_title": "아모레퍼시픽 그룹 공식 브랜드 아카이브",
+        "source_type": "BRAND_IP_OFFICIAL",
+        "source_domain": "www.apgroup.com",
+        "source_priority": 1,
+        "verification_status": "VERIFIED",
+        "evidence": "아모레퍼시픽 그룹 공식 브랜드 아카이브 원문 라이선스 및 에셋 가이드",
+        "collected_at": "2026-09-16T21:37:10.318539",
+        "last_verified_at": "2026-09-16T21:59:20.005089",
+        "entity_id": "ip-05",
+        "canonical_url": "https://www.apgroup.com/int/ko/",
+        "source_name": "아모레퍼시픽",
+        "url_status": "URL_REDIRECT",
+        "http_status_code": 200
+      }
+    ],
+    "source_url": "https://www.apgroup.com",
+    "official_policy_url": "https://www.apgroup.com"
+  },
+  {
+    "id": "ip-06",
+    "company": "SM 엔터테인먼트 (SMCU)",
+    "logo_url": "/brands/sm.png",
+    "logo_emoji": "🪐",
+    "category": "K-POP / 메타버스",
+    "license": "졸업작품/캡스톤 비영리 자유 이용",
+    "description": "에스파(aespa) 광야(KWANGYA) 컨셉 세계관 비주얼 에셋 및 엠블럼 키트",
+    "badge": "공식 파트너십 인증",
+    "package_size": "360 MB",
+    "download_count": 2980,
+    "assets": [
+      "SVG/AI 로고 키트",
+      "브랜드 가이드라인",
+      "3D 에셋 / 캐릭터 원본",
+      "공식 전용 폰트"
+    ],
+    "information_sources": [
+      {
+        "source_id": "src-brand-ip-06",
+        "source_url": "https://www.dstrict.com",
+        "source_title": "디스트릭트 공식 IP 포털",
+        "source_type": "BRAND_IP_OFFICIAL",
+        "source_domain": "www.dstrict.com",
+        "source_priority": 1,
+        "verification_status": "VERIFIED",
+        "evidence": "디스트릭트 공식 IP 포털 원문 라이선스 및 에셋 가이드",
+        "collected_at": "2026-09-16T21:37:10.318539",
+        "last_verified_at": "2026-09-16T21:59:20.005089",
+        "entity_id": "ip-06",
+        "canonical_url": "https://www.dstrict.com",
+        "source_name": "디스트릭트",
+        "url_status": "URL_VALID",
+        "http_status_code": 200
+      }
+    ],
+    "source_url": "https://www.dstrict.com",
+    "official_policy_url": "https://www.dstrict.com"
+  }
+]

@@ -1,0 +1,16 @@
+import { NextResponse } from "next/server";
+import fs from "fs";
+import path from "path";
+
+export async function GET() {
+  try {
+    const filePath = path.resolve(process.cwd(), "data", "published", "professors.json");
+    if (!fs.existsSync(filePath)) {
+      return NextResponse.json({ professors: [] });
+    }
+    const data = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+    return NextResponse.json(data);
+  } catch (error) {
+    return NextResponse.json({ error: "Failed to load professors" }, { status: 500 });
+  }
+}

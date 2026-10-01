@@ -1,0 +1,1432 @@
+"use client";
+
+import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import {
+  X,
+  Edit,
+  Save,
+  Trash2,
+  Plus,
+  Camera,
+  Image as ImageIcon,
+  ExternalLink,
+  Calendar,
+  MapPin,
+  Layers,
+  CheckCircle2,
+  Loader2,
+  RotateCcw,
+  Sparkles,
+  Instagram,
+  Building2,
+  Briefcase,
+  ShieldCheck,
+  Maximize2,
+  Share2,
+  Check,
+  GraduationCap,
+  ClipboardPaste,
+} from "lucide-react";
+import { Exhibition, Artwork } from "@/lib/get-exhibitions";
+import { EDIT_CATEGORIES, getStandardCategory, isArtworkZoomDisabled } from "@/src/utils/categoryMapper";
+import { ArtworkLightboxModal } from "./artwork-lightbox-modal";
+
+// EDIT_CATEGORIES is imported from categoryMapper
+
+// ==========================================
+// 개별 출품작 순서 뱃지 (더블클릭 인라인 숫자 편집 및 순서 이동 지원)
+// ==========================================
+interface OrderBadgeProps {
+  index: number;
+  totalCount: number;
+  onMove: (newOrder: number) => void;
+  disabled?: boolean;
+}
+
+function OrderBadge({ index, totalCount, onMove, disabled = false }: OrderBadgeProps) {
+  const [isEditing, setIsEditing] = useState(false);
+  const [inputValue, setInputValue] = useState(String(index + 1));
+
+  useEffect(() => {
+    setInputValue(String(index + 1));
+  }, [index]);
+
+  const handleConfirm = () => {
+    const val = parseInt(inputValue, 10);
+    if (!isNaN(val) && val >= 1 && val <= totalCount && val !== index + 1) {
+      onMove(val);
+    } else {
+      setInputValue(String(index + 1));
+    }
+    setIsEditing(false);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      handleConfirm();
+    } else if (e.key === "Escape") {
+      e.preventDefault();
+      setInputValue(String(index + 1));
+      setIsEditing(false);
+    }
+  };
+
+  if (disabled) {
+    return (
+      <div className="absolute top-2 left-2 z-10 px-2 py-0.5 bg-black/60 backdrop-blur-sm rounded-md text-white text-[11px] font-mono font-bold select-none">
+        #{index + 1}
+      </div>
+    );
+  }
+
+  if (isEditing) {
+    return (
+      <div
+        className="absolute top-2 left-2 z-30 flex items-center bg-black/90 text-white text-xs px-1.5 py-0.5 rounded shadow border border-blue-500"
+        onClick={(e) => e.stopPropagation()}
+        onMouseDown={(e) => e.stopPropagation()}
+        onDoubleClick={(e) => e.stopPropagation()}
+      >
+        <span className="text-gray-400 mr-0.5 font-mono">#</span>
+        <input
+          type="number"
+          min={1}
+          max={totalCount}
+          value={inputValue}
+          autoFocus
+          onFocus={(e) => e.target.select()}
+          onChange={(e) => setInputValue(e.target.value)}
+          onBlur={handleConfirm}
+          onKeyDown={handleKeyDown}
+          className="w-10 bg-transparent text-white font-bold text-center outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+        />
+      </div>
+    );
+  }
+
+  return (
+    <div
+      onDoubleClick={(e) => {
+        e.stopPropagation();
+        setIsEditing(true);
+      }}
+      onClick={(e) => e.stopPropagation()}
+      title="더블클릭하여 순서 번호 직접 변경"
+      className="absolute top-2 left-2 z-20 bg-black/75 hover:bg-black/90 text-white text-xs px-2 py-0.5 rounded flex items-center gap-1 backdrop-blur-sm cursor-pointer border border-transparent hover:border-white/40 transition-all select-none"
+    >
+      <span className="text-gray-400">⠿</span>
+      <span className="font-semibold font-mono">#{index + 1}</span>
+    </div>
+  );
+}
+
+interface ExhibitionDetailModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  exhibition: Exhibition | null;
+  initialEditMode?: boolean;
+  onSaveSuccess?: () => void;
+  onArtworksReorder?: (artworks: Artwork[]) => void;
+  onUpdateExhibition?: (updated: Exhibition) => void;
+  onOpenInstagramModal?: (exhibit: Exhibition) => void;
+}
+
+export function ExhibitionDetailModal({
+  isOpen,
+  onClose,
+  exhibition,
+  initialEditMode = false,
+  onSaveSuccess,
+  onArtworksReorder,
+  onUpdateExhibition,
+  onOpenInstagramModal,
+}: ExhibitionDetailModalProps) {
+  const isProduction = process.env.NODE_ENV === "production";
+  const [isEditing, setIsEditingState] = useState(isProduction ? false : initialEditMode);
+  const setIsEditing = (val: boolean) => {
+    if (isProduction) return;
+    setIsEditingState(val);
+  };
+  const [isSaving, setIsSaving] = useState(false);
+  const [isUploadingPoster, setIsUploadingPoster] = useState(false);
+  const [uploadingArtworkIndex, setUploadingArtworkIndex] = useState<number | null>(null);
+  const [isAddingArtwork, setIsAddingArtwork] = useState(false);
+
+  // 편집 폼 상태
+  const [title, setTitle] = useState("");
+  const [university, setUniversity] = useState("");
+  const [department, setDepartment] = useState("");
+  const [year, setYear] = useState("2025");
+  const [category, setCategory] = useState("디자인·UX/UI");
+  const [headline, setHeadline] = useState("");
+  const [curationIntro, setCurationIntro] = useState("");
+  const [period, setPeriod] = useState("");
+  const [venue, setVenue] = useState("");
+  const [targetUrl, setTargetUrl] = useState("");
+  const [posterPath, setPosterPath] = useState<string | null>(null);
+  const [artworks, setArtworks] = useState<Artwork[]>([]);
+
+  const [showCorporateReport, setShowCorporateReport] = useState(false);
+
+  // 출품작 드래그 앤 드롭 상태 관리
+  const [draggedIndex, setDraggedIndex] = useState<number | null>(null);
+  const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
+  const draggedIndexRef = useRef<number | null>(null);
+
+  const posterFileInputRef = useRef<HTMLInputElement>(null);
+  const newArtworkFileInputRef = useRef<HTMLInputElement>(null);
+
+  // 고화질 이미지 라이트박스 상태 관리
+  const [selectedArtworkIndex, setSelectedArtworkIndex] = useState<number | null>(null);
+  const [isPosterLightboxOpen, setIsPosterLightboxOpen] = useState(false);
+
+  // 온라인 전시 링크공유 상단 오버레이 패널 상태
+  const [isSharePanelOpen, setIsSharePanelOpen] = useState(false);
+  const [isLinkCopied, setIsLinkCopied] = useState(false);
+
+  const getModalShareUrl = () => {
+    return targetUrl && targetUrl.startsWith("http")
+      ? targetUrl
+      : typeof window !== "undefined" && exhibition
+      ? `${window.location.origin}/exhibit/${encodeURIComponent(exhibition.id)}`
+      : "";
+  };
+
+  const handleCopyModalUrl = async () => {
+    const shareUrl = getModalShareUrl();
+    if (!shareUrl) return;
+
+    try {
+      if (typeof navigator !== "undefined" && navigator.clipboard) {
+        await navigator.clipboard.writeText(shareUrl);
+      } else {
+        const textArea = document.createElement("textarea");
+        textArea.value = shareUrl;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+      }
+      setIsLinkCopied(true);
+      setTimeout(() => setIsLinkCopied(false), 2500);
+    } catch (e) {
+      console.error("모달 링크 복사 실패:", e);
+    }
+  };
+
+  const handleModalNativeShare = async () => {
+    const shareUrl = getModalShareUrl();
+    if (!shareUrl) return;
+    if (typeof navigator !== "undefined" && navigator.share) {
+      try {
+        await navigator.share({
+          title: `${university} ${department} 온라인 졸업전시회`,
+          text: `[${university}] ${title} 공식 온라인 전시를 확인해보세요!`,
+          url: shareUrl,
+        });
+      } catch (err: any) {
+        if (err.name !== "AbortError") console.error(err);
+      }
+    }
+  };
+
+  const handleModalShareLink = () => {
+    setIsSharePanelOpen((prev) => !prev);
+  };
+
+  // 전시 데이터 변경 시 초기화
+  useEffect(() => {
+    if (!exhibition) return;
+    setIsEditing(initialEditMode);
+    setTitle(exhibition.title || "");
+    setUniversity(exhibition.university || "");
+    setDepartment(exhibition.department || "");
+    setYear(exhibition.year || "2025");
+    setCategory(exhibition.category || "디자인·UX/UI");
+    setHeadline(exhibition.headline || exhibition.slogan || "");
+    setCurationIntro(exhibition.curationIntro || exhibition.description || "");
+    setPeriod(exhibition.period || exhibition.schedule || "");
+    setVenue(exhibition.venue || "");
+    setTargetUrl(exhibition.targetUrl || "");
+    setPosterPath(exhibition.posterPath || null);
+    setArtworks(exhibition.artworks ? [...exhibition.artworks] : []);
+    setSelectedArtworkIndex(null);
+    setIsPosterLightboxOpen(false);
+  }, [exhibition, isOpen, initialEditMode]);
+
+  if (!isOpen || !exhibition) return null;
+
+  const isZoomDisabled = isArtworkZoomDisabled(exhibition);
+
+  // 1. 공통 파일 업로드 헬퍼
+  const uploadImageFile = async (file: File): Promise<string | null> => {
+    try {
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("exhibitionId", exhibition.id);
+
+      const res = await fetch("/api/upload", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await res.json();
+      if (res.ok && data.success) {
+        return data.relativePath;
+      } else {
+        alert(data.error || "파일 업로드에 실패했습니다.");
+        return null;
+      }
+    } catch (err: any) {
+      alert(`업로드 중 통신 오류 발생: ${err.message}`);
+      return null;
+    }
+  };
+
+  // 2. 메인 포스터 업로드/교체 핸들러
+  const handlePosterUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setIsUploadingPoster(true);
+    const newRelPath = await uploadImageFile(file);
+    if (newRelPath) {
+      setPosterPath(newRelPath);
+    }
+    setIsUploadingPoster(false);
+    if (e.target) e.target.value = "";
+  };
+
+  // 3. 메인 포스터 삭제 핸들러
+  const handlePosterDelete = () => {
+    if (window.confirm("메인 포스터를 삭제하시겠습니까?")) {
+      setPosterPath(null);
+    }
+  };
+
+  // 4. 출품작 이미지 개별 교체 핸들러
+  const handleArtworkImageChange = async (index: number, e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setUploadingArtworkIndex(index);
+    const newRelPath = await uploadImageFile(file);
+    if (newRelPath) {
+      setArtworks((prev) =>
+        prev.map((item, idx) => (idx === index ? { ...item, imagePath: newRelPath } : item))
+      );
+    }
+    setUploadingArtworkIndex(null);
+    if (e.target) e.target.value = "";
+  };
+
+  // 5. 출품작 삭제 핸들러
+  const handleRemoveArtwork = (index: number) => {
+    const art = artworks[index];
+    if (window.confirm(`'${art.title || "해당 출품작"}'을 삭제하시겠습니까?`)) {
+      setArtworks((prev) => {
+        const updated = prev.filter((_, idx) => idx !== index);
+        if (onArtworksReorder) onArtworksReorder(updated);
+        return updated;
+      });
+    }
+  };
+
+  // 6. 개별 출품작 텍스트 인라인 수정
+  const handleUpdateArtworkField = (index: number, field: keyof Artwork, val: string) => {
+    setArtworks((prev) => {
+      const updated = prev.map((item, idx) => (idx === index ? { ...item, [field]: val } : item));
+      if (onArtworksReorder) onArtworksReorder(updated);
+      return updated;
+    });
+  };
+
+  // 7. 새 출품작 추가 핸들러 (파일 업로드 후 기본 메타데이터 세팅)
+  const handleAddNewArtworkFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setIsAddingArtwork(true);
+    const newRelPath = await uploadImageFile(file);
+    if (newRelPath) {
+      const newWork: Artwork = {
+        title: `신규 출품작 #${artworks.length + 1}`,
+        author: `${university || "출품"} 작가`,
+        role: `${department || "디자인"} 크리에이터`,
+        imagePath: newRelPath,
+        description: "",
+      };
+      setArtworks((prev) => {
+        const updated = [...prev, newWork];
+        if (onArtworksReorder) onArtworksReorder(updated);
+        return updated;
+      });
+    }
+    setIsAddingArtwork(false);
+    if (e.target) e.target.value = "";
+  };
+
+  // 8. 출품작 HTML5 네이티브 드래그 앤 드롭 순서 변경 핸들러
+  const handleDragStart = (index: number, e: React.DragEvent) => {
+    if (!isEditing) return;
+    draggedIndexRef.current = index;
+    setDraggedIndex(index);
+    e.dataTransfer.effectAllowed = "move";
+    try {
+      e.dataTransfer.setData("text/plain", index.toString());
+    } catch {}
+  };
+
+  const handleDragEnter = (index: number) => {
+    const fromIdx = draggedIndexRef.current ?? draggedIndex;
+    if (!isEditing || fromIdx === null || fromIdx === index) return;
+    setDragOverIndex(index);
+  };
+
+  const handleDragOver = (e: React.DragEvent, index: number) => {
+    if (!isEditing) return;
+    e.preventDefault();
+    e.dataTransfer.dropEffect = "move";
+    const fromIdx = draggedIndexRef.current ?? draggedIndex;
+    if (dragOverIndex !== index && fromIdx !== index) {
+      setDragOverIndex(index);
+    }
+  };
+
+  const handleDragEnd = () => {
+    draggedIndexRef.current = null;
+    setDraggedIndex(null);
+    setDragOverIndex(null);
+  };
+
+  const handleDrop = (targetIndex: number, e: React.DragEvent) => {
+    e.preventDefault();
+    let sourceIndex = draggedIndexRef.current;
+    if (sourceIndex === null) {
+      try {
+        const raw = e.dataTransfer.getData("text/plain");
+        if (raw) sourceIndex = parseInt(raw, 10);
+      } catch {}
+    }
+    if (sourceIndex === null && draggedIndex !== null) {
+      sourceIndex = draggedIndex;
+    }
+
+    if (!isEditing || sourceIndex === null || isNaN(sourceIndex) || sourceIndex === targetIndex) {
+      draggedIndexRef.current = null;
+      setDraggedIndex(null);
+      setDragOverIndex(null);
+      return;
+    }
+
+    const updatedWorks = [...artworks];
+    const [movedItem] = updatedWorks.splice(sourceIndex!, 1);
+    updatedWorks.splice(targetIndex, 0, movedItem);
+
+    draggedIndexRef.current = null;
+    setDraggedIndex(null);
+    setDragOverIndex(null);
+
+    // 1. 컴포넌트 로컬 상태 업데이트
+    setArtworks(updatedWorks);
+
+    // 2. 부모 카드 상태 동기화 (SNS 모달이 즉시 새 순서를 읽도록 처리)
+    if (onUpdateExhibition && exhibition) {
+      onUpdateExhibition({
+        ...exhibition,
+        artworks: updatedWorks,
+        works: updatedWorks,
+      });
+    }
+
+    if (onArtworksReorder) {
+      onArtworksReorder(updatedWorks);
+    }
+  };
+
+  // 8-1. 출품작 번호 직접 입력 순서 이동 헬퍼 함수
+  const handleMoveWorkToIndex = (fromIndex: number, targetOrder: number) => {
+    const toIndex = targetOrder - 1; // 1-based to 0-based
+    if (isNaN(toIndex) || toIndex < 0 || toIndex >= artworks.length || fromIndex === toIndex) {
+      return;
+    }
+
+    const updatedWorks = [...artworks];
+    const [movedItem] = updatedWorks.splice(fromIndex, 1);
+    updatedWorks.splice(toIndex, 0, movedItem);
+
+    // 1. 컴포넌트 로컬 상태 업데이트
+    setArtworks(updatedWorks);
+
+    // 2. 부모 카드 상태 동기화 (SNS 모달이 즉시 새 순서를 읽도록 처리)
+    if (onUpdateExhibition && exhibition) {
+      onUpdateExhibition({
+        ...exhibition,
+        artworks: updatedWorks,
+        works: updatedWorks,
+      });
+    }
+
+    if (onArtworksReorder) {
+      onArtworksReorder(updatedWorks);
+    }
+  };
+
+  // 9. 전체 변경사항 저장 (PATCH /api/exhibitions/[id])
+  const handleSaveAll = async () => {
+    setIsSaving(true);
+    try {
+      const payload = {
+        title,
+        university,
+        department,
+        year,
+        category,
+        headline,
+        curationIntro,
+        period,
+        venue,
+        targetUrl,
+        posterPath,
+        artworks,
+      };
+
+      const res = await fetch(`/api/exhibitions/${exhibition.id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setIsEditing(false);
+        if (onUpdateExhibition && exhibition) {
+          onUpdateExhibition({
+            ...exhibition,
+            artworks,
+            works: artworks,
+          });
+        }
+        if (onArtworksReorder) onArtworksReorder(artworks);
+        if (onSaveSuccess) onSaveSuccess();
+      } else {
+        alert(data.error || "변경사항 저장에 실패했습니다.");
+      }
+    } catch (err: any) {
+      alert(`저장 중 오류 발생: ${err.message}`);
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
+  // 9. 편집 취소 및 초기화
+  const handleCancelEdit = () => {
+    if (window.confirm("수정 중인 내용을 취소하고 원래대로 되돌리시겠습니까?")) {
+      setTitle(exhibition.title || "");
+      setUniversity(exhibition.university || "");
+      setDepartment(exhibition.department || "");
+      setYear(exhibition.year || "2025");
+      setCategory(exhibition.category || "디자인·UX/UI");
+      setHeadline(exhibition.headline || exhibition.slogan || "");
+      setCurationIntro(exhibition.curationIntro || exhibition.description || "");
+      setPeriod(exhibition.period || exhibition.schedule || "");
+      setVenue(exhibition.venue || "");
+      setTargetUrl(exhibition.targetUrl || "");
+      setPosterPath(exhibition.posterPath || null);
+      setArtworks(exhibition.artworks ? [...exhibition.artworks] : []);
+      setIsEditing(false);
+    }
+  };
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 md:p-6 bg-slate-900/60 dark:bg-black/85 backdrop-blur-sm animate-fadeIn"
+      onClick={() => {
+        if (!isSaving) onClose();
+      }}
+    >
+      <div
+        className="relative w-full max-w-5xl max-h-[92vh] flex flex-col bg-white dark:bg-[#0f172a] border border-slate-200 dark:border-slate-800 rounded-2xl shadow-2xl overflow-hidden text-slate-900 dark:text-slate-100"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* 모달 상단 헤더 바 */}
+        <div className="sticky top-0 z-20 flex items-center justify-between px-6 py-4 bg-white/95 dark:bg-[#0f172a]/95 backdrop-blur border-b border-slate-200 dark:border-slate-800">
+          <div className="flex-1 pr-4">
+            <div className="flex flex-wrap items-center gap-2 mb-1.5">
+              {isEditing ? (
+                <div className="flex items-center gap-2">
+                  <select
+                    value={category}
+                    onChange={(e) => setCategory(e.target.value)}
+                    className="px-2.5 py-0.5 rounded-lg bg-cyan-50 dark:bg-cyan-950/60 text-cyan-800 dark:text-cyan-300 border border-cyan-300 dark:border-cyan-700 text-xs font-bold focus:outline-none focus:ring-1 focus:ring-cyan-500"
+                  >
+                    {EDIT_CATEGORIES.map((cat) => (
+                      <option key={cat} value={cat}>
+                        {cat}
+                      </option>
+                    ))}
+                  </select>
+                  <input
+                    type="text"
+                    value={year}
+                    onChange={(e) => setYear(e.target.value)}
+                    placeholder="연도"
+                    className="w-16 px-2 py-0.5 rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-xs font-mono text-center focus:outline-none focus:ring-1 focus:ring-cyan-500"
+                  />
+                </div>
+              ) : (
+                <>
+                  <span className="px-2.5 py-0.5 rounded-full bg-cyan-50 dark:bg-cyan-500/20 text-cyan-800 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-500/30 text-xs font-semibold">
+                    {category}
+                  </span>
+                  <span className="text-slate-500 dark:text-slate-400 text-xs font-mono">
+                    {year}
+                  </span>
+                  <span className="text-emerald-700 dark:text-emerald-400 text-xs font-bold flex items-center gap-1">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                    AI 검수 점수: {exhibition.criticScore}점
+                  </span>
+                </>
+              )}
+              {isEditing && (
+                <span className="px-2 py-0.5 rounded-md bg-amber-100 dark:bg-amber-950/80 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-700 text-[11px] font-bold flex items-center gap-1">
+                  <Edit className="w-3 h-3" /> 편집 모드 활성화됨
+                </span>
+              )}
+            </div>
+
+            {isEditing ? (
+              <div className="space-y-1.5 mt-1">
+                <input
+                  type="text"
+                  value={title}
+                  onChange={(e) => setTitle(e.target.value)}
+                  placeholder="전시회 전체 타이틀을 입력하세요"
+                  className="w-full text-lg md:text-xl font-black px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-slate-900 border border-cyan-400/80 dark:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500 text-slate-900 dark:text-white"
+                />
+                <div className="flex items-center gap-2">
+                  <input
+                    type="text"
+                    value={university}
+                    onChange={(e) => setUniversity(e.target.value)}
+                    placeholder="대학교 명칭"
+                    className="w-32 text-xs font-semibold px-2 py-1 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700"
+                  />
+                  <input
+                    type="text"
+                    value={department}
+                    onChange={(e) => setDepartment(e.target.value)}
+                    placeholder="학과/전공 명칭"
+                    className="w-40 text-xs font-semibold px-2 py-1 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700"
+                  />
+                </div>
+              </div>
+            ) : (
+              <>
+                <h2 className="text-xl md:text-2xl font-black text-slate-900 dark:text-white leading-tight break-words">
+                  {title}
+                </h2>
+                <div className="flex items-center gap-2 mt-1 flex-wrap">
+                  <span className="text-cyan-700 dark:text-cyan-400 text-xs sm:text-sm font-bold">
+                    {university} · {department}
+                  </span>
+                  {university && (
+                    <Link
+                      href={`/professors?univ=${encodeURIComponent(university)}&openInsight=true`}
+                      className="inline-flex items-center gap-1 text-[11px] text-indigo-500 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-300 font-bold bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-500/30 px-2 py-0.5 rounded-full transition"
+                      title={`${university} 교수 인사이트 보기`}
+                    >
+                      <GraduationCap className="w-3 h-3" />
+                      <span>교수 인사이트 ↗</span>
+                    </Link>
+                  )}
+                </div>
+              </>
+            )}
+          </div>
+
+          {/* 우측 상단 액션 버튼 그룹 */}
+          <div className="flex items-center gap-2">
+            {!isProduction && onOpenInstagramModal && (
+              <button
+                type="button"
+                onClick={() => {
+                  onOpenInstagramModal({
+                    ...exhibition,
+                    artworks,
+                    posterPath,
+                    title,
+                    university,
+                    department,
+                    year,
+                    category,
+                    headline,
+                    curationIntro,
+                    period,
+                    venue,
+                    targetUrl,
+                  });
+                }}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-rose-500 via-purple-600 to-indigo-600 hover:opacity-90 text-white text-xs font-bold transition shadow-sm"
+                title="인스타그램 피드 발행 모달 열기"
+              >
+                <Instagram className="w-3.5 h-3.5" /> SNS 발행
+              </button>
+            )}
+
+            {!isProduction && !isEditing ? (
+              <button
+                type="button"
+                onClick={() => setIsEditing(true)}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-cyan-50 dark:bg-cyan-950/60 hover:bg-cyan-100 dark:hover:bg-cyan-900/80 text-cyan-700 dark:text-cyan-300 border border-cyan-300 dark:border-cyan-800 text-xs font-bold transition shadow-sm"
+              >
+                <Edit className="w-3.5 h-3.5" /> 수정 모드
+              </button>
+            ) : !isProduction && isEditing ? (
+              <>
+                <button
+                  type="button"
+                  disabled={isSaving}
+                  onClick={handleCancelEdit}
+                  className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-bold transition disabled:opacity-50"
+                >
+                  <RotateCcw className="w-3 h-3" /> 취소
+                </button>
+                <button
+                  type="button"
+                  disabled={isSaving}
+                  onClick={handleSaveAll}
+                  className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white text-xs font-extrabold shadow-md shadow-cyan-500/20 transition disabled:opacity-50"
+                >
+                  {isSaving ? (
+                    <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                  ) : (
+                    <Save className="w-3.5 h-3.5" />
+                  )}
+                  변경사항 저장
+                </button>
+              </>
+            ) : null}
+
+            {/* 온라인 전시 링크공유 버튼 */}
+            <button
+              type="button"
+              onClick={handleModalShareLink}
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition shadow-sm whitespace-nowrap shrink-0 ${
+                isSharePanelOpen
+                  ? "bg-cyan-600 text-white shadow-cyan-500/25"
+                  : "bg-slate-100 dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-cyan-950/60 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:text-cyan-600 dark:hover:text-cyan-400"
+              }`}
+              title="해당 대학교 온라인 전시 링크공유"
+            >
+              <Share2 className="w-3.5 h-3.5 text-cyan-500 dark:text-cyan-400 shrink-0" />
+              <span>링크공유</span>
+            </button>
+
+            <button
+              type="button"
+              disabled={isSaving}
+              onClick={onClose}
+              className="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-700 transition"
+              title="닫기"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
+        </div>
+
+        {/* 3. 모달 상단 '링크공유' 오버레이 패널 */}
+        {isSharePanelOpen && (
+          <div className="z-30 px-6 py-4 bg-cyan-50/95 dark:bg-cyan-950/90 border-b border-cyan-300 dark:border-cyan-800/80 backdrop-blur-md animate-in fade-in slide-in-from-top-3 duration-200">
+            <div className="flex items-center justify-between gap-3 mb-2.5">
+              <div className="flex items-center gap-2">
+                <span className="p-1 rounded-lg bg-cyan-600 text-white">
+                  <Share2 className="w-3.5 h-3.5" />
+                </span>
+                <span className="text-xs font-bold text-cyan-900 dark:text-cyan-200">
+                  온라인 전시 링크 공유
+                </span>
+                <span className="text-[11px] font-semibold text-cyan-700 dark:text-cyan-400">
+                  [{university}] {title}
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsSharePanelOpen(false)}
+                className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1"
+                title="패널 닫기"
+              >
+                <X className="w-3.5 h-3.5" />
+              </button>
+            </div>
+
+            <div className="flex flex-wrap sm:flex-nowrap items-center gap-2">
+              <div className="flex-1 min-w-0 bg-white dark:bg-slate-900 border border-cyan-300 dark:border-cyan-700 rounded-xl px-3 py-1.5 flex items-center">
+                <input
+                  type="text"
+                  readOnly
+                  value={getModalShareUrl()}
+                  className="w-full bg-transparent text-xs font-mono text-slate-800 dark:text-slate-200 outline-none select-all truncate"
+                />
+              </div>
+              <button
+                type="button"
+                onClick={handleCopyModalUrl}
+                className={`inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold transition shadow-sm shrink-0 ${
+                  isLinkCopied
+                    ? "bg-emerald-600 text-white"
+                    : "bg-cyan-600 hover:bg-cyan-700 text-white active:scale-95"
+                }`}
+              >
+                {isLinkCopied ? (
+                  <>
+                    <Check className="w-3.5 h-3.5" />
+                    <span>복사완료!</span>
+                  </>
+                ) : (
+                  <>
+                    <ClipboardPaste className="w-3.5 h-3.5" />
+                    <span>링크 복사</span>
+                  </>
+                )}
+              </button>
+              {typeof navigator !== "undefined" && typeof navigator.share === "function" && (
+                <button
+                  type="button"
+                  onClick={handleModalNativeShare}
+                  className="inline-flex items-center justify-center gap-1 px-3 py-2 rounded-xl bg-white dark:bg-slate-900 border border-cyan-300 dark:border-cyan-700 text-cyan-700 dark:text-cyan-300 hover:bg-cyan-100/50 dark:hover:bg-slate-800 text-xs font-bold transition shrink-0"
+                >
+                  <Share2 className="w-3.5 h-3.5" />
+                  <span>기기 공유</span>
+                </button>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* 모달 본문 스크롤 영역 */}
+        <div className="flex-1 overflow-y-auto p-6 md:p-8 space-y-8">
+          {/* 상단 오버뷰 배너 (포스터 + 전시 기본 정보) */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start bg-slate-50 dark:bg-slate-950/60 p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
+            {/* 좌측: 메인 포스터 영역 (마우스 오버레이 및 업로드/삭제 버튼) */}
+            <div className="md:col-span-4 flex flex-col items-center">
+              <div
+                onClick={() => {
+                  if (!isEditing && posterPath) {
+                    setIsPosterLightboxOpen(true);
+                  }
+                }}
+                className={`relative group w-full aspect-[3/4] rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 shadow-sm flex items-center justify-center ${
+                  !isEditing && posterPath ? "cursor-pointer hover:border-cyan-500 hover:ring-2 hover:ring-cyan-500/30 transition-all" : ""
+                }`}
+                title={!isEditing && posterPath ? "클릭하여 메인 포스터 고화질 확인" : undefined}
+              >
+                {posterPath ? (
+                  <img
+                    src={posterPath.startsWith("http") ? posterPath : `/api/images/${posterPath}`}
+                    alt="메인 공식 포스터"
+                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500 select-none"
+                  />
+                ) : (
+                  <div className="flex flex-col items-center justify-center p-4 text-center text-slate-400 dark:text-slate-500">
+                    <ImageIcon className="w-12 h-12 mb-2 opacity-50" />
+                    <span className="text-xs font-semibold">등록된 공식 포스터가 없습니다</span>
+                  </div>
+                )}
+
+                {/* 비편집 모드 마우스 오버 시 포스터 고화질 보기 오버레이 */}
+                {!isEditing && posterPath && (
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center pointer-events-none z-10">
+                    <span className="px-3 py-1.5 rounded-full bg-cyan-600/90 text-white text-xs font-bold flex items-center gap-1.5 shadow-lg backdrop-blur-sm">
+                      <Maximize2 className="w-3.5 h-3.5" /> 포스터 고화질 확인
+                    </span>
+                  </div>
+                )}
+
+                {/* 업로드 로딩 스피너 */}
+                {isUploadingPoster && (
+                  <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center text-white z-20">
+                    <Loader2 className="w-8 h-8 animate-spin mb-2" />
+                    <span className="text-xs font-bold">포스터 업로드 중...</span>
+                  </div>
+                )}
+
+                {/* 편집 모드 시 오버레이 액션 바 */}
+                {!isProduction && isEditing && !isUploadingPoster && (
+                  <div className="absolute inset-0 bg-black/65 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex flex-col items-center justify-center gap-2.5 p-4 z-10">
+                    <label className="cursor-pointer inline-flex items-center gap-1.5 px-3 py-2 bg-cyan-600 hover:bg-cyan-700 text-white text-xs font-bold rounded-xl shadow-lg transition">
+                      <Camera className="w-3.5 h-3.5" />
+                      {posterPath ? "📷 포스터 변경/업로드" : "📷 포스터 업로드"}
+                      <input
+                        ref={posterFileInputRef}
+                        type="file"
+                        accept="image/*"
+                        className="hidden"
+                        onChange={handlePosterUpload}
+                      />
+                    </label>
+
+                    {posterPath && (
+                      <button
+                        type="button"
+                        onClick={handlePosterDelete}
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-600/90 hover:bg-red-700 text-white text-xs font-bold rounded-xl shadow-lg transition"
+                      >
+                        <Trash2 className="w-3.5 h-3.5" /> 🗑️ 포스터 삭제
+                      </button>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              {/* 편집 모드이고 포스터가 없을 때 즉각 노출되는 업로드 버튼 */}
+              {isEditing && !posterPath && !isUploadingPoster && (
+                <button
+                  type="button"
+                  onClick={() => posterFileInputRef.current?.click()}
+                  className="mt-2 text-xs font-bold text-cyan-600 dark:text-cyan-400 hover:underline flex items-center gap-1"
+                >
+                  <Camera className="w-3.5 h-3.5" /> 메인 포스터 사진 선택
+                </button>
+              )}
+
+              {/* 공식 아카이브 웹사이트 바로가기 버튼 */}
+              {targetUrl && (
+                <div className="w-full mt-3">
+                  <a
+                    href={targetUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-full inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-600 via-cyan-500 to-blue-600 hover:from-cyan-500 hover:to-blue-500 active:scale-[0.98] text-white text-xs sm:text-sm font-bold shadow-md shadow-cyan-500/20 transition-all"
+                    title="공식 아카이브 웹사이트 새 창으로 열기"
+                  >
+                    <span>공식 아카이브 웹사이트 바로가기</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
+              )}
+            </div>
+
+            {/* 우측: 전시 상세 메타데이터 */}
+            <div className="md:col-span-8 space-y-4">
+              {/* 슬로건 및 소개글 */}
+              {isEditing ? (
+                <div className="space-y-3">
+                  <div>
+                    <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
+                      전시 슬로건 / 대표 헤드라인
+                    </label>
+                    <input
+                      type="text"
+                      value={headline}
+                      onChange={(e) => setHeadline(e.target.value)}
+                      placeholder="예: 삶의 리듬을 풀어내는 혁신: 인공지능이 그리는 미래의 웰니스"
+                      className="w-full text-xs font-medium px-3 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
+                      상세 큐레이션 및 전시 소개글
+                    </label>
+                    <textarea
+                      value={curationIntro}
+                      onChange={(e) => setCurationIntro(e.target.value)}
+                      rows={5}
+                      placeholder="전시회 소개 및 큐레이션 요약문을 작성하세요..."
+                      className="w-full text-xs font-medium px-3 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 leading-relaxed resize-none"
+                    />
+                  </div>
+                </div>
+              ) : (
+                <div className="space-y-4">
+                  <div>
+                    <span className="text-xs font-bold text-cyan-600 dark:text-cyan-400 block mb-1">
+                      {university} · {department}
+                    </span>
+                    <h3 className="text-lg md:text-xl font-black text-slate-900 dark:text-white leading-snug">
+                      {title}
+                    </h3>
+                    {headline && headline !== title && (
+                      <p className="text-xs sm:text-sm font-semibold text-slate-500 dark:text-slate-400 mt-1">
+                        {headline}
+                      </p>
+                    )}
+                  </div>
+
+                  {/* 메인 카드에서 이전된 전시 본문 전체 설명글 (가독성 높은 전체 뷰) */}
+                  <div className="p-4 sm:p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
+                    <div className="flex items-center gap-1.5 text-xs font-bold text-cyan-700 dark:text-cyan-400">
+                      <Sparkles className="w-3.5 h-3.5" />
+                      <span>전시 기획 서문 및 큐레이션 소개</span>
+                    </div>
+                    <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed md:leading-loose whitespace-pre-line break-words font-normal">
+                      {curationIntro || exhibition.description || "등록된 상세 소개글이 없습니다."}
+                    </p>
+                  </div>
+                </div>
+              )}
+
+              {/* 일정 및 장소 정보 카드 */}
+              <div className="pt-2">
+                {isEditing ? (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                    <div>
+                      <label className="block font-bold text-slate-700 dark:text-slate-300 mb-1 flex items-center gap-1">
+                        <Calendar className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" /> 전시 기간
+                      </label>
+                      <input
+                        type="text"
+                        value={period}
+                        onChange={(e) => setPeriod(e.target.value)}
+                        placeholder="2025.11.12 ~ 11.18"
+                        className="w-full px-3 py-1.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-xs font-mono"
+                      />
+                    </div>
+                    <div>
+                      <label className="block font-bold text-slate-700 dark:text-slate-300 mb-1 flex items-center gap-1">
+                        <MapPin className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" /> 전시 장소
+                      </label>
+                      <input
+                        type="text"
+                        value={venue}
+                        onChange={(e) => setVenue(e.target.value)}
+                        placeholder="교내 갤러리 또는 외부 미술관"
+                        className="w-full px-3 py-1.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-xs"
+                      />
+                    </div>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                    <div className="p-3 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 flex items-start gap-2.5">
+                      <div className="p-2 rounded-lg bg-cyan-50 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-400 shrink-0">
+                        <Calendar className="w-4 h-4" />
+                      </div>
+                      <div className="min-w-0">
+                        <span className="text-[11px] font-bold text-slate-400 dark:text-slate-500 block mb-0.5">전시 일정 / 관람 기간</span>
+                        <span className="font-semibold text-slate-800 dark:text-slate-200 break-words">{period || "일정 공지 대기"}</span>
+                      </div>
+                    </div>
+                    <div className="p-3 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 flex items-start gap-2.5">
+                      <div className="p-2 rounded-lg bg-cyan-50 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-400 shrink-0">
+                        <MapPin className="w-4 h-4" />
+                      </div>
+                      <div className="min-w-0">
+                        <span className="text-[11px] font-bold text-slate-400 dark:text-slate-500 block mb-0.5">전시 장소 / 오프라인 위치</span>
+                        <span className="font-semibold text-slate-800 dark:text-slate-200 break-words">{venue || "장소 미정"}</span>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* 공식 아카이브 웹사이트 URL (편집 모드 시 입력 필드) */}
+              {isEditing && (
+                <div className="pt-2">
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1 flex items-center gap-1">
+                    <ExternalLink className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" /> 공식 아카이브 웹사이트 URL
+                  </label>
+                  <input
+                    type="text"
+                    value={targetUrl}
+                    onChange={(e) => setTargetUrl(e.target.value)}
+                    placeholder="https://..."
+                    className="w-full px-3 py-1.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 font-mono text-xs"
+                  />
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* 대학-산학협력 기업 & 실제 채용조건 교차검증 리서치 섹션 */}
+          {(exhibition.hasCorporateCooperation || (exhibition.cooperationCompanies && exhibition.cooperationCompanies.length > 0)) && (
+            <div className="p-5 rounded-2xl bg-gradient-to-br from-blue-50/70 via-indigo-50/50 to-slate-50 dark:from-blue-950/40 dark:via-indigo-950/30 dark:to-slate-900 border border-blue-200/80 dark:border-blue-800/60 shadow-sm space-y-4">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <div className="p-2.5 rounded-xl bg-blue-600 text-white shadow-sm">
+                    <Building2 className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <h3 className="text-sm md:text-base font-extrabold text-slate-900 dark:text-white">
+                        대학-산학협력 기업 & 실제 채용조건 교차검증 브리프
+                      </h3>
+                      <span className="px-2 py-0.5 rounded-full text-[11px] font-bold bg-blue-600 text-white shadow-xs">
+                        {exhibition.crossValidationStatus || "CORROBORATED"}
+                      </span>
+                    </div>
+                    <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                      산학협력(수요/관심 신호)과 실제 공식 채용공고의 필수 역량을 다중 교차 검증한 인텔리전스입니다.
+                    </p>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => setShowCorporateReport(!showCorporateReport)}
+                  className="px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-700 text-xs font-bold transition shadow-xs flex items-center gap-1.5"
+                >
+                  <Briefcase className="w-3.5 h-3.5" />
+                  {showCorporateReport ? "리포트 접기 ▲" : "7단계 전체 리포트 열람 ▼"}
+                </button>
+              </div>
+
+              {/* 산학 협력 기업 태그 및 검증된 필수 스킬 */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3 border-t border-blue-100 dark:border-blue-900/60">
+                <div>
+                  <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 block mb-1.5 flex items-center gap-1">
+                    <Building2 className="w-3.5 h-3.5 text-blue-500" /> 공식 산학협력 협약 기업:
+                  </span>
+                  <div className="flex flex-wrap gap-1.5">
+                    {(exhibition.cooperationCompanies || []).map((comp: any, idx) => {
+                      const compName = typeof comp === "string" ? comp : comp?.company_name || comp?.name || String(comp);
+                      return (
+                        <span
+                          key={idx}
+                          className="px-2.5 py-1 rounded-lg bg-white dark:bg-slate-800 border border-blue-200 dark:border-blue-700 text-blue-800 dark:text-blue-300 text-xs font-bold shadow-2xs"
+                        >
+                          🏢 {compName}
+                        </span>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {exhibition.verifiedRequiredSkills && exhibition.verifiedRequiredSkills.length > 0 && (
+                  <div>
+                    <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 block mb-1.5 flex items-center gap-1">
+                      <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" /> 실제 채용공고 검증 필수 역량:
+                    </span>
+                    <div className="flex flex-wrap gap-1.5">
+                      {exhibition.verifiedRequiredSkills.map((sk, idx) => (
+                        <span
+                          key={idx}
+                          className="px-2 py-0.5 rounded-md bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-300 dark:border-emerald-800 text-emerald-700 dark:text-emerald-300 text-[11px] font-semibold"
+                        >
+                          ✓ {sk}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* 펼쳐지는 7단계 전체 마크다운 리포트 */}
+              {showCorporateReport && exhibition.corporateResearchReport && (
+                <div className="mt-3 p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-300 font-mono whitespace-pre-wrap max-h-72 overflow-y-auto leading-relaxed">
+                  {exhibition.corporateResearchReport}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* 하단: 출품작 갤러리 그리드 영역 */}
+          <div className="space-y-4">
+            <div className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
+              <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <Layers className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
+                출품작 갤러리 ({artworks.length}점)
+              </h3>
+              <span className="text-xs text-slate-500 dark:text-slate-400">
+                {isEditing
+                  ? "💡 마우스로 카드를 드래그하거나 좌상단 번호(#)를 더블클릭하여 순서를 빠르게 재배치할 수 있습니다. (사진 교체, 삭제, 인라인 편집 지원)"
+                  : isZoomDisabled
+                  ? ""
+                  : "* 카드를 클릭하면 고화질 이미지를 확인할 수 있습니다."}
+              </span>
+            </div>
+
+            {artworks.length > 0 || isEditing ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                {artworks.map((art, idx) => {
+                  const isDragging = draggedIndex === idx;
+                  const isOver = dragOverIndex === idx;
+
+                  return (
+                    <div
+                      key={idx}
+                      draggable={isEditing}
+                      onClick={() => {
+                        if (!isEditing && !isZoomDisabled) {
+                          setSelectedArtworkIndex(idx);
+                        }
+                      }}
+                      onDragStart={(e) => {
+                        const tag = (e.target as HTMLElement)?.tagName?.toLowerCase();
+                        if (tag === "input" || tag === "textarea" || tag === "button") {
+                          e.preventDefault();
+                          return;
+                        }
+                        handleDragStart(idx, e);
+                      }}
+                      onDragEnter={() => handleDragEnter(idx)}
+                      onDragOver={(e) => handleDragOver(e, idx)}
+                      onDragEnd={handleDragEnd}
+                      onDrop={(e) => handleDrop(idx, e)}
+                      className={`relative group bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm transition-all duration-200 flex flex-col ${
+                        isEditing
+                          ? "cursor-grab active:cursor-grabbing border border-slate-200 dark:border-slate-800"
+                          : isZoomDisabled
+                          ? "cursor-default border border-slate-200 dark:border-slate-800"
+                          : "cursor-pointer hover:border-cyan-500 hover:shadow-lg border border-slate-200 dark:border-slate-800"
+                      } ${
+                        isDragging
+                          ? "opacity-40 scale-95 border-2 border-blue-500 ring-2 ring-blue-500/50 z-30"
+                          : isOver
+                          ? "border-dashed border-2 border-blue-400 ring-2 ring-blue-500 scale-[1.02] bg-blue-50/20 dark:bg-blue-950/30 z-20"
+                          : ""
+                      }`}
+                    >
+                      {/* 드래그 핸들 및 더블클릭 순서 변경 배지 */}
+                      <OrderBadge
+                        index={idx}
+                        totalCount={artworks.length}
+                        onMove={(newOrder) => handleMoveWorkToIndex(idx, newOrder)}
+                        disabled={!isEditing}
+                      />
+
+                      {/* 작품 이미지 영역 */}
+                      <div className="relative aspect-video bg-slate-100 dark:bg-slate-950 overflow-hidden flex items-center justify-center select-none">
+                        <img
+                          src={
+                            art.imagePath.startsWith("http")
+                              ? art.imagePath
+                              : `/api/images/${art.imagePath}`
+                          }
+                          alt={art.title}
+                          className={`w-full h-full object-cover transition duration-500 select-none pointer-events-none ${
+                            isZoomDisabled ? "" : "group-hover:scale-105"
+                          }`}
+                          onError={(e) => {
+                            (e.target as HTMLElement).style.display = "none";
+                          }}
+                        />
+
+                        {/* 비편집 모드 마우스 오버 시 고화질 확대 오버레이 안내 */}
+                        {!isEditing && !isZoomDisabled && (
+                          <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center pointer-events-none z-10">
+                            <span className="px-3 py-1.5 rounded-full bg-cyan-600/90 text-white text-xs font-bold flex items-center gap-1.5 shadow-lg backdrop-blur-sm">
+                              <Maximize2 className="w-3.5 h-3.5" /> 고화질 확대
+                            </span>
+                          </div>
+                        )}
+
+                        {/* 개별 작품 사진 교체 로딩 스피너 */}
+                        {uploadingArtworkIndex === idx && (
+                          <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center text-white z-20">
+                            <Loader2 className="w-6 h-6 animate-spin mb-1" />
+                            <span className="text-[10px] font-bold">사진 교체 중...</span>
+                          </div>
+                        )}
+
+                        {/* 편집 모드 시 우측 상단 액션 툴바 */}
+                        {!isProduction && isEditing && uploadingArtworkIndex !== idx && (
+                          <div className="absolute top-2 right-2 flex items-center gap-1.5 z-10">
+                            <label
+                              className="cursor-pointer p-1.5 rounded-lg bg-black/75 hover:bg-cyan-600 text-white shadow-md transition flex items-center gap-1 text-[11px] font-bold"
+                              title="사진 교체"
+                              onClick={(e) => e.stopPropagation()}
+                            >
+                              <Camera className="w-3.5 h-3.5" />
+                              <input
+                                type="file"
+                                accept="image/*"
+                                className="hidden"
+                                onChange={(e) => handleArtworkImageChange(idx, e)}
+                              />
+                            </label>
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleRemoveArtwork(idx);
+                              }}
+                              className="p-1.5 rounded-lg bg-black/75 hover:bg-red-600 text-white shadow-md transition"
+                              title="작품 삭제"
+                            >
+                              <Trash2 className="w-3.5 h-3.5" />
+                            </button>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* 작품 정보 영역 (인라인 편집 지원) */}
+                      <div
+                        className="p-4 bg-white dark:bg-slate-950 flex-1 flex flex-col justify-between"
+                        onMouseDown={(e) => {
+                          const tag = (e.target as HTMLElement)?.tagName?.toLowerCase();
+                          if (tag === "input" || tag === "textarea") {
+                            e.stopPropagation();
+                          }
+                        }}
+                      >
+                        {isEditing ? (
+                          <div className="space-y-2">
+                            <div className="text-[11px] text-blue-600 dark:text-blue-400 font-bold flex items-center gap-1">
+                              <span>{(art.department || department || "학과")} #{idx + 1}</span>
+                            </div>
+                            <div className="grid grid-cols-2 gap-2">
+                              <div>
+                                <label className="block text-[10px] font-bold text-slate-500 mb-0.5">
+                                  역할 / 분야
+                                </label>
+                                <input
+                                  type="text"
+                                  value={art.role}
+                                  onChange={(e) =>
+                                    handleUpdateArtworkField(idx, "role", e.target.value)
+                                  }
+                                  placeholder="역할/분야"
+                                  className="w-full text-xs px-2 py-1 rounded bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700"
+                                />
+                              </div>
+                              <div>
+                                <label className="block text-[10px] font-bold text-slate-500 mb-0.5">
+                                  작가명
+                                </label>
+                                <input
+                                  type="text"
+                                  value={art.author}
+                                  onChange={(e) =>
+                                    handleUpdateArtworkField(idx, "author", e.target.value)
+                                  }
+                                  placeholder="작가명"
+                                  className="w-full text-xs px-2 py-1 rounded bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700"
+                                />
+                              </div>
+                            </div>
+
+                            <div>
+                              <label className="block text-[10px] font-bold text-slate-500 mb-0.5">
+                                작품명
+                              </label>
+                              <input
+                                type="text"
+                                value={art.title}
+                                onChange={(e) =>
+                                  handleUpdateArtworkField(idx, "title", e.target.value)
+                                }
+                                placeholder="작품명"
+                                className="w-full text-xs font-bold px-2 py-1 rounded bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700"
+                              />
+                            </div>
+
+                            <div>
+                              <label className="block text-[10px] font-bold text-slate-500 mb-0.5">
+                                작품 설명 (선택)
+                              </label>
+                              <textarea
+                                value={art.description}
+                                onChange={(e) =>
+                                  handleUpdateArtworkField(idx, "description", e.target.value)
+                                }
+                                placeholder="작품 상세 설명..."
+                                rows={2}
+                                className="w-full text-xs px-2 py-1 rounded bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 resize-none leading-relaxed"
+                              />
+                            </div>
+                          </div>
+                        ) : (
+                          <div>
+                            <div className="flex items-center justify-between mb-1">
+                              <span className="text-xs px-2 py-0.5 rounded bg-cyan-50 dark:bg-cyan-950 text-cyan-800 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-800 font-medium truncate max-w-[200px]" title={art.department || department}>
+                                {(art.department || department)} #{idx + 1}
+                              </span>
+                              <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
+                                {art.author}
+                              </span>
+                            </div>
+                            <h4 className="text-sm font-bold text-slate-900 dark:text-gray-200 mt-2 mb-1">
+                              {art.title}
+                            </h4>
+                            {art.description && (
+                              <p className="text-xs text-slate-600 dark:text-slate-400 line-clamp-3 leading-relaxed">
+                                {art.description}
+                              </p>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+
+                {/* 편집 모드 시 마지막 칸에 노출되는 [+ 새 출품작 추가] 카드 */}
+                {!isProduction && isEditing && (
+                  <div
+                    onClick={() => newArtworkFileInputRef.current?.click()}
+                    className="relative aspect-video md:aspect-auto min-h-[220px] rounded-xl border-2 border-dashed border-cyan-400/80 dark:border-cyan-600/80 hover:border-cyan-500 bg-cyan-50/40 dark:bg-cyan-950/20 hover:bg-cyan-50/70 dark:hover:bg-cyan-950/40 transition flex flex-col items-center justify-center p-6 text-center cursor-pointer group shadow-sm"
+                  >
+                    <input
+                      ref={newArtworkFileInputRef}
+                      type="file"
+                      accept="image/*"
+                      className="hidden"
+                      onChange={handleAddNewArtworkFile}
+                    />
+
+                    {isAddingArtwork ? (
+                      <div className="flex flex-col items-center gap-2 text-cyan-600 dark:text-cyan-400">
+                        <Loader2 className="w-8 h-8 animate-spin" />
+                        <span className="text-xs font-bold">새 작품 업로드 중...</span>
+                      </div>
+                    ) : (
+                      <>
+                        <div className="w-12 h-12 rounded-2xl bg-cyan-100 dark:bg-cyan-900/60 text-cyan-600 dark:text-cyan-300 flex items-center justify-center mb-3 group-hover:scale-110 transition shadow-inner">
+                          <Plus className="w-6 h-6 stroke-[2.5]" />
+                        </div>
+                        <h4 className="text-sm font-extrabold text-cyan-800 dark:text-cyan-300">
+                          + 새 출품작 추가
+                        </h4>
+                        <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-[180px]">
+                          작품 사진 파일을 선택하여 신규 출품작을 등록하세요
+                        </p>
+                      </>
+                    )}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div className="p-8 text-center bg-slate-50 dark:bg-slate-950/40 rounded-xl border border-dashed border-slate-300 dark:border-slate-800 text-slate-500 dark:text-slate-400 text-xs">
+                등록된 상세 작품 에셋이 없습니다.
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* 개별 출품작 고화질 뷰어 라이트박스 */}
+        <ArtworkLightboxModal
+          isOpen={selectedArtworkIndex !== null && !isZoomDisabled}
+          onClose={() => setSelectedArtworkIndex(null)}
+          artworks={artworks}
+          initialIndex={selectedArtworkIndex ?? 0}
+          university={university}
+          department={department}
+        />
+
+        {/* 메인 포스터 고화질 뷰어 */}
+        {posterPath && (
+          <ArtworkLightboxModal
+            isOpen={isPosterLightboxOpen}
+            onClose={() => setIsPosterLightboxOpen(false)}
+            artworks={[
+              {
+                title: `${university} ${department} 메인 공식 포스터`,
+                author: `${university} ${department}`,
+                role: "공식 전시 포스터",
+                imagePath: posterPath,
+                description: curationIntro || headline || "",
+              },
+            ]}
+            initialIndex={0}
+            university={university}
+            department={department}
+          />
+        )}
+      </div>
+    </div>
+  );
+}

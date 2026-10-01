@@ -1,0 +1,9 @@
+{
+  "published_at": "2026-10-01T14:07:45.035812+00:00",
+  "total_exhibitions": 192,
+  "researched_exhibitions": 24,
+  "total_artworks": 1236,
+  "media_files_synced": 977,
+  "pipeline_version": "1.0.0",
+  "environment": "production-export"
+}
