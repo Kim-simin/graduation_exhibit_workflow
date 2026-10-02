@@ -187,7 +187,7 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
               setIsPosterLightboxOpen(true);
             }
           }}
-          className={`relative aspect-[16/8] w-full bg-slate-900 overflow-hidden ${
+          className={`relative aspect-[16/8] w-full bg-slate-900 overflow-hidden flex items-center justify-center ${
             exhibit.posterPath ? "cursor-pointer group" : ""
           }`}
           title={exhibit.posterPath ? "클릭하여 메인 공식 포스터 고화질 확인" : undefined}
@@ -196,7 +196,7 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
             <img
               src={`/api/images/${exhibit.posterPath}`}
               alt={exhibit.title}
-              className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+              className="w-full h-full object-contain transition duration-300"
               onError={(e) => {
                 (e.target as HTMLElement).style.display = "none";
               }}
@@ -230,24 +230,24 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
         </div>
 
         <div className="p-6 md:p-8 space-y-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="p-4 rounded-xl bg-slate-900/80 border border-gray-800">
-              <span className="text-xs text-gray-400 flex items-center gap-1.5 mb-1">
-                <Calendar className="w-3.5 h-3.5 text-cyan-400" /> 전시 일정
+          <div className="grid grid-cols-3 gap-2 sm:gap-4">
+            <div className="p-2 sm:p-4 rounded-xl bg-slate-900/80 border border-gray-800">
+              <span className="text-[10px] sm:text-xs text-gray-400 flex items-center gap-1 sm:gap-1.5 mb-1 truncate">
+                <Calendar className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-cyan-400 shrink-0" /> 전시 일정
               </span>
-              <p className="font-bold text-sm text-white">{exhibit.period}</p>
+              <p className="font-bold text-xs sm:text-sm text-white truncate">{exhibit.period}</p>
             </div>
-            <div className="p-4 rounded-xl bg-slate-900/80 border border-gray-800">
-              <span className="text-xs text-gray-400 flex items-center gap-1.5 mb-1">
-                <MapPin className="w-3.5 h-3.5 text-cyan-400" /> 전시 장소
+            <div className="p-2 sm:p-4 rounded-xl bg-slate-900/80 border border-gray-800">
+              <span className="text-[10px] sm:text-xs text-gray-400 flex items-center gap-1 sm:gap-1.5 mb-1 truncate">
+                <MapPin className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-cyan-400 shrink-0" /> 전시 장소
               </span>
-              <p className="font-bold text-sm text-white">{exhibit.venue}</p>
+              <p className="font-bold text-xs sm:text-sm text-white truncate">{exhibit.venue}</p>
             </div>
-            <div className="p-4 rounded-xl bg-slate-900/80 border border-gray-800">
-              <span className="text-xs text-gray-400 flex items-center gap-1.5 mb-1">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> AI 큐레이션 검수
+            <div className="p-2 sm:p-4 rounded-xl bg-slate-900/80 border border-gray-800">
+              <span className="text-[10px] sm:text-xs text-gray-400 flex items-center gap-1 sm:gap-1.5 mb-1 truncate">
+                <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-emerald-400 shrink-0" /> AI 큐레이션
               </span>
-              <p className="font-bold text-sm text-emerald-400">{exhibit.criticScore}점 (Verified)</p>
+              <p className="font-bold text-xs sm:text-sm text-emerald-400 truncate">{exhibit.criticScore}점 (Verified)</p>
             </div>
           </div>
 
@@ -272,7 +272,7 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
               )}
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4">
               {exhibit.artworks.map((art, idx) => (
                 <div
                   key={idx}
@@ -287,11 +287,11 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
                       : "cursor-pointer hover:border-cyan-500 hover:shadow-lg"
                   }`}
                 >
-                  <div className="relative w-full h-48 bg-slate-950 overflow-hidden flex items-center justify-center select-none">
+                  <div className="relative w-full aspect-video bg-slate-950 overflow-hidden flex items-center justify-center select-none">
                     <img 
                       src={`/api/images/${art.imagePath}`} 
                       alt={art.title} 
-                      className={`w-full h-48 object-cover transition duration-300 pointer-events-none ${
+                      className={`w-full h-full object-cover transition duration-300 pointer-events-none ${
                         isZoomDisabled ? "" : "group-hover:scale-105"
                       }`}
                       onError={(e) => {
@@ -307,12 +307,12 @@ export default function ExhibitDetailPage({ params }: { params: { id: string } }
                       </div>
                     )}
                   </div>
-                  <div className="p-3">
-                    <span className="text-xs text-cyan-400 font-mono font-bold">#{idx + 1}</span>
-                    <h4 className="text-sm font-bold text-white mt-1">{art.title}</h4>
-                    <p className="text-xs text-slate-400">{art.author} · {art.role}</p>
+                  <div className="p-2 sm:p-3">
+                    <span className="text-[10px] sm:text-xs text-cyan-400 font-mono font-bold">#{idx + 1}</span>
+                    <h4 className="text-xs sm:text-sm font-bold text-white mt-0.5 line-clamp-1 sm:line-clamp-2">{art.title}</h4>
+                    <p className="text-[10px] sm:text-xs text-slate-400 truncate">{art.author} · {art.role}</p>
                     {art.description && (
-                      <p className="text-[11px] text-gray-500 mt-2 line-clamp-2">{art.description}</p>
+                      <p className="text-[9px] sm:text-[11px] text-gray-500 mt-1 sm:mt-2 line-clamp-2">{art.description}</p>
                     )}
                   </div>
                 </div>

@@ -61,7 +61,12 @@ export function getInitialExhibitions(): Exhibition[] {
     }
     const raw = fs.readFileSync(publishedPath, "utf-8");
     const exhibitions: Exhibition[] = JSON.parse(raw);
-    return exhibitions;
+    return exhibitions.filter(
+      (item) =>
+        (item.status === "published" || item.status === "완료" || item.status === "리서치 완료") &&
+        item.isResearched === true &&
+        Boolean(item.posterPath && item.posterPath.length > 5)
+    );
   } catch (err) {
     console.error("[getInitialExhibitions Error]:", err);
     return [];
