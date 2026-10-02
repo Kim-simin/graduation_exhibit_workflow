@@ -142,9 +142,24 @@ def run_export():
             })
             
         is_researched = (item.get("status") in ["리서치 완료", "완료", "승인 완료", "검수 완료", "published"]) and has_real_poster
-        if is_researched:
-            researched_count += 1
-            total_artworks += len(artworks)
+        if not is_researched or not clean_poster:
+            # Skip unresearched placeholder cards for public web
+            continue
+
+        # Check that the poster file actually exists on disk anywhere in the project
+        poster_candidates = [
+            ADMIN_PUB / clean_poster,
+            WORKSPACE / "my-exhibit-platform" / "public" / clean_poster,
+            WORKSPACE / "public" / clean_poster,
+            ADMIN_DATA / "downloads" / clean_poster,
+            WORKSPACE / "data" / "downloads" / clean_poster,
+        ]
+        if not any(p.exists() and p.is_file() for p in poster_candidates):
+            print(f"Skipping [{item.get('id')}] - poster file not found on disk: {clean_poster}")
+            continue
+
+        researched_count += 1
+        total_artworks += len(artworks)
             
         clean_title = (
             item.get("exhibition_title") if has_real_poster and item.get("exhibition_title") and "인공지능 기반 능동형" not in item.get("exhibition_title")
@@ -184,7 +199,7 @@ def run_export():
             "title": clean_title,
             "isResearched": is_researched,
             "isUploaded": is_researched or item.get("status") == "published",
-            "status": item.get("status", "대기"),
+            "status": "published",
             "targetUrl": item.get("target_url") or item.get("scraped_url") or item.get("official_url") or "",
             "posterPath": clean_poster,
             "posterVideoPath": f"{clean_video}?v=horse_center_v3" if clean_video else None,
@@ -269,21 +284,27 @@ def run_export():
     missing_media = 0
     
     for rel_path in all_media:
-        # Check in admin/public first
-        admin_media_path = ADMIN_PUB / rel_path
-        if not admin_media_path.exists():
-            # Check in admin/data/downloads
-            admin_media_path = ADMIN_DATA / "downloads" / rel_path
-        if not admin_media_path.exists():
-            # Check in root data/downloads
-            admin_media_path = WORKSPACE / "data" / "downloads" / rel_path
+        candidate_paths = [
+            ADMIN_PUB / rel_path,
+            WORKSPACE / "my-exhibit-platform" / "public" / rel_path,
+            WORKSPACE / "public" / rel_path,
+            ADMIN_DATA / "downloads" / rel_path,
+            WORKSPACE / "data" / "downloads" / rel_path,
+        ]
+        found_src = None
+        for cand in candidate_paths:
+            if cand.exists() and cand.is_file():
+                found_src = cand
+                break
             
-        if admin_media_path.exists():
+        if found_src:
             dst = WEB_PUB / rel_path
-            if copy_or_link(admin_media_path, dst):
+            if copy_or_link(found_src, dst):
                 synced_media += 1
         else:
             missing_media += 1
+            
+    print(f"Media sync complete: {synced_media} synced, {missing_media} missing out of {len(all_media)} referenced media files.")
             
     print(f"Media sync complete: {synced_media} synced, {missing_media} missing out of {len(all_media)} referenced media files.")
     

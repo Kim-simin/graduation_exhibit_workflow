@@ -279,7 +279,7 @@ export function ExhibitionDetailModal({
                     setIsPosterLightboxOpen(true);
                   }
                 }}
-                className={`relative aspect-[9/16] w-full max-w-[280px] rounded-2xl overflow-hidden bg-slate-900/90 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 shadow-lg group flex items-center justify-center ${
+                className={`relative group w-full aspect-[3/4] rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-lg flex items-center justify-center ${
                   posterPath ? "cursor-pointer hover:border-cyan-500 hover:ring-2 hover:ring-cyan-500/30 transition-all" : ""
                 }`}
                 title={posterPath ? "클릭하여 메인 포스터 고화질 확인" : undefined}
@@ -288,7 +288,7 @@ export function ExhibitionDetailModal({
                   <img
                     src={`/api/images/${posterPath}`}
                     alt={title}
-                    className="w-full h-full object-cover object-center transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500 select-none"
                     onError={(e) => {
                       (e.target as HTMLElement).style.display = "none";
                     }}
