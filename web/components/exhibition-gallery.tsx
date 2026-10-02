@@ -302,19 +302,19 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                     : "border-slate-200 dark:border-gray-800/60 bg-slate-50/70 dark:bg-slate-950/70 opacity-95 hover:border-slate-300 dark:hover:border-slate-700 hover:-translate-y-1 hover:shadow-md cursor-default"
                 }`}
               >
-                {/* Poster Aspect Ratio Frame (모든 카드 9:16 비율 고정 및 object-cover object-center 무왜곡 채움) */}
-                <div className="relative w-full aspect-[9/16] min-w-0 overflow-hidden bg-slate-900/90 dark:bg-slate-950">
+                {/* Poster Aspect Ratio Frame (관제시스템 웹UI와 동일한 aspect-[4/5] 비율) */}
+                <div className="relative aspect-[4/5] w-full min-w-0 overflow-hidden bg-slate-100 dark:bg-slate-900">
                   {item.isResearched && item.posterPath ? (
                     <>
                       <img
                         src={`/api/images/${item.posterPath}`}
                         alt={item.title}
-                        className="w-full h-full object-cover object-center transition-transform duration-300"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                         onError={(e) => {
                           (e.target as HTMLElement).style.display = "none";
                         }}
                       />
-                      {/* 모션그래픽 비디오 (마우스 호버 시 재생) */}
+                      {/* 모션그래픽 비디오 (마우스 호버 시 실제 공식 포스터 모션그래픽 재생) */}
                       {item.posterVideoPath && (
                         <video
                           src={item.posterVideoPath.startsWith("http") || item.posterVideoPath.startsWith("/api/images/") ? item.posterVideoPath : `/api/images/${item.posterVideoPath}`}
@@ -323,7 +323,7 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
                           muted
                           playsInline
                           preload="auto"
-                          className="absolute inset-0 w-full h-full object-cover object-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                          className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:scale-105 transition-transform duration-500 ease-out"
                         />
                       )}
                     </>

@@ -10,7 +10,7 @@
     "isUploaded": true,
     "status": "published",
     "targetUrl": "https://swuid2025.com/",
-    "posterPath": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/poster.png",
+    "posterPath": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/upload_1790594790630_qkbe64.png",
     "posterVideoPath": null,
     "headline": "잠재되어 있던 가능성이 마침내 터져 나오는 순간, 조용한 수면 아래에서 끓어오르던 에너지가 세상을 향해 드러나는 순간.",
     "curationIntro": "2025 SWUID 산업디자인학과 졸업전시 《Upwell》은 학교라는 테두리를 넘어 사회로 나아가는 디자이너들의 '터져나오는 힘'을 주제로 기획되었습니다. 이 전시는 학생들이 그동안 축적해온 창의성과 잠재력을 '역동적이고 벅찬 에너지'로 표현하며, 불확실한 미래 앞에서도 자신감 있게 발산하는 새로운 시작의 가능성을 담고 있습니다. 이번 졸업전시를 통해 각자의 방식으로 세상을 향해 물결을 일으키는 서울여대 산업디자인학과 학생들의 도전과 확장을 느껴보시기 바랍니다.",
@@ -1121,15 +1121,15 @@
     "isUploaded": true,
     "status": "published",
     "targetUrl": "https://dju26-design.co.kr/",
-    "posterPath": "uploads/UNIV-2025-대진대학교-시각디자인학과/main_poster_2025.jpg",
+    "posterPath": "uploads/UNIV-2025-대진대학교-시각디자인학과-fe26/upload_1790340514428_0n0dqx.png",
     "posterVideoPath": null,
     "headline": "대진대학교 시각디자인 26기 졸업전시회 | Fe26 : REINFORCE",
     "curationIntro": "철의 원소 기호 Fe와 원자 번호 26에서 출발한 'Fe26 : REINFORCE'는 대진대학교 시각디자인학과 26기 학생들이 불확실한 환경 속에서 단련되어 단단하고 유연한 디자이너로 거듭나는 과정을 상징합니다. EDITORIAL DESIGN, INTERACTIVE DESIGN, PACKAGE DESIGN, VISUAL DESIGN의 4대 트랙을 통해 세상의 문제를 해결하고 새로운 시각적 경험을 제시하는 138점의 작품을 만나보실 수 있습니다.",
     "period": "2024.11.20 - 2024.11.25 (온라인 아카이브 상시 운영)",
     "schedule": "2024.11.20 - 2024.11.25 (온라인 아카이브 상시 운영)",
     "venue": "대진대학교 인문예술대학 디자인갤러리 & 온라인 아카이브",
-    "slogan": "Fe26 : REINFORCE - 단단하게 결속되어 세상을 변화시키는 디자인",
-    "subtitle": "Fe26 : REINFORCE - 단단하게 결속되어 세상을 변화시키는 디자인",
+    "slogan": "대진대학교 시각디자인 26기 졸업전시회 | Fe26 : REINFORCE",
+    "subtitle": "대진대학교 시각디자인 26기 졸업전시회 | Fe26 : REINFORCE",
     "description": "철의 원소 기호 Fe와 원자 번호 26에서 출발한 'Fe26 : REINFORCE'는 대진대학교 시각디자인학과 26기 학생들이 불확실한 환경 속에서 단련되어 단단하고 유연한 디자이너로 거듭나는 과정을 상징합니다. EDITORIAL DESIGN, INTERACTIVE DESIGN, PACKAGE DESIGN, VISUAL DESIGN의 4대 트랙을 통해 세상의 문제를 해결하고 새로운 시각적 경험을 제시하는 138점의 작품을 만나보실 수 있습니다.",
     "criticScore": 98,
     "tags": [
@@ -8204,94 +8204,6 @@
     "disableArtworkZoom": false
   },
   {
-    "id": "MED-01",
-    "university": "건국대",
-    "department": "영상학과",
-    "year": "2025",
-    "category": "영상·미디어",
-    "title": "건국대학교 시각영상디자인학과 졸업전시회 2025 웹사이트 프로젝트 - 아마도 스튜디오",
-    "isResearched": true,
-    "isUploaded": true,
-    "status": "published",
-    "targetUrl": "https://studio.amado.kr/project/%EA%B1%B4%EA%B5%AD%EB%8C%80%ED%95%99%EA%B5%90-%EC%8B%9C%EA%B0%81%EC%98%81%EC%83%81%EB%94%94%EC%9E%90%EC%9D%B8%ED%95%99%EA%B3%BC-%EC%A1%B8%EC%97%85%EC%A0%84%EC%8B%9C%ED%9A%8C-2025/",
-    "posterPath": "uploads/MED-01/main_poster_1789036042679.png",
-    "posterVideoPath": null,
-    "headline": "건국대학교 시각영상디자인학과 졸업전시회 2025 웹사이트 프로젝트 - 아마도 스튜디오",
-    "curationIntro": "2025년도 건국대 영상학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
-    "period": "2025",
-    "schedule": "2025",
-    "venue": "건국대 예술디자인대학 1층 A&D 홀",
-    "slogan": "건국대학교 시각영상디자인학과 졸업전시회 2025 웹사이트 프로젝트 - 아마도 스튜디오",
-    "subtitle": "건국대학교 시각영상디자인학과 졸업전시회 2025 웹사이트 프로젝트 - 아마도 스튜디오",
-    "description": "2025년도 건국대 영상학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
-    "criticScore": 100,
-    "tags": [
-      "영상",
-      "영상학과",
-      "2025졸전"
-    ],
-    "artworks": [
-      {
-        "title": "1+1=",
-        "author": "김지원",
-        "role": "영상학과 크리에이터",
-        "department": "",
-        "imagePath": "captures/MED-01/qwen_crop_1.png",
-        "description": "1+1= | 김지원"
-      },
-      {
-        "title": "3M : 강력한 접착력으로, 고정",
-        "author": "김민서",
-        "role": "영상학과 크리에이터",
-        "department": "",
-        "imagePath": "captures/MED-01/qwen_crop_2.png",
-        "description": "3M : 강력한 접착력으로, 고정 | 김민서"
-      },
-      {
-        "title": "Alice & MoneyLand Adventure",
-        "author": "김지호",
-        "role": "영상학과 크리에이터",
-        "department": "",
-        "imagePath": "captures/MED-01/qwen_crop_3.png",
-        "description": "Alice & MoneyLand Adventure | 김지호"
-      },
-      {
-        "title": "ART VIBE",
-        "author": "출품 작가",
-        "role": "영상학과 크리에이터",
-        "department": "",
-        "imagePath": "captures/MED-01/qwen_crop_4.png",
-        "description": "ART VIBE | 출품 작가"
-      },
-      {
-        "title": "Babble",
-        "author": "출품 작가",
-        "role": "영상학과 크리에이터",
-        "department": "",
-        "imagePath": "captures/MED-01/qwen_crop_5.png",
-        "description": "Babble | 출품 작가"
-      },
-      {
-        "title": "Baserange 베이스레인지",
-        "author": "출품 작가",
-        "role": "영상학과 크리에이터",
-        "department": "",
-        "imagePath": "captures/MED-01/qwen_crop_6.png",
-        "description": "Baserange 베이스레인지 | 출품 작가"
-      }
-    ],
-    "instagramPublished": true,
-    "publishedAt": "2026-09-14T17:36:21.120207",
-    "cardCaption": "📍 [건국대 영상학과 2026 졸업전시회]\n전시명: [건국대] 공명의 숲: 관람객의 호흡으로 피어나는 디지털 자연\n일시: 2026.11.12(목) - 2026.11.18(수)\n장소: 건국대 예술디자인대학 1층 A&D 홀\n\n건국대 영상학과 2026 졸업전시는 시대의 변화 속에서 예술과 기술, 인간의 감성이 마주하는 지점을 다각도로 탐색합니다. 학생들은 각자의 조형 언어와 실험적 인터랙션을 통해 동시대 사회적 질문에 대한 독창적인 해답을 제시합니다. 젊은 크리에이터들의 치열한 고뇌와 새로운 가능성이 교차하는 특별한 아카이브를 직접 경험해보시길 바랍니다.\n\n[참여 학생 및 대표 출품작]\n• 윤시우 - 가상 자아의 유영: 생성형 미디어 파사드\n• 박도현 - 크로노스: 시간의 왜곡을 다룬 3D 시네마틱\n• 이지원 - 인간 이후의 풍경: VR 몰입형 공간\n\n#영상 #영상학과 #졸업전시 #신진작가 #포트폴리오 #졸업작품 #건국대 #영상학과",
-    "cooperationCompanies": [],
-    "crossValidationStatus": null,
-    "hasCorporateCooperation": false,
-    "corporateCooperationCount": 0,
-    "verifiedRequiredSkills": [],
-    "corporateResearchReport": null,
-    "disableArtworkZoom": false
-  },
-  {
     "id": "DES-31",
     "university": "고려대학교",
     "department": "디자인조형학부 (제품시스템디자인)",
@@ -10891,5 +10803,1261 @@
     "verifiedRequiredSkills": [],
     "corporateResearchReport": null,
     "disableArtworkZoom": true
+  },
+  {
+    "id": "UNIV-2026-전남대학교-건축학과-8940",
+    "university": "전남대학교",
+    "department": "건축학과",
+    "year": "2026",
+    "category": "건축·공간",
+    "title": "전남대학교 건축학부 졸업작품전 | SoA CNU Gallery",
+    "isResearched": true,
+    "isUploaded": true,
+    "status": "published",
+    "targetUrl": "http://soacnugallery.com/",
+    "posterPath": "uploads/UNIV-2026-_____-____-8940/main_poster_1790086711232.png",
+    "posterVideoPath": null,
+    "headline": "전남대학교 건축학부 졸업작품전 | SoA CNU Gallery",
+    "curationIntro": "2026년도 전남대학교 건축학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+    "period": "일정 공지 대기",
+    "schedule": "일정 공지 대기",
+    "venue": "교내 전시홀",
+    "slogan": "전남대학교 건축학부 졸업작품전 | SoA CNU Gallery",
+    "subtitle": "전남대학교 건축학부 졸업작품전 | SoA CNU Gallery",
+    "description": "2026년도 전남대학교 건축학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+    "criticScore": 100,
+    "tags": [
+      "건축",
+      "건축학과",
+      "2026졸전"
+    ],
+    "artworks": [
+      {
+        "title": "THE OBELISK",
+        "author": "권재원",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_1.png",
+        "description": "THE OBELISK | 권재원 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "숲(森)+삶(生)",
+        "author": "김예은",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_6.png",
+        "description": "숲(森)+삶(生) | 김예은 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "Regenerative Estuary",
+        "author": "김나현",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_3.png",
+        "description": "Regenerative Estuary | 김나현 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "작품 #7",
+        "author": "전남대학교 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_7.png",
+        "description": "작품 #7 | 전남대학교 작가"
+      },
+      {
+        "title": "작품 #9",
+        "author": "전남대학교 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_9.png",
+        "description": "작품 #9 | 전남대학교 작가"
+      },
+      {
+        "title": "Be Natural",
+        "author": "유상하",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_18.png",
+        "description": "Be Natural | 유상하 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "응결된 여백",
+        "author": "이인서",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_24.png",
+        "description": "응결된 여백 | 이인서 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "도심사찰(URBAN TEMPLE)",
+        "author": "윤동호",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_19.png",
+        "description": "도심사찰(URBAN TEMPLE) | 윤동호 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "작품 #26",
+        "author": "전남대학교 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_26.png",
+        "description": "작품 #26 | 전남대학교 작가"
+      },
+      {
+        "title": "수원에너지허브",
+        "author": "권혁주",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_2.png",
+        "description": "수원에너지허브 | 권혁주 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "Porous Publicness ; Scenes of Thresholds",
+        "author": "김남효",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_4.png",
+        "description": "Porous Publicness ; Scenes of Thresholds | 김남효 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "SNOWBALL DRIVE",
+        "author": "김명진",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_5.png",
+        "description": "SNOWBALL DRIVE | 김명진 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "작품 #8",
+        "author": "전남대학교 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_8.png",
+        "description": "작품 #8 | 전남대학교 작가"
+      },
+      {
+        "title": "작품 #10",
+        "author": "전남대학교 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_10.png",
+        "description": "작품 #10 | 전남대학교 작가"
+      },
+      {
+        "title": "작품 #11",
+        "author": "전남대학교 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_11.png",
+        "description": "작품 #11 | 전남대학교 작가"
+      },
+      {
+        "title": "작품 #12",
+        "author": "전남대학교 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_12.png",
+        "description": "작품 #12 | 전남대학교 작가"
+      },
+      {
+        "title": "일상을 엮는 도시의 결",
+        "author": "박현지",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_13.png",
+        "description": "일상을 엮는 도시의 결 | 박현지 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "HISTORICAL LINE",
+        "author": "성윤환",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_14.png",
+        "description": "HISTORICAL LINE | 성윤환 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "Learning with Greeting",
+        "author": "송지훈",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_15.png",
+        "description": "Learning with Greeting | 송지훈 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "Cultural Link Street",
+        "author": "신지은",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_16.png",
+        "description": "Cultural Link Street | 신지은 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "Play+IN+Cinerator",
+        "author": "안채윤",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_17.png",
+        "description": "Play+IN+Cinerator | 안채윤 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "CITY ON THE FORMER TRACKS",
+        "author": "윤유란",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_20.png",
+        "description": "CITY ON THE FORMER TRACKS | 윤유란 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "충장로.ZIP",
+        "author": "이연수",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_21.png",
+        "description": "충장로.ZIP | 이연수 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "AERO-INFRA : FUTURE OFFICE PROTOTYPE",
+        "author": "이우창",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_22.png",
+        "description": "AERO-INFRA : FUTURE OFFICE PROTOTYPE | 이우창 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "소:풍",
+        "author": "이윤서",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_23.png",
+        "description": "소:풍 | 이윤서 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "작품 #25",
+        "author": "전남대학교 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_25.png",
+        "description": "작품 #25 | 전남대학교 작가"
+      },
+      {
+        "title": "작품 #27",
+        "author": "전남대학교 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_27.png",
+        "description": "작품 #27 | 전남대학교 작가"
+      },
+      {
+        "title": "작품 #28",
+        "author": "전남대학교 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_28.png",
+        "description": "작품 #28 | 전남대학교 작가"
+      },
+      {
+        "title": "작품 #29",
+        "author": "전남대학교 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_29.png",
+        "description": "작품 #29 | 전남대학교 작가"
+      },
+      {
+        "title": "작품 #30",
+        "author": "전남대학교 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_30.png",
+        "description": "작품 #30 | 전남대학교 작가"
+      },
+      {
+        "title": "흐르는 도시, 머무는 시장",
+        "author": "정지현",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_31.png",
+        "description": "흐르는 도시, 머무는 시장 | 정지현 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "Orders Held by the Earth",
+        "author": "조석민",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_32.png",
+        "description": "Orders Held by the Earth | 조석민 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "URBAN SECTION",
+        "author": "조주영",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_33.png",
+        "description": "URBAN SECTION | 조주영 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "Record Loop Archive",
+        "author": "조현진",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_34.png",
+        "description": "Record Loop Archive | 조현진 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "중국광저우도심속마을의인대화개조",
+        "author": "차오치",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_35.png",
+        "description": "중국광저우도심속마을의인대화개조 | 차오치 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "Landfill mining: Placeization of Non-space",
+        "author": "최문규",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_36.png",
+        "description": "Landfill mining: Placeization of Non-space | 최문규 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "M O N O L O G",
+        "author": "최서연",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_37.png",
+        "description": "M O N O L O G | 최서연 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "Library Beyond Books",
+        "author": "추현우",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_38.png",
+        "description": "Library Beyond Books | 추현우 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "WEAVING FLOW",
+        "author": "하제민",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_39.png",
+        "description": "WEAVING FLOW | 하제민 | Architecture & Urban Design 2026"
+      },
+      {
+        "title": "SOC-MAP",
+        "author": "1조 / 김동현, 김호성, 서진성",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_40.png",
+        "description": "SOC-MAP | 1조 / 김동현, 김호성, 서진성 | Architectural Engineering 2026"
+      },
+      {
+        "title": "EV 화재 대비 지하주차장 슬래브 최적 피복 두께 설계",
+        "author": "2조 / 권준혁, 김정헌, 육세훈",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_41.png",
+        "description": "EV 화재 대비 지하주차장 슬래브 최적 피복 두께 설계 | 2조 / 권준혁, 김정헌, 육세훈 | Architectural Engineering 2026"
+      },
+      {
+        "title": "고정밀 BLE·PDR 융합 실내 내비게이션",
+        "author": "3조 / 이준영, 정영훈, 전석훈",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_42.png",
+        "description": "고정밀 BLE·PDR 융합 실내 내비게이션 | 3조 / 이준영, 정영훈, 전석훈 | Architectural Engineering 2026"
+      },
+      {
+        "title": "AI 기반 구조물 균열 관리 및 3D 위험 분석 시스템",
+        "author": "4조 / 권영윤, 김인영",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_43.png",
+        "description": "AI 기반 구조물 균열 관리 및 3D 위험 분석 시스템 | 4조 / 권영윤, 김인영 | Architectural Engineering 2026"
+      },
+      {
+        "title": "발열팩 분말을 활용한 영하 환경 콘크리트의 수화 반응 촉진 연구",
+        "author": "5조 / 곽지예, 기효윤, 김진서",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_44.png",
+        "description": "발열팩 분말을 활용한 영하 환경 콘크리트의 수화 반응 촉진 연구 | 5조 / 곽지예, 기효윤, 김진서 | Architectural Engineering 2026"
+      },
+      {
+        "title": "AI 기반 건설현장 안전위험 예측 및 시각화 관리 시스템",
+        "author": "7조 / 왕한규",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_45.png",
+        "description": "AI 기반 건설현장 안전위험 예측 및 시각화 관리 시스템 | 7조 / 왕한규 | Architectural Engineering 2026"
+      },
+      {
+        "title": "탁도 기반 잔골재 미립분 함유량 추정 및 실시간 판정 시스템 개발",
+        "author": "9조 / 안예린, 유은지, 장지성",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-전남대학교-건축학과-8940/work_46.png",
+        "description": "탁도 기반 잔골재 미립분 함유량 추정 및 실시간 판정 시스템 개발 | 9조 / 안예린, 유은지, 장지성 | Architectural Engineering 2026"
+      }
+    ],
+    "instagramPublished": true,
+    "publishedAt": "2026-09-22T23:23:58.983828",
+    "cardCaption": "",
+    "cooperationCompanies": [],
+    "crossValidationStatus": null,
+    "hasCorporateCooperation": false,
+    "corporateCooperationCount": 0,
+    "verifiedRequiredSkills": [],
+    "corporateResearchReport": null,
+    "disableArtworkZoom": false
+  },
+  {
+    "id": "UNIV-2026-건국대학교-시각영상디자인학과-2085",
+    "university": "건국대학교",
+    "department": "시각영상디자인학과",
+    "year": "2026",
+    "category": "디자인·UX/UI",
+    "title": "건국대학교 글로컬캠퍼스 시각영상디자인학과 영상/디지털 트랙 졸업전시회",
+    "isResearched": true,
+    "isUploaded": true,
+    "status": "published",
+    "targetUrl": "https://kku2026mid.com/project",
+    "posterPath": "uploads/UNIV-2026-_____-_________-5736/main_poster_1790168033783.png",
+    "posterVideoPath": null,
+    "headline": "건국대학교 글로컬캠퍼스 시각영상디자인학과 영상/디지털 트랙 졸업전시회",
+    "curationIntro": "2026년도 건국대학교 시각영상디자인학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+    "period": "2025.11.28 ~ 12.1",
+    "schedule": "2025.11.28 ~ 12.1",
+    "venue": "서울특별시 종로구 대학로 57 홍익대학교 대학로 아트센터 B2 제 3전시장",
+    "slogan": "건국대학교 글로컬캠퍼스 시각영상디자인학과 영상/디지털 트랙 졸업전시회",
+    "subtitle": "건국대학교 글로컬캠퍼스 시각영상디자인학과 영상/디지털 트랙 졸업전시회",
+    "description": "2026년도 건국대학교 시각영상디자인학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+    "criticScore": 100,
+    "tags": [
+      "영상",
+      "시각영상디자인학과",
+      "2026졸전"
+    ],
+    "artworks": [
+      {
+        "title": "grill the kill",
+        "author": "조민영,김한비",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_1.png",
+        "description": "grill the kill | 조민영,김한비"
+      },
+      {
+        "title": "GREEN POINT : EXPIRED",
+        "author": "유나경,유예지",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_181.png",
+        "description": "GREEN POINT : EXPIRED | 유나경,유예지"
+      },
+      {
+        "title": "가상모델 스튜디오 A. VOXEL",
+        "author": "임서현",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_90.png",
+        "description": "가상모델 스튜디오 A. VOXEL | 임서현"
+      },
+      {
+        "title": "세상에 없는 나다움, Spotify",
+        "author": "조민영,김한비",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_3.png",
+        "description": "세상에 없는 나다움, Spotify | 조민영,김한비"
+      },
+      {
+        "title": "Artemis",
+        "author": "박민경",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_34.png",
+        "description": "Artemis | 박민경"
+      },
+      {
+        "title": "her",
+        "author": "조민영",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_5.png",
+        "description": "her | 조민영"
+      },
+      {
+        "title": "개미",
+        "author": "오성현,이용준",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_7.png",
+        "description": "개미 | 오성현,이용준"
+      },
+      {
+        "title": "Levi's Rebirth",
+        "author": "오성현,이겨레,이용준,이예림,이현영",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_9.png",
+        "description": "Levi's Rebirth | 오성현,이겨레,이용준,이예림,이현영"
+      },
+      {
+        "title": "작품 #12",
+        "author": "건국대학교 작가",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_12.png",
+        "description": "작품 #12 | 건국대학교 작가"
+      },
+      {
+        "title": "내가 사라진 날",
+        "author": "이겨레",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_14.png",
+        "description": "내가 사라진 날 | 이겨레"
+      },
+      {
+        "title": "레드불",
+        "author": "이겨레",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_16.png",
+        "description": "레드불 | 이겨레"
+      },
+      {
+        "title": "초월",
+        "author": "최수하",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_18.png",
+        "description": "초월 | 최수하"
+      },
+      {
+        "title": "꽃나무",
+        "author": "최수하",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_20.png",
+        "description": "꽃나무 | 최수하"
+      },
+      {
+        "title": "해파리의 꿈",
+        "author": "최수하",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_22.png",
+        "description": "해파리의 꿈 | 최수하"
+      },
+      {
+        "title": "Hogwarts Legacy",
+        "author": "강준구",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_24.png",
+        "description": "Hogwarts Legacy | 강준구"
+      },
+      {
+        "title": "달러구트 꿈 백화점",
+        "author": "강준구,오서현",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_26.png",
+        "description": "달러구트 꿈 백화점 | 강준구,오서현"
+      },
+      {
+        "title": "GAME HUB",
+        "author": "강준구",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_28.png",
+        "description": "GAME HUB | 강준구"
+      },
+      {
+        "title": "My Nostalgia",
+        "author": "박민경",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_30.png",
+        "description": "My Nostalgia | 박민경"
+      },
+      {
+        "title": "LUSH",
+        "author": "박민경",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_32.png",
+        "description": "LUSH | 박민경"
+      },
+      {
+        "title": "불행보존의 법칙",
+        "author": "유연경",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_36.png",
+        "description": "불행보존의 법칙 | 유연경"
+      },
+      {
+        "title": "Off & On",
+        "author": "손민애,유연경,전주원",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_38.png",
+        "description": "Off & On | 손민애,유연경,전주원"
+      },
+      {
+        "title": "하이스토리",
+        "author": "유연경",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_40.png",
+        "description": "하이스토리 | 유연경"
+      },
+      {
+        "title": "시니어 몰",
+        "author": "이용준",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_44.png",
+        "description": "시니어 몰 | 이용준"
+      },
+      {
+        "title": "Click to Dive",
+        "author": "최건희,주해린",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_46.png",
+        "description": "Click to Dive | 최건희,주해린"
+      },
+      {
+        "title": "향의 시각화",
+        "author": "최건희",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_48.png",
+        "description": "향의 시각화 | 최건희"
+      },
+      {
+        "title": "리치아웃",
+        "author": "최건희",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_50.png",
+        "description": "리치아웃 | 최건희"
+      },
+      {
+        "title": "부루마블",
+        "author": "강주영",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_52.png",
+        "description": "부루마블 | 강주영"
+      },
+      {
+        "title": "아로미",
+        "author": "강주영",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_54.png",
+        "description": "아로미 | 강주영"
+      },
+      {
+        "title": "데코 : 나",
+        "author": "강혜리",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_57.png",
+        "description": "데코 : 나 | 강혜리"
+      },
+      {
+        "title": "COME JOIN US!",
+        "author": "강혜리",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_59.png",
+        "description": "COME JOIN US! | 강혜리"
+      },
+      {
+        "title": "땀빼옹",
+        "author": "강혜리",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_61.png",
+        "description": "땀빼옹 | 강혜리"
+      },
+      {
+        "title": "앤은 잠 못 이루고",
+        "author": "권예인,조유진",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_63.png",
+        "description": "앤은 잠 못 이루고 | 권예인,조유진"
+      },
+      {
+        "title": "Leeum Museum",
+        "author": "권예인,조유진",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_65.png",
+        "description": "Leeum Museum | 권예인,조유진"
+      },
+      {
+        "title": "밥풀",
+        "author": "권예인,황예봄",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_67.png",
+        "description": "밥풀 | 권예인,황예봄"
+      },
+      {
+        "title": "여름기억",
+        "author": "손민애,전주원",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_69.png",
+        "description": "여름기억 | 손민애,전주원"
+      },
+      {
+        "title": "어른",
+        "author": "손민애",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_72.png",
+        "description": "어른 | 손민애"
+      },
+      {
+        "title": "피크민",
+        "author": "윤민주",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_74.png",
+        "description": "피크민 | 윤민주"
+      },
+      {
+        "title": "버츄얼 운영자 '김신비'",
+        "author": "윤민주",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_76.png",
+        "description": "버츄얼 운영자 '김신비' | 윤민주"
+      },
+      {
+        "title": "미싱테일",
+        "author": "윤민주",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_78.png",
+        "description": "미싱테일 | 윤민주"
+      },
+      {
+        "title": "잔광 殘光",
+        "author": "이소미,이현영",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_80.png",
+        "description": "잔광 殘光 | 이소미,이현영"
+      },
+      {
+        "title": "곁에 있고 싶어",
+        "author": "이준이",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_82.png",
+        "description": "곁에 있고 싶어 | 이준이"
+      },
+      {
+        "title": "핸들릿",
+        "author": "이준이",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_84.png",
+        "description": "핸들릿 | 이준이"
+      },
+      {
+        "title": "쥬모닝",
+        "author": "이준이",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_86.png",
+        "description": "쥬모닝 | 이준이"
+      },
+      {
+        "title": "세음 世音",
+        "author": "임서현",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_88.png",
+        "description": "세음 世音 | 임서현"
+      },
+      {
+        "title": "X-Universe",
+        "author": "정세은,차연주",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_92.png",
+        "description": "X-Universe | 정세은,차연주"
+      },
+      {
+        "title": "Terraforming",
+        "author": "정세은,차연주",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_94.png",
+        "description": "Terraforming | 정세은,차연주"
+      },
+      {
+        "title": "GGP",
+        "author": "정세은",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_96.png",
+        "description": "GGP | 정세은"
+      },
+      {
+        "title": "From NAZAR",
+        "author": "조유진,황예봄",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_100.png",
+        "description": "From NAZAR | 조유진,황예봄"
+      },
+      {
+        "title": "비움",
+        "author": "차연주",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_105.png",
+        "description": "비움 | 차연주"
+      },
+      {
+        "title": "Birth flower",
+        "author": "홍유진",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_107.png",
+        "description": "Birth flower | 홍유진"
+      },
+      {
+        "title": "Escape from the Trap",
+        "author": "홍유진",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_109.png",
+        "description": "Escape from the Trap | 홍유진"
+      },
+      {
+        "title": "Why am i blue?",
+        "author": "홍유진",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_111.png",
+        "description": "Why am i blue? | 홍유진"
+      },
+      {
+        "title": "One Touch, One Dot",
+        "author": "황예봄",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_113.png",
+        "description": "One Touch, One Dot | 황예봄"
+      },
+      {
+        "title": "Leave Me Alone!",
+        "author": "권영인",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_117.png",
+        "description": "Leave Me Alone! | 권영인"
+      },
+      {
+        "title": "HOPE",
+        "author": "권영인,한윤정",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_119.png",
+        "description": "HOPE | 권영인,한윤정"
+      },
+      {
+        "title": "Life Goes On",
+        "author": "권영인",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_121.png",
+        "description": "Life Goes On | 권영인"
+      },
+      {
+        "title": "Mafia Deck",
+        "author": "김서현,이세은",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_123.png",
+        "description": "Mafia Deck | 김서현,이세은"
+      },
+      {
+        "title": "Pitch me",
+        "author": "김서현",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_125.png",
+        "description": "Pitch me | 김서현"
+      },
+      {
+        "title": "Breadary",
+        "author": "김서현",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_127.png",
+        "description": "Breadary | 김서현"
+      },
+      {
+        "title": "동구밭",
+        "author": "박서빈",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_129.png",
+        "description": "동구밭 | 박서빈"
+      },
+      {
+        "title": "Rebloom",
+        "author": "박서빈",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_131.png",
+        "description": "Rebloom | 박서빈"
+      },
+      {
+        "title": "포미션",
+        "author": "박서빈",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_133.png",
+        "description": "포미션 | 박서빈"
+      },
+      {
+        "title": "Ocean Spray",
+        "author": "오서현",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_135.png",
+        "description": "Ocean Spray | 오서현"
+      },
+      {
+        "title": "내 Fit 대로 내핏",
+        "author": "오서현",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_138.png",
+        "description": "내 Fit 대로 내핏 | 오서현"
+      },
+      {
+        "title": "Your Story, Your Converse",
+        "author": "윤수연,이지예",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_140.png",
+        "description": "Your Story, Your Converse | 윤수연,이지예"
+      },
+      {
+        "title": "에이팅",
+        "author": "윤수연",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_142.png",
+        "description": "에이팅 | 윤수연"
+      },
+      {
+        "title": "Extinct: 사라진 종들의 기록",
+        "author": "윤수연",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_144.png",
+        "description": "Extinct: 사라진 종들의 기록 | 윤수연"
+      },
+      {
+        "title": "Breakout Tournament",
+        "author": "이승민",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_146.png",
+        "description": "Breakout Tournament | 이승민"
+      },
+      {
+        "title": "마지막 신호탄",
+        "author": "이승민",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_148.png",
+        "description": "마지막 신호탄 | 이승민"
+      },
+      {
+        "title": "마음알기",
+        "author": "이승민",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_150.png",
+        "description": "마음알기 | 이승민"
+      },
+      {
+        "title": "위로",
+        "author": "이예림,임서연",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_152.png",
+        "description": "위로 | 이예림,임서연"
+      },
+      {
+        "title": "RESET",
+        "author": "임서연,이예림",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_155.png",
+        "description": "RESET | 임서연,이예림"
+      },
+      {
+        "title": "터벗터벗",
+        "author": "이현영,이예림,임서연",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_157.png",
+        "description": "터벗터벗 | 이현영,이예림,임서연"
+      },
+      {
+        "title": "크보링(KBO-Ring)",
+        "author": "이지예",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_160.png",
+        "description": "크보링(KBO-Ring) | 이지예"
+      },
+      {
+        "title": "생각의 편식",
+        "author": "이지예",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_162.png",
+        "description": "생각의 편식 | 이지예"
+      },
+      {
+        "title": "디버깅",
+        "author": "이혜연",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_164.png",
+        "description": "디버깅 | 이혜연"
+      },
+      {
+        "title": "집으로",
+        "author": "이혜연",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_166.png",
+        "description": "집으로 | 이혜연"
+      },
+      {
+        "title": "화채",
+        "author": "이혜연",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_168.png",
+        "description": "화채 | 이혜연"
+      },
+      {
+        "title": "Eyes on me",
+        "author": "전주원",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_172.png",
+        "description": "Eyes on me | 전주원"
+      },
+      {
+        "title": "못난이여서 더 특별해",
+        "author": "한윤정",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_174.png",
+        "description": "못난이여서 더 특별해 | 한윤정"
+      },
+      {
+        "title": "미완",
+        "author": "한윤정",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_177.png",
+        "description": "미완 | 한윤정"
+      },
+      {
+        "title": "The Crops Journey",
+        "author": "유나경,유예지",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_179.png",
+        "description": "The Crops Journey | 유나경,유예지"
+      },
+      {
+        "title": "KOMOREBI",
+        "author": "유예지",
+        "role": "시각영상디자인학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_183.png",
+        "description": "KOMOREBI | 유예지"
+      }
+    ],
+    "instagramPublished": true,
+    "publishedAt": "2026-09-23T22:16:43.535575",
+    "cardCaption": "",
+    "cooperationCompanies": [],
+    "crossValidationStatus": null,
+    "hasCorporateCooperation": false,
+    "corporateCooperationCount": 0,
+    "verifiedRequiredSkills": [],
+    "corporateResearchReport": null,
+    "disableArtworkZoom": false
+  },
+  {
+    "id": "UNIV-2026-울산대학교-실내공간디자인학과-75346",
+    "university": "울산대학교",
+    "department": "실내공간디자인학과",
+    "year": "2026",
+    "category": "건축·공간",
+    "title": "울산대학교 2026년 실내공간디자인학과 졸업전시회",
+    "isResearched": true,
+    "isUploaded": true,
+    "status": "published",
+    "targetUrl": "https://www.youtube.com/@UISD_egg/videos",
+    "posterPath": "uploads/UNIV-2026-울산대학교-실내공간디자인학과-75346/main_poster.png",
+    "posterVideoPath": null,
+    "headline": "인식",
+    "curationIntro": "2026년도 울산대학교 실내공간디자인학과 공식 졸업전시 아카이브입니다.",
+    "period": "2026.09.21~2026.09.27",
+    "schedule": "2026.09.21~2026.09.27",
+    "venue": "아산 도서관 1F Creative Square",
+    "slogan": "인식",
+    "subtitle": "인식",
+    "description": "2026년도 울산대학교 실내공간디자인학과 공식 졸업전시 아카이브입니다.",
+    "criticScore": 95,
+    "tags": [
+      "UISD",
+      "실내공간디자인",
+      "졸업전시회",
+      "울산대학교"
+    ],
+    "artworks": [],
+    "instagramPublished": false,
+    "publishedAt": null,
+    "cardCaption": "",
+    "cooperationCompanies": [],
+    "crossValidationStatus": null,
+    "hasCorporateCooperation": false,
+    "corporateCooperationCount": 0,
+    "verifiedRequiredSkills": [],
+    "corporateResearchReport": null,
+    "disableArtworkZoom": false
+  },
+  {
+    "id": "DES-3597",
+    "university": "부산대",
+    "department": "건축학과",
+    "year": "2026",
+    "category": "건축·공간",
+    "title": "Project | 부산대학교건축학과 아카이브 I PNU",
+    "isResearched": true,
+    "isUploaded": true,
+    "status": "published",
+    "targetUrl": "https://www.pnuarchiport.com/26graduationproject",
+    "posterPath": "uploads/DES-3597/upload_1789993803675_npv3va.png",
+    "posterVideoPath": null,
+    "headline": "시선의 채집(시간/도시/자연/사회)",
+    "curationIntro": "2026년도 부산대 건축학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+    "period": "2026",
+    "schedule": "2026",
+    "venue": "온라인 졸업전시(링크참조)",
+    "slogan": "시선의 채집(시간/도시/자연/사회)",
+    "subtitle": "시선의 채집(시간/도시/자연/사회)",
+    "description": "2026년도 부산대 건축학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+    "criticScore": 100,
+    "tags": [
+      "건축",
+      "건축학과",
+      "2026졸전"
+    ],
+    "artworks": [
+      {
+        "title": "작품 #1",
+        "author": "공식전시 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/DES-3597/work_1.png",
+        "description": "작품 #1 | 공식전시 작가"
+      },
+      {
+        "title": "작품 #2",
+        "author": "공식전시 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/DES-3597/work_2.png",
+        "description": "작품 #2 | 공식전시 작가"
+      },
+      {
+        "title": "작품 #3",
+        "author": "공식전시 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/DES-3597/work_3.png",
+        "description": "작품 #3 | 공식전시 작가"
+      },
+      {
+        "title": "작품 #5",
+        "author": "공식전시 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/DES-3597/work_5.png",
+        "description": "작품 #5 | 공식전시 작가"
+      },
+      {
+        "title": "작품 #6",
+        "author": "공식전시 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/DES-3597/work_6.png",
+        "description": "작품 #6 | 공식전시 작가"
+      },
+      {
+        "title": "작품 #7",
+        "author": "공식전시 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/DES-3597/work_7.png",
+        "description": "작품 #7 | 공식전시 작가"
+      },
+      {
+        "title": "작품 #8",
+        "author": "공식전시 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/DES-3597/work_8.png",
+        "description": "작품 #8 | 공식전시 작가"
+      },
+      {
+        "title": "작품 #9",
+        "author": "공식전시 작가",
+        "role": "건축학과 크리에이터",
+        "department": "",
+        "imagePath": "captures/DES-3597/work_9.png",
+        "description": "작품 #9 | 공식전시 작가"
+      }
+    ],
+    "instagramPublished": true,
+    "publishedAt": "2026-09-21T22:02:49.121013",
+    "cardCaption": "",
+    "cooperationCompanies": [],
+    "crossValidationStatus": null,
+    "hasCorporateCooperation": false,
+    "corporateCooperationCount": 0,
+    "verifiedRequiredSkills": [],
+    "corporateResearchReport": null,
+    "disableArtworkZoom": false
   }
 ]

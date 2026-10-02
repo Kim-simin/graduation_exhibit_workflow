@@ -23,8 +23,8 @@
     "exhibition_venue": "서울여자대학교 조형예술관 1층 바롬갤러리",
     "target_url": "https://swuid2025.com/",
     "official_url": "https://swuid2025.com/",
-    "poster_image": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/poster.png",
-    "status": "완료",
+    "poster_image": "uploads/UNIV-2025-서울여자대학교-산업디자인학과/upload_1790594790630_qkbe64.png",
+    "status": "리서치 완료",
     "isUploaded": true,
     "critic_score": 98,
     "critic_feedback": "학교라는 경계를 넘어 사회로 뻗어나가는 학생들의 창의적 응전력을 높은 완성도의 하드웨어-소프트웨어 융합 제품과 서비스로 훌륭하게 증명해낸 수작 전시입니다.",
@@ -505,7 +505,11 @@
     ],
     "has_corporate_cooperation": true,
     "corporate_cooperation_count": 4,
-    "cross_validation_status": "CORROBORATED"
+    "cross_validation_status": "CORROBORATED",
+    "card_news": {
+      "card_headline": "잠재되어 있던 가능성이 마침내 터져 나오는 순간, 조용한 수면 아래에서 끓어오르던 에너지가 세상을 향해 드러나는 순간.",
+      "card_intro": "2025 SWUID 산업디자인학과 졸업전시 《Upwell》은 학교라는 테두리를 넘어 사회로 나아가는 디자이너들의 '터져나오는 힘'을 주제로 기획되었습니다. 이 전시는 학생들이 그동안 축적해온 창의성과 잠재력을 '역동적이고 벅찬 에너지'로 표현하며, 불확실한 미래 앞에서도 자신감 있게 발산하는 새로운 시작의 가능성을 담고 있습니다. 이번 졸업전시를 통해 각자의 방식으로 세상을 향해 물결을 일으키는 서울여대 산업디자인학과 학생들의 도전과 확장을 느껴보시기 바랍니다."
+    }
   },
   {
     "id": "UNIV-2025-세종대학교-디자인이노베이션전공-firstchase",
@@ -1455,7 +1459,7 @@
     "status": "리서치 완료",
     "isUploaded": true,
     "isResearched": true,
-    "poster_image": "uploads/UNIV-2025-대진대학교-시각디자인학과/main_poster_2025.jpg",
+    "poster_image": "uploads/UNIV-2025-대진대학교-시각디자인학과-fe26/upload_1790340514428_0n0dqx.png",
     "exhibition_title": "대진대학교 시각디자인 26기 졸업전시회 | Fe26 : REINFORCE",
     "exhibit_title": "대진대학교 시각디자인 26기 졸업전시회 | Fe26 : REINFORCE",
     "title": "대진대학교 시각디자인 26기 졸업전시회 | Fe26 : REINFORCE",
@@ -1464,7 +1468,7 @@
     "scraped_url": "https://dju26-design.co.kr/",
     "exhibition_period": "2024.11.20 - 2024.11.25 (온라인 아카이브 상시 운영)",
     "exhibition_venue": "대진대학교 인문예술대학 디자인갤러리 & 온라인 아카이브",
-    "slogan": "Fe26 : REINFORCE - 단단하게 결속되어 세상을 변화시키는 디자인",
+    "slogan": "대진대학교 시각디자인 26기 졸업전시회 | Fe26 : REINFORCE",
     "exhibit_slogan": "Fe26 : REINFORCE - 단단하게 결속되어 세상을 변화시키는 디자인",
     "critic_score": 98,
     "critic_feedback": "대진대학교 시각디자인학과 26기 졸업전시 'Fe26 : REINFORCE'는 에디토리얼, 인터랙티브, 패키지, 시각디자인의 4대 전공 트랙을 통해 총 138점의 수준 높은 디자인 결과물을 선보이며 강인한 실험 정신과 시각적 완결성을 증명합니다.",
@@ -1493,1522 +1497,1526 @@
       {
         "title": "[ED] 도시 아래 숨겨진 세상",
         "student_name": "강신영",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KANGSIN3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KANGSIN3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KANGSIN3.webp",
         "description": "[EDITORIAL DESIGN] 도시 아래 숨겨진 세상\n출품 디자이너: 강신영 (이메일: ksyshinyoung@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 새로움을 여는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 1년의 과정을 버텨낸것이 뿌듯하기도 하면서도 후련하다",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KANGSIN3"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] Repdy",
         "student_name": "강신영",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KANGSIN4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KANGSIN4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KANGSIN4.webp",
         "description": "[INTERACTIVE DESIGN] Repdy\n출품 디자이너: 강신영 (이메일: ksyshinyoung@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 새로움을 여는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 1년의 과정을 버텨낸것이 뿌듯하기도 하면서도 후련하다",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KANGSIN4"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] SPAM",
         "student_name": "강신영",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KANGSIN1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KANGSIN1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KANGSIN1.webp",
         "description": "[PACKAGE DESIGN] SPAM\n출품 디자이너: 강신영 (이메일: ksyshinyoung@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 새로움을 여는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 1년의 과정을 버텨낸것이 뿌듯하기도 하면서도 후련하다",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KANGSIN1"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 지나친 사교육",
         "student_name": "강신영",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KANGSIN2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KANGSIN2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KANGSIN2.webp",
         "description": "[VISUAL DESIGN] 지나친 사교육\n출품 디자이너: 강신영 (이메일: ksyshinyoung@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 새로움을 여는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 1년의 과정을 버텨낸것이 뿌듯하기도 하면서도 후련하다",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KANGSIN2"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 한 그릇의 역사",
         "student_name": "곽혜정",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KWAKHYEJEONG1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KWAKHYEJEONG1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KWAKHYEJEONG1.webp",
         "description": "[EDITORIAL DESIGN] 한 그릇의 역사\n출품 디자이너: 곽혜정 (이메일: hyejungi@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 다른 사람의 눈이 되어 많은 이들의 의견과 취향을 대변해주는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 예상하지 못한 걸림돌도 있었으나 이를 하나씩 이겨내면서 뿌듯하기도 하고 나름의 경험이 쌓인 것 같아 보람찬 시간을 보냈다는 생각이 듭니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KWAKHYEJEONG1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] BOOSTER",
         "student_name": "곽혜정",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KWAKHYEJEONG2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KWAKHYEJEONG2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KWAKHYEJEONG2.webp",
         "description": "[INTERACTIVE DESIGN] BOOSTER\n출품 디자이너: 곽혜정 (이메일: hyejungi@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 다른 사람의 눈이 되어 많은 이들의 의견과 취향을 대변해주는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 예상하지 못한 걸림돌도 있었으나 이를 하나씩 이겨내면서 뿌듯하기도 하고 나름의 경험이 쌓인 것 같아 보람찬 시간을 보냈다는 생각이 듭니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KWAKHYEJEONG2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 또오시락(TTOOXIRAK)",
         "student_name": "곽혜정",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KWAKHYEJEONG3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KWAKHYEJEONG3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KWAKHYEJEONG3.webp",
         "description": "[PACKAGE DESIGN] 또오시락(TTOOXIRAK)\n출품 디자이너: 곽혜정 (이메일: hyejungi@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 다른 사람의 눈이 되어 많은 이들의 의견과 취향을 대변해주는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 예상하지 못한 걸림돌도 있었으나 이를 하나씩 이겨내면서 뿌듯하기도 하고 나름의 경험이 쌓인 것 같아 보람찬 시간을 보냈다는 생각이 듭니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KWAKHYEJEONG3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 신나는 탈춤 한 판!, 무심코 버린 쓰레기",
         "student_name": "곽혜정",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KWAKHYEJEONG4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KWAKHYEJEONG4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KWAKHYEJEONG4.webp",
         "description": "[VISUAL DESIGN] 신나는 탈춤 한 판!, 무심코 버린 쓰레기\n출품 디자이너: 곽혜정 (이메일: hyejungi@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 다른 사람의 눈이 되어 많은 이들의 의견과 취향을 대변해주는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 예상하지 못한 걸림돌도 있었으나 이를 하나씩 이겨내면서 뿌듯하기도 하고 나름의 경험이 쌓인 것 같아 보람찬 시간을 보냈다는 생각이 듭니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KWAKHYEJEONG4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 우주의 역사",
         "student_name": "권민수",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KWONMINSU1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KWONMINSU1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KWONMINSU1.webp",
         "description": "[EDITORIAL DESIGN] 우주의 역사\n출품 디자이너: 권민수 (이메일: sherlock4597@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 게임 회사에 들어가 2D 배경 일러스트레이터 디자이너가 되고 싶다\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 후련하기도 하고 아쉽기도 하다",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KWONMINSU1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] Dsleep",
         "student_name": "권민수",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/kms2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/kms2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/kms2.webp",
         "description": "[INTERACTIVE DESIGN] Dsleep\n출품 디자이너: 권민수 (이메일: sherlock4597@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 게임 회사에 들어가 2D 배경 일러스트레이터 디자이너가 되고 싶다\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 후련하기도 하고 아쉽기도 하다",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/kms2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] Mom's Touch",
         "student_name": "권민수",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/kms3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/kms3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/kms3.webp",
         "description": "[PACKAGE DESIGN] Mom's Touch\n출품 디자이너: 권민수 (이메일: sherlock4597@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 게임 회사에 들어가 2D 배경 일러스트레이터 디자이너가 되고 싶다\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 후련하기도 하고 아쉽기도 하다",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/kms3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 아동학대, 지구온난화",
         "student_name": "권민수",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/kms4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/kms4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/kms4.webp",
         "description": "[VISUAL DESIGN] 아동학대, 지구온난화\n출품 디자이너: 권민수 (이메일: sherlock4597@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 게임 회사에 들어가 2D 배경 일러스트레이터 디자이너가 되고 싶다\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 후련하기도 하고 아쉽기도 하다",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/kms4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 나의 뿌리",
         "student_name": "김민기",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/kimmin2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/kimmin2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/kimmin2.webp",
         "description": "[EDITORIAL DESIGN] 나의 뿌리\n출품 디자이너: 김민기 (이메일: dign9077@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 끝까지 꿈을 좇는 디자이너가 돠고싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 아쉬움이 많이 크지만 그 아쉬움을 토대로 발전해야겠다는 생각이 듭니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/kimmin2"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] Atoz",
         "student_name": "김민기",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/kimmin3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/kimmin3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/kimmin3.webp",
         "description": "[INTERACTIVE DESIGN] Atoz\n출품 디자이너: 김민기 (이메일: dign9077@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 끝까지 꿈을 좇는 디자이너가 돠고싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 아쉬움이 많이 크지만 그 아쉬움을 토대로 발전해야겠다는 생각이 듭니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/kimmin3"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] MARPPLE",
         "student_name": "김민기",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/kimmin4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/kimmin4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/kimmin4.webp",
         "description": "[PACKAGE DESIGN] MARPPLE\n출품 디자이너: 김민기 (이메일: dign9077@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 끝까지 꿈을 좇는 디자이너가 돠고싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 아쉬움이 많이 크지만 그 아쉬움을 토대로 발전해야겠다는 생각이 듭니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/kimmin4"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 졸업앨범이 원래 이렇게 얇나요?",
         "student_name": "김민기",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/kimmin1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/kimmin1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/kimmin1.webp",
         "description": "[VISUAL DESIGN] 졸업앨범이 원래 이렇게 얇나요?\n출품 디자이너: 김민기 (이메일: dign9077@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 끝까지 꿈을 좇는 디자이너가 돠고싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 아쉬움이 많이 크지만 그 아쉬움을 토대로 발전해야겠다는 생각이 듭니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/kimmin1"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] cm의 비밀",
         "student_name": "김민정",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/kmj1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/kmj1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/kmj1.webp",
         "description": "[EDITORIAL DESIGN] cm의 비밀\n출품 디자이너: 김민정 (이메일: nmmmy7004@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 끊임없이 도전하고 자신감 있는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 막상 전시를 마치고 나니 4년이라는 시간이 너무 빠르게 느껴졌고, 전시를 준비하며 스스로에게 아쉬웠던 점이 많았던 만큼 사회에 나가서는 아쉬움 없는 순간들을 보내기 위해 노력하고 싶습니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/kmj1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] with",
         "student_name": "김민정",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/kmj2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/kmj2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/kmj2.webp",
         "description": "[INTERACTIVE DESIGN] with\n출품 디자이너: 김민정 (이메일: nmmmy7004@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 끊임없이 도전하고 자신감 있는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 막상 전시를 마치고 나니 4년이라는 시간이 너무 빠르게 느껴졌고, 전시를 준비하며 스스로에게 아쉬웠던 점이 많았던 만큼 사회에 나가서는 아쉬움 없는 순간들을 보내기 위해 노력하고 싶습니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/kmj2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 60계",
         "student_name": "김민정",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/kmj3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/kmj3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/kmj3.webp",
         "description": "[PACKAGE DESIGN] 60계\n출품 디자이너: 김민정 (이메일: nmmmy7004@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 끊임없이 도전하고 자신감 있는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 막상 전시를 마치고 나니 4년이라는 시간이 너무 빠르게 느껴졌고, 전시를 준비하며 스스로에게 아쉬웠던 점이 많았던 만큼 사회에 나가서는 아쉬움 없는 순간들을 보내기 위해 노력하고 싶습니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/kmj3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 저 아기 이름이 뭐에요?",
         "student_name": "김민정",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/kmj4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/kmj4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/kmj4.webp",
         "description": "[VISUAL DESIGN] 저 아기 이름이 뭐에요?\n출품 디자이너: 김민정 (이메일: nmmmy7004@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 끊임없이 도전하고 자신감 있는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 막상 전시를 마치고 나니 4년이라는 시간이 너무 빠르게 느껴졌고, 전시를 준비하며 스스로에게 아쉬웠던 점이 많았던 만큼 사회에 나가서는 아쉬움 없는 순간들을 보내기 위해 노력하고 싶습니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/kmj4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 다빈치 노트",
         "student_name": "김수진",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMSUU2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMSUU2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMSUU2.webp",
         "description": "[EDITORIAL DESIGN] 다빈치 노트\n출품 디자이너: 김수진 (이메일: in78546@gmail.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 문득-문득 생각나는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 26시간 자고 싶어요..",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KIMSUU2"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 똑똑!",
         "student_name": "김수진",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMSUU3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMSUU3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMSUU3.webp",
         "description": "[INTERACTIVE DESIGN] 똑똑!\n출품 디자이너: 김수진 (이메일: in78546@gmail.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 문득-문득 생각나는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 26시간 자고 싶어요..",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KIMSUU3"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] Act.Box",
         "student_name": "김수진",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMSUU4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMSUU4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMSUU4.webp",
         "description": "[PACKAGE DESIGN] Act.Box\n출품 디자이너: 김수진 (이메일: in78546@gmail.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 문득-문득 생각나는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 26시간 자고 싶어요..",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KIMSUU4"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 180°C로 바뀌는 온도",
         "student_name": "김수진",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMSUU1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMSUU1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMSUU1.webp",
         "description": "[VISUAL DESIGN] 180°C로 바뀌는 온도\n출품 디자이너: 김수진 (이메일: in78546@gmail.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 문득-문득 생각나는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 26시간 자고 싶어요..",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KIMSUU1"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 오늘날 세상의 기원",
         "student_name": "김영석",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/kys1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/kys1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/kys1.webp",
         "description": "[EDITORIAL DESIGN] 오늘날 세상의 기원\n출품 디자이너: 김영석 (이메일: kstyjk@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 끝까지 포기하지 않는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 길다면 길고 짧다면 짧은 4년이란 시간이 머릿속을 지나 이제는 졸업한다는 생각에 아쉽기도 했지만  참 즐거웠습니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/kys1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 나몽시",
         "student_name": "김영석",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/ksy2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/ksy2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/ksy2.webp",
         "description": "[INTERACTIVE DESIGN] 나몽시\n출품 디자이너: 김영석 (이메일: kstyjk@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 끝까지 포기하지 않는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 길다면 길고 짧다면 짧은 4년이란 시간이 머릿속을 지나 이제는 졸업한다는 생각에 아쉽기도 했지만  참 즐거웠습니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/ksy2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] FOODY BUDDY",
         "student_name": "김영석",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/ksy3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/ksy3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/ksy3.webp",
         "description": "[PACKAGE DESIGN] FOODY BUDDY\n출품 디자이너: 김영석 (이메일: kstyjk@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 끝까지 포기하지 않는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 길다면 길고 짧다면 짧은 4년이란 시간이 머릿속을 지나 이제는 졸업한다는 생각에 아쉽기도 했지만  참 즐거웠습니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/ksy3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 저출산, 적신호가 켜졌습니다.",
         "student_name": "김영석",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/ksy4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/ksy4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/ksy4.webp",
         "description": "[VISUAL DESIGN] 저출산, 적신호가 켜졌습니다.\n출품 디자이너: 김영석 (이메일: kstyjk@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 끝까지 포기하지 않는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 길다면 길고 짧다면 짧은 4년이란 시간이 머릿속을 지나 이제는 졸업한다는 생각에 아쉽기도 했지만  참 즐거웠습니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/ksy4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] THE SECRET FESTIVAL FESTIVA WIZARD",
         "student_name": "김영선",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMYOUNG3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMYOUNG3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMYOUNG3.webp",
         "description": "[EDITORIAL DESIGN] THE SECRET FESTIVAL FESTIVA WIZARD\n출품 디자이너: 김영선 (이메일: alskdjfhg0102@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 새로운 경험을 선사하는 디자인, 창의적인 아트워크를 통해 사람들에게 영감을 주고 싶습니다\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 졸업전시는 밤낮없이 몰두했던 시간들의 결실이었습니다. 취업과 졸작을 병행하며 힘든 과정 속에서도 포기하지 않고 최선을 다했고, 그 결과 스스로의 성장을 확인할 수 있었습니다. 교수님들과 친구들의 피드백 덕분에 마무리할 수 있었으며, 이번 전시는 결과 이상의 성장과 배움을 안겨주었고, 이를 바탕으로 앞으로 더 높은 목표를 향해 나아갈 것입니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KIMYOUNG3"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 데일리핏",
         "student_name": "김영선",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMYOUNG4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMYOUNG4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMYOUNG4.webp",
         "description": "[INTERACTIVE DESIGN] 데일리핏\n출품 디자이너: 김영선 (이메일: alskdjfhg0102@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 새로운 경험을 선사하는 디자인, 창의적인 아트워크를 통해 사람들에게 영감을 주고 싶습니다\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 졸업전시는 밤낮없이 몰두했던 시간들의 결실이었습니다. 취업과 졸작을 병행하며 힘든 과정 속에서도 포기하지 않고 최선을 다했고, 그 결과 스스로의 성장을 확인할 수 있었습니다. 교수님들과 친구들의 피드백 덕분에 마무리할 수 있었으며, 이번 전시는 결과 이상의 성장과 배움을 안겨주었고, 이를 바탕으로 앞으로 더 높은 목표를 향해 나아갈 것입니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KIMYOUNG4"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 한국제다",
         "student_name": "김영선",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMYOUNG1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMYOUNG1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMYOUNG1.webp",
         "description": "[PACKAGE DESIGN] 한국제다\n출품 디자이너: 김영선 (이메일: alskdjfhg0102@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 새로운 경험을 선사하는 디자인, 창의적인 아트워크를 통해 사람들에게 영감을 주고 싶습니다\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 졸업전시는 밤낮없이 몰두했던 시간들의 결실이었습니다. 취업과 졸작을 병행하며 힘든 과정 속에서도 포기하지 않고 최선을 다했고, 그 결과 스스로의 성장을 확인할 수 있었습니다. 교수님들과 친구들의 피드백 덕분에 마무리할 수 있었으며, 이번 전시는 결과 이상의 성장과 배움을 안겨주었고, 이를 바탕으로 앞으로 더 높은 목표를 향해 나아갈 것입니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KIMYOUNG1"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 나의 모습은 나의 것 입니다.",
         "student_name": "김영선",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMYOUNG2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMYOUNG2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMYOUNG2.webp",
         "description": "[VISUAL DESIGN] 나의 모습은 나의 것 입니다.\n출품 디자이너: 김영선 (이메일: alskdjfhg0102@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 새로운 경험을 선사하는 디자인, 창의적인 아트워크를 통해 사람들에게 영감을 주고 싶습니다\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 졸업전시는 밤낮없이 몰두했던 시간들의 결실이었습니다. 취업과 졸작을 병행하며 힘든 과정 속에서도 포기하지 않고 최선을 다했고, 그 결과 스스로의 성장을 확인할 수 있었습니다. 교수님들과 친구들의 피드백 덕분에 마무리할 수 있었으며, 이번 전시는 결과 이상의 성장과 배움을 안겨주었고, 이를 바탕으로 앞으로 더 높은 목표를 향해 나아갈 것입니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KIMYOUNG2"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[VI] 남들과는 다른 길",
         "student_name": "김유진",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KYJ2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KYJ2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KYJ2.webp",
         "description": "[VISUAL DESIGN] 남들과는 다른 길\n출품 디자이너: 김유진 (이메일: tjfdlwls12@gmail.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 성실하고 믿음을 주는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 졸업작품을 준비하며 1년간 많은 어려움이 있었지만, 난관을 발판 삼아 하나하나 극복하며 이뤄낸 결과에 감격스러웠습니다. 위원장으로서 나의 부족한 부분을 채워가며, 졸준위와 4학년 학우들의 협력 덕분에 이렇게 멋진 전시를 준비할 수 있었다는 사실에 깊은 감사와 자부심을 느꼈습니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KYJ2"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[IN] 새라",
         "student_name": "김유진",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KYJ4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KYJ4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KYJ4.webp",
         "description": "[INTERACTIVE DESIGN] 새라\n출품 디자이너: 김유진 (이메일: tjfdlwls12@gmail.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 성실하고 믿음을 주는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 졸업작품을 준비하며 1년간 많은 어려움이 있었지만, 난관을 발판 삼아 하나하나 극복하며 이뤄낸 결과에 감격스러웠습니다. 위원장으로서 나의 부족한 부분을 채워가며, 졸준위와 4학년 학우들의 협력 덕분에 이렇게 멋진 전시를 준비할 수 있었다는 사실에 깊은 감사와 자부심을 느꼈습니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KYJ4"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 마법의 성",
         "student_name": "김유진",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KYJ1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KYJ1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KYJ1.webp",
         "description": "[PACKAGE DESIGN] 마법의 성\n출품 디자이너: 김유진 (이메일: tjfdlwls12@gmail.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 성실하고 믿음을 주는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 졸업작품을 준비하며 1년간 많은 어려움이 있었지만, 난관을 발판 삼아 하나하나 극복하며 이뤄낸 결과에 감격스러웠습니다. 위원장으로서 나의 부족한 부분을 채워가며, 졸준위와 4학년 학우들의 협력 덕분에 이렇게 멋진 전시를 준비할 수 있었다는 사실에 깊은 감사와 자부심을 느꼈습니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KYJ1"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[ED] 술술 풀어보자",
         "student_name": "김유진",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KYJ3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KYJ3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KYJ3.webp",
         "description": "[EDITORIAL DESIGN] 술술 풀어보자\n출품 디자이너: 김유진 (이메일: tjfdlwls12@gmail.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 성실하고 믿음을 주는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 졸업작품을 준비하며 1년간 많은 어려움이 있었지만, 난관을 발판 삼아 하나하나 극복하며 이뤄낸 결과에 감격스러웠습니다. 위원장으로서 나의 부족한 부분을 채워가며, 졸준위와 4학년 학우들의 협력 덕분에 이렇게 멋진 전시를 준비할 수 있었다는 사실에 깊은 감사와 자부심을 느꼈습니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KYJ3"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[ED] 시간을 새긴 기록",
         "student_name": "김지민",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMZI2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMZI2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMZI2.webp",
         "description": "[EDITORIAL DESIGN] 시간을 새긴 기록\n출품 디자이너: 김지민 (이메일: jiminkim0819@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 저는 앞으로 사람들의 삶에 긍정적인 변화를 줄 수 있는 디자이너가 되고 싶습니다. 단순히 예쁜 디자인을 만드는 것뿐만 아니라, 사용자와 진심으로 소통하고 그들의 필요와 문제를 제대로 이해하고 해결하는 디자인을 하고 싶습니다. \n또, 트렌디하면서도 시간이 지나도 여전히 사랑받을 수 있는 디자인을 만들어가고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 전시를 마친 소감은 정말 뿌듯하고 성취감을 느끼는 시간이었습니다. 준비 과정에서 많은 도전과 어려움이 있었지만, 전시를 통해 내 작품을 다른 사람들과 공유하고 피드백을 받으면서 새로운 시각으로 바라보게 되며 성장할 수 있었습니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KIMZI2"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] ECOSTEP",
         "student_name": "김지민",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMZI3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMZI3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMZI3.webp",
         "description": "[INTERACTIVE DESIGN] ECOSTEP\n출품 디자이너: 김지민 (이메일: jiminkim0819@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 저는 앞으로 사람들의 삶에 긍정적인 변화를 줄 수 있는 디자이너가 되고 싶습니다. 단순히 예쁜 디자인을 만드는 것뿐만 아니라, 사용자와 진심으로 소통하고 그들의 필요와 문제를 제대로 이해하고 해결하는 디자인을 하고 싶습니다. \n또, 트렌디하면서도 시간이 지나도 여전히 사랑받을 수 있는 디자인을 만들어가고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 전시를 마친 소감은 정말 뿌듯하고 성취감을 느끼는 시간이었습니다. 준비 과정에서 많은 도전과 어려움이 있었지만, 전시를 통해 내 작품을 다른 사람들과 공유하고 피드백을 받으면서 새로운 시각으로 바라보게 되며 성장할 수 있었습니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KIMZI3"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 베지가든",
         "student_name": "김지민",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMZI4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMZI4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMZI4.webp",
         "description": "[PACKAGE DESIGN] 베지가든\n출품 디자이너: 김지민 (이메일: jiminkim0819@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 저는 앞으로 사람들의 삶에 긍정적인 변화를 줄 수 있는 디자이너가 되고 싶습니다. 단순히 예쁜 디자인을 만드는 것뿐만 아니라, 사용자와 진심으로 소통하고 그들의 필요와 문제를 제대로 이해하고 해결하는 디자인을 하고 싶습니다. \n또, 트렌디하면서도 시간이 지나도 여전히 사랑받을 수 있는 디자인을 만들어가고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 전시를 마친 소감은 정말 뿌듯하고 성취감을 느끼는 시간이었습니다. 준비 과정에서 많은 도전과 어려움이 있었지만, 전시를 통해 내 작품을 다른 사람들과 공유하고 피드백을 받으면서 새로운 시각으로 바라보게 되며 성장할 수 있었습니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KIMZI4"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 인터넷에 갇힌 시간",
         "student_name": "김지민",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMZI1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMZI1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMZI1.webp",
         "description": "[VISUAL DESIGN] 인터넷에 갇힌 시간\n출품 디자이너: 김지민 (이메일: jiminkim0819@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 저는 앞으로 사람들의 삶에 긍정적인 변화를 줄 수 있는 디자이너가 되고 싶습니다. 단순히 예쁜 디자인을 만드는 것뿐만 아니라, 사용자와 진심으로 소통하고 그들의 필요와 문제를 제대로 이해하고 해결하는 디자인을 하고 싶습니다. \n또, 트렌디하면서도 시간이 지나도 여전히 사랑받을 수 있는 디자인을 만들어가고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 전시를 마친 소감은 정말 뿌듯하고 성취감을 느끼는 시간이었습니다. 준비 과정에서 많은 도전과 어려움이 있었지만, 전시를 통해 내 작품을 다른 사람들과 공유하고 피드백을 받으면서 새로운 시각으로 바라보게 되며 성장할 수 있었습니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KIMZI1"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 빛을 쫓는 화가, 빈센트",
         "student_name": "김지윤",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMJIY4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMJIY4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMJIY4.webp",
         "description": "[EDITORIAL DESIGN] 빛을 쫓는 화가, 빈센트\n출품 디자이너: 김지윤 (이메일: gim357951@gmail.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 사람들이 ‘이거 좋다!’ 하고 즐길 수 있는 디자인을 만드는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 전시를 끝내고 나니 뿌듯함과 동시에 더 많은 걸 하고 싶다는 생각이 들었습니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KIMJIY4"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 데구르르",
         "student_name": "김지윤",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMJIY.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMJIY.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMJIY.webp",
         "description": "[INTERACTIVE DESIGN] 데구르르\n출품 디자이너: 김지윤 (이메일: gim357951@gmail.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 사람들이 ‘이거 좋다!’ 하고 즐길 수 있는 디자인을 만드는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 전시를 끝내고 나니 뿌듯함과 동시에 더 많은 걸 하고 싶다는 생각이 들었습니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KIMJIY"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 이디야 커피야",
         "student_name": "김지윤",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMJIY1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMJIY1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMJIY1.webp",
         "description": "[PACKAGE DESIGN] 이디야 커피야\n출품 디자이너: 김지윤 (이메일: gim357951@gmail.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 사람들이 ‘이거 좋다!’ 하고 즐길 수 있는 디자인을 만드는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 전시를 끝내고 나니 뿌듯함과 동시에 더 많은 걸 하고 싶다는 생각이 들었습니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KIMJIY1"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 2025년의 인어공주",
         "student_name": "김지윤",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMJIY2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMJIY2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/KIMJIY2.webp",
         "description": "[VISUAL DESIGN] 2025년의 인어공주\n출품 디자이너: 김지윤 (이메일: gim357951@gmail.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 사람들이 ‘이거 좋다!’ 하고 즐길 수 있는 디자인을 만드는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 전시를 끝내고 나니 뿌듯함과 동시에 더 많은 걸 하고 싶다는 생각이 들었습니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/KIMJIY2"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 계단속 인문학",
         "student_name": "노윤재",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/nye1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/nye1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/nye1.webp",
         "description": "[EDITORIAL DESIGN] 계단속 인문학\n출품 디자이너: 노윤재 (이메일: auatyn@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 나와 남을 좀 더 설득 할 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 작업은 힘들었지만 즐거운 기억이 남았던 것 같다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/nye1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 쑥쑥",
         "student_name": "노윤재",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/nyj2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/nyj2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/nyj2.webp",
         "description": "[INTERACTIVE DESIGN] 쑥쑥\n출품 디자이너: 노윤재 (이메일: auatyn@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 나와 남을 좀 더 설득 할 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 작업은 힘들었지만 즐거운 기억이 남았던 것 같다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/nyj2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 구달",
         "student_name": "노윤재",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/nyj3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/nyj3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/nyj3.webp",
         "description": "[PACKAGE DESIGN] 구달\n출품 디자이너: 노윤재 (이메일: auatyn@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 나와 남을 좀 더 설득 할 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 작업은 힘들었지만 즐거운 기억이 남았던 것 같다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/nyj3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 타고타",
         "student_name": "노윤재",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/nyj4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/nyj4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/nyj4.webp",
         "description": "[VISUAL DESIGN] 타고타\n출품 디자이너: 노윤재 (이메일: auatyn@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 나와 남을 좀 더 설득 할 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 작업은 힘들었지만 즐거운 기억이 남았던 것 같다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/nyj4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 고대격투기",
         "student_name": "민종곤",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/jongg0n.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/jongg0n.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/jongg0n.webp",
         "description": "[EDITORIAL DESIGN] 고대격투기\n출품 디자이너: 민종곤 (이메일: mifn5755@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 포기하지 않고 노력하는 디자이너 \n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 대진대학교 긴 시간동안 신세 많이 졌습니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/jongg0n"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 달링",
         "student_name": "민종곤",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/minjon9gon.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/minjon9gon.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/minjon9gon.webp",
         "description": "[INTERACTIVE DESIGN] 달링\n출품 디자이너: 민종곤 (이메일: mifn5755@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 포기하지 않고 노력하는 디자이너 \n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 대진대학교 긴 시간동안 신세 많이 졌습니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/minjon9gon"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 제코마라톤",
         "student_name": "민종곤",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/minjong90n.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/minjong90n.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/minjong90n.webp",
         "description": "[PACKAGE DESIGN] 제코마라톤\n출품 디자이너: 민종곤 (이메일: mifn5755@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 포기하지 않고 노력하는 디자이너 \n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 대진대학교 긴 시간동안 신세 많이 졌습니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/minjong90n"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 노인 보호구역 서울에서 부산까지",
         "student_name": "민종곤",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/minjongg0n.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/minjongg0n.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/minjongg0n.webp",
         "description": "[VISUAL DESIGN] 노인 보호구역 서울에서 부산까지\n출품 디자이너: 민종곤 (이메일: mifn5755@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 포기하지 않고 노력하는 디자이너 \n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 대진대학교 긴 시간동안 신세 많이 졌습니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/minjongg0n"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 이런 요물",
         "student_name": "박꽃누리",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pkkot1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pkkot1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pkkot1.webp",
         "description": "[EDITORIAL DESIGN] 이런 요물\n출품 디자이너: 박꽃누리 (이메일: parkflowerde@gmail.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 세상의 해상도를 높이는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 어떻게든 여기까지 와서 뒤돌아보니 나 자신이 많이 바뀌었다는 생각이 들었습니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pkkot1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 인사이드아웃",
         "student_name": "박꽃누리",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pkkot2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pkkot2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pkkot2.webp",
         "description": "[INTERACTIVE DESIGN] 인사이드아웃\n출품 디자이너: 박꽃누리 (이메일: parkflowerde@gmail.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 세상의 해상도를 높이는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 어떻게든 여기까지 와서 뒤돌아보니 나 자신이 많이 바뀌었다는 생각이 들었습니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pkkot2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] bubu",
         "student_name": "박꽃누리",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pkkot3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pkkot3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pkkot3.webp",
         "description": "[PACKAGE DESIGN] bubu\n출품 디자이너: 박꽃누리 (이메일: parkflowerde@gmail.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 세상의 해상도를 높이는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 어떻게든 여기까지 와서 뒤돌아보니 나 자신이 많이 바뀌었다는 생각이 들었습니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pkkot3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 평범한 것처럼 보이나요?",
         "student_name": "박꽃누리",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pkkot4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pkkot4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pkkot4.webp",
         "description": "[VISUAL DESIGN] 평범한 것처럼 보이나요?\n출품 디자이너: 박꽃누리 (이메일: parkflowerde@gmail.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 세상의 해상도를 높이는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 어떻게든 여기까지 와서 뒤돌아보니 나 자신이 많이 바뀌었다는 생각이 들었습니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pkkot4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 미지의 세계를 항해",
         "student_name": "박나현",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pnh1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pnh1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pnh1.webp",
         "description": "[EDITORIAL DESIGN] 미지의 세계를 항해\n출품 디자이너: 박나현 (이메일: nhp420@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 긍정적이고 미래지향적인 시각으로 세상을 변화시키는 유연하고 창의적인 디자이너가 되고 싶다. 사람들과 소통하며 변화와 혁신을 두려워하지 않는 디자이너로 성장하고자 한다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. Fe26 전시를 준비하며 많은 배움과 깨달음을 얻었고, 그 과정에서 나 자신을 성장시킬 수 있었다. 이 전시는 단순한 작품 완성이 아니라 새로운 가능성을 발견한 중요한 계기가 되었다. 졸업전시는 디자이너로서의 새로운 시작이며, 배운 책임감과 창의성으로 긍정적인 영향을 줄 수 있는 디자이너로 성장할 것이다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pnh1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 이음",
         "student_name": "박나현",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pnh2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pnh2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pnh2.webp",
         "description": "[INTERACTIVE DESIGN] 이음\n출품 디자이너: 박나현 (이메일: nhp420@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 긍정적이고 미래지향적인 시각으로 세상을 변화시키는 유연하고 창의적인 디자이너가 되고 싶다. 사람들과 소통하며 변화와 혁신을 두려워하지 않는 디자이너로 성장하고자 한다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. Fe26 전시를 준비하며 많은 배움과 깨달음을 얻었고, 그 과정에서 나 자신을 성장시킬 수 있었다. 이 전시는 단순한 작품 완성이 아니라 새로운 가능성을 발견한 중요한 계기가 되었다. 졸업전시는 디자이너로서의 새로운 시작이며, 배운 책임감과 창의성으로 긍정적인 영향을 줄 수 있는 디자이너로 성장할 것이다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pnh2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 카페베네",
         "student_name": "박나현",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pnh3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pnh3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pnh3.webp",
         "description": "[PACKAGE DESIGN] 카페베네\n출품 디자이너: 박나현 (이메일: nhp420@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 긍정적이고 미래지향적인 시각으로 세상을 변화시키는 유연하고 창의적인 디자이너가 되고 싶다. 사람들과 소통하며 변화와 혁신을 두려워하지 않는 디자이너로 성장하고자 한다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. Fe26 전시를 준비하며 많은 배움과 깨달음을 얻었고, 그 과정에서 나 자신을 성장시킬 수 있었다. 이 전시는 단순한 작품 완성이 아니라 새로운 가능성을 발견한 중요한 계기가 되었다. 졸업전시는 디자이너로서의 새로운 시작이며, 배운 책임감과 창의성으로 긍정적인 영향을 줄 수 있는 디자이너로 성장할 것이다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pnh3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 시각디자인",
         "student_name": "박나현",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pnh4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pnh4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pnh4.webp",
         "description": "[VISUAL DESIGN] 시각디자인\n출품 디자이너: 박나현 (이메일: nhp420@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 긍정적이고 미래지향적인 시각으로 세상을 변화시키는 유연하고 창의적인 디자이너가 되고 싶다. 사람들과 소통하며 변화와 혁신을 두려워하지 않는 디자이너로 성장하고자 한다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. Fe26 전시를 준비하며 많은 배움과 깨달음을 얻었고, 그 과정에서 나 자신을 성장시킬 수 있었다. 이 전시는 단순한 작품 완성이 아니라 새로운 가능성을 발견한 중요한 계기가 되었다. 졸업전시는 디자이너로서의 새로운 시작이며, 배운 책임감과 창의성으로 긍정적인 영향을 줄 수 있는 디자이너로 성장할 것이다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pnh4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 내면의 공포에 관한 사전",
         "student_name": "박손우",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/sson4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/sson4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/sson4.webp",
         "description": "[EDITORIAL DESIGN] 내면의 공포에 관한 사전\n출품 디자이너: 박손우 (이메일: par8782@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 묵묵하게 맡은 바를 잘 해내는 디자이너가 되고싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 졸업하고 싶은데 졸업하기 싫음",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/sson4"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 금시초문",
         "student_name": "박손우",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/sson3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/sson3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/sson3.webp",
         "description": "[INTERACTIVE DESIGN] 금시초문\n출품 디자이너: 박손우 (이메일: par8782@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 묵묵하게 맡은 바를 잘 해내는 디자이너가 되고싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 졸업하고 싶은데 졸업하기 싫음",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/sson3"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 느린마을",
         "student_name": "박손우",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/sson1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/sson1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/sson1.webp",
         "description": "[PACKAGE DESIGN] 느린마을\n출품 디자이너: 박손우 (이메일: par8782@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 묵묵하게 맡은 바를 잘 해내는 디자이너가 되고싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 졸업하고 싶은데 졸업하기 싫음",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/sson1"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[ED] 밈국지",
         "student_name": "박수현",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/psh1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/psh1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/psh1.webp",
         "description": "[EDITORIAL DESIGN] 밈국지\n출품 디자이너: 박수현 (이메일: cindy013203@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 유명한 디자이너, 좋은 영향력을 줄 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 희노애락도 락이다.. 피할 수 없어서 즐겼다",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/psh1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 훌쩍",
         "student_name": "박수현",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/psh2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/psh2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/psh2.webp",
         "description": "[INTERACTIVE DESIGN] 훌쩍\n출품 디자이너: 박수현 (이메일: cindy013203@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 유명한 디자이너, 좋은 영향력을 줄 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 희노애락도 락이다.. 피할 수 없어서 즐겼다",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/psh2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] USS CARD",
         "student_name": "박수현",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/psh3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/psh3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/psh3.webp",
         "description": "[PACKAGE DESIGN] USS CARD\n출품 디자이너: 박수현 (이메일: cindy013203@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 유명한 디자이너, 좋은 영향력을 줄 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 희노애락도 락이다.. 피할 수 없어서 즐겼다",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/psh3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 더 나은 미래를 위한 디자인",
         "student_name": "박수현",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/psh4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/psh4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/psh4.webp",
         "description": "[VISUAL DESIGN] 더 나은 미래를 위한 디자인\n출품 디자이너: 박수현 (이메일: cindy013203@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 유명한 디자이너, 좋은 영향력을 줄 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 희노애락도 락이다.. 피할 수 없어서 즐겼다",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/psh4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 건축의 발걸음",
         "student_name": "박예솔",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pys1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pys1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pys1.webp",
         "description": "[EDITORIAL DESIGN] 건축의 발걸음\n출품 디자이너: 박예솔 (이메일: sol0923_@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 개성적인 디자인을 하되, 기본기에 충실한 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 여태껏 배운 것들을 2학기 안에 표현하려고 하니 힘들고 지칠 때가 많았는데, 그래도 완성된 모습을 보니 뿌듯합니다!",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pys1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 무무",
         "student_name": "박예솔",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pys2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pys2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pys2.webp",
         "description": "[INTERACTIVE DESIGN] 무무\n출품 디자이너: 박예솔 (이메일: sol0923_@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 개성적인 디자인을 하되, 기본기에 충실한 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 여태껏 배운 것들을 2학기 안에 표현하려고 하니 힘들고 지칠 때가 많았는데, 그래도 완성된 모습을 보니 뿌듯합니다!",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pys2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 호밀호두",
         "student_name": "박예솔",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pys3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pys3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pys3.webp",
         "description": "[PACKAGE DESIGN] 호밀호두\n출품 디자이너: 박예솔 (이메일: sol0923_@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 개성적인 디자인을 하되, 기본기에 충실한 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 여태껏 배운 것들을 2학기 안에 표현하려고 하니 힘들고 지칠 때가 많았는데, 그래도 완성된 모습을 보니 뿌듯합니다!",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pys3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 대한민국, 미래의 면접자들",
         "student_name": "박예솔",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pys4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pys4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pys4.webp",
         "description": "[VISUAL DESIGN] 대한민국, 미래의 면접자들\n출품 디자이너: 박예솔 (이메일: sol0923_@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 개성적인 디자인을 하되, 기본기에 충실한 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 여태껏 배운 것들을 2학기 안에 표현하려고 하니 힘들고 지칠 때가 많았는데, 그래도 완성된 모습을 보니 뿌듯합니다!",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pys4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 펜끝의 모험!",
         "student_name": "박유진",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pyj1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pyj1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pyj1.webp",
         "description": "[EDITORIAL DESIGN] 펜끝의 모험!\n출품 디자이너: 박유진 (이메일: zosel6060@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 성장의 한계가 없는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 완전한 어른이 된다는 느낌이 실감이 나진 않지만, 나에 대해 명확히 알게 된 시간이였고, 좌절과 성취감의 과정을 반복하면서 나는 성장의 한계가 없는 사람이라는 것을 깨달았던 4년이라고 생각합니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pyj1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 집터",
         "student_name": "박유진",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pyj2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pyj2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pyj2.webp",
         "description": "[INTERACTIVE DESIGN] 집터\n출품 디자이너: 박유진 (이메일: zosel6060@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 성장의 한계가 없는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 완전한 어른이 된다는 느낌이 실감이 나진 않지만, 나에 대해 명확히 알게 된 시간이였고, 좌절과 성취감의 과정을 반복하면서 나는 성장의 한계가 없는 사람이라는 것을 깨달았던 4년이라고 생각합니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pyj2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 석봉토스트",
         "student_name": "박유진",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pyj3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pyj3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pyj3.webp",
         "description": "[PACKAGE DESIGN] 석봉토스트\n출품 디자이너: 박유진 (이메일: zosel6060@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 성장의 한계가 없는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 완전한 어른이 된다는 느낌이 실감이 나진 않지만, 나에 대해 명확히 알게 된 시간이였고, 좌절과 성취감의 과정을 반복하면서 나는 성장의 한계가 없는 사람이라는 것을 깨달았던 4년이라고 생각합니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pyj3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 우선순위가 바뀐 세대",
         "student_name": "박유진",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pyj4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pyj4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pyj4.webp",
         "description": "[VISUAL DESIGN] 우선순위가 바뀐 세대\n출품 디자이너: 박유진 (이메일: zosel6060@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 성장의 한계가 없는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 완전한 어른이 된다는 느낌이 실감이 나진 않지만, 나에 대해 명확히 알게 된 시간이였고, 좌절과 성취감의 과정을 반복하면서 나는 성장의 한계가 없는 사람이라는 것을 깨달았던 4년이라고 생각합니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pyj4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 오리지널의 탄생",
         "student_name": "박정현",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pjh1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pjh1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pjh1.webp",
         "description": "[EDITORIAL DESIGN] 오리지널의 탄생\n출품 디자이너: 박정현 (이메일: gdgdwldyd@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 누구에게나 인정받는 능력치 만랩 디자이너가 되고 싶어요!\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 아쉽기도 후련하기도 합니다. 다들 멋진 정장 입고 다시 만나요~",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pjh1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 럽톡",
         "student_name": "박정현",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pjh2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pjh2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pjh2.webp",
         "description": "[INTERACTIVE DESIGN] 럽톡\n출품 디자이너: 박정현 (이메일: gdgdwldyd@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 누구에게나 인정받는 능력치 만랩 디자이너가 되고 싶어요!\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 아쉽기도 후련하기도 합니다. 다들 멋진 정장 입고 다시 만나요~",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pjh2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 마녀공장",
         "student_name": "박정현",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pjh3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pjh3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pjh3.webp",
         "description": "[PACKAGE DESIGN] 마녀공장\n출품 디자이너: 박정현 (이메일: gdgdwldyd@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 누구에게나 인정받는 능력치 만랩 디자이너가 되고 싶어요!\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 아쉽기도 후련하기도 합니다. 다들 멋진 정장 입고 다시 만나요~",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pjh3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 시각디자인",
         "student_name": "박정현",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/pjh4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/pjh4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/pjh4.webp",
         "description": "[VISUAL DESIGN] 시각디자인\n출품 디자이너: 박정현 (이메일: gdgdwldyd@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 누구에게나 인정받는 능력치 만랩 디자이너가 되고 싶어요!\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 아쉽기도 후련하기도 합니다. 다들 멋진 정장 입고 다시 만나요~",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/pjh4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 정원의 역사",
         "student_name": "박채은",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/PARKCH2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/PARKCH2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/PARKCH2.webp",
         "description": "[EDITORIAL DESIGN] 정원의 역사\n출품 디자이너: 박채은 (이메일: codmsap@gmail.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 시대의 흐름을 읽고, 그 안에 저만의 색을 담아내는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 이번 졸업 전시는 저의 대학 시절을 마무리하는 동시에 디자이너로서 한 단계 성장할 수 있는 계기였습니다. \n작품을 준비하며 많은 고민과 시행착오를 겪었지만, 그 과정에서 제 강점과 부족한 점을 더욱 명확히 알게 되었습니다. 이 경험을 통해 앞으로도 끊임없이 도전하고 발전하는 디자이너로 성장하고 싶습니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/PARKCH2"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 리텀",
         "student_name": "박채은",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/PARKCH3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/PARKCH3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/PARKCH3.webp",
         "description": "[INTERACTIVE DESIGN] 리텀\n출품 디자이너: 박채은 (이메일: codmsap@gmail.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 시대의 흐름을 읽고, 그 안에 저만의 색을 담아내는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 이번 졸업 전시는 저의 대학 시절을 마무리하는 동시에 디자이너로서 한 단계 성장할 수 있는 계기였습니다. \n작품을 준비하며 많은 고민과 시행착오를 겪었지만, 그 과정에서 제 강점과 부족한 점을 더욱 명확히 알게 되었습니다. 이 경험을 통해 앞으로도 끊임없이 도전하고 발전하는 디자이너로 성장하고 싶습니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/PARKCH3"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 못난이 마켓",
         "student_name": "박채은",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/PARKCH4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/PARKCH4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/PARKCH4.webp",
         "description": "[PACKAGE DESIGN] 못난이 마켓\n출품 디자이너: 박채은 (이메일: codmsap@gmail.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 시대의 흐름을 읽고, 그 안에 저만의 색을 담아내는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 이번 졸업 전시는 저의 대학 시절을 마무리하는 동시에 디자이너로서 한 단계 성장할 수 있는 계기였습니다. \n작품을 준비하며 많은 고민과 시행착오를 겪었지만, 그 과정에서 제 강점과 부족한 점을 더욱 명확히 알게 되었습니다. 이 경험을 통해 앞으로도 끊임없이 도전하고 발전하는 디자이너로 성장하고 싶습니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/PARKCH4"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 스마트폰 속 세상 우리 아이의 상상력을 앗아갑니다",
         "student_name": "박채은",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/PARKCH1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/PARKCH1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/PARKCH1.webp",
         "description": "[VISUAL DESIGN] 스마트폰 속 세상 우리 아이의 상상력을 앗아갑니다\n출품 디자이너: 박채은 (이메일: codmsap@gmail.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 시대의 흐름을 읽고, 그 안에 저만의 색을 담아내는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 이번 졸업 전시는 저의 대학 시절을 마무리하는 동시에 디자이너로서 한 단계 성장할 수 있는 계기였습니다. \n작품을 준비하며 많은 고민과 시행착오를 겪었지만, 그 과정에서 제 강점과 부족한 점을 더욱 명확히 알게 되었습니다. 이 경험을 통해 앞으로도 끊임없이 도전하고 발전하는 디자이너로 성장하고 싶습니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/PARKCH1"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 시간을 담은 유리조각",
         "student_name": "백채연",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/PAIKCH3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/PAIKCH3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/PAIKCH3.webp",
         "description": "[EDITORIAL DESIGN] 시간을 담은 유리조각\n출품 디자이너: 백채연 (이메일: cycy305@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 끊임없이 변화하는 세상 속에서, 저는 단순히 디자인을 따라하는 것이 아닌, 새로운 트렌드를 만들어가는 혁신적인 디자이너가 되고 싶습니다. 시대의 흐름을 읽고, 사람들의 숨겨진 니즈를 꿰뚫어 보는 통찰력을 갖춘 디자이너로 성장하여 디자인을 선보이고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 4년간의 시간이 짧게 느껴집니다. 밤낮없이 작품에 매달렸던 시간들, 좌절과 성공을 반복했던 순간들, 그리고 함께했던 동료들과의 추억들이 생생하게 떠오릅니다.앞으론 돌아올 수 없는 시간이라 생각하니 한 편으론 슬프기도 합니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/PAIKCH3"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] zip pt",
         "student_name": "백채연",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/PAIKCH4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/PAIKCH4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/PAIKCH4.webp",
         "description": "[INTERACTIVE DESIGN] zip pt\n출품 디자이너: 백채연 (이메일: cycy305@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 끊임없이 변화하는 세상 속에서, 저는 단순히 디자인을 따라하는 것이 아닌, 새로운 트렌드를 만들어가는 혁신적인 디자이너가 되고 싶습니다. 시대의 흐름을 읽고, 사람들의 숨겨진 니즈를 꿰뚫어 보는 통찰력을 갖춘 디자이너로 성장하여 디자인을 선보이고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 4년간의 시간이 짧게 느껴집니다. 밤낮없이 작품에 매달렸던 시간들, 좌절과 성공을 반복했던 순간들, 그리고 함께했던 동료들과의 추억들이 생생하게 떠오릅니다.앞으론 돌아올 수 없는 시간이라 생각하니 한 편으론 슬프기도 합니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/PAIKCH4"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] A_SCENT",
         "student_name": "백채연",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/PAIKCH1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/PAIKCH1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/PAIKCH1.webp",
         "description": "[PACKAGE DESIGN] A_SCENT\n출품 디자이너: 백채연 (이메일: cycy305@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 끊임없이 변화하는 세상 속에서, 저는 단순히 디자인을 따라하는 것이 아닌, 새로운 트렌드를 만들어가는 혁신적인 디자이너가 되고 싶습니다. 시대의 흐름을 읽고, 사람들의 숨겨진 니즈를 꿰뚫어 보는 통찰력을 갖춘 디자이너로 성장하여 디자인을 선보이고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 4년간의 시간이 짧게 느껴집니다. 밤낮없이 작품에 매달렸던 시간들, 좌절과 성공을 반복했던 순간들, 그리고 함께했던 동료들과의 추억들이 생생하게 떠오릅니다.앞으론 돌아올 수 없는 시간이라 생각하니 한 편으론 슬프기도 합니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/PAIKCH1"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 에어팟맥스,이거어떻게 하는거예요",
         "student_name": "백채연",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/PAIKCH2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/PAIKCH2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/PAIKCH2.webp",
         "description": "[VISUAL DESIGN] 에어팟맥스,이거어떻게 하는거예요\n출품 디자이너: 백채연 (이메일: cycy305@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 끊임없이 변화하는 세상 속에서, 저는 단순히 디자인을 따라하는 것이 아닌, 새로운 트렌드를 만들어가는 혁신적인 디자이너가 되고 싶습니다. 시대의 흐름을 읽고, 사람들의 숨겨진 니즈를 꿰뚫어 보는 통찰력을 갖춘 디자이너로 성장하여 디자인을 선보이고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 4년간의 시간이 짧게 느껴집니다. 밤낮없이 작품에 매달렸던 시간들, 좌절과 성공을 반복했던 순간들, 그리고 함께했던 동료들과의 추억들이 생생하게 떠오릅니다.앞으론 돌아올 수 없는 시간이라 생각하니 한 편으론 슬프기도 합니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/PAIKCH2"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 인형의 역사: 손끝에서 탄생한 세계",
         "student_name": "오정원",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/ojo1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/ojo1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/ojo1.webp",
         "description": "[EDITORIAL DESIGN] 인형의 역사: 손끝에서 탄생한 세계\n출품 디자이너: 오정원 (이메일: teien1616@gmail.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 제가 가진 장점과 좋아하는 것을 살려, 저만의 개성을 담은 디자인을 만들어가는 디자이너가 되고 싶습니다. 또한, 사람들에게 긍정적인 영향을 줄 수 있는 디자인을 하고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 한 학기라는 짧은 기간 동안 준비가 쉽지는 않았지만 끝까지 해낼 수 있어 뿌듯합니다. 과정에서 많은 것을 배웠고, 이 경험이 앞으로의 성장에 큰 도움이 될 것 같습니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/ojo1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 포켓워드",
         "student_name": "오정원",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/ojo2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/ojo2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/ojo2.webp",
         "description": "[INTERACTIVE DESIGN] 포켓워드\n출품 디자이너: 오정원 (이메일: teien1616@gmail.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 제가 가진 장점과 좋아하는 것을 살려, 저만의 개성을 담은 디자인을 만들어가는 디자이너가 되고 싶습니다. 또한, 사람들에게 긍정적인 영향을 줄 수 있는 디자인을 하고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 한 학기라는 짧은 기간 동안 준비가 쉽지는 않았지만 끝까지 해낼 수 있어 뿌듯합니다. 과정에서 많은 것을 배웠고, 이 경험이 앞으로의 성장에 큰 도움이 될 것 같습니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/ojo2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] SUBWAY",
         "student_name": "오정원",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/ojo3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/ojo3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/ojo3.webp",
         "description": "[PACKAGE DESIGN] SUBWAY\n출품 디자이너: 오정원 (이메일: teien1616@gmail.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 제가 가진 장점과 좋아하는 것을 살려, 저만의 개성을 담은 디자인을 만들어가는 디자이너가 되고 싶습니다. 또한, 사람들에게 긍정적인 영향을 줄 수 있는 디자인을 하고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 한 학기라는 짧은 기간 동안 준비가 쉽지는 않았지만 끝까지 해낼 수 있어 뿌듯합니다. 과정에서 많은 것을 배웠고, 이 경험이 앞으로의 성장에 큰 도움이 될 것 같습니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/ojo3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[ED] 가면 뒤의 삶",
         "student_name": "오혜성",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/OHHYE3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/OHHYE3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/OHHYE3.webp",
         "description": "[EDITORIAL DESIGN] 가면 뒤의 삶\n출품 디자이너: 오혜성 (이메일: potato4185@kakao.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 단순한 디자이너가 되고 싶습니다.\n복잡하지 않게, 많은 생각 없이 나를 필요로 하는 사람들에게 언제나 불릴 수 있는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 아직 모자란 실력으로 전시를 시작한다는게, 물론 매 학기 전시를 했었지만 마지막 전시라는 타이틀이 아주 무겁게 느껴졌던 것 같습니다. 하지만 끝은 정해져 있으니 부족하지만 마무리 지을 수 있어서 다행이라고 생각합니다. 함께 해온 26기 분들 모두 수고했고 함께 할 수 있어서 기뻤습니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/OHHYE3"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 플랜더",
         "student_name": "오혜성",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/OHHYE1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/OHHYE1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/OHHYE1.webp",
         "description": "[INTERACTIVE DESIGN] 플랜더\n출품 디자이너: 오혜성 (이메일: potato4185@kakao.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 단순한 디자이너가 되고 싶습니다.\n복잡하지 않게, 많은 생각 없이 나를 필요로 하는 사람들에게 언제나 불릴 수 있는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 아직 모자란 실력으로 전시를 시작한다는게, 물론 매 학기 전시를 했었지만 마지막 전시라는 타이틀이 아주 무겁게 느껴졌던 것 같습니다. 하지만 끝은 정해져 있으니 부족하지만 마무리 지을 수 있어서 다행이라고 생각합니다. 함께 해온 26기 분들 모두 수고했고 함께 할 수 있어서 기뻤습니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/OHHYE1"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[VI] 자연을 담아요",
         "student_name": "오혜성",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/OHHYE2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/OHHYE2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/OHHYE2.webp",
         "description": "[VISUAL DESIGN] 자연을 담아요\n출품 디자이너: 오혜성 (이메일: potato4185@kakao.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 단순한 디자이너가 되고 싶습니다.\n복잡하지 않게, 많은 생각 없이 나를 필요로 하는 사람들에게 언제나 불릴 수 있는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 아직 모자란 실력으로 전시를 시작한다는게, 물론 매 학기 전시를 했었지만 마지막 전시라는 타이틀이 아주 무겁게 느껴졌던 것 같습니다. 하지만 끝은 정해져 있으니 부족하지만 마무리 지을 수 있어서 다행이라고 생각합니다. 함께 해온 26기 분들 모두 수고했고 함께 할 수 있어서 기뻤습니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/OHHYE2"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 사라지지않는 간판들",
         "student_name": "유미소",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/yoom3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/yoom3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/yoom3.webp",
         "description": "[EDITORIAL DESIGN] 사라지지않는 간판들\n출품 디자이너: 유미소 (이메일: fuhaha_1122@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 단순히 문제를 해결하는 것을 넘어 긍정적인 영향을 주는 꾸준하게 다정한 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 아쉽기도 하고 후련하기도 한 마음입니다.\n함께한 사람들이 있었기에 여기까지 올 수 있었다고 생각하고 그 고마움을 오래 기억할 것 같습니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/yoom3"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] TO.MATO",
         "student_name": "유미소",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/yoom4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/yoom4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/yoom4.webp",
         "description": "[INTERACTIVE DESIGN] TO.MATO\n출품 디자이너: 유미소 (이메일: fuhaha_1122@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 단순히 문제를 해결하는 것을 넘어 긍정적인 영향을 주는 꾸준하게 다정한 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 아쉽기도 하고 후련하기도 한 마음입니다.\n함께한 사람들이 있었기에 여기까지 올 수 있었다고 생각하고 그 고마움을 오래 기억할 것 같습니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/yoom4"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] TIRORI",
         "student_name": "유미소",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/yoom1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/yoom1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/yoom1.webp",
         "description": "[PACKAGE DESIGN] TIRORI\n출품 디자이너: 유미소 (이메일: fuhaha_1122@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 단순히 문제를 해결하는 것을 넘어 긍정적인 영향을 주는 꾸준하게 다정한 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 아쉽기도 하고 후련하기도 한 마음입니다.\n함께한 사람들이 있었기에 여기까지 올 수 있었다고 생각하고 그 고마움을 오래 기억할 것 같습니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/yoom1"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] RADIUS 15cm",
         "student_name": "유미소",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/yoom2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/yoom2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/yoom2.webp",
         "description": "[VISUAL DESIGN] RADIUS 15cm\n출품 디자이너: 유미소 (이메일: fuhaha_1122@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 단순히 문제를 해결하는 것을 넘어 긍정적인 영향을 주는 꾸준하게 다정한 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 아쉽기도 하고 후련하기도 한 마음입니다.\n함께한 사람들이 있었기에 여기까지 올 수 있었다고 생각하고 그 고마움을 오래 기억할 것 같습니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/yoom2"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 전장 패션 코드",
         "student_name": "이다솔",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/ids1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/ids1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/ids1.webp",
         "description": "[EDITORIAL DESIGN] 전장 패션 코드\n출품 디자이너: 이다솔 (이메일: dasolena@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 사람들에게 편안한 영감을 줄 수 있는 독창적이고 트렌디한 디자이너가 되고 싶습니다. 브랜드의 가치를 진정성 있게 표현하며, 보는 이들에게 깊은 인상을 남길 수 있는 디자인을 만드는 것이 목표입니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 편입 후 2년간 많은 것을 배우고 경험했으며, 졸업 전시를 준비하며 그동안 쌓은 노력을 한눈에 보여줄 수 있어 뿌듯했습니다. 온라인 전시로 아쉬운 점도 있었지만, 디지털 플랫폼을 통해 다양한 사람들에게 작업을 선보인 경험은 소중한 배움이었습니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/ids1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] chick chick",
         "student_name": "이다솔",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/ids2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/ids2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/ids2.webp",
         "description": "[INTERACTIVE DESIGN] chick chick\n출품 디자이너: 이다솔 (이메일: dasolena@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 사람들에게 편안한 영감을 줄 수 있는 독창적이고 트렌디한 디자이너가 되고 싶습니다. 브랜드의 가치를 진정성 있게 표현하며, 보는 이들에게 깊은 인상을 남길 수 있는 디자인을 만드는 것이 목표입니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 편입 후 2년간 많은 것을 배우고 경험했으며, 졸업 전시를 준비하며 그동안 쌓은 노력을 한눈에 보여줄 수 있어 뿌듯했습니다. 온라인 전시로 아쉬운 점도 있었지만, 디지털 플랫폼을 통해 다양한 사람들에게 작업을 선보인 경험은 소중한 배움이었습니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/ids2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 아마스빈",
         "student_name": "이다솔",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/ids3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/ids3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/ids3.webp",
         "description": "[PACKAGE DESIGN] 아마스빈\n출품 디자이너: 이다솔 (이메일: dasolena@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 사람들에게 편안한 영감을 줄 수 있는 독창적이고 트렌디한 디자이너가 되고 싶습니다. 브랜드의 가치를 진정성 있게 표현하며, 보는 이들에게 깊은 인상을 남길 수 있는 디자인을 만드는 것이 목표입니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 편입 후 2년간 많은 것을 배우고 경험했으며, 졸업 전시를 준비하며 그동안 쌓은 노력을 한눈에 보여줄 수 있어 뿌듯했습니다. 온라인 전시로 아쉬운 점도 있었지만, 디지털 플랫폼을 통해 다양한 사람들에게 작업을 선보인 경험은 소중한 배움이었습니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/ids3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 포스터",
         "student_name": "이다솔",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/ids4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/ids4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/ids4.webp",
         "description": "[VISUAL DESIGN] 포스터\n출품 디자이너: 이다솔 (이메일: dasolena@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 사람들에게 편안한 영감을 줄 수 있는 독창적이고 트렌디한 디자이너가 되고 싶습니다. 브랜드의 가치를 진정성 있게 표현하며, 보는 이들에게 깊은 인상을 남길 수 있는 디자인을 만드는 것이 목표입니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 편입 후 2년간 많은 것을 배우고 경험했으며, 졸업 전시를 준비하며 그동안 쌓은 노력을 한눈에 보여줄 수 있어 뿌듯했습니다. 온라인 전시로 아쉬운 점도 있었지만, 디지털 플랫폼을 통해 다양한 사람들에게 작업을 선보인 경험은 소중한 배움이었습니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/ids4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 우리는 어떻게 달려왔는가",
         "student_name": "이세현",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/leese1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/leese1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/leese1.webp",
         "description": "[EDITORIAL DESIGN] 우리는 어떻게 달려왔는가\n출품 디자이너: 이세현 (이메일: dltpgus3902@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 다양한 사람과 소통할 수 있는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 많이 부족했지만 많은 도움으로 인해 무사히 마칠 수 있었다고 생각합니다. 감사합니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/leese1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] BOAT",
         "student_name": "이세현",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/leese2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/leese2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/leese2.webp",
         "description": "[INTERACTIVE DESIGN] BOAT\n출품 디자이너: 이세현 (이메일: dltpgus3902@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 다양한 사람과 소통할 수 있는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 많이 부족했지만 많은 도움으로 인해 무사히 마칠 수 있었다고 생각합니다. 감사합니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/leese2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] fujifilm",
         "student_name": "이세현",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/leese3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/leese3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/leese3.webp",
         "description": "[PACKAGE DESIGN] fujifilm\n출품 디자이너: 이세현 (이메일: dltpgus3902@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 다양한 사람과 소통할 수 있는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 많이 부족했지만 많은 도움으로 인해 무사히 마칠 수 있었다고 생각합니다. 감사합니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/leese3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 어린이 보호구역",
         "student_name": "이세현",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/leese4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/leese4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/leese4.webp",
         "description": "[VISUAL DESIGN] 어린이 보호구역\n출품 디자이너: 이세현 (이메일: dltpgus3902@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 다양한 사람과 소통할 수 있는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 많이 부족했지만 많은 도움으로 인해 무사히 마칠 수 있었다고 생각합니다. 감사합니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/leese4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 소비의 역사",
         "student_name": "이수경",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/leesu1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/leesu1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/leesu1.webp",
         "description": "[EDITORIAL DESIGN] 소비의 역사\n출품 디자이너: 이수경 (이메일: swimming.goggles.kr@gmail.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 도태없는 혁신으로 산업을 이끌어 갈 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 차가운 사회로 나갈 시간입니다.❤️",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/leesu1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] Allpy",
         "student_name": "이수경",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/leesu2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/leesu2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/leesu2.webp",
         "description": "[INTERACTIVE DESIGN] Allpy\n출품 디자이너: 이수경 (이메일: swimming.goggles.kr@gmail.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 도태없는 혁신으로 산업을 이끌어 갈 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 차가운 사회로 나갈 시간입니다.❤️",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/leesu2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 부어치킨",
         "student_name": "이수경",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/leesu3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/leesu3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/leesu3.webp",
         "description": "[PACKAGE DESIGN] 부어치킨\n출품 디자이너: 이수경 (이메일: swimming.goggles.kr@gmail.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 도태없는 혁신으로 산업을 이끌어 갈 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 차가운 사회로 나갈 시간입니다.❤️",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/leesu3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[ED] 밀폐된 호흡",
         "student_name": "이수아",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/lsa1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/lsa1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/lsa1.webp",
         "description": "[EDITORIAL DESIGN] 밀폐된 호흡\n출품 디자이너: 이수아 (이메일: sooandh@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 틀에서 벗어나 나만의 길을 개척하는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 1년이라는 시간이 참 길면서도 짧게 느껴졌습니다.\n본래 목표했던 것에 비해 훌륭한 퀄리티로 마무리하지 못했지만, 부족한 저의 작품을 끝까지 잘 끌어주신 교수님들께 감사합니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/lsa1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 힐링",
         "student_name": "이수아",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/lsa2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/lsa2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/lsa2.webp",
         "description": "[INTERACTIVE DESIGN] 힐링\n출품 디자이너: 이수아 (이메일: sooandh@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 틀에서 벗어나 나만의 길을 개척하는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 1년이라는 시간이 참 길면서도 짧게 느껴졌습니다.\n본래 목표했던 것에 비해 훌륭한 퀄리티로 마무리하지 못했지만, 부족한 저의 작품을 끝까지 잘 끌어주신 교수님들께 감사합니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/lsa2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] BITE ME",
         "student_name": "이수아",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/lsa3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/lsa3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/lsa3.webp",
         "description": "[PACKAGE DESIGN] BITE ME\n출품 디자이너: 이수아 (이메일: sooandh@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 틀에서 벗어나 나만의 길을 개척하는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 1년이라는 시간이 참 길면서도 짧게 느껴졌습니다.\n본래 목표했던 것에 비해 훌륭한 퀄리티로 마무리하지 못했지만, 부족한 저의 작품을 끝까지 잘 끌어주신 교수님들께 감사합니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/lsa3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 공익광고",
         "student_name": "이수아",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/lsa4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/lsa4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/lsa4.webp",
         "description": "[VISUAL DESIGN] 공익광고\n출품 디자이너: 이수아 (이메일: sooandh@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 틀에서 벗어나 나만의 길을 개척하는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 1년이라는 시간이 참 길면서도 짧게 느껴졌습니다.\n본래 목표했던 것에 비해 훌륭한 퀄리티로 마무리하지 못했지만, 부족한 저의 작품을 끝까지 잘 끌어주신 교수님들께 감사합니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/lsa4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 조리기구의 역사",
         "student_name": "이수진",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/lsj1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/lsj1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/lsj1.webp",
         "description": "[EDITORIAL DESIGN] 조리기구의 역사\n출품 디자이너: 이수진 (이메일: sususasa34@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 성장하는 디자이너.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 마음이 편안해졌다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/lsj1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] smartrip",
         "student_name": "이수진",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/lsj2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/lsj2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/lsj2.webp",
         "description": "[INTERACTIVE DESIGN] smartrip\n출품 디자이너: 이수진 (이메일: sususasa34@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 성장하는 디자이너.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 마음이 편안해졌다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/lsj2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 잘풀리는집",
         "student_name": "이수진",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/lsj3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/lsj3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/lsj3.webp",
         "description": "[PACKAGE DESIGN] 잘풀리는집\n출품 디자이너: 이수진 (이메일: sususasa34@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 성장하는 디자이너.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 마음이 편안해졌다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/lsj3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 달콤한 과자가 아닙니다",
         "student_name": "이수진",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/lsj4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/lsj4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/lsj4.webp",
         "description": "[VISUAL DESIGN] 달콤한 과자가 아닙니다\n출품 디자이너: 이수진 (이메일: sususasa34@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 성장하는 디자이너.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 마음이 편안해졌다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/lsj4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 세계무용사",
         "student_name": "이영주",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/lyj1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/lyj1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/lyj1.webp",
         "description": "[EDITORIAL DESIGN] 세계무용사\n출품 디자이너: 이영주 (이메일: alissa0828yj@gmail.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 저는 브랜드에 독창적인 스토리를 부여하여 사용자의 마음을 움직이는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. Fe26 전시를 마친 후, 밤샘 노력의 결실을 느끼며 큰 자신감을 얻었습니다. 아쉬움도 남지만, 응원의 힘을 받으며 꾸준히 더욱 발전된 모습을 보여주고 싶습니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/lyj1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] PEWiM 퓨림",
         "student_name": "이영주",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/lyj2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/lyj2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/lyj2.webp",
         "description": "[INTERACTIVE DESIGN] PEWiM 퓨림\n출품 디자이너: 이영주 (이메일: alissa0828yj@gmail.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 저는 브랜드에 독창적인 스토리를 부여하여 사용자의 마음을 움직이는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. Fe26 전시를 마친 후, 밤샘 노력의 결실을 느끼며 큰 자신감을 얻었습니다. 아쉬움도 남지만, 응원의 힘을 받으며 꾸준히 더욱 발전된 모습을 보여주고 싶습니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/lyj2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 외계인방앗간",
         "student_name": "이영주",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/lyj3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/lyj3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/lyj3.webp",
         "description": "[PACKAGE DESIGN] 외계인방앗간\n출품 디자이너: 이영주 (이메일: alissa0828yj@gmail.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 저는 브랜드에 독창적인 스토리를 부여하여 사용자의 마음을 움직이는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. Fe26 전시를 마친 후, 밤샘 노력의 결실을 느끼며 큰 자신감을 얻었습니다. 아쉬움도 남지만, 응원의 힘을 받으며 꾸준히 더욱 발전된 모습을 보여주고 싶습니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/lyj3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 해밀턴",
         "student_name": "이영주",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/lyj4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/lyj4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/lyj4.webp",
         "description": "[VISUAL DESIGN] 해밀턴\n출품 디자이너: 이영주 (이메일: alissa0828yj@gmail.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 저는 브랜드에 독창적인 스토리를 부여하여 사용자의 마음을 움직이는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. Fe26 전시를 마친 후, 밤샘 노력의 결실을 느끼며 큰 자신감을 얻었습니다. 아쉬움도 남지만, 응원의 힘을 받으며 꾸준히 더욱 발전된 모습을 보여주고 싶습니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/lyj4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 상류문화의 발자취",
         "student_name": "임소정",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/LIMSO2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/LIMSO2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/LIMSO2.webp",
         "description": "[EDITORIAL DESIGN] 상류문화의 발자취\n출품 디자이너: 임소정 (이메일: thwjd2034@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 나 자체가 브랜드가 될 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 전시가 끝났다고 생각하니 그간 열심히 작업했던 날들이 떠올라 감회가 새롭습니다. 좋아하는 것들을 가지고 내가 하고싶은 걸 표현할 수 있어서 즐거웠습니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/LIMSO2"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 북트리",
         "student_name": "임소정",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/LIMSO.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/LIMSO.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/LIMSO.webp",
         "description": "[INTERACTIVE DESIGN] 북트리\n출품 디자이너: 임소정 (이메일: thwjd2034@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 나 자체가 브랜드가 될 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 전시가 끝났다고 생각하니 그간 열심히 작업했던 날들이 떠올라 감회가 새롭습니다. 좋아하는 것들을 가지고 내가 하고싶은 걸 표현할 수 있어서 즐거웠습니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/LIMSO"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 미스터 도넛",
         "student_name": "임소정",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/LIMSO1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/LIMSO1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/LIMSO1.webp",
         "description": "[PACKAGE DESIGN] 미스터 도넛\n출품 디자이너: 임소정 (이메일: thwjd2034@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 나 자체가 브랜드가 될 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 전시가 끝났다고 생각하니 그간 열심히 작업했던 날들이 떠올라 감회가 새롭습니다. 좋아하는 것들을 가지고 내가 하고싶은 걸 표현할 수 있어서 즐거웠습니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/LIMSO1"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[ED] 역사를 깎는 조각사",
         "student_name": "정하연",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/jhy1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/jhy1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/jhy1.webp",
         "description": "[EDITORIAL DESIGN] 역사를 깎는 조각사\n출품 디자이너: 정하연 (이메일: jhy000714@gmail.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 사람들과 소통하는 디자이너가 되고 싶습니다. \n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 어려운 순간도 많았지만, 그 경험들로 인해 성장할 수 있었던 것 같습니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/jhy1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] EMONE",
         "student_name": "정하연",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/jhy2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/jhy2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/jhy2.webp",
         "description": "[INTERACTIVE DESIGN] EMONE\n출품 디자이너: 정하연 (이메일: jhy000714@gmail.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 사람들과 소통하는 디자이너가 되고 싶습니다. \n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 어려운 순간도 많았지만, 그 경험들로 인해 성장할 수 있었던 것 같습니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/jhy2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] Altdif",
         "student_name": "정하연",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/jhy3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/jhy3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/jhy3.webp",
         "description": "[PACKAGE DESIGN] Altdif\n출품 디자이너: 정하연 (이메일: jhy000714@gmail.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 사람들과 소통하는 디자이너가 되고 싶습니다. \n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 어려운 순간도 많았지만, 그 경험들로 인해 성장할 수 있었던 것 같습니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/jhy3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[ED] 조민영 - 재로 남은 기록",
         "student_name": "조민영",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/jmy1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/jmy1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/jmy1.webp",
         "description": "[EDITORIAL DESIGN] 조민영 - 재로 남은 기록\n출품 디자이너: 조민영 (이메일: mary062287@gmail.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 이해가 가는 디자인을 하는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 졸전 힘들었습니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/jmy1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] HALO",
         "student_name": "조민영",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/jmy2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/jmy2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/jmy2.webp",
         "description": "[INTERACTIVE DESIGN] HALO\n출품 디자이너: 조민영 (이메일: mary062287@gmail.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 이해가 가는 디자인을 하는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 졸전 힘들었습니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/jmy2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] CREMA",
         "student_name": "조민영",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/jmy3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/jmy3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/jmy3.webp",
         "description": "[PACKAGE DESIGN] CREMA\n출품 디자이너: 조민영 (이메일: mary062287@gmail.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 이해가 가는 디자인을 하는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 졸전 힘들었습니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/jmy3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 공익포스터",
         "student_name": "조민영",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/jmy4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/jmy4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/jmy4.webp",
         "description": "[VISUAL DESIGN] 공익포스터\n출품 디자이너: 조민영 (이메일: mary062287@gmail.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 이해가 가는 디자인을 하는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 졸전 힘들었습니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/jmy4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 하늘을 그리다, 단청의 비밀",
         "student_name": "최정민",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/choij3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/choij3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/choij3.webp",
         "description": "[EDITORIAL DESIGN] 하늘을 그리다, 단청의 비밀\n출품 디자이너: 최정민 (이메일: chlwjdals423@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 저만의 방식으로 풀어낸 디자인으로 사람들에게 행복을 주는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 4년 동안 배우고 만든 것의 최종이라 생각하니 후련하고 시원섭섭합니다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/choij3"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 페스티벨",
         "student_name": "최정민",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/choij4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/choij4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/choij4.webp",
         "description": "[INTERACTIVE DESIGN] 페스티벨\n출품 디자이너: 최정민 (이메일: chlwjdals423@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 저만의 방식으로 풀어낸 디자인으로 사람들에게 행복을 주는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 4년 동안 배우고 만든 것의 최종이라 생각하니 후련하고 시원섭섭합니다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/choij4"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 누데이크",
         "student_name": "최정민",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/choij1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/choij1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/choij1.webp",
         "description": "[PACKAGE DESIGN] 누데이크\n출품 디자이너: 최정민 (이메일: chlwjdals423@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 저만의 방식으로 풀어낸 디자인으로 사람들에게 행복을 주는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 4년 동안 배우고 만든 것의 최종이라 생각하니 후련하고 시원섭섭합니다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/choij1"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 고령화",
         "student_name": "최정민",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/choij2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/choij2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/choij2.webp",
         "description": "[VISUAL DESIGN] 고령화\n출품 디자이너: 최정민 (이메일: chlwjdals423@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 저만의 방식으로 풀어낸 디자인으로 사람들에게 행복을 주는 디자이너가 되고 싶습니다.\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 4년 동안 배우고 만든 것의 최종이라 생각하니 후련하고 시원섭섭합니다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/choij2"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       },
       {
         "title": "[ED] 작은 공 큰 역사",
         "student_name": "황수빈",
-        "department": "EDITORIAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/hsb1.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/hsb1.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/hsb1.webp",
         "description": "[EDITORIAL DESIGN] 작은 공 큰 역사\n출품 디자이너: 황수빈 (이메일: sb10041004@naver.com)\n지도교수: 이병석 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 철골처럼 사용자의 삶을 든든하게 지탱해 줄 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 포기하지 않고 전시를 무사히 끝마치게 되어 정말 뿌듯하다. 졸업 전시라는 하나의 장기 프로젝트를 진행하면서 값진 경험을 얻을 수 있었던 것 같아 좋았다.",
         "inferred_role": "에디토리얼 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/hsb1"
+        "detail_url": "",
+        "department": "EDITORIAL DESIGN"
       },
       {
         "title": "[IN] 버디",
         "student_name": "황수빈",
-        "department": "INTERACTIVE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/hsb2.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/hsb2.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/hsb2.webp",
         "description": "[INTERACTIVE DESIGN] 버디\n출품 디자이너: 황수빈 (이메일: sb10041004@naver.com)\n지도교수: 윤여경 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 철골처럼 사용자의 삶을 든든하게 지탱해 줄 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 포기하지 않고 전시를 무사히 끝마치게 되어 정말 뿌듯하다. 졸업 전시라는 하나의 장기 프로젝트를 진행하면서 값진 경험을 얻을 수 있었던 것 같아 좋았다.",
         "inferred_role": "인터랙티브 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/hsb2"
+        "detail_url": "",
+        "department": "INTERACTIVE DESIGN"
       },
       {
         "title": "[PA] 언밸런스마켓",
         "student_name": "황수빈",
-        "department": "PACKAGE DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/hsb3.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/hsb3.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/hsb3.webp",
         "description": "[PACKAGE DESIGN] 언밸런스마켓\n출품 디자이너: 황수빈 (이메일: sb10041004@naver.com)\n지도교수: 김찬숙 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 철골처럼 사용자의 삶을 든든하게 지탱해 줄 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 포기하지 않고 전시를 무사히 끝마치게 되어 정말 뿌듯하다. 졸업 전시라는 하나의 장기 프로젝트를 진행하면서 값진 경험을 얻을 수 있었던 것 같아 좋았다.",
         "inferred_role": "패키지 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/hsb3"
+        "detail_url": "",
+        "department": "PACKAGE DESIGN"
       },
       {
         "title": "[VI] 시각디자인",
         "student_name": "황수빈",
-        "department": "VISUAL DESIGN",
         "image": "captures/UNIV-2025-대진대학교-시각디자인학과/hsb4.webp",
         "thumbnail": "captures/UNIV-2025-대진대학교-시각디자인학과/hsb4.webp",
         "screenshot_path": "captures/UNIV-2025-대진대학교-시각디자인학과/hsb4.webp",
         "description": "[VISUAL DESIGN] 시각디자인\n출품 디자이너: 황수빈 (이메일: sb10041004@naver.com)\n지도교수: 반동욱 교수님\n\n대진대학교 시각디자인 26기 졸업전시회 Fe26 : REINFORCE 공식 출품작\n\nQ. 앞으로 어떤 디자이너가 되고싶나요?\nA. 철골처럼 사용자의 삶을 든든하게 지탱해 줄 수 있는 디자이너\n\nQ. Fe26 전시를 마친 소감이 어떠신가요?\nA. 포기하지 않고 전시를 무사히 끝마치게 되어 정말 뿌듯하다. 졸업 전시라는 하나의 장기 프로젝트를 진행하면서 값진 경험을 얻을 수 있었던 것 같아 좋았다.",
         "inferred_role": "시각 디자이너",
-        "detail_url": "https://dju26-design.co.kr/project/hsb4"
+        "detail_url": "",
+        "department": "VISUAL DESIGN"
       }
-    ]
+    ],
+    "card_news": {
+      "card_headline": "대진대학교 시각디자인 26기 졸업전시회 | Fe26 : REINFORCE",
+      "card_intro": "철의 원소 기호 Fe와 원자 번호 26에서 출발한 'Fe26 : REINFORCE'는 대진대학교 시각디자인학과 26기 학생들이 불확실한 환경 속에서 단련되어 단단하고 유연한 디자이너로 거듭나는 과정을 상징합니다. EDITORIAL DESIGN, INTERACTIVE DESIGN, PACKAGE DESIGN, VISUAL DESIGN의 4대 트랙을 통해 세상의 문제를 해결하고 새로운 시각적 경험을 제시하는 138점의 작품을 만나보실 수 있습니다."
+    }
   },
   {
     "id": "UNIV-2025-홍익대학교-시각디자인과-hivcd",
@@ -19480,5 +19488,1545 @@
     "instagramPublished": true,
     "publishedAt": "2026-09-24T17:32:09.121180",
     "disable_artwork_zoom": true
+  },
+  {
+    "id": "UNIV-2026-전남대학교-건축학과-8940",
+    "category": "건축·공간",
+    "university": "전남대학교",
+    "department": "건축학과",
+    "year": "2026",
+    "status": "리서치 완료",
+    "isUploaded": true,
+    "isResearched": true,
+    "poster_image": "uploads/UNIV-2026-_____-____-8940/main_poster_1790086711232.png",
+    "exhibition_title": "전남대학교 건축학부 졸업작품전 | SoA CNU Gallery",
+    "exhibit_title": "[전남대학교] 2026 건축학과 졸업전시회",
+    "title": "전남대학교 건축학부 졸업작품전 | SoA CNU Gallery",
+    "target_url": "http://soacnugallery.com/",
+    "official_url": "http://soacnugallery.com/",
+    "scraped_url": "http://soacnugallery.com/",
+    "critic_score": 100,
+    "critic_feedback": "관리자 검수 및 실시간 카드 편집 승인 완료",
+    "curation_summary": {
+      "headline": "전남대학교 건축학부 졸업작품전 | SoA CNU Gallery",
+      "curation_intro": "2026년도 전남대학교 건축학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+      "inferred_industry_keywords": [
+        "건축",
+        "건축학과",
+        "2026졸전"
+      ]
+    },
+    "artworks": [
+      {
+        "title": "THE OBELISK",
+        "student_name": "권재원",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_1.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_1.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_1.png",
+        "description": "THE OBELISK | 권재원 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "숲(森)+삶(生)",
+        "student_name": "김예은",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_6.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_6.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_6.png",
+        "description": "숲(森)+삶(生) | 김예은 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Regenerative Estuary",
+        "student_name": "김나현",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_3.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_3.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_3.png",
+        "description": "Regenerative Estuary | 김나현 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #7",
+        "student_name": "전남대학교 작가",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_7.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_7.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_7.png",
+        "description": "작품 #7 | 전남대학교 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #9",
+        "student_name": "전남대학교 작가",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_9.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_9.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_9.png",
+        "description": "작품 #9 | 전남대학교 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Be Natural",
+        "student_name": "유상하",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_18.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_18.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_18.png",
+        "description": "Be Natural | 유상하 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "응결된 여백",
+        "student_name": "이인서",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_24.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_24.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_24.png",
+        "description": "응결된 여백 | 이인서 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "도심사찰(URBAN TEMPLE)",
+        "student_name": "윤동호",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_19.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_19.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_19.png",
+        "description": "도심사찰(URBAN TEMPLE) | 윤동호 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #26",
+        "student_name": "전남대학교 작가",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_26.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_26.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_26.png",
+        "description": "작품 #26 | 전남대학교 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "수원에너지허브",
+        "student_name": "권혁주",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_2.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_2.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_2.png",
+        "description": "수원에너지허브 | 권혁주 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Porous Publicness ; Scenes of Thresholds",
+        "student_name": "김남효",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_4.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_4.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_4.png",
+        "description": "Porous Publicness ; Scenes of Thresholds | 김남효 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "SNOWBALL DRIVE",
+        "student_name": "김명진",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_5.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_5.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_5.png",
+        "description": "SNOWBALL DRIVE | 김명진 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #8",
+        "student_name": "전남대학교 작가",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_8.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_8.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_8.png",
+        "description": "작품 #8 | 전남대학교 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #10",
+        "student_name": "전남대학교 작가",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_10.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_10.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_10.png",
+        "description": "작품 #10 | 전남대학교 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #11",
+        "student_name": "전남대학교 작가",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_11.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_11.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_11.png",
+        "description": "작품 #11 | 전남대학교 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #12",
+        "student_name": "전남대학교 작가",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_12.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_12.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_12.png",
+        "description": "작품 #12 | 전남대학교 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "일상을 엮는 도시의 결",
+        "student_name": "박현지",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_13.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_13.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_13.png",
+        "description": "일상을 엮는 도시의 결 | 박현지 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "HISTORICAL LINE",
+        "student_name": "성윤환",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_14.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_14.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_14.png",
+        "description": "HISTORICAL LINE | 성윤환 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Learning with Greeting",
+        "student_name": "송지훈",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_15.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_15.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_15.png",
+        "description": "Learning with Greeting | 송지훈 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Cultural Link Street",
+        "student_name": "신지은",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_16.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_16.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_16.png",
+        "description": "Cultural Link Street | 신지은 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Play+IN+Cinerator",
+        "student_name": "안채윤",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_17.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_17.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_17.png",
+        "description": "Play+IN+Cinerator | 안채윤 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "CITY ON THE FORMER TRACKS",
+        "student_name": "윤유란",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_20.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_20.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_20.png",
+        "description": "CITY ON THE FORMER TRACKS | 윤유란 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "충장로.ZIP",
+        "student_name": "이연수",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_21.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_21.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_21.png",
+        "description": "충장로.ZIP | 이연수 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "AERO-INFRA : FUTURE OFFICE PROTOTYPE",
+        "student_name": "이우창",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_22.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_22.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_22.png",
+        "description": "AERO-INFRA : FUTURE OFFICE PROTOTYPE | 이우창 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "소:풍",
+        "student_name": "이윤서",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_23.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_23.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_23.png",
+        "description": "소:풍 | 이윤서 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #25",
+        "student_name": "전남대학교 작가",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_25.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_25.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_25.png",
+        "description": "작품 #25 | 전남대학교 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #27",
+        "student_name": "전남대학교 작가",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_27.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_27.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_27.png",
+        "description": "작품 #27 | 전남대학교 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #28",
+        "student_name": "전남대학교 작가",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_28.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_28.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_28.png",
+        "description": "작품 #28 | 전남대학교 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #29",
+        "student_name": "전남대학교 작가",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_29.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_29.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_29.png",
+        "description": "작품 #29 | 전남대학교 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #30",
+        "student_name": "전남대학교 작가",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_30.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_30.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_30.png",
+        "description": "작품 #30 | 전남대학교 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "흐르는 도시, 머무는 시장",
+        "student_name": "정지현",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_31.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_31.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_31.png",
+        "description": "흐르는 도시, 머무는 시장 | 정지현 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Orders Held by the Earth",
+        "student_name": "조석민",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_32.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_32.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_32.png",
+        "description": "Orders Held by the Earth | 조석민 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "URBAN SECTION",
+        "student_name": "조주영",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_33.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_33.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_33.png",
+        "description": "URBAN SECTION | 조주영 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Record Loop Archive",
+        "student_name": "조현진",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_34.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_34.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_34.png",
+        "description": "Record Loop Archive | 조현진 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "중국광저우도심속마을의인대화개조",
+        "student_name": "차오치",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_35.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_35.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_35.png",
+        "description": "중국광저우도심속마을의인대화개조 | 차오치 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Landfill mining: Placeization of Non-space",
+        "student_name": "최문규",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_36.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_36.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_36.png",
+        "description": "Landfill mining: Placeization of Non-space | 최문규 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "M O N O L O G",
+        "student_name": "최서연",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_37.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_37.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_37.png",
+        "description": "M O N O L O G | 최서연 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Library Beyond Books",
+        "student_name": "추현우",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_38.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_38.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_38.png",
+        "description": "Library Beyond Books | 추현우 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "WEAVING FLOW",
+        "student_name": "하제민",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_39.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_39.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_39.png",
+        "description": "WEAVING FLOW | 하제민 | Architecture & Urban Design 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "SOC-MAP",
+        "student_name": "1조 / 김동현, 김호성, 서진성",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_40.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_40.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_40.png",
+        "description": "SOC-MAP | 1조 / 김동현, 김호성, 서진성 | Architectural Engineering 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "EV 화재 대비 지하주차장 슬래브 최적 피복 두께 설계",
+        "student_name": "2조 / 권준혁, 김정헌, 육세훈",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_41.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_41.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_41.png",
+        "description": "EV 화재 대비 지하주차장 슬래브 최적 피복 두께 설계 | 2조 / 권준혁, 김정헌, 육세훈 | Architectural Engineering 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "고정밀 BLE·PDR 융합 실내 내비게이션",
+        "student_name": "3조 / 이준영, 정영훈, 전석훈",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_42.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_42.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_42.png",
+        "description": "고정밀 BLE·PDR 융합 실내 내비게이션 | 3조 / 이준영, 정영훈, 전석훈 | Architectural Engineering 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "AI 기반 구조물 균열 관리 및 3D 위험 분석 시스템",
+        "student_name": "4조 / 권영윤, 김인영",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_43.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_43.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_43.png",
+        "description": "AI 기반 구조물 균열 관리 및 3D 위험 분석 시스템 | 4조 / 권영윤, 김인영 | Architectural Engineering 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "발열팩 분말을 활용한 영하 환경 콘크리트의 수화 반응 촉진 연구",
+        "student_name": "5조 / 곽지예, 기효윤, 김진서",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_44.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_44.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_44.png",
+        "description": "발열팩 분말을 활용한 영하 환경 콘크리트의 수화 반응 촉진 연구 | 5조 / 곽지예, 기효윤, 김진서 | Architectural Engineering 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "AI 기반 건설현장 안전위험 예측 및 시각화 관리 시스템",
+        "student_name": "7조 / 왕한규",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_45.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_45.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_45.png",
+        "description": "AI 기반 건설현장 안전위험 예측 및 시각화 관리 시스템 | 7조 / 왕한규 | Architectural Engineering 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "탁도 기반 잔골재 미립분 함유량 추정 및 실시간 판정 시스템 개발",
+        "student_name": "9조 / 안예린, 유은지, 장지성",
+        "image": "captures/UNIV-2026-전남대학교-건축학과-8940/work_46.png",
+        "thumbnail": "captures/UNIV-2026-전남대학교-건축학과-8940/work_46.png",
+        "screenshot_path": "captures/UNIV-2026-전남대학교-건축학과-8940/work_46.png",
+        "description": "탁도 기반 잔골재 미립분 함유량 추정 및 실시간 판정 시스템 개발 | 9조 / 안예린, 유은지, 장지성 | Architectural Engineering 2026",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      }
+    ],
+    "exhibition_period": "일정 공지 대기",
+    "schedule": "일정 공지 대기",
+    "exhibition_venue": "교내 전시홀",
+    "slogan": "전남대학교 건축학부 졸업작품전 | SoA CNU Gallery",
+    "card_news": {
+      "card_headline": "전남대학교 건축학부 졸업작품전 | SoA CNU Gallery",
+      "card_intro": "2026년도 전남대학교 건축학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다."
+    },
+    "raw_description": "2026년도 전남대학교 건축학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+    "instagramPublished": true,
+    "publishedAt": "2026-09-22T23:23:58.983828"
+  },
+  {
+    "id": "UNIV-2026-건국대학교-시각영상디자인학과-2085",
+    "category": "디자인·UX/UI",
+    "university": "건국대학교",
+    "department": "시각영상디자인학과",
+    "year": "2026",
+    "status": "리서치 완료",
+    "isUploaded": true,
+    "isResearched": true,
+    "poster_image": "uploads/UNIV-2026-_____-_________-5736/main_poster_1790168033783.png",
+    "exhibition_title": "건국대학교 글로컬캠퍼스 시각영상디자인학과 영상/디지털 트랙 졸업전시회",
+    "exhibit_title": "[건국대학교] 2026 시각영상디자인학과 졸업전시회",
+    "title": "건국대학교 글로컬캠퍼스 시각영상디자인학과 영상/디지털 트랙 졸업전시회",
+    "target_url": "https://kku2026mid.com/project",
+    "official_url": "https://kku2026mid.com/project",
+    "scraped_url": "https://kku2026mid.com/project",
+    "critic_score": 100,
+    "critic_feedback": "관리자 검수 및 실시간 카드 편집 승인 완료",
+    "curation_summary": {
+      "headline": "건국대학교 글로컬캠퍼스 시각영상디자인학과 영상/디지털 트랙 졸업전시회",
+      "curation_intro": "2026년도 건국대학교 시각영상디자인학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+      "inferred_industry_keywords": [
+        "영상",
+        "시각영상디자인학과",
+        "2026졸전"
+      ]
+    },
+    "artworks": [
+      {
+        "title": "grill the kill",
+        "student_name": "조민영,김한비",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_1.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_1.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_1.png",
+        "description": "grill the kill | 조민영,김한비",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "GREEN POINT : EXPIRED",
+        "student_name": "유나경,유예지",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_181.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_181.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_181.png",
+        "description": "GREEN POINT : EXPIRED | 유나경,유예지",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "가상모델 스튜디오 A. VOXEL",
+        "student_name": "임서현",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_90.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_90.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_90.png",
+        "description": "가상모델 스튜디오 A. VOXEL | 임서현",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "세상에 없는 나다움, Spotify",
+        "student_name": "조민영,김한비",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_3.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_3.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_3.png",
+        "description": "세상에 없는 나다움, Spotify | 조민영,김한비",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Artemis",
+        "student_name": "박민경",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_34.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_34.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_34.png",
+        "description": "Artemis | 박민경",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "her",
+        "student_name": "조민영",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_5.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_5.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_5.png",
+        "description": "her | 조민영",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "개미",
+        "student_name": "오성현,이용준",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_7.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_7.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_7.png",
+        "description": "개미 | 오성현,이용준",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Levi's Rebirth",
+        "student_name": "오성현,이겨레,이용준,이예림,이현영",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_9.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_9.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_9.png",
+        "description": "Levi's Rebirth | 오성현,이겨레,이용준,이예림,이현영",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #12",
+        "student_name": "건국대학교 작가",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_12.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_12.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_12.png",
+        "description": "작품 #12 | 건국대학교 작가",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "내가 사라진 날",
+        "student_name": "이겨레",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_14.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_14.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_14.png",
+        "description": "내가 사라진 날 | 이겨레",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "레드불",
+        "student_name": "이겨레",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_16.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_16.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_16.png",
+        "description": "레드불 | 이겨레",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "초월",
+        "student_name": "최수하",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_18.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_18.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_18.png",
+        "description": "초월 | 최수하",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "꽃나무",
+        "student_name": "최수하",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_20.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_20.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_20.png",
+        "description": "꽃나무 | 최수하",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "해파리의 꿈",
+        "student_name": "최수하",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_22.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_22.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_22.png",
+        "description": "해파리의 꿈 | 최수하",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Hogwarts Legacy",
+        "student_name": "강준구",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_24.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_24.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_24.png",
+        "description": "Hogwarts Legacy | 강준구",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "달러구트 꿈 백화점",
+        "student_name": "강준구,오서현",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_26.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_26.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_26.png",
+        "description": "달러구트 꿈 백화점 | 강준구,오서현",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "GAME HUB",
+        "student_name": "강준구",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_28.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_28.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_28.png",
+        "description": "GAME HUB | 강준구",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "My Nostalgia",
+        "student_name": "박민경",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_30.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_30.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_30.png",
+        "description": "My Nostalgia | 박민경",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "LUSH",
+        "student_name": "박민경",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_32.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_32.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_32.png",
+        "description": "LUSH | 박민경",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "불행보존의 법칙",
+        "student_name": "유연경",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_36.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_36.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_36.png",
+        "description": "불행보존의 법칙 | 유연경",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Off & On",
+        "student_name": "손민애,유연경,전주원",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_38.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_38.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_38.png",
+        "description": "Off & On | 손민애,유연경,전주원",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "하이스토리",
+        "student_name": "유연경",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_40.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_40.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_40.png",
+        "description": "하이스토리 | 유연경",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "시니어 몰",
+        "student_name": "이용준",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_44.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_44.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_44.png",
+        "description": "시니어 몰 | 이용준",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Click to Dive",
+        "student_name": "최건희,주해린",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_46.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_46.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_46.png",
+        "description": "Click to Dive | 최건희,주해린",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "향의 시각화",
+        "student_name": "최건희",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_48.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_48.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_48.png",
+        "description": "향의 시각화 | 최건희",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "리치아웃",
+        "student_name": "최건희",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_50.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_50.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_50.png",
+        "description": "리치아웃 | 최건희",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "부루마블",
+        "student_name": "강주영",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_52.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_52.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_52.png",
+        "description": "부루마블 | 강주영",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "아로미",
+        "student_name": "강주영",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_54.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_54.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_54.png",
+        "description": "아로미 | 강주영",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "데코 : 나",
+        "student_name": "강혜리",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_57.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_57.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_57.png",
+        "description": "데코 : 나 | 강혜리",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "COME JOIN US!",
+        "student_name": "강혜리",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_59.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_59.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_59.png",
+        "description": "COME JOIN US! | 강혜리",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "땀빼옹",
+        "student_name": "강혜리",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_61.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_61.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_61.png",
+        "description": "땀빼옹 | 강혜리",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "앤은 잠 못 이루고",
+        "student_name": "권예인,조유진",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_63.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_63.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_63.png",
+        "description": "앤은 잠 못 이루고 | 권예인,조유진",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Leeum Museum",
+        "student_name": "권예인,조유진",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_65.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_65.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_65.png",
+        "description": "Leeum Museum | 권예인,조유진",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "밥풀",
+        "student_name": "권예인,황예봄",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_67.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_67.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_67.png",
+        "description": "밥풀 | 권예인,황예봄",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "여름기억",
+        "student_name": "손민애,전주원",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_69.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_69.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_69.png",
+        "description": "여름기억 | 손민애,전주원",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "어른",
+        "student_name": "손민애",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_72.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_72.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_72.png",
+        "description": "어른 | 손민애",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "피크민",
+        "student_name": "윤민주",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_74.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_74.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_74.png",
+        "description": "피크민 | 윤민주",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "버츄얼 운영자 '김신비'",
+        "student_name": "윤민주",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_76.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_76.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_76.png",
+        "description": "버츄얼 운영자 '김신비' | 윤민주",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "미싱테일",
+        "student_name": "윤민주",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_78.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_78.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_78.png",
+        "description": "미싱테일 | 윤민주",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "잔광 殘光",
+        "student_name": "이소미,이현영",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_80.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_80.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_80.png",
+        "description": "잔광 殘光 | 이소미,이현영",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "곁에 있고 싶어",
+        "student_name": "이준이",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_82.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_82.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_82.png",
+        "description": "곁에 있고 싶어 | 이준이",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "핸들릿",
+        "student_name": "이준이",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_84.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_84.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_84.png",
+        "description": "핸들릿 | 이준이",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "쥬모닝",
+        "student_name": "이준이",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_86.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_86.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_86.png",
+        "description": "쥬모닝 | 이준이",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "세음 世音",
+        "student_name": "임서현",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_88.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_88.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_88.png",
+        "description": "세음 世音 | 임서현",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "X-Universe",
+        "student_name": "정세은,차연주",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_92.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_92.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_92.png",
+        "description": "X-Universe | 정세은,차연주",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Terraforming",
+        "student_name": "정세은,차연주",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_94.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_94.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_94.png",
+        "description": "Terraforming | 정세은,차연주",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "GGP",
+        "student_name": "정세은",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_96.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_96.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_96.png",
+        "description": "GGP | 정세은",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "From NAZAR",
+        "student_name": "조유진,황예봄",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_100.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_100.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_100.png",
+        "description": "From NAZAR | 조유진,황예봄",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "비움",
+        "student_name": "차연주",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_105.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_105.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_105.png",
+        "description": "비움 | 차연주",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Birth flower",
+        "student_name": "홍유진",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_107.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_107.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_107.png",
+        "description": "Birth flower | 홍유진",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Escape from the Trap",
+        "student_name": "홍유진",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_109.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_109.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_109.png",
+        "description": "Escape from the Trap | 홍유진",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Why am i blue?",
+        "student_name": "홍유진",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_111.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_111.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_111.png",
+        "description": "Why am i blue? | 홍유진",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "One Touch, One Dot",
+        "student_name": "황예봄",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_113.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_113.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_113.png",
+        "description": "One Touch, One Dot | 황예봄",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Leave Me Alone!",
+        "student_name": "권영인",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_117.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_117.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_117.png",
+        "description": "Leave Me Alone! | 권영인",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "HOPE",
+        "student_name": "권영인,한윤정",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_119.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_119.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_119.png",
+        "description": "HOPE | 권영인,한윤정",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Life Goes On",
+        "student_name": "권영인",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_121.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_121.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_121.png",
+        "description": "Life Goes On | 권영인",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Mafia Deck",
+        "student_name": "김서현,이세은",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_123.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_123.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_123.png",
+        "description": "Mafia Deck | 김서현,이세은",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Pitch me",
+        "student_name": "김서현",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_125.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_125.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_125.png",
+        "description": "Pitch me | 김서현",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Breadary",
+        "student_name": "김서현",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_127.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_127.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_127.png",
+        "description": "Breadary | 김서현",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "동구밭",
+        "student_name": "박서빈",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_129.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_129.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_129.png",
+        "description": "동구밭 | 박서빈",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Rebloom",
+        "student_name": "박서빈",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_131.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_131.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_131.png",
+        "description": "Rebloom | 박서빈",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "포미션",
+        "student_name": "박서빈",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_133.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_133.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_133.png",
+        "description": "포미션 | 박서빈",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Ocean Spray",
+        "student_name": "오서현",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_135.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_135.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_135.png",
+        "description": "Ocean Spray | 오서현",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "내 Fit 대로 내핏",
+        "student_name": "오서현",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_138.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_138.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_138.png",
+        "description": "내 Fit 대로 내핏 | 오서현",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Your Story, Your Converse",
+        "student_name": "윤수연,이지예",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_140.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_140.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_140.png",
+        "description": "Your Story, Your Converse | 윤수연,이지예",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "에이팅",
+        "student_name": "윤수연",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_142.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_142.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_142.png",
+        "description": "에이팅 | 윤수연",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Extinct: 사라진 종들의 기록",
+        "student_name": "윤수연",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_144.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_144.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_144.png",
+        "description": "Extinct: 사라진 종들의 기록 | 윤수연",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Breakout Tournament",
+        "student_name": "이승민",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_146.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_146.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_146.png",
+        "description": "Breakout Tournament | 이승민",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "마지막 신호탄",
+        "student_name": "이승민",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_148.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_148.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_148.png",
+        "description": "마지막 신호탄 | 이승민",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "마음알기",
+        "student_name": "이승민",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_150.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_150.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_150.png",
+        "description": "마음알기 | 이승민",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "위로",
+        "student_name": "이예림,임서연",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_152.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_152.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_152.png",
+        "description": "위로 | 이예림,임서연",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "RESET",
+        "student_name": "임서연,이예림",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_155.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_155.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_155.png",
+        "description": "RESET | 임서연,이예림",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "터벗터벗",
+        "student_name": "이현영,이예림,임서연",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_157.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_157.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_157.png",
+        "description": "터벗터벗 | 이현영,이예림,임서연",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "크보링(KBO-Ring)",
+        "student_name": "이지예",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_160.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_160.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_160.png",
+        "description": "크보링(KBO-Ring) | 이지예",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "생각의 편식",
+        "student_name": "이지예",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_162.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_162.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_162.png",
+        "description": "생각의 편식 | 이지예",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "디버깅",
+        "student_name": "이혜연",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_164.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_164.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_164.png",
+        "description": "디버깅 | 이혜연",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "집으로",
+        "student_name": "이혜연",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_166.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_166.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_166.png",
+        "description": "집으로 | 이혜연",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "화채",
+        "student_name": "이혜연",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_168.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_168.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_168.png",
+        "description": "화채 | 이혜연",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "Eyes on me",
+        "student_name": "전주원",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_172.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_172.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_172.png",
+        "description": "Eyes on me | 전주원",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "못난이여서 더 특별해",
+        "student_name": "한윤정",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_174.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_174.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_174.png",
+        "description": "못난이여서 더 특별해 | 한윤정",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "미완",
+        "student_name": "한윤정",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_177.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_177.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_177.png",
+        "description": "미완 | 한윤정",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "The Crops Journey",
+        "student_name": "유나경,유예지",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_179.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_179.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_179.png",
+        "description": "The Crops Journey | 유나경,유예지",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "KOMOREBI",
+        "student_name": "유예지",
+        "image": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_183.png",
+        "thumbnail": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_183.png",
+        "screenshot_path": "captures/UNIV-2026-건국대학교-시각영상디자인학과-5736/work_183.png",
+        "description": "KOMOREBI | 유예지",
+        "inferred_role": "시각영상디자인학과 크리에이터",
+        "detail_url": ""
+      }
+    ],
+    "exhibition_period": "2025.11.28 ~ 12.1",
+    "schedule": "2025.11.28 ~ 12.1",
+    "exhibition_venue": "서울특별시 종로구 대학로 57 홍익대학교 대학로 아트센터 B2 제 3전시장",
+    "slogan": "건국대학교 글로컬캠퍼스 시각영상디자인학과 영상/디지털 트랙 졸업전시회",
+    "card_news": {
+      "card_headline": "건국대학교 글로컬캠퍼스 시각영상디자인학과 영상/디지털 트랙 졸업전시회",
+      "card_intro": "2026년도 건국대학교 시각영상디자인학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다."
+    },
+    "raw_description": "2026년도 건국대학교 시각영상디자인학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+    "instagramPublished": true,
+    "publishedAt": "2026-09-23T22:16:43.535575"
+  },
+  {
+    "id": "UNIV-2026-울산대학교-실내공간디자인학과-75346",
+    "category": "건축·공간",
+    "university": "울산대학교",
+    "department": "실내공간디자인학과",
+    "year": "2026",
+    "exhibit_title": "[울산대학교] 2026 실내공간디자인학과 졸업전시회",
+    "exhibition_title": "울산대학교 2026년 실내공간디자인학과 졸업전시회",
+    "title": "울산대학교 2026년 실내공간디자인학과 졸업전시회",
+    "raw_description": "2026년도 울산대학교 실내공간디자인학과 공식 졸업전시 아카이브입니다.",
+    "status": "리서치 완료",
+    "isUploaded": true,
+    "isResearched": true,
+    "poster_image": "uploads/UNIV-2026-울산대학교-실내공간디자인학과-75346/main_poster.png",
+    "exhibition_period": "2026.09.21~2026.09.27",
+    "exhibition_venue": "아산 도서관 1F Creative Square",
+    "target_url": "https://www.youtube.com/@UISD_egg/videos",
+    "official_url": "https://www.youtube.com/@UISD_egg/videos",
+    "scraped_url": "https://www.youtube.com/@UISD_egg/videos",
+    "slogan": "인식",
+    "critic_score": 95,
+    "tags": [
+      "UISD",
+      "실내공간디자인",
+      "졸업전시회",
+      "울산대학교"
+    ],
+    "card_news": {
+      "card_headline": "인식",
+      "card_intro": "2026년도 울산대학교 실내공간디자인학과 공식 졸업전시 아카이브입니다.",
+      "tags": [
+        "UISD",
+        "실내공간디자인",
+        "졸업전시회",
+        "울산대학교"
+      ]
+    },
+    "curation_summary": {
+      "headline": "인식",
+      "curation_intro": "2026년도 울산대학교 실내공간디자인학과 공식 졸업전시 아카이브입니다.",
+      "inferred_industry_keywords": [
+        "UISD",
+        "실내공간디자인",
+        "졸업전시회",
+        "울산대학교"
+      ]
+    },
+    "artworks": [],
+    "schedule": "2026.09.21~2026.09.27"
+  },
+  {
+    "id": "DES-3597",
+    "category": "건축·공간",
+    "university": "부산대",
+    "department": "건축학과",
+    "year": "2026",
+    "status": "리서치 완료",
+    "poster_image": "uploads/DES-3597/upload_1789993803675_npv3va.png",
+    "exhibition_title": "Project | 부산대학교건축학과 아카이브 I PNU",
+    "scraped_url": "https://www.pnuarchiport.com/26graduationproject",
+    "critic_score": 100,
+    "critic_feedback": "관리자 검수 및 실시간 카드 편집 승인 완료",
+    "curation_summary": {
+      "headline": "시선의 채집(시간/도시/자연/사회)",
+      "curation_intro": "2026년도 부산대 건축학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+      "inferred_industry_keywords": [
+        "건축",
+        "건축학과",
+        "2026졸전"
+      ]
+    },
+    "artworks": [
+      {
+        "title": "작품 #1",
+        "student_name": "공식전시 작가",
+        "image": "captures/DES-3597/work_1.png",
+        "thumbnail": "captures/DES-3597/work_1.png",
+        "screenshot_path": "captures/DES-3597/work_1.png",
+        "description": "작품 #1 | 공식전시 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #2",
+        "student_name": "공식전시 작가",
+        "image": "captures/DES-3597/work_2.png",
+        "thumbnail": "captures/DES-3597/work_2.png",
+        "screenshot_path": "captures/DES-3597/work_2.png",
+        "description": "작품 #2 | 공식전시 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #3",
+        "student_name": "공식전시 작가",
+        "image": "captures/DES-3597/work_3.png",
+        "thumbnail": "captures/DES-3597/work_3.png",
+        "screenshot_path": "captures/DES-3597/work_3.png",
+        "description": "작품 #3 | 공식전시 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #5",
+        "student_name": "공식전시 작가",
+        "image": "captures/DES-3597/work_5.png",
+        "thumbnail": "captures/DES-3597/work_5.png",
+        "screenshot_path": "captures/DES-3597/work_5.png",
+        "description": "작품 #5 | 공식전시 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #6",
+        "student_name": "공식전시 작가",
+        "image": "captures/DES-3597/work_6.png",
+        "thumbnail": "captures/DES-3597/work_6.png",
+        "screenshot_path": "captures/DES-3597/work_6.png",
+        "description": "작품 #6 | 공식전시 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #7",
+        "student_name": "공식전시 작가",
+        "image": "captures/DES-3597/work_7.png",
+        "thumbnail": "captures/DES-3597/work_7.png",
+        "screenshot_path": "captures/DES-3597/work_7.png",
+        "description": "작품 #7 | 공식전시 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #8",
+        "student_name": "공식전시 작가",
+        "image": "captures/DES-3597/work_8.png",
+        "thumbnail": "captures/DES-3597/work_8.png",
+        "screenshot_path": "captures/DES-3597/work_8.png",
+        "description": "작품 #8 | 공식전시 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      },
+      {
+        "title": "작품 #9",
+        "student_name": "공식전시 작가",
+        "image": "captures/DES-3597/work_9.png",
+        "thumbnail": "captures/DES-3597/work_9.png",
+        "screenshot_path": "captures/DES-3597/work_9.png",
+        "description": "작품 #9 | 공식전시 작가",
+        "inferred_role": "건축학과 크리에이터",
+        "detail_url": ""
+      }
+    ],
+    "exhibit_title": "[부산대] 2026 건축학과 졸업전시회",
+    "exhibition_period": "2026",
+    "schedule": "2026",
+    "exhibition_venue": "온라인 졸업전시(링크참조)",
+    "target_url": "https://www.pnuarchiport.com/26graduationproject",
+    "official_url": "https://www.pnuarchiport.com/26graduationproject",
+    "slogan": "시선의 채집(시간/도시/자연/사회)",
+    "card_news": {
+      "card_headline": "시선의 채집(시간/도시/자연/사회)",
+      "card_intro": "2026년도 부산대 건축학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다."
+    },
+    "raw_description": "2026년도 부산대 건축학과 공식 졸업전시 아카이브입니다. 학생들의 정밀 캡처된 출품작과 창의적 비전을 확인하실 수 있습니다.",
+    "instagramPublished": true,
+    "publishedAt": "2026-09-21T22:02:49.121013"
   }
 ]
