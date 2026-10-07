@@ -27,8 +27,14 @@ import {
   CheckCircle2,
   AlertCircle,
 } from "lucide-react";
+import FeaturePreparedNotice from "@/components/FeaturePreparedNotice";
+import { isFeatureEnabled } from "@/lib/features";
 
 export default function IndustryChallengesPage() {
+  if (!isFeatureEnabled("industryIp")) {
+    return <FeaturePreparedNotice featureName="산학협력 IP" />;
+  }
+
   const categories = getMajorCategories();
   const allChallenges = getChallenges();
   const parentChallenges = getParentChallenges();

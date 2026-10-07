@@ -30,14 +30,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const stageInfo = getStageInfo(project.progressStage, project.origin);
   const reviewInfo = getReviewStatusInfo(project.mentorReviewStatus);
 
-  // 참여자 / 담당자 표기
   const participantDisplay = isStudent
     ? project.teamMembers && project.teamMembers.length > 0
       ? project.teamMembers.map((m) => m.name).join(" · ")
       : "학생 참가자"
     : project.companyLead?.name || (project.teamMembers && project.teamMembers.length > 0 ? project.teamMembers[0].name : "기업 R&D 멘토");
 
-  // 협력 필요 항목 뱃지
   const collaborationLabels =
     project.collaborationNeedLabels && project.collaborationNeedLabels.length > 0
       ? project.collaborationNeedLabels
@@ -48,7 +46,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="bg-[#121626]/90 border border-slate-800/80 hover:border-indigo-500/50 rounded-2xl overflow-hidden transition-all duration-200 hover:shadow-xl hover:shadow-indigo-950/20 flex flex-col justify-between group">
       <div>
-        {/* 1. 프로젝트 대표 이미지 & 상단 뱃지 오버레이 */}
         <div className="relative aspect-[16/10] w-full bg-slate-900 overflow-hidden border-b border-slate-800/60">
           <img
             src={project.thumbnail || DEFAULT_PROJECT_IMAGE}
@@ -57,26 +54,33 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#121626] via-transparent to-black/50 pointer-events-none" />
 
-          {/* 상단 뱃지 라인: [Origin Badge] + [Project Type Badges] */}
           <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2 pointer-events-none">
             <div className="flex flex-wrap items-center gap-1.5">
-              {/* Origin Badge (MANDATORY) */}
               {isStudent ? (
                 <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-extrabold bg-indigo-950/90 text-indigo-300 border border-indigo-500/60 backdrop-blur-sm shadow-sm">
                   <GraduationCap className="w-3 h-3 text-cyan-400" />
-                  학생 제안
+                  {project.projectTypes.some((t) => t.includes("제안")) ? "학생 제안" : "학생 프로젝트"}
                 </span>
               ) : (
                 <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-extrabold bg-purple-950/90 text-purple-200 border border-purple-500/60 backdrop-blur-sm shadow-sm">
                   <Building2 className="w-3 h-3 text-pink-400" />
-                  기업 제안
+                  {project.projectTypes.some((t) => t.includes("기관")) ? "기관 프로젝트" : "기업 Challenge"}
                 </span>
               )}
 
-              {/* Project Type Badges */}
+              {/* 실증 진행 뱃지 (Section 11) */}
+              {(project.collaborationNeeds?.includes("testbed") ||
+                project.progressStage === "validation" ||
+                (project.connectedProjects && project.connectedProjects.length > 0)) && (
+                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 backdrop-blur-sm">
+                  <Sparkles className="w-2.5 h-2.5 text-amber-400" />
+                  실증 진행
+                </span>
+              )}
+
               {project.projectTypes
-                .filter((t) => t !== "학생 제안" && t !== "기업 제안")
-                .slice(0, 2)
+                .filter((t) => !["학생 제안", "학생 프로젝트", "기업 Challenge", "기업 제안", "기관 프로젝트"].includes(t))
+                .slice(0, 1)
                 .map((type, i) => (
                   <span
                     key={i}
@@ -94,9 +98,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             )}
           </div>
 
-          {/* 하단 뱃지 라인: 2대 독립 상태 (진행 단계 vs 현직자 검토 상태) */}
           <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between gap-2 pointer-events-none">
-            {/* A. 진행 단계 (Project Progress) */}
             <span
               className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold border backdrop-blur-sm ${stageInfo.badgeClass}`}
             >
@@ -104,7 +106,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               {stageInfo.label}
             </span>
 
-            {/* B. 현직자 검토 상태 (Mentor Review Status) */}
             <span
               className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold border backdrop-blur-sm ${reviewInfo.badgeClass}`}
             >
@@ -114,9 +115,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </div>
         </div>
 
-        {/* 2. 카드 본문 정보 */}
         <div className="p-5 md:p-6 pb-2">
-          {/* 대학 / 기업 & 학과 / 관련 분야 */}
           <div className="flex items-center gap-1.5 text-xs text-slate-400 mb-2 truncate">
             {isStudent ? (
               <>
@@ -135,7 +134,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             )}
           </div>
 
-          {/* 프로젝트명 */}
           <Link
             href={`/mentoring/projects/${project.id}`}
             className="text-base sm:text-lg font-bold text-white group-hover:text-indigo-400 transition-colors line-clamp-1 block mb-2"
@@ -143,19 +141,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             {project.title}
           </Link>
 
-          {/* 한 줄 설명 */}
           <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed mb-4 min-h-[36px]">
             {project.summary || project.description}
           </p>
 
-          {/* 참여자 / 담당자 */}
           <div className="flex items-center gap-1.5 text-xs text-slate-300 mb-3 bg-slate-900/60 px-3 py-1.5 rounded-xl border border-slate-800/60">
             <Users className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
             <span className="text-slate-400 text-[11px]">{isStudent ? "참여 학생:" : "기업 담당:"}</span>
             <span className="font-semibold text-white truncate text-[11px]">{participantDisplay}</span>
           </div>
 
-          {/* 관련 기술 Tag */}
           <div className="flex flex-wrap gap-1 mb-4">
             {project.skills.slice(0, 4).map((skill, i) => (
               <span
@@ -167,7 +162,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             ))}
           </div>
 
-          {/* 진행률 바 (Progress Bar) */}
           <div className="space-y-1.5 mb-4">
             <div className="flex items-center justify-between text-[11px]">
               <span className="text-slate-400 flex items-center gap-1">
@@ -186,7 +180,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </div>
           </div>
 
-          {/* 필요한 협력 / 기업 참여 배지 그룹 */}
           <div className="pt-2 border-t border-slate-800/60 space-y-1.5">
             <span className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider block">
               {isStudent ? "필요한 협력 (Collaboration Needed)" : "기업 참여 형태 (Company Participation)"}
@@ -209,7 +202,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </div>
 
-      {/* 3. 카드 하단 푸터 (마지막 업데이트 + CTA 버튼) */}
       <div className="p-5 pt-3 border-t border-slate-800/80 flex items-center justify-between gap-3 text-xs bg-[#0f1322]/50">
         <span className="text-[11px] text-slate-500 font-mono">
           {project.updatedAt ? `${project.updatedAt} 갱신` : "최신"}

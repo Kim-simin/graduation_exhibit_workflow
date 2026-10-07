@@ -20,8 +20,16 @@ import {
   AlertCircle
 } from "lucide-react";
 
+import FeaturePreparedNotice from "@/components/FeaturePreparedNotice";
+import { isFeatureEnabled } from "@/lib/features";
+
 export default function BrandAssetsPage() {
+  if (!isFeatureEnabled("brandIp")) {
+    return <FeaturePreparedNotice featureName="기업 브랜드 IP" />;
+  }
+
   const brandAssets = getBrandAssets();
+
   const taxonomy = getTaxonomy();
   const [selectedTaxonomy, setSelectedTaxonomy] = useState<string>("all");
 

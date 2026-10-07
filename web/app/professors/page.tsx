@@ -17,6 +17,8 @@ import {
 import CurriculumCard from "@/components/CurriculumCard";
 import CurriculumShortsModal from "@/components/CurriculumShortsModal";
 import ThemeToggle from "@/components/theme-toggle";
+import FeaturePreparedNotice from "@/components/FeaturePreparedNotice";
+import { isFeatureEnabled } from "@/lib/features";
 
 const DEPARTMENT_CATEGORIES = [
   { id: "all", name: "전체 학과", icon: "🌐" },
@@ -37,6 +39,10 @@ const DEPARTMENT_CATEGORIES = [
 ];
 
 export default function CurriculumsPage() {
+  if (!isFeatureEnabled("curriculum")) {
+    return <FeaturePreparedNotice featureName="대학교 커리큘럼" />;
+  }
+
   const initialCurriculums = getCurriculums();
   const [curriculums, setCurriculums] = useState<DepartmentCurriculum[]>(initialCurriculums);
   const [masterCategories, setMasterCategories] = useState<any[]>(masterCategoriesData);

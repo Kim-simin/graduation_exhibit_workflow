@@ -26,42 +26,19 @@ export default function GNB() {
       badge: null,
     },
     {
-      label: "공유자원·R&D",
-      href: "/opportunities",
-      icon: Compass,
-      badge: { text: "실시간", bg: "bg-emerald-950/80 text-emerald-300 border border-emerald-700/50" },
-    },
-    {
       label: "대학생",
       href: "/students",
       icon: Users,
       badge: { text: "인재풀", bg: "bg-[#252843] text-indigo-300" },
     },
     {
-      label: "대학교 커리큘럼",
-      href: "/professors",
-      icon: GraduationCap,
-      badge: null,
-    },
-    {
-      label: "채용공고 및 스카우팅",
-      href: "/jobs",
-      icon: Briefcase,
-      badge: { text: "채용 연계", bg: "bg-blue-950/80 text-blue-300 border border-blue-700/50" },
-    },
-    {
-      label: "현직자 멘토링",
+      label: "프로젝트 공고",
       href: "/mentoring",
       icon: Sparkles,
-      badge: { text: "1:1 첨삭", bg: "bg-[#252843] text-indigo-300" },
-    },
-    {
-      label: "산학협력 IP",
-      href: "/industry-challenges",
-      icon: Rocket,
-      badge: { text: "Challenge", bg: "bg-purple-950/80 text-purple-300 border border-purple-700/50" },
+      badge: { text: "양방향 매칭", bg: "bg-[#252843] text-purple-300" },
     },
   ];
+
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";

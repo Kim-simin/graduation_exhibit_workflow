@@ -204,14 +204,27 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-50 dark:bg-cyan-950/60 border border-cyan-200 dark:border-cyan-700/50 text-cyan-800 dark:text-cyan-400 text-xs font-semibold mb-3">
             <Sparkles className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" /> 전국 대학교 졸업전시 통합 공식 아카이브
           </div>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-            전국 대학교 학생 <span className="text-cyan-600 dark:text-cyan-400">졸업작품 전시회</span>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+            대학생의 프로젝트를 <span className="text-cyan-600 dark:text-cyan-400">기업과 현직자에게 연결합니다</span>
           </h1>
-          <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base mt-2">
-            실제 리서치 및 Gemini Vision으로 검수된 전국 주요 대학의 디자인·예술·건축 졸업전시 작품을 탐색하세요.
+          <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base mt-2 max-w-3xl leading-relaxed">
+            전국 대학의 졸업작품과 학생 프로젝트를 발견하고, 기업·기관의 Challenge와 연결해 현직자 검토와 실증까지 이어갑니다.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3">
+          <Link
+            href="/students"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-slate-900 dark:bg-slate-800 hover:bg-slate-800 dark:hover:bg-slate-700 text-slate-200 font-bold text-xs sm:text-sm border border-slate-700 transition"
+          >
+            <span>대학생 보기</span>
+          </Link>
+          <Link
+            href="/mentoring"
+            className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white font-extrabold text-xs sm:text-sm shadow-md shadow-indigo-600/25 transition"
+          >
+            <Sparkles className="w-4 h-4" />
+            <span>프로젝트 공고 보기</span>
+          </Link>
           <ThemeToggle />
         </div>
       </div>
