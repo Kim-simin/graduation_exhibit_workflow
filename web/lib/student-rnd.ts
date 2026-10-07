@@ -84,6 +84,7 @@ export function evaluateStudentRnD(opportunity: Opportunity, referenceTimeStr = 
 
 export function isStudentRnDOpportunity(opportunity: Opportunity, referenceTimeStr = new Date().toISOString()): boolean {
   if (opportunity.type !== "RND" || opportunity.approvalStatus !== "PUBLISHED") return false;
+  if (opportunity.eligibilityStatus === "excluded" || opportunity.studentEligible === false) return false;
   const checked = evaluateStudentRnD(opportunity, referenceTimeStr);
   return checked.studentParticipationVerified && checked.officialSourceVerified && checked.recruitmentStatus === "OPEN";
 }

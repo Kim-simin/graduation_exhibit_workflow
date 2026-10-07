@@ -1,4 +1,5 @@
 import studentsData from "@/data/students.json";
+import { withoutRemovedContent } from "@/lib/content-removals";
 import professorsData from "@/data/professors.json";
 import rfpData from "@/data/rfp.json";
 import mentorsData from "@/data/mentors.json";
@@ -25,11 +26,11 @@ export function getTaxonomy(): TaxonomyItem[] {
 }
 
 export function getStudents(): Student[] {
-  return studentsData as Student[];
+  return withoutRemovedContent("students", studentsData as Student[]);
 }
 
 export function getStudentById(id: string): Student | undefined {
-  return (studentsData as Student[]).find((s) => s.id === id);
+  return getStudents().find((s) => s.id === id);
 }
 
 export function getProfessors(): Professor[] {

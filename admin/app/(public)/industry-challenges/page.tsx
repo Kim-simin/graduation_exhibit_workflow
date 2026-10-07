@@ -13,6 +13,7 @@ import { Challenge, MajorCategory } from "@/types/challenge";
 import MajorFilterChips from "@/components/challenge/MajorFilterChips";
 import ChallengeCard from "@/components/challenge/ChallengeCard";
 import TeamApplicationModal from "@/components/challenge/TeamApplicationModal";
+import OfficialIndustryNotices from "@/components/challenge/OfficialIndustryNotices";
 import {
   Rocket,
   Search,
@@ -176,6 +177,8 @@ export default function IndustryChallengesPage() {
           </div>
         </div>
       </section>
+
+      <OfficialIndustryNotices />
 
       {/* 4. 학과별 FILTER UI (Pill / Chip Buttons) */}
       <section className="mb-6">

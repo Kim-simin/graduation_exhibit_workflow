@@ -69,8 +69,8 @@ export default function Sidebar() {
       label: "현직자 멘토링",
       href: "/mentoring",
       badge: {
-        text: "1:1 첨삭",
-        bg: "bg-sky-950/80 text-sky-300 border border-sky-700/50 dark:bg-sky-100 dark:text-sky-700 dark:border-sky-300",
+        text: "프로젝트",
+        bg: "bg-indigo-950/80 text-indigo-300 border border-indigo-700/50 dark:bg-indigo-100 dark:text-indigo-700 dark:border-indigo-300",
       },
       iconEmoji: "✨",
     },

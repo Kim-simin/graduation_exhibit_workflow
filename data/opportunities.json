@@ -88,7 +88,15 @@
     "officialSourceVerified": false,
     "recruitmentStatus": "UNKNOWN",
     "verificationReason": "학부생·대학생의 지원자격 원문 확인 필요; NST·대학·연구기관의 공식 상세 모집공고 확인 필요; 현재 접수 가능 여부 확인 필요",
-    "recruitmentEvidence": null
+    "recruitmentEvidence": null,
+    "applicantType": "student",
+    "studentEligible": true,
+    "studentEligibilityVerified": true,
+    "eligibleStudentStatus": "부산공유대학 참여학생",
+    "eligibilityStatus": "verified",
+    "eligibilityEvidence": "공식 안내 확인: 부산공유대학 참여 14개 대학 재학생 대상 시설 대여 개방",
+    "officialSourceUrl": "https://www.bbits.ac.kr/ko/support/studio/infra",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_gemini_academy_2026",
@@ -169,7 +177,16 @@
     "officialSourceVerified": false,
     "recruitmentStatus": "UNKNOWN",
     "verificationReason": "학부생·대학생의 지원자격 원문 확인 필요; NST·대학·연구기관의 공식 상세 모집공고 확인 필요; 현재 접수 가능 여부 확인 필요",
-    "recruitmentEvidence": null
+    "recruitmentEvidence": null,
+    "applicantType": "undergraduate_student",
+    "studentEligible": true,
+    "studentEligibilityVerified": true,
+    "eligibleStudentStatus": "전국 대학생 (재학/휴학)",
+    "eligibilityStatus": "verified",
+    "eligibilityText": "모집대상: 전공 무관 모든 대학생 (부산 지역은 동의대학교에서 수강 가능, 타 지역도 신청 가능)",
+    "eligibilityEvidence": "공식 공고 확인: 구글코리아·고용노동부 주관 전공 무관 모든 대학생 실전 AI 워크숍",
+    "officialSourceUrl": "https://www.pusan.ac.kr/kor/CMS/Board/Board.do?board_seq=1511268&mCode=MN095&mgr_seq=3&mode=view&page=1&searchID=title",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_ai_startup_competition_2026",
@@ -256,7 +273,16 @@
     "officialSourceVerified": false,
     "recruitmentStatus": "UNKNOWN",
     "verificationReason": "학부생·대학생의 지원자격 원문 확인 필요; NST·대학·연구기관의 공식 상세 모집공고 확인 필요; 현재 접수 가능 여부 확인 필요",
-    "recruitmentEvidence": null
+    "recruitmentEvidence": null,
+    "applicantType": "student",
+    "studentEligible": true,
+    "studentEligibilityVerified": true,
+    "eligibleStudentStatus": "전국 대학생 및 청년 예비창업팀",
+    "eligibilityStatus": "verified",
+    "eligibilityText": "참가대상: 전국 예비·신규창업팀(2~4인 이내의 팀)",
+    "eligibilityEvidence": "공식 공고 확인: 전국 대학생 및 청년 예비창업팀(2~4인) 참가 가능 AI 창업 경진대회",
+    "officialSourceUrl": "https://ai.pusan.ac.kr/bbs/ai/204/1463037/artclView.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_pnu_capstone_2026_2_general",
@@ -340,7 +366,16 @@
     "officialSourceVerified": false,
     "recruitmentStatus": "UNKNOWN",
     "verificationReason": "학부생·대학생의 지원자격 원문 확인 필요; NST·대학·연구기관의 공식 상세 모집공고 확인 필요; 현재 접수 가능 여부 확인 필요",
-    "recruitmentEvidence": null
+    "recruitmentEvidence": null,
+    "applicantType": "undergraduate_student",
+    "studentEligible": true,
+    "studentEligibilityVerified": true,
+    "eligibleStudentStatus": "학부 3학년 이상 재학생",
+    "eligibilityStatus": "verified",
+    "eligibilityText": "지원자격: 2026.2학기 캡스톤 디자인 정규 교과목 수강 학부 3학년 이상 재학생 (최소 3인 이상 팀)",
+    "eligibilityEvidence": "공식 공고 확인: 캡스톤디자인 또는 종합설계 정규교과목 수강 재학생 팀 과제비 지원",
+    "officialSourceUrl": "https://cse.pusan.ac.kr/bbs/cse/2056/1462942/artclView.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_pnu_capstone_2026_2_partner",
@@ -423,7 +458,16 @@
     "officialSourceVerified": false,
     "recruitmentStatus": "UNKNOWN",
     "verificationReason": "학부생·대학생의 지원자격 원문 확인 필요; NST·대학·연구기관의 공식 상세 모집공고 확인 필요; 현재 접수 가능 여부 확인 필요",
-    "recruitmentEvidence": null
+    "recruitmentEvidence": null,
+    "applicantType": "undergraduate_student",
+    "studentEligible": true,
+    "studentEligibilityVerified": true,
+    "eligibleStudentStatus": "학부 3학년 이상 재학생",
+    "eligibilityStatus": "verified",
+    "eligibilityText": "지원자격: 2026.2학기 캡스톤 디자인 정규 교과목 수강 학부 3학년 이상 재학생 (기업/지자체 연계형)",
+    "eligibilityEvidence": "공식 공고 확인: 기업 및 지자체 연계 캡스톤디자인 수강 재학생 팀 지원",
+    "officialSourceUrl": "https://cse.pusan.ac.kr/bbs/cse/2056/1462942/artclView.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_global_ax_pbl_2026",
@@ -527,7 +571,16 @@
     "studentParticipationVerified": true,
     "officialSourceVerified": true,
     "recruitmentStatus": "OPEN",
-    "verificationReason": "공식 원문에서 학생 참여자격과 현재 모집 확인"
+    "verificationReason": "공식 원문에서 학생 참여자격과 현재 모집 확인",
+    "applicantType": "undergraduate_student",
+    "studentEligible": true,
+    "studentEligibilityVerified": true,
+    "eligibleStudentStatus": "공학계열 재학생",
+    "eligibilityStatus": "verified",
+    "eligibilityText": "참가대상: 공학계열 대학생 및 학부 재학생 (선발인원 10명 내외)",
+    "eligibilityEvidence": "공식 공고문 명시: 한국-인도네시아 공학계열 학부생 대상 AIoT 현장 실증 공학교육 참가자 모집",
+    "officialSourceUrl": "https://www.pusan.ac.kr/kor/CMS/Board/Board.do?board_seq=1511038&mCode=MN095&mgr_seq=3&mode=view&page=1",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_pnu_vspace_infra",
@@ -611,7 +664,15 @@
     "officialSourceVerified": false,
     "recruitmentStatus": "UNKNOWN",
     "verificationReason": "학부생·대학생의 지원자격 원문 확인 필요; NST·대학·연구기관의 공식 상세 모집공고 확인 필요; 현재 접수 가능 여부 확인 필요",
-    "recruitmentEvidence": null
+    "recruitmentEvidence": null,
+    "applicantType": "student",
+    "studentEligible": true,
+    "studentEligibilityVerified": true,
+    "eligibleStudentStatus": "대학생 누구나",
+    "eligibilityStatus": "verified",
+    "eligibilityEvidence": "공식 안내 확인: 메이킹에 관심 있는 대학생 누구나 장비 이용 및 워크숍 지원",
+    "officialSourceUrl": "https://me.pusan.ac.kr/new/sub02/sub10.php",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_unist_ucrf_infra",
@@ -699,7 +760,15 @@
     "officialSourceVerified": false,
     "recruitmentStatus": "UNKNOWN",
     "verificationReason": "학부생·대학생의 지원자격 원문 확인 필요; NST·대학·연구기관의 공식 상세 모집공고 확인 필요; 현재 접수 가능 여부 확인 필요",
-    "recruitmentEvidence": null
+    "recruitmentEvidence": null,
+    "applicantType": "student",
+    "studentEligible": true,
+    "studentEligibilityVerified": true,
+    "eligibleStudentStatus": "이공계 학부·대학원 연구생",
+    "eligibilityStatus": "verified",
+    "eligibilityEvidence": "공식 안내 확인: 이공계 학부·대학원 연구생 첨단 공용 연구장비 지원",
+    "officialSourceUrl": "https://ucrf.unist.ac.kr/",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_bbits_multidisciplinary_2026",
@@ -776,7 +845,16 @@
     "officialSourceVerified": false,
     "recruitmentStatus": "CLOSED",
     "verificationReason": "학부생·대학생의 지원자격 원문 확인 필요; NST·대학·연구기관의 공식 상세 모집공고 확인 필요; 모집 마감",
-    "recruitmentEvidence": null
+    "recruitmentEvidence": null,
+    "applicantType": "undergraduate_student",
+    "studentEligible": true,
+    "studentEligibilityVerified": true,
+    "eligibleStudentStatus": "부산지역 4년제 대학 재학생",
+    "eligibilityStatus": "verified",
+    "eligibilityText": "지원자격: 부산지역 4년제 대학 재학생 (전공 무관, 팀 구성 1~5명 내외 다학제)",
+    "eligibilityEvidence": "공식 공고 확인: 부산공유대학 참여 14개 대학 재학생 대상 기업 연계 다학제 융합 프로젝트 수강 및 시제품 제작 지원",
+    "officialSourceUrl": "https://www.bbits.ac.kr/ko/community/community1/view/998",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6207",
@@ -849,7 +927,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "정규직 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52266&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6206",
@@ -922,7 +1007,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "researcher",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "위촉연구원 채용공고 (일반 학생 참여 프로젝트 아님)",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52276&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6205",
@@ -995,7 +1087,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "researcher",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "위촉연구원 채용공고 (일반 학생 참여 프로젝트 아님)",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52262&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6204",
@@ -1068,7 +1167,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "graduate_student",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "대학원 석·박사 학위과정생 모집공고 (학부생 지원 불가)",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52172&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6203",
@@ -1155,7 +1261,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "graduate_student",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "대학원 석·박사 학위과정생 모집공고 (학부생 지원 불가)",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52134&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6202",
@@ -1228,7 +1341,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "계약직/기간제 직원 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52132&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6201",
@@ -1301,7 +1421,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "researcher",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "박사후/석사후 연구원 채용공고 (학부생 지원 불가)",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52109&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6200",
@@ -1374,7 +1501,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "계약직/기간제 직원 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52098&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6199",
@@ -1447,7 +1581,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "계약직/기간제 직원 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52094&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6198",
@@ -1520,7 +1661,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "계약직/기간제 직원 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52072&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6197",
@@ -1593,7 +1741,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "계약직/기간제 직원 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52054&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6196",
@@ -1666,7 +1821,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "계약직/기간제 직원 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52051&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6195",
@@ -1739,7 +1901,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "researcher",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "박사후/석사후 연구원 채용공고 (학부생 지원 불가)",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52005&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6194",
@@ -1812,7 +1981,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "researcher",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "박사후/석사후 연구원 채용공고 (학부생 지원 불가)",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52004&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6193",
@@ -1885,7 +2061,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "계약직/기간제 직원 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52008&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6192",
@@ -1958,7 +2141,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "계약직/기간제 직원 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52007&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6191",
@@ -2031,7 +2221,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "계약직/기간제 직원 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52006&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6190",
@@ -2104,7 +2301,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "계약직/기간제 직원 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51989&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6188",
@@ -2177,7 +2381,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "계약직/기간제 직원 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51981&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6187",
@@ -2250,7 +2461,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "researcher",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "박사후/석사후 연구원 채용공고 (학부생 지원 불가)",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51978&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6186",
@@ -2323,7 +2541,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "정규직 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51970&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6185",
@@ -2396,7 +2621,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "정규직 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51969&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6184",
@@ -2469,7 +2701,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "정규직 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51968&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6183",
@@ -2542,7 +2781,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "정규직 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51967&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6182",
@@ -2615,7 +2861,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "정규직 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51966&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6181",
@@ -2688,7 +2941,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "정규직 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51965&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6180",
@@ -2761,7 +3021,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "계약직/기간제 직원 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51964&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6179",
@@ -2834,7 +3101,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "employee",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "정규직 채용공고",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51962&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_nst_6178",
@@ -2921,7 +3195,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "graduate_student",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "대학원 석·박사 학위과정생 모집공고 (학부생 지원 불가)",
+    "officialSourceUrl": "https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52009&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_pbanc_19",
@@ -2988,7 +3269,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "대학/산학협력단 기관 대상 정부 재정지원사업 공고 (학부생 직접 신청 불가)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/pbanc/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_pbanc_18",
@@ -3055,7 +3343,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "대학/산학협력단 기관 대상 정부 재정지원사업 공고 (학부생 직접 신청 불가)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/pbanc/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_pbanc_17",
@@ -3122,7 +3417,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "대학/산학협력단 기관 대상 정부 재정지원사업 공고 (학부생 직접 신청 불가)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/pbanc/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_pbanc_16",
@@ -3189,7 +3491,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "대학/산학협력단 기관 대상 정부 재정지원사업 공고 (학부생 직접 신청 불가)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/pbanc/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_pbanc_14",
@@ -3256,7 +3565,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "대학/산학협력단 기관 대상 정부 재정지원사업 공고 (학부생 직접 신청 불가)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/pbanc/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_pbanc_13",
@@ -3323,7 +3639,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "대학/산학협력단 기관 대상 정부 재정지원사업 공고 (학부생 직접 신청 불가)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/pbanc/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_pbanc_12",
@@ -3390,7 +3713,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "대학/산학협력단 기관 대상 정부 재정지원사업 공고 (학부생 직접 신청 불가)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/pbanc/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_pbanc_11",
@@ -3457,7 +3787,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "대학/산학협력단 기관 대상 정부 재정지원사업 공고 (학부생 직접 신청 불가)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/pbanc/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_pbanc_10",
@@ -3524,7 +3861,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "대학/산학협력단 기관 대상 정부 재정지원사업 공고 (학부생 직접 신청 불가)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/pbanc/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_pbanc_9",
@@ -3591,7 +3935,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "대학/산학협력단 기관 대상 정부 재정지원사업 공고 (학부생 직접 신청 불가)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/pbanc/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_team_a1a689793847",
@@ -3660,7 +4011,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "needs_review",
+    "exclusionReason": "대학 사업단 디렉토리 정보 (개별 학생 직접 신청 프로젝트 공식 근거 확인 필요)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/bizteam/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_team_95fbc6926033",
@@ -3729,7 +4087,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "needs_review",
+    "exclusionReason": "대학 사업단 디렉토리 정보 (개별 학생 직접 신청 프로젝트 공식 근거 확인 필요)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/bizteam/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_team_e9bef2cf55ae",
@@ -3798,7 +4163,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "needs_review",
+    "exclusionReason": "대학 사업단 디렉토리 정보 (개별 학생 직접 신청 프로젝트 공식 근거 확인 필요)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/bizteam/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_team_e611660d9963",
@@ -3867,7 +4239,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "needs_review",
+    "exclusionReason": "대학 사업단 디렉토리 정보 (개별 학생 직접 신청 프로젝트 공식 근거 확인 필요)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/bizteam/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_team_0572ffe202c8",
@@ -3936,7 +4315,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "needs_review",
+    "exclusionReason": "대학 사업단 디렉토리 정보 (개별 학생 직접 신청 프로젝트 공식 근거 확인 필요)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/bizteam/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_team_6d776770d815",
@@ -4005,7 +4391,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "needs_review",
+    "exclusionReason": "대학 사업단 디렉토리 정보 (개별 학생 직접 신청 프로젝트 공식 근거 확인 필요)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/bizteam/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_team_889302c60d55",
@@ -4074,7 +4467,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "needs_review",
+    "exclusionReason": "대학 사업단 디렉토리 정보 (개별 학생 직접 신청 프로젝트 공식 근거 확인 필요)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/bizteam/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_uniall_team_1466b10343de",
@@ -4143,7 +4543,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "needs_review",
+    "exclusionReason": "대학 사업단 디렉토리 정보 (개별 학생 직접 신청 프로젝트 공식 근거 확인 필요)",
+    "officialSourceUrl": "https://uniall.nrf.re.kr/biz/bizteam/list.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_ntis_77142",
@@ -4213,7 +4620,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "기관/연구단/기업 대상 정부 R&D 과제 공모 및 수요조사 (학생 직접 지원 불가)",
+    "officialSourceUrl": "https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_ntis_77141",
@@ -4283,7 +4697,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "기관/연구단/기업 대상 정부 R&D 과제 공모 및 수요조사 (학생 직접 지원 불가)",
+    "officialSourceUrl": "https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_ntis_77140",
@@ -4353,7 +4774,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "company",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "중소기업/법인 대상 혁신제품 규격 추가 모집",
+    "officialSourceUrl": "https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_ntis_77139",
@@ -4423,7 +4851,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "기관/연구단/기업 대상 정부 R&D 과제 공모 및 수요조사 (학생 직접 지원 불가)",
+    "officialSourceUrl": "https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_ntis_77138",
@@ -4493,7 +4928,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "기관/연구단/기업 대상 정부 R&D 과제 공모 및 수요조사 (학생 직접 지원 불가)",
+    "officialSourceUrl": "https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_ntis_77137",
@@ -4563,7 +5005,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "기관/연구단/기업 대상 정부 R&D 과제 공모 및 수요조사 (학생 직접 지원 불가)",
+    "officialSourceUrl": "https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_ntis_77136",
@@ -4633,7 +5082,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "기관/연구단/기업 대상 정부 R&D 과제 공모 및 수요조사 (학생 직접 지원 불가)",
+    "officialSourceUrl": "https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_ntis_77135",
@@ -4703,7 +5159,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "기관/연구단/기업 대상 정부 R&D 과제 공모 및 수요조사 (학생 직접 지원 불가)",
+    "officialSourceUrl": "https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_ntis_77134",
@@ -4773,7 +5236,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "institution",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "기관/연구단/기업 대상 정부 R&D 과제 공모 및 수요조사 (학생 직접 지원 불가)",
+    "officialSourceUrl": "https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_ntis_77133",
@@ -4843,7 +5313,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "faculty",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "대학 전임교원(연구책임자) 대상 정부 과제 공모",
+    "officialSourceUrl": "https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_ks_2026_svc_seoul",
@@ -4913,7 +5390,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "startup",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "스타트업/창업기업 대상 입주 멤버십 모집 (법인/사업자 대상)",
+    "officialSourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_ks_2026_tips_mod",
@@ -4983,7 +5467,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "startup",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "창업기업(법인) 대상 민간투자주도형 기술창업지원 (학부생 직접 참여 프로젝트 아님)",
+    "officialSourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_ks_2026_all_govt_startup",
@@ -5053,7 +5544,14 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "unknown",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "needs_review",
+    "exclusionReason": "중앙부처/지자체 창업지원사업 종합안내 (개별 지원 프로그램 아님)",
+    "officialSourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   },
   {
     "id": "opp_ks_2026_siliconvalley_gtm",
@@ -5123,6 +5621,13 @@
     "createdAt": "2026-09-30T01:15:19.828180+09:00",
     "updatedAt": "2026-09-30T01:15:19.828180+09:00",
     "lastCheckedAt": "2026-09-30T01:15:19.828180+09:00",
-    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00"
+    "lastChangedAt": "2026-09-30T01:15:19.828180+09:00",
+    "applicantType": "startup",
+    "studentEligible": false,
+    "studentEligibilityVerified": false,
+    "eligibilityStatus": "excluded",
+    "exclusionReason": "창업기업 대상 해외진출 지원사업 (법인/창업기업 대상)",
+    "officialSourceUrl": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do",
+    "lastVerifiedAt": "2026-10-04T10:34:07.499811+00:00"
   }
 ]

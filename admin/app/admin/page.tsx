@@ -1,4 +1,5 @@
 "use client";
+import TrafficPanel from "@/components/admin/TrafficPanel";
 
 import { useState, useEffect, useRef, useCallback, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
@@ -1172,6 +1173,7 @@ function AdminDashboardContent() {
           {/* TAB 1: WORKFLOW GRAPH (DASHBOARD) */}
           {adminTab === "dashboard" && (
             <div className="space-y-6">
+              <TrafficPanel />
               {/* Proactive Approval Gate Card when Waiting for Admin Decision */}
               {(runtimeData?.current_run?.status === "WAITING_FOR_APPROVAL" ||
                 runtimeData?.approval_status === "WAITING_FOR_APPROVAL") && (

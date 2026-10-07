@@ -91,13 +91,13 @@ export default function StudentsPage() {
           }}
         >
           <Sparkles style={{ width: "0.875rem", height: "0.875rem" }} />
-          Verified Graduate Talents Pool
+          Graduate Talents Pool
         </div>
         <h1 style={{ fontSize: "2.25rem", fontWeight: 800, color: "#ffffff", margin: "0 0 0.5rem" }}>
           전국 학과 및 인재풀
         </h1>
         <p style={{ fontSize: "1rem", color: "#94a3b8", maxWidth: "48rem", lineHeight: 1.6, margin: 0 }}>
-          시각·산업·공간 디자인부터 컴퓨터공학, 인공지능, 미디어, 경영 등 전국 주요 대학 다양한 학과의 졸업전시 및 프로젝트 출품자 중 실무 역량이 검증된 대학생 인재풀을 탐색하고 즉시 스카우트 또는 협업 프로젝트를 의뢰하십시오.
+          대학생의 소속 학과와 포트폴리오를 확인하는 인재풀입니다. 실제 등록된 프로필을 기준으로 탐색할 수 있습니다.
         </p>
       </div>
 

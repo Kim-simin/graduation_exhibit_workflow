@@ -1,4 +1,5 @@
 import challengeData from "@/data/industry_challenges.json";
+import { withoutRemovedContent } from "@/lib/content-removals";
 import {
   Challenge,
   ParentChallenge,
@@ -11,7 +12,7 @@ export function getMajorCategories(): MajorCategory[] {
 }
 
 export function getParentChallenges(): ParentChallenge[] {
-  return (challengeData.parentChallenges as ParentChallenge[]) || [];
+  return withoutRemovedContent("parentChallenges", (challengeData.parentChallenges as ParentChallenge[]) || []);
 }
 
 export function getParentChallengeById(id: string): ParentChallenge | undefined {
@@ -19,7 +20,7 @@ export function getParentChallengeById(id: string): ParentChallenge | undefined 
 }
 
 export function getChallenges(): Challenge[] {
-  return (challengeData.challenges as unknown as Challenge[]) || [];
+  return withoutRemovedContent("challenges", (challengeData.challenges as unknown as Challenge[]) || []);
 }
 
 export function getChallengeById(idOrSlug: string): Challenge | undefined {
