@@ -305,10 +305,22 @@ export async function getLiveMentoringProjects(): Promise<MentoringProjectRecord
       .eq("target_project_id", "__project_registry__")
       .order("created_at", { ascending: false });
 
+    // Excluded dummy/test project IDs (never show mock/test registrations)
+    const EXCLUDED_IDS = new Set([
+      "proj-1791342435931",
+      "proj-reg-1791342670542",
+      "proj-challenge-1791342680306",
+      "proj-seed-1791342408973",
+      "test-1791342386411",
+      "test-1791342391301",
+    ]);
+
     if (!error && data) {
       for (const row of data) {
+        if (EXCLUDED_IDS.has(row.source_project_id)) continue;
         try {
           const parsed = JSON.parse(row.message);
+          if (parsed.id && EXCLUDED_IDS.has(parsed.id)) continue;
           results.push({
             ...parsed,
             id: row.source_project_id || parsed.id,
@@ -325,4 +337,5 @@ export async function getLiveMentoringProjects(): Promise<MentoringProjectRecord
 
   return results;
 }
+
 
