@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import {
   Search,
@@ -20,11 +20,13 @@ import {
   ArrowUpDown,
   Tag,
   HelpCircle,
+  Plus,
 } from "lucide-react";
 import {
   getProjects,
   filterProjects,
   getProjectSummaryMetrics,
+  adaptSupabaseProject,
   STAGE_LIST_STUDENT,
   STAGE_LIST_COMPANY,
   REVIEW_STATUS_LIST,
@@ -32,7 +34,8 @@ import {
   PROJECT_CATEGORIES,
   PROJECT_TYPES_FILTER,
 } from "@/lib/project";
-import { ProjectOrigin } from "@/types/project";
+import { getLiveMentoringProjects } from "@/lib/supabase";
+import { MentoringProject, ProjectOrigin } from "@/types/project";
 import ProjectCard from "@/components/mentoring/ProjectCard";
 
 const UNIVERSITY_OPTIONS = [
@@ -71,11 +74,33 @@ const SORT_OPTIONS = [
 ];
 
 export default function MentoringProjectsPage() {
-  // Single Source of Truth: 검증된 데이터만 로드 및 ID 기준 중복 제거 (De-duplication)
-  const allProjects = useMemo(() => {
-    const list = getProjects();
-    return Array.from(new Map(list.map((p) => [p.id, p])).values());
+  const [supabaseProjects, setSupabaseProjects] = useState<MentoringProject[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  // Load registered projects from Supabase DB on mount
+  useEffect(() => {
+    async function loadDbProjects() {
+      try {
+        const records = await getLiveMentoringProjects();
+        if (records && records.length > 0) {
+          const adapted = records.map(adaptSupabaseProject);
+          setSupabaseProjects(adapted);
+        }
+      } catch (err) {
+        console.error("Failed to load DB projects:", err);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    loadDbProjects();
   }, []);
+
+  // Single Source of Truth: 검증된 시드 데이터 + Supabase 실데이터 병합 및 ID 기준 중복 제거
+  const allProjects = useMemo(() => {
+    const seedList = getProjects();
+    const combined = [...seedList, ...supabaseProjects];
+    return Array.from(new Map(combined.map((p) => [p.id, p])).values());
+  }, [supabaseProjects]);
 
   const [activeOriginTab, setActiveOriginTab] = useState<"all" | "student" | "company">("all");
 
@@ -151,25 +176,41 @@ export default function MentoringProjectsPage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(168,85,247,0.1),transparent_50%)] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-          <div className="flex flex-wrap items-center gap-2 mb-3.5">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">
-              <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
-              PROJECT × INDUSTRY MENTORING
-            </span>
-            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-purple-500/15 text-purple-300 border border-purple-500/30">
-              <Briefcase className="w-3.5 h-3.5 text-purple-400" />
-              양방향 프로젝트 매칭 플랫폼
-            </span>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <div className="flex flex-wrap items-center gap-2 mb-3.5">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">
+                  <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
+                  PROJECT × INDUSTRY MENTORING
+                </span>
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-purple-500/15 text-purple-300 border border-purple-500/30">
+                  <Briefcase className="w-3.5 h-3.5 text-purple-400" />
+                  양방향 프로젝트 매칭 플랫폼
+                </span>
+              </div>
+
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                프로젝트 현직자 멘토링
+              </h1>
+
+              <p className="mt-3 text-sm sm:text-base text-slate-300 max-w-3xl leading-relaxed">
+                학생이 준비 중인 프로젝트와 기업이 제안한 산학협력 Challenge를 함께 확인하고,
+                현업 피드백 · 멘토링 · 실증 · 산학협력 연결을 만들 수 있습니다.
+              </p>
+            </div>
+
+            {/* [+ 프로젝트 등록] 버튼: 데스크톱 우측 상단, 모바일 전체 너비 */}
+            <div className="mt-2 md:mt-0 shrink-0">
+              <Link
+                href="/mentoring/projects/new"
+                className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 text-white font-bold text-sm shadow-lg shadow-indigo-600/30 hover:shadow-indigo-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all"
+              >
+                <Plus className="w-5 h-5 text-white stroke-[2.5]" />
+                <span>+ 프로젝트 등록</span>
+              </Link>
+            </div>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            프로젝트 현직자 멘토링
-          </h1>
-
-          <p className="mt-3 text-sm sm:text-base text-slate-300 max-w-3xl leading-relaxed">
-            학생이 준비 중인 프로젝트와 기업이 제안한 산학협력 Challenge를 함께 확인하고,
-            현업 피드백 · 멘토링 · 실증 · 산학협력 연결을 만들 수 있습니다.
-          </p>
 
           <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3.5">
             <div className="bg-[#151a2e]/90 border border-slate-800 rounded-2xl p-4 flex items-center gap-3.5 shadow-sm">
