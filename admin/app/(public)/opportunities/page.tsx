@@ -3,56 +3,78 @@
 import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import {
-  Compass,
   Search,
-  Filter,
-  Layers,
-  Sparkles,
   Building2,
   GraduationCap,
-  Calendar,
-  Wrench,
-  CheckCircle2,
-  ExternalLink,
-  ShieldCheck,
-  ChevronRight,
-  Cpu,
   Clock,
-  Briefcase,
-  SlidersHorizontal,
+  ShieldCheck,
   X,
+  Briefcase,
+  Trophy,
+  Cpu,
+  SlidersHorizontal,
+  RotateCcw,
 } from "lucide-react";
-import { getOpportunities, getEquipments, isStudentRnDOpportunity } from "@/lib/opportunity";
-import { Opportunity, Equipment, OpportunityType, OpportunityStatus, AccessScope } from "@/types/opportunity";
-import OpportunityCard from "@/components/opportunity/OpportunityCard";
-import EquipmentCard from "@/components/opportunity/EquipmentCard";
+import {
+  getOpportunities,
+  getEquipments,
+  categorizeOpportunity,
+  getNormalizedFacilities,
+  getRecruitmentStatusInfo,
+  isUniversityEligible,
+  isStrictMajorEligible,
+  cleanMajorKeyword,
+  isStudentEligibleOpportunity,
+} from "@/lib/opportunity";
+import { Opportunity, Equipment, FacilityItem, CoreCategory } from "@/types/opportunity";
+import ProjectCard from "@/components/opportunity/ProjectCard";
+import CompetitionCard from "@/components/opportunity/CompetitionCard";
+import FacilityCard from "@/components/opportunity/FacilityCard";
 import ResourceDetailModal from "@/components/opportunity/ResourceDetailModal";
 
 const UNIVERSITY_OPTIONS = [
   { id: "all", label: "전체 대학교 (전국/공유대학)" },
   { id: "부산대학교", label: "부산대학교 (PNU)" },
-  { id: "UNIST", label: "UNIST (울산과학기술원)" },
-  { id: "부산공유대학", label: "부산공유대학 14개 참여대학" },
-  { id: "국립부경대학교", label: "국립부경대학교" },
+  { id: "국립부경대학교", label: "국립부경대학교 (PKNU)" },
   { id: "동아대학교", label: "동아대학교" },
   { id: "국립한국해양대학교", label: "국립한국해양대학교" },
-  { id: "한양대학교", label: "한양대학교 (ERICA 연계)" },
+  { id: "UNIST", label: "UNIST (울산과학기술원)" },
+  { id: "부산경상대학교", label: "부산경상대학교" },
+  { id: "부산공유대학", label: "부산공유대학 14개 참여대학" },
+  { id: "한양대학교", label: "한양대학교 (ERICA)" },
+  { id: "고려대학교", label: "고려대학교" },
+  { id: "경희대학교", label: "경희대학교" },
+  { id: "경북대학교", label: "경북대학교" },
+  { id: "영남대학교", label: "영남대학교" },
+  { id: "강원대학교", label: "강원대학교" },
+  { id: "전남대학교", label: "전남대학교" },
+  { id: "충남대학교", label: "충남대학교" },
 ];
 
 const MAJOR_OPTIONS = [
   { id: "all", label: "전체 전공 (제한 없음)" },
+  { id: "디지털크리에이터과", label: "🎬 디지털크리에이터 / 미디어콘텐츠" },
   { id: "컴퓨터공학과", label: "💻 컴퓨터공학 / 소프트웨어 / 인공지능" },
   { id: "기계공학과", label: "⚙️ 기계공학 / 메카트로닉스 / 로봇" },
   { id: "디자인학과", label: "🎨 시각디자인 / 산업디자인 / 제품디자인" },
-  { id: "신소재공학과", label: "🔬 신소재공학 / 화학 / 물리학" },
   { id: "전기전자공학과", label: "⚡ 전기전자공학 / 반도체공학" },
+  { id: "신소재공학과", label: "🔬 신소재공학 / 화학 / 물리학" },
   { id: "경영학과", label: "📊 경영 / 기술창업 / 창업기획" },
   { id: "건축공학과", label: "🏛️ 건축학 / 실내건축디자인" },
   { id: "바이오메디컬", label: "🧪 바이오 / 생명과학 / 환경공학" },
 ];
 
+const STATUS_OPTIONS = [
+  { id: "all", label: "전체 보기 (마감 포함)" },
+  { id: "OPEN", label: "모집중" },
+  { id: "ROLLING", label: "상시모집" },
+  { id: "UPCOMING", label: "모집예정" },
+  { id: "CLOSED", label: "마감" },
+];
+
 export default function OpportunitiesPage() {
   const [referenceTime, setReferenceTime] = useState<string | undefined>(undefined);
+
   useEffect(() => {
     const refreshTime = () => setReferenceTime(new Date().toISOString());
     refreshTime();
@@ -63,168 +85,277 @@ export default function OpportunitiesPage() {
       window.removeEventListener("focus", refreshTime);
     };
   }, []);
-  const allOpportunities = useMemo(() => getOpportunities(referenceTime).filter(o => o.approvalStatus === "PUBLISHED"), [referenceTime]);
+
+  // Raw Published Data
+  const allOpportunities = useMemo(
+    () => getOpportunities(referenceTime).filter((o) => o.approvalStatus === "PUBLISHED"),
+    [referenceTime]
+  );
   const allEquipments = useMemo(() => getEquipments(), []);
 
-  // Filter States
+  // Admin 전용 학생 참여 자격 Gate 필터:
+  // "verified": 학생 참여 가능 [검증완료] (기본값)
+  // "needs_review": [학생 참여 여부 확인 필요]
+  // "excluded": [제외된 공고 (채용/기업/기관)]
+  // "all": [전체 공고]
+  const [gateFilter, setGateFilter] = useState<"verified" | "needs_review" | "excluded" | "all">("verified");
+
+  // 3대 핵심 카테고리별 원시 데이터 분리 및 노멀라이징 (Admin Gate 필터 연동)
+  const rawProjects = useMemo(() => {
+    return allOpportunities.filter((o) => {
+      if (categorizeOpportunity(o) !== "PROJECT") return false;
+      if (gateFilter === "verified") return isStudentEligibleOpportunity(o) && o.status !== "UNKNOWN";
+      if (gateFilter === "needs_review") return o.eligibilityStatus === "needs_review";
+      if (gateFilter === "excluded") return o.eligibilityStatus === "excluded";
+      return true;
+    });
+  }, [allOpportunities, gateFilter]);
+
+  const rawCompetitions = useMemo(() => {
+    return allOpportunities.filter((o) => {
+      if (categorizeOpportunity(o) !== "COMPETITION") return false;
+      if (gateFilter === "verified") return isStudentEligibleOpportunity(o) && o.status !== "UNKNOWN";
+      if (gateFilter === "needs_review") return o.eligibilityStatus === "needs_review";
+      if (gateFilter === "excluded") return o.eligibilityStatus === "excluded";
+      return true;
+    });
+  }, [allOpportunities, gateFilter]);
+
+  const rawFacilities = useMemo(() => {
+    return getNormalizedFacilities(allOpportunities, allEquipments);
+  }, [allOpportunities, allEquipments]);
+
+  // 상단 3개 필터 상태 (소속 대학, 내 전공, 모집 상태)
   const [selectedUniv, setSelectedUniv] = useState<string>("all");
   const [selectedMajor, setSelectedMajor] = useState<string>("all");
-  const [activeTab, setActiveTab] = useState<"ALL" | "RESOURCES" | "RND" | "PROJECTS" | "EQUIPMENT">("ALL");
-  const [searchQuery, setSearchQuery] = useState<string>("");
   const [statusFilter, setStatusFilter] = useState<string>("all");
-  const [equipmentCategory, setEquipmentCategory] = useState<string>("all");
 
-  // Modal State
-  const [selectedItem, setSelectedItem] = useState<Opportunity | Equipment | null>(null);
-  const [selectedKind, setSelectedKind] = useState<"OPPORTUNITY" | "EQUIPMENT" | null>(null);
+  // 검색어 상태
+  const [searchQuery, setSearchQuery] = useState<string>("");
 
-  // General Filtered Opportunities (with Search & Status)
-  const filteredOpportunities = useMemo(() => {
-    return allOpportunities.filter((opp) => {
-      // University filter
-      if (selectedUniv !== "all") {
-        const uMatch =
-          opp.crossUniversityAvailable ||
-          opp.eligibleUniversities.includes("ALL") ||
-          opp.eligibleUniversities.some((u) => u.includes(selectedUniv) || selectedUniv.includes(u));
-        if (!uMatch) return false;
+  // 현재 활성 카테고리 탭 (PROJECT | COMPETITION | FACILITY)
+  const [activeCategory, setActiveCategory] = useState<CoreCategory>("PROJECT");
+
+  // 장비·시설 내부 Sub-tab 상태 ("ALL" | "SPACE" | "EQUIPMENT")
+  const [facilitySubTab, setFacilitySubTab] = useState<"ALL" | "SPACE" | "EQUIPMENT">("ALL");
+
+  // 장비 전용 이용방식 필터 ("all" | "ANALYSIS_REQUEST" | "DIRECT_USE")
+  const [usageMethodFilter, setUsageMethodFilter] = useState<string>("all");
+
+  // 장비 전용 연구실/분과 필터 ("all" | labCategory)
+  const [labFilter, setLabFilter] = useState<string>("all");
+
+  // 상세 모달 상태
+  const [selectedItem, setSelectedItem] = useState<Opportunity | FacilityItem | null>(null);
+
+  // 1. 프로젝트 엄격 필터링
+  const filteredProjects = useMemo(() => {
+    return rawProjects.filter((p) => {
+      // 소속 대학 자격 검증
+      if (!isUniversityEligible(selectedUniv, p.eligibleUniversities, p.crossUniversityAvailable, p.providerName)) {
+        return false;
       }
 
-      // Major filter
+      // 내 전공 자격 검증 (엄격 규칙: 설명 단순 매칭 금지, 공식 전공 배열 또는 전공무관만 허용)
+      if (!isStrictMajorEligible(selectedMajor, p.eligibleMajors, p.eligibleDepartments, p.majorRestriction)) {
+        return false;
+      }
+
+      // 모집 상태 검증
+      const sInfo = getRecruitmentStatusInfo(p.status, p.recruitmentEndAt, p.recruitmentEvidence?.rollingAdmission);
+      if (statusFilter !== "all") {
+        if (statusFilter === "OPEN" && sInfo.key !== "OPEN" && sInfo.key !== "ROLLING") return false;
+        if (statusFilter === "ROLLING" && sInfo.key !== "ROLLING") return false;
+        if (statusFilter === "UPCOMING" && sInfo.key !== "UPCOMING") return false;
+        if (statusFilter === "CLOSED" && sInfo.key !== "CLOSED") return false;
+      }
+
+      // 검색어 검증
+      if (searchQuery.trim()) {
+        const q = searchQuery.toLowerCase().trim();
+        const matchTitle = p.title.toLowerCase().includes(q);
+        const matchProvider = p.providerName.toLowerCase().includes(q);
+        const matchDesc = p.description.toLowerCase().includes(q);
+        const matchTags = p.tags?.some((t) => t.toLowerCase().includes(q));
+        if (!matchTitle && !matchProvider && !matchDesc && !matchTags) return false;
+      }
+
+      return true;
+    });
+  }, [rawProjects, selectedUniv, selectedMajor, statusFilter, searchQuery]);
+
+  // 2. 공모전 엄격 필터링
+  const filteredCompetitions = useMemo(() => {
+    return rawCompetitions.filter((c) => {
+      // 소속 대학 자격 검증
+      if (!isUniversityEligible(selectedUniv, c.eligibleUniversities, c.crossUniversityAvailable, c.providerName)) {
+        return false;
+      }
+
+      // 내 전공 자격 검증
+      if (!isStrictMajorEligible(selectedMajor, c.eligibleMajors, c.eligibleDepartments, c.majorRestriction)) {
+        return false;
+      }
+
+      // 모집 상태 검증
+      const sInfo = getRecruitmentStatusInfo(c.status, c.recruitmentEndAt, c.recruitmentEvidence?.rollingAdmission);
+      if (statusFilter !== "all") {
+        if (statusFilter === "OPEN" && sInfo.key !== "OPEN" && sInfo.key !== "ROLLING") return false;
+        if (statusFilter === "ROLLING" && sInfo.key !== "ROLLING") return false;
+        if (statusFilter === "UPCOMING" && sInfo.key !== "UPCOMING") return false;
+        if (statusFilter === "CLOSED" && sInfo.key !== "CLOSED") return false;
+      }
+
+      // 검색어 검증
+      if (searchQuery.trim()) {
+        const q = searchQuery.toLowerCase().trim();
+        const matchTitle = c.title.toLowerCase().includes(q);
+        const matchProvider = c.providerName.toLowerCase().includes(q);
+        const matchDesc = c.description.toLowerCase().includes(q);
+        const matchTags = c.tags?.some((t) => t.toLowerCase().includes(q));
+        if (!matchTitle && !matchProvider && !matchDesc && !matchTags) return false;
+      }
+
+      return true;
+    });
+  }, [rawCompetitions, selectedUniv, selectedMajor, statusFilter, searchQuery]);
+
+  // 장비·시설 카운트 (전체 / 공유 공간 / 전문 연구장비)
+  const spaceCount = useMemo(
+    () => rawFacilities.filter((f) => f.subType === "SPACE").length,
+    [rawFacilities]
+  );
+  const equipmentCount = useMemo(
+    () => rawFacilities.filter((f) => f.subType === "EQUIPMENT").length,
+    [rawFacilities]
+  );
+
+  // 고유 연구실 분과 목록
+  const labOptions = useMemo(() => {
+    const labs = new Set<string>();
+    rawFacilities.forEach((f) => {
+      if (f.labCategory) labs.add(f.labCategory);
+    });
+    return Array.from(labs);
+  }, [rawFacilities]);
+
+  // 3. 장비 및 시설 엄격 필터링
+  const filteredFacilities = useMemo(() => {
+    return rawFacilities.filter((f) => {
+      // Sub-tab 필터 ([전체] / [공유 공간] / [전문 연구장비])
+      if (facilitySubTab === "SPACE" && f.subType !== "SPACE") return false;
+      if (facilitySubTab === "EQUIPMENT" && f.subType !== "EQUIPMENT") return false;
+
+      // 전문 연구장비 전용 이용방식 필터
+      if (usageMethodFilter !== "all" && f.subType === "EQUIPMENT") {
+        if (f.usageType !== usageMethodFilter) return false;
+      }
+
+      // 전문 연구장비 전용 연구실/분과 필터
+      if (labFilter !== "all" && f.subType === "EQUIPMENT") {
+        if (f.labCategory !== labFilter) return false;
+      }
+
+      // 소속 대학 자격 검증
+      if (selectedUniv !== "all") {
+        const canAccess =
+          f.externalUserAccess ||
+          f.university.includes(selectedUniv) ||
+          selectedUniv.includes(f.university);
+        if (!canAccess) return false;
+      }
+
+      // 내 전공 자격 검증
       if (selectedMajor !== "all") {
-        const mClean = selectedMajor.replace(/학과|전공|학부|과/g, "").trim().toLowerCase();
-        const isAllEligible = !opp.majorRestriction || opp.eligibleMajors.includes("ALL");
-        if (!isAllEligible) {
-          const matchMajor = opp.eligibleMajors.some((em) => {
-            const emClean = em.replace(/학과|전공|학부|과/g, "").trim().toLowerCase();
+        const mClean = cleanMajorKeyword(selectedMajor);
+        const isAll =
+          f.eligibleMajors.length === 0 ||
+          f.eligibleMajors.includes("ALL") ||
+          f.eligibleMajors.includes("전공무관");
+        if (!isAll) {
+          const matched = f.eligibleMajors.some((em) => {
+            const emClean = cleanMajorKeyword(em);
             return emClean.includes(mClean) || mClean.includes(emClean);
           });
-          const matchTag = opp.tags.some((t) => t.toLowerCase().includes(mClean));
-          const matchField = opp.fields.some((f) => f.toLowerCase().includes(mClean));
-          if (!matchMajor && !matchTag && !matchField) return false;
+          if (!matched) return false;
         }
       }
 
-      // Status filter
-      if (statusFilter !== "all" && opp.status !== statusFilter) {
-        return false;
+      // 모집/이용 상태 검증
+      if (statusFilter !== "all") {
+        if (statusFilter === "CLOSED" && f.status !== "MAINTENANCE" && f.status !== "CLOSED") {
+          return false;
+        }
+        if (statusFilter === "UPCOMING" && f.status !== "UPCOMING") {
+          return false;
+        }
+        if ((statusFilter === "OPEN" || statusFilter === "ROLLING") && (f.status === "MAINTENANCE" || f.status === "CLOSED")) {
+          return false;
+        }
       }
 
-      // Search Query
+      // 검색어 다중 필드 검증 (장비명, 영문명, 모델명, 소속대학, 연구실, 설치장소)
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase().trim();
-        const matchTitle = opp.title.toLowerCase().includes(q);
-        const matchDesc = opp.description.toLowerCase().includes(q);
-        const matchProvider = opp.providerName.toLowerCase().includes(q);
-        const matchTags = opp.tags.some((t) => t.toLowerCase().includes(q));
-        const matchTech = opp.technologies.some((t) => t.toLowerCase().includes(q));
-        if (!matchTitle && !matchDesc && !matchProvider && !matchTags && !matchTech) {
+        const matchName = f.name.toLowerCase().includes(q);
+        const matchNameEn = (f.nameEn || "").toLowerCase().includes(q);
+        const matchModel = (f.model || "").toLowerCase().includes(q);
+        const matchUniv = f.university.toLowerCase().includes(q);
+        const matchOrg = f.managingOrg.toLowerCase().includes(q);
+        const matchLab = (f.labCategory || "").toLowerCase().includes(q);
+        const matchLocation = f.location.toLowerCase().includes(q);
+        const matchCondition = f.usageCondition.toLowerCase().includes(q);
+        const matchTags = f.tags.some((t) => t.toLowerCase().includes(q));
+
+        if (
+          !matchName &&
+          !matchNameEn &&
+          !matchModel &&
+          !matchUniv &&
+          !matchOrg &&
+          !matchLab &&
+          !matchLocation &&
+          !matchCondition &&
+          !matchTags
+        ) {
           return false;
         }
       }
 
       return true;
     });
-  }, [allOpportunities, selectedUniv, selectedMajor, statusFilter, searchQuery]);
+  }, [
+    rawFacilities,
+    facilitySubTab,
+    usageMethodFilter,
+    labFilter,
+    selectedUniv,
+    selectedMajor,
+    statusFilter,
+    searchQuery,
+  ]);
 
-  // Filtered Equipments
-  const filteredEquipments = useMemo(() => {
-    return allEquipments.filter((eq) => {
-      // University filter
-      if (selectedUniv !== "all") {
-        const uMatch =
-          eq.external_user_access ||
-          eq.university.includes(selectedUniv) ||
-          selectedUniv.includes(eq.university);
-        if (!uMatch) return false;
-      }
-
-      // Major filter
-      if (selectedMajor !== "all") {
-        const mClean = selectedMajor.replace(/학과|전공|학부|과/g, "").trim().toLowerCase();
-        const majorMatch =
-          eq.related_majors.some((rm) => {
-            const rmClean = rm.replace(/학과|전공|학부|과/g, "").trim().toLowerCase();
-            return rmClean.includes(mClean) || mClean.includes(rmClean);
-          }) || eq.tags.some((t) => t.toLowerCase().includes(mClean));
-        if (!majorMatch) return false;
-      }
-
-      // Equipment Category filter
-      if (equipmentCategory !== "all" && eq.equipment_category !== equipmentCategory) {
-        return false;
-      }
-
-      // Search Query
-      if (searchQuery.trim()) {
-        const q = searchQuery.toLowerCase().trim();
-        const matchName = eq.equipment_name.toLowerCase().includes(q);
-        const matchModel = (eq.model || "").toLowerCase().includes(q);
-        const matchWork = (eq.supported_work || eq.supported_research || "").toLowerCase().includes(q);
-        const matchTags = eq.tags.some((t) => t.toLowerCase().includes(q));
-        if (!matchName && !matchModel && !matchWork && !matchTags) {
-          return false;
-        }
-      }
-
-      return true;
-    });
-  }, [allEquipments, selectedUniv, selectedMajor, equipmentCategory, searchQuery]);
-
-  // Derived sections for the 4 core student questions
-  const section1Resources = useMemo(() => {
-    return filteredOpportunities.filter(
-      (o) =>
-        o.type === "SHARED_INFRASTRUCTURE" ||
-        o.type === "EDUCATION" ||
-        o.type === "EQUIPMENT" ||
-        o.type === "RESEARCH_EQUIPMENT"
-    );
-  }, [filteredOpportunities]);
-
-  const section2RnD = useMemo(() => {
-    return filteredOpportunities.filter(o => isStudentRnDOpportunity(o, referenceTime));
-  }, [filteredOpportunities, referenceTime]);
-
-  const section3Projects = useMemo(() => {
-    return filteredOpportunities.filter(
-      (o) =>
-        (o.type === "CAPSTONE" ||
-          o.type === "COMPETITION" ||
-          o.type === "MULTIDISCIPLINARY" ||
-          o.type === "STARTUP" ||
-          isStudentRnDOpportunity(o, referenceTime)) &&
-        (o.status === "OPEN" || o.status === "UPCOMING")
-    );
-  }, [filteredOpportunities, referenceTime]);
-
-  const handleOpenOpportunityModal = (opp: Opportunity) => {
-    setSelectedItem(opp);
-    setSelectedKind("OPPORTUNITY");
-  };
-
-  const handleOpenEquipmentModal = (eq: Equipment) => {
-    setSelectedItem(eq);
-    setSelectedKind("EQUIPMENT");
-  };
-
+  // 필터 초기화 핸들러
   const handleResetFilters = () => {
     setSelectedUniv("all");
     setSelectedMajor("all");
-    setActiveTab("ALL");
-    setSearchQuery("");
     setStatusFilter("all");
-    setEquipmentCategory("all");
+    setGateFilter("verified");
+    setFacilitySubTab("ALL");
+    setUsageMethodFilter("all");
+    setLabFilter("all");
+    setSearchQuery("");
   };
 
-  // Distinct equipment categories
-  const equipmentCategories = useMemo(() => {
-    const set = new Set<string>();
-    allEquipments.forEach((e) => {
-      if (e.equipment_category) set.add(e.equipment_category);
-    });
-    return Array.from(set);
-  }, [allEquipments]);
+  const isFilterActive =
+    selectedUniv !== "all" ||
+    selectedMajor !== "all" ||
+    statusFilter !== "all" ||
+    gateFilter !== "verified" ||
+    facilitySubTab !== "ALL" ||
+    usageMethodFilter !== "all" ||
+    labFilter !== "all" ||
+    searchQuery.trim() !== "";
 
   return (
     <div className="min-h-screen bg-[#0b0e17] text-slate-100 font-sans pb-24">
@@ -237,78 +368,85 @@ export default function OpportunitiesPage() {
           <div className="flex flex-wrap items-center gap-2 mb-4">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              공식 출처 기반 공유자원·모집 정보
+              공식 출처 기반 정보
             </span>
             <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
               <ShieldCheck className="w-3.5 h-3.5 text-indigo-400" />
-              대학·지자체·컨소시엄 정품 데이터
-            </span>
-            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-mono text-cyan-400 bg-cyan-950/40 border border-cyan-800/50">
-              R&D 모집기간 현재 시각 기준
+              신청 조건은 공식 원문에서 확인
             </span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            전국 대학 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-300 to-emerald-400">공유자원 & 실전 R&D·프로젝트</span> 허브
+            전국 대학 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-300 to-emerald-400">공유자원 & 실전 R&D·공모전</span> 허브
           </h1>
           <p className="mt-3.5 text-sm sm:text-base text-slate-300 max-w-3xl leading-relaxed">
-            학생이 자신의 <strong>소속 학교</strong>와 <strong>전공</strong>을 기준으로 지금 즉시 신청 가능한
-            공유 캠퍼스 인프라, 실전 산학 R&D, 캡스톤 프로젝트, 최첨단 연구장비를 원클릭으로 탐색하고 공식 신청하세요.
+            학생이 자신의 <strong>소속 학교</strong>와 <strong>전공</strong>을 기준으로 지원 가능한 실전 산학 프로젝트,
+            상금과 혜택이 주어지는 공모전, 최첨단 연구·제작 공용 장비 및 시설을 한눈에 탐색하고 공식 신청하세요.
           </p>
 
-          {/* Quick Metrics Bar */}
-          <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <div className="bg-[#151a2e]/90 border border-slate-800 rounded-2xl p-4 flex items-center gap-3.5 shadow-sm">
-              <div className="w-10 h-10 rounded-xl bg-purple-500/15 flex items-center justify-center text-purple-400 shrink-0">
-                <Building2 className="w-5 h-5" />
-              </div>
-              <div>
-                <p className="text-[11px] text-slate-400 font-medium">내 전공 사용 가능 자원</p>
-                <p className="text-xl font-extrabold text-white font-mono mt-0.5">{section1Resources.length}건</p>
-              </div>
-            </div>
-
-            <div className="bg-[#151a2e]/90 border border-slate-800 rounded-2xl p-4 flex items-center gap-3.5 shadow-sm">
-              <div className="w-10 h-10 rounded-xl bg-cyan-500/15 flex items-center justify-center text-cyan-400 shrink-0">
-                <Sparkles className="w-5 h-5" />
-              </div>
-              <div>
-                <p className="text-[11px] text-slate-400 font-medium">지금 참여 가능한 R&D</p>
-                <p className="text-xl font-extrabold text-white font-mono mt-0.5">{section2RnD.length}건</p>
-              </div>
-            </div>
-
-            <div className="bg-[#151a2e]/90 border border-slate-800 rounded-2xl p-4 flex items-center gap-3.5 shadow-sm">
-              <div className="w-10 h-10 rounded-xl bg-emerald-500/15 flex items-center justify-center text-emerald-400 shrink-0">
+          {/* Quick Metrics Bar: 3대 핵심 카테고리 현황 */}
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+            <div
+              onClick={() => setActiveCategory("PROJECT")}
+              className={`border rounded-2xl p-4 flex items-center gap-3.5 cursor-pointer transition-all ${
+                activeCategory === "PROJECT"
+                  ? "bg-[#18203c] border-indigo-500/80 shadow-lg shadow-indigo-950/40"
+                  : "bg-[#151a2e]/90 border-slate-800 hover:border-slate-700"
+              }`}
+            >
+              <div className="w-10 h-10 rounded-xl bg-indigo-500/15 flex items-center justify-center text-indigo-400 shrink-0">
                 <Briefcase className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-[11px] text-slate-400 font-medium">모집 중인 프로젝트</p>
-                <p className="text-xl font-extrabold text-white font-mono mt-0.5">
-                  {section3Projects.filter((p) => p.status === "OPEN" || p.status === "UPCOMING").length}건
-                </p>
+                <p className="text-xs text-slate-400 font-medium">프로젝트 (R&D·산학·PBL)</p>
+                <p className="text-2xl font-extrabold text-white font-mono mt-0.5">{filteredProjects.length}건</p>
               </div>
             </div>
 
-            <div className="bg-[#151a2e]/90 border border-slate-800 rounded-2xl p-4 flex items-center gap-3.5 shadow-sm">
+            <div
+              onClick={() => setActiveCategory("COMPETITION")}
+              className={`border rounded-2xl p-4 flex items-center gap-3.5 cursor-pointer transition-all ${
+                activeCategory === "COMPETITION"
+                  ? "bg-[#1f1d2f] border-amber-500/80 shadow-lg shadow-amber-950/40"
+                  : "bg-[#151a2e]/90 border-slate-800 hover:border-slate-700"
+              }`}
+            >
               <div className="w-10 h-10 rounded-xl bg-amber-500/15 flex items-center justify-center text-amber-400 shrink-0">
-                <Wrench className="w-5 h-5" />
+                <Trophy className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-[11px] text-slate-400 font-medium">개방 연구·제작 장비</p>
-                <p className="text-xl font-extrabold text-white font-mono mt-0.5">{filteredEquipments.length}종</p>
+                <p className="text-xs text-slate-400 font-medium">공모전 (경진대회·해커톤)</p>
+                <p className="text-2xl font-extrabold text-white font-mono mt-0.5">{filteredCompetitions.length}건</p>
+              </div>
+            </div>
+
+            <div
+              onClick={() => setActiveCategory("FACILITY")}
+              className={`border rounded-2xl p-4 flex items-center gap-3.5 cursor-pointer transition-all ${
+                activeCategory === "FACILITY"
+                  ? "bg-[#132333] border-cyan-500/80 shadow-lg shadow-cyan-950/40"
+                  : "bg-[#151a2e]/90 border-slate-800 hover:border-slate-700"
+              }`}
+            >
+              <div className="w-10 h-10 rounded-xl bg-cyan-500/15 flex items-center justify-center text-cyan-400 shrink-0">
+                <Cpu className="w-5 h-5" />
+              </div>
+              <div>
+                <p className="text-xs text-slate-400 font-medium">장비·시설 이용 (개방 인프라)</p>
+                <p className="text-2xl font-extrabold text-white font-mono mt-0.5">{filteredFacilities.length}종</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 2. Interactive Discovery Filters (스크롤 시 따라 내려오지 않도록 위치 고정) */}
+      {/* 2. Interactive Discovery Filters (소속 대학, 내 전공, 모집 상태 + 검색창) */}
       <section className="relative z-20 bg-[#0f1424] border-b border-slate-800/80 py-4 shadow-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-3.5">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
-            {/* School & Major Dropdowns */}
+            {/* Top 3 Filters: [소속 대학], [내 전공], [모집 상태] */}
             <div className="flex flex-wrap items-center gap-2.5">
+              {/* 소속 대학 Dropdown */}
               <div className="flex items-center gap-2 bg-[#171e35] px-3 py-1.5 rounded-xl border border-slate-700/80">
                 <Building2 className="w-4 h-4 text-cyan-400 shrink-0" />
                 <span className="text-xs text-slate-400 whitespace-nowrap">소속 대학:</span>
@@ -325,6 +463,7 @@ export default function OpportunitiesPage() {
                 </select>
               </div>
 
+              {/* 내 전공 Dropdown */}
               <div className="flex items-center gap-2 bg-[#171e35] px-3 py-1.5 rounded-xl border border-slate-700/80">
                 <GraduationCap className="w-4 h-4 text-indigo-400 shrink-0" />
                 <span className="text-xs text-slate-400 whitespace-nowrap">내 전공:</span>
@@ -341,6 +480,7 @@ export default function OpportunitiesPage() {
                 </select>
               </div>
 
+              {/* 모집 상태 Dropdown */}
               <div className="flex items-center gap-2 bg-[#171e35] px-3 py-1.5 rounded-xl border border-slate-700/80">
                 <Clock className="w-4 h-4 text-emerald-400 shrink-0" />
                 <span className="text-xs text-slate-400 whitespace-nowrap">모집 상태:</span>
@@ -349,34 +489,60 @@ export default function OpportunitiesPage() {
                   onChange={(e) => setStatusFilter(e.target.value)}
                   className="bg-transparent text-xs text-white font-semibold focus:outline-none cursor-pointer pr-1"
                 >
-                  <option value="all" className="bg-[#171e35] text-white">전체 보기 (마감 포함)</option>
-                  <option value="OPEN" className="bg-[#171e35] text-white">모집중 (OPEN)</option>
-                  <option value="UPCOMING" className="bg-[#171e35] text-white">모집예정 (UPCOMING)</option>
-                  <option value="CLOSED" className="bg-[#171e35] text-white">모집마감 (CLOSED)</option>
+                  {STATUS_OPTIONS.map((s) => (
+                    <option key={s.id} value={s.id} className="bg-[#171e35] text-white">
+                      {s.label}
+                    </option>
+                  ))}
                 </select>
               </div>
 
-              {(selectedUniv !== "all" || selectedMajor !== "all" || statusFilter !== "all" || searchQuery || equipmentCategory !== "all") && (
+              {/* 관리자 전용: 학생 참여 자격 Gate 상태 Dropdown */}
+              <div className="flex items-center gap-2 bg-[#171e35] px-3 py-1.5 rounded-xl border border-slate-700/80">
+                <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
+                <span className="text-xs text-slate-400 whitespace-nowrap">자격 Gate:</span>
+                <select
+                  value={gateFilter}
+                  onChange={(e) => setGateFilter(e.target.value as any)}
+                  className="bg-transparent text-xs text-white font-semibold focus:outline-none cursor-pointer pr-1"
+                >
+                  <option value="verified" className="bg-[#171e35] text-emerald-300">
+                    학생 참여 가능 (검증완료)
+                  </option>
+                  <option value="needs_review" className="bg-[#171e35] text-amber-300">
+                    [학생 참여 여부 확인 필요]
+                  </option>
+                  <option value="excluded" className="bg-[#171e35] text-rose-300">
+                    [제외된 공고 (채용/기업/기관)]
+                  </option>
+                  <option value="all" className="bg-[#171e35] text-slate-300">
+                    전체 DB 보기
+                  </option>
+                </select>
+              </div>
+
+              {/* 필터 초기화 버튼 */}
+              {isFilterActive && (
                 <button
                   onClick={handleResetFilters}
-                  className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-medium text-slate-400 hover:text-white bg-slate-800/80 hover:bg-slate-700 transition"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition"
                   title="필터 초기화"
                 >
-                  <X className="w-3.5 h-3.5" />
-                  <span>초기화</span>
+                  <RotateCcw className="w-3.5 h-3.5 text-slate-400" />
+                  <span>필터 초기화</span>
                 </button>
               )}
             </div>
 
-            {/* Keyword Search */}
-            <div className="relative min-w-[260px] lg:w-72">
+            {/* Keyword Search Bar */}
+            <div className="relative min-w-[260px] lg:w-80">
               <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="과제명, 장비명, 주관기관 검색..."
-                className="w-full bg-[#171e35] border border-slate-700/80 rounded-xl pl-9 pr-3 py-1.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition"
+                placeholder="프로젝트, 공모전, 기업, 장비·시설 검색..."
+                className="w-full bg-[#171e35] border border-slate-700/80 rounded-xl pl-9 pr-8 py-1.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition"
               />
               {searchQuery && (
                 <button
@@ -389,263 +555,292 @@ export default function OpportunitiesPage() {
             </div>
           </div>
 
-          {/* Core Navigation Tabs (4-Questions + ALL) */}
-          <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar pt-1">
+          {/* 3 Core Category Tab Buttons (Dynamic Counts Included) */}
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pt-1 border-t border-slate-800/60">
+            {/* 1. PROJECT */}
             <button
-              onClick={() => setActiveTab("ALL")}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition flex items-center gap-1.5 ${
-                activeTab === "ALL"
-                  ? "bg-gradient-to-r from-indigo-600 to-cyan-600 text-white shadow-md shadow-indigo-600/30"
+              onClick={() => setActiveCategory("PROJECT")}
+              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all flex items-center gap-2 ${
+                activeCategory === "PROJECT"
+                  ? "bg-indigo-600 text-white shadow-lg shadow-indigo-600/30 scale-[1.02]"
                   : "bg-slate-900/60 text-slate-400 hover:text-white hover:bg-slate-800/80 border border-slate-800"
               }`}
             >
-              <Compass className="w-3.5 h-3.5" />
-              <span>전체 종합 탐색</span>
+              <Briefcase className="w-4 h-4 text-indigo-300" />
+              <span>프로젝트 ({filteredProjects.length})</span>
             </button>
 
+            {/* 2. COMPETITION */}
             <button
-              onClick={() => setActiveTab("RESOURCES")}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition flex items-center gap-1.5 ${
-                activeTab === "RESOURCES"
-                  ? "bg-purple-600 text-white shadow-md shadow-purple-600/30"
+              onClick={() => setActiveCategory("COMPETITION")}
+              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all flex items-center gap-2 ${
+                activeCategory === "COMPETITION"
+                  ? "bg-amber-600 text-white shadow-lg shadow-amber-600/30 scale-[1.02]"
                   : "bg-slate-900/60 text-slate-400 hover:text-white hover:bg-slate-800/80 border border-slate-800"
               }`}
             >
-              <Building2 className="w-3.5 h-3.5 text-purple-400" />
-              <span>1. 내 전공 사용 가능 자원 ({section1Resources.length})</span>
+              <Trophy className="w-4 h-4 text-amber-300" />
+              <span>공모전 ({filteredCompetitions.length})</span>
             </button>
 
+            {/* 3. FACILITY */}
             <button
-              onClick={() => setActiveTab("RND")}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition flex items-center gap-1.5 ${
-                activeTab === "RND"
-                  ? "bg-cyan-600 text-white shadow-md shadow-cyan-600/30"
+              onClick={() => setActiveCategory("FACILITY")}
+              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all flex items-center gap-2 ${
+                activeCategory === "FACILITY"
+                  ? "bg-cyan-600 text-white shadow-lg shadow-cyan-600/30 scale-[1.02]"
                   : "bg-slate-900/60 text-slate-400 hover:text-white hover:bg-slate-800/80 border border-slate-800"
               }`}
             >
-              <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-              <span>2. 지금 참여 가능한 R&D ({section2RnD.length})</span>
-            </button>
-
-            <button
-              onClick={() => setActiveTab("PROJECTS")}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition flex items-center gap-1.5 ${
-                activeTab === "PROJECTS"
-                  ? "bg-emerald-600 text-white shadow-md shadow-emerald-600/30"
-                  : "bg-slate-900/60 text-slate-400 hover:text-white hover:bg-slate-800/80 border border-slate-800"
-              }`}
-            >
-              <Briefcase className="w-3.5 h-3.5 text-emerald-400" />
-              <span>3. 모집 중인 프로젝트 ({section3Projects.length})</span>
-            </button>
-
-            <button
-              onClick={() => setActiveTab("EQUIPMENT")}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition flex items-center gap-1.5 ${
-                activeTab === "EQUIPMENT"
-                  ? "bg-amber-600 text-white shadow-md shadow-amber-600/30"
-                  : "bg-slate-900/60 text-slate-400 hover:text-white hover:bg-slate-800/80 border border-slate-800"
-              }`}
-            >
-              <Wrench className="w-3.5 h-3.5 text-amber-400" />
-              <span>4. 활용 가능한 장비·시설 ({filteredEquipments.length})</span>
+              <Cpu className="w-4 h-4 text-cyan-300" />
+              <span>장비·시설 이용 ({filteredFacilities.length})</span>
             </button>
           </div>
+
+          {/* FACILITY Sub-tab Bar & Specialized Equipment Filters */}
+          {activeCategory === "FACILITY" && (
+            <div className="pt-3 pb-1 border-t border-slate-800/60 flex flex-wrap items-center justify-between gap-3 animate-in fade-in duration-200">
+              {/* Sub-tab Segmented Control */}
+              <div className="flex items-center gap-1.5 bg-[#121626] p-1 rounded-xl border border-slate-800">
+                <button
+                  onClick={() => setFacilitySubTab("ALL")}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                    facilitySubTab === "ALL"
+                      ? "bg-cyan-600 text-white shadow-sm"
+                      : "text-slate-400 hover:text-white hover:bg-slate-800/60"
+                  }`}
+                >
+                  전체 ({rawFacilities.length})
+                </button>
+                <button
+                  onClick={() => setFacilitySubTab("SPACE")}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                    facilitySubTab === "SPACE"
+                      ? "bg-indigo-600 text-white shadow-sm"
+                      : "text-slate-400 hover:text-white hover:bg-slate-800/60"
+                  }`}
+                >
+                  공유 공간 ({spaceCount})
+                </button>
+                <button
+                  onClick={() => setFacilitySubTab("EQUIPMENT")}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                    facilitySubTab === "EQUIPMENT"
+                      ? "bg-cyan-600 text-white shadow-sm"
+                      : "text-slate-400 hover:text-white hover:bg-slate-800/60"
+                  }`}
+                >
+                  전문 연구장비 ({equipmentCount})
+                </button>
+              </div>
+
+              {/* Specialized Research Equipment Filtering Chips */}
+              {(facilitySubTab === "ALL" || facilitySubTab === "EQUIPMENT") && (
+                <div className="flex flex-wrap items-center gap-2">
+                  {/* 이용 방식 필터 */}
+                  <div className="flex items-center gap-1 bg-[#171e35] px-2.5 py-1 rounded-lg border border-slate-700/70 text-xs">
+                    <span className="text-slate-400 text-[11px]">이용 방식:</span>
+                    <select
+                      value={usageMethodFilter}
+                      onChange={(e) => setUsageMethodFilter(e.target.value)}
+                      className="bg-transparent text-white font-semibold focus:outline-none cursor-pointer text-xs"
+                    >
+                      <option value="all" className="bg-[#171e35] text-white">전체 방식</option>
+                      <option value="ANALYSIS_REQUEST" className="bg-[#171e35] text-white">분석의뢰방식</option>
+                      <option value="DIRECT_USE" className="bg-[#171e35] text-white">직접이용(자격/교육)</option>
+                    </select>
+                  </div>
+
+                  {/* 연구실/분과 필터 */}
+                  {labOptions.length > 0 && (
+                    <div className="flex items-center gap-1 bg-[#171e35] px-2.5 py-1 rounded-lg border border-slate-700/70 text-xs">
+                      <span className="text-slate-400 text-[11px]">실험실/분과:</span>
+                      <select
+                        value={labFilter}
+                        onChange={(e) => setLabFilter(e.target.value)}
+                        className="bg-transparent text-white font-semibold focus:outline-none cursor-pointer text-xs"
+                      >
+                        <option value="all" className="bg-[#171e35] text-white">전체 실험실</option>
+                        {labOptions.map((lab) => (
+                          <option key={lab} value={lab} className="bg-[#171e35] text-white">
+                            {lab}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </section>
 
-      {/* 3. Main Discovery Content Areas */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 pt-8 space-y-12">
-        {/* SECTION 1: 내 전공으로 사용 가능한 자원 */}
-        {(activeTab === "ALL" || activeTab === "RESOURCES") && (
-          <section id="section-resources" className="space-y-4">
-            <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-              <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-xl bg-purple-500/15 flex items-center justify-center text-purple-400">
-                  <Building2 className="w-4 h-4" />
-                </div>
-                <div>
-                  <h2 className="text-lg font-bold text-white flex items-center gap-2">
-                    <span>1. 내 전공으로 사용 가능한 자원</span>
-                    <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300">
-                      {section1Resources.length}개
-                    </span>
-                  </h2>
-                  <p className="text-xs text-slate-400 mt-0.5">
-                    부산공유대학 14개교 공동 캠퍼스 인프라, 무료 AI 실전 교육(Gemini Academy), 메이커 스페이스
-                  </p>
-                </div>
-              </div>
-              <span className="text-xs font-mono text-slate-500 hidden sm:inline">
-                Eligible & Cross-University Open
-              </span>
-            </div>
-
-            {section1Resources.length === 0 ? (
-              <div className="p-8 text-center bg-[#111422] rounded-2xl border border-slate-800 text-slate-400 text-xs">
-                선택하신 대학 및 전공 조건에 맞는 공유 인프라 자원이 없습니다. 필터를 재설정해 보세요.
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {section1Resources.map((opp) => (
-                  <OpportunityCard key={opp.id} opportunity={opp} onOpenDetail={handleOpenOpportunityModal} />
-                ))}
-              </div>
+      {/* 3. Cards Content Grid */}
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 pt-8">
+        {/* Category Description Banner */}
+        <div className="mb-6 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-400">
+          <div>
+            {activeCategory === "PROJECT" && (
+              <p>
+                기업 산학협력, R&D 학생 참여과제, 기업연계 PBL, 캡스톤, 다학제 과제를 학생 조건에 맞춰 탐색합니다.
+              </p>
             )}
-          </section>
-        )}
-
-        {/* SECTION 2: 지금 참여할 수 있는 R&D */}
-        {(activeTab === "ALL" || activeTab === "RND") && (
-          <section id="section-rnd" className="space-y-4">
-            <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-              <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-xl bg-cyan-500/15 flex items-center justify-center text-cyan-400">
-                  <Sparkles className="w-4 h-4" />
-                </div>
-                <div>
-                  <h2 className="text-lg font-bold text-white flex items-center gap-2">
-                    <span>2. 지금 참여할 수 있는 R&D 및 산학 협력</span>
-                    <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300">
-                      {section2RnD.length}개
-                    </span>
-                  </h2>
-                  <p className="text-xs text-slate-400 mt-0.5">
-                    공식 모집공고에서 대학생 지원자격과 현재 모집중 상태가 확인된 연구 참여 기회
-                  </p>
-                </div>
-              </div>
-              <span className="text-xs font-mono text-slate-500 hidden sm:inline">
-                Industry-Academia Co-op & Research
-              </span>
-            </div>
-
-            {section2RnD.length === 0 ? (
-              <div className="p-8 text-center bg-[#111422] rounded-2xl border border-slate-800 text-slate-400 text-xs">
-                현재 조건에서 학생 지원자격과 모집기간이 확인된 R&D 공고가 없습니다.
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {section2RnD.map((opp) => (
-                  <OpportunityCard key={opp.id} opportunity={opp} onOpenDetail={handleOpenOpportunityModal} />
-                ))}
-              </div>
+            {activeCategory === "COMPETITION" && (
+              <p>
+                전국 대학생 대상 공모전, 경진대회, 해커톤, 아이디어톤 및 기업 챌린지 정보를 제공합니다.
+              </p>
             )}
-          </section>
-        )}
-
-        {/* SECTION 3: 현재 모집 중인 프로젝트 */}
-        {(activeTab === "ALL" || activeTab === "PROJECTS") && (
-          <section id="section-projects" className="space-y-4">
-            <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-              <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-xl bg-emerald-500/15 flex items-center justify-center text-emerald-400">
-                  <Briefcase className="w-4 h-4" />
-                </div>
-                <div>
-                  <h2 className="text-lg font-bold text-white flex items-center gap-2">
-                    <span>3. 현재 모집 중인 프로젝트 & 경진대회</span>
-                    <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300">
-                      {section3Projects.length}개
-                    </span>
-                  </h2>
-                  <p className="text-xs text-slate-400 mt-0.5">
-                    2026 AI 창업 경진대회, 컴퓨터공학 캡스톤디자인 1·2차, 글로벌 AX-PBL 베트남 연수 등
-                  </p>
-                </div>
-              </div>
-              <span className="text-xs font-mono text-emerald-400 hidden sm:inline">
-                Active Deadlines & D-Day Tracking
-              </span>
-            </div>
-
-            {section3Projects.length === 0 ? (
-              <div className="p-8 text-center bg-[#111422] rounded-2xl border border-slate-800 text-slate-400 text-xs">
-                선택하신 조건에 해당하는 모집 프로젝트가 없습니다.
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {section3Projects.map((opp) => (
-                  <OpportunityCard key={opp.id} opportunity={opp} onOpenDetail={handleOpenOpportunityModal} />
-                ))}
-              </div>
+            {activeCategory === "FACILITY" && (
+              <p>
+                {facilitySubTab === "SPACE" ? (
+                  <span>
+                    <strong>[공유 공간]</strong> 부산공유대학 14개 참여대학 학생 및 교직원을 위한 강의실, 세미나실, 스터디룸 대여 공간입니다.
+                  </span>
+                ) : facilitySubTab === "EQUIPMENT" ? (
+                  <span>
+                    <strong>[전문 연구장비]</strong> 부산대학교 공동실험실습관의 첨단 분석·연구 기기입니다. 회원가입 및 소속 확인, 분석의뢰 또는 장비별 안전·자격 교육 승인 후 이용 가능합니다.
+                  </span>
+                ) : (
+                  <span>
+                    부산공유대학 개방 <strong>공유 공간</strong> 및 부산대학교 공동실험실습관 공식 <strong>전문 연구장비</strong>의 실시간 이용 정보를 제공합니다.
+                  </span>
+                )}
+              </p>
             )}
-          </section>
-        )}
+          </div>
+          <span className="font-mono text-slate-500">
+            총{" "}
+            {activeCategory === "PROJECT"
+              ? filteredProjects.length
+              : activeCategory === "COMPETITION"
+              ? filteredCompetitions.length
+              : filteredFacilities.length}
+            개 항목
+          </span>
+        </div>
 
-        {/* SECTION 4: 활용 가능한 장비 및 시설 */}
-        {(activeTab === "ALL" || activeTab === "EQUIPMENT") && (
-          <section id="section-equipment" className="space-y-4">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-3">
-              <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-xl bg-amber-500/15 flex items-center justify-center text-amber-400">
-                  <Wrench className="w-4 h-4" />
-                </div>
-                <div>
-                  <h2 className="text-lg font-bold text-white flex items-center gap-2">
-                    <span>4. 활용 가능한 대학 장비 및 연구 시설</span>
-                    <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300">
-                      {filteredEquipments.length}종 개방
-                    </span>
-                  </h2>
-                  <p className="text-xs text-slate-400 mt-0.5">
-                    부산대 V-Space 시제품 제작 장비(3D프린터·CNC·4K스튜디오) 및 UNIST UCRF 공용 연구분석 장비(TEM·FT-NMR·현미경)
-                  </p>
-                </div>
-              </div>
-
-              {/* Equipment Category Filter Chips */}
-              <div className="flex items-center gap-1 overflow-x-auto no-scrollbar py-1">
-                <button
-                  onClick={() => setEquipmentCategory("all")}
-                  className={`px-2.5 py-1 rounded-lg text-xs font-semibold whitespace-nowrap transition ${
-                    equipmentCategory === "all"
-                      ? "bg-amber-600 text-white"
-                      : "bg-slate-800 text-slate-400 hover:text-white"
-                  }`}
-                >
-                  전체 장비 ({allEquipments.length})
-                </button>
-                {equipmentCategories.map((cat) => (
+        {/* 1. PROJECT GRID */}
+        {activeCategory === "PROJECT" && (
+          <>
+            {filteredProjects.length === 0 ? (
+              <div className="text-center py-20 bg-slate-900/30 border border-slate-800/60 rounded-3xl p-8">
+                <Briefcase className="w-12 h-12 text-slate-600 mx-auto mb-3" />
+                <h3 className="text-base font-bold text-slate-300 mb-1">
+                  선택하신 조건에 부합하는 프로젝트가 없습니다
+                </h3>
+                <p className="text-xs text-slate-500 max-w-md mx-auto mb-4">
+                  선택한 대학교, 전공, 또는 모집 상태 조건을 변경하거나 검색어를 재설정해 보세요.
+                </p>
+                {isFilterActive && (
                   <button
-                    key={cat}
-                    onClick={() => setEquipmentCategory(cat)}
-                    className={`px-2.5 py-1 rounded-lg text-xs font-medium whitespace-nowrap transition ${
-                      equipmentCategory === cat
-                        ? "bg-amber-600 text-white"
-                        : "bg-slate-800/80 text-slate-400 hover:text-white"
-                    }`}
+                    onClick={handleResetFilters}
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white transition"
                   >
-                    {cat}
+                    <RotateCcw className="w-3.5 h-3.5" />
+                    <span>필터 초기화</span>
                   </button>
-                ))}
-              </div>
-            </div>
-
-            {filteredEquipments.length === 0 ? (
-              <div className="p-8 text-center bg-[#111422] rounded-2xl border border-slate-800 text-slate-400 text-xs">
-                조건에 맞는 개방 장비가 없습니다.
+                )}
               </div>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {filteredEquipments.map((eq) => (
-                  <EquipmentCard key={eq.id} equipment={eq} onOpenDetail={handleOpenEquipmentModal} />
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                {filteredProjects.map((p) => (
+                  <ProjectCard
+                    key={p.id}
+                    project={p}
+                    onOpenDetail={(item) => setSelectedItem(item)}
+                  />
                 ))}
               </div>
             )}
-          </section>
+          </>
+        )}
+
+        {/* 2. COMPETITION GRID */}
+        {activeCategory === "COMPETITION" && (
+          <>
+            {filteredCompetitions.length === 0 ? (
+              <div className="text-center py-20 bg-slate-900/30 border border-slate-800/60 rounded-3xl p-8">
+                <Trophy className="w-12 h-12 text-slate-600 mx-auto mb-3" />
+                <h3 className="text-base font-bold text-slate-300 mb-1">
+                  선택하신 조건에 부합하는 공모전이 없습니다
+                </h3>
+                <p className="text-xs text-slate-500 max-w-md mx-auto mb-4">
+                  선택한 대학교, 전공, 또는 모집 상태 조건을 변경하거나 검색어를 재설정해 보세요.
+                </p>
+                {isFilterActive && (
+                  <button
+                    onClick={handleResetFilters}
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold bg-amber-600 hover:bg-amber-500 text-white transition"
+                  >
+                    <RotateCcw className="w-3.5 h-3.5" />
+                    <span>필터 초기화</span>
+                  </button>
+                )}
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                {filteredCompetitions.map((c) => (
+                  <CompetitionCard
+                    key={c.id}
+                    competition={c}
+                    onOpenDetail={(item) => setSelectedItem(item)}
+                  />
+                ))}
+              </div>
+            )}
+          </>
+        )}
+
+        {/* 3. FACILITY GRID */}
+        {activeCategory === "FACILITY" && (
+          <>
+            {filteredFacilities.length === 0 ? (
+              <div className="text-center py-20 bg-slate-900/30 border border-slate-800/60 rounded-3xl p-8">
+                <Cpu className="w-12 h-12 text-slate-600 mx-auto mb-3" />
+                <h3 className="text-base font-bold text-slate-300 mb-1">
+                  {facilitySubTab === "SPACE"
+                    ? "선택하신 조건에 부합하는 공유 공간이 없습니다"
+                    : facilitySubTab === "EQUIPMENT"
+                    ? "선택하신 조건에 부합하는 전문 연구장비가 없습니다"
+                    : "선택하신 조건에 부합하는 장비·시설이 없습니다"}
+                </h3>
+                <p className="text-xs text-slate-500 max-w-md mx-auto mb-4">
+                  {facilitySubTab === "EQUIPMENT"
+                    ? "장비명, 모델명, 또는 실험실 필터를 변경하시거나 검색어를 재설정해 보세요."
+                    : "소속 대학교를 전체로 설정하시거나, 타 대학 개방 시설 조건을 확인해 보세요."}
+                </p>
+                {isFilterActive && (
+                  <button
+                    onClick={handleResetFilters}
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold bg-cyan-600 hover:bg-cyan-500 text-white transition"
+                  >
+                    <RotateCcw className="w-3.5 h-3.5" />
+                    <span>필터 초기화</span>
+                  </button>
+                )}
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                {filteredFacilities.map((f) => (
+                  <FacilityCard
+                    key={f.id}
+                    facility={f}
+                    onOpenDetail={(item) => setSelectedItem(item)}
+                  />
+                ))}
+              </div>
+            )}
+          </>
         )}
       </main>
 
-      {/* 4. Detail Modal with Full Provenance */}
-      {selectedItem && selectedKind && (
+      {/* 4. Detail Modal */}
+      {selectedItem && (
         <ResourceDetailModal
           item={selectedItem}
-          kind={selectedKind}
-          onClose={() => {
-            setSelectedItem(null);
-            setSelectedKind(null);
-          }}
+          category={activeCategory}
+          onClose={() => setSelectedItem(null)}
         />
       )}
     </div>

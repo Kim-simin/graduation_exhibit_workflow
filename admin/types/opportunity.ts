@@ -23,6 +23,21 @@ export type AccessScope =
 
 export type ApprovalStatus = "PENDING_REVIEW" | "PUBLISHED" | "REJECTED";
 
+export type ApplicantType =
+  | "undergraduate_student"
+  | "graduate_student"
+  | "student"
+  | "employee"
+  | "researcher"
+  | "startup"
+  | "company"
+  | "institution"
+  | "faculty"
+  | "mixed"
+  | "unknown";
+
+export type EligibilityStatus = "verified" | "needs_review" | "excluded";
+
 export interface RecruitmentEvidence {
   sourceUrl: string;
   sourceKind: "NST" | "UNIVERSITY_OFFICIAL" | "RESEARCH_INSTITUTE_OFFICIAL";
@@ -45,6 +60,18 @@ export interface Opportunity {
   description: string;
 
   targetStudents: string;
+  // 🎓 Student Eligibility Gate Verification Fields
+  applicantType?: ApplicantType;
+  studentEligible?: boolean;
+  studentEligibilityVerified?: boolean;
+  eligibleStudentStatus?: string;
+  eligibilityText?: string;
+  eligibilityEvidence?: string;
+  officialSourceUrl?: string;
+  eligibilityStatus?: EligibilityStatus;
+  exclusionReason?: string;
+  lastVerifiedAt?: string;
+
   // Discovery records without recruitment evidence remain general R&D information.
   eligibleAudience?: string[];
   studentParticipationVerified?: boolean;
@@ -107,25 +134,48 @@ export interface Opportunity {
 
 export interface Equipment {
   id: string;
+  equipment_keyno?: string;
   equipment_name: string;
+  equipment_name_ko?: string;
+  equipment_name_en?: string;
   equipment_category: string;
   university: string;
   facility_name?: string;
   center_name?: string;
+  lab_category?: string;
   location?: string;
   manufacturer?: string;
   model?: string;
   quantity?: number | string;
   specification?: string;
+  performance?: string;
+  features?: string;
   supported_work?: string;
   supported_research?: string;
+  use_procedure?: string;
+  cost_info?: string;
+  etc_notice?: string;
   eligible_users: string;
   external_user_access: boolean;
   accessScope: AccessScope;
   reservation_required: boolean;
   reservation_method?: string;
+  usage_method_raw?: string;
+  usage_type?: "ANALYSIS_REQUEST" | "DIRECT_USE" | "CONSULTATION_REQUIRED";
+  is_urgent_analysis_available?: boolean;
+  image_url?: string | null;
   analysis_request_available?: boolean;
   reservation_url?: string;
+  official_guide_urls?: {
+    general_user: string;
+    direct_user: string;
+    pnu_internal: string;
+    login: string;
+    detail: string;
+  };
+  operator?: string;
+  contact?: string;
+  install_status?: string;
   source_url: string;
   source_organization: string;
   source_title: string;
@@ -144,3 +194,54 @@ export interface Equipment {
   createdAt: string;
   updatedAt: string;
 }
+
+export type CoreCategory = "PROJECT" | "COMPETITION" | "FACILITY";
+export type FacilitySubTab = "ALL" | "SPACE" | "EQUIPMENT";
+
+export interface FacilityItem {
+  id: string;
+  name: string;
+  nameKo?: string;
+  nameEn?: string;
+  model?: string;
+  subType: "SPACE" | "EQUIPMENT";
+  university: string;
+  managingOrg: string;
+  location: string;
+  labCategory?: string;
+  eligibleMajors: string[];
+  externalUserAccess: boolean;
+  accessScope: AccessScope | string;
+  usageCondition: string;
+  cost: string;
+  reservationRequired: boolean;
+  reservationMethod?: string;
+  reservationUrl?: string;
+  sourceOrg: string;
+  sourceUrl: string;
+  verifiedAt: string;
+  status: string;
+  tags: string[];
+  rawItem: Equipment | Opportunity;
+  rawKind: "EQUIPMENT" | "OPPORTUNITY";
+
+  // Specialized Research Equipment Extended Fields
+  equipmentKeyno?: string;
+  usageMethodRaw?: string;
+  usageType?: "ANALYSIS_REQUEST" | "DIRECT_USE" | "CONSULTATION_REQUIRED";
+  urgentAvailable?: boolean;
+  imageUrl?: string | null;
+  operator?: string;
+  contact?: string;
+  features?: string;
+  performance?: string;
+  useProcedure?: string;
+  officialGuideUrls?: {
+    general_user: string;
+    direct_user: string;
+    pnu_internal: string;
+    login: string;
+    detail: string;
+  };
+}
+

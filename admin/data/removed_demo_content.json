@@ -1,0 +1,472 @@
+{
+  "students": [
+    {
+      "id": "stu-01",
+      "reason": "UI test/seed profile; no source for identity, contacts or portfolio"
+    },
+    {
+      "id": "stu-02",
+      "reason": "UI test/seed profile; no source for identity, contacts or portfolio"
+    },
+    {
+      "id": "stu-03",
+      "reason": "UI test/seed profile; no source for identity, contacts or portfolio"
+    },
+    {
+      "id": "stu-04",
+      "reason": "UI test/seed profile; no source for identity, contacts or portfolio"
+    },
+    {
+      "id": "stu-05",
+      "reason": "UI test/seed profile; no source for identity, contacts or portfolio"
+    },
+    {
+      "id": "stu-06",
+      "reason": "UI test/seed profile; no source for identity, contacts or portfolio"
+    },
+    {
+      "id": "stu-07",
+      "reason": "UI test/seed profile; no source for identity, contacts or portfolio"
+    },
+    {
+      "id": "stu-08",
+      "reason": "UI test/seed profile; no source for identity, contacts or portfolio"
+    },
+    {
+      "id": "stu-09",
+      "reason": "UI test/seed profile; no source for identity, contacts or portfolio"
+    },
+    {
+      "id": "stu-10",
+      "reason": "UI test/seed profile; no source for identity, contacts or portfolio"
+    },
+    {
+      "id": "stu-11",
+      "reason": "UI test/seed profile; no source for identity, contacts or portfolio"
+    },
+    {
+      "id": "stu-12",
+      "reason": "UI test/seed profile; no source for identity, contacts or portfolio"
+    }
+  ],
+  "parentChallenges": [
+    {
+      "id": "parent-shipbuilding",
+      "reason": "Demo parent project without an official project announcement"
+    },
+    {
+      "id": "parent-smart-hospital",
+      "reason": "Demo parent project without an official project announcement"
+    },
+    {
+      "id": "parent-smart-city",
+      "reason": "Demo parent project without an official project announcement"
+    }
+  ],
+  "challenges": [
+    {
+      "id": "challenge-shipbuilding-llm",
+      "reason": "Demo challenge: company homepage is not evidence of this recruitment, team capacity or reward"
+    },
+    {
+      "id": "challenge-shipbuilding-safety-iot",
+      "reason": "Demo challenge: company homepage is not evidence of this recruitment, team capacity or reward"
+    },
+    {
+      "id": "challenge-shipbuilding-dashboard",
+      "reason": "Demo challenge: company homepage is not evidence of this recruitment, team capacity or reward"
+    },
+    {
+      "id": "challenge-ocean-cruise-branding",
+      "reason": "Demo challenge: company homepage is not evidence of this recruitment, team capacity or reward"
+    },
+    {
+      "id": "challenge-hospital-fall-monitoring",
+      "reason": "Demo challenge: company homepage is not evidence of this recruitment, team capacity or reward"
+    },
+    {
+      "id": "challenge-chronic-care-lifelog",
+      "reason": "Demo challenge: company homepage is not evidence of this recruitment, team capacity or reward"
+    },
+    {
+      "id": "challenge-isolation-robot-interface",
+      "reason": "Demo challenge: company homepage is not evidence of this recruitment, team capacity or reward"
+    },
+    {
+      "id": "challenge-bems-energy-optimization",
+      "reason": "Demo challenge: company homepage is not evidence of this recruitment, team capacity or reward"
+    },
+    {
+      "id": "challenge-battery-recycling-safety",
+      "reason": "Demo challenge: company homepage is not evidence of this recruitment, team capacity or reward"
+    },
+    {
+      "id": "challenge-uam-vertiport-space-ux",
+      "reason": "Demo challenge: company homepage is not evidence of this recruitment, team capacity or reward"
+    },
+    {
+      "id": "challenge-local-esg-smart-market",
+      "reason": "Demo challenge: company homepage is not evidence of this recruitment, team capacity or reward"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "opp_pnu_vspace_infra",
+      "reason": "QUARANTINE: source could not be rechecked; access and detailed claims not verified"
+    },
+    {
+      "id": "opp_nst_6207",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6206",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6205",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6204",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6203",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6202",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6201",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6200",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6199",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6198",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6197",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6196",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6195",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6194",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6193",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6192",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6191",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6190",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6188",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6187",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6186",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6185",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6184",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6183",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6182",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6181",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6180",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6179",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_nst_6178",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_uniall_pbanc_19",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_uniall_pbanc_18",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_uniall_pbanc_17",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_uniall_pbanc_16",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_uniall_pbanc_14",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_uniall_pbanc_13",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_uniall_pbanc_12",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_uniall_pbanc_11",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_uniall_pbanc_10",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_uniall_pbanc_9",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_uniall_team_a1a689793847",
+      "reason": "Collector uses hardcoded records and synthesized eligibility instead of detail extraction"
+    },
+    {
+      "id": "opp_uniall_team_95fbc6926033",
+      "reason": "Collector uses hardcoded records and synthesized eligibility instead of detail extraction"
+    },
+    {
+      "id": "opp_uniall_team_e9bef2cf55ae",
+      "reason": "Collector uses hardcoded records and synthesized eligibility instead of detail extraction"
+    },
+    {
+      "id": "opp_uniall_team_e611660d9963",
+      "reason": "Collector uses hardcoded records and synthesized eligibility instead of detail extraction"
+    },
+    {
+      "id": "opp_uniall_team_0572ffe202c8",
+      "reason": "Collector uses hardcoded records and synthesized eligibility instead of detail extraction"
+    },
+    {
+      "id": "opp_uniall_team_6d776770d815",
+      "reason": "Collector uses hardcoded records and synthesized eligibility instead of detail extraction"
+    },
+    {
+      "id": "opp_uniall_team_889302c60d55",
+      "reason": "Collector uses hardcoded records and synthesized eligibility instead of detail extraction"
+    },
+    {
+      "id": "opp_uniall_team_1466b10343de",
+      "reason": "Collector uses hardcoded records and synthesized eligibility instead of detail extraction"
+    },
+    {
+      "id": "opp_ntis_77142",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_ntis_77141",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_ntis_77140",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_ntis_77139",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_ntis_77138",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_ntis_77137",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_ntis_77136",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_ntis_77135",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_ntis_77134",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_ntis_77133",
+      "reason": "QUARANTINE: discovered title may be real; audience, benefits and recruitment fields were synthesized"
+    },
+    {
+      "id": "opp_ks_2026_svc_seoul",
+      "reason": "Collector uses hardcoded records and synthesized eligibility instead of detail extraction"
+    },
+    {
+      "id": "opp_ks_2026_tips_mod",
+      "reason": "Collector uses hardcoded records and synthesized eligibility instead of detail extraction"
+    },
+    {
+      "id": "opp_ks_2026_all_govt_startup",
+      "reason": "Collector uses hardcoded records and synthesized eligibility instead of detail extraction"
+    },
+    {
+      "id": "opp_ks_2026_siliconvalley_gtm",
+      "reason": "Collector uses hardcoded records and synthesized eligibility instead of detail extraction"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "eq_pnu_vspace_3dprinter",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_pnu_vspace_cnc_5axis",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_pnu_vspace_laser_cutter",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_pnu_vspace_cnc_router",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_pnu_vspace_metal_welding",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_pnu_vspace_metal_bender",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_pnu_vspace_vinyl_cutter",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_pnu_vspace_dye_printer",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_pnu_vspace_3d_scanner",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_pnu_vspace_studio_camera",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_pnu_vspace_studio_lighting",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_unist_titan_g2_tem",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_unist_jem_arm300f_stem",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_unist_jem_2100f_hrtem",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_unist_jem_2100_tem",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_unist_ft_nmr_600",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_unist_ft_nmr_400",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_unist_3d_laser_microscope",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_unist_3d_scanner_rexcan",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_unist_3d_printer_x500",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_unist_7t_mri_rodent",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_unist_4point_probe",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_unist_ebeam_evaporator",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_zeus_kaist_core_facility",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_zeus_knu_analysis_center",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_zeus_korea_univ_center",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    },
+    {
+      "id": "eq_zeus_nifs_marine_equipment",
+      "reason": "QUARANTINE: hand-authored equipment/access/specification details lack record-level evidence"
+    }
+  ]
+}

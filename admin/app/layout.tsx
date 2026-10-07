@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Sidebar from "@/components/navigation/Sidebar";
 import MobileHeader from "@/components/navigation/MobileHeader";
+import TrafficTracker from "@/components/TrafficTracker";
 
 export const metadata: Metadata = {
   title: "대한민국 대학 졸업전시 통합 아카이브 | Exhibit Platform",
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body className="bg-slate-50 dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 min-h-screen antialiased transition-colors duration-200">
         <div className="flex flex-col md:flex-row min-h-screen w-full bg-slate-50 dark:bg-[#0b0f19]">
           <MobileHeader />
+          <TrafficTracker />
           {/* 1. 좌측 콤팩트 투명 알약 버튼 레일 */}
           <Sidebar />
 

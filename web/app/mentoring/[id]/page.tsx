@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useState, Suspense } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Link from "next/link";
-import { useParams, notFound, useSearchParams } from "next/navigation";
+import { useParams, notFound, useSearchParams, useRouter } from "next/navigation";
 import { getMentorById, getContentsForEntity } from "@/lib/data";
+import { getProjectById } from "@/lib/project";
 import {
   Sparkles,
   Star,
@@ -18,14 +19,30 @@ import {
 import MentoringBookingModal from "@/components/monetization/MentoringBookingModal";
 
 function MentorDetailContent() {
+  const router = useRouter();
   const params = useParams();
   const id = params.id as string;
   const searchParams = useSearchParams();
   const prefilledPortfolio = searchParams.get("portfolio") || "";
 
+  const project = getProjectById(id);
   const mentor = getMentorById(id);
   const relatedContents = getContentsForEntity(id, "mentor");
   const [isBookingOpen, setIsBookingOpen] = useState(false);
+
+  useEffect(() => {
+    if (project) {
+      router.replace(`/mentoring/projects/${id}`);
+    }
+  }, [project, id, router]);
+
+  if (project) {
+    return (
+      <div className="min-h-screen bg-[#0b0e17] text-slate-400 flex items-center justify-center p-6">
+        <p className="text-xs">프로젝트 상세 페이지로 이동 중...</p>
+      </div>
+    );
+  }
 
   if (!mentor) {
     return notFound();
