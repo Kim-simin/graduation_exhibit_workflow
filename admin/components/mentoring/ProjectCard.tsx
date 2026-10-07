@@ -59,18 +59,28 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               {isStudent ? (
                 <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-extrabold bg-indigo-950/90 text-indigo-300 border border-indigo-500/60 backdrop-blur-sm shadow-sm">
                   <GraduationCap className="w-3 h-3 text-cyan-400" />
-                  학생 제안
+                  {project.projectTypes.some((t) => t.includes("제안")) ? "학생 제안" : "학생 프로젝트"}
                 </span>
               ) : (
                 <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-extrabold bg-purple-950/90 text-purple-200 border border-purple-500/60 backdrop-blur-sm shadow-sm">
                   <Building2 className="w-3 h-3 text-pink-400" />
-                  기업 제안
+                  {project.projectTypes.some((t) => t.includes("기관")) ? "기관 프로젝트" : "기업 Challenge"}
+                </span>
+              )}
+
+              {/* 실증 진행 뱃지 (Section 11) */}
+              {(project.collaborationNeeds?.includes("testbed") ||
+                project.progressStage === "validation" ||
+                (project.connectedProjects && project.connectedProjects.length > 0)) && (
+                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 backdrop-blur-sm">
+                  <Sparkles className="w-2.5 h-2.5 text-amber-400" />
+                  실증 진행
                 </span>
               )}
 
               {project.projectTypes
-                .filter((t) => t !== "학생 제안" && t !== "기업 제안")
-                .slice(0, 2)
+                .filter((t) => !["학생 제안", "학생 프로젝트", "기업 Challenge", "기업 제안", "기관 프로젝트"].includes(t))
+                .slice(0, 1)
                 .map((type, i) => (
                   <span
                     key={i}

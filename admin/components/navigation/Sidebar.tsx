@@ -24,15 +24,6 @@ export default function Sidebar() {
       iconEmoji: "🌐",
     },
     {
-      label: "공유자원·R&D",
-      href: "/opportunities",
-      badge: {
-        text: "실시간",
-        bg: "bg-emerald-950/80 text-emerald-300 border border-emerald-700/50 dark:bg-emerald-100 dark:text-emerald-700 dark:border-emerald-300",
-      },
-      iconEmoji: "🧭",
-    },
-    {
       label: "대학생",
       href: "/students",
       badge: {
@@ -42,48 +33,16 @@ export default function Sidebar() {
       iconEmoji: "👥",
     },
     {
-      label: "대학교 커리큘럼",
-      href: "/professors",
-      badge: null,
-      iconEmoji: "🎓",
-    },
-    {
-      label: "채용공고 및 스카우팅",
-      href: "/jobs",
-      badge: {
-        text: "채용 연계",
-        bg: "bg-blue-950/80 text-blue-300 border border-blue-700/50 dark:bg-blue-100 dark:text-blue-700 dark:border-blue-300",
-      },
-      iconEmoji: "💼",
-    },
-    {
-      label: "기업 브랜드 IP",
-      href: "/brand-assets",
-      badge: {
-        text: "IP 프리패스",
-        bg: "bg-emerald-950/80 text-emerald-300 border border-emerald-700/50 dark:bg-emerald-100 dark:text-emerald-700 dark:border-emerald-300",
-      },
-      iconEmoji: "🏷️",
-    },
-    {
-      label: "현직자 멘토링",
+      label: "프로젝트 공고",
       href: "/mentoring",
       badge: {
-        text: "프로젝트",
-        bg: "bg-indigo-950/80 text-indigo-300 border border-indigo-700/50 dark:bg-indigo-100 dark:text-indigo-700 dark:border-indigo-300",
-      },
-      iconEmoji: "✨",
-    },
-    {
-      label: "산학협력 IP",
-      href: "/industry-challenges",
-      badge: {
-        text: "Challenge",
+        text: "양방향 매칭",
         bg: "bg-purple-950/80 text-purple-300 border border-purple-700/50 dark:bg-purple-100 dark:text-purple-700 dark:border-purple-300",
       },
       iconEmoji: "🚀",
     },
   ];
+
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";

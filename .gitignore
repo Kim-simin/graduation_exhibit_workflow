@@ -61,4 +61,5 @@ public/captures/
 Thumbs.db
 *.bak
 *.tsbuildinfo
+**/.traffic/
 

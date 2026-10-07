@@ -72,8 +72,16 @@ const STATUS_OPTIONS = [
   { id: "CLOSED", label: "마감" },
 ];
 
+import FeaturePreparedNotice from "@/components/FeaturePreparedNotice";
+import { isFeatureEnabled } from "@/lib/features";
+
 export default function OpportunitiesPage() {
+  if (!isFeatureEnabled("sharedResources")) {
+    return <FeaturePreparedNotice featureName="공유자원·R&D" />;
+  }
+
   const [referenceTime, setReferenceTime] = useState<string | undefined>(undefined);
+
 
   useEffect(() => {
     const refreshTime = () => setReferenceTime(new Date().toISOString());

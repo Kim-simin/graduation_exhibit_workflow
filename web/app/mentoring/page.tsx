@@ -102,7 +102,7 @@ export default function MentoringProjectsPage() {
     return Array.from(new Map(combined.map((p) => [p.id, p])).values());
   }, [supabaseProjects]);
 
-  const [activeOriginTab, setActiveOriginTab] = useState<"all" | "student" | "company">("all");
+  const [activeOriginTab, setActiveOriginTab] = useState<"all" | "company" | "student" | "individual" | "field_test">("all");
 
   const [selectedUniv, setSelectedUniv] = useState<string>("all");
   const [selectedMajor, setSelectedMajor] = useState<string>("all");
@@ -181,36 +181,41 @@ export default function MentoringProjectsPage() {
               <div className="flex flex-wrap items-center gap-2 mb-3.5">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">
                   <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
-                  PROJECT × INDUSTRY MENTORING
+                  PROJECT × INDUSTRY BOARD
                 </span>
                 <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-purple-500/15 text-purple-300 border border-purple-500/30">
                   <Briefcase className="w-3.5 h-3.5 text-purple-400" />
-                  양방향 프로젝트 매칭 플랫폼
+                  양방향 프로젝트 연결 플랫폼
                 </span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-                프로젝트 현직자 멘토링
+                프로젝트 공고
               </h1>
 
               <p className="mt-3 text-sm sm:text-base text-slate-300 max-w-3xl leading-relaxed">
-                학생이 준비 중인 프로젝트와 기업이 제안한 산학협력 Challenge를 함께 확인하고,
-                현업 피드백 · 멘토링 · 실증 · 산학협력 연결을 만들 수 있습니다.
+                기업·기관의 Challenge와 대학생이 제안하는 프로젝트를 한곳에서 확인하세요.
               </p>
             </div>
 
-            {/* [+ 프로젝트 등록] 버튼: 데스크톱 우측 상단, 모바일 전체 너비 */}
-            <div className="mt-2 md:mt-0 shrink-0">
+            {/* CTA 버튼 영역: [내 프로젝트 등록] / [Challenge 등록] */}
+            <div className="mt-2 md:mt-0 flex flex-wrap items-center gap-3 shrink-0">
               <Link
-                href="/mentoring/projects/new"
-                className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 text-white font-bold text-sm shadow-lg shadow-indigo-600/30 hover:shadow-indigo-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                href="/mentoring/projects/new?type=student"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 text-white font-bold text-sm shadow-lg shadow-indigo-600/30 hover:shadow-indigo-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all"
               >
-                <Plus className="w-5 h-5 text-white stroke-[2.5]" />
-                <span>+ 프로젝트 등록</span>
+                <Plus className="w-4 h-4 text-white stroke-[2.5]" />
+                <span>+ 내 프로젝트 등록</span>
+              </Link>
+              <Link
+                href="/mentoring/projects/new?type=company"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-gradient-to-r from-purple-700 via-purple-600 to-pink-600 hover:from-purple-600 hover:to-pink-500 text-white font-bold text-sm shadow-lg shadow-purple-700/30 hover:shadow-purple-600/50 hover:scale-[1.02] active:scale-[0.98] transition-all"
+              >
+                <Building2 className="w-4 h-4 text-white stroke-[2.5]" />
+                <span>+ Challenge 등록</span>
               </Link>
             </div>
           </div>
-
 
           <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3.5">
             <div className="bg-[#151a2e]/90 border border-slate-800 rounded-2xl p-4 flex items-center gap-3.5 shadow-sm">
@@ -230,7 +235,7 @@ export default function MentoringProjectsPage() {
                 <Building2 className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-[11px] text-slate-400 font-medium">기업 제안 Challenge</p>
+                <p className="text-[11px] text-slate-400 font-medium">기업·기관 공고</p>
                 <p className="text-xl font-extrabold text-white font-mono mt-0.5">
                   {summaryMetrics.companyCount}건
                 </p>
@@ -264,7 +269,7 @@ export default function MentoringProjectsPage() {
         </div>
       </section>
 
-      {/* 2. Top Navigation Tabs */}
+      {/* 2. Top Navigation Tabs (5대 상단 필터 탭 - Section 10) */}
       <section className="bg-[#0e1322] border-b border-slate-800 sticky top-0 z-30 shadow-md backdrop-blur-md bg-opacity-95">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-2 py-3 overflow-x-auto no-scrollbar">
@@ -277,13 +282,32 @@ export default function MentoringProjectsPage() {
               }`}
             >
               <Layers className="w-4 h-4" />
-              <span>전체 프로젝트</span>
+              <span>전체</span>
               <span
                 className={`text-[11px] px-1.5 py-0.2 rounded-full font-mono ${
                   activeOriginTab === "all" ? "bg-white/20 text-white" : "bg-slate-700 text-slate-300"
                 }`}
               >
                 {summaryMetrics.total}
+              </span>
+            </button>
+
+            <button
+              onClick={() => setActiveOriginTab("company")}
+              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap ${
+                activeOriginTab === "company"
+                  ? "bg-purple-600 text-white shadow-md shadow-purple-600/30"
+                  : "bg-slate-800/60 hover:bg-slate-800 text-slate-400 hover:text-slate-200"
+              }`}
+            >
+              <Building2 className="w-4 h-4" />
+              <span>기업·기관 공고</span>
+              <span
+                className={`text-[11px] px-1.5 py-0.2 rounded-full font-mono ${
+                  activeOriginTab === "company" ? "bg-white/20 text-white" : "bg-slate-700 text-slate-300"
+                }`}
+              >
+                {summaryMetrics.companyCount}
               </span>
             </button>
 
@@ -307,21 +331,40 @@ export default function MentoringProjectsPage() {
             </button>
 
             <button
-              onClick={() => setActiveOriginTab("company")}
+              onClick={() => setActiveOriginTab("individual")}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap ${
-                activeOriginTab === "company"
-                  ? "bg-purple-600 text-white shadow-md shadow-purple-600/30"
+                activeOriginTab === "individual"
+                  ? "bg-blue-600 text-white shadow-md shadow-blue-600/30"
                   : "bg-slate-800/60 hover:bg-slate-800 text-slate-400 hover:text-slate-200"
               }`}
             >
-              <Building2 className="w-4 h-4" />
-              <span>기업 제안</span>
+              <Users className="w-4 h-4" />
+              <span>개인 프로젝트</span>
               <span
                 className={`text-[11px] px-1.5 py-0.2 rounded-full font-mono ${
-                  activeOriginTab === "company" ? "bg-white/20 text-white" : "bg-slate-700 text-slate-300"
+                  activeOriginTab === "individual" ? "bg-white/20 text-white" : "bg-slate-700 text-slate-300"
                 }`}
               >
-                {summaryMetrics.companyCount}
+                {summaryMetrics.individualCount}
+              </span>
+            </button>
+
+            <button
+              onClick={() => setActiveOriginTab("field_test")}
+              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap ${
+                activeOriginTab === "field_test"
+                  ? "bg-amber-600 text-white shadow-md shadow-amber-600/30"
+                  : "bg-slate-800/60 hover:bg-slate-800 text-slate-400 hover:text-slate-200"
+              }`}
+            >
+              <Sparkles className="w-4 h-4" />
+              <span>실증 진행</span>
+              <span
+                className={`text-[11px] px-1.5 py-0.2 rounded-full font-mono ${
+                  activeOriginTab === "field_test" ? "bg-white/20 text-white" : "bg-slate-700 text-slate-300"
+                }`}
+              >
+                {summaryMetrics.fieldTestCount}
               </span>
             </button>
           </div>

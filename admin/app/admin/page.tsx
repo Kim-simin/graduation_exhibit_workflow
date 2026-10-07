@@ -1,5 +1,6 @@
 "use client";
 import TrafficPanel from "@/components/admin/TrafficPanel";
+import PoCKpiDashboard from "@/components/admin/PoCKpiDashboard";
 
 import { useState, useEffect, useRef, useCallback, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
@@ -1173,6 +1174,8 @@ function AdminDashboardContent() {
           {/* TAB 1: WORKFLOW GRAPH (DASHBOARD) */}
           {adminTab === "dashboard" && (
             <div className="space-y-6">
+              {/* 3개월 실증 핵심 성과 지표 (PoC KPI) 및 전환 퍼널 (Section 22, 23) */}
+              <PoCKpiDashboard />
               <TrafficPanel />
               {/* Proactive Approval Gate Card when Waiting for Admin Decision */}
               {(runtimeData?.current_run?.status === "WAITING_FOR_APPROVAL" ||

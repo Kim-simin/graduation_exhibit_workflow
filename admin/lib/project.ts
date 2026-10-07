@@ -482,7 +482,7 @@ export function getReviewStatusInfo(status: MentorReviewStatus) {
 }
 
 export interface ProjectFilterOptions {
-  origin?: "all" | "student" | "company";
+  origin?: "all" | "student" | "company" | "individual" | "field_test";
   university?: string;
   department?: string;
   category?: string;
@@ -521,8 +521,22 @@ export function filterProjects(
   } = options;
 
   let result = projects.filter((project) => {
-    if (origin !== "all" && project.origin !== origin) {
-      return false;
+    // 5대 탭 필터: 전체, 기업·기관 공고, 학생 제안, 개인 프로젝트, 실증 진행
+    if (origin === "company") {
+      if (project.origin !== "company") return false;
+    } else if (origin === "student") {
+      if (project.origin !== "student") return false;
+    } else if (origin === "individual") {
+      // 개인 프로젝트
+      const isIndiv = project.projectTypes.some((t) => t.includes("개인")) || project.teamMembers?.length === 1;
+      if (!isIndiv) return false;
+    } else if (origin === "field_test") {
+      // 실증 진행: testbed 필요/진행 중 또는 validation 단계 또는 연결 건이 있는 프로젝트
+      const isFieldTest =
+        project.collaborationNeeds?.includes("testbed") ||
+        project.progressStage === "validation" ||
+        (project.connectedProjects && project.connectedProjects.length > 0);
+      if (!isFieldTest) return false;
     }
 
     if (university !== "all") {
@@ -583,6 +597,7 @@ export function filterProjects(
       const inCompany = (project.company || "").toLowerCase().includes(q);
       const inSkills = project.skills.some((s) => s.toLowerCase().includes(q));
       const inMembers = project.teamMembers.some((m) => m.name.toLowerCase().includes(q));
+
       if (!inTitle && !inDesc && !inUniv && !inDept && !inCompany && !inSkills && !inMembers) {
         return false;
       }
@@ -622,6 +637,15 @@ export function getProjectSummaryMetrics(projects: MentoringProject[]) {
   const total = projects.length;
   const studentCount = projects.filter((p) => p.origin === "student").length;
   const companyCount = projects.filter((p) => p.origin === "company").length;
+  const individualCount = projects.filter(
+    (p) => p.projectTypes.some((t) => t.includes("개인")) || p.teamMembers?.length === 1
+  ).length;
+  const fieldTestCount = projects.filter(
+    (p) =>
+      p.collaborationNeeds?.includes("testbed") ||
+      p.progressStage === "validation" ||
+      (p.connectedProjects && p.connectedProjects.length > 0)
+  ).length;
   const reviewRequestedCount = projects.filter(
     (p) => p.mentorReviewStatus === "review_requested"
   ).length;
@@ -632,6 +656,8 @@ export function getProjectSummaryMetrics(projects: MentoringProject[]) {
     total,
     studentCount,
     companyCount,
+    individualCount,
+    fieldTestCount,
     reviewRequestedCount,
     activeCount,
     connectedCount,

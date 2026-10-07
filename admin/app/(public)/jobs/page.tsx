@@ -82,9 +82,17 @@ const UNIVERSITY_OPTIONS = [
   "홍익대학교",
 ];
 
+import FeaturePreparedNotice from "@/components/FeaturePreparedNotice";
+import { isFeatureEnabled } from "@/lib/features";
+
 export default function JobsPage() {
+  if (!isFeatureEnabled("jobs")) {
+    return <FeaturePreparedNotice featureName="채용공고 및 스카우팅" />;
+  }
+
   // 실시간 API 연동 상태
   const [jobs, setJobs] = useState<JobPosting[]>([]);
+
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [dataSource, setDataSource] = useState<string>("recruitment-intelligence-db");
 

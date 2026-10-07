@@ -347,23 +347,39 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-50 dark:bg-cyan-950/60 border border-cyan-200 dark:border-cyan-700/50 text-cyan-800 dark:text-cyan-400 text-xs font-semibold mb-3">
             <Sparkles className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" /> 전국 대학교 졸업전시 통합 공식 아카이브
           </div>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-            전국 대학교 학생 <span className="text-cyan-600 dark:text-cyan-400">졸업작품 전시회</span>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+            대학생의 프로젝트를 <span className="text-cyan-600 dark:text-cyan-400">기업과 현직자에게 연결합니다</span>
           </h1>
-          <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base mt-2">
-            실제 리서치 및 Gemini Vision으로 검수된 전국 주요 대학의 디자인·예술·건축 졸업전시 작품을 탐색하세요.
+          <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base mt-2 max-w-3xl leading-relaxed">
+            전국 대학의 졸업작품과 학생 프로젝트를 발견하고, 기업·기관의 Challenge와 연결해 현직자 검토와 실증까지 이어갑니다.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3">
+          {/* 3 Core Home Action CTAs */}
+          <Link
+            href="/students"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-slate-900 dark:bg-slate-800 hover:bg-slate-800 dark:hover:bg-slate-700 text-slate-200 font-bold text-xs sm:text-sm border border-slate-700 transition"
+          >
+            <Users className="w-4 h-4 text-indigo-400" />
+            <span>대학생 보기</span>
+          </Link>
+          <Link
+            href="/mentoring"
+            className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white font-extrabold text-xs sm:text-sm shadow-md shadow-indigo-600/25 transition"
+          >
+            <Sparkles className="w-4 h-4" />
+            <span>프로젝트 공고 보기</span>
+          </Link>
+
           {!isProduction && (
             <button
               onClick={() => {
                 setUploadModalData(null);
                 setIsUploadModalOpen(true);
               }}
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white font-extrabold text-xs md:text-sm shadow-md shadow-cyan-600/20 transition"
+              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs border border-slate-700 transition"
             >
-              <ClipboardPaste className="w-4 h-4" /> 📸 스크린샷 직접 등록 (Ctrl+V)
+              <ClipboardPaste className="w-3.5 h-3.5" /> 스크린샷 직접 등록
             </button>
           )}
 
@@ -371,7 +387,7 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
           {!isProduction && (
             <button
               onClick={() => setIsAdminEditMode(!isAdminEditMode)}
-              className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs md:text-sm shadow-sm transition border ${
+              className={`inline-flex items-center gap-2 px-3 py-2 rounded-xl font-bold text-xs shadow-sm transition border ${
                 isAdminEditMode
                   ? "bg-red-500/10 dark:bg-red-950/40 border-red-500 text-red-600 dark:text-red-400 ring-2 ring-red-500/20 shadow-md animate-pulse"
                   : "bg-white dark:bg-slate-800 border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 dark:text-slate-200"
@@ -380,13 +396,13 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
             >
               {isAdminEditMode ? (
                 <>
-                  <ShieldAlert className="w-4 h-4 text-red-500" />
-                  <span>관리자 모드 활성 (수정/삭제 중)</span>
+                  <ShieldAlert className="w-3.5 h-3.5 text-red-500" />
+                  <span>관리자 모드 활성</span>
                 </>
               ) : (
                 <>
-                  <Shield className="w-4 h-4 text-slate-600 dark:text-slate-300" />
-                  <span>관리자 관제 시스템</span>
+                  <Shield className="w-3.5 h-3.5 text-slate-600 dark:text-slate-300" />
+                  <span>관리자 관제</span>
                 </>
               )}
             </button>
@@ -424,73 +440,47 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
         </div>
       )}
 
-      {/* 실시간 대학 공유자원 & R&D·프로젝트 하이라이트 배너 */}
-      <section className="my-6 p-4 md:p-5 rounded-2xl bg-gradient-to-r from-emerald-950/70 via-indigo-950/60 to-cyan-950/70 border border-emerald-500/40 shadow-xl relative overflow-hidden text-white">
-        <div className="absolute right-0 top-0 -mt-4 -mr-4 w-40 h-40 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none" />
+      {/* 프로젝트 공고 & 양방향 연결 핵심 배너 */}
+      <section className="my-6 p-4 md:p-5 rounded-2xl bg-gradient-to-r from-[#13192a] via-[#161c33] to-[#0f1424] border border-indigo-500/40 shadow-xl relative overflow-hidden text-white">
+        <div className="absolute right-0 top-0 -mt-4 -mr-4 w-40 h-40 bg-indigo-500/10 rounded-full blur-2xl pointer-events-none" />
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 relative z-10">
           <div className="space-y-1.5">
             <div className="flex flex-wrap items-center gap-2">
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                실시간 게시중 (LIVE)
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/40">
+                <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
+                양방향 프로젝트 매칭
               </span>
               <span className="text-xs font-mono text-cyan-300">
-                공식 출처 인증 기회 9건 · 개방 연구/제작 장비 23종
+                학생 프로젝트 제안 ↔ 기업·기관 산업 Challenge 연결
               </span>
             </div>
             <h2 className="text-base sm:text-lg font-extrabold tracking-tight">
-              전국 대학 공유자원 & 실전 R&D·프로젝트 탐색 허브
+              기업·기관의 Challenge와 대학생이 제안하는 프로젝트를 한곳에서 확인하세요
             </h2>
             <p className="text-xs text-slate-300 max-w-2xl leading-relaxed">
-              부산대·UNIST·부산공유대학 등 공식 연계: <strong>AI 창업 경진대회(상금 1억, D-1)</strong>, <strong>글로벌 AX-PBL(D-1)</strong>, <strong>캡스톤디자인 지원</strong> 및 <strong>첨단 연구·3D제작 장비</strong>를 내 전공 기준으로 탐색하세요.
+              학생은 진행 중인 프로젝트를 등록해 현직자 피드백을 받고 기업에 실증을 제안하며, 기업은 현장 문제를 공고해 우수 프로젝트 팀을 발굴합니다.
             </p>
           </div>
 
-          <div className="flex items-center gap-2 shrink-0">
+          <div className="flex flex-wrap items-center gap-2.5 shrink-0">
             <Link
-              href="/opportunities"
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-extrabold text-xs sm:text-sm shadow-lg shadow-emerald-500/30 transition transform hover:-translate-y-0.5 whitespace-nowrap"
+              href="/mentoring/projects/new"
+              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs sm:text-sm border border-slate-700 transition whitespace-nowrap"
             >
-              <Compass className="w-4 h-4" />
-              <span>내 전공 맞춤 자원 전체보기</span>
+              <Plus className="w-4 h-4 text-cyan-400" />
+              <span>내 프로젝트 등록</span>
+            </Link>
+            <Link
+              href="/mentoring"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white font-extrabold text-xs sm:text-sm shadow-lg shadow-indigo-600/30 transition transform hover:-translate-y-0.5 whitespace-nowrap"
+            >
+              <span>프로젝트 공고 피드</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
-
-        {/* Quick Ticker Chips */}
-        <div className="mt-3.5 pt-3 border-t border-slate-700/60 flex items-center gap-2 overflow-x-auto no-scrollbar text-xs">
-          <span className="text-[11px] text-slate-400 font-semibold shrink-0">주요 모집처:</span>
-          <Link
-            href="/opportunities"
-            className="px-2.5 py-1 rounded-lg bg-black/40 hover:bg-black/60 border border-slate-700/80 text-emerald-300 font-medium shrink-0 transition flex items-center gap-1.5"
-          >
-            <span className="text-[10px] font-bold px-1 rounded bg-rose-950 text-rose-300 border border-rose-800">D-1</span>
-            <span>2026 AI 창업 경진대회 (상금 1억 7백만원)</span>
-          </Link>
-          <Link
-            href="/opportunities"
-            className="px-2.5 py-1 rounded-lg bg-black/40 hover:bg-black/60 border border-slate-700/80 text-cyan-300 font-medium shrink-0 transition flex items-center gap-1.5"
-          >
-            <span className="text-[10px] font-bold px-1 rounded bg-rose-950 text-rose-300 border border-rose-800">D-1</span>
-            <span>글로벌 AX-PBL 해외 현장실증 (항공료·숙식 지원)</span>
-          </Link>
-          <Link
-            href="/opportunities"
-            className="px-2.5 py-1 rounded-lg bg-black/40 hover:bg-black/60 border border-slate-700/80 text-amber-300 font-medium shrink-0 transition flex items-center gap-1.5"
-          >
-            <span className="text-[10px] font-bold px-1 rounded bg-amber-950 text-amber-300 border border-amber-800">상시</span>
-            <span>UNIST 연구지원본부(UCRF) 12종 & 부산대 V-Space 11종</span>
-          </Link>
-          <Link
-            href="/opportunities"
-            className="px-2.5 py-1 rounded-lg bg-black/40 hover:bg-black/60 border border-slate-700/80 text-purple-300 font-medium shrink-0 transition flex items-center gap-1.5"
-          >
-            <span className="text-[10px] font-bold px-1 rounded bg-purple-950 text-purple-300 border border-purple-800">D-19</span>
-            <span>Gemini Academy 실무 AI 무료 강의</span>
-          </Link>
-        </div>
       </section>
+
 
       {/* 8대 산업군 인터랙티브 필터 바 */}
       <section className="py-6">
