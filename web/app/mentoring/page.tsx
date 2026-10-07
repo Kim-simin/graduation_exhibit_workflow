@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import {
   Search,
@@ -20,11 +20,13 @@ import {
   ArrowUpDown,
   Tag,
   HelpCircle,
+  Plus,
 } from "lucide-react";
 import {
   getProjects,
   filterProjects,
   getProjectSummaryMetrics,
+  adaptSupabaseProject,
   STAGE_LIST_STUDENT,
   STAGE_LIST_COMPANY,
   REVIEW_STATUS_LIST,
@@ -32,7 +34,8 @@ import {
   PROJECT_CATEGORIES,
   PROJECT_TYPES_FILTER,
 } from "@/lib/project";
-import { ProjectOrigin } from "@/types/project";
+import { getLiveMentoringProjects } from "@/lib/supabase";
+import { MentoringProject, ProjectOrigin } from "@/types/project";
 import ProjectCard from "@/components/mentoring/ProjectCard";
 
 const UNIVERSITY_OPTIONS = [
@@ -71,16 +74,36 @@ const SORT_OPTIONS = [
 ];
 
 export default function MentoringProjectsPage() {
-  // Single Source of Truth: 검증된 데이터만 로드 및 ID 기준 중복 제거 (De-duplication)
-  const allProjects = useMemo(() => {
-    const list = getProjects();
-    return Array.from(new Map(list.map((p) => [p.id, p])).values());
+  const [supabaseProjects, setSupabaseProjects] = useState<MentoringProject[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  // Load registered projects from Supabase DB on mount
+  useEffect(() => {
+    async function loadDbProjects() {
+      try {
+        const records = await getLiveMentoringProjects();
+        if (records && records.length > 0) {
+          const adapted = records.map(adaptSupabaseProject);
+          setSupabaseProjects(adapted);
+        }
+      } catch (err) {
+        console.error("Failed to load DB projects:", err);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    loadDbProjects();
   }, []);
 
-  // Top Nav Tab State (전체 / 학생 제안 / 기업 제안)
+  // Single Source of Truth: 검증된 시드 데이터 + Supabase 실데이터 병합 및 ID 기준 중복 제거
+  const allProjects = useMemo(() => {
+    const seedList = getProjects();
+    const combined = [...seedList, ...supabaseProjects];
+    return Array.from(new Map(combined.map((p) => [p.id, p])).values());
+  }, [supabaseProjects]);
+
   const [activeOriginTab, setActiveOriginTab] = useState<"all" | "student" | "company">("all");
 
-  // Filter States
   const [selectedUniv, setSelectedUniv] = useState<string>("all");
   const [selectedMajor, setSelectedMajor] = useState<string>("all");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -91,7 +114,6 @@ export default function MentoringProjectsPage() {
   const [selectedSort, setSelectedSort] = useState<any>("recent_update");
   const [searchQuery, setSearchQuery] = useState<string>("");
 
-  // Filtered Projects
   const filteredProjects = useMemo(() => {
     return filterProjects(allProjects, {
       origin: activeOriginTab,
@@ -119,7 +141,6 @@ export default function MentoringProjectsPage() {
     selectedSort,
   ]);
 
-  // Dynamic Summary Metrics
   const summaryMetrics = useMemo(() => {
     return getProjectSummaryMetrics(allProjects);
   }, [allProjects]);
@@ -155,30 +176,42 @@ export default function MentoringProjectsPage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(168,85,247,0.1),transparent_50%)] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-          {/* Eyebrow */}
-          <div className="flex flex-wrap items-center gap-2 mb-3.5">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">
-              <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
-              PROJECT × INDUSTRY MENTORING
-            </span>
-            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-purple-500/15 text-purple-300 border border-purple-500/30">
-              <Briefcase className="w-3.5 h-3.5 text-purple-400" />
-              양방향 프로젝트 매칭 플랫폼
-            </span>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <div className="flex flex-wrap items-center gap-2 mb-3.5">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">
+                  <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
+                  PROJECT × INDUSTRY MENTORING
+                </span>
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-purple-500/15 text-purple-300 border border-purple-500/30">
+                  <Briefcase className="w-3.5 h-3.5 text-purple-400" />
+                  양방향 프로젝트 매칭 플랫폼
+                </span>
+              </div>
+
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                프로젝트 현직자 멘토링
+              </h1>
+
+              <p className="mt-3 text-sm sm:text-base text-slate-300 max-w-3xl leading-relaxed">
+                학생이 준비 중인 프로젝트와 기업이 제안한 산학협력 Challenge를 함께 확인하고,
+                현업 피드백 · 멘토링 · 실증 · 산학협력 연결을 만들 수 있습니다.
+              </p>
+            </div>
+
+            {/* [+ 프로젝트 등록] 버튼: 데스크톱 우측 상단, 모바일 전체 너비 */}
+            <div className="mt-2 md:mt-0 shrink-0">
+              <Link
+                href="/mentoring/projects/new"
+                className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 text-white font-bold text-sm shadow-lg shadow-indigo-600/30 hover:shadow-indigo-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all"
+              >
+                <Plus className="w-5 h-5 text-white stroke-[2.5]" />
+                <span>+ 프로젝트 등록</span>
+              </Link>
+            </div>
           </div>
 
-          {/* H1 */}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            프로젝트 현직자 멘토링
-          </h1>
 
-          {/* Description */}
-          <p className="mt-3 text-sm sm:text-base text-slate-300 max-w-3xl leading-relaxed">
-            학생이 준비 중인 프로젝트와 기업이 제안한 산학협력 Challenge를 함께 확인하고,
-            현업 피드백 · 멘토링 · 실증 · 산학협력 연결을 만들 수 있습니다.
-          </p>
-
-          {/* Top Summary Bar (동적 실시간 통계) */}
           <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3.5">
             <div className="bg-[#151a2e]/90 border border-slate-800 rounded-2xl p-4 flex items-center gap-3.5 shadow-sm">
               <div className="w-10 h-10 rounded-xl bg-indigo-500/15 flex items-center justify-center text-indigo-400 shrink-0">
@@ -231,11 +264,10 @@ export default function MentoringProjectsPage() {
         </div>
       </section>
 
-      {/* 2. Top Navigation Tabs (상단 3개 탭 전용) */}
+      {/* 2. Top Navigation Tabs */}
       <section className="bg-[#0e1322] border-b border-slate-800 sticky top-0 z-30 shadow-md backdrop-blur-md bg-opacity-95">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-2 py-3 overflow-x-auto no-scrollbar">
-            {/* Tab 1: 전체 프로젝트 */}
             <button
               onClick={() => setActiveOriginTab("all")}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap ${
@@ -255,7 +287,6 @@ export default function MentoringProjectsPage() {
               </span>
             </button>
 
-            {/* Tab 2: 학생 제안 */}
             <button
               onClick={() => setActiveOriginTab("student")}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap ${
@@ -275,7 +306,6 @@ export default function MentoringProjectsPage() {
               </span>
             </button>
 
-            {/* Tab 3: 기업 제안 */}
             <button
               onClick={() => setActiveOriginTab("company")}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap ${
@@ -302,9 +332,7 @@ export default function MentoringProjectsPage() {
       <section className="relative z-20 bg-[#0f1424] border-b border-slate-800/80 py-4 shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-3.5">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
-            {/* 7 Dropdown Filters */}
             <div className="flex flex-wrap items-center gap-2">
-              {/* 1. 소속 대학 */}
               <div className="flex items-center gap-1.5 bg-[#171e35] px-3 py-1.5 rounded-xl border border-slate-700/80">
                 <Building2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
                 <span className="text-xs text-slate-400 whitespace-nowrap">소속 대학:</span>
@@ -321,7 +349,6 @@ export default function MentoringProjectsPage() {
                 </select>
               </div>
 
-              {/* 2. 전공 */}
               <div className="flex items-center gap-1.5 bg-[#171e35] px-3 py-1.5 rounded-xl border border-slate-700/80">
                 <GraduationCap className="w-3.5 h-3.5 text-indigo-400 shrink-0" />
                 <span className="text-xs text-slate-400 whitespace-nowrap">전공:</span>
@@ -338,7 +365,6 @@ export default function MentoringProjectsPage() {
                 </select>
               </div>
 
-              {/* 3. 프로젝트 분야 */}
               <div className="flex items-center gap-1.5 bg-[#171e35] px-3 py-1.5 rounded-xl border border-slate-700/80">
                 <Layers className="w-3.5 h-3.5 text-purple-400 shrink-0" />
                 <span className="text-xs text-slate-400 whitespace-nowrap">분야:</span>
@@ -355,7 +381,6 @@ export default function MentoringProjectsPage() {
                 </select>
               </div>
 
-              {/* 4. Project Type */}
               <div className="flex items-center gap-1.5 bg-[#171e35] px-3 py-1.5 rounded-xl border border-slate-700/80">
                 <Tag className="w-3.5 h-3.5 text-pink-400 shrink-0" />
                 <span className="text-xs text-slate-400 whitespace-nowrap">유형:</span>
@@ -372,7 +397,6 @@ export default function MentoringProjectsPage() {
                 </select>
               </div>
 
-              {/* 5. 진행 단계 */}
               <div className="flex items-center gap-1.5 bg-[#171e35] px-3 py-1.5 rounded-xl border border-slate-700/80">
                 <GitBranch className="w-3.5 h-3.5 text-amber-400 shrink-0" />
                 <span className="text-xs text-slate-400 whitespace-nowrap">진행 단계:</span>
@@ -391,7 +415,6 @@ export default function MentoringProjectsPage() {
                 </select>
               </div>
 
-              {/* 6. 필요한 협력 */}
               <div className="flex items-center gap-1.5 bg-[#171e35] px-3 py-1.5 rounded-xl border border-slate-700/80">
                 <HelpCircle className="w-3.5 h-3.5 text-teal-400 shrink-0" />
                 <span className="text-xs text-slate-400 whitespace-nowrap">필요한 협력:</span>
@@ -409,7 +432,6 @@ export default function MentoringProjectsPage() {
                 </select>
               </div>
 
-              {/* 7. 검토 상태 */}
               <div className="flex items-center gap-1.5 bg-[#171e35] px-3 py-1.5 rounded-xl border border-slate-700/80">
                 <Clock className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                 <span className="text-xs text-slate-400 whitespace-nowrap">검토 상태:</span>
@@ -427,7 +449,6 @@ export default function MentoringProjectsPage() {
                 </select>
               </div>
 
-              {/* 초기화 버튼 */}
               {isFilterActive && (
                 <button
                   onClick={handleResetFilters}
@@ -440,7 +461,6 @@ export default function MentoringProjectsPage() {
               )}
             </div>
 
-            {/* Keyword Search & Sort Bar */}
             <div className="flex items-center gap-2">
               <div className="relative min-w-[240px] lg:w-72">
                 <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
@@ -461,7 +481,6 @@ export default function MentoringProjectsPage() {
                 )}
               </div>
 
-              {/* 정렬 드롭다운 */}
               <div className="flex items-center gap-1 bg-[#171e35] px-2.5 py-1.5 rounded-xl border border-slate-700/80 shrink-0">
                 <ArrowUpDown className="w-3 h-3 text-slate-400" />
                 <select
@@ -481,7 +500,7 @@ export default function MentoringProjectsPage() {
         </div>
       </section>
 
-      {/* 4. Project Card Grid (3 cols desktop, 2 cols tablet, 1 col mobile) */}
+      {/* 4. Project Card Grid */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 pt-8">
         <div className="mb-6 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-400">
           <p>
@@ -496,7 +515,6 @@ export default function MentoringProjectsPage() {
           </span>
         </div>
 
-        {/* Empty State Handlers */}
         {filteredProjects.length === 0 ? (
           <div className="text-center py-24 bg-slate-900/30 border border-slate-800/60 rounded-3xl p-8 max-w-xl mx-auto">
             <GitBranch className="w-12 h-12 text-slate-600 mx-auto mb-3.5" />

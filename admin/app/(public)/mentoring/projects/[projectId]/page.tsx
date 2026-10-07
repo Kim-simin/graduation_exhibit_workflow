@@ -7,6 +7,7 @@ import {
   getProjectById,
   getStageInfo,
   getReviewStatusInfo,
+  adaptSupabaseProject,
   STAGE_LIST_STUDENT,
   STAGE_LIST_COMPANY,
   getProjectConnections,
@@ -25,6 +26,7 @@ import {
   insertLiveFeedback,
   updateLiveFeedbackReply,
   insertLiveProjectConnection,
+  getLiveMentoringProjects,
 } from "@/lib/supabase";
 import {
   ArrowLeft,
@@ -63,10 +65,39 @@ import {
   Compass,
 } from "lucide-react";
 
+
 export default function ProjectDetailPage() {
   const params = useParams();
   const projectId = params?.projectId as string;
-  const project = getProjectById(projectId);
+  const staticProject = getProjectById(projectId);
+
+  const [project, setProject] = useState<MentoringProject | undefined>(staticProject);
+  const [isProjectLoading, setIsProjectLoading] = useState<boolean>(!staticProject);
+
+  useEffect(() => {
+    if (!staticProject && projectId) {
+      getLiveMentoringProjects().then((records) => {
+        const found = records.find((r) => r.id === projectId);
+        if (found) {
+          setProject(adaptSupabaseProject(found));
+        }
+        setIsProjectLoading(false);
+      }).catch(() => {
+        setIsProjectLoading(false);
+      });
+    }
+  }, [staticProject, projectId]);
+
+  if (isProjectLoading) {
+    return (
+      <div className="min-h-screen bg-[#0b0e17] text-slate-100 flex items-center justify-center p-6">
+        <div className="text-center">
+          <div className="w-8 h-8 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin mx-auto mb-3" />
+          <p className="text-xs text-slate-400">프로젝트 정보를 불러오는 중입니다...</p>
+        </div>
+      </div>
+    );
+  }
 
   if (!project) {
     return (
@@ -113,6 +144,7 @@ export default function ProjectDetailPage() {
   const activeMilestone =
     project.milestones.find((m) => m.id === selectedMilestoneId) ||
     currentStageMilestone;
+
 
   const [feedbackType, setFeedbackType] = useState<FeedbackType>("현업 적합성");
   const [feedbackComment, setFeedbackComment] = useState("");

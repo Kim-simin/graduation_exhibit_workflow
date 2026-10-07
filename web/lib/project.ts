@@ -179,6 +179,75 @@ export function getCompanyChallengesAsProjects(): MentoringProject[] {
 }
 
 /**
+ * Supabase DB 레코드를 프론트엔드 MentoringProject 인터페이스로 안전하게 변환
+ */
+export function adaptSupabaseProject(record: any): MentoringProject {
+  const isStudent = record.source_type === "student";
+  const dateFormatted = record.created_at
+    ? record.created_at.split("T")[0].replace(/-/g, ".")
+    : new Date().toISOString().split("T")[0].replace(/-/g, ".");
+
+  return {
+    id: record.id,
+    origin: isStudent ? "student" : "company",
+    title: record.title || "무제",
+    description: record.description || record.summary || "",
+    summary: record.summary || record.description || "",
+    problem: record.problem_definition || record.description || "",
+    solution: record.solution || record.requirements || "",
+    university: record.school || (isStudent ? "등록 대학교" : undefined),
+    department: record.department,
+    company: !isStudent ? (record.company_name || record.team_name || "제안 기업") : undefined,
+    projectTypes: record.project_type ? [record.project_type] : [isStudent ? "학생 제안" : "기업 Challenge"],
+    category: record.mentor_field || "AI / Software",
+    thumbnail: record.image_url || DEFAULT_PROJECT_IMAGE,
+    coverImage: record.image_url || DEFAULT_PROJECT_IMAGE,
+    progressStage: (record.stage as any) || (isStudent ? "problem_definition" : "preparation"),
+    progressPercent: typeof record.progress === "number" ? record.progress : 0,
+    mentorReviewStatus: "review_requested",
+    collaborationNeeds: record.cooperation ? ["industry_feedback", "mentor"] : ["industry_feedback"],
+    collaborationNeedLabels: record.cooperation ? [record.cooperation] : ["현업 피드백"],
+    createdAt: dateFormatted,
+    updatedAt: dateFormatted,
+    teamMembers: isStudent
+      ? [
+          {
+            name: record.team_name || "참여 학생",
+            role: "프로젝트 대표",
+            department: record.department,
+            contributions: ["기획", "개발"],
+          },
+        ]
+      : [
+          {
+            name: record.contact_person || "담당자",
+            role: "과제 리드",
+            contributions: ["과제 기획", "산학 연계"],
+          },
+        ],
+    skills: Array.isArray(record.tech_tags) && record.tech_tags.length > 0 ? record.tech_tags : ["협력 프로젝트"],
+    links: {
+      github: record.github_url || undefined,
+      live: record.service_url || undefined,
+      portfolio: record.portfolio_url || undefined,
+    },
+    milestones: [],
+    mentorRequests: [],
+    feedbacks: [],
+    activityHistory: [
+      {
+        id: `act-${record.id}`,
+        date: dateFormatted,
+        title: "프로젝트 실시간 등록 완료",
+        type: "milestone",
+        description: `${record.title} 게시물이 등록되었습니다.`,
+      },
+    ],
+    connectedProjects: [],
+  };
+}
+
+/**
  * 3. 전체 프로젝트 (검증된 실데이터만 노출)
  * Single Source of Truth:
  * - 부산경상대학교 김시민 학생의 실제 참여 프로젝트만 노출
@@ -192,7 +261,11 @@ export function getProjects(): MentoringProject[] {
 /**
  * 4. ID로 단일 프로젝트 찾기 (학생 제안 or 기업 제안 모두 지원)
  */
-export function getProjectById(id: string): MentoringProject | undefined {
+export function getProjectById(id: string, additionalProjects?: MentoringProject[]): MentoringProject | undefined {
+  if (additionalProjects && additionalProjects.length > 0) {
+    const found = additionalProjects.find((p) => p.id === id);
+    if (found) return found;
+  }
   const all = getProjects();
   return all.find((p) => p.id === id);
 }
@@ -205,6 +278,7 @@ export function getProjectConnections(projectId: string): ProjectConnection[] {
     (c) => c.studentProjectId === projectId || c.companyProjectId === projectId
   );
 }
+
 
 /**
  * 6. 추천/연관 프로젝트 매칭 (학생 ↔ 기업)
