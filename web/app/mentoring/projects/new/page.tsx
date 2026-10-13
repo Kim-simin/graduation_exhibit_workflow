@@ -226,7 +226,7 @@ export default function NewMentoringProjectPage() {
 
       setSuccessToast(true);
       setTimeout(() => {
-        router.push("/mentoring");
+        router.push('/projects/'+encodeURIComponent(result.data.id));
       }, 1500);
     } catch (err: any) {
       setErrorMessage(err?.message || "저장 중 예기치 않은 오류가 발생했습니다.");
@@ -241,7 +241,7 @@ export default function NewMentoringProjectPage() {
         <div className="fixed top-6 right-6 z-50 flex items-center gap-2.5 px-5 py-3.5 rounded-2xl bg-emerald-950/90 border border-emerald-500/50 text-emerald-200 shadow-2xl backdrop-blur-md animate-in fade-in slide-in-from-top-4">
           <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
           <span className="text-sm font-semibold">
-            프로젝트가 성공적으로 등록되었습니다! 목록으로 이동합니다.
+            비공개 프로젝트로 등록했습니다. 진행 기록으로 이동합니다.
           </span>
         </div>
       )}

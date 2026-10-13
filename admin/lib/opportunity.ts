@@ -397,7 +397,7 @@ export function getNormalizedFacilities(
     if (seenIds.has(eq.id)) continue;
     seenIds.add(eq.id);
 
-    const isResearchEquip = eq.resource_type === "RESEARCH_EQUIPMENT" || eq.equipment_category === "전문 연구장비";
+    const isResearchEquip = (eq as any).resource_type === "RESEARCH_EQUIPMENT" || (eq as any).equipment_category === "전문 연구장비";
 
     result.push({
       id: eq.id,

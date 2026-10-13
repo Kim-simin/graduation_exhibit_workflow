@@ -44,7 +44,7 @@ export async function getLiveProjectFeedbacks(projectId: string): Promise<Mentor
       mentorName: row.mentor_name || "현직자 멘토",
       mentorRole: row.mentor_role || "현업 전문가",
       mentorCompany: row.mentor_company || "파트너 기업",
-      isVerifiedMentor: row.is_verified_mentor ?? true,
+      isVerifiedMentor: Boolean(row.reviewer_user_id && row.industry_review_id && row.is_verified_mentor),
       feedbackType: (row.feedback_type || "현업 적합성") as FeedbackType,
       comment: row.content || row.comment || "",
       studentReply: row.student_reply || undefined,
@@ -60,55 +60,7 @@ export async function getLiveProjectFeedbacks(projectId: string): Promise<Mentor
 export async function insertLiveFeedback(
   params: InsertFeedbackInput
 ): Promise<{ success: boolean; data?: any; error?: string }> {
-  if (!supabase || !isSupabaseConfigured) {
-    console.error("[Supabase insertLiveFeedback] Supabase is NOT configured!");
-    return { success: false, error: "Supabase가 설정되지 않았습니다." };
-  }
-
-  if (!params.projectId?.trim()) {
-    return { success: false, error: "프로젝트 ID가 누락되었습니다." };
-  }
-  if (!params.mentorName?.trim()) {
-    return { success: false, error: "멘토 이름을 입력해 주세요." };
-  }
-  if (!params.content?.trim()) {
-    return { success: false, error: "피드백 내용을 입력해 주세요." };
-  }
-
-  const payload = {
-    project_id: params.projectId,
-    mentor_id: params.mentorId || "guest-mentor",
-    mentor_name: params.mentorName.trim(),
-    mentor_role: params.mentorRole?.trim() || "현업 R&D 전문가",
-    mentor_company: params.mentorCompany?.trim() || "파트너 기업",
-    is_verified_mentor: params.isVerifiedMentor ?? true,
-    feedback_type: params.feedbackType,
-    content: params.content.trim(),
-    comment: params.content.trim(),
-    is_public: params.isPublic ?? true,
-    student_reply: params.studentReply || null,
-  };
-
-  console.log("[Supabase insertLiveFeedback] Sending payload to DB:", payload);
-
-  try {
-    const { data, error } = await supabase
-      .from("mentor_feedbacks")
-      .insert([payload])
-      .select()
-      .single();
-
-    if (error) {
-      console.error("[Supabase insertLiveFeedback] PostgREST Error:", error);
-      return { success: false, error: error.message };
-    }
-
-    console.log("[Supabase insertLiveFeedback Success] Created row in DB:", data);
-    return { success: true, data };
-  } catch (err: any) {
-    console.error("[Supabase insertLiveFeedback] Exception:", err);
-    return { success: false, error: err?.message || "피드백 저장 중 오류가 발생했습니다." };
-  }
+  return {success:false,error:'검증된 현직자 계정으로 로그인한 뒤 내정보의 검토 요청에서 피드백을 등록해 주세요. 기존 피드백 기록은 유지됩니다.'};
 }
 
 export async function updateLiveFeedbackReply(
@@ -233,46 +185,16 @@ export async function insertMentoringProject(
     return { success: false, error: "Supabase가 설정되지 않았습니다." };
   }
 
-  // Fallback storage strategy:
-  // 1. First attempt to insert into 'mentoring_projects' table
   try {
+    const {data:auth,error:authError}=await supabase.auth.getUser();
+    if(authError||!auth.user)return {success:false,error:'로그인 후 프로젝트를 등록해 주세요.'};
     const { data, error } = await supabase
       .from("mentoring_projects")
-      .insert([projectData])
+      .insert([{...projectData,owner_id:auth.user.id,visibility:'private'}])
       .select()
       .single();
-
-    if (!error && data) {
-      return { success: true, data };
-    }
-  } catch (err) {
-    // If mentoring_projects is not present or errors, seamlessly fall back to project_connections
-  }
-
-  // 2. Fallback to existing 'project_connections' table with registry marker
-  try {
-    const projectId = projectData.id || "proj-" + Date.now();
-    const payload = {
-      source_project_id: projectId,
-      target_project_id: "__project_registry__",
-      proposer_type: projectData.source_type,
-      proposer_name: projectData.team_name || projectData.company_name || projectData.title,
-      proposer_email: projectData.contact_email || null,
-      message: JSON.stringify({ ...projectData, id: projectId }),
-      status: "registered",
-    };
-
-    const { data, error } = await supabase
-      .from("project_connections")
-      .insert([payload])
-      .select()
-      .single();
-
-    if (error) {
-      return { success: false, error: error.message };
-    }
-
-    return { success: true, data: { ...projectData, id: projectId } };
+    if(error)return {success:false,error:['PGRST204','42703','42P01'].includes(error.code)?'DB 업데이트 적용 후 프로젝트를 등록할 수 있습니다.':'프로젝트를 저장하지 못했습니다. 계정 권한을 확인해 주세요.'};
+    return {success:true,data};
   } catch (err: any) {
     return { success: false, error: err?.message || "프로젝트 저장 중 오류가 발생했습니다." };
   }
@@ -291,7 +213,7 @@ export async function getLiveMentoringProjects(): Promise<MentoringProjectRecord
       .order("created_at", { ascending: false });
 
     if (!error && data && data.length > 0) {
-      return data;
+      results.push(...data);
     }
   } catch (err) {
     // ignore
@@ -321,6 +243,7 @@ export async function getLiveMentoringProjects(): Promise<MentoringProjectRecord
         try {
           const parsed = JSON.parse(row.message);
           if (parsed.id && EXCLUDED_IDS.has(parsed.id)) continue;
+          if(results.some(project=>project.id===(row.source_project_id||parsed.id)))continue;
           results.push({
             ...parsed,
             id: row.source_project_id || parsed.id,
