@@ -61,6 +61,7 @@ import {
   GraduationCap,
   Boxes,
   Compass,
+  X,
 } from "lucide-react";
 
 export default function ProjectDetailPage() {
@@ -268,7 +269,7 @@ export default function ProjectDetailPage() {
         sourceProjectId: project.id,
         targetProjectId: selectedTargetProject.id,
         proposerType: isStudent ? "student" : "company",
-        proposerName: isStudent ? (project.student?.name || "학생 대표") : (project.company || "기업 담당자"),
+        proposerName: isStudent ? (project.teamMembers?.[0]?.name || "학생 대표") : (project.company || "기업 담당자"),
         message: connectMessage.trim(),
         status: "대기 중",
       });

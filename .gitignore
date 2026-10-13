@@ -62,4 +62,6 @@ Thumbs.db
 *.bak
 *.tsbuildinfo
 **/.traffic/
+outputs/
+
 
