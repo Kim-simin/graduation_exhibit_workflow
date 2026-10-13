@@ -22,5 +22,9 @@
 .industry-list-row{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid #edf1ed;font-size:13px}.industry-list-row>a{flex:1;overflow-wrap:anywhere}.industry-list-row>span{font-size:11px;color:#6e7d72}.industry-embed{width:100%;height:440px;border:0;margin-top:12px}
 .industry-student-decks{padding:0!important;border:0!important;background:transparent!important;gap:16px}.industry-student-decks>.about-deck{padding:0!important;min-width:280px}.industry-student-decks .grad-project-card{margin-top:12px}.industry-student-decks .grad-project-image{aspect-ratio:16/9}.industry-student-decks .about-exhibition-row{width:100%}
 .grad-source-tabs{overflow-x:auto;white-space:nowrap}.grad-source-tabs button{flex-shrink:0}.about-banner-caption span{font-size:11px}.grad-main button,.grad-main a{overflow-wrap:anywhere}
+.challenge-card .grad-card-author{margin:4px 12px;font-size:12px}
+.challenge-card .grad-card-targets{margin:2px 12px;font-size:11px;color:#6b7c73}
+.challenge-card .grad-card-bottom{padding:10px 12px 12px;margin-top:auto}
 @media(min-width:640px) and (max-width:1023px){.industry-challenge-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:639px){.industry-challenge-grid{grid-template-columns:minmax(0,1fr)}.industry-challenge-grid .grad-project-image{aspect-ratio:16/9}.industry-challenge-grid .grad-project-summary{display:block}.industry-challenge-grid h3{font-size:16px}.industry-challenge-grid .grad-project-card p{font-size:12px}.industry-form-row{grid-template-columns:1fr}.industry-resource{padding:13px}.industry-section{padding-top:22px}.industry-student-decks>.about-deck{min-width:270px}.industry-review blockquote{font-size:14px}}
+
