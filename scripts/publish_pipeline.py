@@ -126,20 +126,34 @@ def run_export():
         raw_artworks = item.get("artworks", [])
         artworks = []
         for a in raw_artworks:
-            img = a.get("image", "")
+            img = a.get("image", "") or a.get("imagePath", "")
             if not img or "unsplash" in img:
                 continue
             clean_img = img.replace("\\", "/").replace("my-exhibit-platform/public/", "").replace("public/", "").replace("data/downloads/", "").lstrip("/")
             artwork_images_to_sync.add(clean_img)
+
+            clean_thumb = (a.get("thumbnail") or a.get("thumbnail_url") or "").replace("\\", "/").replace("my-exhibit-platform/public/", "").replace("public/", "").replace("data/downloads/", "").lstrip("/")
+            if clean_thumb:
+                artwork_images_to_sync.add(clean_thumb)
             
-            artworks.append({
+            art_entry = {
                 "title": a.get("title") or "출품작",
-                "author": a.get("student_name") or f"{item.get('university')} 작가",
-                "role": a.get("inferred_role") or "크리에이터",
+                "author": a.get("student_name") or a.get("author") or f"{item.get('university')} 작가",
+                "role": a.get("inferred_role") or a.get("role") or "크리에이터",
                 "department": a.get("department") or a.get("sub_department") or a.get("track") or a.get("major") or "",
                 "imagePath": clean_img,
+                "thumbnail": clean_thumb or clean_img,
+                "thumbnail_url": clean_thumb or clean_img,
+                "original_image_url": a.get("original_image_url") or clean_img,
                 "description": a.get("description") or "",
-            })
+            }
+            if a.get("thumbnail_crop_coordinates"):
+                art_entry["thumbnail_crop_coordinates"] = a["thumbnail_crop_coordinates"]
+            if a.get("thumbnail_status"):
+                art_entry["thumbnail_status"] = a["thumbnail_status"]
+            if a.get("thumbnail_review_status"):
+                art_entry["thumbnail_review_status"] = a["thumbnail_review_status"]
+            artworks.append(art_entry)
             
         is_researched = (item.get("status") in ["리서치 완료", "완료", "승인 완료", "검수 완료", "published"]) and has_real_poster
         if not is_researched or not clean_poster:
