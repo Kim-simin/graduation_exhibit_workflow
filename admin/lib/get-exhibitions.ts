@@ -87,7 +87,7 @@ export function getInitialExhibitions(): Exhibition[] {
         ? `${posterVideo.replace(/\\/g, "/").replace(/^.*data\/downloads\//, "").replace(/^.*downloads\//, "").replace(/^\/+/, "").replace(/^public\//, "")}?v=horse_center_v3`
         : null;
 
-      const artworks = (item.artworks || [])
+      const artworks = ([] as any[])
         .filter((a: any) => a.image && !a.image.includes("unsplash"))
         .map((a: any) => ({
           title: a.title || "출품작",

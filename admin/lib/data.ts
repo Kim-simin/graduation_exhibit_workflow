@@ -26,7 +26,7 @@ export function getTaxonomy(): TaxonomyItem[] {
 }
 
 export function getStudents(): Student[] {
-  return withoutRemovedContent("students", studentsData as Student[]);
+  return [];
 }
 
 export function getStudentById(id: string): Student | undefined {

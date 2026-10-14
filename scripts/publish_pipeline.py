@@ -123,7 +123,7 @@ def run_export():
             clean_video = poster_video.replace("\\", "/").replace("my-exhibit-platform/public/", "").replace("public/", "").replace("data/downloads/", "").lstrip("/")
             poster_images_to_sync.add(clean_video)
             
-        raw_artworks = item.get("artworks", [])
+        raw_artworks = []  # Link-only archive: never republish student works.
         artworks = []
         for a in raw_artworks:
             img = a.get("image", "") or a.get("imagePath", "")
@@ -280,6 +280,8 @@ def run_export():
         src_ent = ADMIN_DATA / ent
         if src_ent.exists():
             data = json.loads(src_ent.read_text(encoding="utf-8"))
+            if ent == "students.json":
+                data = []  # Student republication is disabled.
             out_ent = WEB_DATA / ent
             out_ent.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
             print(f"Exported {ent} to {out_ent}")

@@ -658,7 +658,7 @@ export default function ExhibitionGallery({ initialExhibitions }: Props) {
               key={item.id}
               onClick={() => {
                 if (item.isResearched && !isAdminEditMode) {
-                  setSelectedExhibition(item);
+                  if (item.targetUrl && /^https?:\/\//i.test(item.targetUrl)) window.open(item.targetUrl, '_blank', 'noopener,noreferrer');
                 }
               }}
               className={`group relative min-w-0 bg-white dark:bg-[#111827] border rounded-2xl overflow-hidden shadow-sm transition-all duration-300 ease-out flex flex-col ${

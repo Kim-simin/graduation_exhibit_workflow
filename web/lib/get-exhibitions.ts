@@ -86,7 +86,7 @@ export function getInitialExhibitions(): Exhibition[] {
       return [];
     }
     const raw = fs.readFileSync(resolvedPath, "utf-8");
-    const exhibitions: Exhibition[] = JSON.parse(raw);
+    const exhibitions: Exhibition[] = JSON.parse(raw).map((item: Exhibition) => ({ ...item, artworks: [], works: [] }));
     return exhibitions.filter(
       (item) =>
         (item.status === "published" || item.status === "완료" || item.status === "리서치 완료") &&

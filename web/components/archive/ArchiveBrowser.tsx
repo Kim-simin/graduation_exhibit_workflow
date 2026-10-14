@@ -9,6 +9,7 @@ import { MAJORS, INDUSTRIES, BrowseMode, inField, exhibitionDates, exhibitionSta
 import PosterCard, { ArchiveImage } from './PosterCard';
 import Dialog from './Dialog';
 import ExhibitionDetail from './ExhibitionDetail';
+import { exhibitionLink } from '@/lib/exhibition-link';
 import { HomeBanner, HomeSections } from './HomeContent';
 import { useArchiveQuery, navigateArchiveQuery } from './useArchiveQuery';
 
@@ -30,7 +31,7 @@ export default function ArchiveBrowser({exhibitions,today,home=false}: {exhibiti
   function close(key:string){
     if(opened.current[key])router.back();else update({[key]:null});
   }
-  const open=(item:Exhibition)=>update({exhibition:item.id},true);
+  const open=(item:Exhibition)=>{const url=exhibitionLink(item.targetUrl);if(url)window.open(url,'_blank','noopener,noreferrer');};
   useEffect(()=>setLimit(24),[params.toString()]);
   const matchesSearch=(item:Exhibition)=>[item.title,item.university,item.department,item.venue,...(item.tags||[])].join(' ').toLowerCase().includes(query.trim().toLowerCase());
   const year=params.get('year')||'';const school=params.get('school')||'';const status=params.get('status')||'';const location=params.get('location')||'';
@@ -61,7 +62,6 @@ export default function ArchiveBrowser({exhibitions,today,home=false}: {exhibiti
     {overview&&<Dialog title="졸업전시 한눈에 보기" onClose={()=>close('overview')}><div className="grad-panel-summary"><h3>새로운 시선을 담은 전시 <strong>{exhibitions.length}개</strong></h3><p>분야별 졸업전시를 만나보세요.</p></div>{modeControl}<label className="grad-search grad-panel-search"><Search size={18}/><input aria-label="패널 전시회 검색" value={query} onChange={e=>update({q:e.target.value})} placeholder="전시명, 학교, 학과 검색"/></label><label className="grad-jump">분야 바로가기<select aria-label="분야 바로가기" defaultValue="" onChange={e=>document.getElementById('field-'+e.target.value)?.scrollIntoView({behavior:'smooth',block:'start'})}><option value="" disabled>분야 선택</option>{fields.map(f=><option key={f.id} value={f.id}>{f.name}</option>)}</select></label>{mode==='industry'&&<p className="grad-caption">관련 전공 기준 분류 · 분야 간 중복 전시 포함</p>}
       {fields.map(f=>{const group=sorted.filter(item=>matchesSearch(item)&&inField(item,mode,f.id));const count=panelLimit[f.id]||12;return <section className="grad-panel-group" key={f.id} id={'field-'+f.id}><h3>{f.name} <span>{group.length}</span></h3>{group.length?<><div className="grad-panel-grid">{group.slice(0,count).map(item=><PosterCard key={item.id} item={item} today={today} compact onOpen={open}/>)}</div>{group.length>count&&<button className="grad-button grad-more" onClick={()=>setPanelLimit(p=>({...p,[f.id]:count+12}))}>더보기 ({group.length-count})</button>}</>:<p className="grad-small-empty">{query?'검색 조건에 맞는 전시가 없습니다.':'아직 등록된 전시가 없습니다.'}</p>}</section>;})}
     </Dialog>}
-    {selected&&<Dialog title="전시회 상세" wide onClose={()=>close('exhibition')}>{current?<ExhibitionDetail item={current} today={today}/>:<div className="grad-empty">공개된 전시 정보를 찾을 수 없습니다.</div>}</Dialog>}
   </main>;
 }
 function CalendarEmpty(){return <Layers3 size={30} strokeWidth={1.5}/>;}

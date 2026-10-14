@@ -229,6 +229,7 @@ export interface MentoringProjectRecord {
 export async function insertMentoringProject(
   projectData: MentoringProjectRecord
 ): Promise<{ success: boolean; data?: any; error?: string }> {
+  if (projectData.source_type === "student") return {success:false,error:"학생 게시물 등록이 중단되었습니다."};
   if (!supabase || !isSupabaseConfigured) {
     return { success: false, error: "Supabase가 설정되지 않았습니다." };
   }
@@ -279,6 +280,7 @@ export async function insertMentoringProject(
 }
 
 export async function getLiveMentoringProjects(): Promise<MentoringProjectRecord[]> {
+
   if (!supabase || !isSupabaseConfigured) return [];
 
   const results: MentoringProjectRecord[] = [];
@@ -288,6 +290,7 @@ export async function getLiveMentoringProjects(): Promise<MentoringProjectRecord
     const { data, error } = await supabase
       .from("mentoring_projects")
       .select("*")
+      .eq("source_type", "company")
       .order("created_at", { ascending: false });
 
     if (!error && data && data.length > 0) {
@@ -320,6 +323,7 @@ export async function getLiveMentoringProjects(): Promise<MentoringProjectRecord
         if (EXCLUDED_IDS.has(row.source_project_id)) continue;
         try {
           const parsed = JSON.parse(row.message);
+          if (parsed.source_type !== "company") continue;
           if (parsed.id && EXCLUDED_IDS.has(parsed.id)) continue;
           results.push({
             ...parsed,

@@ -143,7 +143,7 @@ export const ALL_CONNECTIONS: ProjectConnection[] = [
  * 더미/샘플/임의 생성 카드는 일절 생성하지 않으며, 데이터가 없으면 빈 배열([])을 반환함.
  */
 export function getStudentProjects(): MentoringProject[] {
-  const rawList = (projectsData as unknown as MentoringProject[]) || [];
+  const rawList: MentoringProject[] = []; // Student publications disabled.
   if (!Array.isArray(rawList) || rawList.length === 0) {
     return [];
   }

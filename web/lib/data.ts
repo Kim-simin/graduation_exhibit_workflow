@@ -23,11 +23,11 @@ export function getTaxonomy(): TaxonomyItem[] {
 }
 
 export function getStudents(): Student[] {
-  return studentsData as Student[];
+  return [];
 }
 
 export function getStudentById(id: string): Student | undefined {
-  return (studentsData as Student[]).find((s) => s.id === id);
+  return undefined;
 }
 
 export function getProfessors(): Professor[] {

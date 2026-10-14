@@ -62,6 +62,7 @@ Thumbs.db
 *.bak
 *.tsbuildinfo
 **/.traffic/
+.private-removal-backups/
 outputs/
 
 
