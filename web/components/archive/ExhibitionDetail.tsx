@@ -9,6 +9,7 @@ import { isArtworkZoomDisabled } from '@/src/utils/categoryMapper';
 import { ArchiveImage } from './PosterCard';
 import { SaveButton } from './ArchiveSession';
 import Dialog from './Dialog';
+import ArtworkPanViewer from './ArtworkPanViewer';
 
 export default function ExhibitionDetail({item,today,standalone=false,initialWork}: {item:Exhibition;today:string;standalone?:boolean;initialWork?:string}) {
   const [zoom,setZoom]=useState<number|null>(null);
@@ -36,6 +37,22 @@ export default function ExhibitionDetail({item,today,standalone=false,initialWor
       {noZoom?<div className="grad-artwork-image"><ArchiveImage src={art.thumbnail || art.thumbnail_url || art.imagePath} alt={art.title}/></div>:<button className="grad-artwork-image" onClick={()=>setZoom(index)} aria-label={art.title+' 확대'}><ArchiveImage src={art.thumbnail || art.thumbnail_url || art.imagePath} alt={art.title}/></button>}
       <p className="grad-kicker">{art.department||item.department}</p><h3>{art.title}</h3><p>{art.author||'작가 미등록'}</p>{art.description&&<details><summary>작품 소개</summary><p className="grad-prose">{art.description}</p></details>}
     </article>)}</div>{!artworks.length&&<p className="grad-empty">등록된 출품 작품이 없습니다.</p>}{limit<artworks.length&&<button className="grad-button grad-more" onClick={()=>setLimit(n=>n+24)}>작품 더보기 ({artworks.length-limit})</button>}</section>
-    {zoom!==null&&<Dialog title={zoom===-1?'전시 포스터':artworks[zoom].title} onClose={()=>setZoom(null)} wide><div className="grad-lightbox"><ArchiveImage src={zoom===-1?item.posterPath:(artworks[zoom].original_image_url || artworks[zoom].imagePath)} alt={zoom===-1?item.title:artworks[zoom].title} eager/></div></Dialog>}
+    {zoom !== null && zoom >= 0 && (
+      <ArtworkPanViewer
+        isOpen={zoom >= 0}
+        onClose={() => setZoom(null)}
+        artworks={artworks}
+        initialIndex={zoom}
+        university={item.university}
+        department={item.department}
+      />
+    )}
+    {zoom === -1 && (
+      <Dialog title="전시 포스터" onClose={() => setZoom(null)} wide>
+        <div className="grad-lightbox">
+          <ArchiveImage src={item.posterPath} alt={item.title + ' 포스터'} eager />
+        </div>
+      </Dialog>
+    )}
   </div>;
 }
