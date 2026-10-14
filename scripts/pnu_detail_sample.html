@@ -1,0 +1,907 @@
+
+<!doctype html>
+<html lang="ko">
+
+<head>	
+
+<script type="text/javascript">
+	var currentAddress = location.href;
+	var isDevelopMode = ""
+	if( isDevelopMode != "Y" ){ 
+		if( currentAddress.indexOf( "http://" ) > -1 && ( currentAddress.indexOf( "Main.do" ) > -1 || currentAddress.indexOf( "login.do" ) > -1)){
+			currentAddress = currentAddress.replace("http://","https://");
+			location.href = currentAddress;
+		}
+	}
+</script>
+
+<!-- don touch!!  -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi" />
+<meta name="description" content="부산대학교 공동실험실습관 홈페이지입니다.">
+<meta name="author" content="부산대학교 공동실험실습관">
+<meta name="keywords" content="부산대학교, 부산대학교 공동실험실습관, 공동실험실습관, 부산대 공실관">
+<link rel="shortcut icon" href="/_Img/favicon.ico">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="expries" content="0" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- all base : CSS -->
+<link rel="stylesheet" type="text/css" href="/_Css/core/jquery-ui-1.9.2.custom.min.css" />
+<link rel="stylesheet" type="text/css" href="/_Css/popup.css" /> <!-- 레이어팝업 & 윈도우 팝업 공통 스타일 -->
+<link rel="stylesheet" type="text/css" href="/_Css/crownix-viewer.min.css" /> <!-- 리포트툴 스타일 -->
+
+<!-- all base : JS -->
+<script charset="utf-8" src="/_Js/core/jquery-1.11.3.min.js" ></script>
+<script charset="utf-8" src="/_Js/core/jquery-ui-1.9.2.custom.min.js"></script>
+<script charset="utf-8" src='/_Js/core/common_base_util.js'></script>
+<script charset="utf-8" src='/_Js/core/crownix-viewer.min.js'></script><!-- 리포트툴 -->
+<script charset="utf-8" src="/_Js/core/browser.detect.js"></script><!-- 방문자통계에서 필요한 스크립트파일 -->
+<script charset="utf-8" src="/_Plugin/jquery.TabMenu/jquery.TabMenu.js"></script><!-- 텝메뉴 플러그인 -->
+<script charset="utf-8" src="/_Js/comm.LayerPopup.js"></script><!-- 레이어 팝업 플러그인 -->
+<script type="text/javascript" src="/_Js/common-scripts.js"></script><!--Back to top-->
+
+	<!-- Favicon 설정 -->
+	<link rel="shortcut icon" href="/_UPLOAD/IMAGE/SiteMgr/SiteFaviconUpload/2018/10/sEkBGN7MpnT4pn9Q.PNG">
+	<link rel="icon" href="/_UPLOAD/IMAGE/SiteMgr/SiteFaviconUpload/2018/10/sEkBGN7MpnT4pn9Q.PNG">
+	<link rel="apple-touch-icon" href="/_UPLOAD/IMAGE/SiteMgr/SiteFaviconUpload/2018/10/sEkBGN7MpnT4pn9Q.PNG">
+	<!-- Title 설정 -->
+	<title>전체 보유기기 > 보유기기 소개 >  부산대학교 공동실험실습관</title>
+
+<!-- configuration -->
+
+<link rel="stylesheet" type="text/css" href="/_Css/common.css">
+<link rel="stylesheet" type="text/css" href="/_Css/webfont.css">
+<link rel="stylesheet" type="text/css" href="/_Css/style.default.css">
+<link rel="stylesheet" type="text/css" href="/_Css/member.css">
+<link rel="stylesheet" type="text/css" href="/_Css/board.css">
+<link rel="stylesheet" type="text/css" href="/_Css/prg.style.css">
+<!-- font-awesome 플러그인 -->
+<link rel="stylesheet" type="text/css" href="/_Css/plugin/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="/homepage/kor/_Css/common.css" />
+<link rel="stylesheet" type="text/css" href="/_Css/board.rspnsv.css" />
+<link rel="stylesheet" type="text/css" href="/_Css/member.rspnsv.css" />
+<link rel="stylesheet" type="text/css" href="/_Css/prg.style.rspnsv.css" />
+<script charset="utf-8" src="/_Js/common.js" ></script>
+
+<!-- 이미지슬라이드 플러그인 -->
+
+<!-- font-awesome 플러그인 -->
+<link rel="stylesheet" type="text/css" href="/_Css/plugin/font-awesome.css">
+
+<!--[if lt IE 9]>
+    <script src="/_Js/respond.min.js"></script>
+    <script src="/_js/html5shiv.min.js"></script>
+<![endif]-->
+
+<!-- 방문자통계 스크립트 -->
+<script type="text/javascript">
+onVisit('kor');
+</script>
+ 
+<script>
+function addCellHeader(table) {
+	if (!table) {
+		return false;
+	}
+	var trs = table.getElementsByTagName('tr');
+	var trsChild;
+	var grid = {};
+	var cells;
+	for (var i = 0, cntI = trs.length; i < cntI; i++) {
+		if (!grid[i]) {
+			grid[i] = {};
+		}
+		trsChild = trs.item(i).childNodes;
+		cells = 0
+		for (var j = 0, cntJ = trsChild.length; j < cntJ; j++) {
+			if (trsChild[j].nodeType == 1) {
+				grid[i][cells++] = trsChild[j];
+			}
+		}
+	}
+
+	var cellHeader = '';
+	for (col in grid) {
+		if (col == 0) {
+			continue;
+		}
+		for (cell in grid[col]) {
+			cellHeader = grid[0][cell].innerHTML 
+			grid[col][cell].setAttribute('data-cell-header', cellHeader);
+		}
+	}
+}
+</script> <!-- //don touch!!  -->
+	<!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" /> -->
+	<link rel="stylesheet" href="/_Css/OpenSans.css" />
+	
+	<!-- CSS -->
+	<link href="/_Css/bootstrap.min.css" rel="stylesheet">
+	<link href="/_Css/style.css" rel="stylesheet">
+	
+	<!-- JS -->
+	<script type="text/javascript" src="/_Js/bootstrap.min.js"></script>
+</head>
+
+<body class="isSub">
+<!--[if lt IE 9]>
+	<div id="uppopup" class="lowIE-update">
+		<div class="update-cont">
+			<p class="tit">본사이트는<strong>Internet Explorer 9버전 이상</strong>에 <br />최적화 되어 있습니다.</p>
+			<p class="txt">Explorer를 최신 버전으로 업데이트 하시거나, <br />Chrome, Fire fox 등의 브라우저를 이용해 주시기 바랍니다.</p>
+			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie" target="_blank" title="새창열림" class="btn-upgrade"><span class="atxt">Internet Explorer 업그레이드</span></a>
+			<span class="chk-uclose"><input type="checkbox" name="chk-uclose" id="chkuppopup" /><label for="chkuppopup">하루동안 열지 않기</label></span>
+			<button type="button" onclick="javascript:popHide('uppopup')" class="btn-uclose"><span class="blind">현재창 닫기</span></button>
+		</div>
+		<span class="bg"></span>
+	</div>
+	<script type="text/javascript">checkPop('uppopup');</script>
+<![endif]-->
+
+<!-- skipNavi (안씀)
+<div id="skipNavi">
+	<h1 class="blind">스킵네비게이션</h1>
+	<ul>
+		<li><a href="#contents" class="skipLink">본문바로가기</a></li>
+		<li><a href="#mainNavi" class="skipLink">주메뉴바로가기</a></li>
+	</ul>
+</div>
+--> 
+
+<!-- doc-wrap -->
+<div id="doc-wrap">
+	<!-- 상단팝업 (안씀)
+
+	-->
+	
+	<!--Header 시작-->
+	<header class="head-div">
+		<div class="navbar navbar-default navbar-fixed-top ict_head">
+			<!--상단고정시 div크기 지정해서 감싸기-->
+			<div class="fix_head">
+				<!--로고/햄버거 부분 시작-->
+				<div class="navbar-header">
+					<!--전체메뉴 햄버거-->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="margin:18px 10px 17px 0px; color:#FFF;">
+						<span class="glyphicon glyphicon-menu-hamburger top_hambuger" aria-hidden="true"></span>
+					</button>
+					<a class="navbar-brand" href="/kor/Main.do"><span class="logo">부산대학교<br>공동실험실습관</span></a>
+				</div>
+				<!--로고/햄버거 부분 끝-->
+				
+				<!--대메뉴부분 시작-->
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav navbar-right nav-pills nav-stacked m_top" ><!--nav-pills-->
+		<li class="dropdown top_menu">
+			<span onClick=window.open("http://pusan.ac.kr","_blank") class="top_menu_txt r_line">부산대학교</span>
+							<span onClick="location.href='/kor/CMS/PnuMember/login.do?mCode=MN001'" class="top_menu_txt r_line">로그인</a></span>
+				<span onClick="location.href='/kor/CMS/PnuMember/MemberJoin/step01.do?mCode=MN007'" class="top_menu_txt r_line">회원가입</a></span>
+			<span onClick="location.href='/kor/CMS/SiteMap/SiteMap.do?mCode=MN022'" class="top_menu_txt">사이트맵</span>
+		</li>
+			
+			
+
+						
+						
+						<li class='dropdown b_menu first' id="MN008">
+								<a class='dropdown-toggle b_menu'  href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN024"  data-toggle="dropdown" role="button" aria-expanded="false">공동실험실습관<span class="caret"></span></a>
+			
+			<ul class="dropdown-menu" role="menu">
+
+						
+						
+						<li  id="MN024">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN024"  >기관소개</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN025">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/HistoryMgr/list.do?mCode=MN025"  >연혁</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN027">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN027"  >조직 및 구성원</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN029">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN101"  >찾아오시는길</a>
+			
+						</li>
+			</ul>
+						</li>
+
+						
+						
+						<li class='dropdown b_menu over' id="MN085">
+								<a class='dropdown-toggle b_menu over'  href="https://labcenter.pusan.ac.kr/kor/CMS/EquipInfoMgr/list.do?mCode=MN086"  data-toggle="dropdown" role="button" aria-expanded="false">보유기기 소개<span class="caret"></span></a>
+			
+			<ul class="dropdown-menu" role="menu">
+
+						
+						
+						<li  id="MN086">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/EquipInfoMgr/list.do?mCode=MN086"  >전체 보유기기</a>
+						</li>
+			</ul>
+						</li>
+
+						
+						
+						<li class='dropdown b_menu' id="MN087">
+								<a class='dropdown-toggle b_menu'  href="https://labcenter.pusan.ac.kr/kor/CMS/ReserveMgr/monthly.do?mCode=MN089"  data-toggle="dropdown" role="button" aria-expanded="false">기기이용안내<span class="caret"></span></a>
+			
+			<ul class="dropdown-menu" role="menu">
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN089">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/ReserveMgr/monthly.do?mCode=MN089"  >기기예약현황</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN090">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN107"  >기기이용절차</a>
+			
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN091">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN104"  >납부 절차(통장 및 사업자 사본 출력)</a>
+			
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN092">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN092"  >분석시료 발송안내</a>
+						</li>
+			</ul>
+						</li>
+
+						
+						
+						<li class='dropdown b_menu' id="MN095">
+								<a class='dropdown-toggle b_menu'  href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN098"  data-toggle="dropdown" role="button" aria-expanded="false">교육 및 기타 신청<span class="caret"></span></a>
+			
+			<ul class="dropdown-menu" role="menu">
+
+						
+						
+						<li  id="MN098">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN098"  >교육 및 세미나 안내</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN097">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/EduMgr/list.do?searchEduType=C&mCode=MN110"  >교육 및 세미나 신청</a>
+			
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN131">
+								<a   href="http://labcenter.pusan.ac.kr/kor/CMS/EduMgr/monthly.do?mCode=MN131"  >교육 및 세미나 일정</a>
+						</li>
+			</ul>
+						</li>
+
+						
+						
+						<li class='dropdown b_menu' id="MN012">
+								<a class='dropdown-toggle b_menu'  href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN052"  data-toggle="dropdown" role="button" aria-expanded="false">커뮤니티<span class="caret"></span></a>
+			
+			<ul class="dropdown-menu" role="menu">
+
+						
+						
+						<li  id="MN052">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN052"  >공지사항</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN053">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN053"  >Q&A</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN058">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN058"  >신규기자재수요조사</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN114">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN059"  >자료실</a>
+			
+			<ul class="dropdown-menu" role="menu">
+
+						
+						
+						<li  id="MN059">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN059"  >이용자 자료실</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN060">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN060"  >관리자 자료실</a>
+						</li>
+			</ul>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN115">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN115"  >논문실적</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN116">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN116"  >홍보실적</a>
+						</li>
+			</ul>
+						</li>
+			
+	</ul>
+</div>
+
+				<!--대메뉴부분 끝-->
+			</div>
+			<!--상단고정시 div크기 지정해서 감싸기 끝-->
+		</div>
+	</header>
+	<!--Header 끝-->
+
+	<!-- container-wrap -->
+	<article id="container-wrap">
+		<!-- svisual-wrap -->
+<!--웹용 메인이미지부분 시작  web_img_box-->
+<div class="container-fluid web_img_box" style="background:url('/_Img/sub01_main_img01.png') 0px 0px no-repeat; text-align:center;">
+	<div>
+		<p class="sub_main_title01">부산대학교 공동실험실습관</p>
+		<p class="sub_main_title02">미래를 향한 힘찬 발걸음</p>
+		<!--img alt="" src="img/sub04_main_img01.png" width="100%"-->
+	</div>
+</div>
+<!--웹용 메인이미지부분 끝-->
+
+<!--모바일용 메인이미지부분 시작-->
+<div class="container-fluid mobile_img_box" style="background:url('/_Img/sub01_main_mobile_img01.png') 0px 0px no-repeat; text-align:center;">
+	<div>
+		<p class="sub_main_mo_title01">부산대학교 공동실험실습관</p>
+		<p class="sub_main_mo_title02">미래를 향한 힘찬 발걸음</p>
+		<!--img alt="" src="img/sub04_main_mibile_img01.png" width="100%"-->
+	</div>
+</div>
+<!--모바일용 메인이미지부분 끝-->		<!-- svisual-wrap //-->
+
+		<div id="container">
+			<!-- side-wrap -->
+			<div id="side-wrap">
+ <div class="submenu" id="leftmenu">
+			<!-- 메크로 :: 여기가 함수 호출 부분 -->
+
+				<div class="lm-tit">
+					<span class="tit">보유기기 소개</span>
+					<span class="txt"></span>
+				</div>
+				<ul class="depth1">
+					<li class="lm_l1">
+							<a class='lm_a1'  href="https://labcenter.pusan.ac.kr/kor/CMS/EquipInfoMgr/list.do?mCode=MN086"  ><span>보유기기 소개</span></a>
+			
+	
+			
+				<ul class="depth2">
+							
+							<li class="lm_l2 over">
+									<a class='lm_a2'  href="https://labcenter.pusan.ac.kr/kor/CMS/EquipInfoMgr/list.do?mCode=MN086"  ><span>전체 보유기기</span></a>
+							</li>
+
+				</ul>
+					</li>
+				</ul>
+	
+		
+</div>
+
+				<script src="/_Js/submenu.js"></script>
+				<script>$(function(){initSubNavigation();});</script>
+			</div>
+			<!-- side-wrap //-->
+			
+			<!-- contents -->
+			<div id="contents">
+				<!-- cont-top -->
+				<div class="cont-top">
+
+<div id="cont-navi" class="cont-navi">
+	<ul>
+		<li class="home"><a href="/kor/Main.do"><span class="blind">메인으로 이동</span></a></li>
+		
+
+
+				
+				
+
+
+
+						
+						<li class="mn_l1" >
+		
+			
+		
+			
+		
+			
+	
+	
+	
+								<a  href="https://labcenter.pusan.ac.kr/kor/CMS/EquipInfoMgr/list.do?mCode=MN086" >보유기기 소개</a>
+	
+						</li>
+						
+		
+
+
+
+						
+						<li class="mn_l1 over" >
+		
+			
+	
+								<a  href="https://labcenter.pusan.ac.kr/kor/CMS/EquipInfoMgr/list.do?mCode=MN086" >전체 보유기기</a>
+	
+						</li>
+						
+					
+		
+					
+		
+	</ul>
+</div>
+
+	
+		
+	
+		
+			
+			
+			
+			
+								
+					
+					
+	
+		
+	
+		
+			
+			
+								
+					
+						
+				
+			
+		
+		
+						
+						
+						
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		<h2 class="cont-tit">전체 보유기기</h2>
+
+					<div class="cont-ctrl-btns">
+
+<!-- 운영
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+-->
+<script src="/_Js/kakao.min.js"></script>
+
+<span class="ctrl-txt">공유</span>
+<button type="button" class="btn-share" onclick="tglSns();"><span class="blind">공유하기</span></button>
+<div class="sns-list">
+	<ul>
+		<li class="sns-fb"><button type="button" onclick="onShareSns('fb');"><span class="blind">페이스북</span></button></li>
+		<li class="sns-tw"><button type="button" onclick="onShareSns('tw');"><span class="blind">트위터</span></button></li>
+		<li class="sns-kks"><button type="button" onclick="sendToKakaoStory();"><span class="blind">카카오스토리</span></button></li>
+	</ul>
+</div>
+<script type="text/javascript">
+	function sendToKakaoStory(){
+		//Kakao.init("3e3efa0276e2ea4dd2de4c1a7c1df970");
+		
+		var shareData ={
+			"url": $(location).attr('href'),
+			"text": $(document).attr('title')
+		  };
+		if( false ){
+			Kakao.Story.open(shareData);	//앱으로 공유
+		}else{
+			Kakao.Story.share(shareData);	//웹으로 공유
+		}
+	}
+	
+	function sendToKakao(){
+		//Kakao.init("3e3efa0276e2ea4dd2de4c1a7c1df970");
+		if( false ){
+			try{
+				//this.initKaKao();
+				Kakao.Link.sendScrap({
+					requestUrl: $(location).attr('href')
+				});
+			}catch(e){
+				alert("카카오톡이 설치된 스마트폰에서만 지원됩니다");
+			}
+		}else{
+			alert("스마트폰에서만 지원됩니다");
+		}
+	}
+	
+	function onShareSns(kind){
+		var openWindow = window.open("about:blank");
+		
+		if(kind == "fb"){
+			openWindow.location.href="http://www.facebook.com/sharer/sharer.php?u="+$(location).attr('href');
+		}else if(kind == "tw"){
+			openWindow.location.href="https://twitter.com/intent/tweet?url="+$(location).attr('href');
+		}else if(kind == "blog"){
+			openWindow.location.href="http://blog.naver.com/openapi/share?url="+$(location).attr('href');
+		}else{
+			alert("공유에 실패하였습니다.\n관리자에게 문의하세요.");
+		}
+	}
+	
+	function tglSns(){
+		var tglwr =  $(".cont-ctrl-btns");
+		var tglBtn = $(".btn-share", tglwr);
+		if(tglBtn.hasClass("is-open")){
+			closeSnsLIst();
+		} else{
+			openSnsList();		
+		}
+		function openSnsList(){
+			tglBtn.addClass("is-open");
+			$(".sns-list", tglwr).slideDown(200);
+		}
+		function closeSnsLIst(){
+			tglBtn.removeClass("is-open");
+			$(".sns-list", tglwr).slideUp(200);		
+		}	
+	}
+</script>
+						<span class="ctrl-txt">인쇄</span>
+						<button type="button" onclick="pagePrint('kor');" title="새창열림" class="btn-print"><span class="blind">인쇄</span></button>
+					</div>
+				</div>
+				<!-- cont-top //-->
+				
+				<div id="cont" class="pg-">
+					<!-- S : TABMENU //-->
+
+			
+
+
+
+
+				
+
+
+
+
+				
+			
+			
+
+					<!-- E : TABMENU //-->
+					
+<style type="text/css">
+	
+	.equipinfo-wrap1 {position:relative;padding-left:390px; padding-bottom:10px; min-height:500px;}
+	.equipinfo-wrap1 .equip-imgbox {position:absolute;top:0;left:0;width: 380px; border:1px solid #ddd;}
+	.equipinfo-wrap1 .equip-infobox {margin-left:2%;}
+	
+	.equipinfo-wrap1 .equip-imgbox .gb {width: 100%; text-align: center; padding: 1%; min-height:400px; }
+	.equipinfo-wrap1 .equip-imgbox .gbi {width: auto; margin: 2%;}
+	.equipinfo-wrap1 .equip-imgbox .gsbi {width:100%; text-align:center; max-height:150px;}
+	.equipinfo-wrap1 .equip-imgbox .gs {background-color:#dadada; width:100%; text-align:center; min-height:60px;}
+	.equipinfo-wrap1 .equip-imgbox .imgSize {width:50%; max-height:100px; overflow:hidden;}
+	.equipinfo-wrap1 .equip-imgbox .imgb {width:auto;padding-top:40px;padding-bottom:45px;}
+	.equipinfo-wrap1 .equip-imgbox .imgs1 {width:66px; padding:15px 5px; overflow:hidden; float:left;cursor:pointer;}
+	.equipinfo-wrap1 .equip-imgbox .thumbArea {background-color:#eaeaea; overflow:hidden;}
+	.equipinfo-wrap1 .equip-imgbox .big_img {width:370px; height:330px;}
+	.equipinfo-wrap1 .equip-imgbox .no_img {width:95%}
+	
+	.equipinfo-wrap1 .equip-infobox .ex1 {border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; font-size:11pt; padding:10px; min-height:150px;}
+	.equipinfo-wrap1 .equip-infobox .ex1 td {font-size:11pt; color:#2b405b; vertical-align:unset;}
+	
+	.equipinfo-wrap1 .equip-infobox .ex2 {border-bottom: 1px solid #ddd; min-height:100px; padding-bottom:10px; padding-left:7px;}
+	.equipinfo-wrap1 .equip-infobox .ex2 p {font-size:11pt; color:#2b405b;}
+	.equipinfo-wrap1 .equip-infobox .ex2 .ex2_title {font-size:14pt;}
+	.equipinfo-wrap1 .equip-infobox .ex2 .ex2_content {padding-left:10px;}
+	
+	.cautionArea {display:block; background-color:#eaeaea; border: 1px solid #ddd; padding:10px 20px 20px;}
+	.cautionArea h1{color:#396eb7; font-size:14pt; padding-top:3px;}
+	.cautionArea .cautionContent {font-size:11pt;}
+	
+	.tabItem {border:1px solid #ddd; padding:10px 20px; min-height:200px;}
+	.tabItem .item-detail {font-size:11pt;}
+	
+	@media only screen and (max-width:899px){
+		.equipinfo-wrap1 {min-height:290px;padding-left:280px;padding-bottom:20px;}
+		.equipinfo-wrap1 .equip-imgbox thead th, .equipinfo-wrap1 .equip-imgbox tbody td {height:35px}
+		.equipinfo-wrap1 .equip-infobox {margin-left:20%;}
+	} 
+	@media only screen and (max-width:699px){
+		.equipinfo-wrap1 {padding-left:0}
+		.equipinfo-wrap1 .equip-imgbox {position:relative;top:auto;left:auto;margin:0 auto 20px;}
+		.equipinfo-wrap1 .equip-infobox {margin-left:2%;}
+	}
+	
+</style>
+<script type="text/javascript">
+function onList() {
+	location.href = "/kor/CMS/EquipInfoMgr/list.do?mCode=MN086";
+}
+
+function onOption(mode) {
+	var frm = document.reserveForm;	
+	frm.action = "/kor/CMS/ReserveMgr/reserve.do?mCode=MN088";
+	
+	if(mode == "s") {
+		frm.action = "/kor/CMS/ReserveMgr/monthly.do?mCode=MN089";
+	}
+	frm.submit();
+}
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".cont-tit").text("초고분석능 전계방사형 주사전자현미경(GEMINI500)-분석의뢰");
+	
+	var option = {
+		target : "tab-items"
+		, BtnList : [
+			{ name : "원리 및 특징", code : "EquipInfo-FEATURE" }
+			, { name : "주요구성 및 성능", code : "EquipInfo-PERFORMANCE" }
+			, { name : "사용예시", code : "EquipInfo-USE_EXAMPLE" }
+			, { name : "이용절차", code : "EquipInfo-USE_PROCEDURE" }
+			, { name : "이용수가", code : "EquipInfo-USE_COST" }
+			, { name : "기타안내", code : "EquipInfo-ETC_NOTICE" }
+			, { name : "관련파일", code : "EquipInfo-FILE" }
+		]
+	};
+	$( "#EquipInfoTapMenu" ).tapMenu( option );
+});
+</script>
+<form name="reserveForm" method="post" action="#">
+	<input type="hidden" name="lab_code" value="D">
+	<input type="hidden" name="equip_keyno" value="184">
+</form>
+<div>
+	<div class="equipinfo-wrap1">
+		<div class="equip-imgbox">
+			<table class="gb">
+				<tr class="gbi">
+					<td class="imgb">
+							<img class="no_img" src="/_Img/Board/default/no_thum.gif" >
+					</td>
+				</tr>
+			</table>
+			<table class="gs">
+				<tr class="thumbArea">
+				</tr>
+			</table>
+		</div>
+		
+		<div class="equip-infobox">
+			<div class="ex1">
+				<table>
+					<colgroup>
+						<col width="30%">
+						<col width="70%">
+					</colgroup>
+					<tr>
+						<td class="c-tit03">모델명</td>
+						<td>GEMINI500</td>
+					</tr>
+					<tr>
+						<td class="c-tit03">설치장소</td>
+						<td>전자현미경실 (311)</td>
+					</tr>
+					<tr>
+						<td class="c-tit03">설치상태</td>
+						<td>고정</td>
+					</tr>
+					<tr>
+						<td class="c-tit03">장비상태</td>
+						<td>
+							<span class="btn_G" style="border:0px;">양호</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="c-tit03">문의처</td>
+						<td>TEL : 051-510-3038<br/>E-mail : jyjeon@pusan.ac.kr</td>
+					</tr>
+					<tr>
+						<td class="c-tit03">오퍼레이터</td>
+						<td> 전지영</td>
+					</tr>
+				</table>
+			</div>
+			<div class="ex2">
+				<p class="info-ex02 ex2_title">예약정보</p>
+					<p class="ex2_content">예약가능요일 : <strong>월요일, 
+					화요일, 
+					수요일, 
+					
+					금요일, 
+					
+					
+					</strong>
+					</p>
+						<p class="ex2_content">예약가능시간/휴게시간 : <strong>09:30~15:30</strong> / <strong>11:30~13:30</strong></p>
+					<p class="ex2_content">예약최소/최대시간/(예약단위당)예약가능건수 : <strong>1시간</strong> / <strong>2시간</strong> / <strong>1건</strong></p>
+					<p class="ex2_content">예약가능기간 : 현재일로부터 <strong>1개월</strong>까지</p>
+					<p class="ex2_content">제약사항 : <strong class="csc-p2">당일예약불가(3일전 예약마감), 당일취소불가</strong></p>
+			</div>
+			<div class="btn-wrap right">
+				<input type="button" class="bw-btn" onclick="onOption('s');" value="예약현황">
+			</div>
+		</div>
+	</div>
+	
+	<div class="sgap"></div>
+	
+	<!-- tab -->
+	<div id="EquipInfoTapMenu"></div>
+	<!-- tab //-->
+	
+	<div id="tab-items">
+		<div class="tabItem" id="EquipInfo-FEATURE">
+			<table class="item-detail">
+				<tr>
+					<td>
+					</td>
+				<tr>
+			</table>
+		</div>
+		<div class="tabItem" id="EquipInfo-PERFORMANCE">
+			<table class="item-detail">
+				<tr>
+					<td>
+					</td>
+				<tr>
+			</table>
+		</div>
+		<div class="tabItem" id="EquipInfo-USE_EXAMPLE">
+			<table class="item-detail">
+				<tr>
+					<td>
+					</td>
+				<tr>
+			</table>
+		</div>
+		<div class="tabItem" id="EquipInfo-USE_PROCEDURE">
+			<table class="item-detail">
+				<tr>
+					<td>
+					</td>
+				<tr>
+			</table>
+		</div>
+		<div class="tabItem" id="EquipInfo-USE_COST">
+			<table class="item-detail">
+				<tr>
+					<td>[분석의뢰]<br>SEM: 160,000원/시간<br>SEM+EDS: 180,000원/시간<br>SEM+ EBSD: 180,000원/시간<br>SEM+ TKD-EBSD: 200,000원/시간<br>SEM+ EDS+EBSD: 200,000원/시간<br>*Pattern Matching software(MapSweeper) 이용 : 별도협의<br><br>[자율사용]<br>SEM: 120,000원/시간<br>SEM+EDS: 140,000원/시간<br>SEM+EBSD: 140,000원/시간<br>SEM+EDS+EBSD: 160,000원/시간<br>*Pt or C or Cr coating - 10,000원/회
+					</td>
+				<tr>
+			</table>
+		</div>
+		<div class="tabItem" id="EquipInfo-ETC_NOTICE">
+			<table class="item-detail">
+				<tr>
+					<td>
+					</td>
+				<tr>
+			</table>
+		</div>
+		<div class="tabItem" id="EquipInfo-FILE">
+			<table class="item-detail">
+				<tr>
+					<td>
+					</td>
+				<tr>
+			</table>
+		</div>
+	</div>
+	
+	<div class="btn-wrap right">
+		<input type="button" class="bw-btn" onclick="onList();" value="목록">
+	</div>
+	
+</div>				</div>
+			</div>
+			<!-- contents //-->
+		</div>
+	</article>
+	<!-- container-wrap //-->
+
+	<!-- footer-wrap -->
+<!--Footer 시작-->
+<footer class="footer">
+	<div class="container">
+		<p class="copyright">
+			[46241] 부산광역시 금정구 부산대학로63번길 2(장전동) 부산대학교 공동실험실습관<br/> 
+			TEL : (행정) 051-510-3401, (업체등록/결제) 1690, (분석문의) 3418/3038, (홈페이지문의) 3421, (양산분관) 8196 / FAX : 051)517-3760 <br/>
+			COPYRIGHT 2018 PNU CORE RESEARCH FACILITIES ALL RIGHTS RESERVED.<br/>			  
+			<span><strong><a href="http://his.pusan.ac.kr/cmmCon/Privacy/view..do" onclick="javascript:window.open(this.href,'Popup','width=860,height=720,left=10,top=10,scrollbars=yes');return false;">개인정보처리방침</a></strong></span>
+			<!--<span><strong><a href="/kor/CMS/Contents/Contents.do?mCode=MN093">개인정보처리방침</a></strong></span>-->
+		</p>
+	</div>
+	
+	<p class="copyright"></p>
+</footer>
+<!-- Footer 끝 -->	<!-- footer-wrap //-->
+</div>
+
+<!-- doc-wrap //-->
+<script src="/_Js/common.base.js"></script>
+<script src="/_Js/jquery/jquery.cs_wauto.js"></script>
+<script src="/_Js/jquery/jquery.cs_tab.js"></script>
+<script src="/homepage/kor/_Js/common.js"></script>
+<script src="/homepage/kor/_Js/topmenu.js"></script>
+<script src="/homepage/kor/_Js/layout_sub.js"></script>
+
+<!--[if lte IE 9]>
+	<script src="/_Js/jquery/jquery.cs_placeholder.js"></script>
+	<script>placeholderInit();</script>
+<![endif]-->
+</body>
+
+</html>

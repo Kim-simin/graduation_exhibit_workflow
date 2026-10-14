@@ -173,7 +173,11 @@ export async function POST(req: Request) {
         title: a.title || a.project_title || "출품작",
         student_name: a.author || a.student_name || `${university.trim()} 작가`,
         inferred_role: a.role || a.inferred_role || "크리에이터",
+        department: a.department || undefined,
         image: (a.imagePath || a.image || a.screenshot_path || a.thumbnail || "").replace(/\\/g, "/").replace(/^\/+/, "").replace(/^public\//, ""),
+        thumbnail: a.thumbnail ? a.thumbnail.replace(/\\/g, "/").replace(/^\/+/, "").replace(/^public\//, "") : undefined,
+        thumbnail_url: a.thumbnail_url ? a.thumbnail_url.replace(/\\/g, "/").replace(/^\/+/, "").replace(/^public\//, "") : undefined,
+        original_image_url: a.original_image_url || undefined,
         description: a.description || "",
       })),
     };
@@ -187,7 +191,11 @@ export async function POST(req: Request) {
       title: a.title || a.project_title || "출품작",
       author: a.author || a.student_name || `${university.trim()} 작가`,
       role: a.role || a.inferred_role || "크리에이터",
+      department: a.department || undefined,
       imagePath: (a.imagePath || a.image || a.screenshot_path || a.thumbnail || "").replace(/\\/g, "/").replace(/^\/+/, "").replace(/^public\//, ""),
+      thumbnail: a.thumbnail ? a.thumbnail.replace(/\\/g, "/").replace(/^\/+/, "").replace(/^public\//, "") : undefined,
+      thumbnail_url: a.thumbnail_url ? a.thumbnail_url.replace(/\\/g, "/").replace(/^\/+/, "").replace(/^public\//, "") : undefined,
+      original_image_url: a.original_image_url || undefined,
       description: a.description || "",
     }));
 

@@ -39,6 +39,10 @@ from .curriculum_professor_researcher import (
     CurriculumProfessorResearcher,
     is_valid_academic_host_for_univ
 )
+from .thumbnail_processor import (
+    process_exhibition_artworks,
+    is_software_engineering_exhibition
+)
 
 class SecurityIsolationError(Exception):
     """Raised when mock or test execution attempts to access production database paths."""
@@ -161,10 +165,19 @@ class ArchiveCardIntegrator:
                 "curation_intro": f"{year}년도 {univ} {dept} 졸업전시 아카이브입니다. {detail.get('reasoning', '')}",
                 "inferred_industry_keywords": [standard_category, dept, f"{year}졸전"]
             },
-            "artworks": [],
+            "artworks": finding.get("artworks") or detail.get("artworks") or [],
             "isUploaded": False,
             "isResearched": True
         }
+
+        # 2.5 Run Automated Thumbnail Pipeline (STEP 3~6: Analysis, Smart Crop, Idempotent Storage, QA)
+        if exhibition_card_payload.get("artworks"):
+            try:
+                thumb_stats = process_exhibition_artworks(exhibition_card_payload)
+                print(f"[*] [Thumbnail Pipeline] {thumb_stats}", flush=True)
+            except Exception as e:
+                print(f"[WARN] Thumbnail processing warning: {e}", flush=True)
+
 
         # 3. Register exhibition card with error propagation
         try:

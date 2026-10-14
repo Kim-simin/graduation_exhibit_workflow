@@ -1,0 +1,299 @@
+Total items: 70
+
+=== SHARED_INFRASTRUCTURE (9 items) ===
+  [opp_bbits_infra_001] 부산공유대학 공동 캠퍼스 시설 및 첨단 인프라 대여
+    - Target: 교직원 및 부산공유대학 참여학생
+    - Provider: 부산공유대학 (제12공학관 102-1호)
+    - Source: https://www.bbits.ac.kr/ko/support/studio/infra
+  [opp_uniall_team_a1a689793847] 고려대학교 대학 창의적 자산 실용화(BRIDGE 3.0) 사업단
+    - Target: 고려대학교 및 참여 컨소시엄 재학생
+    - Provider: 고려대학교 산학협력단
+    - Source: https://uniall.nrf.re.kr/biz/bizteam/list.do
+  [opp_uniall_team_95fbc6926033] 경희대학교 대학 창의적 자산 실용화(BRIDGE 3.0) 사업단
+    - Target: 경희대학교 및 참여 컨소시엄 재학생
+    - Provider: 경희대학교 산학협력단
+    - Source: https://uniall.nrf.re.kr/biz/bizteam/list.do
+  [opp_uniall_team_e9bef2cf55ae] 영남대학교 대학 창의적 자산 실용화(BRIDGE 3.0) 사업단
+    - Target: 영남대학교 및 참여 컨소시엄 재학생
+    - Provider: 영남대학교 산학협력단
+    - Source: https://uniall.nrf.re.kr/biz/bizteam/list.do
+  [opp_uniall_team_e611660d9963] 한국해양대학교 대학 창의적 자산 실용화(BRIDGE 3.0) 사업단
+    - Target: 국립한국해양대학교 및 참여 컨소시엄 재학생
+    - Provider: 국립한국해양대학교 산학협력단
+    - Source: https://uniall.nrf.re.kr/biz/bizteam/list.do
+  [opp_uniall_team_0572ffe202c8] 강원대학교 지자체-대학 협력기반 지역혁신(RIS) 사업단
+    - Target: 강원대학교 및 참여 컨소시엄 재학생
+    - Provider: 강원대학교 산학협력단
+    - Source: https://uniall.nrf.re.kr/biz/bizteam/list.do
+  [opp_uniall_team_6d776770d815] 경북대학교 첨단분야 혁신융합대학(COSS) 사업단
+    - Target: 경북대학교 및 참여 컨소시엄 재학생
+    - Provider: 경북대학교 산학협력단
+    - Source: https://uniall.nrf.re.kr/biz/bizteam/list.do
+  [opp_uniall_team_889302c60d55] 전남대학교 인문사회 융합인재양성(HUSS) 사업단
+    - Target: 전남대학교 및 참여 컨소시엄 재학생
+    - Provider: 전남대학교 산학협력단
+    - Source: https://uniall.nrf.re.kr/biz/bizteam/list.do
+  [opp_uniall_team_1466b10343de] 충남대학교 창업교육 혁신 선도대학(SCOUT) 사업단
+    - Target: 충남대학교 및 참여 컨소시엄 재학생
+    - Provider: 충남대학교 산학협력단
+    - Source: https://uniall.nrf.re.kr/biz/bizteam/list.do
+
+=== EDUCATION (1 items) ===
+  [opp_gemini_academy_2026] 대학생을 위한 실전 AI 무료 강의! Gemini Academy 수강생 모집
+    - Target: 전공 무관 모든 대학생 (부산 지역은 대학교 상관없이 동의대학교에서 수강 가능, 타 지역도 신청 가능)
+    - Provider: 구글코리아, 고용노동부
+    - Source: https://www.pusan.ac.kr/kor/CMS/Board/Board.do?board_seq=1511268&mCode=MN095&mgr_seq=3&mode=view&page=1&searchID=title
+
+=== COMPETITION (2 items) ===
+  [opp_ai_startup_competition_2026] 2026 AI 창업 경진대회 : AI 스타트업의 새로운 항구, 부산
+    - Target: 전국 예비·신규창업팀(2~4인 이내의 팀)
+    - Provider: 주최: 부산광역시, 주관: (재)부산정보산업진흥원, 참여: 부산창조경제혁신센터
+    - Source: https://ai.pusan.ac.kr/bbs/ai/204/1463037/artclView.do
+  [opp_ks_2026_all_govt_startup] 2026년 중앙부처 및 지자체 창업지원사업 통합공고
+    - Target: 전국 대학생, 청년 예비창업자 및 7년 이내 창업기업
+    - Provider: 중소벤처기업부 / 중소벤처기업부
+    - Source: https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do
+
+=== CAPSTONE (2 items) ===
+  [opp_pnu_capstone_2026_2_general] 2026학년도 2학기 캡스톤 디자인 교과목 지원사업 (1차: 일반형)
+    - Target: 2026.2학기 캡스톤 디자인(capstone design) 또는 종합설계 정규교과목 수강생 중 학부(과) 3학년 이상 재학생 및 대학원 재학생 (최소 3인 이상 팀)
+    - Provider: 부산대학교 앵커사업단 미래신산업선도본부 / 정보컴퓨터공학부
+    - Source: https://cse.pusan.ac.kr/bbs/cse/2056/1462942/artclView.do
+  [opp_pnu_capstone_2026_2_partner] 2026학년도 2학기 캡스톤 디자인 교과목 지원사업 (2차: 기업연계형·지자체연계형)
+    - Target: 2026.2학기 캡스톤 디자인/종합설계 수강생 중 학부 3학년 이상 및 대학원생 (최소 3인 이상 팀)
+    - Provider: 부산대학교 앵커사업단 미래신산업선도본부 / 정보컴퓨터공학부
+    - Source: https://cse.pusan.ac.kr/bbs/cse/2056/1462942/artclView.do
+
+=== RND (40 items) ===
+  [opp_global_ax_pbl_2026] 「2026 글로벌 AX-PBL 현장실증 공학교육」 프로그램 참가자 모집
+    - Target: 공학계열 재학생 (선발인원 10명 내외)
+    - Provider: 부산대학교 공학교育혁신센터
+    - Source: https://www.pusan.ac.kr/kor/CMS/Board/Board.do?board_seq=1511038&mCode=MN095&mgr_seq=3&mode=view&page=1
+  [opp_nst_6207] [한국식품연구원] 2026년 제2차 정규직 및 무기계약직 채용 공고
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국식품연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52266&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1
+  [opp_nst_6206] [한국에너지기술연구원] 2026년도 제5차 기간제 근로자(위촉연구원) 채용 공고(2026. 9. 29. ~ 10. 13.)
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국에너지기술연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52276&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1
+  [opp_nst_6205] [한국표준과학연구원] 2026년 6차 위촉직 공개채용
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국표준과학연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52262&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1
+  [opp_nst_6204] [한국한의학연구원] 2027학년도 전기 학·연 협동 석·박사학위과정생 모집공고
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국한의학연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52172&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1
+  [opp_nst_6203] [한국원자력연구원] 2027년 상반기(1학기) 연합대학원생(UST-KAERI 스쿨) 신입생 모집 공고
+    - Target: 이공계 학부·대학원 연구생 및 청년 연구자
+    - Provider: 국가과학기술연구회 / 한국원자력연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52134&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1
+  [opp_nst_6202] [한국생명공학연구원] 2026-5차 계약직(연구원/기술원/행정원/사무원) 채용 공고
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국생명공학연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52132&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1
+  [opp_nst_6201] [한국표준과학연구원] 2026년 3차 Post-doc. 공개채용
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국표준과학연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52109&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1
+  [opp_nst_6200] [한국기계연구원] 2026년도 제6회 기간제 근로자 공개채용(연구직_기술사업화)
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국기계연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52098&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1
+  [opp_nst_6199] [세계김치연구소] 2026년 제7차 직원 채용 서류전형 결과 및 향후 전형 일정 안내
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 세계김치연구소
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52094&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1
+  [opp_nst_6198] [한국지질자원연구원] 한국지질자원연구원 2026년 제5차 기간제근로자 공개채용
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국지질자원연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52072&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1
+  [opp_nst_6197] [세계김치연구소] 2026년 제8차 직원 채용 공고
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 세계김치연구소
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52054&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2
+  [opp_nst_6196] [세계김치연구소] 2026년 제5차 직원 채용 최종합격자 안내
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 세계김치연구소
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52051&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2
+  [opp_nst_6195] [한국건설기술연구원] 2026년(5회) 연수직(박사후연구원) 채용 공고
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국건설기술연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52005&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2
+  [opp_nst_6194] [한국건설기술연구원] 2026년(5회) 연수직(석사후연구원) 채용 공고
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국건설기술연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52004&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2
+  [opp_nst_6193] [한국건설기술연구원] 2026년 7차 기간제근로자(신진연구원, 보조원) 채용 공고
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국건설기술연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52008&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2
+  [opp_nst_6192] [한국건설기술연구원] 2026년 2차 장애인 제한경쟁(기간제근로자) 채용공고
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국건설기술연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52007&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2
+  [opp_nst_6191] [한국건설기술연구원] 한국건설기술연구원 국방기술협력센터 전문계약직 채용공고
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국건설기술연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52006&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2
+  [opp_nst_6190] [한국에너지기술연구원] 한국에너지기술연구원 2026년 2차 신규직원 채용 최종면접 전형 결과 발표 연기 안내
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국에너지기술연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51989&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2
+  [opp_nst_6188] [한국원자력연구원] 2026년도 일반전문계약직 공개채용 공고
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국원자력연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51981&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=2
+  [opp_nst_6187] [한국한의학연구원] 2026년 2차 박사후연구원 및 석사후연구원 공개채용 공고
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국한의학연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51978&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3
+  [opp_nst_6186] [한국원자력연구원] 2026년 하반기 한국원자력연구원 정규직 공개채용 공고
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국원자력연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51970&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3
+  [opp_nst_6185] [한국재료연구원] 한국재료연구원 2026-3차 정규직 공개채용 공고
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국재료연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51969&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3
+  [opp_nst_6184] [한국지질자원연구원] 2026년 한국지질자원연구원 제2차 정규직원 공개채용 (연구)
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국지질자원연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51968&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3
+  [opp_nst_6183] [한국지질자원연구원] 2026년 한국지질자원연구원 제2차 정규직원 공개채용 (기술, 행정)
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국지질자원연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51967&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3
+  [opp_nst_6182] [한국표준과학연구원] 한국표준과학연구원 2026년 2차 정규직 공개채용
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국표준과학연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51966&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3
+  [opp_nst_6181] [한국전자통신연구원] [한국전자통신연구원] 2027년 1차 정규직 및 실무직 공개채용
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국전자통신연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51965&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3
+  [opp_nst_6180] [한국전자통신연구원] [한국전자통신연구원] 2027년 1차 실무직 장애인 제한경쟁 공개채용
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국전자통신연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51964&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3
+  [opp_nst_6179] [한국생명공학연구원] 2026-3차 정규직 채용 공고(과학기술분야 정부출연연구기관 공동채용)
+    - Target: 관련 전공자 및 연구인력
+    - Provider: 국가과학기술연구회 / 한국생명공학연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=51962&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3
+  [opp_nst_6178] [한국건설기술연구원] 2027년 전기 학·연협동 학생연구원 채용 공고
+    - Target: 이공계 학부·대학원 연구생 및 청년 연구자
+    - Provider: 국가과학기술연구회 / 한국건설기술연구원
+    - Source: https://www.nst.re.kr/www/selectBbsNttView.do?key=61&bbsNo=19&nttNo=52009&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=3
+  [opp_ntis_77142] [산업통상부] 핵심광물 공급망 안정화 전주기 기술개발사업 기술수요조사 공고
+    - Target: 국가연구개발사업 참여 희망 연구팀, 대학 및 연구기관
+    - Provider: 국가과학기술지식정보서비스 (NTIS) / 산업통상부
+    - Source: https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do
+  [opp_ntis_77141] [과학기술정보통신부] (연장공고) 2026년도 하반기 방송통신정책연구 신규지원 대상과제 공고
+    - Target: 국가연구개발사업 참여 희망 연구팀, 대학 및 연구기관
+    - Provider: 국가과학기술지식정보서비스 (NTIS) / 과학기술정보통신부
+    - Source: https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do
+  [opp_ntis_77140] [중소벤처기업부] 2026년도 중소벤처기업부 혁신제품 3차 규격추가 모집 안내문
+    - Target: 국가연구개발사업 참여 희망 연구팀, 대학 및 연구기관
+    - Provider: 국가과학기술지식정보서비스 (NTIS) / 중소벤처기업부
+    - Source: https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do
+  [opp_ntis_77139] [산업통상부] 2026년도 소재부품기술개발사업(4차) 신규지원 대상과제 공고
+    - Target: 국가연구개발사업 참여 희망 연구팀, 대학 및 연구기관
+    - Provider: 국가과학기술지식정보서비스 (NTIS) / 산업통상부
+    - Source: https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do
+  [opp_ntis_77138] [우주항공청] 2026년 우주기술혁신인재양성사업[산학협력 연구현장 연계 고급 인력양성] 본과제 접수
+    - Target: 국가연구개발사업 참여 희망 연구팀, 대학 및 연구기관
+    - Provider: 국가과학기술지식정보서비스 (NTIS) / 우주항공청
+    - Source: https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do
+  [opp_ntis_77137] [보건복지부] 2026년도 제4차 첨단재생의료 임상연구 활성화 지원 사업 신규과제 공고_(2026)2. [심화형] 첨단재생의료 임상연구 고도화 지원
+    - Target: 국가연구개발사업 참여 희망 연구팀, 대학 및 연구기관
+    - Provider: 국가과학기술지식정보서비스 (NTIS) / 보건복지부
+    - Source: https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do
+  [opp_ntis_77136] [보건복지부] 2026년도 제4차 첨단재생의료 임상연구 활성화 지원 사업 신규과제 공고
+    - Target: 국가연구개발사업 참여 희망 연구팀, 대학 및 연구기관
+    - Provider: 국가과학기술지식정보서비스 (NTIS) / 보건복지부
+    - Source: https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do
+  [opp_ntis_77135] [과학기술정보통신부] 2026년 4극3특 대경권 과학기술혁신지원사업 연구단 모집 공고(서식, FAQ 추가)_(대경권) 2026년 4극3특 대경권 과학기술혁신지원사업 연구단 공고 - K-UBRC 구축
+    - Target: 국가연구개발사업 참여 희망 연구팀, 대학 및 연구기관
+    - Provider: 국가과학기술지식정보서비스 (NTIS) / 과학기술정보통신부
+    - Source: https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do
+  [opp_ntis_77134] [과학기술정보통신부] 2026년 4극3특 대경권 과학기술혁신지원사업 연구단 모집 공고(서식, FAQ 추가)_(대경권) 2026년 4극3특 대경권 과학기술혁신지원사업 연구단 공고 - 딥테크 기술발굴형
+    - Target: 국가연구개발사업 참여 희망 연구팀, 대학 및 연구기관
+    - Provider: 국가과학기술지식정보서비스 (NTIS) / 과학기술정보통신부
+    - Source: https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do
+  [opp_ntis_77133] [과학기술정보통신부] 2026년도 AI 기반 대학 과학기술 혁신사업(자율실험실) 신규과제 공모
+    - Target: 국가연구개발사업 참여 희망 연구팀, 대학 및 연구기관
+    - Provider: 국가과학기술지식정보서비스 (NTIS) / 과학기술정보통신부
+    - Source: https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do
+
+=== EQUIPMENT (1 items) ===
+  [opp_pnu_vspace_infra] 부산대학교 V-Space 창작 및 제작 메이커 인프라
+    - Target: 메이킹에 관심 있는 대학생 누구나 (남녀노소, 전공 구분 없음)
+    - Provider: 부산대학교 기계공학부 V-Space 사업단
+    - Source: https://me.pusan.ac.kr/new/sub02/sub10.php
+
+=== RESEARCH_EQUIPMENT (1 items) ===
+  [opp_unist_ucrf_infra] UNIST 연구지원본부(UCRF) 첨단 공용 연구장비 지원 인프라
+    - Target: 교내외 이공계 학부·대학원 연구생 및 외부 연구자·기업
+    - Provider: UNIST 연구지원본부 (UCRF)
+    - Source: https://ucrf.unist.ac.kr/
+
+=== MULTIDISCIPLINARY (11 items) ===
+  [opp_bbits_multidisciplinary_2026] 「2026학년도 기업 연계 부산공유대학 다학제 융합 프로젝트」
+    - Target: 부산지역 4년제 대학 재학생 (전공 무관, 팀 구성 1~5명 내외 다학제, 개별 신청 시 팀 매칭 지원)
+    - Provider: 부산공유대학본부 (부산대학교 RIS대학교육혁신본부)
+    - Source: https://www.bbits.ac.kr/ko/community/community1/view/998
+  [opp_uniall_pbanc_19] 2026년 지방대학 특성화 선도대학 육성사업 공고
+    - Target: 전국 참여대학 학생 및 산학협력 연구팀
+    - Provider: 교육부 / 한국연구재단 (교육부)
+    - Source: https://uniall.nrf.re.kr/biz/pbanc/list.do
+  [opp_uniall_pbanc_18] 2026년 인문사회 융합인재양성사업 컨소시엄 선정 공고
+    - Target: 전국 참여대학 학생 및 산학협력 연구팀
+    - Provider: 교육부 / 한국연구재단 (교육부)
+    - Source: https://uniall.nrf.re.kr/biz/pbanc/list.do
+  [opp_uniall_pbanc_17] 2025년 글로컬대학 지정 신청 공고
+    - Target: 전국 참여대학 학생 및 산학협력 연구팀
+    - Provider: 교육부 / 한국연구재단 (교육부)
+    - Source: https://uniall.nrf.re.kr/biz/pbanc/list.do
+  [opp_uniall_pbanc_16] ｢첨단분야 혁신융합대학｣ 사업 심층 비교평가 공고
+    - Target: 전국 참여대학 학생 및 산학협력 연구팀
+    - Provider: 교육부 / 한국연구재단 ()
+    - Source: https://uniall.nrf.re.kr/biz/pbanc/list.do
+  [opp_uniall_pbanc_14] 2025년 인문사회 융합인재양성사업 신규 컨소시엄 선정 공고
+    - Target: 전국 참여대학 학생 및 산학협력 연구팀
+    - Provider: 교육부 / 한국연구재단 (교육부)
+    - Source: https://uniall.nrf.re.kr/biz/pbanc/list.do
+  [opp_uniall_pbanc_13] 교원양성과정 개선대학 지원 사업 선정평가 결과 발표 안내
+    - Target: 전국 참여대학 학생 및 산학협력 연구팀
+    - Provider: 교육부 / 한국연구재단 ()
+    - Source: https://uniall.nrf.re.kr/biz/pbanc/list.do
+  [opp_uniall_pbanc_12] 교원양성과정 개선대학 지원 사업 선정평가 결과 안내
+    - Target: 전국 참여대학 학생 및 산학협력 연구팀
+    - Provider: 교육부 / 한국연구재단 ()
+    - Source: https://uniall.nrf.re.kr/biz/pbanc/list.do
+  [opp_uniall_pbanc_11] 대학 창의적 자산 실용화 지원(BRIDGE 3.0) 사업 신규 지원대학 선정계획 공고
+    - Target: 전국 참여대학 학생 및 산학협력 연구팀
+    - Provider: 교육부 / 한국연구재단 (교육부 산학협력취창업지원과)
+    - Source: https://uniall.nrf.re.kr/biz/pbanc/list.do
+  [opp_uniall_pbanc_10] 2024년 첨단분야 혁신융합대학사업 지자체 참여형 신규 선정 공고
+    - Target: 전국 참여대학 학생 및 산학협력 연구팀
+    - Provider: 교육부 / 한국연구재단 ()
+    - Source: https://uniall.nrf.re.kr/biz/pbanc/list.do
+  [opp_uniall_pbanc_9] 『창업교육 혁신 선도대학(SCOUT)』 사업 공고
+    - Target: 전국 참여대학 학생 및 산학협력 연구팀
+    - Provider: 교육부 / 한국연구재단 (교육부)
+    - Source: https://uniall.nrf.re.kr/biz/pbanc/list.do
+
+=== STARTUP (3 items) ===
+  [opp_ks_2026_svc_seoul] 2026 SVC Seoul 멤버십(확장형) 모집공고
+    - Target: 전국 대학생, 청년 예비창업자 및 7년 이내 창업기업
+    - Provider: 중소벤처기업부 / 창업진흥원
+    - Source: https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do
+  [opp_ks_2026_tips_mod] 2026년 팁스(TIPS) 창업기업 지원계획 수정 공고
+    - Target: 전국 대학생, 청년 예비창업자 및 7년 이내 창업기업
+    - Provider: 중소벤처기업부 / 중소벤처기업부 / 창업진흥원
+    - Source: https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do
+  [opp_ks_2026_siliconvalley_gtm] 2026년 실리콘밸리 GTM(Go-To-Market) 프로그램 창업기업 모집공고
+    - Target: 전국 대학생, 청년 예비창업자 및 7년 이내 창업기업
+    - Provider: 중소벤처기업부 / 창업진흥원
+    - Source: https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do

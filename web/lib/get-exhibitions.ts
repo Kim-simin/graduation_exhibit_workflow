@@ -9,7 +9,19 @@ export interface Artwork {
   imagePath: string;
   description: string;
   department?: string;
+  thumbnail?: string;
+  thumbnail_url?: string;
+  original_image_url?: string;
+  thumbnail_crop_coordinates?: Record<string, any>;
+  thumbnail_generated_at?: string;
+  thumbnail_status?: string;
+  thumbnail_review_status?: string;
 }
+
+export function getArtworkThumbnail(art: Artwork): string {
+  return art.thumbnail || art.thumbnail_url || art.imagePath;
+}
+
 
 export interface Exhibition {
   id: string;
@@ -54,12 +66,26 @@ export function mapCategory(rawCat: string): string {
 
 export function getInitialExhibitions(): Exhibition[] {
   try {
-    const publishedPath = path.resolve(process.cwd(), "data", "published", "exhibitions.json");
-    if (!fs.existsSync(publishedPath)) {
-      console.warn("[getInitialExhibitions] Published exhibitions file not found at:", publishedPath);
+    const candidatePaths = [
+      path.resolve(process.cwd(), "data", "published", "exhibitions.json"),
+      path.resolve(process.cwd(), "web", "data", "published", "exhibitions.json"),
+      path.resolve(process.cwd(), "web", "data", "exhibitions.json"),
+      path.resolve(process.cwd(), "data", "exhibitions.json"),
+      path.resolve(__dirname, "..", "data", "published", "exhibitions.json"),
+      path.resolve(__dirname, "..", "data", "exhibitions.json"),
+    ];
+    let resolvedPath = "";
+    for (const p of candidatePaths) {
+      if (fs.existsSync(p)) {
+        resolvedPath = p;
+        break;
+      }
+    }
+    if (!resolvedPath) {
+      console.warn("[getInitialExhibitions] Exhibitions file not found in candidates");
       return [];
     }
-    const raw = fs.readFileSync(publishedPath, "utf-8");
+    const raw = fs.readFileSync(resolvedPath, "utf-8");
     const exhibitions: Exhibition[] = JSON.parse(raw);
     return exhibitions.filter(
       (item) =>

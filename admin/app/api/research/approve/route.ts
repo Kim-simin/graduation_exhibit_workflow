@@ -108,11 +108,16 @@ export async function POST(req: Request) {
       const artworkTitle = (w.project_title || w.title || `출품작 #${idx + 1}`).trim();
       const authorName = (w.author || w.student_name || `${university || "학생"} 작가`).trim();
 
+      const thumbPath = w.thumbnail || w.thumbnail_url || imgPath;
+
       return {
         title: artworkTitle,
         student_name: authorName,
+        department: w.department || undefined,
         image: imgPath,
-        thumbnail: imgPath,
+        thumbnail: thumbPath,
+        thumbnail_url: thumbPath,
+        original_image_url: imgPath,
         screenshot_path: imgPath,
         description: (w.raw_text || `${artworkTitle} - ${authorName}`).trim(),
         inferred_role: `${department || "디자인"} 크리에이터`,
