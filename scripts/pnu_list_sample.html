@@ -1,0 +1,1173 @@
+
+<!doctype html>
+<html lang="ko">
+
+<head>	
+
+<script type="text/javascript">
+	var currentAddress = location.href;
+	var isDevelopMode = ""
+	if( isDevelopMode != "Y" ){ 
+		if( currentAddress.indexOf( "http://" ) > -1 && ( currentAddress.indexOf( "Main.do" ) > -1 || currentAddress.indexOf( "login.do" ) > -1)){
+			currentAddress = currentAddress.replace("http://","https://");
+			location.href = currentAddress;
+		}
+	}
+</script>
+
+<!-- don touch!!  -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi" />
+<meta name="description" content="부산대학교 공동실험실습관 홈페이지입니다.">
+<meta name="author" content="부산대학교 공동실험실습관">
+<meta name="keywords" content="부산대학교, 부산대학교 공동실험실습관, 공동실험실습관, 부산대 공실관">
+<link rel="shortcut icon" href="/_Img/favicon.ico">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="expries" content="0" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- all base : CSS -->
+<link rel="stylesheet" type="text/css" href="/_Css/core/jquery-ui-1.9.2.custom.min.css" />
+<link rel="stylesheet" type="text/css" href="/_Css/popup.css" /> <!-- 레이어팝업 & 윈도우 팝업 공통 스타일 -->
+<link rel="stylesheet" type="text/css" href="/_Css/crownix-viewer.min.css" /> <!-- 리포트툴 스타일 -->
+
+<!-- all base : JS -->
+<script charset="utf-8" src="/_Js/core/jquery-1.11.3.min.js" ></script>
+<script charset="utf-8" src="/_Js/core/jquery-ui-1.9.2.custom.min.js"></script>
+<script charset="utf-8" src='/_Js/core/common_base_util.js'></script>
+<script charset="utf-8" src='/_Js/core/crownix-viewer.min.js'></script><!-- 리포트툴 -->
+<script charset="utf-8" src="/_Js/core/browser.detect.js"></script><!-- 방문자통계에서 필요한 스크립트파일 -->
+<script charset="utf-8" src="/_Plugin/jquery.TabMenu/jquery.TabMenu.js"></script><!-- 텝메뉴 플러그인 -->
+<script charset="utf-8" src="/_Js/comm.LayerPopup.js"></script><!-- 레이어 팝업 플러그인 -->
+<script type="text/javascript" src="/_Js/common-scripts.js"></script><!--Back to top-->
+
+	<!-- Favicon 설정 -->
+	<link rel="shortcut icon" href="/_UPLOAD/IMAGE/SiteMgr/SiteFaviconUpload/2018/10/sEkBGN7MpnT4pn9Q.PNG">
+	<link rel="icon" href="/_UPLOAD/IMAGE/SiteMgr/SiteFaviconUpload/2018/10/sEkBGN7MpnT4pn9Q.PNG">
+	<link rel="apple-touch-icon" href="/_UPLOAD/IMAGE/SiteMgr/SiteFaviconUpload/2018/10/sEkBGN7MpnT4pn9Q.PNG">
+	<!-- Title 설정 -->
+	<title>전체 보유기기 > 보유기기 소개 >  부산대학교 공동실험실습관</title>
+
+<!-- configuration -->
+
+<link rel="stylesheet" type="text/css" href="/_Css/common.css">
+<link rel="stylesheet" type="text/css" href="/_Css/webfont.css">
+<link rel="stylesheet" type="text/css" href="/_Css/style.default.css">
+<link rel="stylesheet" type="text/css" href="/_Css/member.css">
+<link rel="stylesheet" type="text/css" href="/_Css/board.css">
+<link rel="stylesheet" type="text/css" href="/_Css/prg.style.css">
+<!-- font-awesome 플러그인 -->
+<link rel="stylesheet" type="text/css" href="/_Css/plugin/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="/homepage/kor/_Css/common.css" />
+<link rel="stylesheet" type="text/css" href="/_Css/board.rspnsv.css" />
+<link rel="stylesheet" type="text/css" href="/_Css/member.rspnsv.css" />
+<link rel="stylesheet" type="text/css" href="/_Css/prg.style.rspnsv.css" />
+<script charset="utf-8" src="/_Js/common.js" ></script>
+
+<!-- 이미지슬라이드 플러그인 -->
+
+<!-- font-awesome 플러그인 -->
+<link rel="stylesheet" type="text/css" href="/_Css/plugin/font-awesome.css">
+
+<!--[if lt IE 9]>
+    <script src="/_Js/respond.min.js"></script>
+    <script src="/_js/html5shiv.min.js"></script>
+<![endif]-->
+
+<!-- 방문자통계 스크립트 -->
+<script type="text/javascript">
+onVisit('kor');
+</script>
+ 
+<script>
+function addCellHeader(table) {
+	if (!table) {
+		return false;
+	}
+	var trs = table.getElementsByTagName('tr');
+	var trsChild;
+	var grid = {};
+	var cells;
+	for (var i = 0, cntI = trs.length; i < cntI; i++) {
+		if (!grid[i]) {
+			grid[i] = {};
+		}
+		trsChild = trs.item(i).childNodes;
+		cells = 0
+		for (var j = 0, cntJ = trsChild.length; j < cntJ; j++) {
+			if (trsChild[j].nodeType == 1) {
+				grid[i][cells++] = trsChild[j];
+			}
+		}
+	}
+
+	var cellHeader = '';
+	for (col in grid) {
+		if (col == 0) {
+			continue;
+		}
+		for (cell in grid[col]) {
+			cellHeader = grid[0][cell].innerHTML 
+			grid[col][cell].setAttribute('data-cell-header', cellHeader);
+		}
+	}
+}
+</script> <!-- //don touch!!  -->
+	<!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" /> -->
+	<link rel="stylesheet" href="/_Css/OpenSans.css" />
+	
+	<!-- CSS -->
+	<link href="/_Css/bootstrap.min.css" rel="stylesheet">
+	<link href="/_Css/style.css" rel="stylesheet">
+	
+	<!-- JS -->
+	<script type="text/javascript" src="/_Js/bootstrap.min.js"></script>
+</head>
+
+<body class="isSub">
+<!--[if lt IE 9]>
+	<div id="uppopup" class="lowIE-update">
+		<div class="update-cont">
+			<p class="tit">본사이트는<strong>Internet Explorer 9버전 이상</strong>에 <br />최적화 되어 있습니다.</p>
+			<p class="txt">Explorer를 최신 버전으로 업데이트 하시거나, <br />Chrome, Fire fox 등의 브라우저를 이용해 주시기 바랍니다.</p>
+			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie" target="_blank" title="새창열림" class="btn-upgrade"><span class="atxt">Internet Explorer 업그레이드</span></a>
+			<span class="chk-uclose"><input type="checkbox" name="chk-uclose" id="chkuppopup" /><label for="chkuppopup">하루동안 열지 않기</label></span>
+			<button type="button" onclick="javascript:popHide('uppopup')" class="btn-uclose"><span class="blind">현재창 닫기</span></button>
+		</div>
+		<span class="bg"></span>
+	</div>
+	<script type="text/javascript">checkPop('uppopup');</script>
+<![endif]-->
+
+<!-- skipNavi (안씀)
+<div id="skipNavi">
+	<h1 class="blind">스킵네비게이션</h1>
+	<ul>
+		<li><a href="#contents" class="skipLink">본문바로가기</a></li>
+		<li><a href="#mainNavi" class="skipLink">주메뉴바로가기</a></li>
+	</ul>
+</div>
+--> 
+
+<!-- doc-wrap -->
+<div id="doc-wrap">
+	<!-- 상단팝업 (안씀)
+
+	-->
+	
+	<!--Header 시작-->
+	<header class="head-div">
+		<div class="navbar navbar-default navbar-fixed-top ict_head">
+			<!--상단고정시 div크기 지정해서 감싸기-->
+			<div class="fix_head">
+				<!--로고/햄버거 부분 시작-->
+				<div class="navbar-header">
+					<!--전체메뉴 햄버거-->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="margin:18px 10px 17px 0px; color:#FFF;">
+						<span class="glyphicon glyphicon-menu-hamburger top_hambuger" aria-hidden="true"></span>
+					</button>
+					<a class="navbar-brand" href="/kor/Main.do"><span class="logo">부산대학교<br>공동실험실습관</span></a>
+				</div>
+				<!--로고/햄버거 부분 끝-->
+				
+				<!--대메뉴부분 시작-->
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav navbar-right nav-pills nav-stacked m_top" ><!--nav-pills-->
+		<li class="dropdown top_menu">
+			<span onClick=window.open("http://pusan.ac.kr","_blank") class="top_menu_txt r_line">부산대학교</span>
+							<span onClick="location.href='/kor/CMS/PnuMember/login.do?mCode=MN001'" class="top_menu_txt r_line">로그인</a></span>
+				<span onClick="location.href='/kor/CMS/PnuMember/MemberJoin/step01.do?mCode=MN007'" class="top_menu_txt r_line">회원가입</a></span>
+			<span onClick="location.href='/kor/CMS/SiteMap/SiteMap.do?mCode=MN022'" class="top_menu_txt">사이트맵</span>
+		</li>
+			
+			
+
+						
+						
+						<li class='dropdown b_menu first' id="MN008">
+								<a class='dropdown-toggle b_menu'  href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN024"  data-toggle="dropdown" role="button" aria-expanded="false">공동실험실습관<span class="caret"></span></a>
+			
+			<ul class="dropdown-menu" role="menu">
+
+						
+						
+						<li  id="MN024">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN024"  >기관소개</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN025">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/HistoryMgr/list.do?mCode=MN025"  >연혁</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN027">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN027"  >조직 및 구성원</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN029">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN101"  >찾아오시는길</a>
+			
+						</li>
+			</ul>
+						</li>
+
+						
+						
+						<li class='dropdown b_menu over' id="MN085">
+								<a class='dropdown-toggle b_menu over'  href="https://labcenter.pusan.ac.kr/kor/CMS/EquipInfoMgr/list.do?mCode=MN086"  data-toggle="dropdown" role="button" aria-expanded="false">보유기기 소개<span class="caret"></span></a>
+			
+			<ul class="dropdown-menu" role="menu">
+
+						
+						
+						<li  id="MN086">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/EquipInfoMgr/list.do?mCode=MN086"  >전체 보유기기</a>
+						</li>
+			</ul>
+						</li>
+
+						
+						
+						<li class='dropdown b_menu' id="MN087">
+								<a class='dropdown-toggle b_menu'  href="https://labcenter.pusan.ac.kr/kor/CMS/ReserveMgr/monthly.do?mCode=MN089"  data-toggle="dropdown" role="button" aria-expanded="false">기기이용안내<span class="caret"></span></a>
+			
+			<ul class="dropdown-menu" role="menu">
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN089">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/ReserveMgr/monthly.do?mCode=MN089"  >기기예약현황</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN090">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN107"  >기기이용절차</a>
+			
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN091">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN104"  >납부 절차(통장 및 사업자 사본 출력)</a>
+			
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN092">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN092"  >분석시료 발송안내</a>
+						</li>
+			</ul>
+						</li>
+
+						
+						
+						<li class='dropdown b_menu' id="MN095">
+								<a class='dropdown-toggle b_menu'  href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN098"  data-toggle="dropdown" role="button" aria-expanded="false">교육 및 기타 신청<span class="caret"></span></a>
+			
+			<ul class="dropdown-menu" role="menu">
+
+						
+						
+						<li  id="MN098">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN098"  >교육 및 세미나 안내</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN097">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/EduMgr/list.do?searchEduType=C&mCode=MN110"  >교육 및 세미나 신청</a>
+			
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN131">
+								<a   href="http://labcenter.pusan.ac.kr/kor/CMS/EduMgr/monthly.do?mCode=MN131"  >교육 및 세미나 일정</a>
+						</li>
+			</ul>
+						</li>
+
+						
+						
+						<li class='dropdown b_menu' id="MN012">
+								<a class='dropdown-toggle b_menu'  href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN052"  data-toggle="dropdown" role="button" aria-expanded="false">커뮤니티<span class="caret"></span></a>
+			
+			<ul class="dropdown-menu" role="menu">
+
+						
+						
+						<li  id="MN052">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN052"  >공지사항</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN053">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN053"  >Q&A</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN058">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN058"  >신규기자재수요조사</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN114">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN059"  >자료실</a>
+			
+			<ul class="dropdown-menu" role="menu">
+
+						
+						
+						<li  id="MN059">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN059"  >이용자 자료실</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN060">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN060"  >관리자 자료실</a>
+						</li>
+			</ul>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN115">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN115"  >논문실적</a>
+						</li>
+
+						
+							<li class="divider"></li>
+						
+						<li  id="MN116">
+								<a   href="https://labcenter.pusan.ac.kr/kor/CMS/Board/Board.do?mCode=MN116"  >홍보실적</a>
+						</li>
+			</ul>
+						</li>
+			
+	</ul>
+</div>
+
+				<!--대메뉴부분 끝-->
+			</div>
+			<!--상단고정시 div크기 지정해서 감싸기 끝-->
+		</div>
+	</header>
+	<!--Header 끝-->
+
+	<!-- container-wrap -->
+	<article id="container-wrap">
+		<!-- svisual-wrap -->
+<!--웹용 메인이미지부분 시작  web_img_box-->
+<div class="container-fluid web_img_box" style="background:url('/_Img/sub01_main_img01.png') 0px 0px no-repeat; text-align:center;">
+	<div>
+		<p class="sub_main_title01">부산대학교 공동실험실습관</p>
+		<p class="sub_main_title02">미래를 향한 힘찬 발걸음</p>
+		<!--img alt="" src="img/sub04_main_img01.png" width="100%"-->
+	</div>
+</div>
+<!--웹용 메인이미지부분 끝-->
+
+<!--모바일용 메인이미지부분 시작-->
+<div class="container-fluid mobile_img_box" style="background:url('/_Img/sub01_main_mobile_img01.png') 0px 0px no-repeat; text-align:center;">
+	<div>
+		<p class="sub_main_mo_title01">부산대학교 공동실험실습관</p>
+		<p class="sub_main_mo_title02">미래를 향한 힘찬 발걸음</p>
+		<!--img alt="" src="img/sub04_main_mibile_img01.png" width="100%"-->
+	</div>
+</div>
+<!--모바일용 메인이미지부분 끝-->		<!-- svisual-wrap //-->
+
+		<div id="container">
+			<!-- side-wrap -->
+			<div id="side-wrap">
+ <div class="submenu" id="leftmenu">
+			<!-- 메크로 :: 여기가 함수 호출 부분 -->
+
+				<div class="lm-tit">
+					<span class="tit">보유기기 소개</span>
+					<span class="txt"></span>
+				</div>
+				<ul class="depth1">
+					<li class="lm_l1">
+							<a class='lm_a1'  href="https://labcenter.pusan.ac.kr/kor/CMS/EquipInfoMgr/list.do?mCode=MN086"  ><span>보유기기 소개</span></a>
+			
+	
+			
+				<ul class="depth2">
+							
+							<li class="lm_l2 over">
+									<a class='lm_a2'  href="https://labcenter.pusan.ac.kr/kor/CMS/EquipInfoMgr/list.do?mCode=MN086"  ><span>전체 보유기기</span></a>
+							</li>
+
+				</ul>
+					</li>
+				</ul>
+	
+		
+</div>
+
+				<script src="/_Js/submenu.js"></script>
+				<script>$(function(){initSubNavigation();});</script>
+			</div>
+			<!-- side-wrap //-->
+			
+			<!-- contents -->
+			<div id="contents">
+				<!-- cont-top -->
+				<div class="cont-top">
+
+<div id="cont-navi" class="cont-navi">
+	<ul>
+		<li class="home"><a href="/kor/Main.do"><span class="blind">메인으로 이동</span></a></li>
+		
+
+
+				
+				
+
+
+
+						
+						<li class="mn_l1" >
+		
+			
+		
+			
+		
+			
+	
+	
+	
+								<a  href="https://labcenter.pusan.ac.kr/kor/CMS/EquipInfoMgr/list.do?mCode=MN086" >보유기기 소개</a>
+	
+						</li>
+						
+		
+
+
+
+						
+						<li class="mn_l1 over" >
+		
+			
+	
+								<a  href="https://labcenter.pusan.ac.kr/kor/CMS/EquipInfoMgr/list.do?mCode=MN086" >전체 보유기기</a>
+	
+						</li>
+						
+					
+		
+					
+		
+	</ul>
+</div>
+
+	
+		
+	
+		
+			
+			
+			
+			
+								
+					
+					
+	
+		
+	
+		
+			
+			
+								
+					
+						
+				
+			
+		
+		
+						
+						
+						
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		<h2 class="cont-tit">전체 보유기기</h2>
+
+					<div class="cont-ctrl-btns">
+
+<!-- 운영
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+-->
+<script src="/_Js/kakao.min.js"></script>
+
+<span class="ctrl-txt">공유</span>
+<button type="button" class="btn-share" onclick="tglSns();"><span class="blind">공유하기</span></button>
+<div class="sns-list">
+	<ul>
+		<li class="sns-fb"><button type="button" onclick="onShareSns('fb');"><span class="blind">페이스북</span></button></li>
+		<li class="sns-tw"><button type="button" onclick="onShareSns('tw');"><span class="blind">트위터</span></button></li>
+		<li class="sns-kks"><button type="button" onclick="sendToKakaoStory();"><span class="blind">카카오스토리</span></button></li>
+	</ul>
+</div>
+<script type="text/javascript">
+	function sendToKakaoStory(){
+		//Kakao.init("3e3efa0276e2ea4dd2de4c1a7c1df970");
+		
+		var shareData ={
+			"url": $(location).attr('href'),
+			"text": $(document).attr('title')
+		  };
+		if( false ){
+			Kakao.Story.open(shareData);	//앱으로 공유
+		}else{
+			Kakao.Story.share(shareData);	//웹으로 공유
+		}
+	}
+	
+	function sendToKakao(){
+		//Kakao.init("3e3efa0276e2ea4dd2de4c1a7c1df970");
+		if( false ){
+			try{
+				//this.initKaKao();
+				Kakao.Link.sendScrap({
+					requestUrl: $(location).attr('href')
+				});
+			}catch(e){
+				alert("카카오톡이 설치된 스마트폰에서만 지원됩니다");
+			}
+		}else{
+			alert("스마트폰에서만 지원됩니다");
+		}
+	}
+	
+	function onShareSns(kind){
+		var openWindow = window.open("about:blank");
+		
+		if(kind == "fb"){
+			openWindow.location.href="http://www.facebook.com/sharer/sharer.php?u="+$(location).attr('href');
+		}else if(kind == "tw"){
+			openWindow.location.href="https://twitter.com/intent/tweet?url="+$(location).attr('href');
+		}else if(kind == "blog"){
+			openWindow.location.href="http://blog.naver.com/openapi/share?url="+$(location).attr('href');
+		}else{
+			alert("공유에 실패하였습니다.\n관리자에게 문의하세요.");
+		}
+	}
+	
+	function tglSns(){
+		var tglwr =  $(".cont-ctrl-btns");
+		var tglBtn = $(".btn-share", tglwr);
+		if(tglBtn.hasClass("is-open")){
+			closeSnsLIst();
+		} else{
+			openSnsList();		
+		}
+		function openSnsList(){
+			tglBtn.addClass("is-open");
+			$(".sns-list", tglwr).slideDown(200);
+		}
+		function closeSnsLIst(){
+			tglBtn.removeClass("is-open");
+			$(".sns-list", tglwr).slideUp(200);		
+		}	
+	}
+</script>
+						<span class="ctrl-txt">인쇄</span>
+						<button type="button" onclick="pagePrint('kor');" title="새창열림" class="btn-print"><span class="blind">인쇄</span></button>
+					</div>
+				</div>
+				<!-- cont-top //-->
+				
+				<div id="cont" class="pg-">
+					<!-- S : TABMENU //-->
+
+			
+
+
+
+
+				
+
+
+
+
+				
+			
+			
+
+					<!-- E : TABMENU //-->
+					
+<script type="text/javascript">
+	function onSearch(){
+		var frm = document.searchForm;
+		
+		if(frm.searchLabCode.value == "" && frm.searchCode.value == "" && frm.searchKeyword.value == ""){
+			alert("검색항목 선택 및 키워드를 입력하세요.");
+			return false;
+		}else{
+			if(frm.searchLabCode.value == ""){
+				if(frm.searchKeyword.value == ""){
+					alert("검색 키워드를 입력하세요.");
+					frm.searchKeyword.focus();
+					return false;
+				}else{
+					if(frm.searchCode.value == ""){
+						alert("검색항목을 선택하세요.");
+						frm.searchCode.focus();
+						return false;
+					}
+				}
+			}else{
+				if(frm.searchKeyword.value != ""){
+					if(frm.searchCode.value == ""){
+						alert("검색항목을 선택하세요.");
+						frm.searchCode.focus();
+						return false;
+					}
+				}
+				if(frm.searchCode.value != ""){
+					if(frm.searchKeyword.value == ""){
+						alert("검색 키워드를 입력하세요.");
+						frm.searchCode.focus();
+						return false;
+					}
+				}
+			}
+		}
+		frm.submit();
+	}
+	function onClear(){
+		location.href = "/kor/CMS/EquipInfoMgr/list.do?mCode=MN086";
+	}
+	
+	function onView(equipKeyno) {
+		var frm = document.equipInfo;
+		frm.EQUIP_KEYNO.value = equipKeyno;
+		frm.equip_keyno.value = equipKeyno;
+		
+		//[2023-05-23 김보현]홍보를 위한 기기별 소개 QR코드 생성을 위하여 URL 변경(김지현 선생님 요청)
+		location.href = "/kor/CMS/EquipInfoMgr/view.do?mCode=MN086&EQUIP_KEYNO="+equipKeyno;
+		//frm.submit();
+	}
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var orderType = "";
+		if(orderType == "") {
+			$("#orderType_3").prop("checked",true);
+		}
+		
+		$(document).on("keyup", "input:text[numberOnly]", function() {$(this).val( $(this).val().replace(/[^0-9]/gi,"") );});
+		
+		$("input:radio[name=orderType]").change(function() {
+			var frm = document.searchForm;
+			frm.submit();
+		});
+	});
+	
+</script>
+
+<div>	 
+	<div id="board-wrap">
+		<form id="searchForm" name="searchForm" id="searchForm" method="post" action="/kor/CMS/EquipInfoMgr/list.do?mCode=MN086">
+		<input type="hidden" name="mCode" id="mCode" value="MN086" />
+		
+		<div class="board-search-wrap">
+				
+				<div class="board-search">
+					<select name="searchLabCode" id="searchLabCode">
+						<option value="">-------------전체-------------</option>
+							<option value="A" >초학제융합실험실</option>
+							<option value="B" >광학분석실</option>
+							<option value="C" >구조분석실</option>
+							<option value="D" >전자현미경실</option>
+							<option value="E" >무기성분분석실</option>
+							<option value="F" >물성분석실</option>
+							<option value="G" >질량분석실</option>
+							<option value="H" >나노생명분석실(밀양캠퍼스)</option>
+							<option value="I" >양산분관(양산캠퍼스)</option>
+							<option value="J" >X선기기실</option>
+					</select>
+					<select name="searchCode" id="searchCode">
+						<option value="KEYWORD">----전체----</option>
+							<option value="NM_KOR" >장비명</option>
+							<option value="MNG_NM" >관리책임자</option>
+							<option value="OPERATE_NM" >기기운용자</option>
+							<option value="NM_MODEL" >모델명</option>
+							<option value="SERIAL_NO" >일련번호</option>
+					</select>
+					<input type="text" class="text vtop2" name="searchKeyword" id="searchKeyword" placeholder="검색어를 입력하세요." value="" /><button class="btn-srh" type="button" onClick="onSearch();"><span>검색</span></button><button class="btn-rld" type="button" onClick="onClear();"><span>초기화</span></button>
+				</div>
+		</div>
+		<div class="right">
+			<input type="radio" name="orderType" id="orderType_3" value="NM_KOR" ><label for="orderType_3" class="fs pad5r">이름(한글)</label>
+			<input type="radio" name="orderType" id="orderType_2" value="NM_ENG" ><label for="orderType_2" class="fs pad5r">이름(영문)</label>
+			<input type="radio" name="orderType" id="orderType_1" value="LAB_NM" ><label for="orderType_1" class="fs pad5r">분석실별</label>
+		</div>
+		</form>
+		<div class="board-list-wrap">
+			<form id="equipInfo" name="equipInfo" method="post" action="/kor/CMS/EquipInfoMgr/view.do">
+				<input type="hidden" name="mCode" value="MN086" />
+				<input type="hidden" name="EQUIP_KEYNO" id="EQUIP_KEYNO" />
+				<input type="hidden" name="equip_keyno" id="equip_keyno" />
+			</form>
+			<table class="board-list-table">
+				<caption><span class="blind">부산대학교 공동실험실습관에서 보유하고 있는 기기 정보를 제공합니다.</span></caption>
+				<colgroup>
+					<col width="*">
+					<col width="17%">
+					<col width="17%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col" colspan="3">보유기기</th>
+					</tr>
+				</thead>
+				<tbody id="equiplist">
+						<tr>
+							<td class="tl pointer" onclick="onView('99')"><strong>200KV 투과전자현미경 (200KV Field Emission Transmission Electron Microscope (Fast Analytical EDS))</strong><br/>TALOS F200X / 전자현미경실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('115')"><strong>500MHz 극저온 핵자기 공명 분광기 (500MHz Prodigy Nuclear Magnetic Resonance Spectroscopy)</strong><br/>AVANCE NEO 500 / 구조분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('84')"><strong>600MHz 핵자기 공명 분광기 (직접) (600MHz Nuclear Magnetic Resonance Spectroscopy)</strong><br/>600MHz Agilent Superconducting FT-NMR Spectrometer System / 구조분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('160')"><strong>600MHz 핵자기 공명 분광기 (Liquid, 2022) (600MHz Nuclear Magnetic Resonance Spectroscopy (Liquid, 2022))</strong><br/>AVANCE NEO 600 / 구조분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('164')"><strong>고분해능 액체크로마토그래피 질량분석기(2023) (High Resolution Liquid Chromatography tandem Mass Spectrometer)</strong><br/>SCIEX, ZenoTOF 7600 / 질량분석실</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('166')"><strong>고분해능 액체크로마토그래피 질량분석기(2023)_S/W 사용 (High Resolution Liquid Chromatography tandem Mass Spectrometer)</strong><br/>SCIEX, ZenoTOF 7600 / 질량분석실</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(서약서)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('98')"><strong>고분해능 전자현미분석기 (FE-EPMA) (Field emission Eelectron Probe Micro Analyzer)</strong><br/>JXA-8530F / 무기성분분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('154')"><strong>고분해능 전자현미분석기 (FE-EPMA) (직접-초학제용) (FE-EPMA (직접-초학제용))</strong><br/>고분해능 전자현미분석기 (FE-EPMA) (직접-초학제용) / 무기성분분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('177')"><strong>고분해능 집속이온빔(HR-FIB) (High Resolution-Focused Ion Beam)</strong><br/>Helios 5 UX / 전자현미경실</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('101')"><strong>고분해능 LA-ICP-MS (High Resolution ICP-MS & Laser Ablation MicroProbe System)</strong><br/>Element2, J200 LA / 무기성분분석실</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('181')"><strong>고출력 고분해능 X선 회절분석기 (High Power High Resolution X-Ray Diffractometer)</strong><br/>SmartLab / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('123')"><strong>공초점 레이저 주사 현미경(장전) (Confocal Laser Scanning Microscope)</strong><br/>LSM-800 / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('152')"><strong>공초점 현미경(2021양산) (Confocal laser scanning microscope)</strong><br/>LSM 900 / 양산분관(양산캠퍼스)</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(자율)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('83')"><strong>광역선폭 초고속 레이저 기반 이광자 형광이미징 시스템 (Ultra-broad-fs laser based two-photon fluorescence imaging system )</strong><br/>Femtosecond Rainbow/Camelon/OPO/Two-photon imaging / 광학분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('120')"><strong>기체크로마토그래피 삼중사중극자 질량분석기 (Gas Chromatograph Triple Quadrupole Mass Spectrometer)</strong><br/>ThermoFisher Scientific, TSQ 9000 / 질량분석실</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('170')"><strong>나노입도분석기(분석의뢰) (Dynamic Light Scattering)</strong><br/>Zetasizer Nano ZSP / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('140')"><strong>나노입도분석기(직접사용) (Dynamic Light Scattering)</strong><br/>Zetasizer Nano ZSP / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('161')"><strong>단결정 X선 회절분석기(직접사용) (Single cystal X-ray diffractometer)</strong><br/>D8 VENTURE / X선기기실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('104')"><strong>디지털 형광 슬라이드 스캐너 (Digital Fluorescence Silde Scanner)</strong><br/>Axio Scan Z1. / 양산분관(양산캠퍼스)</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(자율)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('149')"><strong>라만 분광기(분석의뢰) (Raman spectrometer)</strong><br/>Ramantouch / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('158')"><strong>라만 분광기(직접사용) (Raman spectrometer)</strong><br/>Ramantouch / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('173')"><strong>레이저삭박 유도결합플라즈마 토프질량분석기(LA-ICP-TOF-MS) (Laser Ablation-Time Of Flight-Inductively Coupled Plasma Mass Spectrometer)</strong><br/>Vitesse, Iridia  / 무기성분분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('141')"><strong>말디 토프 질량분석기 (MALDI-TOF  Mass Spectrometer)</strong><br/> Buker, Autoflex maX / 질량분석실</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(서약서)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('108')"><strong>삼중사중극자 질량분석기 (Triple Quadrupole Mass Spectrometer)</strong><br/>SCIEX, QTrap 6500 plus / 질량분석실</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('176')"><strong>수차보정투과전자현미경 (Cs corrected Transmission electron microscope)</strong><br/>JEM-ARM200F / 전자현미경실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('97')"><strong>시료 제작기(전처리 장비) (Sample Preparation System (for microscope))</strong><br/>LaboPol-35 / 무기성분분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(서약서)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('175')"><strong>실시간 이미징 자동 스펙트럴 유세포 분리기(2025) (Real-time Imaging Automated Spectral Cell Sorter)</strong><br/>FACS Discover S8 / 양산분관(양산캠퍼스)</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('163')"><strong>실시간 자동화 현미경 (Live cell imaging system)</strong><br/>Cytation 7 / 광학분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(자율)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('172')"><strong>실시간 자동화 현미경_S/W 사용 (Live cell imaging system_S/W)</strong><br/>Cytation 7 / 광학분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('159')"><strong>안정동위원소 질량분석기(IR-MS) (Stable Isotope Ratio Spectrometer)</strong><br/>Thermo Fisher Scientific Delta Q / 무기성분분석실</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('39')"><strong>암석분쇄기(전처리 장비) (Rock Crusher)</strong><br/>TI-100 / 무기성분분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(서약서)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('102')"><strong>열전도도 측정기 (Laser Flash Thermal Conductivity Measuring System)</strong><br/>LFA-467 / 물성분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(서약서)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('121')"><strong>열탈착기-기체크로마토그래피 질량분석기 (Thermal Desorption-Gas Chromatograph Mass Spectrometer)</strong><br/>JTD-505 III+Thermo Scientific, ISQ 7000 / 질량분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('139')"><strong>원자현미경 (Atomic Force Microscope)</strong><br/>NX10 / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('165')"><strong>유도결합플라즈마 방출분광기(ICP-OES)-(2024) (Inductively Coupled Plasma Optical Emission Spectrometry (ICP-OES))</strong><br/>Avio 550 (PerkinElmer) / 무기성분분석실</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('117')"><strong>유도결합플라즈마삼중사극자질량분석기(ICP-TQ-MS) ((LC)ICP-TQ-MS)</strong><br/>iCAP TQ ICP-MS / 무기성분분석실</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('169')"><strong>유세포 분석기(2024) (Flow Cytometry)</strong><br/>FACSymphony A3 / 양산분관(양산캠퍼스)</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(자율)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('174')"><strong>유세포 분석기(2024)_분석 S/W  (Flow Cytometry_ Single Cell Analysis Software )</strong><br/>Flow Jo_v10 / 양산분관(양산캠퍼스)</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(자율)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('153')"><strong>유세포 분석기(장전캠) (Flow Cytometry Sorter System)</strong><br/>BD FACSAria Fusion / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('110')"><strong>유세포 분석기-KM(한의전CANTO II) (Flow Cytometry)</strong><br/>FACS CANTO II / 양산분관(양산캠퍼스)</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(자율)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('85')"><strong>이온 크로마토그래피(IC) (Ion Chromatography)</strong><br/>ICS-5000 (ThermoFisher_Dionex) / 무기성분분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('90')"><strong>이온밀링(전처리 장비) (Ion Milling)</strong><br/>IM-4000 / 전자현미경실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('171')"><strong>입도분석기(분석의뢰) (Particle Size Analyzer)</strong><br/>LS 13 320 / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('136')"><strong>입도분석기(직접사용) (Particle Size Analyzer )</strong><br/>LS 13 320  / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('182')"><strong>자외선 가시광선 근적외선 분광광도계(2025 Agilent) (UV-Visble & NIR Spectrometer(Agilent))</strong><br/>Cary-5000 / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('107')"><strong>자외선 가시광선 근적외선 분광광도계(JASCO) (UV-Visble & NIR Spectrometer(JASCO))</strong><br/>V-770 / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('144')"><strong>장시간 세포 이미징 관찰 시스템 (Real time Live cell Imaging system)</strong><br/>CX7 LZR / 양산분관(양산캠퍼스)</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(자율)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('155')"><strong>저전압 투과전자현미경 (Bio TEM) (Low Voltage Transmission Electron Microscope)</strong><br/>Talos L120C TEM / 양산분관(양산캠퍼스)</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('143')"><strong>적외선분광분석기(2020)(분석의뢰) (Fourier transform Infrared Spectroscopy)</strong><br/>IS50 / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('142')"><strong>적외선분광분석기(2020)(직접사용) (Fourier-transform infrared spectroscopy )</strong><br/>IS50 / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('77')"><strong>전자선 묘화 공정 장치 및 주사전자 현미경 (Field Emission Scanning Electron Microscope(FE-SEM) with EDS)</strong><br/>SUPRA25 / 전자현미경실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('168')"><strong>질량광도계  (Mass Photometry)</strong><br/>TwoMP / 양산분관(양산캠퍼스)</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('180')"><strong>질량광도계 (직접이용(자율)) (Mass Photometry)</strong><br/>TwoMP / 양산분관(양산캠퍼스)</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">-</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('100')"><strong>집속이온빔 (FIB) (Focused Ion Beam)</strong><br/>Scios / 전자현미경실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('184')"><strong>초고분석능 전계방사형 주사전자현미경(GEMINI500)-분석의뢰 (Ultra High Analytical Field Emission Scanning Electron Microscope(FE-SEM))</strong><br/>GEMINI500 / 전자현미경실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('145')"><strong>초고분석능 전계방사형 주사전자현미경(GEMINI500)-직접사용 (Ultra High Analytical Field Emission Scanning Electron Microscope(FE-SEM))</strong><br/>GEMINI500 / 전자현미경실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(자율)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('185')"><strong>초고분석능 전계방사형 주사전자현미경(GEMINI500)-EBSD 자율사용 (Ultra High Analytical Field Emission Scanning Electron Microscope(FE-SEM))</strong><br/>GEMINI500 / 전자현미경실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(자율)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('124')"><strong>초고분해능 저전압 현미경(HRLV-SEM) (Ultra High Resolution Low voltage Field Emission Scanning Electron Microscope(FE-SEM))</strong><br/>JSM-7900F / 전자현미경실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('89')"><strong>초고속 유세포 자동 분리 분석기 (Automated High-speed Cytometry Sorter System)</strong><br/>BD FACS Aria III / 양산분관(양산캠퍼스)</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('147')"><strong>초단파 시료분해장치(ICP-OES) (Microwave sample digestion system(ICP-OES))</strong><br/>Multiwave 7000 / 무기성분분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('156')"><strong>초저온 집속이온빔(Cryo FIB) (Cryo Focused Ion Beam)</strong><br/>Aquilos 2  / 양산분관(양산캠퍼스)</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('157')"><strong>초저온 투과전자현미경 (Cryo TEM) (Cryo Field-emission Transmission Electron Microscope)</strong><br/>Krios G4 / 양산분관(양산캠퍼스)</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('138')"><strong>탁상형 주사전자현미경 (Table top Scanning Electron Microscope)</strong><br/>JCM-7000 / 전자현미경실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('167')"><strong>파우더용 X선 회절분석기(2016)(분석의뢰) (X-Ray Diffractometer)</strong><br/>Xpert 3 / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('106')"><strong>파우더용 X선 회절분석기(2016)(직접사용) (X-Ray Diffractometer(2016))</strong><br/>Xpert 3 / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(초학제)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('91')"><strong>파장-반복률 가변형 나노초 레이저 시스템 (Nanosecond tunable laser system)</strong><br/>NT242-SH/SFG and NT342B  / 구조분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('21')"><strong>펨토초레이저시스템 (Femto Second Laser System)</strong><br/>Hurricane / 구조분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('114')"><strong>헬륨리크디텍터 (Helium Leak Detector)</strong><br/>ASM340 / 초학제융합실험실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(서약서)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('92')"><strong>EBSD를 장착한 전계방사형주사전자현미경 (Field Emission Scanning Electron Microscope(FE-SEM) with EBSD)</strong><br/>SUPRA40VP / 전자현미경실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('146')"><strong>EBSD를 장착한 전계방사형주사전자현미경 EBSD 전용(야간) (Field Emission Scanning Electron Microscope(FE-SEM) with EBSD)</strong><br/>SUPRA40VP / 전자현미경실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용(자율)</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('178')"><strong>test (test)</strong><br/>test / 광학분석실</td>
+							<td class="tc" style="border-left:0px;"></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">직접이용방식</p></td>
+						</tr>
+						<tr>
+							<td class="tl pointer" onclick="onView('103')"><strong>X-선 광전자 분광분석기 (X-ray Photoelectron Spectroscopy (XPS))</strong><br/>AXIS SUPRA / 물성분석실</td>
+							<td class="tc" style="border-left:0px;"><p class="btn_R" style="width:100px;">긴급분석 가능</p></td>
+							<td class="tc" style="border-left:0px;"><p class="btn_I" style="width:100px;">분석의뢰방식</p></td>
+						</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>				</div>
+			</div>
+			<!-- contents //-->
+		</div>
+	</article>
+	<!-- container-wrap //-->
+
+	<!-- footer-wrap -->
+<!--Footer 시작-->
+<footer class="footer">
+	<div class="container">
+		<p class="copyright">
+			[46241] 부산광역시 금정구 부산대학로63번길 2(장전동) 부산대학교 공동실험실습관<br/> 
+			TEL : (행정) 051-510-3401, (업체등록/결제) 1690, (분석문의) 3418/3038, (홈페이지문의) 3421, (양산분관) 8196 / FAX : 051)517-3760 <br/>
+			COPYRIGHT 2018 PNU CORE RESEARCH FACILITIES ALL RIGHTS RESERVED.<br/>			  
+			<span><strong><a href="http://his.pusan.ac.kr/cmmCon/Privacy/view..do" onclick="javascript:window.open(this.href,'Popup','width=860,height=720,left=10,top=10,scrollbars=yes');return false;">개인정보처리방침</a></strong></span>
+			<!--<span><strong><a href="/kor/CMS/Contents/Contents.do?mCode=MN093">개인정보처리방침</a></strong></span>-->
+		</p>
+	</div>
+	
+	<p class="copyright"></p>
+</footer>
+<!-- Footer 끝 -->	<!-- footer-wrap //-->
+</div>
+
+<!-- doc-wrap //-->
+<script src="/_Js/common.base.js"></script>
+<script src="/_Js/jquery/jquery.cs_wauto.js"></script>
+<script src="/_Js/jquery/jquery.cs_tab.js"></script>
+<script src="/homepage/kor/_Js/common.js"></script>
+<script src="/homepage/kor/_Js/topmenu.js"></script>
+<script src="/homepage/kor/_Js/layout_sub.js"></script>
+
+<!--[if lte IE 9]>
+	<script src="/_Js/jquery/jquery.cs_placeholder.js"></script>
+	<script>placeholderInit();</script>
+<![endif]-->
+</body>
+
+</html>

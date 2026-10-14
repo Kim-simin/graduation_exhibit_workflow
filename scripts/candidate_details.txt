@@ -1,0 +1,190 @@
+ID: opp_bbits_infra_001
+Type: SHARED_INFRASTRUCTURE
+Title: 부산공유대학 공동 캠퍼스 시설 및 첨단 인프라 대여
+Provider: 부산공유대학 (제12공학관 102-1호)
+Target: 교직원 및 부산공유대학 참여학생
+Scope: SHARED_UNIVERSITY
+Source: https://www.bbits.ac.kr/ko/support/studio/infra
+Description: 부산공유대학 14개 참여대학의 강의실, 세미나실, 스터디룸, 실험실습실, 미디어실 등 첨단 교육 시설을 공유대학 참여 학생 및 교직원에게 개방하여 공간 및 인프라를 대여 지원하는 공유 플랫폼입니다.
+------------------------------------------------------------
+ID: opp_gemini_academy_2026
+Type: EDUCATION
+Title: 대학생을 위한 실전 AI 무료 강의! Gemini Academy 수강생 모집
+Provider: 구글코리아, 고용노동부
+Target: 전공 무관 모든 대학생 (부산 지역은 대학교 상관없이 동의대학교에서 수강 가능, 타 지역도 신청 가능)
+Scope: PUBLIC
+Source: https://www.pusan.ac.kr/kor/CMS/Board/Board.do?board_seq=1511268&mCode=MN095&mgr_seq=3&mode=view&page=1&searchID=title
+Description: 구글코리아와 고용노동부가 함께하는 청년 AI 역량 강화 프로그램의 일환으로, Gemini와 Google Workspace를 활용해 웹페이지 제작, 실시간 투표 대시보드 구축, Google Apps Script 업무 자동화를 직접 실습하는 교육 워크숍입니다.
+------------------------------------------------------------
+ID: opp_ai_startup_competition_2026
+Type: COMPETITION
+Title: 2026 AI 창업 경진대회 : AI 스타트업의 새로운 항구, 부산
+Provider: 주최: 부산광역시, 주관: (재)부산정보산업진흥원, 참여: 부산창조경제혁신센터
+Target: 전국 예비·신규창업팀(2~4인 이내의 팀)
+Scope: PUBLIC
+Source: https://ai.pusan.ac.kr/bbs/ai/204/1463037/artclView.do
+Description: 우수 AI 스타트업을 발굴하고 창업·사업화 지원을 통해 부산 지역 AI 창업 생태계를 활성화하기 위한 경진대회로, 부산시 9대 전략산업 분야(해양, 에너지테크, 미래모빌리티, 융합부품소재, 라이프스타일, 디지털테크, 금융, 문화관광, 바이오헬스) 내 AI를 활용한 자유주제로 참가팀을 모집합니다.
+------------------------------------------------------------
+ID: opp_pnu_capstone_2026_2_general
+Type: CAPSTONE
+Title: 2026학년도 2학기 캡스톤 디자인 교과목 지원사업 (1차: 일반형)
+Provider: 부산대학교 앵커사업단 미래신산업선도본부 / 정보컴퓨터공학부
+Target: 2026.2학기 캡스톤 디자인(capstone design) 또는 종합설계 정규교과목 수강생 중 학부(과) 3학년 이상 재학생 및 대학원 재학생 (최소 3인 이상 팀)
+Scope: UNIVERSITY_ONLY
+Source: https://cse.pusan.ac.kr/bbs/cse/2056/1462942/artclView.do
+Description: 융합형 인재 양성 및 전공 실무능력·문제해결능력 향상을 위해 캡스톤디자인 정규 교과목 수강생을 대상으로 결과물 도출에 필요한 시제품 제작비 및 인쇄비 등 과제 운영비를 지원합니다.
+------------------------------------------------------------
+ID: opp_pnu_capstone_2026_2_partner
+Type: CAPSTONE
+Title: 2026학년도 2학기 캡스톤 디자인 교과목 지원사업 (2차: 기업연계형·지자체연계형)
+Provider: 부산대학교 앵커사업단 미래신산업선도본부 / 정보컴퓨터공학부
+Target: 2026.2학기 캡스톤 디자인/종합설계 수강생 중 학부 3학년 이상 및 대학원생 (최소 3인 이상 팀)
+Scope: UNIVERSITY_ONLY
+Source: https://cse.pusan.ac.kr/bbs/cse/2056/1462942/artclView.do
+Description: 실제 기업 및 지자체의 현장 문제와 수요를 연계하여 프로젝트를 수행하는 산학관 협력 캡스톤디자인으로, 지산학연계 교육협약서 체결 및 과제 운영비 지원을 제공합니다.
+------------------------------------------------------------
+ID: opp_global_ax_pbl_2026
+Type: RND
+Title: 「2026 글로벌 AX-PBL 현장실증 공학교육」 프로그램 참가자 모집
+Provider: 부산대학교 공학교育혁신센터
+Target: 공학계열 재학생 (선발인원 10명 내외)
+Scope: UNIVERSITY_ONLY
+Source: https://www.pusan.ac.kr/kor/CMS/Board/Board.do?board_seq=1511038&mCode=MN095&mgr_seq=3&mode=view&page=1
+Recruitment Evidence: {'sourceUrl': 'https://www.pusan.ac.kr/kor/CMS/Board/Board.do?board_seq=1511038&mCode=MN095&mgr_seq=3&mode=view&page=1', 'sourceKind': 'UNIVERSITY_OFFICIAL', 'isOfficialDetail': True, 'eligibilityText': '참가대상: 공학계열 대학생 및 학부 재학생 (선발인원 10명 내외)', 'recruitmentText': '신청마감: 2026년 9월 30일(수) 23:59까지 이메일 접수 및 지원 모집', 'verifiedAt': '2026-09-29T21:17:39+09:00', 'rollingAdmission': False}
+Description: 한국과 인도네시아 학생이 한 팀이 되어 AIoT 기술을 활용한 솔루션을 직접 설계·제작하고, 현지 사용자의 피드백을 반영해 현장 설치 및 평가까지 진행하는 실전 R&D 공학교육 프로그램입니다.
+------------------------------------------------------------
+ID: opp_pnu_vspace_infra
+Type: EQUIPMENT
+Title: 부산대학교 V-Space 창작 및 제작 메이커 인프라
+Provider: 부산대학교 기계공학부 V-Space 사업단
+Target: 메이킹에 관심 있는 대학생 누구나 (남녀노소, 전공 구분 없음)
+Scope: REGIONAL_STUDENT
+Source: https://me.pusan.ac.kr/new/sub02/sub10.php
+Description: 아이디어 생성에서 시제품 제작까지 메이킹의 모든 과정을 지원하는 대규모 메이커 시설로, 3D 프린터 63대, 5축 CNC, 대면적 레이저 가공기, CNC 라우터, 금속 용접/성형 장비, 4K PR Studio 등을 갖추고 매주 다양한 장비 워크숍을 운영합니다.
+------------------------------------------------------------
+ID: opp_unist_ucrf_infra
+Type: RESEARCH_EQUIPMENT
+Title: UNIST 연구지원본부(UCRF) 첨단 공용 연구장비 지원 인프라
+Provider: UNIST 연구지원본부 (UCRF)
+Target: 교내외 이공계 학부·대학원 연구생 및 외부 연구자·기업
+Scope: EXTERNAL_RESEARCHER
+Source: https://ucrf.unist.ac.kr/
+Description: UNIST 연구지원본부 8대 전문 연구분석실(기기분석실, 나노소자공정실, 환경분석실, 기기가공실, 생체효능검증실, 바이오메드이미징실 등)의 최첨단 장비 인프라로, 교내외 연구자 및 학생을 대상으로 직접 분석(자율 사용) 및 분석 의뢰 서비스를 지원합니다.
+------------------------------------------------------------
+ID: opp_bbits_multidisciplinary_2026
+Type: MULTIDISCIPLINARY
+Title: 「2026학년도 기업 연계 부산공유대학 다학제 융합 프로젝트」
+Provider: 부산공유대학본부 (부산대학교 RIS대학교육혁신본부)
+Target: 부산지역 4년제 대학 재학생 (전공 무관, 팀 구성 1~5명 내외 다학제, 개별 신청 시 팀 매칭 지원)
+Scope: SHARED_UNIVERSITY
+Source: https://www.bbits.ac.kr/ko/community/community1/view/998
+Description: 다양한 전공의 학생들이 기업 연계 프로젝트를 통해 전공 간 지식과 전문성을 공유하고 실질적인 문제해결 역량을 강화하는 다학제 융합 프로젝트입니다. 전문가 특강·멘토링과 연계하여 시제품 제작비 및 최종 경진대회 상금을 지원합니다.
+------------------------------------------------------------
+ID: opp_uniall_team_a1a689793847
+Type: SHARED_INFRASTRUCTURE
+Title: 고려대학교 대학 창의적 자산 실용화(BRIDGE 3.0) 사업단
+Provider: 고려대학교 산학협력단
+Target: 고려대학교 및 참여 컨소시엄 재학생
+Scope: SHARED_UNIVERSITY
+Source: https://uniall.nrf.re.kr/biz/bizteam/list.do
+Description: 고려대학교 내 국가재정지원 사업단으로, 학생 및 교원을 대상으로 기술 실용화, 융합 프로젝트, 창업 지원 인프라를 상시 개방 운영합니다.
+------------------------------------------------------------
+ID: opp_uniall_team_95fbc6926033
+Type: SHARED_INFRASTRUCTURE
+Title: 경희대학교 대학 창의적 자산 실용화(BRIDGE 3.0) 사업단
+Provider: 경희대학교 산학협력단
+Target: 경희대학교 및 참여 컨소시엄 재학생
+Scope: SHARED_UNIVERSITY
+Source: https://uniall.nrf.re.kr/biz/bizteam/list.do
+Description: 경희대학교 내 국가재정지원 사업단으로, 학생 및 교원을 대상으로 기술 실용화, 융합 프로젝트, 창업 지원 인프라를 상시 개방 운영합니다.
+------------------------------------------------------------
+ID: opp_uniall_team_e9bef2cf55ae
+Type: SHARED_INFRASTRUCTURE
+Title: 영남대학교 대학 창의적 자산 실용화(BRIDGE 3.0) 사업단
+Provider: 영남대학교 산학협력단
+Target: 영남대학교 및 참여 컨소시엄 재학생
+Scope: SHARED_UNIVERSITY
+Source: https://uniall.nrf.re.kr/biz/bizteam/list.do
+Description: 영남대학교 내 국가재정지원 사업단으로, 학생 및 교원을 대상으로 기술 실용화, 융합 프로젝트, 창업 지원 인프라를 상시 개방 운영합니다.
+------------------------------------------------------------
+ID: opp_uniall_team_e611660d9963
+Type: SHARED_INFRASTRUCTURE
+Title: 한국해양대학교 대학 창의적 자산 실용화(BRIDGE 3.0) 사업단
+Provider: 국립한국해양대학교 산학협력단
+Target: 국립한국해양대학교 및 참여 컨소시엄 재학생
+Scope: SHARED_UNIVERSITY
+Source: https://uniall.nrf.re.kr/biz/bizteam/list.do
+Description: 국립한국해양대학교 내 국가재정지원 사업단으로, 학생 및 교원을 대상으로 기술 실용화, 융합 프로젝트, 창업 지원 인프라를 상시 개방 운영합니다.
+------------------------------------------------------------
+ID: opp_uniall_team_0572ffe202c8
+Type: SHARED_INFRASTRUCTURE
+Title: 강원대학교 지자체-대학 협력기반 지역혁신(RIS) 사업단
+Provider: 강원대학교 산학협력단
+Target: 강원대학교 및 참여 컨소시엄 재학생
+Scope: SHARED_UNIVERSITY
+Source: https://uniall.nrf.re.kr/biz/bizteam/list.do
+Description: 강원대학교 내 국가재정지원 사업단으로, 학생 및 교원을 대상으로 기술 실용화, 융합 프로젝트, 창업 지원 인프라를 상시 개방 운영합니다.
+------------------------------------------------------------
+ID: opp_uniall_team_6d776770d815
+Type: SHARED_INFRASTRUCTURE
+Title: 경북대학교 첨단분야 혁신융합대학(COSS) 사업단
+Provider: 경북대학교 산학협력단
+Target: 경북대학교 및 참여 컨소시엄 재학생
+Scope: SHARED_UNIVERSITY
+Source: https://uniall.nrf.re.kr/biz/bizteam/list.do
+Description: 경북대학교 내 국가재정지원 사업단으로, 학생 및 교원을 대상으로 기술 실용화, 융합 프로젝트, 창업 지원 인프라를 상시 개방 운영합니다.
+------------------------------------------------------------
+ID: opp_uniall_team_889302c60d55
+Type: SHARED_INFRASTRUCTURE
+Title: 전남대학교 인문사회 융합인재양성(HUSS) 사업단
+Provider: 전남대학교 산학협력단
+Target: 전남대학교 및 참여 컨소시엄 재학생
+Scope: SHARED_UNIVERSITY
+Source: https://uniall.nrf.re.kr/biz/bizteam/list.do
+Description: 전남대학교 내 국가재정지원 사업단으로, 학생 및 교원을 대상으로 기술 실용화, 융합 프로젝트, 창업 지원 인프라를 상시 개방 운영합니다.
+------------------------------------------------------------
+ID: opp_uniall_team_1466b10343de
+Type: SHARED_INFRASTRUCTURE
+Title: 충남대학교 창업교육 혁신 선도대학(SCOUT) 사업단
+Provider: 충남대학교 산학협력단
+Target: 충남대학교 및 참여 컨소시엄 재학생
+Scope: SHARED_UNIVERSITY
+Source: https://uniall.nrf.re.kr/biz/bizteam/list.do
+Description: 충남대학교 내 국가재정지원 사업단으로, 학생 및 교원을 대상으로 기술 실용화, 융합 프로젝트, 창업 지원 인프라를 상시 개방 운영합니다.
+------------------------------------------------------------
+ID: opp_ks_2026_svc_seoul
+Type: STARTUP
+Title: 2026 SVC Seoul 멤버십(확장형) 모집공고
+Provider: 중소벤처기업부 / 창업진흥원
+Target: 전국 대학생, 청년 예비창업자 및 7년 이내 창업기업
+Scope: PUBLIC
+Source: https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do
+Description: 서울창업허브 및 글로벌 스케일업을 지원하는 확장형 멤버십 프로그램으로, 청년 창업가 및 대학생 예비창업자를 위한 코워킹 스페이스, 멘토링, 글로벌 진출을 지원합니다.
+------------------------------------------------------------
+ID: opp_ks_2026_tips_mod
+Type: STARTUP
+Title: 2026년 팁스(TIPS) 창업기업 지원계획 수정 공고
+Provider: 중소벤처기업부 / 중소벤처기업부 / 창업진흥원
+Target: 전국 대학생, 청년 예비창업자 및 7년 이내 창업기업
+Scope: PUBLIC
+Source: https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do
+Description: 민간 투자주도형 기술창업지원(TIPS) 프로그램으로, 우수 기술 아이템을 보유한 창업팀 및 대학 연구실 기반 실험실 창업팀을 집중 육성합니다.
+------------------------------------------------------------
+ID: opp_ks_2026_all_govt_startup
+Type: COMPETITION
+Title: 2026년 중앙부처 및 지자체 창업지원사업 통합공고
+Provider: 중소벤처기업부 / 중소벤처기업부
+Target: 전국 대학생, 청년 예비창업자 및 7년 이내 창업기업
+Scope: PUBLIC
+Source: https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do
+Description: 전국 대학생, 청년, 예비창업자를 위한 중앙부처 및 17개 시·도 지자체 창업지원사업 통합 안내 및 신청 연계 지원입니다.
+------------------------------------------------------------
+ID: opp_ks_2026_siliconvalley_gtm
+Type: STARTUP
+Title: 2026년 실리콘밸리 GTM(Go-To-Market) 프로그램 창업기업 모집공고
+Provider: 중소벤처기업부 / 창업진흥원
+Target: 전국 대학생, 청년 예비창업자 및 7년 이내 창업기업
+Scope: PUBLIC
+Source: https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do
+Description: 글로벌 시장 진출을 희망하는 우수 기술창업팀 및 대학생 스타트업을 대상으로 미국 실리콘밸리 현지 실증 및 투자유치를 지원합니다.
+------------------------------------------------------------

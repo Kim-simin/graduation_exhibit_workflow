@@ -1,0 +1,38 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const vm=require('node:vm');
+const ts=require('../web/node_modules/typescript');
+const root=path.resolve(__dirname,'../web');
+const cache=new Map();
+function load(file){
+  if(cache.has(file))return cache.get(file).exports;
+  const module={exports:{}};cache.set(file,module);
+  const compiled=ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;
+  const localRequire=id=>id.startsWith('@/')?load(path.join(root,id.slice(2)+'.ts')):require(id);
+  vm.runInThisContext('(function(require,module,exports){'+compiled+'\n})',{filename:file})(localRequire,module,module.exports);
+  return module.exports;
+}
+const {exhibitionDates,exhibitionStatus,inField,mediaUrl,safeExternalUrl}=load(path.join(root,'lib/archive.ts'));
+const {projectState,isPublicProject}=load(path.join(root,'lib/archive-projects.ts'));
+assert.equal(exhibitionDates('2025'),null);
+assert.equal(exhibitionDates('2025.11 공지 대기'),null);
+assert.equal(exhibitionDates('2025.11.12(목) - 2025'),null);
+assert.equal(exhibitionDates('2026.02.30'),null);
+assert.deepEqual(exhibitionDates('2025.10.27(월) - 11.02(일) 10:00 - 20:00'),{start:'2025-10-27',end:'2025-11-02'});
+assert.deepEqual(exhibitionDates('2025.12.31 ~ 01.02'),{start:'2025-12-31',end:'2026-01-02'});
+assert.equal(exhibitionStatus({period:'2026.10.12 - 2026.10.13'},'2026-10-12'),'진행 중');
+assert.equal(exhibitionStatus({period:'2026.10.12 - 2026.10.13'},'2026-10-13'),'진행 중');
+assert.equal(exhibitionStatus({period:'2026.10.12 - 2026.10.13'},'2026-10-14'),'종료');
+assert.equal(exhibitionStatus({period:'2026.10.12 - 2026.10.13'},'2026-10-11'),'예정');
+assert.equal(inField({category:'디자인·UX/UI'},'industry','digital'),true);
+assert.equal(inField({category:'디자인·UX/UI'},'industry','manufacturing'),true);
+assert.equal(mediaUrl('https://example.com/image.jpg'),'https://example.com/image.jpg');
+assert.equal(safeExternalUrl('javascript:alert(1)'),undefined);
+assert.equal(projectState({origin:'company',progressStage:'solution'},'2026-10-12'),'모집중');
+assert.equal(projectState({progressStage:'completed',links:{}},'2026-10-12'),'결과물 미등록');
+assert.equal(projectState({progressStage:'production',recruitmentStatus:'open',recruitmentDeadline:'2026-10-11'},'2026-10-12'),'모집 종료');
+assert.equal(projectState({progressStage:'completed',links:{github:'https://example.com'}},'2026-10-12'),'완료작품');
+assert.equal(isPublicProject({visibility:'private'}),false);
+assert.equal(isPublicProject({visibility:'public',isDemo:true}),false);
+console.log('20 archive date, classification, visibility and project-status checks passed.');

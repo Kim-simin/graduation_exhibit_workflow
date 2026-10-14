@@ -1192,9 +1192,9 @@ export function ExhibitionDetailModal({
                       <div className="relative aspect-video bg-slate-100 dark:bg-slate-950 overflow-hidden flex items-center justify-center select-none">
                         <img
                           src={
-                            art.imagePath.startsWith("http")
-                              ? art.imagePath
-                              : `/api/images/${art.imagePath}`
+                            ((art as any).thumbnail || (art as any).thumbnail_url || art.imagePath).startsWith("http")
+                              ? ((art as any).thumbnail || (art as any).thumbnail_url || art.imagePath)
+                              : `/api/images/${(art as any).thumbnail || (art as any).thumbnail_url || art.imagePath}`
                           }
                           alt={art.title}
                           className={`w-full h-full object-cover transition duration-500 select-none pointer-events-none ${
